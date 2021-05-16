@@ -8,21 +8,10 @@ venue: 'Physical Review Accelerators and Beams'
 paperurl: 'https://doi.org/10.1103/PhysRevAccelBeams.24.044201'
 citation: 'A. Hoover, N. J. Evans, and J. A. Holmes, Computation of the matched envelope of the Danilov distribution, <i>Phys. Rev. Accel. Beams</i> <b>24</b>, 04420 (2021)'
 ---
-For the purposes of this paper, we define self-consistent beams as those which give rise to linear internal electric fields and maintain this property under any linear transport. Their analytic tractability provides valuable insights into space-charge effects, and they would possess a number of ideal properties if realized in practice. Although the Kapchinsky and Vladimirsky distribution is the most famous example, a larger class of self-consistent beams exists. Here, we focus on a particular case which we call the Danilov distribution. The beam is characterized by an elliptical shape, uniform charge density, and linear relationships between the particle positions and momenta in the transverse plane. The dynamical beam behavior is more complicated than that of the Kapchinsky and Vladimirsky distribution due to space-charge-driven linear coupling between the two transverse dimensions. There is current interest in generating the Danilov distribution experimentally; however, the beam dynamics have not yet been studied in detail. In this paper, we present an iterative method to calculate the matched envelope of the Danilov distribution in both coupled and uncoupled lattices using an existing parametrization of coupled motion. We demonstrate the method by calculating matched envelopes and studying the resulting beam properties for a few simple lattices, thus laying the groundwork for future calculations to optimize the injection of a self-consistent beam in a more complicated focusing system.
+The evolution of charged particle beams at low energies is complicated by the electric forces between particles known as space charge forces. These generally nonlinear forces negatively affect the beam quality and are difficult to model without expensive PIC simulations. Certain distributions, which we label as *self-consistent*, give rise to linear space charge forces in any time-dependent external focusing system. These distributions are important theoretical tools due to their analytic tractability, and they would also possess a number of ideal properties if realized in practice.
 
-[Download paper here](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201)
+Until recently, only one of these self-consistent beams had been discovered in the general time-dependent case (the KV distribution); in this paper, we studied a new type of distribution which we named the *Danilov distribution* after the late ORNL researcher Viatcheslav V. Danilov who derived it in 2003. It is characterized by an elliptical shape, uniform charge density, and linear relationships between the particle positions and momenta in the transverse plane. Its behavior is more complicated than that of the KV distribution due to space-charge-driven coupling between the two transverse dimensions. One project at the Spallation Neutron Source (SNS) is to experimentally generate a beam which approximates a Danilov distribution.
 
+Due to its self-consistent properties, the evolution of the Danilov distribution is completely described by a system of differential equations which describe the elliptical edge of the beam, otherwise known as the beam *envelope*. These envelope equations provide a fast and valuable method to study the beam dynamics; at the time of writing, however, they had not been studied in detail. We developed a method to compute the matched (periodic) solution to these equations. We demonstrated the method in a few simple cases and discussed potential implications for future SNS experiments. I wrote a blog post about the paper [here](https://austin-hoover.github.io/blog/accelerators/space%20charge/differential%20equations/publications/2021/05/13/matched_Danilov_dist.html).
 
----
-<!-- title: "Computation of the matched envelope of the Danilov distribution"
-collection: publications
-permalink: /publication/2021-04-29-computation_of_the_matched_envelope
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2021-04-29
-venue: 'Physical Review Accelerators and Beams'
-paperurl: 'https://doi.org/10.1103/PhysRevAccelBeams.24.044201'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
----
-This paper is about the number 1. The number 2 is left for future work. And some more text.
-
-[Download paper here](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201) -->
+[Link to pdf](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201)
