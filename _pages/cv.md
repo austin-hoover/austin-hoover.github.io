@@ -11,30 +11,33 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Physics, University of Tennessee, Knoxville, (2018 - present)
+* B.S. in Physics, Wheaton College, (2014 - 2018)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Augus 2019 - Present: Graduate Research Assistant
+    * Oak Ridge National Laboratory / University of Tennessee, Knoxville
+    * Computational and experimental researach on intense charged particle beams at the Spallation Neutron Source
+    * Advisor: Sarah Cousineau
+* August 2018 - August 2019: Graduate Teaching Assistant
+    * University of Tennessee, Knoxville
+    * Solo-taught hybrid introductory physics labs (1/3 traditional lecture, 2/3 experiment)
+* May - August 2017: Research Fellow
+  * Baylor University
+  * Used normal mode analysis to study the electric potential in dusty plasma systems
+  * Advisor: Truell Hyde
+* 2016 - 2018: Teaching Assistant
+  * Wheaton College
+  * Assisted in operation and grading of physics labs for non-majors
+    
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+* Java, C++ (limited use)
+* LaTeX
+
 
 Publications
 ======
@@ -47,13 +50,3 @@ Talks
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
