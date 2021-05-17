@@ -3,7 +3,7 @@ title: "Computation of the matched envelope of the Danilov distribution"
 collection: publications
 permalink: /publication/2021-04-29-computation_of_the_matched_envelope
 date: 2021-04-29
-excerpt: An excerpt.
+excerpt: 
 venue: 'Physical Review Accelerators and Beams'
 paperurl: 'https://doi.org/10.1103/PhysRevAccelBeams.24.044201'
 citation: 'A. Hoover, N. J. Evans, and J. A. Holmes, Computation of the matched envelope of the Danilov distribution, <i>Phys. Rev. Accel. Beams</i> <b>24</b>, 04420 (2021)'
