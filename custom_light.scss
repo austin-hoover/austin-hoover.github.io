@@ -3,26 +3,22 @@
 
 /*-- scss:defaults --*/
 
-$font-size-root: 105%;
-$code-font-size: 90% !important;
-
-$h2-font-size: 180%;
-$h2-font-size: 160%;
-$h3-font-size: 140%;
-$h4-font-size: 120%;
-$h5-font-size: 100%;
-
-$figure-caption-font-size: 90% !important;
+$body-color: black;
+// $code-font-size: 90% !important;
 $figure-caption-color: rgb(128, 128, 128) !important;
+$figure-caption-font-size: 95% !important;
+$font-family-sans-serif:  "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+// $headings-font-weight: 450 !default;
+$font-size-root: 106%;
 $navbar-bg: rgb(50, 50, 50);
 
 /*-- scss:rules --*/
 
 .navbar {
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 
 #quarto-document-content {
-    max-width: 770px !important;
+    // max-width: 750px !important;
 }

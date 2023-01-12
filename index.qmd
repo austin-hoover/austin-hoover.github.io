@@ -1,13 +1,15 @@
 ---
-title: "Austin Hoover"
 about:
-    template: trestles
+    template: trestles  #trestles, jolla, solana, marquee, broadside
     image: images/me_ORNL.jpg
     links:
         - icon: linkedin
           href: https://linkedin.com/in/austin-hoover-7b760511b    
         - icon: github
           href: https://github.com/austin-hoover  
+html: 
+    format:
+        toc: false
 ---
 
 
