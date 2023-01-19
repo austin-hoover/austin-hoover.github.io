@@ -8,4 +8,4 @@ listing:
 page-layout: full
 ---
 
-I am in the process of converting my [old blog posts](https://austin-hoover.github.io/blog/) to quarto format. The posts I have converted are below.
+I am in the process of converting my [old blog posts]( https://austin-hoover.github.io/blog_old/) to quarto format. The posts I have converted are below.
