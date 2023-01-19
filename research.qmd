@@ -5,7 +5,8 @@ title: "Research"
 The following is a short description of my current research projects. [Work in progress.]
 
 
-## 1. Collective effects in particle accelerators
+## Collective effects in particle accelerators
+
 
 An accelerator is a machine that produces beams of charged particles and directs them to a target. The products of the resulting collision can unveil the internal structure of the target. A large range of spatial and temporal scales can be probed by tuning the beam parameters — the energy, charge density, time structure, particle species, etc. Thus, accelerators are important experimental tools in many fields, including elementary particle physics, nuclear physics, condensed matter physics, material science, chemistry, and biology.  
 
@@ -16,7 +17,8 @@ The beam intensity in an accelerator is limited by the number of particles that 
 There are two main collective effects to consider. First, relativistic charged particles generate electromagnetic *wake fields*. When these wake fields interact with the environment (i.e., the conducting vacuum chamber), they can affect other particles in the beam (or the same particle on subsequent turns in a circular machine). This feedback loop can cause unstable dipole oscillations of the entire beam. Second, particles interact directly via Coloumb forces, also known as *space charge forces*. When coupled with the periodic electromagnetic fields in the accelerator (linear or nonlinear), space charge forces can lead to chaotic phase space trajectories and large-amplitude excursions of single particles. The resulting beam loss can be problematic even if very small relative to the total beam intensity.
 
 
-## 2. Predicting halo formation in linacs
+
+## Predicting halo formation in linacs
 
 The magnitude of the space charge force depends inversely on the beam energy. Thus, space charge is strongest during the early stages of acceleration in a linear accelerator (linac), near the particle source. The dynamics are complicated in this stage. One well-known and persistent phenomenon is the emergence of *beam halo* — a low-density region of position-momentum space (phase space) far from the dense beam core. Halo particles are very likely to be lost during transport due to their large amplitudes. Even a very low-density halo can cause unacceptable beam loss. The beam power deposited throughout the accelerator must be kept below one watt per meter along the beamline. Existing facilities operating with megawatts of beam power and losses on the order of $10^{-4}$-$10^{-6}$ operate near this limit. If the beam power was increased by a factor of ten while fixing the fractional beam loss, the radio-activation in the linac would be too high.
 
@@ -25,11 +27,11 @@ Since halo particles occupy very low-density regions of phase space, their evolu
 [...]
 
 
-## 3. Phase space reconstruction
+## Phase space reconstruction
 
 [...]
 
 
-## 4. Beam shaping in hadron rings
+## Beam shaping in hadron rings
 
 [...]

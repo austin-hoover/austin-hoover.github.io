@@ -10,17 +10,17 @@ website:
               href: research.qmd
             - text: "Publications"
               href: publications.qmd
-            - text: "Presentations"
-              href: presentations.qmd
             - text: "Blog"
               href: blog.qmd
 format:
     html:
         theme: 
-            light: custom_light.scss
-            dark: custom_dark.scss
+            light: [cosmo, custom_light.scss]
+            dark: [cosmo, custom_dark.scss]
+            # light: custom_light.scss
+            # dark: custom_dark.scss
         anchor-sections: true
         cap-location: bottom
         toc-location: right
         title-block-categories: false
-        shift-heading-level-by: 1        
+        shift-heading-level-by: 0

@@ -1,0 +1,56 @@
+---
+html: 
+    format:
+        toc: true
+---
+
+
+## Journal articles
+
+
+**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [High-resolution measurement of the five-dimensional phase space distribution of a hadron beam](https://arxiv.org/abs/2301.04178). In submission. (2023).
+
+**A. Hoover**, and N. J. Evans. [Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805). Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, Volume 1041 (2022).
+
+**A. Hoover**, N. J. Evans, and J. A. Holmes. [Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201). Physical Review Accelerators and Beams 24.4 (2021): 044201.
+
+
+
+## Conference proceedings
+
+
+**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [Measurements of the five-dimensional phase space distribution of an intense ion beam](https://arxiv.org/pdf/2208.06000.pdf). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
+
+A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, and N. Milas. [Open XAL Status Report 2022], in Proc. IPAC'22, Bangkok, Thailand (2022).
+
+**A. Hoover**, N. J. Evans, T. Gorlov and J. A. Holmes. [Development of an injection-painted self-consistent beam at the Spallation Neutron Source](https://epaper.kek.jp/hb2021/papers/moac3.pdf). 64th ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams, Batavia, IL, USA (2021).
+
+**A. Hoover** and N. J. Evans. [Simulation of 4D Emittance Measurement at the Spallation Neutron Source](https://accelconf.web.cern.ch/ipac2021/papers/thpab180.pdf). 12th International Particle Accelerator Conference (IPAC'21), Campinas, SP, Brazil (2021).
+
+
+
+## Dissertation
+
+
+**A. Hoover**. [Towards the production of a self-consistent phase space distribution](https://trace.tennessee.edu/utk_graddiss/7228). PhD diss., University of Tennessee (2022).
+
+
+
+## Presentations
+
+
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](). 5th ICFA Mini-Workshop on Space Charge, Knoxville, TN, USA (2022).
+
+[Measurements of the five-dimensional phase space distribution of an intense ion beam](). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
+
+[Accelerator research and development at the Spallation Neutron Source (SNS)](). Particle Accelerators: Technology and Applications (Nuclear Engineering 588) at the University of Tennessee, Knoxville, TN, USA (2022).
+
+[Towards the production of a self-consistent phase space distribution](). University of Tennessee PhD Defense, Knoxville, TN, USA (2022).
+
+[Painting a self-consistent beam](). SNS Accelerator and Target Advisory Committee Review, Oak Ridge, TN, USA (2022).
+
+[Development of an injection-painted self-consistent beam in the Spallation Neutron Source ring](). 64th ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams, Batavia, IL, USA (2021).
+
+[Computation of the matched envelope of the Danilov distribution](). APS April Meeting, Virtual (2021).
+
+[Parameterization of linear coupled motion](). SNS Accelerator Physics Group Meeting, Oak Ridge, TN, USA (2021).
