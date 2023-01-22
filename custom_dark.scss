@@ -2,14 +2,7 @@
 
 
 /*-- scss:defaults --*/
-
-// $code-font-size: 90% !important;
 $figure-caption-font-size: 95% !important;
-
-// $headings-font-weight: 450 !default;
-// $font-size-root: 103%;
-
-$figure-caption-font-size: 90% !important;
 $body-bg: #181818;
 $body-color: rgb(200, 200, 200);
 $link-color: #75AADB;
@@ -21,8 +14,4 @@ $figure-caption-color: rgb(128, 128, 128) !important;
 .navbar {
     padding-bottom: 3px;
     padding-top: 3px;
-}
-
-#quarto-document-content {
-    // max-width: 770px !important;
 }

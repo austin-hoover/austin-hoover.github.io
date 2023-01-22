@@ -17,8 +17,6 @@ format:
         theme: 
             light: [cosmo, custom_light.scss]
             dark: [cosmo, custom_dark.scss]
-            # light: custom_light.scss
-            # dark: custom_dark.scss
         anchor-sections: true
         cap-location: bottom
         toc-location: right

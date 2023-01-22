@@ -2,37 +2,39 @@
 title: "Research"
 ---
 
-The following is a short description of my current research projects. [Work in progress.]
 
+The following is a short description of my current research interests. [Work in progress.]
 
 
 ## Collective effects in particle accelerators
 
 
-An accelerator is a machine that produces beams of charged particles and directs them to a target. The products of the resulting collision can unveil the internal structure of the target. A large range of spatial and temporal scales can be probed by tuning the beam parameters — the energy, charge density, time structure, particle species, etc. Thus, accelerators are important experimental tools in many fields, including elementary particle physics, nuclear physics, condensed matter physics, material science, chemistry, and biology.  
+*Accelerator physics* aims to understand, predict, measure, and control the behavior of charged particle beams in particle accelerators. This effort can be divided into three main categories: increasing the beam energy, increasing the beam intensity, and increasing the beam brightness (the density in position-momentum space (phase space)). 
 
-**Accelerator physics** aims to understand, predict, measure, and control the behavior of charged particle beams. We can divide this effort into three main categories: (1) increasing the beam energy, (2) increasing the beam intensity (the total number of particles), and (3) increasing the beam brightness (the particle density in position-momentum space). My research is currently focused on increasing hadron beam intensity. Intense hadron beams have applications ranging from particle physics to nuclear energy production. 
+The beam intensity in an accelerator is limited by *beam loss*: some particles are absorbed by the accelerator before they reach the target. These particles cause damage and radioactivation; the accelerator cannot operate safely if losses are too high. The standard operational requirement is to keep losses below one watt per meter along the beamline. This becomes more difficult to achieve as the beam power increases. Recently, after decades of research, several facilities have produced megawatts of beam power, but an improved understanding and control of beam loss mechanisms will be necessary to reach tens or hundreds of megawatts.
 
-The beam intensity in an accelerator is limited by the number of particles that do not survive their journey to the target. We call these *lost particles*. Losses lead to damage and radio-activation of the accelerator components. If the radiation is too high, hands-on maintenance is unsafe and the accelerator cannot operate. It is at first not obvious why any beam loss should occur. Accelerators are carefully designed so that each particle performs stable oscillations about a reference trajectory. But these designs are based on single-particle tracking through linear electromagnetic fields; in reality, nonlinear fields exist and the beam is comprised of billions or trillions of interacting particles. These *collective effects* are particularly difficult to predict.
-
-There are two main collective effects to consider. First, relativistic charged particles generate electromagnetic *wake fields*. When these wake fields interact with the environment (i.e., the conducting vacuum chamber), they can affect other particles in the beam (or the same particle on subsequent turns in a circular machine). This feedback loop can cause unstable dipole oscillations of the entire beam. Second, particles interact directly via Coloumb forces, also known as *space charge forces*. When coupled with the periodic electromagnetic fields in the accelerator (linear or nonlinear), space charge forces can lead to chaotic phase space trajectories and large-amplitude excursions of single particles. The resulting beam loss can be problematic even if very small relative to the total beam intensity.
-
+*Collective effects* — effects arising from the interactions between the ($10^{9}$-$10^{15}$) particles in the beam — are an important source of beam loss. Particles can interact indirectly (through wakefields left on the conducting vacuum chamber) or via direct Coulomb forces (also called *space charge forces*). (I focus primarily on space charge.) In either case, the resulting nonlinear dynamics are difficult to predict.
 
 
 ## Predicting halo formation in linacs
 
-The magnitude of the space charge force depends inversely on the beam energy. Thus, space charge is strongest during the early stages of acceleration in a linear accelerator (linac), near the particle source. The dynamics are complicated in this stage. One well-known and persistent phenomenon is the emergence of *beam halo* — a low-density region of position-momentum space (phase space) far from the dense beam core. Halo particles are very likely to be lost during transport due to their large amplitudes. Even a very low-density halo can cause unacceptable beam loss. The beam power deposited throughout the accelerator must be kept below one watt per meter along the beamline. Existing facilities operating with megawatts of beam power and losses on the order of $10^{-4}$-$10^{-6}$ operate near this limit. If the beam power was increased by a factor of ten while fixing the fractional beam loss, the radio-activation in the linac would be too high.
+The space charge forces in an intense beam propagating in time-dependent external fields can drive unstable coherent oscillation modes. These modes can generally be avoided by carefully designing the fields. It is more difficult to avoid *halo formation*, the emergence of a low-density region of phase space far from a dense core. The losses resulting from halo formation will be unacceptable in multi-megawatt facilities.
 
-Since halo particles occupy very low-density regions of phase space, their evolution is difficult to predict. Beam loss patterns in large linear accelerators cannot be reproduced in simulations, and even attempts to predict halo formation over short distances have failed. Although the relevant physics is assumed to be modeled correctly in simulation codes, there remain uncertainties in the simulation inputs — the electromagnetic fields throughout the accelerator and the initial particle distribution.
+All attempts to predict halo-level dynamics have been unsuccessful. Although the physics is assumed to be modelled correctly, there remain significant uncertainties in the simulation inputs — [...]
+
+
+
 
 [...]
+
+
+## Phase space painting in rings
+
+[...]
+
 
 
 ## Phase space reconstruction
 
 [...]
 
-
-## Beam shaping in hadron rings
-
-[...]

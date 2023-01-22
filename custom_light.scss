@@ -2,18 +2,9 @@
 
 
 /*-- scss:defaults --*/
-
 $body-color: black;
-    
-// $headings-font-weight: 420 !important;
-
-// $code-font-size: 90% !important;
 $figure-caption-color: rgb(128, 128, 128) !important;
 $figure-caption-font-size: 95% !important;
-
-
-// $headings-font-weight: 450 !default;
-// $font-size-root: 109.5%;
 $navbar-bg: rgb(50, 50, 50);
 
 /*-- scss:rules --*/
@@ -22,12 +13,3 @@ $navbar-bg: rgb(50, 50, 50);
     padding-bottom: 3px;
     padding-top: 3px;
 }
-
-#quarto-document-content {
-    // max-width: 750px !important;
-}
-
-// p, li {
-//     font-color: rgb(32, 32, 32) !important;
-//     font-weight: 370 !important;
-// }
