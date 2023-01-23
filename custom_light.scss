@@ -4,7 +4,7 @@
 /*-- scss:defaults --*/
 $body-color: black;
 $figure-caption-color: rgb(128, 128, 128) !important;
-$figure-caption-font-size: 95% !important;
+$figure-caption-font-size: 93% !important;
 $navbar-bg: rgb(50, 50, 50);
 
 /*-- scss:rules --*/
@@ -12,4 +12,8 @@ $navbar-bg: rgb(50, 50, 50);
 .navbar {
     padding-bottom: 3px;
     padding-top: 3px;
+}
+
+.katex {
+    font-size: 105% !important;
 }

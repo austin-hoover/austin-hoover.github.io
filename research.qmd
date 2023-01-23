@@ -3,38 +3,39 @@ title: "Research"
 ---
 
 
-The following is a short description of my current research interests. [Work in progress.]
+The following is a short description of my current research interests. [Work in progress; pictures to be added.]
 
 
 ## Collective effects in particle accelerators
 
 
-*Accelerator physics* aims to understand, predict, measure, and control the behavior of charged particle beams in particle accelerators. This effort can be divided into three main categories: increasing the beam energy, increasing the beam intensity, and increasing the beam brightness (the density in position-momentum space (phase space)). 
+*Accelerator physics* aims to understand, predict, measure, and control the behavior of charged particle beams in particle accelerators. This effort can be divided into three main categories: increasing beam energy, intensity, and brightness (the density in position-momentum space (phase space)). 
 
-The beam intensity in an accelerator is limited by *beam loss*: some particles are absorbed by the accelerator before they reach the target. These particles cause damage and radioactivation; the accelerator cannot operate safely if losses are too high. The standard operational requirement is to keep losses below one watt per meter along the beamline. This becomes more difficult to achieve as the beam power increases. Recently, after decades of research, several facilities have produced megawatts of beam power, but an improved understanding and control of beam loss mechanisms will be necessary to reach tens or hundreds of megawatts.
-
-*Collective effects* — effects arising from the interactions between the ($10^{9}$-$10^{15}$) particles in the beam — are an important source of beam loss. Particles can interact indirectly (through wakefields left on the conducting vacuum chamber) or via direct Coulomb forces (also called *space charge forces*). (I focus primarily on space charge.) In either case, the resulting nonlinear dynamics are difficult to predict.
+Beam intensity and brightness are limited (in part) by *collective effects* — effects arising from interactions between the particles in the beam. Particles interact indirectly via wakefields left on the conducting vacuum chamber and directly via Coulomb forces, also called *space charge forces*. These interactions give rise to nonlinear dynamics that cause *beam degradation* (growth in phase space volume) as well as *beam loss* when particles are driven to large amplitudes beyond the machine aperture. An improved understanding of collective effects is necessary to build the next generation of high-intensity, high-brightness accelerators.
 
 
 ## Predicting halo formation in linacs
 
-The space charge forces in an intense beam propagating in time-dependent external fields can drive unstable coherent oscillation modes. These modes can generally be avoided by carefully designing the fields. It is more difficult to avoid *halo formation*, the emergence of a low-density region of phase space far from a dense core. The losses resulting from halo formation will be unacceptable in multi-megawatt facilities.
+I have focused on space charge in my research. Space charge effects vary dramatically depending on the beam energy[^1] and the machine type. In a linear accelerator, space charge is strong but the beam passes only once through the machine. In a circular accelerator (ring) space charge is generally weaker, but the beam passes many times through the machine.
+ 
+[^1]: The force between two charges moving at velocity $v$ perpendicular to their line of centers approaches zero as $v$ approaches the speed of light. See [http://kirkmcd.princeton.edu/examples/comoving.pdf](http://kirkmcd.princeton.edu/examples/comoving.pdf).
 
-All attempts to predict halo-level dynamics have been unsuccessful. Although the physics is assumed to be modelled correctly, there remain significant uncertainties in the simulation inputs — [...]
+I'll focus on linacs (strong space charge, short-distance transport) first. When coupled with the periodic focusing fields in the accelerator, space charge can drive a spectrum of unstable coherent oscillations in the beam. These coherent instabilities can generally be avoided by carefully designing the focusing fields. It is more difficult to avoid *halo formation*, the emergence of a sparsely populated region of phase space far from a dense core. 
 
+Halo particles seem innocent: they occupy an extremely low-density region of phase space (four to six orders of magnitude below the peak density in the core) and, therefore, have almost no effect on the core dynamics and are invisible in typical measurements and simulations. Yet halo is a fundamental limitation in high-power accelerators due to its large spatial extent; many halo particles are lost during transport. To avoid excessive radioactivation, accelerators must keep losses below one watt per meter along the beamline. In a one-megawatt beam, this corresponds to a fractional beam loss of $10^{-6}$. Thus, to feasibly produce ten- or hundred-megawatt beams, something must be done about halo formation. Unfortunately, all attempts to predict halo-level dynamics have been unsuccessful. Although the physics is assumed to be modeled correctly, there remain significant uncertainties in the simulation inputs — the electromagnetic fields $\{\mathbf{E}(s), \mathbf{B}(s)\}$ at each position $s$, and the initial phase space coordinates $\{x, p_x, y, p_y, z, p_z\}$ of each particle. 
 
+We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) to address these uncertainties. The BTF is a one-to-one replica of the front end of the SNS linac. It is equipped to measure the full six-dimensional phase space distribution $f(x, p_x, y, p_y, z, p_z)$ — something that has never been done before. Additionally, the BTF is equipped to measure the two-dimensional distributions $\{ f(x, p_x), f(y, p_y) \}$ with six orders of dynamic range.^[The dynamic range is the maximum density divided by the minimum density that can be measured.] Our goal is to simulate the transport through the BTF using a direct six-dimensional measurement as input, then compare with a high-dynamic-range measurement of $\{ f(x, p_x), f(y, p_y) \}$ at the end of the BTF. If we could reproduce the measured halo distribution, it would be an important accomplishment and the first step toward halo-level control in high-power hadron beams.
 
-
-[...]
+At the same time, we are using these measurements to identify (and explain the physical origin of) features in the six-dimensional phase space distribution. This is a visualization challenge. Our primary discovery has been a hollow $p_z$ distribution at the center of the $x$-$p_x$-$y$-$p_y$ plane. We know that this is driven by space charge but do not yet know its importance in the long-term beam dynamics.
 
 
 ## Phase space painting in rings
 
-[...]
 
 
 
 ## Phase space reconstruction
 
 [...]
+
 

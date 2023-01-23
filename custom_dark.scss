@@ -2,7 +2,7 @@
 
 
 /*-- scss:defaults --*/
-$figure-caption-font-size: 95% !important;
+$figure-caption-font-size: 93% !important;
 $body-bg: #181818;
 $body-color: rgb(200, 200, 200);
 $link-color: #75AADB;
@@ -14,4 +14,8 @@ $figure-caption-color: rgb(128, 128, 128) !important;
 .navbar {
     padding-bottom: 3px;
     padding-top: 3px;
+}
+
+.katex {
+    font-size: 105% !important;
 }
