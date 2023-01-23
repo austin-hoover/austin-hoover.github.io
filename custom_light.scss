@@ -2,7 +2,7 @@
 
 
 /*-- scss:defaults --*/
-$body-color: black;
+$primary: SteelBlue;
 $figure-caption-color: rgb(128, 128, 128) !important;
 $figure-caption-font-size: 93% !important;
 $navbar-bg: rgb(50, 50, 50);
@@ -10,8 +10,9 @@ $navbar-bg: rgb(50, 50, 50);
 /*-- scss:rules --*/
 
 .navbar {
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    border-bottom-width: 0px !important
 }
 
 .katex {

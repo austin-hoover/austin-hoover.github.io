@@ -15,7 +15,7 @@ website:
 format:
     html:
         theme: 
-            light: [cosmo, custom_light.scss]
+            light: [lumen, custom_light.scss]
             dark: [cosmo, custom_dark.scss]
         anchor-sections: true
         cap-location: bottom
