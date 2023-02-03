@@ -16,10 +16,12 @@ format:
     html:
         theme: 
             light: [lumen, custom_light.scss]
-            dark: [cosmo, custom_dark.scss]
+            dark: [lumen, custom_dark.scss]
         anchor-sections: true
         cap-location: bottom
         toc-location: right
         title-block-categories: false
         shift-heading-level-by: 0
         html-math-method: katex
+        grid:
+            body-width: 800px

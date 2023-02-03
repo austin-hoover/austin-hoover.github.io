@@ -1,11 +1,11 @@
 toc: true
 toc-title: Contents
 execute:
-  echo: false
-  enabled: false
-  cache: true
-  freeze: true
+    echo: false
+    enabled: false
+    cache: true
+    freeze: true
 citation: false
 comments:
-  utterances:
-    repo: austin-hoover/blog2
+    utterances:
+        repo: austin-hoover/austin-hoover.github.io

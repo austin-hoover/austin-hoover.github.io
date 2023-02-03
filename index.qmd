@@ -7,9 +7,6 @@ about:
           href: https://linkedin.com/in/austin-hoover-7b760511b    
         - icon: github
           href: https://github.com/austin-hoover  
-html: 
-    format:
-        toc: false
 ---
 
 
@@ -17,4 +14,4 @@ I am a postdoc in the Accelerator Physics Group at the [Spallation Neutron Sourc
 
 My research is in the field of accelerator physics, where the goal is to understand, predict, measure, and control the behavior of charged particle beams. In particular, I focus on increasing the intensity of hadron beams in linear and circular accelerators.
 
-This site contains a short summary of my current research projects, a list of publications and presentations, and my blog, where I write mostly about physics and philosophy.
+This site contains a summary of my current research projects, a list of publications and presentations, and my blog, where I write mostly about physics and philosophy.

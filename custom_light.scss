@@ -6,6 +6,7 @@ $primary: SteelBlue;
 $figure-caption-color: rgb(128, 128, 128) !important;
 $figure-caption-font-size: 93% !important;
 $navbar-bg: rgb(50, 50, 50);
+$font-size-root: 109.5%;
 
 /*-- scss:rules --*/
 
@@ -16,5 +17,5 @@ $navbar-bg: rgb(50, 50, 50);
 }
 
 .katex {
-    font-size: 105% !important;
+    font-size: 106% !important;
 }
