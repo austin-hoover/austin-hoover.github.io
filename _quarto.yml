@@ -15,8 +15,8 @@ website:
 format:
     html:
         theme: 
-            light: [lumen, custom_light.scss]
-            dark: [lumen, custom_dark.scss]
+            light: [default, custom_light.scss]
+            dark: [default, custom_dark.scss]
         anchor-sections: true
         cap-location: bottom
         toc-location: right
