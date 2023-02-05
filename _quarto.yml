@@ -18,7 +18,7 @@ format:
             light: [default, custom_light.scss]
             dark: [default, custom_dark.scss]
         anchor-sections: true
-        cap-location: bottom
+        cap-location: bottom  # {bottom, margin}
         toc-location: right
         title-block-categories: false
         shift-heading-level-by: 0
