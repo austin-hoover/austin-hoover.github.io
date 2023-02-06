@@ -1,7 +1,7 @@
 toc: true
 toc-title: Contents
 execute:
-    echo: false
+    echo: true
     enabled: false
     cache: true
     freeze: true
