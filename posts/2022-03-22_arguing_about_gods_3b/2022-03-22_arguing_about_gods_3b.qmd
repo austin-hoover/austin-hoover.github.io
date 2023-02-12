@@ -1,0 +1,161 @@
+---
+title: "Arguing about gods (part 3b)"
+description: "Leibnizian Cosmological Arguments"
+date: 2022-03-22
+author: Austin Hoover
+categories: [cosmological arguments, Leibniz, infinity]
+bibliography: references.bib
+csl: american-physics-society.csl
+
+---
+
+
+[Leibnizian](https://plato.stanford.edu/entries/leibniz/) cosmological arguments conclude that there is a necessary being (something that must exist) which explains the existence of contingent beings (things that do not have to exist). Such arguments address the question “Why does anything exist?” and generally utilize a principle of sufficient reason (PSR): *every contingent fact has an explanation*. Some recent formulations use a weaker explanatory principle: *every contingent concrete being has an explanation*, where concrete means “possibly causes something”, or even a modal version: *every contingent concrete being possibly has an explanation*.
+
+
+![](turtles.png){width=40% fig-align=center}
+
+
+## 1. The Principle of Sufficient Reason (PSR)
+
+The PSR can be used to run an argument for the existence of a necessary being. Here is the basic form of such an argument [@sep-cosmological-argument]:
+
+1. A contingent being (a being such that if it exists, it could have not-existed) exists.
+2. All contingent beings have a sufficient cause of or fully adequate explanation for their existence.
+3. The sufficient cause of or fully adequate explanation for the existence of contingent beings is something other than the contingent being itself.
+4. The sufficient cause of or fully adequate explanation for the existence of contingent beings must either be solely other contingent beings or include a non-contingent (necessary) being.
+5. Contingent beings alone cannot provide a sufficient cause of or fully adequate explanation for the existence of contingent beings. 
+6. Therefore, what sufficiently causes or fully adequately explains the existence of contingent beings must include a non-contingent (necessary) being.
+7. Therefore, a necessary being (a being such that if it exists, it cannot not-exist) exists.
+8. The universe, which is composed of only contingent beings, is contingent.
+9. Therefore, the necessary being is something other than the universe. 
+
+Premise 2 is the PSR. Oppy suggests that the PSR, as it is usually formulated, is unacceptably strong and that defensible versions of the PSR are “so weak that it is implausible to suppose that they possess serious metaphysical bite” [@Oppy2006-inf].[^1] In this section, I will discuss several points raised by Pruss in [@Craig2009] in defense of the PSR.
+
+
+### 1.1. Support for the PSR
+
+The PSR is a kind of rock-bottom principle that is difficult to arrive at from other principles; thus, one option is to accept the PSR in the absence of any cogent counterarguments. One argument for the PSR is that the denial of the PSR leads to extreme skepticism: if the PSR is false, then my sensory inputs could exist for no reason, meaning that I do not have any knowledge [@Koons2021]. And since to assign a probability is to explain a frequency in terms of an underlying regularity, no probability can be assigned to this scenario [@Craig2009]. We might go further and claim that the PSR is assumed whenever we scientifically inquire. Although there is debate about the fundamentality of causation in physics, it seems to me that physics is at least in search of explanations. If the PSR is false, then the following “explanation” is available for any fact: *there is no explanation*. Again, one might argue that there is no meaningful probability that can be assigned to this “explanation”.
+
+
+### 1.2. Objections to the PSR
+
+Surely, those who reject the PSR are doing so because they are skeptical of applying it to *every* contingent fact; if there is just one unexplained contingent fact, then the PSR is false. Therefore, one way to object to the PSR is to identify an unexplained, or potentially unexplained, fact. 
+
+#### 1.2.1. Imagination
+
+Hume suggested that the PSR is false because one can imagine an exception to it. This objection is not so interesting to me, so I will move on.  
+
+#### 1.2.2. Chance
+
+Quantum mechanics leaves open the possibility of chancy — i.e., random — events [@Maudlin2014].[^2] If an event is chancy, then it seems that there is no explanation for it. This would violate the PSR. 
+
+However, we might think that quantum events are not unexplained even if they are chancy: the laws of quantum mechanics + the system indeterministically produce — and thus explain — the measured state. This may be a less-than-ideal explanation since only patterns in groups of measurements are explained instead of individual measurements, but it is an explanation nonetheless; we are providing a background or framework on which the measurement is not surprising. (In [@Malpass2021YT], Alex Malpass notes that, in his opinion, it is an open question whether such an explanation is relevant to cosmological arguments.)
+
+
+#### 1.2.3. Free will
+
+Here is Oppy’s definition of libertarian free will: "If an agent $X$ acts freely in performing action $A$ in circumstances $C$ at time $T$ in world $W$, then it is not made true by the truth-making core of the world $W$ prior to $T$ that agent $X$ will do $A$ in circumstances $C$." In other words, there is a possible world that shares the same history as the actual world, but in which the agent acted differently. The PSR is false if there is no explanation for why one world was actualized instead of the other world. 
+
+One solution to this problem is to reject the libertarian conception of free will.[^3] Another solution is to provide an explanation of libertarian free choices. We will have to resort to some sort of non-deterministic explanation, as in the previous section. Pruss presents a hypothesis in [@Craig2009] that I have reorganized/paraphrased below. (The terms in brackets can be exchanged with the preceding unbracketed terms in each line.)
+
+
+* Hypothesis:  Free choices are made based on reasons that one is “impressed by”, i.e., that one takes into consideration in making the decision.
+* Suppose agent $X$ has a binary choice between $A$ and $B$.
+* Let $S\{T\}$ be a subset of the reasons that favor $A\{B\}$ over $B\{A\}$.
+* If $X$ freely chooses $A\{B\}$, it is because $X$ is making a free choice between $A$ and $B$ while impressed by the reasons in $S\{T\}$; $X$ is also impressed by $T\{S\}$, but only acts on the impressive reasons in $S\{T\}$.[^4]
+
+
+My initial thought is that it seems plausible for libertarian free choices to be explained in this way or a similar way. The strategy seems analogous to the previous attempt to explain chancy events.
+
+
+#### 1.2.4. Modal fatalism 
+
+Suppose that $C$ is the conjunction of every contingent proposition and that $E$ explains $C$. $E$ cannot be contingent because $C$ would then contain $E$ and $E$ would explain itself, which is impossible; $E$ cannot be necessary because a necessary proposition cannot explain a contingent proposition; $E$ cannot exist. 
+
+This objection points out the difficulty in forming an explanatory link between the necessary and the contingent. Pruss pushes back in a few ways. First, in this objection, we have assumed that if $p$ is necessary and $p$ explains $q$, then $p$ entails $q$. He suggests that there are counterexamples, such as statistical/non-deterministic explanations, and that our normal concept of explanation does not involve entailment. Second, he argues that the PSR survives if libertarian free will is possible and if God — a necessary being — freely chose to instantiate $C$. The existence of God would then explain $C$ without entailing $C$. 
+
+There are several difficulties with this approach. One difficulty is that libertarian free will may be impossible. Another difficulty is that it may be the case that God’s choices are not contingent. Most theists maintain that God chose the actual world out of the possible worlds. For example, since God is morally perfect, it seems that God would not instantiate a world in which only evil occurred. In fact, it seems that God would instantiate the best possible world (I think there is debate about whether there is such a thing). The question is whether God could have chosen differently. If God could not have chosen differently, then maybe God’s choices are necessary, and therefore $C$ is necessary. This would render the PSR false. I suspect this is just an attack on the idea of libertarian free will and that the theist can probably escape without harm.
+
+
+#### 1.2.5. Infinite chains
+
+We’re now going to switch gears and focus on infinite causal/explanatory chains.[^5] Each element in the chain is explained by its predecessor — this is an internal explanation — but the question arises whether some external explanation is needed for the chain.[^6]
+
+I’ve found that my intuitions change depending on whether the chain extends infinitely into the past. Let’s start with a chain that extends finitely into the past. Consider a particle $p_0$ that comes into existence at time $t = 1$ for no reason. Maybe we take issue with this. Now consider a particle $p_0$ that exists at time $t = 1$ and was created in the following way: for every integer $n \ge 0$, particle $p_{n + 1}$ decayed into particle $p_{n}$ at $t = 2^{-n}$. Thus, there are an infinite number of causes within a finite time interval. Although the existence of each particle is explained by its parent, it will seem to many that the result is the same: the particle came into existence uncaused. Therefore, Pruss says, if we demand a cause for one particle, we should demand a cause for an infinite series of particles.
+
+He then argues that our same intuitions should apply if the infinite number of causes are not squeezed into a finite time interval but are instead spread out over an infinite past. In other words, each cause in the interval (0, 1] is mapped to a negative time while preserving the ordering: $1 \rightarrow 1$, $\frac{1}{2} \rightarrow 0$, $\frac{1}{4} \rightarrow -1$, $\frac{1}{8} \rightarrow -2$, $\dots$. It appears that nothing has changed, so we should either accept or reject the possibility of both scenarios.
+
+However, it is difficult to imagine what an external cause — a reason why the particles are not different particles, or shoes, or books, or why they exist at all — would look like since there is no first time. (The same can be said of the (0, 1] scenario if we assume that time began so that there is no time $t \le 0$.) We must abandon the idea that this external cause explains only the first member of the chain (since there is no first member) and that the cause is temporally prior to its effect (since there is no first time). Pruss writes:
+
+> Kant’s example of a metal ball continually causing a depression in a soft material shows that simultaneous causation is conceivable.  And apart from full or partial reductions of the notion of causation to something like Humean regularity and temporal precedence, I do not think there is much reason to suppose that the cause of a temporal effect must even be in time. [@Craig2009]
+
+(I am not sure exactly what is meant by the last line.) Thus, the cause would have to, in some way, “support” the chain such that if the cause did not exist, the chain would not exist. This is confusing and deserves more thought. 
+
+
+## 2. Weaker explanatory principles
+
+Pruss & Rasmussen utilize a more modest explanatory principle to argue for the existence of a necessary being in their book *Necessary Existence*. They start with the traditional argument from contingency [@PrussRasmussen2018].
+ 
+1. For any contingent concrete things, there is an explanation of the fact that those things exist. 
+2.	Considering all the contingent concrete things that exist, if there is an explanation of the fact that those things exist, then there is a necessary concrete thing.
+3.	(Therefore) There is a necessary concrete being.
+
+Here, “concrete” means “possibly causes something”, i.e., not an abstract object like the number two. This explanatory principle is not as strong as the PSR because it is restricted to facts about existence, so it is not affected by, say, the possibility of unexplained free actions.[^7]
+
+The authors note a few strengths of this argument: it is defensible against traditional objections from Hume [@Hume1779] and Kant [@Kant1787], it is adaptable to a variety of metaphysical frameworks, and the basic reasoning behind the argument is simple and intuitive [@PrussRasmussen2018]. The authors also note a few weaknesses of the argument: it does not allow explanatory loops, it does not allow completely internal explanations, and it does not allow any exceptions to the explanatory principle. This last weakness is the most concerning due to the possibility of chancy events. Although indeterministic/statistical explanations are on the table, some people may not think that these are adequate explanations and will insist that, if there are chancy events, chancy events are unexplained. 
+
+To overcome these weaknesses, the authors introduce several modal arguments. Recall from the discussion of ontological arguments that it is mostly accepted that “possibly necessary” is equivalent to “necessary”. Thus, if it can be shown that a necessary being possibly exists, then it follows that a necessary being exists. We will focus only on the first argument in the book, which Leon [@Oppy2019] rewrites as:
+
+
+1.	Normally, things that can begin to exist can have a cause of the beginning of their existence. 
+2.	Contingent concrete reality can begin to exist. 
+3.	Therefore, there can be a cause of the beginning of contingent concrete reality’s existence. 
+4.	If there can be a cause of the beginning of contingent concrete reality’s existence, then a necessary being exists. 
+5.	Therefore, a necessary being exists. 
+
+
+The primary advantage of this argument is the weakening of the explanatory principle (first premise). This premise is more difficult to reject. It allows for exceptions such as uncaused contingent beings, explanatory loops, and internal explanations. As Leon notes, this allows the principle to be used as a defeasible rule of thumb. Referring to Koons [@Koons2017], Leon writes “To avoid the demands of a well-supported defeasible principle, one must give principled grounds for thinking that it admits of an exception in the particular case at stake.” [@Oppy2019]. (There is debate about whether the PSR should be used as a defeasible rule of thumb — see [@Koons1997; @Oppy1999; @Koons2001].)
+
+The second premise is more controversial. In support of this premise, Rasmussen & Pruss suggest three approaches. First, one might argue that contingent concrete reality began to exist; this is the task of the Kalam argument. Second, one might argue only that it is plausible that contingent concrete reality began to exist; for example, by finding a viable cosmological model in which time begins or by showing that causal finitism is possibly true. Third, one might argue that it is conceivable that contingent concrete reality began to exist, which provides defeasible evidence of possibility. 
+
+The primary critique of the second premise is that it is false if origin essentialism is true. On origin essentialism, if we look at *our* universe, the possible worlds shrink: in *our* universe, it is either true in all possible worlds, or false in all possible worlds, that contingent concrete reality began to exist. Thus, the word “can” should be removed from the second premise. The authors give several responses to this objection. The first response is a short argument against origin essentialism. The second response is a possible workaround, maintaining origin essentialism. Since origin essentialism is a new concept to me, I will have to return to this discussion some other time.
+
+The fourth premise follows from possibly necessary $\rightarrow$ necessary. Leon offers an alternative to a necessary being; he raises the possibility of *factually necessary* beings:
+
+> Perhaps matter-energy (or whatever matter-energy is ultimately composed) is a factually necessary being. According to such a scenario, the contingent dependent beings (e.g., rocks, trees, planets, you and I, etc.) come into being when two or more contingent independent beings (i.e., factually necessary beings) are combined, and the contingent dependent beings cease to exist when they decompose into their elements. However, the fundamental elements of which contingent dependent beings are composed (i.e., the contingent independent beings/factually necessary beings) cannot pass away, for they are at least de facto indestructible—i.e., nothing in the actual world has what it takes to knock them out of existence. Nor can they be created, for they are eternal, existentially independent, and (assuming origin essentialism and their being uncaused at the actual world) essentially uncaused. [@Oppy2019]
+ 
+I am not sure of the reason for this distinction. Why not just say that matter-energy is necessary? 
+
+Another worry for any of these modal arguments is the existence of parody arguments.[^8] Oppy constructs a parody argument for every argument in *Necessary Existence* in his review of the book [@Oppy2019-OPPARP]. 
+
+
+## 3. Conclusion
+
+Oppy has a nice summary of the stances one can take about the foundations/origins of the universe:
+
+> Some philosophers suppose that every possible world shares laws and initial causal history with the actual world. Those philosophers divide into two camps: those who suppose that there is just one possible world; and those who suppose that there are many possible worlds. Philosophers in the first camp suppose that causal laws are deterministic; philosophers in the second camp suppose that causal laws are not deterministic. One thing that these philosophers have in common is that they suppose that, if there is an initial causal state, then that initial causal state, and anything that exists in that initial causal state, is necessary: if these philosophers are naturalists, then they suppose that the initial natural state is necessary; if these philosophers are theists, then they suppose that the initial divine state is necessary. Of course, other philosophers suppose that, if there is an initial causal state, then that initial causal state is contingent; and these philosophers divide further on the question of whether there is anything that exists in the initial state that is necessary. It is to be expected that what philosophers have to say about the kinds of arguments that Pruss and Rasmussen discuss is determined by their background views about modality, causation, ontology, epistemology, axiology, and so forth. [@Oppy2019-OPPARP]
+
+Intuitions clash. For example, physicist Sean Carroll says, "I think that brute facts are things we need to accept; the universe is probably one of them." [@Carroll2016]. Perhaps all these options are equally strange, but the idea that the only explanation of the universe is brute contingency seems the most strange to me. 
+
+Non-theists can claim that there is a concrete necessary being (or beings); possible candidates are the universe, fields, particles, etc. In this sense, theists and non-theists can agree on some aspects of the fundamental structure of reality. Theists have an additional belief: that there is only one concrete necessary being that has properties consistent with those traditionally ascribed to God. The question thus arises: is there any way to choose between these views? This question needs to be treated on its own, separate from the cosmological argument.
+
+
+
+
+
+[^1]: We are referred to Oppy’s book *Philosophical Perspectives on Infinity* for a detailed treatment of the PSR. Many of Oppy’s thoughts on infinity are also apparently found in *Philosophical Perspectives on Infinity*. I should have read this book before *Arguing About Gods*.
+
+[^2]: Some interpretations of quantum mechanics are deterministic (such as the pilot wave theory) and others are indeterministic. The correct interpretation of quantum mechanics is unknown. (See Tim Maudlin [here](https://youtu.be/hC3ckLqsL5M)).
+
+[^3]: Many of those that do not accept the PSR also do not accept the libertarian account of free will, in which case this objection is irrelevant. Although I haven’t studied free will in any detail, I am open to the idea that my choices are not determined by the initial conditions of the universe. It is, of course, a difficult question.
+
+[^4]: My wife, who is not familiar with (or very interested in) this discussion, came up with essentially the same answer when I presented the dilemma to her.
+
+[^5]: The most famous explanatory regress is the following explanation for why the Earth does not fall: it sits on the back of a turtle, which sits on the back of a turtle, which sits on the back of a turtle, and so on ad infinitum. It remains unexplained why the entire stack of turtles does not fall, why the stack is comprised of turtles instead of giraffes, etc. Here is another example involving turtles: I see the reflection of a turtle in a mirror; upon turning away from the mirror to view the turtle directly, I see that the light came from another mirror — a reflection of a reflection — and so on ad infinitum.
+
+[^6]: One way to rule out infinite chains is to accept finitism (the denial of the existence of actual infinities in the real world) or causal finitism (the denial of the existence of infinite causal chains). I like causal finitism, but for now, we are assuming that both finitism and causal finitism are false.
+
+[^7]: Also note that this is closer to a modal version of the Kalam argument since we are dealing with *causes* and things beginning to exist.
+
+[^8]: Recall the ontological argument (It is possible that a necessary being exists; therefore, a necessary being exists.) and its parody (It is possible that a necessary being does not exist; therefore, a necessary being does not exist.). The parody argument is taken to show that the modal ontological argument is unsound. We may as well replace the argument with its conclusion: a necessary being exists.
