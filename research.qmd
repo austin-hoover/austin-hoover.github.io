@@ -23,10 +23,13 @@ We are also using these measurements to identify and explain the origin of featu
   
 ## Phase space painting 
  
- 
-The intensity of a charged particle beam can be increased by a factor of one thousand or more by repeatedly injecting pulses from a linac into a circular accelerator (ring). Although space charge is not as strong in the ring due to the higher beam energy,[^1] its effects accumulate over multiple turns. [...]
+Particles in a beam oscillate with two degrees of freedom in the transverse plane. The frequencies $\nu_{1, 2}$ of these oscillations must be carefully chosen to avoid resonances driven by nonlinear magnetic fields in the ring. Nonlinear space charge forces generate a frequency spread in the beam, causing some particles to cross resonance stop bands. This places a limit on the beam intensity.
 
-[^1]: The force between two charges moving at speed $v$ perpendicular to the line between the charges approaches zero as $v$ approaches the speed of light. See [http://kirkmcd.princeton.edu/examples/comoving.pdf]( http://kirkmcd.princeton.edu/examples/comoving.pdf).
+One way to address this problem is to shape the beam density, modulating the frequency spread. Intense beams are produced in a ring by repeatedly injecting pulses from a linac into the ring. The distance and angle between the injected and circulating beams varied during this process. It is as if one was moving a paintbrush through position-momentum space (phase space), and for this reason, the technique is called *phase space painting*, or simply *painting*. We have proposed a new painting method to generate a uniform-density beam with a small frequency spread. Particles in the beam swirl in a vortex pattern within an elliptical boundary. I call the method *vortex painting*. 
+
+Vortex painting may enable higher beam intensities. Additionally, the beam it produces lives on a two-dimensional plane in four-dimensional phase space; under a simple linear transformation, its spatial distribution can be flattened. This suggests its use in the early stages of a high-luminosity hadron collider. 
+
+Our current focus is to perform an experiment at the SNS to demonstrate the feasibility of vortex painting in a large-scale, high-intensity accelerator. There are also plenty of beam dynamics questions that can be answered in simulation.
 
 
 ## Phase space tomography
