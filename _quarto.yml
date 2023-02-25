@@ -25,3 +25,4 @@ format:
         html-math-method: katex
         grid:
             body-width: 800px
+            

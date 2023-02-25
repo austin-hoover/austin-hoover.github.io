@@ -21,7 +21,7 @@ html:
 
 **A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [Measurements of the five-dimensional phase space distribution of an intense ion beam](https://arxiv.org/pdf/2208.06000.pdf). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
 
-A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, and N. Milas. [Open XAL Status Report 2022], in Proc. IPAC'22, Bangkok, Thailand (2022).
+A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, and N. Milas. [Open XAL Status Report 2022](), in Proc. IPAC'22, Bangkok, Thailand (2022).
 
 **A. Hoover**, N. J. Evans, T. Gorlov and J. A. Holmes. [Development of an injection-painted self-consistent beam at the Spallation Neutron Source](https://epaper.kek.jp/hb2021/papers/moac3.pdf). 64th ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams, Batavia, IL, USA (2021).
 
