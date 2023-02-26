@@ -4,6 +4,7 @@ description: "Kalam Cosmological Arguments"
 date: 2021-09-15
 author: Austin Hoover
 categories: [cosmological arguments, Kalam, infinity]
+image: hubble_deep_field.jpg
 bibliography: references.bib
 csl: american-physics-society.csl
 
@@ -19,10 +20,11 @@ The first step in a cosmological argument is to assert a Causal Principle (CP) �
 These arguments raise difficult questions about time, causation, infinity, physics, etc., and it’s not realistic to have a firm grasp on all these topics without further study. My goal here is to create a sort of roadmap, identifying the main points of contention.
 
 Pruss notes four main hurdles for cosmological arguments:
-* *Glendower Problem*: How wide should the scope of the CP or PSR be? 
-* *Regress Problem*: Which types of infinite regresses are possible? 
-* *Taxicab Problem*: What caused the first cause?
-* *Gap Problem*: How does one identify the first cause with God? 
+
+* *The Glendower Problem*: How wide should the scope of the CP or PSR be? 
+* *The Regress Problem*: Which types of infinite regresses are possible? 
+* *The Taxicab Problem*: What caused the first cause?
+* *The Gap Problem*: How does one identify the first cause with God? 
 
 The arguments can be classified according to how they address these problems. The Kalam argument uses a CP to rule out an infinite past; the Thomistic argument allows for an infinite past but uses a CP to rule out infinite “vertical” causal chains; the Leibnizian argument allows for infinite causal chains but uses a PSR to demand an external explanation for such chains. I decided to dedicate one post to each of these arguments, with a final post on the Gap Problem.
 

@@ -1,8 +1,9 @@
 ---
 listing:
-  contents: posts
-  sort: "date desc"
-  categories: true
-  type: table
-  date-format: YYYY-MM-DD
+    contents: posts
+    sort: "date desc"
+    date-format: YYYY-MM-DD
+    table-hover: true
+    type: table
+    fields: [title, date]
 ---

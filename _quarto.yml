@@ -12,6 +12,7 @@ website:
               href: publications.qmd
             - text: "Blog"
               href: blog.qmd
+    google-analytics: "G-NS0H6D6VKL"
 format:
     html:
         theme: 
@@ -22,7 +23,6 @@ format:
         toc-location: right
         title-block-categories: false
         shift-heading-level-by: 0
-        html-math-method: katex
+        html-math-method: mathjax
         grid:
-            body-width: 800px
-            
+            body-width: 775px

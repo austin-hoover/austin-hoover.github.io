@@ -9,7 +9,6 @@ csl: american-physics-society.csl
 
 ---
 
-
 [Leibnizian](https://plato.stanford.edu/entries/leibniz/) cosmological arguments conclude that there is a necessary being (something that must exist) which explains the existence of contingent beings (things that do not have to exist). Such arguments address the question “Why does anything exist?” and generally utilize a principle of sufficient reason (PSR): *every contingent fact has an explanation*. Some recent formulations use a weaker explanatory principle: *every contingent concrete being has an explanation*, where concrete means “possibly causes something”, or even a modal version: *every contingent concrete being possibly has an explanation*.
 
 

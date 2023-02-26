@@ -1,34 +1,42 @@
 /*-- scss:functions --*/
 
 
+
+
 /*-- scss:defaults --*/
+
 $primary: SteelBlue;
+$font-family-sans-serif: "Georgia";
+$font-size-root: 15.25px;
+$figure-caption-font-size: 15.0px !important;
+
 $navbar-bg: #181818;
 $body-bg: #181818;
 $body-color: rgb(200, 200, 200);
 $figure-caption-color: rgb(106, 106, 106) !important;
 $code-block-bg: rgb(40, 40, 40);
 
-$font-size-root: 15px !important;
-$figure-caption-font-size: 14.5px !important;
-$h1-font-size: 232%;
-$headings-font-weight: 425;
+
 
 /*-- scss:rules --*/
 
 .navbar {
-    padding-bottom: 3px;
-    padding-top: 3px;
-    border-bottom-width: 0px !important
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    border-bottom-width: 0px !important;
 }
-
-// .katex {
-//     font-size: 116% !important;
-// }
 
 table {
-    font-size: 13.5px !important;
+    font-size: 13.0px !important;
 }
+
+p {
+    text-align: justify;
+}
+
+// pre, code {
+//     font-size: 12.75px !important;
+// }
 
 // tbody tr:hover {
 //     background: rgb(64, 64, 64) !important;

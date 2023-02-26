@@ -1,0 +1,69 @@
+---
+title: Reading list
+description: Some books and articles I've read.
+author: Austin Hoover
+date: '2021-01-01'
+image: books.jpg
+categories: [books]
+---
+
+* Accelerator physics
+    * *Accelerator Physics* — S. Y. Lee
+    * *Introduction to the Physics of High Energy Accelerators* — D. Edwards and M. Syphers
+    * *Measurement and Control of Charged Particle Beams* — M. Minty and F. Zimmerman
+    * *Particle Accelerator Physics* — H. Wiedemann
+    * *RF Linear Acceleratos* — T. Wangler
+    * *Space Charge Physics for Particle Accelerators* — I. Hofmann
+    * *Theory and Design of Charged Particle Beams* — M. Reiser
+* Computer science
+    * *Algorithms* — R. Sedgewick and K. Wayne 
+    * *Elements of Programming Interviews* — A. Aziz, T. Lee, and A. Prakash
+* Fiction
+    * *The Alchemist* — Paulo Coelho
+    * *Crime and Punishment* — Fyodor Dostoevsky
+    * *Fahrenheit 451* — Ray Bradbury
+    * *No Country for Old Men* — Cormac McCarthy
+    * *The Road* — Cormac McCarthy
+    * *Stories of Your Life and Others* — Ted Chiang
+* History
+    * *What Is Real?: The Unfinished Quest for the Meaning of Quantum Physics* — Adam Becker
+* Machine learning
+    * *Neural Networks and Deep Learning* — M. Nielsen
+    * *Pattern Recognition and Machine Learning* — C. Bishop
+* Mathematics
+    * *Mathematical Methods for Physicists* — G. Arfken, F. Weber, and F. Harris
+    * *Mathematics of Classical and Quantum Physics* — F. Byron and R. Fuller
+* Miscellaneous
+    * *Envisioning Information* — Edward Tufte
+* Philosophy
+    * *Arguing About Gods* — Graham Oppy
+    * *Change in View* — Gilbert Harman
+    * *The Emergent Multiverse* — David Wallace
+    * *Five Proofs of the Existence of God* — Edward Feser
+    * *Infinity, Causation, and Paradox* — Alexander Pruss
+    * *Knowledge and Christian Belief* — Alvin Plantinga
+    * *Necessary Existence* — Alexander Pruss and Joshua Rasmussen
+    * *Taking Pascal's Wager* — Michael Rota
+    * *Time and Chance* — David Albert
+    * *Philosophy of Physics: Quantum Theory* — Tim Maudlin
+    * *Philosophy of Physics: Space and Time* — Tim Maudlin
+* Physics
+    * *Astrophysics in a Nutshell* — D. Maoz
+    * *Classical Electrodynamics* — J. Jackson
+    * *Classical Electromagnetism* — J. Franklin
+    * *Classical Mechanics* — S. Goldstein
+    * *Classical Mechanics* — J. Taylor
+    * *Introduction to Electrodynamics* — R. Griffiths
+    * *Introduction to Quantum Mechanics* — R. Griffiths
+    * *Introduction to Elementary Particle Physics* — R. Griffiths
+    * *Introduction to Thermal Physics* — D. Schroeder
+    * *Modern Elementary Particle Physics* — G. Kane
+    * *Modern Quantum Mechanics* — J. Sakurai
+    * *Optical Coherence and Quantum Optics* — I. Mandel and E. Wolf
+    * *Quantum Mechanics: Concepts and Applications* — N. Zettili
+    * *Statistical Physics of Particles* — M. Kardar
+* Religion
+    * *Mere Christianity* — C. S. Lewis
+* Sociology
+    * *The Disappearance of Childhood* — Niel Postman
+    * *Wealth, Poverty, and Politics* — Thomas Sowell
