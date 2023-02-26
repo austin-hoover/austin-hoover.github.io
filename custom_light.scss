@@ -20,10 +20,14 @@ $navbar-bg: rgb(50, 50, 50);
     padding-bottom: 3px !important;
     padding-top: 3px !important;
     border-bottom-width: 0px !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+// This will change table font size (example: display Pandas DataFrame.) But
+// it also changes blog post listings table under austin-hoover.github.io/blog.html.
+// I don't know how to fix this yet.
 table {
-    font-size: 13.0px !important;
+    // font-size: 13.0px !important;
 }
 
 p {
