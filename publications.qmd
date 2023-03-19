@@ -8,7 +8,7 @@ html:
 ## Journal articles
 
 
-**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [High-resolution measurement of the five-dimensional phase space distribution of a hadron beam](https://arxiv.org/abs/2301.04178). In submission. (2023).
+**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [Analysis of a hadron beam in five-dimensional phase space](https://arxiv.org/abs/2301.04178). In submission. (2023).
 
 **A. Hoover**, and N. J. Evans. [Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805). Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, Volume 1041 (2022).
 
