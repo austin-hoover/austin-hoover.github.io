@@ -36,12 +36,14 @@ A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levi
 
 
 
-## Presentations
+## Presentations and posters
 
 
 [Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](). 5th ICFA Mini-Workshop on Space Charge, Knoxville, TN, USA (2022).
 
 [Measurements of the five-dimensional phase space distribution of an intense ion beam](). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
+
+[Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance](). ORNL Neutron Science Advisory Board, Oak Ridge, TN, USA (2022).
 
 [Accelerator research and development at the Spallation Neutron Source (SNS)](). Particle Accelerators: Technology and Applications (Nuclear Engineering 588) at the University of Tennessee, Knoxville, TN, USA (2022).
 
