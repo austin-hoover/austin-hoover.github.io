@@ -23,6 +23,10 @@ $navbar-bg: rgb(50, 50, 50);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.math.display .MathJax  {
+  font-size: 16.25px !important;
+}
+
 // This will change table font size (example: display Pandas DataFrame.) But
 // it also changes blog post listings table under austin-hoover.github.io/blog.html.
 // I don't know how to fix this yet.
@@ -32,6 +36,14 @@ table {
 
 p {
     text-align: justify;
+}
+
+p, li { 
+    color: rgb(40, 40, 40) !important;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    color: black !important;
 }
 
 // pre, code {

@@ -19,6 +19,9 @@ We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](htt
 We are also using these measurements to study features in six-dimensional phase space — features that are invisible in low-dimensional measurements. For example, we have observed a hollow $p_z$ distribution at the center of the $x$-$p_x$-$y$-$p_y$ plane; we know this feature is driven by space charge but do not fully understand its origin or its impact on the long-term beam dynamics.
 
 
+![Fig. 1. A measured four-dimensional phase space distribution.](./images/fig12.png)
+
+
 ## Phase space tomography
 
 [...]
