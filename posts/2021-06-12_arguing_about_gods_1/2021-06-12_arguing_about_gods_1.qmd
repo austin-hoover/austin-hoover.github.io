@@ -1,6 +1,5 @@
 ---
-title: "Arguing about gods (part 1)"
-description: "Preliminary Considerations"
+title: "Arguing about gods: preliminary considerations"
 date: 2021-06-12
 author: Austin Hoover
 categories: [arguments, theism]

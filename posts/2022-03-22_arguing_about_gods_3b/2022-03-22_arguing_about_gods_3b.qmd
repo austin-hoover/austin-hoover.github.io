@@ -1,6 +1,5 @@
 ---
-title: "Arguing about gods (part 3b)"
-description: "Leibnizian Cosmological Arguments"
+title: "Arguing about gods: Leibnizian cosmological arguments"
 date: 2022-03-22
 author: Austin Hoover
 categories: [cosmological arguments, Leibniz, infinity]
