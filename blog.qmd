@@ -6,4 +6,5 @@ listing:
     table-hover: true
     type: table
     fields: [title, date]
+    categories: true
 ---
