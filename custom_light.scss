@@ -8,13 +8,12 @@
 $primary: SteelBlue;
 $font-family-sans-serif: "Georgia";
 $font-size-root: 15.25px;
-$figure-caption-font-size: 15.0px !important;
-
-$figure-caption-color: rgb(150, 150, 150) !important;
+$figure-caption-font-size: 14.75px;
+$figure-caption-color: rgb(150, 150, 150);
 $navbar-bg: rgb(50, 50, 50);
 
 
-/*-- scss:rules --*/
+// /*-- scss:rules --*/
 
 .navbar {
     padding-bottom: 3px !important;
@@ -27,12 +26,12 @@ $navbar-bg: rgb(50, 50, 50);
   font-size: 16.25px !important;
 }
 
-// This will change table font size (example: display Pandas DataFrame.) But
-// it also changes blog post listings table under austin-hoover.github.io/blog.html.
-// I don't know how to fix this yet.
-table {
-    // font-size: 13.0px !important;
-}
+// // This will change table font size (example: display Pandas DataFrame.) But
+// // it also changes blog post listings table in "blog.qmd".
+// // I don't know how to fix this yet.
+// table {
+//     // font-size: 13.0px !important;
+// }
 
 p {
     text-align: justify;
@@ -45,7 +44,3 @@ p, li {
 h1, h2, h3, h4, h5, h6, h7 {
     color: black !important;
 }
-
-// pre, code {
-//     font-size: 12.75px !important;
-// }
