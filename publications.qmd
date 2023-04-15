@@ -5,54 +5,63 @@ html:
 ---
 
 
-## Journal articles
+## Publications
+
+* **A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". PRAB, submitted (2023). 
+[[preprint](https://arxiv.org/abs/2301.04178)] 
+[[data]()]
+
+* **A. Hoover**. "Towards the production of a self-consistent phase space distribution". PhD Diss., University of Tennessee (2022). 
+[[published](https://trace.tennessee.edu/utk_graddiss/7228)] 
+[[slides]()]
+
+* **A. Hoover**, N. Evans. "Four-dimensional emittance measurement at the Spallation Neutron Source." Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1041 (2022): 167376 
+[[preprint](https://arxiv.org/abs/2204.08303)] 
+[[published](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805)]
+
+* **A. Hoover**, N. Evans, J. Holmes. "Computation of the matched envelope of the Danilov distribution." Physical Review Accelerators and Beams 24.4 (2021): 044201.
+[[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 
-**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [Analysis of a hadron beam in five-dimensional phase space](https://arxiv.org/abs/2301.04178). In submission. (2023).
+## Presentations 
 
-**A. Hoover**, and N. J. Evans. [Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805). Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, Volume 1041 (2022).
+* **A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Detailed characterization of a five-dimensional phase space distribution". International Particle Accelerator Conference (2023). 
 
-**A. Hoover**, N. J. Evans, and J. A. Holmes. [Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201). Physical Review Accelerators and Beams 24.4 (2021): 044201.
+* **A. Hoover**. "Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation". ICFA Mini-Workshop on Space Charge (2022). 
+[[slides](./files/2022-10-26_space_charge_workshop.pdf)]
+
+* **A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance". ORNL Neutron Science Advisory Board (2022). 
+[[poster]()]
+
+* **A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. "Measurements of the five-dimensional phase space distribution of an intense ion beam". North American Particle Accelerator Conference (2022). 
+[[paper](https://accelconf.web.cern.ch/napac2022/papers/frxd3.pdf) 
+[slides](https://accelconf.web.cern.ch/napac2022/talks/frxd3_talk.pdf)]
+
+* K. Ruisard, A. Aleksandrov, S. Cousineau, **A. Hoover**, A. Zhukov. "Model/measurement comparison of the transverse phase space distribution of an RFQ-generated bunch at the SNS BTF". North American Particle Accelerator Conference (2022).
+[[paper](https://accelconf.web.cern.ch/napac2022/papers/weye5.pdf) 
+[[slides](https://accelconf.web.cern.ch/napac2022/talks/weye5_talk.pdf)]
+
+* **A. Hoover**. "Accelerator research and development at the Spallation Neutron Source". Lecture for graduate course (Particle Accelerators: Technology and Applications) at the University of Tennessee. (2022) ([slides]())
+
+* A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas. "Open XAL Status Report 2022". International Particle Accelerator Conference (2022). 
+[[paper](https://accelconf.web.cern.ch/ipac2022/papers/tupotk029.pdf)]
+
+* **A. Hoover**. "Painting a self-consistent beam". Spallation Neutron Source Accelerator and Target Advisory Committee Review (2021). 
+[[slides]()]
+
+* **A. Hoover**, N. Evans, T. Gorlov, J. Holmes. "Development of an injection-painted self-consistent beam at the Spallation Neutron Source". ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams (2021). [
+[paper](https://epaper.kek.jp/hb2021/papers/moac3.pdf)]
+[[slides]()]
+
+* **A. Hoover**, N. Evans. "Simulation of 4D Emittance Measurement at the Spallation Neutron Source". International Particle Accelerator Conference (2021). 
+[[paper](https://accelconf.web.cern.ch/ipac2021/papers/thpab180.pdf)]
+
+* **A. Hoover**, N. Evans, J. Holmes. "Computation of the matched envelope of the Danilov distribution". APS April Meeting (2021).
+[[slides]()]
 
 
 
-## Conference proceedings
+## Articles
 
-
-**A. Hoover**, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. [Measurements of the five-dimensional phase space distribution of an intense ion beam](https://arxiv.org/pdf/2208.06000.pdf). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
-
-A. Zhukov, **A. Hoover**, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, and N. Milas. [Open XAL Status Report 2022](), in Proc. IPAC'22, Bangkok, Thailand (2022).
-
-**A. Hoover**, N. J. Evans, T. Gorlov and J. A. Holmes. [Development of an injection-painted self-consistent beam at the Spallation Neutron Source](https://epaper.kek.jp/hb2021/papers/moac3.pdf). 64th ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams, Batavia, IL, USA (2021).
-
-**A. Hoover** and N. J. Evans. [Simulation of 4D Emittance Measurement at the Spallation Neutron Source](https://accelconf.web.cern.ch/ipac2021/papers/thpab180.pdf). 12th International Particle Accelerator Conference (IPAC'21), Campinas, SP, Brazil (2021).
-
-
-
-## Dissertation
-
-
-**A. Hoover**. [Towards the production of a self-consistent phase space distribution](https://trace.tennessee.edu/utk_graddiss/7228). PhD diss., University of Tennessee (2022).
-
-
-
-## Presentations and posters
-
-
-[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](). 5th ICFA Mini-Workshop on Space Charge, Knoxville, TN, USA (2022).
-
-[Measurements of the five-dimensional phase space distribution of an intense ion beam](). North American Particle Accelerator Conference (NAPAC), Albuquerque, NM, USA (2022).
-
-[Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance](). ORNL Neutron Science Advisory Board, Oak Ridge, TN, USA (2022).
-
-[Accelerator research and development at the Spallation Neutron Source (SNS)](). Particle Accelerators: Technology and Applications (Nuclear Engineering 588) at the University of Tennessee, Knoxville, TN, USA (2022).
-
-[Towards the production of a self-consistent phase space distribution](). University of Tennessee PhD Defense, Knoxville, TN, USA (2022).
-
-[Painting a self-consistent beam](). SNS Accelerator and Target Advisory Committee Review, Oak Ridge, TN, USA (2022).
-
-[Development of an injection-painted self-consistent beam in the Spallation Neutron Source ring](). 64th ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams, Batavia, IL, USA (2021).
-
-[Computation of the matched envelope of the Danilov distribution](). APS April Meeting, Virtual (2021).
-
-[Parameterization of linear coupled motion](). SNS Accelerator Physics Group Meeting, Oak Ridge, TN, USA (2021).
+* K. Ruisard, A. Aleksandrov, **A. Hoover**. "Six Dimensional Distributions at the SNS Beam Test Facility". APS Division of Physics of Beams Annual Newsletter (2022). 
+[[published](./files/2022_APS_DPB.pdf)]
