@@ -26,7 +26,7 @@ html:
 ## Presentations
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "High-dimensional phase space measurements at the SNS Beam Test Facility". ORNL Triennial Review (2023).
-[[poster]](./files/2023_ORNL_triennial.pdf)
+[[poster](./files/2023_ORNL_triennial.pdf)]
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Detailed characterization of a five-dimensional phase space distribution". International Particle Accelerator Conference (2023). 
 [[poster](./files/2023_IPAC_poster.pdf)]
