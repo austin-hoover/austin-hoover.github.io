@@ -32,6 +32,11 @@ html:
 [[poster](./files/2023_IPAC_poster.pdf)]
 [[paper](./files/2023_IPAC_paper.pdf)]
 
+* K. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau. "Measurements at peak operational beam current in the SNS beam test facility". International Particle Accelerator Conference (2023).
+[[paper](./files/2023_IPAC_RFQ_paper.pdf)]
+
+* N. Evans, A. Hoover, T. Gorlov, V. Morozov. "Phase Space Painting of a Self-Consistent Danilov Distribution in the SNS Ring". International Particle Accelerator Conference (2023).
+
 * A. Hoover. "Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation". ICFA Mini-Workshop on Space Charge (2022). 
 [[slides](./files/2022_SCW.pdf)]
 
