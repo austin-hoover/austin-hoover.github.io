@@ -7,7 +7,7 @@ html:
 
 ## Publications
 
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". PRAB, accepted (2023). 
+* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". Physical Review Accelerators and Beams, accepted (2023). 
 [[preprint](https://arxiv.org/abs/2301.04178)] 
 [[data](https://zenodo.org/record/7724034#.ZDsWlS-B1pQ)]
 
