@@ -5,15 +5,11 @@ html:
 ---
 
 
-## Publications
+## Journal articles
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". Physical Review Accelerators and Beams, accepted (2023). 
 [[preprint](https://arxiv.org/abs/2301.04178)] 
 [[data](https://zenodo.org/record/7724034#.ZDsWlS-B1pQ)]
-
-* A. Hoover. "Towards the production of a self-consistent phase space distribution". PhD Diss., University of Tennessee (2022). 
-[[published](https://trace.tennessee.edu/utk_graddiss/7228)] 
-[[slides]()]
 
 * A. Hoover, N. Evans. "Four-dimensional emittance measurement at the Spallation Neutron Source". Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1041 (2022): 167376 
 [[preprint](https://arxiv.org/abs/2204.08303)] 
@@ -23,7 +19,14 @@ html:
 [[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 
-## Presentations
+## Dissertation
+
+* A. Hoover. "Towards the production of a self-consistent phase space distribution". PhD Diss., University of Tennessee (2022). 
+[[published](https://trace.tennessee.edu/utk_graddiss/7228)] 
+[[slides]()]
+
+
+## Conference/workshop/review
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "High-dimensional phase space measurements at the SNS Beam Test Facility". ORNL Triennial Review (2023).
 [[poster](./files/2023_ORNL_triennial.pdf)]
@@ -42,6 +45,8 @@ html:
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance". ORNL Neutron Science Advisory Board (2022). 
 [[poster]()]
+
+* K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov (2022). "Observation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility". International Linear Accelerator Conference (2022).
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. "Measurements of the five-dimensional phase space distribution of an intense ion beam". North American Particle Accelerator Conference (2022). 
 [[paper](https://accelconf.web.cern.ch/napac2022/papers/frxd3.pdf) 
@@ -70,7 +75,7 @@ html:
 [[slides]()]
 
 
-## Articles
+## Newsletter
 
 * K. Ruisard, A. Aleksandrov, A. Hoover. "Six Dimensional Distributions at the SNS Beam Test Facility". APS Division of Physics of Beams Annual Newsletter (2022). 
 [[published](./files/2022_APS_DPB.pdf)]
