@@ -1,8 +1,11 @@
 ---
+title: Publications and presentations
 html: 
     format:
         toc: true
 ---
+
+A PDF version of my CV is [here](./files/cv.pdf).
 
 
 ## Journal articles
