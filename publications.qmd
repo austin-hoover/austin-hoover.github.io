@@ -19,17 +19,13 @@ html:
 [[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 
-## Dissertation
+## Newsletter articles
 
-* A. Hoover. "Towards the production of a self-consistent phase space distribution". PhD Diss., University of Tennessee (2022). 
-[[published](https://trace.tennessee.edu/utk_graddiss/7228)] 
-[[slides]()]
+* K. Ruisard, A. Aleksandrov, A. Hoover. "Six Dimensional Distributions at the SNS Beam Test Facility". APS Division of Physics of Beams Annual Newsletter (2022). 
+[[published](./files/2022_APS_DPB.pdf)]
 
 
-## Conference/workshop/review
-
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "High-dimensional phase space measurements at the SNS Beam Test Facility". ORNL Triennial Review (2023).
-[[poster](./files/2023_ORNL_triennial.pdf)]
+## Conference and workshop proceedings
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Detailed characterization of a five-dimensional phase space distribution". International Particle Accelerator Conference (2023). 
 [[poster](./files/2023_IPAC_poster.pdf)]
@@ -43,9 +39,6 @@ html:
 * A. Hoover. "Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation". ICFA Mini-Workshop on Space Charge (2022). 
 [[slides](./files/2022_SCW.pdf)]
 
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance". ORNL Neutron Science Advisory Board (2022). 
-[[poster]()]
-
 * K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov (2022). "Observation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility". International Linear Accelerator Conference (2022).
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov. "Measurements of the five-dimensional phase space distribution of an intense ion beam". North American Particle Accelerator Conference (2022). 
@@ -56,13 +49,8 @@ html:
 [[paper](https://accelconf.web.cern.ch/napac2022/papers/weye5.pdf)]
 [[slides](https://accelconf.web.cern.ch/napac2022/talks/weye5_talk.pdf)]
 
-* A. Hoover. "Accelerator research and development at the Spallation Neutron Source". Lecture for graduate course (Particle Accelerators: Technology and Applications) at the University of Tennessee. (2022) ([slides]())
-
 * A. Zhukov, A. Hoover, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas. "Open XAL Status Report 2022". International Particle Accelerator Conference (2022). 
 [[paper](https://accelconf.web.cern.ch/ipac2022/papers/tupotk029.pdf)]
-
-* A. Hoover. "Painting a self-consistent beam". Spallation Neutron Source Accelerator and Target Advisory Committee Review (2021). 
-[[slides]()]
 
 * A. Hoover, N. Evans, T. Gorlov, J. Holmes. "Development of an injection-painted self-consistent beam at the Spallation Neutron Source". ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams (2021). [
 [paper](https://epaper.kek.jp/hb2021/papers/moac3.pdf)]
@@ -75,7 +63,25 @@ html:
 [[slides]()]
 
 
-## Newsletter
+## Lectures
 
-* K. Ruisard, A. Aleksandrov, A. Hoover. "Six Dimensional Distributions at the SNS Beam Test Facility". APS Division of Physics of Beams Annual Newsletter (2022). 
-[[published](./files/2022_APS_DPB.pdf)]
+* A. Hoover. "Accelerator research and development at the Spallation Neutron Source". Lecture for graduate course (Particle Accelerators: Technology and Applications) at the University of Tennessee. (2022) ([slides]())
+
+
+## Internal reviews and technical notes
+
+* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "High-dimensional phase space measurements at the SNS Beam Test Facility". ORNL Triennial Review (2023).
+[[poster](./files/2023_ORNL_triennial.pdf)]
+
+* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance". ORNL Neutron Science Advisory Board (2022). 
+[[poster]()]
+
+* A. Hoover. "Painting a self-consistent beam". Spallation Neutron Source Accelerator and Target Advisory Committee Review (2021). 
+[[slides]()]
+
+
+## Dissertation
+
+* A. Hoover. "Towards the production of a self-consistent phase space distribution". PhD Diss., University of Tennessee (2022). 
+[[published](https://trace.tennessee.edu/utk_graddiss/7228)] 
+[[slides]()]
