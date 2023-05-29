@@ -26,6 +26,9 @@ $navbar-bg: rgb(50, 50, 50);
   font-size: 16.25px !important;
 }
 
+.math.inline .MathJax  {
+}
+
 // // This will change table font size (example: display Pandas DataFrame.) But
 // // it also changes blog post listings table in "blog.qmd".
 // // I don't know how to fix this yet.
