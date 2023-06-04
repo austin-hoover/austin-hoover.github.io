@@ -106,7 +106,7 @@ Notice the drastic change in energy distribution --- unimodal to bimodal --- as 
 
 We would like to explain the origin of all features we find in the distribution. From direct measurements at lower beam currents, we know the space charge drives the energy hollowing in Fig. 10.
 
-![Fig. 11. Sliced energy distribution vs. beam current. Credit: Kiersten Ruisard.](./figures/waterfall.png){width=475px fig-align=center}
+![Fig. 11. Sliced energy distribution vs. beam current. Source: Kiersten Ruisard.](./figures/waterfall.png){width=475px fig-align=center}
 
 Furthermore, we are confident that the energy hollowing develops in the RFQ rather than the MEBT. I am currently using simulations to study the dynamics that drive the hollowing in the RFQ.
 
