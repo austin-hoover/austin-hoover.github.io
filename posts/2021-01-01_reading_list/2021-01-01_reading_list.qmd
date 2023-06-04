@@ -22,6 +22,8 @@ categories: [books]
     * *The Alchemist* — Paulo Coelho
     * *Crime and Punishment* — Fyodor Dostoevsky
     * *Fahrenheit 451* — Ray Bradbury
+    * *Ficciones* — Jorge Luis Borges
+    * *Moby Dick* — Herman Melville
     * *No Country for Old Men* — Cormac McCarthy
     * *The Road* — Cormac McCarthy
     * *Stories of Your Life and Others* — Ted Chiang
@@ -43,10 +45,10 @@ categories: [books]
     * *Infinity, Causation, and Paradox* — Alexander Pruss
     * *Knowledge and Christian Belief* — Alvin Plantinga
     * *Necessary Existence* — Alexander Pruss and Joshua Rasmussen
-    * *Taking Pascal's Wager* — Michael Rota
-    * *Time and Chance* — David Albert
     * *Philosophy of Physics: Quantum Theory* — Tim Maudlin
     * *Philosophy of Physics: Space and Time* — Tim Maudlin
+    * *Taking Pascal's Wager* — Michael Rota
+    * *Time and Chance* — David Albert
 * Physics
     * *Astrophysics in a Nutshell* — D. Maoz
     * *Classical Electrodynamics* — J. Jackson
