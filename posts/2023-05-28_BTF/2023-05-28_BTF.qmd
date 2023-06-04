@@ -81,7 +81,7 @@ Add one more dimension. How is a slice defined now? Well, we could look at the i
 
 Since slices can be projected and projections can be sliced, we must distinguish between a full projection and a *partial* projection --- the projection of a slice. More complex slicing/projection sequences are obviously possible in five- or six-dimensional spaces.
 
-The "slice matrix" plot in Fig. 8 is one way to visualize the effect of slicing a four-dimensional distribution. A two-dimensional projection is on the bottom right. Three-dimensional projections --- obtained by slicing only one dimension --- are on the bottom and right panels. The four-dimensional distribution, obtained by slicing two dimensions, is shown on the top left.
+The "slice matrix" plot in Fig. 8 is one way to visualize the effect of slicing a four-dimensional distribution. A two-dimensional projection is on the bottom right. Three-dimensional projections --- obtained by slicing only one dimension --- are on the bottom and right panels. The four-dimensional distribution --- obtained by slicing two dimensions --- is shown on the top left.
 
 ![Fig. 8. A four-dimensional slice of a measured five-dimensional distribution. Three- and two-dimensional projections are shown on the side panels.](./figures/slice_xp-yp_view_y-w.png)
 
