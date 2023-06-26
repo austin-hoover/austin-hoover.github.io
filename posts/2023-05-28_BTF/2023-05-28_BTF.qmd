@@ -35,7 +35,7 @@ The LEDA (Low Energy Test Accelerator) experiment at Los Alamos National Laborat
 
 ## 2. High-dimensional phase space measurements
 
-We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac[@Zhang_2018]. A diagram of the BTF is below.
+We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac[@Zhang_2020]. A diagram of the BTF is below.
 
 ![Fig. 3. The SNS Beam Test Facility (BTF).](./figures/btf.png)
 
