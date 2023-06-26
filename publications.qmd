@@ -10,8 +10,9 @@ A PDF version of my CV is [here](./files/cv.pdf).
 
 ## Journal articles
 
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". Physical Review Accelerators and Beams, accepted (2023). 
-[[preprint](https://arxiv.org/abs/2301.04178)] 
+* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". Physical Review Accelerators and Beams (2023). 
+[[preprint](https://arxiv.org/abs/2301.04178)]
+[[published](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.26.064202)]
 [[data](https://zenodo.org/record/7724034#.ZDsWlS-B1pQ)]
 
 * A. Hoover, N. Evans. "Four-dimensional emittance measurement at the Spallation Neutron Source". Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1041 (2022): 167376 
