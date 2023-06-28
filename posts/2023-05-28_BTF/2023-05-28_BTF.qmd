@@ -37,7 +37,7 @@ The LEDA (Low Energy Test Accelerator) experiment at Los Alamos National Laborat
 
 We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac[@Zhang_2020]. A diagram of the BTF is below.
 
-![Fig. 3. The SNS Beam Test Facility (BTF).](./figures/btf2.png){width=600px fig-align=center}
+![Fig. 3. The SNS Beam Test Facility (BTF).](./figures/btf2.png){width=601px fig-align=center}
 
 The beam starts as a slow-moving, continuous stream of H- ions extracted from the plasma source. The low-energy beam transport (LEBT) uses electrostatic focusing to guide the beam to the radiofrequency quadrupole RFQ. The RFQ bunches and accelerates the beam to 2.5 MeV. Each bunch drifts through the medium-energy beam transport (MEBT) and finally through a series of permanent quadrupole magnets arranged in a focusing-off-defocusing-off (FODO) pattern. (If halo formation occured, it would likely be here due to the rapid oscillation of the beam core.)
 
