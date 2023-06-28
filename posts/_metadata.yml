@@ -1,6 +1,3 @@
-toc: true
-toc-title: Contents
-toc-depth: 5
 execute:
     echo: true
     enabled: false
