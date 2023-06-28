@@ -22,7 +22,7 @@ format:
         cap-location: bottom  # {bottom, margin}
         toc-location: right
         title-block-categories: false
-        shift-heading-level-by: 1
+        shift-heading-level-by: 0
         html-math-method: mathjax
         grid:
             body-width: 820px

@@ -1,5 +1,5 @@
 ---
-title: "Arguing about gods: Kalam cosmological arguments"
+title: "Kalam cosmological arguments"
 date: 2021-09-15
 author: Austin Hoover
 categories: [cosmological arguments, Kalam, infinity]
