@@ -8,7 +8,7 @@ csl: american-physics-society.csl
 ---
 
 
-This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with the physics of intense beams.
+This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with intense beam physics.
 
 
 ## 1. Predicting intense beam dynamics
