@@ -6,16 +6,11 @@
 /*-- scss:defaults --*/
 
 $primary: SteelBlue;
-$navbar-bg: rgb(50, 50, 50);
 $font-family-sans-serif: "Georgia";
 $font-size-root: 15.25px;
-$h1-font-size: 1.9em;
-$h2-font-size: 1.520896em;
-$h3-font-size: 1.30em;
-$h4-font-size: 1.15em;
-$h5-font-size: 1.0em;
 $figure-caption-font-size: 14.35px !important;
 $figure-caption-color: rgb(170, 170, 170) !important;
+$navbar-bg: rgb(50, 50, 50);
 
 
 // /*-- scss:rules --*/
@@ -36,6 +31,7 @@ $figure-caption-color: rgb(170, 170, 170) !important;
 
 // // This will change table font size (example: display Pandas DataFrame.) But
 // // it also changes blog post listings table in "blog.qmd".
+// // I don't know how to fix this yet.
 // table {
 //     // font-size: 13.0px !important;
 // }
@@ -46,21 +42,8 @@ p {
 
 p, li { 
     color: rgb(10, 10, 10) !important;
-    // line-height: 1.3;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    color: black !important;    
+    color: black !important;
 }
-
-
-
-/*-- scss:rules --*/
-
-// $web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" !default;
-// @if $web-font-path {
-//   @import url($web-font-path);
-// }
-    
-    
-    

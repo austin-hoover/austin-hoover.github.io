@@ -21,11 +21,8 @@ format:
         anchor-sections: true
         cap-location: bottom  # {bottom, margin}
         toc-location: right
-        toc-depth: 5
-        toc-expand: true
         title-block-categories: false
         shift-heading-level-by: 0
         html-math-method: mathjax
         grid:
             body-width: 820px
-        # linestretch: 1.3
