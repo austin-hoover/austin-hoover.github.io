@@ -1,0 +1,128 @@
+---
+title: Fine-tuning arguments
+date: 2023-06-27
+author: Austin Hoover
+categories: [teleological arguments, fine-tuning, multiverse]
+bibliography: references.bib
+csl: american-physics-society.csl
+
+---
+
+Teleological arguments conclude that certain contingent features of the world are best explained by the existence of a designer (God). A classic argument of this form is “Paley’s watch”, which focuses on biological organisms. The contemporary debate revolves around cosmological fine-tuning. In this post, following Oppy, I assess several proposed explanations of fine-tuning: design, multiverse, necessity, chance, and brute contingency.
+
+
+## 1. Paley’s watch
+
+Before discussing fine-tuning, it is worth visiting the classical biological design argument, starting with Paley’s Watch:
+
+> “In crossing a heath, suppose I pitched my foot against a stone, and were asked how the stone came to be there; I might possibly answer, that, for anything I knew to the contrary, it had lain there forever: nor would it perhaps be very easy to show the absurdity of this answer. But suppose I had found a watch upon the ground, and it should be inquired how the watch happened to be in that place; I should hardly think of the answer I had before given, that for anything I knew, the watch might have always been there. ... There must have existed, at some time, and at some place or other, an artificer or artificers, who formed [the watch] for the purpose which we find it actually to answer; who comprehended its construction, and designed its use. ... Every indication of contrivance, every manifestation of design, which existed in the watch, exists in the works of nature; with the difference, on the side of nature, of being greater or more, and that in a degree which exceeds all computation.” — William Paley, *Natural Theology or Evidences of the Existence and Attributes of the Deity* (1802)
+
+Oppy suggests that Paley’s inference to design stems from three observations: 
+
+1. The watch has a principal function.
+2. Various parts of the watch have functions.
+3. The materials from which the parts are constructed are well suited to the functions that those parts have. 
+
+Oppy suggests that Paley’s inference to design relies instead on the background knowledge that watches are not produced naturally. But it is not clear that the inference works for biological systems, for which we do not have the same background knowledge. Additionally, evolutionary theory provides a plausible account of how nature could produce biological systems.
+
+A more recent argument focuses on “irreducibly complex” systems that would cease to function if any of their parts were removed. The claim is that it would be impossible for such a system to arise from gradual changes since the predecessor of any irreducibly complex system would have to be irreducibly complex. It seems to me that the proponent of this design argument will want to identify the first irreducibly complex system with the first biological system. A broader definition would include non-biological systems, but theories of physics and chemistry plausibly explain the complexity of such systems. A narrower definition would exclude some early life forms, but evolutionary theory provides a plausible natural link between simple and complex biological systems. On the other hand, it is unknown how biological systems developed from chemical systems. However, most think there is a natural link between chemistry and biology, and it would be difficult to show that such a link could not exist.
+
+I feel that this argument does not address why God would design a self-organizing world in which the self-organization stops at the transition from chemistry to biology. It seems more elegant, and therefore more likely, that God would select laws and initial conditions such that life developed without intervention.
+
+
+
+## 2. Cosmic fine-tuning
+
+The modern debate is centered on *fine-tuning*, the extreme sensitivity of the necessary conditions for life on physical laws and prior states of the universe. Here, I will assume the past is finite and label $t = 0$ as the first moment of time. I will call the state of the world at $t = 0$ the “initial state” and the state of the world at $t = T$ the “final state”, where $T$ is any time at which complex life forms exist. For simplicity, I will assume the laws are deterministic. To determine the extent of fine-tuning in the universe, we must define a probability distribution over the possible initial states and (somehow) the possible physical laws. In theory, we could then compute a probability distribution over the possible final states and integrate over all life-permitting regions. If the universe is fine-tuned for life, this probability will be minuscule.
+
+It is interesting to ask where such probability distributions could come from. It seems they could not come from a physical theory. It is also interesting to consider the meaning of such probability distributions, given that there is only one universe. I’ll keep these questions in mind as I proceed.
+
+Let’s first fix the laws and focus on the initial state. [The Past Hypothesis…]
+
+Let’s now fix the initial conditions and focus on the laws. Laws can vary in two ways. First, we could hold the functional form of a law fixed while varying its parameters. For example, consider the force $f(x)$ between point-masses $m_1$ and $m_2$ separated by distance $r$:
+$$
+f(r; m_1, m_2, G) = \frac{G m_1 m_2}{r^2}.
+$$
+Here, $G = $6.674 \times 10^{-11} m^3 kg^{-1} s^{-2}$ is an empirically determined constant. One could imagine scaling $G$ so that the force between the masses increased, decreased, or even flipped signs. 
+
+The fundamental theories of physics are the standard models (SM) of particle physics and cosmology. Quantum Field Theory (QFT), the theory of the strong, weak, and electromagnetic forces, describes the interactions of elementary particles. General Relativity (GR), on the other hand, describes the interactions of masses in space-time and the large-scale structure of the universe. Both theories contain multiple free, empirically determined constants. The most interesting constants for our purposes are dimensionless. Examples include:
+* Constant 1
+* Constant 2
+* Constant 3
+
+It is relatively straightforward to investigate the consequences of varying these parameters. We ask the counterfactual question: how would the universe turn out if this parameter was different? In this spirit, we can derive at least loose bounds on the life-permitting values of the parameter. For example, […]
+
+(We could also change the functional form of the laws, opening an infinite-dimensional space of possible universes with entirely different physics. Taking the previous example, we could move from an inverse square law to an inverse cube law:
+$$
+f(r; m_1, m_2, G) = \frac{G m_1 m_2}{r^3}.
+$$
+For now, I vote to focus on the constants, sticking with the physics we know to be true in our universe. I’ll come back to this point later.)
+
+There are important questions about how to interpret the fine-tuning data. First, the theories in question are incomplete. Future theories may have no fine-tuned parameters. However, this seems unlikely. […]
+
+Second, in what sense is the life-permitting region of parameter space small? Oppy raises this concern in *Arguing About Gods*.
+
+Third, one might wonder whether we are varying the parameters in the right way. We generally vary one parameter at a time, but couldn’t it be that a larger life-permitting region could be accessed by varying multiple parameters at once, exploring entire high-dimensional space? [See Barnes’ response…]
+
+Fourth, if we are placing probability distributions over constants, why not place probability distributions over laws as well, opening a larger space of possible worlds? And who is to say that this space’s life-permitting region is small?  
+
+I think that fine-tuning exists. I am relatively convinced by the arguments from physics, along with many (most, it seems) physicists and philosophers who are more knowledgeable than myself. I also feel that the objections to fine-tuning have mostly satisfactory responses. What remains is to work out the philosophical consequences of fine-tuning.
+
+
+## 3. Responses to fine-tuning
+
+Many have argued that the evidence of fine-tuning ($E$) supports a hypothesis $H$: 
+$$ 
+\frac{Pr(H | E)}{Pr(\neg H | E)} = \frac{Pr(E | H)}{Pr(E | \neg H)}\frac{Pr(H)}{Pr(\neg H)} > 1,
+$$ 
+
+We can map the candidate hypotheses to the following responses to an all-sixes configuration of one billion dice.
+
+1. *Many rolls*: There were probably many prior rolls.
+2. *Many tables*: There were probably many simultaneous rolls.
+3. *Intentional agent*: An intentional agent arranged The dice in the all-sixes configuration.
+4. *One roll*: The dice were rolled once. The all-sixes configuration was unlikely, but unlikely events do not necessarily require explanations.
+5. *Brute contingency*: The dice could have landed in a different configuration, but no explanation is needed for the observed configuration.
+6. *Necessity*: The dice could not have landed in a different configuration.
+
+Here, the all-sixes configuration is analogous to a life-supporting universe. Response 2 corresponds to the *multiverse hypothesis*: that there are many universes, each with different laws and initial conditions. Response 3 corresponds to the *design hypothesis*: that an intentional agent selected the laws and initial conditions of the universe. Response 4 corresponds to the claim that the laws and initial conditions were unlikely (in some sense), but that unlikely events do not necessarily require explanations; the selection process, even if random, provides a sufficient explanation. Response 5 corresponds to the claim that although the laws and initial conditions could have been different, they do not require a deeper explanation. Response 6 corresponds to the claim that the laws and initial conditions are fixed by metaphysical necessity. 
+
+```{mermaid}
+%%| echo: false
+%%| fig-width: 585px
+flowchart TB
+  A[Evidence of fine-tuning] 
+  A --> B[Accept]
+      B --> D[Explanation needed]
+          D --> F[Design]
+          D --> G[Multiverse]
+          D --> H[Chance]
+      B --> E[No explanation needed]
+          E --> I[Brute contingency]
+          E --> J[Necessity]
+  A --> C[Reject]
+```
+<br>
+
+[…]
+
+
+### 3.2. The many-worlds explanation
+
+
+### 3.3. The theistic explanation
+
+
+### 3.4. The chance explanation
+
+
+### 3.5. No explanation needed
+
+#### 3.5.1. Brute contingency
+
+#### 3.5.2. Metaphysical necessity 
+
+
+## 4. Outlook
+
+The next chapter of Oppy’s “Arguing About Gods” covers arguments from evil. Before moving on to this topic, I plan to spend more time on teleological and cosmological arguments. In particular, I plan to spend some time on [the nomological argument]( https://onlinelibrary.wiley.com/doi/abs/10.1111/nous.12364),  [psychophysical harmony](https://philarchive.org/rec/CUTPHA), and [the unreasonable effectiveness of mathematics](https://www.tandfonline.com/doi/abs/10.1080/14746700.2011.547001). These are all related to the fine-tuning argument. I also have not covered the [Thomistic cosmological argument]() defended by Edward Feser. 
