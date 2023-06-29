@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.140">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Austin Hoover">
+<meta name="dcterms.date" content="2021-01-21">
+<meta name="description" content="Describing particle motion in the presence of time-dependent linear forces.">
+
+<title>Austin Hoover - Parametric oscillators</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Austin Hoover</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#particle-accelerators-as-parametric-oscillators" id="toc-particle-accelerators-as-parametric-oscillators" class="nav-link active" data-scroll-target="#particle-accelerators-as-parametric-oscillators">Particle accelerators as parametric oscillators</a></li>
+  <li><a href="#solving-hills-equation" id="toc-solving-hills-equation" class="nav-link" data-scroll-target="#solving-hills-equation">Solving Hill’s equation</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Parametric oscillators</h1>
+  </div>
+
+<div>
+  <div class="description">
+    Describing particle motion in the presence of time-dependent linear forces.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Austin Hoover </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 21, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This post presents the solution to a general problem: the motion of a particle in one dimension in the presence of time-dependent, linear, periodic forces. This amounts to solving the following equation of motion:</p>
+<p><span id="eq-Hill"><span class="math display">\[
+\frac{d^2x}{dt^2} + k(t)x = 0,
+\tag{1}\]</span></span></p>
+<p>where <span class="math inline">\(k(t + T) = k(t)\)</span> for some <span class="math inline">\(T\)</span>. This is a <a href="https://en.wikipedia.org/wiki/Parametric_oscillator">parametric oscillator</a>, a harmonic oscillator whose physical properties are not static. For example, the oscillations of a pendulum (in the small angle approximation) on the surface of a planet whose gravitational pull varies periodically would be described by the above equation. The solution to this equation was derived by <a href="https://en.wikipedia.org/wiki/George_William_Hill">George William Hill</a> in 1886 to study lunar motion, and for this reason, it is known as Hill’s equation. It also finds application in areas such as condensed matter physics, quantum optics, and accelerator physics. After setting up the physical problem, we will examine the solutions and discuss their relevance to the last application, accelerator physics.</p>
+<section id="particle-accelerators-as-parametric-oscillators" class="level3">
+<h3 class="anchored" data-anchor-id="particle-accelerators-as-parametric-oscillators">Particle accelerators as parametric oscillators</h3>
+<p><a href="https://en.wikipedia.org/wiki/Particle_accelerator">Particle accelerators</a> are machines that produce groups of charged particles (<em>beams</em>), increase their kinetic energy, and guide them to a target. These machines are invaluable to modern scientific research. The most famous examples are <em>colliders</em>, such as the <a href="https://home.cern/science/accelerators/large-hadron-collider">LHC</a>, in which two beams are smashed together to generate fundamental particles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lhc.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 1. A detector at an interaction point in the LHC.</figcaption><p></p>
+</figure>
+</div>
+<p>A lesser known fact is that the fields of condensed matter physics, material science, chemistry, and biology also benefit tremendously from accelerators; this is due to the effectiveness of scattering experiments in which the deflection of a beam after colliding with a target is used to learn information about the target. The scattered beam is composed of neutrons in <em>spallation neutron sources</em> such as <a href="https://neutrons.ornl.gov/sns">SNS</a>, electrons in <em>electron scattering facilities</em> such as <a href="https://science.osti.gov/np/Facilities/User-Facilities/CEBAF">CEBAF</a>, or photons in <em>synchrotron light sources</em> such as <a href="https://www.aps.anl.gov">APS</a>. In addition to scientific research, accelerators find use in <a href="http://www.accelerators-for-society.org/health/index.php?id=7">medicine</a>, particularly for cancer treatment, and also in various <a href="http://www.accelerators-for-society.org/industry/index.php?id=8">industrial applications</a>.</p>
+<p>There are generally a few beam properties that are very important to experimentalists; in colliders, it is the energy and luminosity, in spallation sources, it is the intensity, and in light sources, it is the brightness. There is thus a constant need to push these parameters to new regions. For example, below is the famous Livingston plot which shows the energy achieved by various machines over the past century.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="livingston.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 2. Accelerator energy over time. The vertical axis is not the center of mass energy (CME) — it is the beam energy needed to produce the CME by collision with a resting proton. (source: Rasmus Ischebeck).</figcaption><p></p>
+</figure>
+</div>
+<p>There are many physics issues associated with the optimization of these beam parameters. Accelerator physics is a field of applied physics that studies these issues. The task of the accelerator physicist is to understand, control, and measure the journey of the beam from its creation to its final destination. The difficulty of this task has grown over time; the improvement in accelerator performance has brought with it a staggering increase in size and complexity. The construction and operation of modern accelerators generally require years of planning, thousands of scientists and engineers, and hundreds of millions or even billions of dollars. Despite this complexity, the underlying physics principles are quite simple, and the single particle motion in one of these machines can be understood analytically if a few approximations are made. In the end, we will arrive at Hill’s equation.</p>
+<p>There are three basic tasks an accelerator has to accomplish. First, it must increase the beam energy (acceleration). Second, it must guide the beam along a predetermined path (steering). Third, it must ensure the beam particles remain close together (focusing). It is helpful to use a coordinate system in which the s axis points along the design trajectory, and the x and y axes defined in the plane transverse to s. In this way, the motion is broken up into transverse and longitudinal dynamics.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="coordinate_system.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 3. Curvilinear coordinate system used to describe particle motion along a reference trajectory.</figcaption><p></p>
+</figure>
+</div>
+<p>How are these tasks accomplished? Well, particles are charged, and the force on a point charge in an electromagnetic field is given by</p>
+<p><span id="eq-Lorenz"><span class="math display">\[
+\mathbf{F} = q\left({\mathbf{E} + \mathbf{v} \times \mathbf{B}}\right),
+\tag{2}\]</span></span></p>
+<p>where <span class="math inline">\(q\)</span> is the particle charge, <span class="math inline">\(\mathbf{v}\)</span> is the particle velocity, <span class="math inline">\(\mathbf{E}\)</span> is the electric field, and <span class="math inline">\(\mathbf{B}\)</span> is the magnetic field. An accelerator consists of a series of elements, each with their own <span class="math inline">\(\mathbf{E}\)</span> and <span class="math inline">\(\mathbf{B}\)</span>; the collection of these elements is called a <em>lattice</em>. We need to determine which electric and magnetic fields to use.</p>
+<p>The first task, acceleration, is not the focus of this post. The remaining tasks, steering and focusing, concern the motion in the transverse plane. <span class="math inline">\(\mathbf{B}\)</span> fields, not <span class="math inline">\(\mathbf{E}\)</span> fields, are used since their effect grows with increased particle velocity. Any transverse magnetic field <span class="math inline">\(\mathbf{B} = (B_x, B_y)^T\)</span> can be written using a multipole expansion</p>
+<p><span id="eq-multipole"><span class="math display">\[
+B_y - iB_x = \sum_{n=1}^{\infty}\left({b_n - ia_n}\right)\left(\frac{x + iy}{r_0}\right)^{n-1}.
+\tag{3}\]</span></span></p>
+<p>We then have the normal multiple coefficients <span class="math inline">\(\{b_n\}\)</span>, and the skew multipole coefficients <span class="math inline">\(\{a_n\}\)</span>. The field lines corresponding to the first few terms are shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multipoles.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 4. Multipole expansion of the magnetic field.</figcaption><p></p>
+</figure>
+</div>
+<p>The dipole field <span class="math inline">\(\mathbf{B} \propto \hat{y}\)</span> is perfect for steering, producing the force <span class="math inline">\(\mathbf{F} \propto -\hat{x}\)</span> for a particle moving into the page. The quadrupole field <span class="math inline">\(\mathbf{B} \propto y\hat{x} + x\hat{y}\)</span> produces the force <span class="math inline">\(\mathbf{F}_{quad} \propto -x\hat{x} + y\hat{y}\)</span>, which is focusing in the horizontal direction, but <em>defocusing</em> in the vertical direction; however, net focusing can still be achieved by alternating the direction of the quadrupoles. This is analogous to a beam of light passing through a series of converging and diverging lenses. If the spacing and curvature of the lenses are correctly chosen, net focusing can be achieved.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thinlens.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 5. Single-particle motion in the thin-lense approximation.</figcaption><p></p>
+</figure>
+</div>
+<p>The forces which result from these fields are <em>linear</em>, meaning they are proportional the <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> but not <span class="math inline">\(x^2\)</span>, <span class="math inline">\(y^3\)</span>, etc., and they are <em>uncoupled</em>, meaning the dynamics in the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> dimensions are independent. Now, we may ask, can we produce a perfect dipole or quadrupole field? The answer is no. In reality, there will always be higher order multipoles present in the field, but people work very hard to ensure these are much smaller than the desired multipole. This <a href="https://www.youtube.com/watch?v=qTEFZEIWUdo">video</a> shows a bit of the construction process for these magnets.</p>
+<p>For small oscillations, the equations of motion reduce to</p>
+<p><span id="eq-motion-general"><span class="math display">\[
+\begin{aligned}
+    x'' \approx -\frac{q}{mc \beta_s \gamma_s} B_y(x, y, s), \\
+    y'' \approx +\frac{q}{mc \beta_s \gamma_s} B_x(x, y, s),
+\end{aligned}
+\tag{4}\]</span></span></p>
+<p>where <span class="math inline">\(x' = dx/ds\)</span>, <span class="math inline">\(m\)</span> is the particle mass, <span class="math inline">\(c\)</span> is the speed of light in a vacuum, <span class="math inline">\(\beta_s\)</span> is the particle speed divided by <span class="math inline">\(c\)</span>, and <span class="math inline">\(\gamma_s = (1 - \beta_s^2)^{-1/2}\)</span>. (For simplicity, the curved coordinate system has not been taken into account). We will ignore nonlinear terms since they greatly complicate the dynamics. We will also ignore coupling between the planes. With these approximations, we arrive at the equation of motion for a single particle in the transverse plane:</p>
+<p><span id="eq-motion-linear"><span class="math display">\[
+x'' + k(s)x = 0.
+\tag{5}\]</span></span></p>
+<p>This is Hill’s equation (<a href="#eq-Hill">Equation&nbsp;1</a>).</p>
+</section>
+<section id="solving-hills-equation" class="level3">
+<h3 class="anchored" data-anchor-id="solving-hills-equation">Solving Hill’s equation</h3>
+<p>The general solution to Hill’s equation is given by</p>
+<p><span id="eq-Hill-solution"><span class="math display">\[
+x(s) = \sqrt{2J}\,w(s) \cos\left({\mu(s) + \delta}\right).
+\tag{6}\]</span></span></p>
+<p>This introduces an amplitude <span class="math inline">\(w(s) = w(s + L)\)</span> which we call the envelope function, as well as a phase <span class="math inline">\(\mu\)</span>, both of which depend on <span class="math inline">\(s\)</span>. The constants <span class="math inline">\(J\)</span> and <span class="math inline">\(\delta\)</span> are determined by the initial conditions. Let’s plot this trajectory in a FODO (focus-off-defocus-off) lattice, which consists of evenly spaced focusing and defocusing quadrupoles. Here is the focusing strength within the lattice (<em>QF</em> is the focusing quadrupole and <em>QD</em> is the defocusing quadrupole):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fodo_lattice.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 6. FODO lattice.</figcaption><p></p>
+</figure>
+</div>
+<p>For now we can think of the lattice as repeating itself forever in the <span class="math inline">\(s\)</span> direction. Each black line below is represents the trajectory for a different initial position and slope; although the individual trajectories look rather complicated, the envelope function has a very simple form.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="envelope.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 7. Envelope function and particle trajectories.</figcaption><p></p>
+</figure>
+</div>
+<p>The particle motion becomes much easier to interpret if we observe it in position-momentum space, aka <em>phase space</em>. The following animation shows the evolution of the particle phase space coordinates at a single position in the lattice. The position shown is <span class="math inline">\(s = nL/4\)</span>, where <span class="math inline">\(n\)</span> is the period number, which corresponds to the midpoint between the focusing and defocusing quadrupoles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="tbt.gif" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 8. Phase space coordinates after every focusing period.</figcaption><p></p>
+</figure>
+</div>
+<p>The particle jumps around an ellipse in phase space. The shape and orientation of the ellipse will change if we look at a different position in the lattice, but its area will be the same. So, the motion is determined by the dimensions and oriention of this ellipse throughout the lattice, as well as the location of the particle on the ellipse boundary. This motivates the definition of the so-called <em>Twiss parameters</em>, which were first introduced by Courant and Snyder in 1958:</p>
+<p><span id="eq-Twiss"><span class="math display">\[
+\beta = w^2, \quad \alpha = -\frac{1}{2}\beta', \quad \gamma = \frac{1 + \alpha^2}{\beta}.
+\tag{7}\]</span></span></p>
+<p>The dimensions of the phase space ellipse are nicely described by these parameters:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cs_ellipse.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 9. Courant-Snyder ellipse.</figcaption><p></p>
+</figure>
+</div>
+<p>The maximum extent of the ellipse is determined by <span class="math inline">\(\beta\)</span> in the <span class="math inline">\(x\)</span> direction and <span class="math inline">\(\gamma\)</span> in the <span class="math inline">\(y\)</span> direction. <span class="math inline">\(\alpha\)</span> is proportional to the slope of the <span class="math inline">\(\beta\)</span> function, and so determines the tilt angle of the ellipse. The position of a particle on the ellipse is given by the phase <span class="math inline">\(\mu\)</span>. Finally, the invariant of the motion corresponding to the ellipse area is proportional to <span class="math inline">\(2J = \beta {x'}^2 + 2\alpha xx' + \gamma x^2\)</span> for any <span class="math inline">\(x\)</span> and <span class="math inline">\(x'\)</span>. The <span class="math inline">\(\beta\)</span> functions and phase advances in both dimensions are extremely important to measure and control in a real machine.</p>
+<p>A helpful tool to pair with the parameterization we just introduced is the <em>transfer matrix</em>, a matrix which connects the phase space coordinates at two different positions:</p>
+<p><span id="eq-i"><span class="math display">\[
+\begin{bmatrix} x \\ x' \end{bmatrix}_{s + L}
+= \mathbf{M}\begin{bmatrix} x \\ x' \end{bmatrix}_{s}
+\tag{8}\]</span></span></p>
+<p>The transfer matrix can be written as <span class="math inline">\(\mathbf{M} = \mathbf{V}\mathbf{P}\mathbf{V}^{-1}\)</span>, where</p>
+<p><span class="math display">\[\mathbf{V} = \frac{1}{\sqrt{\beta}} \begin{bmatrix} \beta &amp; 0 \\ -\alpha &amp; 1 \end{bmatrix}\]</span> and <span class="math display">\[
+\mathbf{P} = \begin{bmatrix}
+  \cos\mu &amp; \sin\mu \\ -\sin\mu &amp; \cos\mu
+\end{bmatrix}
+\]</span></p>
+<p>The effect of <span class="math inline">\(\mathbf{V}^{-1}\)</span> is to deform the phase space ellipse into a circle while preserving its area. <span class="math inline">\(\mathbf{P}\)</span> is then just a rotation in phase space, and <span class="math inline">\(\mathbf{V}\)</span> then transforms back into a tilted ellipse. This is illustrated below. <span class="math inline">\(\mathbf{V}\)</span> can be thought of as a time-dependent transformation which removes the variance in the focusing strength, turning the parametric oscillator into a simple harmonic oscillator. It is often called the <em>Floquet transformation</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="norm_coords.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 10. Effect of the Floquet transformation on the Courant-Snyder ellipse.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>We’ve presented the solution to Hill’s equation, which describes a parameteric oscillator. The equation pops up in multiple areas, but we focused on its application in accelerator physics, in which Hill’s equation describes the transverse motion of a single particle in an accelerator with perfectly linear magnetic fields.</p>
+<p>The solution is best understood geometrically: particles move around the surface of an ellipse in phase space, the area of which is an invariant of the motion. The dimensions and orientation of the ellipse are determined by <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, and the location of the particle on the ellipse boundary is determined by <span class="math inline">\(\mu\)</span>. These parameters can be used to construct a time-dependent transformation (<span class="math inline">\(\mathbf{V}\)</span>) which turns the parametric oscillator into a simple harmonic oscillator.</p>
+<p>The next post will examine how this treatment can be extended to include coupling between the horizontal and vertical dimensions.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

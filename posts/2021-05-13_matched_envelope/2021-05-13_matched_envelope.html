@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.140">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Austin Hoover">
+<meta name="dcterms.date" content="2021-05-13">
+<meta name="description" content="A summary of my first peer-reviewed publication.">
+
+<title>Austin Hoover - Computing matched envelopes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Austin Hoover</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#self-consistent-beam-distributions" id="toc-self-consistent-beam-distributions" class="nav-link active" data-scroll-target="#self-consistent-beam-distributions">1. Self-consistent beam distributions</a>
+  <ul>
+  <li><a href="#space-charge" id="toc-space-charge" class="nav-link" data-scroll-target="#space-charge">1.1. Space charge</a></li>
+  <li><a href="#vlasov-equilibria" id="toc-vlasov-equilibria" class="nav-link" data-scroll-target="#vlasov-equilibria">1.2. Vlasov equilibria</a></li>
+  <li><a href="#kv-distribution" id="toc-kv-distribution" class="nav-link" data-scroll-target="#kv-distribution">1.2. KV distribution</a></li>
+  <li><a href="#danilov-distribution" id="toc-danilov-distribution" class="nav-link" data-scroll-target="#danilov-distribution">1.4. Danilov distribution</a></li>
+  </ul></li>
+  <li><a href="#finding-the-matched-solution" id="toc-finding-the-matched-solution" class="nav-link" data-scroll-target="#finding-the-matched-solution">2. Finding the matched solution</a>
+  <ul>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">2.1. The problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">2.2. The solution</a></li>
+  </ul></li>
+  <li><a href="#simple-applications" id="toc-simple-applications" class="nav-link" data-scroll-target="#simple-applications">3. Simple applications</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">4. Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Computing matched envelopes</h1>
+  </div>
+
+<div>
+  <div class="description">
+    A summary of my first peer-reviewed publication.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Austin Hoover </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 13, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>My first peer-reviewed paper was published in Physical Review Accelerators and Beams (PRAB) at the end of April<span class="citation" data-cites="Hoover2021">&nbsp;[<a href="#ref-Hoover2021" role="doc-biblioref">1</a>]</span>. I thought I would summarize the results of the paper here.</p>
+<section id="self-consistent-beam-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="self-consistent-beam-distributions">1. Self-consistent beam distributions</h3>
+<section id="space-charge" class="level4">
+<h4 class="anchored" data-anchor-id="space-charge">1.1. Space charge</h4>
+<p>A beam of charged particles generates an electric field, which then exerts a force on each particle, whose motion modifies the electric field, and so on. This problem is familiar to plasma physics. One important feature of charged particle beams is that they are <em>non-neutral</em>, i.e., all particles have the same charge. Thus, all forces are long-range, making the problem difficult to handle analytically.</p>
+<p>Here, I will briefly discuss one way in which space charge limits the performance of particle accelerators. In particular, I will discuss the difficulties caused by the fact that the space charge force on a given particle depends nonlinearly on the particle’s position. For example, consider the following two charge distributions and the radial electric fields they produce.</p>
+<div class="cell">
+<details>
+<summary>Imports</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hide</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> animation</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.lines <span class="im">import</span> Line2D</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Ellipse</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> proplot <span class="im">as</span> pplt</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> psdist.visualization <span class="im">as</span> psv</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> odeint</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a uniform density distribution.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">6</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="fl">1e4</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>rho <span class="op">=</span> <span class="fl">2.0</span> <span class="op">*</span> np.sqrt(np.random.uniform(size<span class="op">=</span>n))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>phi <span class="op">=</span> np.random.uniform(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi, size<span class="op">=</span>n)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>X1 <span class="op">=</span> np.vstack([rho <span class="op">*</span> np.cos(phi), rho <span class="op">*</span> np.sin(phi)]).T</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a Gaussian distribution.</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>X2 <span class="op">=</span> np.random.normal(scale<span class="op">=</span><span class="fl">1.0</span>, size<span class="op">=</span>(n, <span class="dv">2</span>))</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the distributions.</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> pplt.subplots(</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">2</span>, figwidth<span class="op">=</span><span class="fl">5.5</span>, span<span class="op">=</span><span class="va">False</span>, wspace<span class="op">=</span><span class="fl">7.0</span>, height_ratios<span class="op">=</span>[<span class="dv">1</span>, <span class="fl">0.3</span>]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, X <span class="kw">in</span> <span class="bu">zip</span>(axs[<span class="dv">0</span>, :], [X1, X2]):</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    ax.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], s<span class="op">=</span><span class="fl">0.05</span>, c<span class="op">=</span><span class="st">"k"</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, :].<span class="bu">format</span>(aspect<span class="op">=</span><span class="fl">1.0</span>, yticks<span class="op">=</span>[], xspineloc<span class="op">=</span><span class="st">"neither"</span>, yspineloc<span class="op">=</span><span class="st">"neither"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the radial electric field.</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> Efield(r, kind<span class="op">=</span><span class="st">"gaussian"</span>):</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> r <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="fl">0.0</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> kind <span class="op">==</span> <span class="st">"uniform"</span>:</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">abs</span>(r) <span class="op">&lt;=</span> <span class="fl">2.0</span>:</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="fl">0.25</span> <span class="op">*</span> r</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="fl">1.0</span> <span class="op">/</span> r</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> kind <span class="op">==</span> <span class="st">"gaussian"</span>:</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="fl">1.0</span> <span class="op">/</span> r) <span class="op">*</span> (<span class="fl">1.0</span> <span class="op">-</span> np.exp(<span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> r<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>radii <span class="op">=</span> np.linspace(<span class="op">-</span><span class="fl">4.0</span>, <span class="fl">4.0</span>, <span class="dv">100</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax, kind <span class="kw">in</span> <span class="bu">zip</span>(axs[<span class="dv">1</span>, :], [<span class="st">"uniform"</span>, <span class="st">"gaussian"</span>]):</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    electric_field <span class="op">=</span> np.array([Efield(r, kind) <span class="cf">for</span> r <span class="kw">in</span> radii])</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    ax.plot(radii, electric_field, color<span class="op">=</span><span class="st">"black"</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, :].<span class="bu">format</span>(</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="vs">r"$E_r$"</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="vs">r"r / $\sigma$"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    xspineloc<span class="op">=</span><span class="st">"bottom"</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    yspineloc<span class="op">=</span><span class="st">"left"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    yticks<span class="op">=</span>[<span class="fl">0.0</span>],</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    ygrid<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>plt.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="_output_uniform_gaussian.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 1. Comparison of radial electric field generated by a uniform distribution (left) and Gaussian distribution (right).</figcaption><p></p>
+</figure>
+</div>
+<p>The left distribution produces an electric field that is proportional to the radius, i.e., it gives rise to linear space charge forces. The right distribution produces an electric field that depends nonlinearly on the radius, i.e., it gives rise to nonlinear space charge forces.</p>
+<p>Nonlinear forces lead to filamentation and effective growth in phase space volume (in a course-grained sense). We typically estimate the phase space volume from the covariance matrix of the distribution: the covariance matrix defines an ellipsoid whose volume is easy to compute. We call this volume the root-mean-square <em>emittance</em>. Emittance growth is generally undesired as it degrades the beam quality and leads to beam loss. Fig. 2. shows an example of the emittance growth that can be caused by the space charge forces in an intense beam propagating in a linear focusing channel.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig7.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 2. Emittance growth in an intense beam propagating in a linear accelerator. The emittances <span class="math inline">\(\varepsilon_{x,y}\)</span> correspond to the areas in the projected phase spaces <span class="math inline">\(x\)</span>-<span class="math inline">\(p_x\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(p_y\)</span> (Source:<span class="citation" data-cites="Hofmann2017">&nbsp;[<a href="#ref-Hofmann2017" role="doc-biblioref">2</a>]</span>.)</figcaption><p></p>
+</figure>
+</div>
+<p>Another difficulty is specific to circular accelerators (rings). Rings are designed such that each particle performs stable transverse oscillations about some reference trajectory. The oscillations are not simple-harmonic, but they can be described by a small number of parameters.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> One of these parameters is the <em>tune</em>, which is something like a frequency. For certain values of the tune, nonlinear <em>magnetic</em> fields in the ring can drive single-particle resonances.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> To avoid resonance conditions up to order <span class="math inline">\(|M_x + M_y|\)</span>, the tunes <span class="math inline">\(\nu_{x, y}\)</span> must be far from the lines defined by <span class="math inline">\(M_x \nu_x + M_y \nu_y = N\)</span>, where <span class="math inline">\(M_x\)</span>, <span class="math inline">\(M_y\)</span>, and <span class="math inline">\(N\)</span> are integers.</p>
+<p>Space charge decreases the tune of each particle. This wouldn’t be a problem if the shift was the same for each particle, but a nonlinear space charge force causes the tune shift to depend on the particle’s position, resulting in a <em>tune spread</em> that grows with the beam intensity. At high intensities, it becomes unavoidable that some particles cross dangerous low-order resonance lines. This is illustrated in Fig. 3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig6.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 3. Simulated tune spread in the SNS ring. (Source:<span class="citation" data-cites="Galambos1999">&nbsp;[<a href="#ref-Galambos1999" role="doc-biblioref">3</a>]</span>.)</figcaption><p></p>
+</figure>
+</div>
+<p>It seems plausible that a beam producing linear space charge forces would alleviate these problems, enabling higher beam intensities. We already have an example of one such beam in Fig. 1: a uniform-density ellipse. But if we transported this beam through an accelerator, would its uniform density be maintained? There are only a few cases in which the answer is “yes”; we call these cases <em>self-consistent</em>.</p>
+</section>
+<section id="vlasov-equilibria" class="level4">
+<h4 class="anchored" data-anchor-id="vlasov-equilibria">1.2. Vlasov equilibria</h4>
+<p>To evolve the beam, we need to specify not only the distribution of particle positions but also the distribution of velocities; in other words, we need to specify the distribution in four-dimensional position-momentum space (phase space). We then apply the framework of statistical mechanics, which I will briefly summarize.</p>
+<p>A collisionless, two-dimensional[^By two-dimensional, we mean that the beam extends forever in the <span class="math inline">\(z\)</span> direction.] beam of charged particles may be represented by a distribution function <span class="math inline">\(f(\mathbf{x}, \mathbf{x}', s)\)</span>, where <span class="math inline">\(\mathbf{x} = (x, y)^T\)</span> is the transverse position, <span class="math inline">\(\mathbf{x}' = d\mathbf{x}/ds\)</span> is the transverse momentum, <span class="math inline">\(s = \beta c t\)</span> is the axial position, <span class="math inline">\(t\)</span> is the time, <span class="math inline">\(\beta c\)</span> is the beam velocity, and <span class="math inline">\(c\)</span> is the speed of light. In a linear, uncoupled focusing system represented by <span class="math inline">\(\mathbf{\kappa(s)}\)</span>, the distribution function evolves according to the Vlasov-Poisson system of equations:</p>
+<p><span id="eq-Vlasov"><span class="math display">\[
+\frac{\partial{f}}{\partial{s}} +
+\mathbf{x}'\cdot \frac{\partial{f}}{\partial{\mathbf{x}}} +
+\mathbf{x}'' \cdot \frac{\partial{f}}{\partial{\mathbf{x}'}}
+= 0.
+\tag{1}\]</span></span></p>
+<p><span id="eq-EOM"><span class="math display">\[
+\mathbf{x}'' + \mathbf{\kappa}(s)\mathbf{x} =
+-\frac{q}{mc^2\beta^2\gamma^3} \frac{\partial \Phi}{\partial \mathbf{x}}.
+\tag{2}\]</span></span></p>
+<p>Here <span class="math inline">\(q\)</span> is the charge, <span class="math inline">\(m\)</span> is the mass, <span class="math inline">\(\gamma = \left(1 - \beta^2\right)^{-1/2}\)</span>, and the electric potential <span class="math inline">\(\Phi\)</span> is determined self-consistently from the Poisson equation:</p>
+<p><span id="eq-Poisson"><span class="math display">\[
+-\frac{\partial^2 \Phi}{\partial \mathbf{x}^2} =
+\frac{q}{\varepsilon_0} \int{f(\mathbf{x}, \mathbf{x}', s) \mathbf{dx}'}.
+\tag{3}\]</span></span></p>
+<p>This highly nonlinear integro-differential system of equations is difficult to solve analytically. Exact solutions are called <em>equilibrium distributions</em> and have the form <span class="math inline">\(f = f(\{C_i\}),\)</span> where <span class="math inline">\(\{C_i\}\)</span> are invariants of the motion. When the focusing is time-independent (<span class="math inline">\(\mathbf{\kappa}(s) = \mathbf{\kappa}\)</span>), the Hamiltonian is an invariant and any function of the Hamiltonian is an equilibrium distribution. But when the focusing is time-dependent, the solution is unclear.</p>
+<p>For some time, only one solution existed for linear time-dependent systems, but recently, at least one additional solution has been found. Both solutions project to a uniform density ellipse in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, producing linear space charge forces. And since they are equilibrium solutions, they are guaranteed to maintain their functional form as they evolve. This is just what we define as a self-consistent distribution; self-consistent distributions are the subset of Vlasov equilibrium distributions that produce linear space charge forces. I will not discuss how these solutions are found in this post. I will instead focus on some of their properties.</p>
+</section>
+<section id="kv-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="kv-distribution">1.2. KV distribution</h4>
+<p>The first self-consistent distribution was derived by a pair of Russian scientists in 1959 and is known as the KV distribution. Particles in the KV distribution uniformly populate the boundary of an ellipsoid in four-dimensional (4D) phase space. In normalized coordinates, it looks something like</p>
+<p><span id="eq-1"><span class="math display">\[
+f(x, p_x, y, p_y) = \delta(x^2 + {p_y}^2 + y^2 + {p_y}^2 - 1),
+\tag{4}\]</span></span></p>
+<p>where <span class="math inline">\(\delta\)</span> is the Diract delta function. Any 2D projection of this 4D shell is a uniform density ellipse.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.random.normal(size<span class="op">=</span>(<span class="bu">int</span>(<span class="fl">7e6</span>), <span class="dv">4</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.apply_along_axis(<span class="kw">lambda</span> x: x <span class="op">/</span> np.linalg.norm(x), <span class="dv">1</span>, X)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> psv.cloud.corner(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    X,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    autolim_kws<span class="op">=</span><span class="bu">dict</span>(pad<span class="op">=</span><span class="fl">0.25</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>[<span class="vs">r"$x$"</span>, <span class="vs">r"$p_x$"</span>, <span class="vs">r"$x$"</span>, <span class="vs">r"$p_y$"</span>],</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    grid_kws<span class="op">=</span><span class="bu">dict</span>(figwidth<span class="op">=</span><span class="fl">4.5</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    rms_ellipse<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    rms_ellipse_kws<span class="op">=</span><span class="bu">dict</span>(level<span class="op">=</span><span class="fl">2.0</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>plt.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="_output_corner_kv.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 4. 1D and 2D projections of the KV distribution.</figcaption><p></p>
+</figure>
+</div>
+<p>It can be (not easily) shown that the electric field within a uniform-density upright ellipse is</p>
+<p><span id="eq-2"><span class="math display">\[
+\mathbf{E}(x, y) \propto
+\frac{x}{c_x (c_x + c_y)} \hat{x} +
+\frac{y}{c_y (c_x + c_y)} \hat{y},
+\tag{5}\]</span></span></p>
+<p>where <span class="math inline">\(c_x\)</span> and <span class="math inline">\(c_y\)</span> are the semi-axes of the ellipse. Notice that the field is both linear and uncoupled — <span class="math inline">\(x\)</span> component of the field is proportional to <span class="math inline">\(x\)</span>; the <span class="math inline">\(y\)</span> component of the field is proportional to <span class="math inline">\(y\)</span>.</p>
+<p>From here, one can derive a system of differential equations to evolve the distribution. This is an incredible simplification of the Vlasov-Poisson system. The equations track the beam <em>envelope</em>, the elliptical boundary containing the particles in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. These envelope equations, as they’re called, have been important for understanding space charge effects. In addition to providing a theoretical benchmark for computer simulations, they capture the approximate behavior of more realistic beams in some cases.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> More details are in <span class="citation" data-cites="Lund2004">&nbsp;[<a href="#ref-Lund2004" role="doc-biblioref">4</a>]</span>.</p>
+<p>Let’s try integrating these equations in a simple periodic focusing system.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fodo(s, quad_strength<span class="op">=</span><span class="fl">0.556</span>, cell_length<span class="op">=</span><span class="fl">5.0</span>):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> (s <span class="op">%</span> cell_length) <span class="op">/</span> cell_length</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    delta <span class="op">=</span> <span class="fl">0.125</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> s <span class="op">&lt;</span> delta <span class="kw">or</span> s <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">-</span> delta:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="op">+</span>quad_strength</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> <span class="fl">0.5</span> <span class="op">-</span> delta <span class="op">&lt;=</span> s <span class="op">&lt;</span> <span class="fl">0.5</span> <span class="op">+</span> delta:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="op">-</span>quad_strength</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fl">0.0</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> kv_derivs(params, s, Q, foc):</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    cx, cxp, cy, cyp <span class="op">=</span> params</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    k0x <span class="op">=</span> foc(s)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    k0y <span class="op">=</span> <span class="op">-</span>k0x</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> np.zeros(<span class="dv">4</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">0</span>] <span class="op">=</span> cxp</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">2</span>] <span class="op">=</span> cyp</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">1</span>] <span class="op">=</span> <span class="op">-</span>k0x <span class="op">*</span> cx <span class="op">+</span> <span class="fl">2.0</span> <span class="op">*</span> Q <span class="op">/</span> (cx <span class="op">+</span> cy) <span class="op">+</span> <span class="fl">16.0</span> <span class="op">*</span> epsx<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> (cx<span class="op">**</span><span class="dv">3</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">3</span>] <span class="op">=</span> <span class="op">-</span>k0y <span class="op">*</span> cy <span class="op">+</span> <span class="fl">2.0</span> <span class="op">*</span> Q <span class="op">/</span> (cx <span class="op">+</span> cy) <span class="op">+</span> <span class="fl">16.0</span> <span class="op">*</span> epsy<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> (cy<span class="op">**</span><span class="dv">3</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> track_kv(params, positions, Q, foc):</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    tracked <span class="op">=</span> odeint(kv_derivs, params, positions, args<span class="op">=</span>(Q, foc))</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    sizes <span class="op">=</span> tracked[:, [<span class="dv">0</span>, <span class="dv">2</span>]]</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    sizes <span class="op">=</span> sizes <span class="op">*</span> <span class="fl">1000.0</span>  <span class="co"># convert to mm</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sizes</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Create KV envelope</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>alphax, alphay, betax, betay <span class="op">=</span> <span class="fl">0.0</span>, <span class="fl">0.0</span>, <span class="fl">8.017</span>, <span class="fl">1.544</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>epsx <span class="op">=</span> epsy <span class="op">=</span> <span class="fl">10e-6</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>cx <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.sqrt(epsx <span class="op">*</span> betax)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>cy <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.sqrt(epsy <span class="op">*</span> betay)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>cxp <span class="op">=</span> cyp <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> [cx, cxp, cy, cyp]</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Integrate envelope equations</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>cell_length <span class="op">=</span> <span class="fl">5.0</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>periods <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>npts <span class="op">=</span> <span class="dv">1000</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> np.linspace(<span class="dv">0</span>, cell_length <span class="op">*</span> periods, npts)</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> <span class="fl">1.0e-5</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>sizes <span class="op">=</span> track_kv(params, positions, Q, fodo)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>sizes0 <span class="op">=</span> track_kv(params, positions, <span class="fl">0.0</span>, fodo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> pplt.Cycle(<span class="st">"colorblind"</span>).by_key()[<span class="st">"color"</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>kws1 <span class="op">=</span> <span class="bu">dict</span>(fc<span class="op">=</span><span class="st">"lightgrey"</span>, lw<span class="op">=</span><span class="fl">0.75</span>, ec<span class="op">=</span><span class="st">"None"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>kws2 <span class="op">=</span> <span class="bu">dict</span>(fill<span class="op">=</span><span class="va">False</span>, ls<span class="op">=</span><span class="st">"--"</span>, color<span class="op">=</span><span class="st">"k"</span>, lw<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>stride <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>umin <span class="op">=</span> np.<span class="bu">min</span>(sizes)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>umax <span class="op">=</span> np.<span class="bu">max</span>(sizes)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>umax_pad <span class="op">=</span> <span class="fl">1.25</span> <span class="op">*</span> umax</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> pplt.subplots(</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    nrows<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    ncols<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">2.5</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    spany<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    aligny<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    sharey<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    sharex<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    hspace<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    height_ratios<span class="op">=</span>[<span class="fl">5.0</span>, <span class="fl">1.0</span>],</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    width_ratios<span class="op">=</span>[<span class="fl">2.75</span>, <span class="fl">1.0</span>],</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(xlabel<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Beam size [mm]"</span>, ylim<span class="op">=</span>(umin <span class="op">-</span> <span class="dv">5</span>, umax <span class="op">+</span> <span class="dv">5</span>))</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].<span class="bu">format</span>(xlabel<span class="op">=</span><span class="st">"s [m]"</span>, ylabel<span class="op">=</span><span class="vs">r"$k_x$"</span>, yticks<span class="op">=</span>[<span class="dv">0</span>], ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.6116</span>, <span class="fl">0.6116</span>))</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>axs[:, <span class="dv">0</span>].<span class="bu">format</span>(xlim<span class="op">=</span>positions[[<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>]])</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].spines[<span class="st">"top"</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].<span class="bu">format</span>(</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    xticklabels<span class="op">=</span>[],</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    yticklabels<span class="op">=</span>[],</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"x"</span>,</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"y"</span>,</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    xlim<span class="op">=</span>(<span class="op">-</span>umax_pad, umax_pad),</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    ylim<span class="op">=</span>(<span class="op">-</span>umax_pad, umax_pad),</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].<span class="bu">format</span>(xspineloc<span class="op">=</span><span class="st">"bottom"</span>, yspineloc<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">1</span>].axis(<span class="st">"off"</span>)</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(xticklabels<span class="op">=</span>[])</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].legend(</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>    handles<span class="op">=</span>[Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>colors[<span class="dv">0</span>]), Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>colors[<span class="dv">1</span>])],</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>[<span class="vs">r'$\sqrt{\langle{x^2}\rangle}$'</span>, <span class="vs">r'$\sqrt{\langle{y^2}\rangle}$'</span>],</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>    ncols<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    loc<span class="op">=</span><span class="st">"upper left"</span>,</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="st">"small"</span>,</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    handlelength<span class="op">=</span><span class="fl">1.5</span>,</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].plot(positions, [fodo(s) <span class="cf">for</span> s <span class="kw">in</span> positions], color<span class="op">=</span><span class="st">"k"</span>, lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>plt.close()</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>(line1,) <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [])</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>(line2,) <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [])</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(cycle<span class="op">=</span><span class="st">"colorblind"</span>)</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>(line3,) <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [], ls<span class="op">=</span><span class="st">"--"</span>, lw<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>(line4,) <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [], ls<span class="op">=</span><span class="st">"--"</span>, lw<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update(i):</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>    i <span class="op">=</span> i <span class="op">*</span> stride</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>    line1.set_data(positions[:i], sizes[:i, <span class="dv">0</span>])</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>    line2.set_data(positions[:i], sizes[:i, <span class="dv">1</span>])</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>    line3.set_data(positions[:i], sizes0[:i, <span class="dv">0</span>])</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>    line4.set_data(positions[:i], sizes0[:i, <span class="dv">1</span>])</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> patch <span class="kw">in</span> axs[<span class="dv">0</span>, <span class="dv">1</span>].patches:</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>        patch.set_visible(<span class="va">False</span>)</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _sizes, _kws <span class="kw">in</span> <span class="bu">zip</span>([sizes, sizes0], [kws1, kws2]):</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>        axs[<span class="dv">0</span>, <span class="dv">1</span>].add_patch(</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>            Ellipse((<span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">2.0</span> <span class="op">*</span> _sizes[i, <span class="dv">0</span>], <span class="fl">2.0</span> <span class="op">*</span> _sizes[i, <span class="dv">1</span>], <span class="op">**</span>_kws)</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>anim <span class="op">=</span> animation.FuncAnimation(</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>    fig, update, frames<span class="op">=</span><span class="bu">len</span>(positions[::stride]), interval<span class="op">=</span>(<span class="fl">1000.0</span> <span class="op">/</span> <span class="fl">14.0</span>)</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="_output_kv.gif" class="img-fluid figure-img" style="width:95.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 5. Evolution of the KV distribution in a FODO lattice. Top left: horizontal and vertical beam size. Bottom left: Lattice focusing strength. Right: beam ellipse in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. Dashed lines are without space charge and solid lines are with space charge.</figcaption><p></p>
+</figure>
+</div>
+<p>Notice that space charge causes <em>mismatch oscillations</em>: without space charge, the beam repeats after each focusing period. More on this in a moment.</p>
+</section>
+<section id="danilov-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="danilov-distribution">1.4. Danilov distribution</h4>
+<p>Recently, a larger class of self-consistent distributions was discovered. It has the following form.</p>
+<p><span id="eq-3"><span class="math display">\[
+f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_{22} y),
+\tag{6}\]</span></span></p>
+<p>where the <span class="math inline">\(e_{ij}\)</span> terms are constants. Suppose <span class="math inline">\(e_{11} = e_{22} = 0\)</span> and <span class="math inline">\(e_{21} = -e_{12} = 1\)</span> so that <span class="math inline">\(p_y = x\)</span> and <span class="math inline">\(p_x = -y\)</span>; this describes a rotating rigid disk. Here are the 1D and 2D projections in this case:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.random.normal(size<span class="op">=</span>(<span class="bu">int</span>(<span class="fl">7e6</span>), <span class="dv">4</span>))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.apply_along_axis(<span class="kw">lambda</span> x: x <span class="op">/</span> np.linalg.norm(x), <span class="dv">1</span>, X)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>X[:, <span class="dv">3</span>] <span class="op">=</span> <span class="op">+</span>X[:, <span class="dv">0</span>]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>X[:, <span class="dv">1</span>] <span class="op">=</span> <span class="op">-</span>X[:, <span class="dv">2</span>]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> psv.cloud.corner(</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    X,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    autolim_kws<span class="op">=</span><span class="bu">dict</span>(pad<span class="op">=</span><span class="fl">0.25</span>),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>[<span class="vs">r"$x$"</span>, <span class="vs">r"$p_x$"</span>, <span class="vs">r"$x$"</span>, <span class="vs">r"$p_y$"</span>],</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    grid_kws<span class="op">=</span><span class="bu">dict</span>(figwidth<span class="op">=</span><span class="fl">4.5</span>),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    rms_ellipse<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    rms_ellipse_kws<span class="op">=</span><span class="bu">dict</span>(level<span class="op">=</span><span class="fl">2.0</span>),</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>plt.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="_output_corner_danilov.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 6. 1D and 2D projections of the Danilov distribution.</figcaption><p></p>
+</figure>
+</div>
+<p>In general, the particles in the beam swirl in a vortex pattern within an ellipse, always with a uniform density. It is also apparently possible to construct this type of vortex distribution in six-dimensional phase space, which is not true of the KV distribution.</p>
+<p>We can again derive equations for the elliptical beam envelope, but they are now going to include coupling between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. This is because the beam ellipse tiltes in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>- plane, producing a term proportional to <span class="math inline">\(xy\)</span> in the electric field. More details can be found in<span class="citation" data-cites="Danilov2003">&nbsp;[<a href="#ref-Danilov2003" role="doc-biblioref">5</a>]</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_tilt_angle(a, b, e, f):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> np.arctan2(<span class="fl">2.0</span> <span class="op">*</span> (a <span class="op">*</span> e <span class="op">+</span> b <span class="op">*</span> f), a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> e<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> f<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_radii(a, b, e, f):</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> get_tilt_angle(a, b, e, f)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    sin, cos <span class="op">=</span> np.sin(phi), np.cos(phi)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    sin2, cos2 <span class="op">=</span> sin<span class="op">**</span><span class="dv">2</span>, cos<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    xx <span class="op">=</span> a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    yy <span class="op">=</span> e<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> f<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    xy <span class="op">=</span> a <span class="op">*</span> e <span class="op">+</span> b <span class="op">*</span> f</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    cx <span class="op">=</span> np.sqrt(<span class="bu">abs</span>(xx <span class="op">*</span> cos2 <span class="op">+</span> yy <span class="op">*</span> sin2 <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> xy <span class="op">*</span> sin <span class="op">*</span> cos))</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    cy <span class="op">=</span> np.sqrt(<span class="bu">abs</span>(xx <span class="op">*</span> sin2 <span class="op">+</span> yy <span class="op">*</span> cos2 <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> xy <span class="op">*</span> sin <span class="op">*</span> cos))</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cx, cy</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> danilov_derivs(params, s, Q, foc):</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    k0x <span class="op">=</span> foc(s)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    k0y <span class="op">=</span> <span class="op">-</span>k0x</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    a, b, ap, bp, e, f, ep, fp <span class="op">=</span> params</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> get_tilt_angle(a, b, e, f)</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    cx, cy <span class="op">=</span> get_radii(a, b, e, f)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    cos, sin <span class="op">=</span> np.cos(phi), np.sin(phi)</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    cos2, sin2, sincos <span class="op">=</span> cos<span class="op">**</span><span class="dv">2</span>, sin<span class="op">**</span><span class="dv">2</span>, sin <span class="op">*</span> cos</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> <span class="fl">2.0</span> <span class="op">*</span> Q <span class="op">/</span> (cx <span class="op">+</span> cy)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> np.zeros(<span class="dv">8</span>)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">0</span>] <span class="op">=</span> ap</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">1</span>] <span class="op">=</span> bp</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">4</span>] <span class="op">=</span> ep</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">5</span>] <span class="op">=</span> fp</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">2</span>] <span class="op">=</span> <span class="op">-</span>k0x <span class="op">*</span> a <span class="op">+</span> T <span class="op">*</span> ((a <span class="op">*</span> cos2 <span class="op">-</span> e <span class="op">*</span> sincos) <span class="op">/</span> cx <span class="op">+</span> (a <span class="op">*</span> sin2 <span class="op">+</span> e <span class="op">*</span> sincos) <span class="op">/</span> cy)</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">3</span>] <span class="op">=</span> <span class="op">-</span>k0x <span class="op">*</span> b <span class="op">+</span> T <span class="op">*</span> ((e <span class="op">*</span> sin2 <span class="op">-</span> a <span class="op">*</span> sincos) <span class="op">/</span> cx <span class="op">+</span> (e <span class="op">*</span> cos2 <span class="op">+</span> a <span class="op">*</span> sincos) <span class="op">/</span> cy)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">6</span>] <span class="op">=</span> <span class="op">-</span>k0y <span class="op">*</span> e <span class="op">+</span> T <span class="op">*</span> ((b <span class="op">*</span> cos2 <span class="op">-</span> f <span class="op">*</span> sincos) <span class="op">/</span> cx <span class="op">+</span> (b <span class="op">*</span> sin2 <span class="op">+</span> f <span class="op">*</span> sincos) <span class="op">/</span> cy)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    w[<span class="dv">7</span>] <span class="op">=</span> <span class="op">-</span>k0y <span class="op">*</span> f <span class="op">+</span> T <span class="op">*</span> ((f <span class="op">*</span> sin2 <span class="op">-</span> b <span class="op">*</span> sincos) <span class="op">/</span> cx <span class="op">+</span> (f <span class="op">*</span> cos2 <span class="op">+</span> b <span class="op">*</span> sincos) <span class="op">/</span> cy)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> track_danilov(params, positions, Q, foc):</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    tracked <span class="op">=</span> odeint(danilov_derivs, params, positions, args<span class="op">=</span>(Q, foc))</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    a, b, ap, bp, e, f, ep, fp <span class="op">=</span> tracked.T</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    xsizes <span class="op">=</span> np.sqrt(a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>    ysizes <span class="op">=</span> np.sqrt(e<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> f<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    sizes <span class="op">=</span> np.vstack([xsizes, ysizes]).T <span class="op">*</span> <span class="dv">1000</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    cx, cy <span class="op">=</span> get_radii(a, b, e, f)</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>    radii <span class="op">=</span> np.vstack([cx, cy]).T <span class="op">*</span> <span class="dv">1000</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>    angles <span class="op">=</span> np.degrees(get_tilt_angle(a, b, e, f))</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sizes, radii, angles</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="co"># (Calculated matched initial parameters offline)</span></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> np.array([<span class="fl">0.0179</span>, <span class="fl">0.0</span>, <span class="dv">0</span>, <span class="fl">0.0022</span>, <span class="dv">0</span>, <span class="op">-</span><span class="fl">0.0079</span>, <span class="fl">0.0051</span>, <span class="dv">0</span>])</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> np.linspace(<span class="fl">0.0</span>, <span class="fl">20.0</span>, <span class="dv">1000</span>)</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>sizes, radii, angles <span class="op">=</span> track_danilov(params, positions, Q, fodo)</span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>sizes0, radii0, angles0 <span class="op">=</span> track_danilov(params, positions, <span class="fl">0.0</span>, fodo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>umin <span class="op">=</span> np.<span class="bu">min</span>(sizes)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>umax <span class="op">=</span> np.<span class="bu">max</span>(sizes)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>umax_pad <span class="op">=</span> <span class="fl">1.25</span> <span class="op">*</span> umax</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> pplt.subplots(</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    nrows<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    ncols<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="fl">2.5</span>),</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    spany<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    aligny<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    sharey<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    sharex<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    hspace<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    height_ratios<span class="op">=</span>[<span class="fl">5.0</span>, <span class="fl">1.0</span>],</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    width_ratios<span class="op">=</span>[<span class="fl">2.75</span>, <span class="fl">1.0</span>],</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(xlabel<span class="op">=</span><span class="st">""</span>, ylabel<span class="op">=</span><span class="st">"Beam size [mm]"</span>, ylim<span class="op">=</span>(umin <span class="op">-</span> <span class="dv">5</span>, umax <span class="op">+</span> <span class="dv">5</span>))</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].<span class="bu">format</span>(xlabel<span class="op">=</span><span class="st">"s [m]"</span>, ylabel<span class="op">=</span><span class="vs">r"$k_x$"</span>, yticks<span class="op">=</span>[<span class="dv">0</span>], ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.6116</span>, <span class="fl">0.6116</span>))</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>axs[:, <span class="dv">0</span>].<span class="bu">format</span>(xlim<span class="op">=</span>positions[[<span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>]])</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].spines[<span class="st">"top"</span>].set_visible(<span class="va">False</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].<span class="bu">format</span>(</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    xticklabels<span class="op">=</span>[],</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    yticklabels<span class="op">=</span>[],</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">=</span><span class="st">"x"</span>,</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">=</span><span class="st">"y"</span>,</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    xlim<span class="op">=</span>(<span class="op">-</span>umax_pad, umax_pad),</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    ylim<span class="op">=</span>(<span class="op">-</span>umax_pad, umax_pad),</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].<span class="bu">format</span>(xspineloc<span class="op">=</span><span class="st">"bottom"</span>, yspineloc<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">1</span>].axis(<span class="st">"off"</span>)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(xticklabels<span class="op">=</span>[])</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].legend(</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    handles<span class="op">=</span>[Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>colors[<span class="dv">0</span>]), Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>colors[<span class="dv">1</span>])],</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>[<span class="vs">r'$\sqrt{\langle{x^2}\rangle}$'</span>, <span class="vs">r'$\sqrt{\langle{y^2}\rangle}$'</span>],</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    ncols<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    loc<span class="op">=</span><span class="st">"upper left"</span>,</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="st">"small"</span>,</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    handlelength<span class="op">=</span><span class="fl">1.5</span>,</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].plot(positions, [fodo(s) <span class="cf">for</span> s <span class="kw">in</span> positions], color<span class="op">=</span><span class="st">"k"</span>, lw<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>plt.close()</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>line1, <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [])</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>line2, <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [])</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].<span class="bu">format</span>(cycle<span class="op">=</span><span class="st">'colorblind'</span>)</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>line3, <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [], ls<span class="op">=</span><span class="st">'--'</span>, lw<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>line4, <span class="op">=</span> axs[<span class="dv">0</span>, <span class="dv">0</span>].plot([], [], ls<span class="op">=</span><span class="st">'--'</span>, lw<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update(i):</span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>    i <span class="op">*=</span> stride</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>    line1.set_data(positions[:i], sizes[:i, <span class="dv">0</span>])</span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>    line2.set_data(positions[:i], sizes[:i, <span class="dv">1</span>])</span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>    line3.set_data(positions[:i], sizes0[:i, <span class="dv">0</span>])</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>    line4.set_data(positions[:i], sizes0[:i, <span class="dv">1</span>])</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> patch <span class="kw">in</span> axs[<span class="dv">0</span>, <span class="dv">1</span>].patches:</span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>        patch.set_visible(<span class="va">False</span>)</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>    axs[<span class="dv">0</span>, <span class="dv">1</span>].add_patch(</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>        Ellipse(</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>            (<span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">2.0</span> <span class="op">*</span> radii[i, <span class="dv">0</span>], <span class="fl">2.0</span> <span class="op">*</span> radii[i, <span class="dv">1</span>], angles[i], </span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>            fc<span class="op">=</span><span class="st">'lightgrey'</span>, lw<span class="op">=</span><span class="fl">0.75</span>, ec<span class="op">=</span><span class="st">'None'</span></span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>    axs[<span class="dv">0</span>, <span class="dv">1</span>].add_patch(</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>        Ellipse(</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>            (<span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">2.0</span> <span class="op">*</span> radii0[i, <span class="dv">0</span>], <span class="fl">2.0</span> <span class="op">*</span> radii0[i, <span class="dv">1</span>], angles0[i], </span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>            fill<span class="op">=</span><span class="va">False</span>, ls<span class="op">=</span><span class="st">'--'</span>, color<span class="op">=</span><span class="st">'k'</span>, lw<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>anim <span class="op">=</span> animation.FuncAnimation(</span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>    fig, update, frames<span class="op">=</span><span class="bu">len</span>(positions[::stride]), interval<span class="op">=</span>(<span class="fl">1000.0</span> <span class="op">/</span> <span class="fl">14.0</span>)</span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="_output_danilov.gif" class="img-fluid figure-img" style="width:95.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 7. Evolution of the Danilov distribution in a FODO lattice. Top left: horizontal and vertical beam size. Bottom left: Lattice focusing strength. Right: beam ellipse in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. Dashed lines are without space charge and solid lines are with space charge.</figcaption><p></p>
+</figure>
+</div>
+<p>Notice that the beam tilts even without space charge. This has to do with the phase relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. When the beam is upright in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are 90 degrees out of phase (think of circular motion); on the other hand, a 0 or 180-degree phase difference would lead to a diagonal line in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane and no correlations in <span class="math inline">\(x\)</span>-<span class="math inline">\(p_y\)</span> or <span class="math inline">\(y\)</span>-<span class="math inline">\(p_x\)</span>.</p>
+<p>What is a bit less obvious is how space charge affects the beam when it tilts. Although the forces are still linear, the areas of the <span class="math inline">\(x\)</span>-<span class="math inline">\(p_x\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(p_y\)</span> projections are longer conserved. Below is an example of a turn-by-turn plot (1 turn = 1 period = 5 meters in the above example) in which there are two frequencies involved: a faster oscillation of the beam envelope, and a slower oscillation corresponding to emittance exchange. This kind of emittance exchange is typical of linear coupling.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig4.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 8. Period-by-period evolution of a mismatched Danilov distribution.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="finding-the-matched-solution" class="level3">
+<h3 class="anchored" data-anchor-id="finding-the-matched-solution">2. Finding the matched solution</h3>
+<section id="the-problem" class="level4">
+<h4 class="anchored" data-anchor-id="the-problem">2.1. The problem</h4>
+<p>I’ll now move on to describing the problem we addressed in the paper. Notice that the focusing strength repeats itself after five meters; we call this the <em>period length</em>. A beam is <em>matched</em> to the lattice if its <a href="https://en.wikipedia.org/wiki/Covariance_matrix">covariance matrix</a> <span class="math inline">\(\mathbf{\Sigma}\)</span> repeats itself:</p>
+<p><span id="eq-4"><span class="math display">\[
+\mathbf{\Sigma}(s + L) = \Sigma(s)
+\tag{7}\]</span></span></p>
+<p>for all <span class="math inline">\(s\)</span>, where <span class="math inline">\(s\)</span> is the position in the lattice, <span class="math inline">\(L\)</span> is the period length, and <span class="math inline">\(\Sigma\)</span> is the covariance matrix given by</p>
+<p><span id="eq-5"><span class="math display">\[
+\mathbf{\Sigma} = \begin{bmatrix}
+    \langle{x x}\rangle &amp; \langle{x p_x}\rangle &amp; \langle{x y}\rangle &amp; \langle{x p_y}\rangle \\
+    \langle{x p_x}\rangle &amp; \langle{p_x p_x}\rangle &amp; \langle{y p_x}\rangle &amp; \langle{p_x p_y}\rangle \\
+    \langle{x y}\rangle &amp; \langle{y p_x}\rangle &amp; \langle{y y}\rangle &amp; \langle{y p_y}\rangle \\
+    \langle{x p_y}\rangle &amp; \langle{p_x p_y}\rangle &amp; \langle{y p_y}\rangle &amp; \langle{p_y p_y}\rangle \\
+\end{bmatrix}
+\tag{8}\]</span></span></p>
+<p>(assuming all means are zero). So the matched beam has not only the same shape and orientation in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, but also the same spread in velocities and <em>correlations</em> between the positions and velocites. Finding the matched beam amounts to choosing the correct initial <span class="math inline">\(\mathbf{\Sigma}\)</span> such that <a href="#eq-4">Equation&nbsp;7</a> is true. This task is trivial without space charge but difficult with space charge.</p>
+<p>The matched envelope is useful for theoretical studies. First, it is a sort of minimum energy solution, minimizing the free energy available to drive emittance growth. Second, it is the most radially compact solution for a given beam intensity. Third, knowledge of the matched envelope is required to analyze the stability of the distribution.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> The matched envelope may also be useful in experimental studies. It appears possible to generate an approximate Danilov distribution in a real accelerator, but the method would not work without knowledge of the matched envelope.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>Our strategy was to solve the problem in simple cases, studying the properties of the matched solution as a function of intensity. There were two challenges to overcome. First, space charge causes the final beam to depend on the initial beam in a potentially complicated way that is unknown before tracking the beam; this is especially true for long lattices and large beam intensities. This meant we would need to iterate to find the solution. Second, it was not immediately clear how to vary the distribution during the search; the full covariance matrix has ten unique elements, and they cannot be varied freely since the covariance matrix must remain positive-definite.</p>
+</section>
+<section id="the-solution" class="level4">
+<h4 class="anchored" data-anchor-id="the-solution">2.2. The solution</h4>
+<p>Consider the equation of motion for a particle in a coupled lattice:</p>
+<p><span id="eq-6"><span class="math display">\[
+\begin{aligned}
+    x'' + k_{11}(s)x + k_{13}(s)y + k_{14}(s)y' &amp;= 0, \\
+    y'' + k_{31}(s)x + k_{33}(s)y + k_{23}(s)x' &amp;= 0.
+\end{aligned}
+\tag{9}\]</span></span></p>
+<p>What does space charge do to these equations? For a tilted, uniform density ellipse, it simply modifies <span class="math inline">\(k_{11}\)</span>, <span class="math inline">\(k_{13}\)</span>, <span class="math inline">\(k_{31}\)</span>, and <span class="math inline">\(k_{33}\)</span>. We could replicate the effect of space charge by inserting a large number of linear defocusing elements into the lattice. Call this new lattice the <em>effective lattice</em>, illustrated below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Fig. 9. Illustration of the <em>effective lattice</em> — a linear lattice that replicates the effect of space charge.</figcaption><p></p>
+</figure>
+</div>
+<p>The matched beam generates a <em>periodic</em> effective lattice. Such a lattice can be parameterized using the language of coupled single-particle dyanmics. I discussed this in a <a href="https://austin-hoover.github.io/posts/2021-01-25_coupled_parametric_oscillators/2021-01-25-coupled_parametric_oscillators.html">previous post</a>., but will repeat the necessary info here.</p>
+<p>The following figure shows the turn-by-turn trajectory of a single particle in a coupled lattice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Fig. 10. Turn-by-turn coordinates in a coupled lattice (gray). The projections of the eigenvectors are also shown in blue and red.</figcaption><p></p>
+</figure>
+</div>
+<p>The turn-by-turn particle coordinates <span class="math inline">\(\{\mathbf{x}_i\}\)</span> trace a torus in 4D phase space. A matched beam is formed by placing a particle at each of these points since the particles will just trade positions after each turn (<span class="math inline">\(\mathbf{x}_i \rightarrow \mathbf{x}_{i+1}\)</span>).</p>
+<p>Let’s state this again using the eigenvectors of the one-turn transfer matrix. Each particle can be written as a linear combination of these eigenvectors (shown in blue and red):</p>
+<p><span class="math display">\[
+\mathbf{x} =
+\sqrt{2 J_1}\mathbf{v}_1e^{-i\psi_1} +
+\sqrt{2 J_2}\mathbf{v}_2e^{-i\psi_2}.
+\]</span></p>
+<p>The eigenvectors have amplitudes (<span class="math inline">\(J\)</span>) and phases (<span class="math inline">\(\psi\)</span>), and a matched beam is formed by distributing particles along either or both of the eigenvectors with phases ranging uniformly between zero and <span class="math inline">\(2\pi\)</span>. Each eigenvector traces a 4D ellipsoid turn-by-turn. When projected onto any 2D plane, each eigenvector traces an ellipse. Each eigenvector is parameterized by the <em>4D</em> Twiss parameters <span class="math inline">\(\alpha_{1x}\)</span>, <span class="math inline">\(\beta_{1x}\)</span>, etc.</p>
+<p>Our insight was that all particles in the Danilov distribution lie along one vector in four-dimensional phase space. This vector is an eigenvector of some unknown <span class="math inline">\(4 \times 4\)</span> transfer matrix. This transfer matrix is just the transfer matrix of the effective lattice generated by the matched beam. Thus, we need only to vary the parameters of this eigenvector to find the matched beam. There are six eigenvector parameters in the Lebedev-Bogacz formalism: the beam size in each dimension, the beam divergence in each dimension, the phase difference between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, and the ratio between the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> emittances. We can also choose which eigenvector to use, so there are two possible solutions for each lattice. We can wrap all these parameters into a vector <span class="math inline">\(\mathbf{p}\)</span>.</p>
+<p>We can frame this as an optimization problem in which we search for the <span class="math inline">\(\mathbf{p}\)</span> which minimizes the sum of the squared differences between the initial and final moments when tracking through one period. We utilized two different optimization methods. The first was SciPy’s <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html">nonlinear least squares</a>, which worked well in most cases. The second strategy was to track the beam over several periods and compute the period-by-period average of <span class="math inline">\(\mathbf{p}\)</span>, then use this average as the seed for the next round. This figure shows the method converging after a few iterations. The relevant code is found <a href="https://github.com/austin-hoover/py-orbit/blob/master/py/orbit/envelope/danilov.py">here</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig3.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 11. Convergence of the matching routine.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="simple-applications" class="level3">
+<h3 class="anchored" data-anchor-id="simple-applications">3. Simple applications</h3>
+<p>We demonstrated the matching routine in a FODO lattice (Fig. 12a). We also added some variations, like changing the horizontal/vertical focusing ratio, tilting the quadrupoles (Fig. 12b), and adding a longitudinal magnetic field to generate coupling (Fig. 12c).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fodo_lattices.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 12. Simple lattices used for testing the matching routine.</figcaption><p></p>
+</figure>
+</div>
+<p>Let’s start with the regular, uncoupled FODO lattice. Fig. 13. Shows the matched 2D projections of the beam at the lattice entrance, as well as the evolution of the beam sizes, emittances, and x-y phase difference within the lattice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="matched_vs_sc_fodo_mode1.png" class="img-fluid figure-img" style="width:92.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="matched_vs_sc_fodo_mode1.png" class="img-fluid figure-img" style="width:92.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 13. The “mode 1” (top) and “mode 2” (bottom) matched solutions in an uncoupled FODO lattice. The intensity (<span class="math inline">\(Q\)</span>) is represented by the color scale. In the right columns, solid lines represent <span class="math inline">\(x\)</span> and dashed lines represent <span class="math inline">\(y\)</span>.</figcaption><p></p>
+</figure>
+</div>
+<p>The main takeaway is that space charge scales the matched beam; it does not change its orientation in phase space. Additional observations are: space charge causes emittance evolution within the lattice; space charge encourages the beam to be round (see the bottom-right subplot); the two solutions differ only in the sign of their angular momentum.</p>
+<p>When the quadrupoles are rotated, the matched solution is tilted in the x-y plane. The emittance exchange becomes quite large in this case.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="matched_vs_sc_fodo_skew_mode2.png" class="img-fluid figure-img" style="width:92.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="matched_vs_sc_fodo_skew_mode1.png" class="img-fluid figure-img" style="width:92.0%"></p>
+<p></p><figcaption class="figure-caption">Fig. 14. The “mode 1” (top) and “mode 2” (bottom) matched solutions in a FODO lattice with skew quadrupoles. The intensity (<span class="math inline">\(Q\)</span>) is represented by the color scale. In the right columns, solid lines represent <span class="math inline">\(x\)</span> and dashed lines represent <span class="math inline">\(y\)</span>.</figcaption><p></p>
+</figure>
+</div>
+<p>Here we noticed an asymmetry in the solutions. The beam always wants to be tilted in the same direction in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane as soon as space charge is turned on.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">4. Conclusion</h3>
+<p>I’ll stop there. I hope this gave a flavor of what went into this paper. In future posts, I will discuss the importance of this matching routine for experiments.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Hoover2021" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Hoover, N. J. Evans, and J. A. Holmes, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.24.044201">Computation of the Matched Envelope of the Danilov Distribution</a></em>, Phys. Rev. Accel. Beams <strong>24</strong>, 044201 (2021).</div>
+</div>
+<div id="ref-Hofmann2017" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">I. Hofmann and O. Boine-Frankenheim, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.20.014202">Parametric Instabilities in 3D Periodically Focused Beams with Space Charge</a></em>, Phys. Rev. Accel. Beams <strong>20</strong>, 014202 (2017).</div>
+</div>
+<div id="ref-Galambos1999" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">J. Galambos, S. Danilov, D. Jeon, J. Holmes, D. Olsen, J. Beebe-Wang, and A. Luccio, <em><a href="https://doi.org/10.1109/PAC.1999.792230">ORBIT-a Ring Injection Code with Space Charge</a></em>, in <em>Proceedings of the 1999 Particle Accelerator Conference (Cat. No.99CH36366)</em>, Vol. 5 (1999), pp. 3143–3145 vol.5.</div>
+</div>
+<div id="ref-Lund2004" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">S. M. Lund and B. Bukh, <em><a href="https://doi.org/10.1103/PhysRevSTAB.7.024801">Stability Properties of the Transverse Envelope Equations Describing Intense Ion Beam Transport</a></em>, Phys. Rev. ST Accel. Beams <strong>7</strong>, 024801 (2004).</div>
+</div>
+<div id="ref-Danilov2003" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">V. Danilov, S. Cousineau, S. Henderson, and J. Holmes, <em><a href="https://doi.org/10.1103/PhysRevSTAB.6.094202">Self-Consistent Time Dependent Two Dimensional and Three Dimensional Space Charge Distributions with Linear Force</a></em>, Phys. Rev. ST Accel. Beams <strong>6</strong>, 094202 (2003).</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-01-21-parametric_oscillators/2021-01-21-parametric_oscillators.html">here</a> and <a href="https://austin-hoover.github.io/posts/2021-01-25_coupled_parametric_oscillators/2021-01-25-coupled_parametric_oscillators.html">here</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-03-28_nonlinear_resonances/2021-03-28-nonlinear_resonances.html">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Notice that in Fig. 1., the Gaussian has an approximately uniform core.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>This has only been done for the KV distribution.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>I will discuss this method in future posts.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
