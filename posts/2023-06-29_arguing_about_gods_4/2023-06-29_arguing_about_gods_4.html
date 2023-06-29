@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.140">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Austin Hoover">
+<meta name="dcterms.date" content="2023-06-29">
+
+<title>Austin Hoover - Fine-tuning arguments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
+</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Austin Hoover</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#paleys-watch" id="toc-paleys-watch" class="nav-link active" data-scroll-target="#paleys-watch">1. Paley’s watch</a></li>
+  <li><a href="#cosmic-fine-tuning" id="toc-cosmic-fine-tuning" class="nav-link" data-scroll-target="#cosmic-fine-tuning">2. Cosmic fine-tuning</a></li>
+  <li><a href="#responses-to-fine-tuning" id="toc-responses-to-fine-tuning" class="nav-link" data-scroll-target="#responses-to-fine-tuning">3. Responses to fine-tuning</a>
+  <ul>
+  <li><a href="#the-many-worlds-explanation" id="toc-the-many-worlds-explanation" class="nav-link" data-scroll-target="#the-many-worlds-explanation">3.2. The many-worlds explanation</a></li>
+  <li><a href="#the-theistic-explanation" id="toc-the-theistic-explanation" class="nav-link" data-scroll-target="#the-theistic-explanation">3.3. The theistic explanation</a></li>
+  <li><a href="#the-chance-explanation" id="toc-the-chance-explanation" class="nav-link" data-scroll-target="#the-chance-explanation">3.4. The chance explanation</a></li>
+  <li><a href="#no-explanation-needed-brute-contingency" id="toc-no-explanation-needed-brute-contingency" class="nav-link" data-scroll-target="#no-explanation-needed-brute-contingency">3.5. No explanation needed: brute contingency</a></li>
+  <li><a href="#no-explanation-needed-metaphysical-necessity" id="toc-no-explanation-needed-metaphysical-necessity" class="nav-link" data-scroll-target="#no-explanation-needed-metaphysical-necessity">3.6. No explanation needed: metaphysical necessity</a></li>
+  </ul></li>
+  <li><a href="#outlook" id="toc-outlook" class="nav-link" data-scroll-target="#outlook">4. Outlook</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fine-tuning arguments</h1>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Austin Hoover </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 29, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Teleological arguments conclude that certain contingent features of the world are best explained by the existence of a designer (God). A classic argument of this form is “Paley’s watch”, which focuses on biological organisms. The contemporary debate revolves around cosmological fine-tuning. In this post, following Oppy, I assess several proposed explanations of fine-tuning: design, multiverse, necessity, chance, and brute contingency.</p>
+<section id="paleys-watch" class="level2">
+<h2 class="anchored" data-anchor-id="paleys-watch">1. Paley’s watch</h2>
+<p>Before discussing fine-tuning, it is worth visiting the classical biological design argument, starting with Paley’s Watch:</p>
+<blockquote class="blockquote">
+<p>“In crossing a heath, suppose I pitched my foot against a stone, and were asked how the stone came to be there; I might possibly answer, that, for anything I knew to the contrary, it had lain there forever: nor would it perhaps be very easy to show the absurdity of this answer. But suppose I had found a watch upon the ground, and it should be inquired how the watch happened to be in that place; I should hardly think of the answer I had before given, that for anything I knew, the watch might have always been there. … There must have existed, at some time, and at some place or other, an artificer or artificers, who formed [the watch] for the purpose which we find it actually to answer; who comprehended its construction, and designed its use. … Every indication of contrivance, every manifestation of design, which existed in the watch, exists in the works of nature; with the difference, on the side of nature, of being greater or more, and that in a degree which exceeds all computation.” — William Paley, <em>Natural Theology or Evidences of the Existence and Attributes of the Deity</em> (1802)</p>
+</blockquote>
+<p>Oppy suggests that Paley’s inference to design stems from three observations:</p>
+<ol type="1">
+<li>The watch has a principal function.</li>
+<li>Various parts of the watch have functions.</li>
+<li>The materials from which the parts are constructed are well suited to the functions that those parts have.</li>
+</ol>
+<p>Oppy suggests that Paley’s inference to design relies instead on the background knowledge that watches are not produced naturally. But it is not clear that the inference works for biological systems, for which we do not have the same background knowledge. Additionally, evolutionary theory provides a plausible account of how nature could produce such systems.</p>
+<p>A more recent argument focuses on “irreducibly complex” systems that would cease to function if any of their parts were removed. The claim is that it would be impossible for such a system to arise from gradual changes since the predecessor of any irreducibly complex system would have to be irreducibly complex. It seems to me that the proponent of this design argument will want to identify the first irreducibly complex system with the first biological system. A broader definition would include non-biological systems, but theories of physics and chemistry plausibly explain the complexity of such systems. A narrower definition would exclude some early life forms, but evolutionary theory provides a plausible natural link between simple and complex biological systems. On the other hand, it is unknown how biological systems developed from chemical systems. However, most think there is a natural link between chemistry and biology, and it would be difficult to show that such a link could not exist.</p>
+<p>I feel that this argument does not address why God would design a self-organizing world in which the self-organization stops at the transition from chemistry to biology. It seems more elegant, and therefore more likely, that God would select laws and initial conditions such that life could develop without intervention.</p>
+</section>
+<section id="cosmic-fine-tuning" class="level2">
+<h2 class="anchored" data-anchor-id="cosmic-fine-tuning">2. Cosmic fine-tuning</h2>
+<p>The modern debate revolves around <em>fine-tuning</em>, the extreme sensitivity of the necessary conditions for life on physical laws and prior states of the universe. Here, I will assume the past is finite and label <span class="math inline">\(t = 0\)</span> as the first moment of time. I will call the state of the world at <span class="math inline">\(t = 0\)</span> the “initial state” and the state of the world at <span class="math inline">\(t = T\)</span> the “final state”, where <span class="math inline">\(T\)</span> is any time at which complex life forms exist. For simplicity, I will assume the laws are deterministic. To determine the extent of fine-tuning in the universe, we must define a probability distribution over the possible initial states, constants, and physical laws. In theory, we could then compute a probability distribution over the final states and integrate over the life-permitting regions. This integral will be small if the universe is fine-tuned for life.</p>
+<p>It is interesting to ask where such probability distributions could come from. It seems they could not come from a physical theory. It is also interesting to consider the meaning of such probability distributions, given that there is only one universe. I’ll keep these questions in mind as I proceed.</p>
+<p>Let’s first fix the laws and focus on the initial state. Much of our reasoning about statistical mechanics only works if we assume the early universe was in a low entropy state, far from equilibrium. This is extremely unlikely if the initial state was chosen at random. We could have two reactions</p>
+<p>Let’s now fix the initial conditions and focus on the laws. Laws can vary in two ways. First, we could hold the functional form of a law fixed while varying its parameters. For example, consider the force <span class="math inline">\(f(x)\)</span> between point-masses <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span> separated by distance <span class="math inline">\(r\)</span>: <span class="math display">\[
+f(r; m_1, m_2, G) = \frac{G m_1 m_2}{r^2}.
+\]</span> Here, $G = <span class="math inline">\(6.674 \times 10^{-11} m^3 kg^{-1} s^{-2}\)</span> is an empirically determined constant. One could imagine scaling <span class="math inline">\(G\)</span> so that the force between the masses increased, decreased, or even flipped signs.</p>
+<p>The fundamental theories of physics are the standard models (SM) of particle physics and cosmology. Quantum Field Theory (QFT), the theory of the strong, weak, and electromagnetic forces, describes the interactions of elementary particles. General Relativity (GR), on the other hand, describes the interactions of masses in space-time and the large-scale structure of the universe. Both theories contain multiple free, empirically determined constants. The most interesting constants for our purposes are dimensionless. Examples include: * Constant 1 * Constant 2 * Constant 3</p>
+<p>It is relatively straightforward to investigate the consequences of varying these parameters. We ask the counterfactual question: how would the universe turn out if this parameter was different? In this spirit, we can derive at least loose bounds on the life-permitting values of the parameter. For example, […]</p>
+<p>(We could also change the functional form of the laws, opening an infinite-dimensional space of possible universes with entirely different physics. Taking the previous example, we could move from an inverse square law to an inverse cube law: <span class="math display">\[
+f(r; m_1, m_2, G) = \frac{G m_1 m_2}{r^3}.
+\]</span> For now, I vote to focus on the constants, sticking with the physics we know to be true in our universe. I’ll come back to this point later.)</p>
+<p>There are important questions about how to interpret the fine-tuning data. First, the theories in question are incomplete. Future theories may have no fine-tuned parameters. However, this seems unlikely. […]</p>
+<p>Second, in what sense is the life-permitting region of parameter space small? Oppy raises this concern in <em>Arguing About Gods</em>.</p>
+<p>Third, one might wonder whether we are varying the parameters in the right way. We generally vary one parameter at a time, but couldn’t it be that a larger life-permitting region could be accessed by varying multiple parameters at once, exploring entire high-dimensional space? [See Barnes’ response…]</p>
+<p>Fourth, if we are placing probability distributions over constants, why not place probability distributions over laws as well, opening a larger space of possible worlds? And who is to say that this space’s life-permitting region is small?</p>
+<p>I think that fine-tuning exists. I am relatively convinced by the arguments from physics, along with many (most, it seems) physicists and philosophers who are more knowledgeable than myself. I also feel that the objections to fine-tuning have mostly satisfactory responses. What remains is to work out the philosophical consequences of fine-tuning.</p>
+</section>
+<section id="responses-to-fine-tuning" class="level2">
+<h2 class="anchored" data-anchor-id="responses-to-fine-tuning">3. Responses to fine-tuning</h2>
+<p>Many have argued that the evidence of fine-tuning (<span class="math inline">\(E\)</span>) supports a hypothesis <span class="math inline">\(H\)</span>: <span class="math display">\[
+\frac{Pr(H | E)}{Pr(\neg H | E)} = \frac{Pr(E | H)}{Pr(E | \neg H)}\frac{Pr(H)}{Pr(\neg H)} &gt; 1,
+\]</span></p>
+<p>We can map the candidate hypotheses to the following responses to an all-sixes configuration of one billion dice.</p>
+<ol type="1">
+<li><em>Many rolls</em>: There were probably many prior rolls.</li>
+<li><em>Many tables</em>: There were probably many simultaneous rolls.</li>
+<li><em>Intentional agent</em>: An intentional agent arranged The dice in the all-sixes configuration.</li>
+<li><em>One roll</em>: The dice were rolled once. The all-sixes configuration was unlikely, but unlikely events do not necessarily require explanations.</li>
+<li><em>Brute contingency</em>: The dice could have landed in a different configuration, but no explanation is needed for the observed configuration.</li>
+<li><em>Necessity</em>: The dice could not have landed in a different configuration.</li>
+</ol>
+<p>Here, the all-sixes configuration is analogous to a life-supporting universe. Response 2 corresponds to the <em>multiverse hypothesis</em>: that there are many universes, each with different laws and initial conditions. Response 3 corresponds to the <em>design hypothesis</em>: that an intentional agent selected the laws and initial conditions of the universe. Response 4 corresponds to the claim that the laws and initial conditions were unlikely (in some sense), but that unlikely events do not necessarily require explanations; the selection process, even if random, provides a sufficient explanation. Response 5 corresponds to the claim that although the laws and initial conditions could have been different, they do not require a deeper explanation. Response 6 corresponds to the claim that the laws and initial conditions are fixed by metaphysical necessity.</p>
+<div class="cell" data-fig-width="585px">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  A[Evidence of fine-tuning] 
+  A --&gt; B[Accept]
+      B --&gt; D[Explanation needed]
+          D --&gt; F[Design]
+          D --&gt; G[Multiverse]
+          D --&gt; H[Chance]
+      B --&gt; E[No explanation needed]
+          E --&gt; I[Brute contingency]
+          E --&gt; J[Necessity]
+  A --&gt; C[Reject]
+</pre>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>[…]</p>
+<section id="the-many-worlds-explanation" class="level3">
+<h3 class="anchored" data-anchor-id="the-many-worlds-explanation">3.2. The many-worlds explanation</h3>
+</section>
+<section id="the-theistic-explanation" class="level3">
+<h3 class="anchored" data-anchor-id="the-theistic-explanation">3.3. The theistic explanation</h3>
+</section>
+<section id="the-chance-explanation" class="level3">
+<h3 class="anchored" data-anchor-id="the-chance-explanation">3.4. The chance explanation</h3>
+</section>
+<section id="no-explanation-needed-brute-contingency" class="level3">
+<h3 class="anchored" data-anchor-id="no-explanation-needed-brute-contingency">3.5. No explanation needed: brute contingency</h3>
+</section>
+<section id="no-explanation-needed-metaphysical-necessity" class="level3">
+<h3 class="anchored" data-anchor-id="no-explanation-needed-metaphysical-necessity">3.6. No explanation needed: metaphysical necessity</h3>
+</section>
+</section>
+<section id="outlook" class="level2">
+<h2 class="anchored" data-anchor-id="outlook">4. Outlook</h2>
+<p>The next chapter of Oppy’s “Arguing About Gods” covers arguments from evil. Before moving on to this topic, I plan to spend more time on teleological and cosmological arguments. In particular, I plan to spend some time on <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/nous.12364">the nomological argument</a>, <a href="https://philarchive.org/rec/CUTPHA">psychophysical harmony</a>, and <a href="https://www.tandfonline.com/doi/abs/10.1080/14746700.2011.547001">the unreasonable effectiveness of mathematics</a>. These are all related to the fine-tuning argument. I also have not covered the <a href="">Thomistic cosmological argument</a> defended by Edward Feser. </p>
+<p>Videos: • https://www.youtube.com/watch?v=GXQXPi2cy9E&amp;ab_channel=TheMetaphysicsofTeleology • https://www.youtube.com/watch?v=jnvPvnb6rw4&amp;ab_channel=CollegiumInstitute • https://www.youtube.com/watch?v=nJEWg1ifUCg&amp;ab_channel=Enlightainment • https://www.youtube.com/watch?v=5OoYzcxzvvM&amp;ab_channel=PremierUnbelievable%3F • https://www.youtube.com/watch?v=MXzM_tBPm-0&amp;ab_channel=CapturingChristianity • https://www.youtube.com/watch?v=Aw0_MSqnSTU&amp;list=WL&amp;index=10 • https://www.youtube.com/watch?v=U6ZtmGIhIhU o 1:12:00 o “The initial state was unlikely” means “the initial state was not chosen randomly”. o We have no underlying theory about how to assign probability distributions to fundamental constants.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
