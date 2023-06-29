@@ -222,8 +222,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 </header>
 
-<section id="charge-exchange-injection" class="level3">
-<h3 class="anchored" data-anchor-id="charge-exchange-injection">Charge-exchange injection</h3>
+<section id="charge-exchange-injection" class="level2">
+<h2 class="anchored" data-anchor-id="charge-exchange-injection">Charge-exchange injection</h2>
 <p>One method to create high-intensity hadron beams is charge-exchange injection: negatively charged particles are repeatedly accelerated in a linear accelerator (linac) and injected into a circular accelerator (ring), accumulating charge in the ring over time. I created a simple animation to visualize this process.</p>
 <div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -413,8 +413,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 <p>It could be interesting to display the results of a simulation in this way — usually they are displayed in the frame of the beam centroid.</p>
 </section>
-<section id="phase-space-painting" class="level3">
-<h3 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h3>
+<section id="phase-space-painting" class="level2">
+<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
 <p>If there is significant overlap between the injected and circulating beams, a huge charge density will be created and the beam size will blow up due to the electric forces between the particles. To avoid this, the relative distance and angle between the beams is varied over time. The idea is to inject new particles into unoccupied regions of the transverse phase space (<span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span>-<span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span>) of the circulating beam. This process is called <em>phase space painting</em>, or simply <em>painting</em>.</p>
 <p>There are many possible painting methods. The two most common methods are <em>correlated painting</em> and <em>anti-correlated painting</em>. In correlated painting, initial particles are injected directly onto the closed-orbit in the ring, then moved away from the origin at a rate proportional to the square root of time. The angle between the beams is always zero. In other words,</p>
 <p><span class="math display">\[

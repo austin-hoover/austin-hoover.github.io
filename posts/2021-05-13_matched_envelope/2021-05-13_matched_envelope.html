@@ -260,10 +260,10 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 <p>My first peer-reviewed paper was published in Physical Review Accelerators and Beams (PRAB) at the end of April<span class="citation" data-cites="Hoover2021">&nbsp;[<a href="#ref-Hoover2021" role="doc-biblioref">1</a>]</span>. I thought I would summarize the results of the paper here.</p>
-<section id="self-consistent-beam-distributions" class="level3">
-<h3 class="anchored" data-anchor-id="self-consistent-beam-distributions">1. Self-consistent beam distributions</h3>
-<section id="space-charge" class="level4">
-<h4 class="anchored" data-anchor-id="space-charge">1.1. Space charge</h4>
+<section id="self-consistent-beam-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="self-consistent-beam-distributions">1. Self-consistent beam distributions</h2>
+<section id="space-charge" class="level3">
+<h3 class="anchored" data-anchor-id="space-charge">1.1. Space charge</h3>
 <p>A beam of charged particles generates an electric field, which then exerts a force on each particle, whose motion modifies the electric field, and so on. This problem is familiar to plasma physics. One important feature of charged particle beams is that they are <em>non-neutral</em>, i.e., all particles have the same charge. Thus, all forces are long-range, making the problem difficult to handle analytically.</p>
 <p>Here, I will briefly discuss one way in which space charge limits the performance of particle accelerators. In particular, I will discuss the difficulties caused by the fact that the space charge force on a given particle depends nonlinearly on the particle’s position. For example, consider the following two charge distributions and the radial electric fields they produce.</p>
 <div class="cell">
@@ -354,8 +354,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 <p>It seems plausible that a beam producing linear space charge forces would alleviate these problems, enabling higher beam intensities. We already have an example of one such beam in Fig. 1: a uniform-density ellipse. But if we transported this beam through an accelerator, would its uniform density be maintained? There are only a few cases in which the answer is “yes”; we call these cases <em>self-consistent</em>.</p>
 </section>
-<section id="vlasov-equilibria" class="level4">
-<h4 class="anchored" data-anchor-id="vlasov-equilibria">1.2. Vlasov equilibria</h4>
+<section id="vlasov-equilibria" class="level3">
+<h3 class="anchored" data-anchor-id="vlasov-equilibria">1.2. Vlasov equilibria</h3>
 <p>To evolve the beam, we need to specify not only the distribution of particle positions but also the distribution of velocities; in other words, we need to specify the distribution in four-dimensional position-momentum space (phase space). We then apply the framework of statistical mechanics, which I will briefly summarize.</p>
 <p>A collisionless, two-dimensional[^By two-dimensional, we mean that the beam extends forever in the <span class="math inline">\(z\)</span> direction.] beam of charged particles may be represented by a distribution function <span class="math inline">\(f(\mathbf{x}, \mathbf{x}', s)\)</span>, where <span class="math inline">\(\mathbf{x} = (x, y)^T\)</span> is the transverse position, <span class="math inline">\(\mathbf{x}' = d\mathbf{x}/ds\)</span> is the transverse momentum, <span class="math inline">\(s = \beta c t\)</span> is the axial position, <span class="math inline">\(t\)</span> is the time, <span class="math inline">\(\beta c\)</span> is the beam velocity, and <span class="math inline">\(c\)</span> is the speed of light. In a linear, uncoupled focusing system represented by <span class="math inline">\(\mathbf{\kappa(s)}\)</span>, the distribution function evolves according to the Vlasov-Poisson system of equations:</p>
 <p><span id="eq-Vlasov"><span class="math display">\[
@@ -376,8 +376,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p>This highly nonlinear integro-differential system of equations is difficult to solve analytically. Exact solutions are called <em>equilibrium distributions</em> and have the form <span class="math inline">\(f = f(\{C_i\}),\)</span> where <span class="math inline">\(\{C_i\}\)</span> are invariants of the motion. When the focusing is time-independent (<span class="math inline">\(\mathbf{\kappa}(s) = \mathbf{\kappa}\)</span>), the Hamiltonian is an invariant and any function of the Hamiltonian is an equilibrium distribution. But when the focusing is time-dependent, the solution is unclear.</p>
 <p>For some time, only one solution existed for linear time-dependent systems, but recently, at least one additional solution has been found. Both solutions project to a uniform density ellipse in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, producing linear space charge forces. And since they are equilibrium solutions, they are guaranteed to maintain their functional form as they evolve. This is just what we define as a self-consistent distribution; self-consistent distributions are the subset of Vlasov equilibrium distributions that produce linear space charge forces. I will not discuss how these solutions are found in this post. I will instead focus on some of their properties.</p>
 </section>
-<section id="kv-distribution" class="level4">
-<h4 class="anchored" data-anchor-id="kv-distribution">1.2. KV distribution</h4>
+<section id="kv-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="kv-distribution">1.2. KV distribution</h3>
 <p>The first self-consistent distribution was derived by a pair of Russian scientists in 1959 and is known as the KV distribution. Particles in the KV distribution uniformly populate the boundary of an ellipsoid in four-dimensional (4D) phase space. In normalized coordinates, it looks something like</p>
 <p><span id="eq-1"><span class="math display">\[
 f(x, p_x, y, p_y) = \delta(x^2 + {p_y}^2 + y^2 + {p_y}^2 - 1),
@@ -546,8 +546,8 @@ f(x, p_x, y, p_y) = \delta(x^2 + {p_y}^2 + y^2 + {p_y}^2 - 1),
 </div>
 <p>Notice that space charge causes <em>mismatch oscillations</em>: without space charge, the beam repeats after each focusing period. More on this in a moment.</p>
 </section>
-<section id="danilov-distribution" class="level4">
-<h4 class="anchored" data-anchor-id="danilov-distribution">1.4. Danilov distribution</h4>
+<section id="danilov-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="danilov-distribution">1.4. Danilov distribution</h3>
 <p>Recently, a larger class of self-consistent distributions was discovered. It has the following form.</p>
 <p><span id="eq-3"><span class="math display">\[
 f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_{22} y),
@@ -731,10 +731,10 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 </div>
 </section>
 </section>
-<section id="finding-the-matched-solution" class="level3">
-<h3 class="anchored" data-anchor-id="finding-the-matched-solution">2. Finding the matched solution</h3>
-<section id="the-problem" class="level4">
-<h4 class="anchored" data-anchor-id="the-problem">2.1. The problem</h4>
+<section id="finding-the-matched-solution" class="level2">
+<h2 class="anchored" data-anchor-id="finding-the-matched-solution">2. Finding the matched solution</h2>
+<section id="the-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem">2.1. The problem</h3>
 <p>I’ll now move on to describing the problem we addressed in the paper. Notice that the focusing strength repeats itself after five meters; we call this the <em>period length</em>. A beam is <em>matched</em> to the lattice if its <a href="https://en.wikipedia.org/wiki/Covariance_matrix">covariance matrix</a> <span class="math inline">\(\mathbf{\Sigma}\)</span> repeats itself:</p>
 <p><span id="eq-4"><span class="math display">\[
 \mathbf{\Sigma}(s + L) = \Sigma(s)
@@ -752,8 +752,8 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 <p>The matched envelope is useful for theoretical studies. First, it is a sort of minimum energy solution, minimizing the free energy available to drive emittance growth. Second, it is the most radially compact solution for a given beam intensity. Third, knowledge of the matched envelope is required to analyze the stability of the distribution.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> The matched envelope may also be useful in experimental studies. It appears possible to generate an approximate Danilov distribution in a real accelerator, but the method would not work without knowledge of the matched envelope.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
 <p>Our strategy was to solve the problem in simple cases, studying the properties of the matched solution as a function of intensity. There were two challenges to overcome. First, space charge causes the final beam to depend on the initial beam in a potentially complicated way that is unknown before tracking the beam; this is especially true for long lattices and large beam intensities. This meant we would need to iterate to find the solution. Second, it was not immediately clear how to vary the distribution during the search; the full covariance matrix has ten unique elements, and they cannot be varied freely since the covariance matrix must remain positive-definite.</p>
 </section>
-<section id="the-solution" class="level4">
-<h4 class="anchored" data-anchor-id="the-solution">2.2. The solution</h4>
+<section id="the-solution" class="level3">
+<h3 class="anchored" data-anchor-id="the-solution">2.2. The solution</h3>
 <p>Consider the equation of motion for a particle in a coupled lattice:</p>
 <p><span id="eq-6"><span class="math display">\[
 \begin{aligned}
@@ -794,8 +794,8 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 </div>
 </section>
 </section>
-<section id="simple-applications" class="level3">
-<h3 class="anchored" data-anchor-id="simple-applications">3. Simple applications</h3>
+<section id="simple-applications" class="level2">
+<h2 class="anchored" data-anchor-id="simple-applications">3. Simple applications</h2>
 <p>We demonstrated the matching routine in a FODO lattice (Fig. 12a). We also added some variations, like changing the horizontal/vertical focusing ratio, tilting the quadrupoles (Fig. 12b), and adding a longitudinal magnetic field to generate coupling (Fig. 12c).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -830,8 +830,8 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 </div>
 <p>Here we noticed an asymmetry in the solutions. The beam always wants to be tilted in the same direction in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane as soon as space charge is turned on.</p>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">4. Conclusion</h3>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4. Conclusion</h2>
 <p>I’ll stop there. I hope this gave a flavor of what went into this paper. In future posts, I will discuss the importance of this matching routine for experiments.</p>
 
 

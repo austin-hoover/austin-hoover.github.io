@@ -203,8 +203,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p>There is a great scene in the otherwise disappointing movie <em>Iron Man 2</em> in which Tony Stark builds a particle accelerator in his house.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/y0brSA1cyzw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>The movie makes it look like a complicated process, but modern large-scale accelerators are immensely more complicated than the one Stark builds. In fact, I’m amazed that such machines have been built <em>and work as expected</em>. One example is the Spallation Neutron Source (SNS).</p>
-<section id="a-quick-tour-of-the-sns" class="level3">
-<h3 class="anchored" data-anchor-id="a-quick-tour-of-the-sns">A quick tour of the SNS</h3>
+<section id="a-quick-tour-of-the-sns" class="level2">
+<h2 class="anchored" data-anchor-id="a-quick-tour-of-the-sns">A quick tour of the SNS</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="sns.png" class="img-fluid figure-img" style="width:100.0%"></p>
@@ -212,8 +212,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>The goal of the SNS is to produce extremely bright, pulsed neutron beams for neutron scattering experiments. These neutrons are produced through the process of <a href="https://inis.iaea.org/collection/NCLCollectionStore/_Public/23/015/23015552.pdf">spallation</a> by colliding a proton beam with a Mercury target. The power of the proton beam must be as high as possible to maximize the brightness of the neutron beam, and creating such a high-power beam is a multi-step process; particles must travel all the way from the ion source on the far left to the target on the far right, passing though many different sections on their journey. We’re first going to mention the basic function of each of these sections, and then we’re going to look in more detail at the relatively small but extremely important <em>injection region</em> of the machine. This is the point where the HEBT meets the accumulator ring in the above diagram.</p>
-<section id="ion-source-front-end-and-linac" class="level4">
-<h4 class="anchored" data-anchor-id="ion-source-front-end-and-linac">Ion source, front end, and linac</h4>
+<section id="ion-source-front-end-and-linac" class="level3">
+<h3 class="anchored" data-anchor-id="ion-source-front-end-and-linac">Ion source, front end, and linac</h3>
 <p>The beam originates in the ion source. As explained later, the beam is not actually made of protons at this point, but is instead made of H<span class="math inline">\(^-\)</span> ions (proton + two electrons). The ion source consists of a vacuum chamber filled with gas, and an oscillating electric field which ionizes the gas to form a glowing, pink plasma. The H<span class="math inline">\(^-\)</span> particles are then extracted from the plasma; I asked one of the researchers at SNS (who doesn’t work on the ion source) how exactly these ions are extracted, and they said it’s “black magic”, so I guess it’s not straightforward.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -224,12 +224,12 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p>The H<span class="math inline">\(^-\)</span> beam is then accelerated to around 2.5 MeV, focused, and “chopped” into 1000 <em>minipulses</em>. Each minipulse is about 700 nanoseconds long, and they’re separated by a gap of about 300 nanoseconds. The dynamics in this region are strongly influenced by space charge.</p>
 <p>Each minipulse is now ready to be accelerated. The next section of the machine is called the linac (linear accelerator), a long, straight section whose purpose is to accelerate the minipulses up to 1 GeV (around 90% of the speed of light) while maintaining an acceptable beam size. This is done using a series of normal-conducting and superconducting radio-frequency cavities. There is a lot to talk about in the linac, but I’ll stop here since I don’t have much knowledge of this area of the machine yet.</p>
 </section>
-<section id="hebt-injection-region-and-accumulator-ring" class="level4">
-<h4 class="anchored" data-anchor-id="hebt-injection-region-and-accumulator-ring">HEBT, injection region, and accumulator ring</h4>
+<section id="hebt-injection-region-and-accumulator-ring" class="level3">
+<h3 class="anchored" data-anchor-id="hebt-injection-region-and-accumulator-ring">HEBT, injection region, and accumulator ring</h3>
 <p>The high-energy beam transport (HEBT, pronounced “hebbet”) guides the fully accelerated minipulse from the linac to the left edge of the accumulator ring. At this point, all the ions in the minipulse are converted to protons and <em>injected</em> into the accumulator ring (more on this in the next section). The minpulse takes 1 microsecond to travel around the ring, at which point a second minipulse is injected and the circulating beam doubles in intensity. This repeats 1000 times over the course of one millisecond until the final beam, called a <em>pulse</em>, contains around <span class="math inline">\(1.5 \times 10^{14}\)</span> protons. That seems like a lot until you consider that Avagadros number is one billion times larger! 60 of these pulses contains about the same energy as a stick of dynamite.</p>
 </section>
-<section id="rtbt-and-target" class="level4">
-<h4 class="anchored" data-anchor-id="rtbt-and-target">RTBT and target</h4>
+<section id="rtbt-and-target" class="level3">
+<h3 class="anchored" data-anchor-id="rtbt-and-target">RTBT and target</h3>
 <p>Finally, the entire pulse is extracted from the ring and travels down the ring-target-beam-transport (RTBT) in which it is directed to the Mercury target, producing neutrons. These neutrons are then cooled and transported to various instrumental halls for use in neutron scattering experiments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -239,8 +239,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 </section>
 </section>
-<section id="injection" class="level3">
-<h3 class="anchored" data-anchor-id="injection">Injection</h3>
+<section id="injection" class="level2">
+<h2 class="anchored" data-anchor-id="injection">Injection</h2>
 <p>Now we’re going to discuss the injection region in more detail (see image below). Somehow, all the negatively charged ions need to be converted to positively charge protons, and the beam from the linac needs to merge with the circulating beam in the ring without derailing its trajectory; it’s as if the ions were trying to merge onto a busy highway. The specific method used at SNS is <em>charge exchange</em> injection, which we discuss first. We’ll then move on to discuss <em>phase space painting</em>, which is used to mitigate the effects of space charge in intense beams.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -248,8 +248,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p></p><figcaption class="figure-caption">Fig. 4. THe SNS injection region.</figcaption><p></p>
 </figure>
 </div>
-<section id="h--charge-exchange" class="level4">
-<h4 class="anchored" data-anchor-id="h--charge-exchange">H<span class="math inline">\(^-\)</span> charge exchange</h4>
+<section id="h--charge-exchange" class="level3">
+<h3 class="anchored" data-anchor-id="h--charge-exchange">H<span class="math inline">\(^-\)</span> charge exchange</h3>
 <p>Consider two oppositely charged beams which have the same kinetic energy but opposite charges. Also assume that we’re dealing with point particles which do not interact with each other and have no transverse velocity. If these beams are sent thought a dipole magnet, their paths will be bent in opposite directions with the same radius of curvature. If they additionally have opposite angles of incidence, there will be a point in the dipole at which both beams are moving parallel to each other. Now imagine that, at this very instance, the charge of all the particles in one of the beams changes sign. The two beams would then be identical and would continue along the same trajectory, although there may be an offset. It’s possible to also choose the horizontal and vertical positions of the two beams such that they converge and travel along identical paths.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -265,27 +265,27 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="dealing-with-extra-particles" class="level4">
-<h4 class="anchored" data-anchor-id="dealing-with-extra-particles">Dealing with extra particles</h4>
+<section id="dealing-with-extra-particles" class="level3">
+<h3 class="anchored" data-anchor-id="dealing-with-extra-particles">Dealing with extra particles</h3>
 <p>Some of the H<span class="math inline">\(^-\)</span> hold on to their electrons as they pass through the foil, and some only lose one electron, becoming H<span class="math inline">\(^0\)</span>. To deal with these particles, the foil is placed in a dipole field. Because many of the H<span class="math inline">\(^0\)</span> particles are in excited states, it is likely that their electron will be stripped by the magnetic field soon after the foil; this is known as <em>Lorentz stripping</em>. So a lot of these will become protons and join the circulating beam, just a bit late to the party. The remaining non-protons continue away from the ring and encounter <em>another foil</em> which removes the electrons so that they can be guided to a beam dump. There is also the need to catch the stripped electrons, which can have significant kinetic energies, but I won’t discuss that here.</p>
 </section>
-<section id="is-liouvilles-theorem-violated" class="level4">
-<h4 class="anchored" data-anchor-id="is-liouvilles-theorem-violated">Is Liouville’s theorem violated?</h4>
+<section id="is-liouvilles-theorem-violated" class="level3">
+<h3 class="anchored" data-anchor-id="is-liouvilles-theorem-violated">Is Liouville’s theorem violated?</h3>
 <p>Those familiar with Liouville’s theorem may object to the charge-exchange method. Liouville’s theorem applies to any system which obeys Hamilton’s equations:</p>
 <p><span class="math display">\[ \dot{\mathbf{q}} = \frac{\partial\mathbf{H}}{\partial\mathbf{p}} ,\quad \dot{\mathbf{p}} = -\frac{\partial\mathbf{H}}{\partial\mathbf{q}},\]</span></p>
 <p>where <span class="math inline">\(\mathbf{q}\)</span> are the coordinates and <span class="math inline">\(\mathbf{p}\)</span> are the momenta. Imagine we took a volume of phase space and started to fill it with particles; in fact, we fill all of the infinite number of points inside the volume. Then we evolve the system in time. The final distribution of particles may have changed shape, but Liouville’s theorem states that its volume will not have changed. Mathematically, this is due to Hamilton’s equations being equivalent to a coordinate transformation whose Jacobian has a determinant equal to one. So, the objection is that the phase space volume of the entire system (linac beam + circulating beam) seems to <em>decrease</em> when they are merged, i.e., the linac beam is stacked directly on top of the circulating beam, and that this should be disallowed by Liouville’s theorem. Is this true?</p>
 <p>I read a paper by A. Ruggiero which helped to clarify this issue<span class="citation" data-cites="Ruggiero1978">&nbsp;[<a href="#ref-Ruggiero1978" role="doc-biblioref">2</a>]</span>. The key point is that Liouville’s theorem deals with <em>distributions</em> rather than finite numbers of particles. Any finite number of particles will not fill up every point in phase space, so there is nothing preventing another finite number of particles from being added to the empty regions. The limitation is that it’s not clear how to guide two beams of the same charge to the same position using dipole magnets; hence, charge exchange. I should note, however, that this does not seem to be the explanation put forth in the talks I’ve heard on this subject. I’m planning to discuss this with some other people in the field.</p>
 </section>
-<section id="the-future-lasers" class="level4">
-<h4 class="anchored" data-anchor-id="the-future-lasers">The future: lasers</h4>
+<section id="the-future-lasers" class="level3">
+<h3 class="anchored" data-anchor-id="the-future-lasers">The future: lasers</h3>
 <p>A major research project at the SNS is to demonstrate laser-assisted charge exchange (LACE), in which a laser is used to excite the ions and a dipole magnet is used to strip the magnets intead of a foil. This would overcome the scattering losses from foils as well as their finite lifetimes; it is a very promising approach as machines continue to increase in power<span class="citation" data-cites="Cousineau2017">&nbsp;[<a href="#ref-Cousineau2017" role="doc-biblioref">3</a>]</span>.</p>
 </section>
 </section>
-<section id="phase-space-painting" class="level3">
-<h3 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h3>
+<section id="phase-space-painting" class="level2">
+<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
 <p>In the last section, we assumed that the particles didn’t interact with each other, but in reality, space charge is the fundamental limit on the intensity in high-power hadron accelerators. Injecting at the same position in space will cause the beam to become very dense, and the beam will then expand due to the increased space charge forces. It’s likely that this will produce a very non-uniform distribution which, as mentioned in <a href="https://austin-hoover.github.io/posts/2021-05-13_matched_envelope/2021-05-13_matched_envelope.html">this post</a>, is undesirable. This is the motivation for so-called <em>phase space painting</em> or simply <em>painting</em>. The idea is to change the transverse position and momentum of the circulating beam over time in order to slowly fill or “paint” the beam in phase space and hopefully produce a more uniform density beam. Another motivation for painting is to avoid excessive foil hits, since these lead to shorter foil lifetimes and also beam scattering.</p>
-<section id="time-dependent-kicker-magnets" class="level4">
-<h4 class="anchored" data-anchor-id="time-dependent-kicker-magnets">Time-dependent kicker magnets</h4>
+<section id="time-dependent-kicker-magnets" class="level3">
+<h3 class="anchored" data-anchor-id="time-dependent-kicker-magnets">Time-dependent kicker magnets</h3>
 <p>Here is a zoomed in view of the injection region.</p>
 <!-- <br> -->
 <div class="quarto-figure quarto-figure-center">
@@ -304,8 +304,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 <p>The dark blue boxes are quadrupoles, the red boxes are Chicane dipoles, and the remaining elements are the horizontal (green) and vertical (yellow) kickers. Without the kickers, the closed orbit will just go straight through the center of each magnet, and a similar thing holds in the horizontal plane. Thus, we have control over the horizontal and vertical position of the circulating beam relative to the injected beam. But there is also the possibility that the trajectory is converging or diverging at the foil, so we also have control over the horizontal and vertical circulating beam <em>slope</em> relative to the injected beam. These eight kickers therefore give full control over the transverse phase space coordinates of the circulating beam relative to the injected beam at every point during the injection.</p>
 </section>
-<section id="production-painting" class="level4">
-<h4 class="anchored" data-anchor-id="production-painting">Production painting</h4>
+<section id="production-painting" class="level3">
+<h3 class="anchored" data-anchor-id="production-painting">Production painting</h3>
 <p>The time-dependence of each kicker magnet is determined by a waveform which determines the current given to its power supply as a function of time; for example, we could have a linear waveform, square root waveform, etc. Choosing these waveforms amounts to choosing the initial and final position/slope of the circulating beam, as well as the rate of change in the position/slope. The standard “production” scheme in the SNS (as in neutron production) is to use a square root waveform so that</p>
 <p><span class="math display">\[ x_{inj} - x_{co} = (x_{max} - x_{min}) \sqrt{t / t_{max}} + x_{min}, \]</span> <span class="math display">\[ y_{inj} - y_{co} = (y_{max} - y_{min}) \sqrt{t / t_{max}} + y_{min}, \]</span></p>
 <p>where the <em>co</em> subscript means “closed orbit” and <em>inj</em> means “injected beam”. The slope of the circulating beam is kept at zero in this scheme.</p>

@@ -171,8 +171,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 \frac{d^2x}{dt^2} + k(t)x = 0,
 \tag{1}\]</span></span></p>
 <p>where <span class="math inline">\(k(t + T) = k(t)\)</span> for some <span class="math inline">\(T\)</span>. This is a <a href="https://en.wikipedia.org/wiki/Parametric_oscillator">parametric oscillator</a>, a harmonic oscillator whose physical properties are not static. For example, the oscillations of a pendulum (in the small angle approximation) on the surface of a planet whose gravitational pull varies periodically would be described by the above equation. The solution to this equation was derived by <a href="https://en.wikipedia.org/wiki/George_William_Hill">George William Hill</a> in 1886 to study lunar motion, and for this reason, it is known as Hill’s equation. It also finds application in areas such as condensed matter physics, quantum optics, and accelerator physics. After setting up the physical problem, we will examine the solutions and discuss their relevance to the last application, accelerator physics.</p>
-<section id="particle-accelerators-as-parametric-oscillators" class="level3">
-<h3 class="anchored" data-anchor-id="particle-accelerators-as-parametric-oscillators">Particle accelerators as parametric oscillators</h3>
+<section id="particle-accelerators-as-parametric-oscillators" class="level2">
+<h2 class="anchored" data-anchor-id="particle-accelerators-as-parametric-oscillators">Particle accelerators as parametric oscillators</h2>
 <p><a href="https://en.wikipedia.org/wiki/Particle_accelerator">Particle accelerators</a> are machines that produce groups of charged particles (<em>beams</em>), increase their kinetic energy, and guide them to a target. These machines are invaluable to modern scientific research. The most famous examples are <em>colliders</em>, such as the <a href="https://home.cern/science/accelerators/large-hadron-collider">LHC</a>, in which two beams are smashed together to generate fundamental particles.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -233,8 +233,8 @@ x'' + k(s)x = 0.
 \tag{5}\]</span></span></p>
 <p>This is Hill’s equation (<a href="#eq-Hill">Equation&nbsp;1</a>).</p>
 </section>
-<section id="solving-hills-equation" class="level3">
-<h3 class="anchored" data-anchor-id="solving-hills-equation">Solving Hill’s equation</h3>
+<section id="solving-hills-equation" class="level2">
+<h2 class="anchored" data-anchor-id="solving-hills-equation">Solving Hill’s equation</h2>
 <p>The general solution to Hill’s equation is given by</p>
 <p><span id="eq-Hill-solution"><span class="math display">\[
 x(s) = \sqrt{2J}\,w(s) \cos\left({\mu(s) + \delta}\right).
@@ -291,8 +291,8 @@ x(s) = \sqrt{2J}\,w(s) \cos\left({\mu(s) + \delta}\right).
 </figure>
 </div>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>We’ve presented the solution to Hill’s equation, which describes a parameteric oscillator. The equation pops up in multiple areas, but we focused on its application in accelerator physics, in which Hill’s equation describes the transverse motion of a single particle in an accelerator with perfectly linear magnetic fields.</p>
 <p>The solution is best understood geometrically: particles move around the surface of an ellipse in phase space, the area of which is an invariant of the motion. The dimensions and orientation of the ellipse are determined by <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, and the location of the particle on the ellipse boundary is determined by <span class="math inline">\(\mu\)</span>. These parameters can be used to construct a time-dependent transformation (<span class="math inline">\(\mathbf{V}\)</span>) which turns the parametric oscillator into a simple harmonic oscillator.</p>
 <p>The next post will examine how this treatment can be extended to include coupling between the horizontal and vertical dimensions.</p>

@@ -181,8 +181,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 <p>This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with intense beam physics.</p>
-<section id="predicting-intense-beam-dynamics" class="level3">
-<h3 class="anchored" data-anchor-id="predicting-intense-beam-dynamics">1. Predicting intense beam dynamics</h3>
+<section id="predicting-intense-beam-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="predicting-intense-beam-dynamics">1. Predicting intense beam dynamics</h2>
 <p>Linear accelerators (linacs) generate powerful pulsed hadron beams for various applications. Increasing the beam power/intensity by orders of magnitude would positively impact elementary particle physics, nuclear physics, condensed matter physics, material science, biology, nuclear engineering, and other fields. Unfortunately, significantly increasing the beam intensity is not possible due to <em>beam loss</em> which occurs when particles hit the walls of the accelerator during their journey. The total lost beam power must be kept below 1 watt (W) per meter to avoid dangerous radiation levels. For a 1 MW beam, this limit corresponds to a fractional loss of <span class="math inline">\(10^{-6}\)</span>.</p>
 <p>Simulations struggle to predict the number and location of lost particles. The dynamics in the accelerator are complex, but the situation is perhaps unsurprising for other reasons:</p>
 <ol type="1">
@@ -205,12 +205,12 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="high-dimensional-phase-space-measurements" class="level3">
-<h3 class="anchored" data-anchor-id="high-dimensional-phase-space-measurements">2. High-dimensional phase space measurements</h3>
+<section id="high-dimensional-phase-space-measurements" class="level2">
+<h2 class="anchored" data-anchor-id="high-dimensional-phase-space-measurements">2. High-dimensional phase space measurements</h2>
 <p>We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac<span class="citation" data-cites="Zhang_2020">&nbsp;[<a href="#ref-Zhang_2020" role="doc-biblioref">4</a>]</span>. A diagram of the BTF is below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/btf2.png" class="img-fluid figure-img"></p>
+<p><img src="./figures/btf2.png" class="img-fluid figure-img" width="600"></p>
 <p></p><figcaption class="figure-caption">Fig. 3. The SNS Beam Test Facility (BTF).</figcaption><p></p>
 </figure>
 </div>
@@ -241,8 +241,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 <p>We cropped and downscaled the images to decrease the size of the data set from around 250 gigabytes to 20 gigabytes. Next, we interpolated the pixel intensities to obtain a <span class="math inline">\(69 \times 88 \times 69 \times 65 \times 55\)</span> image of the phase space distribution <span class="math inline">\(f(x, x', y, y', w)\)</span>. Here we use the energy <span class="math inline">\(w\)</span> instead of the momentum <span class="math inline">\(p_z\)</span>. (Also <span class="math inline">\(x'\)</span> and <span class="math inline">\(y'\)</span> are basically the same as <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span>.)</p>
 </section>
-<section id="high-dimensional-data-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="high-dimensional-data-visualization">3. High-dimensional data visualization</h3>
+<section id="high-dimensional-data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="high-dimensional-data-visualization">3. High-dimensional data visualization</h2>
 <p>We have spent significant time analyzing the measured initial phase space distribution<span class="citation" data-cites="Cathey_2018 Ruisard_2020 Ruisard_2021 Hoover_2023_PRAB">&nbsp;[<a href="#ref-Cathey_2018" role="doc-biblioref">5</a>,<a href="#ref-Ruisard_2020" role="doc-biblioref">8</a>–<a href="#ref-Hoover_2023_PRAB" role="doc-biblioref">10</a>]</span>. This task is straightforward in two dimensions: one simply looks at an image representing <span class="math inline">\(f(x, p_x)\)</span> and extracts features from it. High-dimensional data is exponentially more challenging to visualize and interpret.</p>
 <p>Here it is helpful to distinguish <em>projections</em>, <em>slices</em>, and <em>partial projections</em>. A projection is an integral/sum that squashes the distribution onto a lower-dimensional space. For example: <span class="math display">\[
 f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp_z}.
@@ -287,8 +287,8 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 </div>
 <p>Notice the drastic change in energy distribution — unimodal to bimodal — as we move from the outer to the inner core in the transverse phase space. This energy hollowing represents a five-dimensional correlation; it is also visible (although perhaps harder to see) in Fig. 8. I also plotted the transverse projections of the slice farthest from the core. Pretty bizarre-looking images result, but they make some sense; they select particles with large transverse amplitude. Some intuition is gained by considering the projections of hollow three-dimensional distribution.</p>
 </section>
-<section id="ongoing-work" class="level3">
-<h3 class="anchored" data-anchor-id="ongoing-work">4. Ongoing work</h3>
+<section id="ongoing-work" class="level2">
+<h2 class="anchored" data-anchor-id="ongoing-work">4. Ongoing work</h2>
 <p>We would like to explain the origin of all features we find in the distribution. From direct measurements at lower beam currents, we know the space charge drives the energy hollowing in Fig. 10.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

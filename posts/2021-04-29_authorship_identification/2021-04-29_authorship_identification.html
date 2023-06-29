@@ -273,8 +273,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p></p><figcaption class="figure-caption">Fig. 1. The authorship identification task.</figcaption><p></p>
 </figure>
 </div>
-<section id="a-brief-history-of-stylometry" class="level3">
-<h3 class="anchored" data-anchor-id="a-brief-history-of-stylometry">1. A brief history of stylometry</h3>
+<section id="a-brief-history-of-stylometry" class="level2">
+<h2 class="anchored" data-anchor-id="a-brief-history-of-stylometry">1. A brief history of stylometry</h2>
 <p>The Federalist Papers are an important collection of 85 essays written by Hamilton, Madison, and Jay in 1787 and 1788. The essays were published under the alias “Plubious”, and although it became well-known that the three men were involved, the authorship of each paper was kept hidden for over a decade. This was actually in the interest of both Hamilton and Madison; both were politicians who had changed positions on several issues and didn’t want their political opponents to use their own words against them. Days before his death, Hamilton allegedly wrote down who he believed to be the correct author of each essay, claiming over 60 for himself. Madison waited several years before publishing his own list, and in the end, there were 12 essays claimed by both Madison and Hamilton. Details on the controversy are in<span class="citation" data-cites="Adair1944">&nbsp;[<a href="#ref-Adair1944" role="doc-biblioref">2</a>]</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -309,11 +309,11 @@ f(k) \propto k^{-1}.
 </div>
 <p>The success of Zipf’s Law was very encouraging and led to a flurry of new mathematical models. Stylometry reached a landmark case in the 1960s when researchers used the frequency distributions of short function words — words we don’t think about too much like “upon” or “therefore” — to support Adair’s conclusion that Madison wrote the 12 disputed Federalist Papers. At the end of the day, however, models created in the spirit of Zipf’s Law are probably doomed to fail. The “true” underlying model must be very complex due to its dependence on human psychology. There are now many algorithms available which instead build predictive models directly from data, and these can be readily applied to the problem of authorship identification. Here we focus on the use of the Support Vector Machine (SVM).</p>
 </section>
-<section id="support-vector-machine-svm" class="level3">
-<h3 class="anchored" data-anchor-id="support-vector-machine-svm">2. Support Vector Machine (SVM)</h3>
+<section id="support-vector-machine-svm" class="level2">
+<h2 class="anchored" data-anchor-id="support-vector-machine-svm">2. Support Vector Machine (SVM)</h2>
 <p>I include here the basic idea behind the SVM approach. There are a number of resources that go into the details (such as<span class="citation" data-cites="Bishop2006">&nbsp;[<a href="#ref-Bishop2006" role="doc-biblioref">7</a>]</span>). I’ll follow the Wikipedia page since it has a nice short summary.</p>
-<section id="maximum-margin-hyperplane" class="level4">
-<h4 class="anchored" data-anchor-id="maximum-margin-hyperplane">2.1. Maximum margin hyperplane</h4>
+<section id="maximum-margin-hyperplane" class="level3">
+<h3 class="anchored" data-anchor-id="maximum-margin-hyperplane">2.1. Maximum margin hyperplane</h3>
 <p>Consider a linear binary classifier, i.e., a plane that splits the data into two classes. The equation for a plane in any number of dimensions is</p>
 <p><span id="eq-2"><span class="math display">\[
 y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
@@ -416,8 +416,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </div>
 <p>The points are colored by their true classes, and the background is shaded according to the SVM prediction at each point. It can be important to try at least a few different values of <span class="math inline">\(C\)</span>, which determines the trade-off between correctly classifying all samples and maximizing the margin, and to observe the effect on the accuracy as well as the algorithm convergence. Parameters such as this one which change the algorithm behavior but aren’t optimized by the algorithm itself are commonly known as <em>hyperparameters</em>.</p>
 </section>
-<section id="kernel-trick" class="level4">
-<h4 class="anchored" data-anchor-id="kernel-trick">2.2. Kernel trick</h4>
+<section id="kernel-trick" class="level3">
+<h3 class="anchored" data-anchor-id="kernel-trick">2.2. Kernel trick</h3>
 <p>In some cases the linear model is going to be bad; a frequently used example is “target” dataset.</p>
 <div class="cell" data-tags="[]" data-execution_count="7">
 <details>
@@ -493,8 +493,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </div>
 <p>There are still several advantages to the linear SVM. First, it is much faster to train, and second, the kernel trick may be unnecessary for high-dimensional data. As we’ll see, text data can involve a large number of very high-dimensional samples, so we’ll be sticking with linear kernels.</p>
 </section>
-<section id="multi-class-svm" class="level4">
-<h4 class="anchored" data-anchor-id="multi-class-svm">2.3. Multi-class SVM</h4>
+<section id="multi-class-svm" class="level3">
+<h3 class="anchored" data-anchor-id="multi-class-svm">2.3. Multi-class SVM</h3>
 <p>A binary classifier can also be used for multi-class problems. Here we use the <em>one-versus-rest</em> (OVR) approach. Suppose we had <span class="math inline">\(N\)</span> classes denoted by <span class="math inline">\(c_1\)</span>, <span class="math inline">\(c_2\)</span> … <span class="math inline">\(c_N\)</span>. In the OVR approach, we train <span class="math inline">\(N\)</span> different classifiers; the ith classifier <span class="math inline">\(L_i\)</span> tries to split the data into two parts: <span class="math inline">\(c_i\)</span> and not <span class="math inline">\(c_i\)</span>. Then we observe a new point and ask each classifier <span class="math inline">\(L_i\)</span> how confident it is that the point belongs to <span class="math inline">\(c_i\)</span>. The point is assigned to the class with the highest score. We can extend our previous example to three Gaussian distributions to get a sense of how the decision boundaries are formed.</p>
 <div class="cell">
 <details>
@@ -538,11 +538,11 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <p>The same idea holds with more classes and dimensions. Notice that there are some regions which are claimed by multiple classifiers, so it’s not a perfect method.</p>
 </section>
 </section>
-<section id="n-grams-and-feature-selection-methods" class="level3">
-<h3 class="anchored" data-anchor-id="n-grams-and-feature-selection-methods">3. N-grams and feature selection methods</h3>
+<section id="n-grams-and-feature-selection-methods" class="level2">
+<h2 class="anchored" data-anchor-id="n-grams-and-feature-selection-methods">3. N-grams and feature selection methods</h2>
 <p>As I mentioned in the introduction, the paper I’m following is called <em>N-Gram Feature Selection for Authorship Identification</em>. In short, the paper used <em>n-gram</em> frequencies (defined in a moment) as features in the classification task and developed a new method to select the most significant or “dominant” n-grams. This was tested on a collection of short news articles. Let’s step through their method.</p>
-<section id="data-set-description" class="level4">
-<h4 class="anchored" data-anchor-id="data-set-description">3.1. Data set description</h4>
+<section id="data-set-description" class="level3">
+<h3 class="anchored" data-anchor-id="data-set-description">3.1. Data set description</h3>
 <p>The Reuters Corpus Volume 1 (RCV1) data set is a big collection of news articles labeled by topic. Around 100,000 of these have known authors, and there are around 2000 different authors. A specific topic was chosen, and only authors who wrote at least one article which fell under this topic were considered. From this subset of authors, the top 50 in terms of number of articles written were chosen. 100 articles from each author were selected — 5000 in total — and these were evenly split into a training and testing set. The resulting corpus is a good challenge for authorship identification because the genre is invariant across documents and because the authors write about similar topics. Hopefully this leaves the author’s style as the primary distinguishing factor. The data set can be downloaded <a href="https://archive.ics.uci.edu/ml/datasets/Reuter_50_50">here</a>. The files are organized like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -676,8 +676,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </figure>
 </div>
 </section>
-<section id="n-grams" class="level4">
-<h4 class="anchored" data-anchor-id="n-grams">3.2. N-grams</h4>
+<section id="n-grams" class="level3">
+<h3 class="anchored" data-anchor-id="n-grams">3.2. N-grams</h3>
 <p>An obvious feature candidate is word frequency; a less obvious one is <em>n-gram</em> frequency. A character n-gram is a string of length n.&nbsp;For example, the 3-grams contained in <em>red_bike!</em> are <em>red</em>, <em>ed_</em>, <em>d_b</em>, *_bi<em>, </em>bik<em>, </em>ike<em>, </em>ke!*. These shorter strings may be useful because they capture different aspects of style such as the use of punctuation or certain prefixes/suffixes. They also remove any ambiguities in word extraction and work for all languages. To use these features in the SVM classifier, we need to create a feature matrix <span class="math inline">\(X\)</span> where <span class="math inline">\(X_{ij}\)</span> is the frequency of the jth n-gram in the ith document. Thus, each document is represented as a vector in <span class="math inline">\(k\)</span> dimensional space, where <span class="math inline">\(k\)</span> is the number of unique n-grams selected from the training documents. We’ll also normalize each vector so that all points are mapped onto the surface of the <span class="math inline">\(k\)</span>-dimensional unit sphere while preserving the angles between the vectors; this should help the SVM performance a bit.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_ngrams(text, n):</span>
@@ -791,11 +791,11 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </figure>
 </div>
 </section>
-<section id="feature-selection" class="level4">
-<h4 class="anchored" data-anchor-id="feature-selection">3.3. Feature selection</h4>
+<section id="feature-selection" class="level3">
+<h3 class="anchored" data-anchor-id="feature-selection">3.3. Feature selection</h3>
 <p>In the rest of this post, we’ll study how to use statistical methods to further eliminate features from this initial set of 15,000. This process of selecting features which are “best” in a statistical sense is known as <em>feature selection</em>.</p>
-<section id="information-gain" class="level5">
-<h5 class="anchored" data-anchor-id="information-gain">3.3.1. Information gain</h5>
+<section id="information-gain" class="level4">
+<h4 class="anchored" data-anchor-id="information-gain">3.3.1. Information gain</h4>
 <p>A classical statistical measure of feature “goodness” is called <em>information gain</em> (IG). The idea is that knowing whether or not a term <em>t</em> is found in a document of a known class <span class="math inline">\(c\)</span> gives information about <span class="math inline">\(c\)</span>, and that some terms will contribute more information than others. The information gain can be written as <span class="citation" data-cites="Yang1997">&nbsp;[<a href="#ref-Yang1997" role="doc-biblioref">8</a>]</span></p>
 <p><span id="eq-5"><span class="math display">\[
 IG(t) = p(t) \sum_{i=1}^{m}p(c_i | t) \log p(c_i | t) +
@@ -933,8 +933,8 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 </div>
 <p>The first difference is the maximum achieved accuracy which is a few percentage points higher. The second difference is that the authors found 3-grams to be worst at low <span class="math inline">\(k\)</span> and best at high <span class="math inline">\(k\)</span>.and the opposite for 5-grams. I’ll leave this as an open problem.</p>
 </section>
-<section id="localmaxs-algorithm" class="level5">
-<h5 class="anchored" data-anchor-id="localmaxs-algorithm">3.3.2. LocalMaxs algorithm</h5>
+<section id="localmaxs-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="localmaxs-algorithm">3.3.2. LocalMaxs algorithm</h4>
 <p>Let’s look at the top IG scoring n-grams from from the variable-length feature set.</p>
 <div class="cell">
 <details>
@@ -1138,8 +1138,8 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 </section>
 </section>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">4. Conclusion</h3>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">4. Conclusion</h2>
 <p>In the future, I may apply these methods to my own data set; I’m particularly interested in what would happen with <a href="https://en.wikipedia.org/wiki/Chinese_characters">Chinese characters</a>. A different problem I’d like to examine is that of <em>artist</em> identification; the problem would be to match a collection of paintings with their painters. The <a href="https://www.wga.hu/index.html">Web Gallery of Art</a> is a database I found after a quick search, and I’m sure there are others. This would give me the chance to learn about image classification.</p>
 
 

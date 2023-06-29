@@ -248,8 +248,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p></p><figcaption class="figure-caption">Fig. 1. Homer pushes Lisa on a swing.</figcaption><p></p>
 </figure>
 </div>
-<section id="resonance-in-a-driven-harmonic-oscillator" class="level3">
-<h3 class="anchored" data-anchor-id="resonance-in-a-driven-harmonic-oscillator">1. Resonance in a driven harmonic oscillator</h3>
+<section id="resonance-in-a-driven-harmonic-oscillator" class="level2">
+<h2 class="anchored" data-anchor-id="resonance-in-a-driven-harmonic-oscillator">1. Resonance in a driven harmonic oscillator</h2>
 <p>Consider a mass on a spring which, if left alone, oscillates at freqency <span class="math inline">\(\omega_0^2\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -312,8 +312,8 @@ x(t) = \sum_{n = 0}^{\infty}{A_n \cos{(n\omega t - \delta_n)}},
 \tag{6}\]</span></span></p>
 <p>where <span class="math inline">\(A_n\)</span> is given by Eq. (3) for the frequency <span class="math inline">\(n\omega\)</span>. The resonance condition will apply to each of these amplitudes individually, which means that a resonance could be excited if any component of the driving force is near the natural frequency.</p>
 </section>
-<section id="sources-of-nonlinearity" class="level3">
-<h3 class="anchored" data-anchor-id="sources-of-nonlinearity">2. Sources of nonlinearity</h3>
+<section id="sources-of-nonlinearity" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-nonlinearity">2. Sources of nonlinearity</h2>
 <p>We’re now going to apply these ideas to a particle accelerator. We’ll assume small transverse oscillations, no acceleration, no deviation from the design momentum, and no particle-particle interactions. Under these assumptions, the transverse equation of motion of a particle with charge <span class="math inline">\(q\)</span> and momentum <span class="math inline">\(p\)</span> in a magnetic field <span class="math inline">\(\mathbf{B} = (B_x, B_y)^T\)</span> is</p>
 <p><span id="eq-7"><span class="math display">\[
 \begin{aligned}
@@ -340,11 +340,11 @@ B_y - iB_x = \sum_{n=1}^{\infty}\left({b_n - ia_n}\right)\left(\frac{x + iy}{r_0
 </figure>
 </div>
 </section>
-<section id="perturbation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="perturbation-analysis">3. Perturbation analysis</h3>
+<section id="perturbation-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="perturbation-analysis">3. Perturbation analysis</h2>
 <p>The nonlinear terms in Eq. (6) eliminate any hope of an analytic solution. There are two options in situations such as these: 1) use a computer, or 2) use perturbation theory. The strategy of option 2 is to make approximations until an exact solution can be found, then to add in small nonlinear terms and see how the solution changes. The process can be repeated to solve the problem up to a certain order of accuracy. Usually this is infeasible beyond a few iterations, but it is a helpful tool for gaining intuition and interpreting numerical results. In particular, we’ll be looking for regions where the particle may encounter a resonance. Without many details, let’s try out the perturbation approach. Later on we’ll use a computer and see if our analysis was accurate.</p>
-<section id="floquet-coordinates" class="level4">
-<h4 class="anchored" data-anchor-id="floquet-coordinates">3.1. Floquet coordinates</h4>
+<section id="floquet-coordinates" class="level3">
+<h3 class="anchored" data-anchor-id="floquet-coordinates">3.1. Floquet coordinates</h3>
 <p>The first step is to find an exact solution under some approximation. We’ll neglect coupling by setting <span class="math inline">\(y = 0\)</span> and focus on one dimension to make things easier. Let’s denote the linear focusing from the lattice by <span class="math inline">\(k\)</span>, with all other terms in the field expansion folded into <span class="math inline">\(\Delta B\)</span> (there are still <span class="math inline">\(n = 1\)</span> and <span class="math inline">\(n = 2\)</span> terms in <span class="math inline">\(\Delta B\)</span>, but they represent deviations from the design values). We’re also assuming that these variables are normalized by the ratio <span class="math inline">\(q / p\)</span>. This results in the equation of motion</p>
 <p><span id="eq-9"><span class="math display">\[
 x'' + k(s)x = \Delta B.
@@ -374,8 +374,8 @@ x(s) \rightarrow u(s) = \frac{x(s)}{\sqrt{\beta_x(s)}}.
 \ddot{u} + \nu_0^2 u = -\nu_0^2 \beta^{3/2} \Delta B = -\nu_0^2 \sum_{n=0}^{\infty} \left({\beta^{\frac{n + 3}{2}} b_{n+1}}\right) u^n.
 \tag{15}\]</span></span></p>
 </section>
-<section id="fourier-expansion" class="level4">
-<h4 class="anchored" data-anchor-id="fourier-expansion">3.2. Fourier expansion</h4>
+<section id="fourier-expansion" class="level3">
+<h3 class="anchored" data-anchor-id="fourier-expansion">3.2. Fourier expansion</h3>
 <p>The tools to analyze driven harmonic oscillators are now available to us. Similar to Eq. (4), each term on the right hand side can be Fourier expanded, the reason being that <span class="math inline">\(\beta\)</span> (the oscillation amplitude of the unperturbed motion) and <span class="math inline">\(b_n\)</span> (a multipole coefficient) depend only on the position in the ring, so of course they are periodic in <span class="math inline">\(\phi\)</span>. Grouping these terms together and performing the expansion gives</p>
 <p><span id="eq-16"><span class="math display">\[
 \ddot{u} + \nu_0^2 u = -\nu_0^2 \sum_{n=0}^{\infty}\sum_{k=-\infty}^{\infty} C_{n,k} \, u^n \, e^{ik\phi}.
@@ -396,8 +396,8 @@ u_0^n \propto \cos^n(\nu\phi) = \frac{1}{2^n} \sum_{m=0}^{n} \binom{n}{m} e^{i(n
 \tag{19}\]</span></span></p>
 <p>There are a lot of indices floating around; <span class="math inline">\(n\)</span> is one less than the multipole coefficient of the magnetic field, <span class="math inline">\(k\)</span> is for the Fourier expansion, and <span class="math inline">\(m\)</span> is just a dummy index we used to binomially expand <span class="math inline">\(u_0^2\)</span>.</p>
 </section>
-<section id="resonance-diagram" class="level4">
-<h4 class="anchored" data-anchor-id="resonance-diagram">3.3. Resonance diagram</h4>
+<section id="resonance-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="resonance-diagram">3.3. Resonance diagram</h3>
 <p>Eq. (18) describes a driven harmonic oscillator like Eq. (5), so we can expect a resonance condition to occur when any of the frequency components of the driving force are close to the natural frequency <span class="math inline">\(\nu_0\)</span>. In other words, a resonance could occur when</p>
 <p><span id="eq-20"><span class="math display">\[
 (n - 2m)\nu_0 + k = \pm \nu_0.
@@ -447,8 +447,8 @@ M_x \nu_x + M_y \nu_y = N,
 <p>Resonance strengths tend to decrease with order number, so people generally don’t consider anything beyond order 3 or 4. That being said, the machine tunes <span class="math inline">\(\nu_x\)</span> and <span class="math inline">\(\nu_y\)</span> need to be carefully chosen to avoid all low order resonance lines. Ideally, all beam particles would occupy this single point in tune space, but space charge complicates things by decreasing the tune by different amounts for each particle, possible placing them on one of the above resonance lines. This effect, called <em>tune spread</em>, places a fundamental limit on the number of particles in the beam.</p>
 </section>
 </section>
-<section id="numerical-exploration-of-the-sextupole-resonance" class="level3">
-<h3 class="anchored" data-anchor-id="numerical-exploration-of-the-sextupole-resonance">4. Numerical exploration of the sextupole resonance</h3>
+<section id="numerical-exploration-of-the-sextupole-resonance" class="level2">
+<h2 class="anchored" data-anchor-id="numerical-exploration-of-the-sextupole-resonance">4. Numerical exploration of the sextupole resonance</h2>
 <p>Let’s explore the behavior of a beam under the influence of a sextupole magnet. This section recreates some figures from the book <em>Accelerator Physics</em> by S. Y. Lee. The easiest way to do this is to approximate the multipole as an instantaneous change to the slope of the particle’s trajectory. This is valid if the magnet isn’t too long.</p>
 <div class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Multipole:</span>
@@ -570,8 +570,8 @@ M_x \nu_x + M_y \nu_y = N,
 <span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>        X <span class="op">=</span> np.apply_along_axis(<span class="kw">lambda</span> vec: np.matmul(V, vec), <span class="dv">1</span>, X)</span>
 <span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> X</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="third-integer-resonance" class="level4">
-<h4 class="anchored" data-anchor-id="third-integer-resonance">4.1. Third-integer resonance</h4>
+<section id="third-integer-resonance" class="level3">
+<h3 class="anchored" data-anchor-id="third-integer-resonance">4.1. Third-integer resonance</h3>
 <p>We focus first on the 1/3 integer resonance. Below, a particle is tracked over 100 turns starting from few different initial amplitudes. We set <span class="math inline">\(y = y' = 0\)</span> in all cases. The <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> trajectories should be upright ellipses in the absence of nonlinear elements. Some helper functions are defined in the following collapsed cell.</p>
 <div class="cell" data-execution_count="30">
 <details>
@@ -715,8 +715,8 @@ M_x \nu_x + M_y \nu_y = N,
 </div>
 <p>The triangular region of stability is clearly visible at the end of 50 turns. Interestingly, the third order resonance can be used to extract a beam from an accelerator at a much slower rate than normal. To do this, the strength and spacing of sextupole magnets must be carefully chosen to control the shape and orientation of the stability triangle, then tune is slowly moved closer to the 1/3 integer resonance value. The result is that the triangle shrinks as the stable phase space area decreases, and that more and more particles will find themselves in the unstable area and eventually stream out along the vertices.</p>
 </section>
-<section id="integer-resonance" class="level4">
-<h4 class="anchored" data-anchor-id="integer-resonance">4.2. Integer resonance</h4>
+<section id="integer-resonance" class="level3">
+<h3 class="anchored" data-anchor-id="integer-resonance">4.2. Integer resonance</h3>
 <p>The sextupole should also excite the integer resonance.</p>
 <div class="cell" data-execution_count="33">
 <details>
@@ -744,8 +744,8 @@ M_x \nu_x + M_y \nu_y = N,
 </div>
 <p>Cool pattern! The separatrix is now shaped like a tear drop. It looks like it’s evolving more slowly because the tune is close to an integer, so the particles almost return to the same location in phase space after a turn.</p>
 </section>
-<section id="higher-order-resonances" class="level4">
-<h4 class="anchored" data-anchor-id="higher-order-resonances">4.3. Higher order resonances</h4>
+<section id="higher-order-resonances" class="level3">
+<h3 class="anchored" data-anchor-id="higher-order-resonances">4.3. Higher order resonances</h3>
 <p>There are also higher order resonances which a sextupole can drive. You can actually find fourth and fifth order resonances if you perform perturbation theory up to second order (at least that’s what I’m told in a textbook… I’d like to avoid carrying out such a procedure). Do these show up using our mapping equations? They are expected to be weaker, so we’ll double the sextupole strength.</p>
 <div class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>emittances <span class="op">=</span> <span class="fl">1e-6</span> <span class="op">*</span> np.array([<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">250</span>, <span class="dv">350</span>])</span>
@@ -765,8 +765,8 @@ M_x \nu_x + M_y \nu_y = N,
 <p>These are interesting plots. The tune near 0.75 (it’s actually 0.7496) is exciting a fourth order resonance, while the tune near 0.8 is exciting a fifth order resonance. In all the plots, the low amplitude orbits are stable ellipses. We then see the behavior change as the amplitude is increased, with the particle jumping between distinct “islands”. Eventually the trajectories once again form closed loops, but in deformed shapes. The motion is unstable at even larger amplitudes. Understanding exactly <em>why</em> the the plots look like they do would take more work.</p>
 </section>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">5. Conclusion</h3>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">5. Conclusion</h2>
 <p>This post outlined the theory of nonlinear resonances driven by magnetic multipoles. The effect of a sextupole-driven resonance on the phase space trajectory was then examined using mapping equations. Taking the time to write down the steps which lead to <a href="#eq-20">Equation&nbsp;20</a> — an equation often referenced in accelerator physics — was a rewarding experience and helped make the topic less mysterious to me (although I’m no expert). Here are a number of helpful references:</p>
 <ul>
 <li>Lectures

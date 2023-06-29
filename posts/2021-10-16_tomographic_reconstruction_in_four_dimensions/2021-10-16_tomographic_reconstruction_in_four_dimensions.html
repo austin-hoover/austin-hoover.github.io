@@ -239,8 +239,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 </header>
 
-<section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>A beam of particles in an accelerator is characterized by its distribution in phase space — the space of positions <span class="math inline">\(\{x, y, z\}\)</span> and momenta <span class="math inline">\(\{x', y', z'\}\)</span>. I’m currently working on a project in which we’d like to measure the four-dimensional (4D) phase space distribution <span class="math inline">\(f(x, x', y, y')\)</span> of a fully-accumulated beam in the Spallation Neutron Source (SNS).</p>
 <p>A direct way to do this is to use a series of slits to block all particles outside a small region <span class="math inline">\(\mathbf{x} \pm \Delta\mathbf{x}\)</span>, where <span class="math inline">\(\mathbf{x} = (x, x', y, y')\)</span>, and move <span class="math inline">\(\mathbf{x}\)</span> through phase space. This method is accurate but slow and not available for our beam (<span class="math inline">\(10^{14}\)</span> protons moving at 90% the speed of light). The best we can do is to measure projections of the distribution; i.e., lower-dimensional views such as</p>
 <p><span class="math display">\[
@@ -250,8 +250,8 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <p>Tomographic reconstruction is used in a wide variety of fields, particularly in medical imaging where X-rays are used to generate 1D projections of a 2D slice of organic material at various angles. The same idea can be applied to a phase space distribution. Consider <span class="math inline">\(f(x, x')\)</span>. It’s straightforward to measure a 1D projection along the <span class="math inline">\(x\)</span> axis by sweeping a vertical conducting wire across the beam path; the problem is that this only corresponds to one projection angle. The trick is to approximate motion in an accelerator as a series of linear transformations of the phase space coordinates: shearing, scaling, and rotation. Thus, the projection of a beam at one location onto the <span class="math inline">\(x\)</span> axis is a scaled projection of a projection onto a rotated axis at a different location. The projection angle can be controlled by varying the electromagnetic fields between the two locations.</p>
 <p>It’s more challenging to find <span class="math inline">\(f(x, x', y, y')\)</span>. It’s simple to reconstruct the <span class="math inline">\(4 \times 4\)</span> covariance matrix from 1D projections; I’ve implemented this method in the SNS and won’t discuss it here. To obtain the 4D <em>distribution</em>, we generally need at least 2D projections. I’m interested in this approach because the final destination of the SNS beam — the target&nbsp;— is coated with a luminescent material which gives the 2D projection onto the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. The idea that I’ll begin to explore in this post is whether these 2D projections can be used to reconstruct the 4D phase space distribution. I’ll first go over the common reconstruction algorithms in 2D and mention if they could be extended to 4D.</p>
 </section>
-<section id="d-reconstruction" class="level3">
-<h3 class="anchored" data-anchor-id="d-reconstruction">2D reconstruction</h3>
+<section id="d-reconstruction" class="level2">
+<h2 class="anchored" data-anchor-id="d-reconstruction">2D reconstruction</h2>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -368,8 +368,8 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>        ax.set_title(title)</span>
 <span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fig, axs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="filtered-back-projection-fpb" class="level4">
-<h4 class="anchored" data-anchor-id="filtered-back-projection-fpb">Filtered Back-Projection (FPB)</h4>
+<section id="filtered-back-projection-fpb" class="level3">
+<h3 class="anchored" data-anchor-id="filtered-back-projection-fpb">Filtered Back-Projection (FPB)</h3>
 <p>In filtered back-projection (FBP) each projection is Fourier transformed and then smeared back across the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> plane. The Fourier transform acts as a filter and creates a sharper image.</p>
 <div class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> transform.iradon(projections, theta<span class="op">=-</span>angles).T</span>
@@ -397,8 +397,8 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <p>The angular range in an accelerator is determined by the amount of control we have over the optics between the reconstruction location and the measurement location. It’s possible to run into problems here; for example, varying a magnet too far from its design value could make the beam unacceptably large at a downstream location. Magnets also have limited strengths, and sometimes they can’t be controlled independently. Additionally, achieving a specific projection angle is not always straightforward; usually an optimizer is used to find the correct settings, and this takes time. I’ll come back to these points later.</p>
 <p>FBP can be generalized to 3D reconstruction from 2D projections, but it doesn’t seem straightforward. I don’t know if it could work for a 4D reconstruction from 2D projections. I’m just not sure what back-projection would mean in that case…</p>
 </section>
-<section id="algebraic-reconstruction-art" class="level4">
-<h4 class="anchored" data-anchor-id="algebraic-reconstruction-art">Algebraic Reconstruction (ART)</h4>
+<section id="algebraic-reconstruction-art" class="level3">
+<h3 class="anchored" data-anchor-id="algebraic-reconstruction-art">Algebraic Reconstruction (ART)</h3>
 <p>Algebraic reconstruction (ART) algorithms are simpler than FBP. The reconstructed <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> distribution will be defined on a grid. Let <span class="math inline">\(\rho^{(k)}\)</span> be a vector containing the <span class="math inline">\(k\)</span>th projection, and let <span class="math inline">\(\psi\)</span> be a vector of the phase space density at the reconstruction location (<span class="math inline">\(N^2\)</span> elements for an <span class="math inline">\(N \times N\)</span> grid). Since we know the linear transformation connecting the two points, we can write the following matrix equation:</p>
 <p><span class="math display">\[ \rho^{(k)} = P^{(k)}\psi, \]</span></p>
 <p>Stack these equations for all the projections to get</p>
@@ -430,21 +430,21 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <p>ART easily generalizes to 4D, but it could become expensive since <span class="math inline">\(P\)</span> would have <span class="math inline">\(K N^2 \times N^4\)</span> elements. This has been carried out by Wolski (2020) with <span class="math inline">\(N = 69\)</span>. I’ll leave investigation of 4D ART for a future post.</p>
 </section>
-<section id="ment" class="level4">
-<h4 class="anchored" data-anchor-id="ment">MENT</h4>
+<section id="ment" class="level3">
+<h3 class="anchored" data-anchor-id="ment">MENT</h3>
 <p>There is another approach to the problem based on information theory. The idea is that the most probable distribution should be chosen, i.e., find the <span class="math inline">\(f(\mathbf{x})\)</span> that maximizes the entropy</p>
 <p><span class="math display">\[ S = -\int f(\mathbf{x}) \log{f(\mathbf{x})} d\mathbf{x}\]</span></p>
 <p>with the constraint that the projections of <span class="math inline">\(f(\mathbf{x}\)</span> are consistent with measurements. The theory behind this algorithm is layed out in Minerbo (1972). The benefit to MENT is that it has a goal in mind and can do very well with only a few projections where ART might introduce significant streaking artifacts. The downside of MENT is that although it <em>can</em> work well with few projections, there is no guarantee, and it may struggle to converge when many projections are used. Unfortunately, this algorithm is a bit tricky to implement; I’m working on it.</p>
 <p>MENT can also work in 4D with 2D projections <em>or 1D projections</em>; the math is pretty much the same.</p>
 </section>
-<section id="grid-based-methods" class="level4">
-<h4 class="anchored" data-anchor-id="grid-based-methods">Grid-based methods</h4>
+<section id="grid-based-methods" class="level3">
+<h3 class="anchored" data-anchor-id="grid-based-methods">Grid-based methods</h3>
 <p>There is a final method that I should mention: using multi-particle simulation to find the answer. Start with a bunch of particles and transport them to the measurement location. Throw away particles that landed in bins in which the measured projection is zero. Now, generate new particles in the viscinity of the old ones with the number of new particles proportional to the measured distribution in that bin. Repeat until convergence.</p>
 <p>The advantage of this approach is that it works for any number of dimesions and can also include nonlinear effects in the simulation such as space charge. I’m wondering, though, if this just reduces to a version of ART if the transport is linear; our beam is high energy, which means that space charge can mostly be ignored over short distances. Again, I’ll leave this method for a future post.</p>
 </section>
 </section>
-<section id="d-reconstruction-1" class="level3">
-<h3 class="anchored" data-anchor-id="d-reconstruction-1">4D reconstruction</h3>
+<section id="d-reconstruction-1" class="level2">
+<h2 class="anchored" data-anchor-id="d-reconstruction-1">4D reconstruction</h2>
 <p>I’ve mentioned that at least three methods (ART, MENT, grid-based) will generalize to 4D reconstruction from 2D projections. But what I’d like to look at now is a different, hopefully easier method described in Hock (2013). The method uses 2D projections but only uses 2D reconstruction methods like those described in this post. It’s sort of like a CT scan: 1D projections are used to reconstruct a 2D slice of a human body, and then the slice is moved along the body to reconstruct the 3D image. This would be nice because the conditions for a good 2D reconstruction are well-understood, but might not be clear for higher-dimensional versions of the algorithms.</p>
 <p>First, we need a 4D distribution.</p>
 <div class="cell" data-execution_count="16">
@@ -486,8 +486,8 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    centers.append(<span class="fl">0.5</span> <span class="op">*</span> (_edges[:<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> _edges[<span class="dv">1</span>:]))</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>bin_volume <span class="op">=</span> get_bin_volume(limits, n_bins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="description-of-hocks-method" class="level4">
-<h4 class="anchored" data-anchor-id="description-of-hocks-method">Description of Hock’s method</h4>
+<section id="description-of-hocks-method" class="level3">
+<h3 class="anchored" data-anchor-id="description-of-hocks-method">Description of Hock’s method</h3>
 <p>Now for the method. Suppose we can independently rotate the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> projections of the phase space distribution. Let the angles in <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> be <span class="math inline">\(\left\{\mu_{x_1}, \dots, \mu_{x_k}, \dots, \mu_{x_K}\right\}\)</span> and the angles in <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> be <span class="math inline">\(\left\{\mu_{y_1}, \dots, \mu_{y_l}, \dots, \mu_{y_L}\right\}\)</span>. For each combination of <span class="math inline">\(\mu_x\)</span> and <span class="math inline">\(\mu_y\)</span>, we measure the beam intensity on a screen. In other words, we create a matrix <span class="math inline">\(S\)</span> such that <span class="math inline">\(S_{ijkl}\)</span> gives the intensity at point <span class="math inline">\((x_i, y_j)\)</span> on the screen for phase advances (angles) <span class="math inline">\(\mu_{x_k}\)</span> and <span class="math inline">\(\mu_{y_l}\)</span>.</p>
 <div class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> <span class="dv">15</span> <span class="co"># number of angles in x dimension</span></span>
@@ -534,8 +534,8 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        Z[r, s, :, :] <span class="op">=</span> _Z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="accuracy" class="level4">
-<h4 class="anchored" data-anchor-id="accuracy">Accuracy</h4>
+<section id="accuracy" class="level3">
+<h3 class="anchored" data-anchor-id="accuracy">Accuracy</h3>
 <p>SART could make some bins negative, so set those to zero. We then need to normalize <code>Z</code> for comparison with <code>Z_true</code>.</p>
 <div class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> process(Z, keep_positive<span class="op">=</span><span class="va">True</span>, density<span class="op">=</span><span class="va">True</span>, limits<span class="op">=</span>limits)</span>
@@ -619,10 +619,10 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 <p>In the second plot, the error is given in number of particles. It looks like the method worked well to reconstruct this distribution. [Edit 2023-02-13: This is not a sufficient comparison in 4D: one needs to look at slices, and use more complex distribution.]</p>
 </section>
 </section>
-<section id="feasibility" class="level3">
-<h3 class="anchored" data-anchor-id="feasibility">Feasibility</h3>
-<section id="imaging-system" class="level4">
-<h4 class="anchored" data-anchor-id="imaging-system">Imaging system</h4>
+<section id="feasibility" class="level2">
+<h2 class="anchored" data-anchor-id="feasibility">Feasibility</h2>
+<section id="imaging-system" class="level3">
+<h3 class="anchored" data-anchor-id="imaging-system">Imaging system</h3>
 <p>The SNS target is a steel vessel containing liquid mercury. At the beginning of this post, I mentioned that the SNS has a target imaging system. Here is a diagram showing how the target imaging system works…</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -637,8 +637,8 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 <p>To reduce noise, the image was averaged over five beam pulses and a Gaussian blur was applied with <span class="math inline">\(\sigma = 3\)</span>. There are four fiducial markers that are visible as dark spots on the corner of the beam. The black ellipse represents a measurement from wire-scanners upstream of the target. Collecting this image is easy.</p>
 </section>
-<section id="optics-control" class="level4">
-<h4 class="anchored" data-anchor-id="optics-control">Optics control</h4>
+<section id="optics-control" class="level3">
+<h3 class="anchored" data-anchor-id="optics-control">Optics control</h3>
 <p>I’ve assumed that the transfer matrices connecting the coordinates are simple rotation matrices. Although that isn’t true in reality, there is a trick we can play. Any transfer matrix <span class="math inline">\(M\)</span> can be writen as the product <span class="math inline">\(M = V R V^{-1}\)</span>, where <span class="math inline">\(V\)</span> provides shearing + scaling and <span class="math inline">\(R\)</span> is a rotation by the phase advances <span class="math inline">\(\mu_x\)</span> and <span class="math inline">\(\mu_y\)</span>. Applying <span class="math inline">\(V^{-1}\)</span> to the coordinates is called <em>normalizing</em> the coordinates. What we can do is normalize (scale) the measured profiles, perform the reconstruction in normalized phase space, then unnormalize the reconstructed distribution.</p>
 <p>In normalized phase space, the transfer matrices are just rotation matrices (<span class="math inline">\(R\)</span>) and the projection angles are the phase advances. This is an advantage because the phase advances are easier to control than the true projection angles. Also, the reconstructed <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> projections will be somewhat circular in this space, which should reduce errors.</p>
 <p>The (un)normalization steps will involve interpolation since we’re performing a transformation on an image, and I’m not yet sure how this will affect the reconstruction error. Anyhow, we don’t <em>have</em> to reconstruct in normalized phase space if this turns out to be an issue.</p>
@@ -658,8 +658,8 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 <p>The bottom plot is just the integral of the inverse of the top plot. The beta functions remain within their limits.</p>
 </section>
-<section id="outlook" class="level4">
-<h4 class="anchored" data-anchor-id="outlook">Outlook</h4>
+<section id="outlook" class="level3">
+<h3 class="anchored" data-anchor-id="outlook">Outlook</h3>
 <p>Initial tests of Hock’s 4D reconstruction method are promising. There are a number of things to investigate. Ideally, the minimum number of projections is used. First, I should play with the number of projections using ART to see how the reconstruction error scales. I would also like to implement MENT, which should do better with fewer projections. I should then test the “direct” 4D reconstruction methods such as ART, MENT, or grid-based and compare them to Hock’s method. I should also investigate how the methods respond to noise, changes in the grid size, and more complex distributions.</p>
 <p>The script to perform the data collection for this method is pretty simple: compute the correct optics, update the live magnet strengths accordingly, send a beam to the target, and save the target image. The biggest issue is execution time. In our next study at the SNS, we’ll have plenty of time to run the script in addition to our other tasks. Hopefully this will be a helpful diagnostic.</p>
 

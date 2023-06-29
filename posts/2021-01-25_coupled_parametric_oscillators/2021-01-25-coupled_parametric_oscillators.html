@@ -234,8 +234,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 </header>
 
-<section id="equations-of-motion" class="level3">
-<h3 class="anchored" data-anchor-id="equations-of-motion">Equations of motion</h3>
+<section id="equations-of-motion" class="level2">
+<h2 class="anchored" data-anchor-id="equations-of-motion">Equations of motion</h2>
 <p>A <a href="https://austin-hoover.github.io/posts/2021-01-21-parametric_oscillators/2021-01-21-parametric_oscillators.html">previous post</a> examined the analytic solutions to the equation of motion describing a parametric oscillator — an oscillator whose physical properties are time-dependent. This problem was motivated by describing the transverse oscillations of a charged particle in an accelerator. In this post, the treatment will be extended to a <em>coupled</em> parametric oscillator. The oscillator obeys the following equation of motion:</p>
 <p><span id="eq-EOM"><span class="math display">\[
 \begin{aligned}
@@ -268,8 +268,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </div>
 <p>There will be nonlinear coupling terms (terms proportional to <span class="math inline">\(x^j y^k\)</span>, where <span class="math inline">\(j,k &gt; 1\)</span>) when <span class="math inline">\(n &gt; 2\)</span>, but we are interested only in linear coupling. This occurs when the skew quadrupole term <span class="math inline">\(a_2\)</span> is nonzero, which is true when a quadrupole is tilted in the transverse plane. The field couples the motion in one plane to the displacement in the other.</p>
 </section>
-<section id="solution" class="level3">
-<h3 class="anchored" data-anchor-id="solution">Solution</h3>
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
 <p>Let’s review the approach we took in analyzing the 1D parametric oscillator. We wrote the solution in pseudo-harmonic form with an amplitude <span class="math inline">\(\sqrt{2 J \beta(s)}\)</span> and phase <span class="math inline">\(\mu(s)\)</span>. We then focused on the motion of a particle in <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> phase space after each focusing period. We observed that the particle jumps around an ellipse: the area of the ellipse is constant and proportional to <span class="math inline">\(2 J\)</span>; the dimensions of the ellipse are determined by <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\alpha = -\beta' / 2\)</span>; the size of the jumps around the ellipse are determined by <span class="math inline">\(\mu\)</span>. We then wrote the symplectic <span class="math inline">\(2 \times 2\)</span> transfer matrix <span class="math inline">\(\mathbf{M}\)</span>, which connects the initial and final phase space coordinates through one period, as</p>
 <p><span id="eq-norm"><span class="math display">\[
 \mathbf{M} = \mathbf{V}\mathbf{P}\mathbf{V}^{-1}.
@@ -662,8 +662,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </details>
 </div>
 <p>This is typical of a coupled oscillator. The motion in coupled systems can be understood as the superposition of <a href="https://en.wikipedia.org/wiki/Normal_mode">normal modes</a>, each of which corresponds to a single frequency. For example, consider two masses connected with a spring. There are two possible ways for the masses to oscillate at the same frequency. The first is a <em>breathing mode</em> in which they move in opposite directions, and the second is a <em>sloshing mode</em> in which they move in the same direction. The motion is the sum of these two modes. We will try to do something similar for a coupled parameteric oscillator.</p>
-<section id="transfer-matrix-eigenvectors" class="level4">
-<h4 class="anchored" data-anchor-id="transfer-matrix-eigenvectors">Transfer matrix eigenvectors</h4>
+<section id="transfer-matrix-eigenvectors" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-matrix-eigenvectors">Transfer matrix eigenvectors</h3>
 <p>If the phase space coordinate vector <span class="math inline">\(\mathbf{x} = (x, x', y, y')^T\)</span> evolves according to</p>
 <p><span id="eq-label"><span class="math display">\[
 \mathbf{x} \rightarrow \mathbf{Mx},
@@ -707,8 +707,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="eigenvector-parameterization" class="level4">
-<h4 class="anchored" data-anchor-id="eigenvector-parameterization">Eigenvector parameterization</h4>
+<section id="eigenvector-parameterization" class="level3">
+<h3 class="anchored" data-anchor-id="eigenvector-parameterization">Eigenvector parameterization</h3>
 <p>We are now going to introduce a set of parameters for these eigenvectors, and in turn the transfer matrix. We already have two phases, so that leaves 8 parameters. Our strategy is to observe that each eigenvector traces an ellipse in both horizontal (<span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span>) and vertical (<span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span>) phase space. Then, we will simply assign an <span class="math inline">\(\alpha\)</span> function and <span class="math inline">\(\beta\)</span> function to each of these ellipses. So, for the ellipse traced by <span class="math inline">\(\mathbf{v}_1\)</span> in the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> plane, we have <span class="math inline">\(\beta_{1x}\)</span> and <span class="math inline">\(\alpha_{1x}\)</span>, and then for the second eigenvector we have <span class="math inline">\(\beta_{2x}\)</span> and <span class="math inline">\(\alpha_{2x}\)</span>. The same thing goes for the vertical dimension with <span class="math inline">\(x\)</span> replaced by <span class="math inline">\(y\)</span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -734,8 +734,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 \tag{8}\]</span></span></p>
 <p>So in addition to the phases <span class="math inline">\(\mu_1\)</span> and <span class="math inline">\(\mu_2\)</span> we have <span class="math inline">\(\alpha_{1x}\)</span>, <span class="math inline">\(\alpha_{2x}\)</span>, <span class="math inline">\(\alpha_{1y}\)</span>, <span class="math inline">\(\alpha_{2y}\)</span>, <span class="math inline">\(\beta_{1x}\)</span>, <span class="math inline">\(\beta_{2x}\)</span>, <span class="math inline">\(\beta_{1y}\)</span>, and <span class="math inline">\(\beta_{2y}\)</span>. That’s pretty much it. There are a few other parameters we need to introduce to simplify the notation, but they are not independent. The first is <span class="math inline">\(u\)</span>, which, as noted in the figure, determines the areas of the ellipses in one plane relative to the other. The second and third are <span class="math inline">\(\nu_1\)</span> and <span class="math inline">\(\nu_2\)</span>, which are phase differences between the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> components of the eigenvectors (in the animation they are either <span class="math inline">\(0\)</span> or <span class="math inline">\(\pi\)</span>). I won’t discuss these here. The last thing to note is that the parameters reduce to their 1D definitions when there is no coupling in the lattice. So we would have <span class="math inline">\(\beta_{1x}, \beta_{2y} \rightarrow \beta_{x}, \beta_{y}\)</span> and <span class="math inline">\(\beta_{2x}, \beta_{1y} \rightarrow 0\)</span>, and similar for <span class="math inline">\(\alpha\)</span>. The invariants and phase advances would also revert back to their original values: <span class="math inline">\(J_{1,2} \rightarrow J{x,y}\)</span> and <span class="math inline">\(\mu_{1,2} \rightarrow \mu_{x,y}\)</span>.</p>
 </section>
-<section id="floquet-transformation" class="level4">
-<h4 class="anchored" data-anchor-id="floquet-transformation">Floquet transformation</h4>
+<section id="floquet-transformation" class="level3">
+<h3 class="anchored" data-anchor-id="floquet-transformation">Floquet transformation</h3>
 <p>These eigenvectors can also be used to construct a transformation which removes both the variance in the focusing strength and the coupling between the planes, turning the coupled parametric oscillator into an uncoupled harmonic oscillator. In other words, we seek a matrix <span class="math inline">\(\mathbf{V}\)</span> such that</p>
 <p><span id="eq-label"><span class="math display">\[\mathbf{V^{-1} M V} = \mathbf{P} =
 \begin{bmatrix}
@@ -784,8 +784,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p>The motion is uncoupled after this transformation; i.e., particles move in a circle of area <span class="math inline">\(2J_1\)</span> in the <span class="math inline">\(x_n\)</span>-<span class="math inline">\(x_n'\)</span> plane at frequency <span class="math inline">\(\mu_1\)</span>, and in a circle of area <span class="math inline">\(2J_2\)</span> in the <span class="math inline">\(y_n\)</span>-<span class="math inline">\(y_n'\)</span> plane at frequency <span class="math inline">\(\mu_2\)</span>.</p>
 </section>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>The method introduced here describes a coupled parametric oscillator using the minimum number of parameters. Our physical motivation was an accelerator lattice with linear, coupled forces. There is no agreed upon method to do this among accelerator physicists, but this is the method I have used in my research. I’ve left out details which can be found in <span class="citation" data-cites="Lebedev2010 Willeke1989">&nbsp;[<a href="#ref-Lebedev2010" role="doc-biblioref"><strong>Lebedev2010?</strong></a>,<a href="#ref-Willeke1989" role="doc-biblioref"><strong>Willeke1989?</strong></a>]</span>.</p>
 
 
