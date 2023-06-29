@@ -7,6 +7,8 @@ bibliography: references.bib
 csl: american-physics-society.csl
 ---
 
+[In progress...]
+
 
 Teleological arguments conclude that certain contingent features of the world are best explained by the existence of a designer (God). A classic argument of this form is "Paley's watch", which focuses on biological organisms. The contemporary debate revolves around cosmological fine-tuning. In this post, following Oppy, I assess several proposed explanations of fine-tuning: design, multiverse, necessity, chance, and brute contingency.
 
