@@ -22,7 +22,7 @@ We are also using these measurements to study features in six-dimensional phase 
 
 
 :::{.column-body}
-![Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution.](./images/fig13.png)
+![Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution.](./files/fig13.png)
 :::
 
 

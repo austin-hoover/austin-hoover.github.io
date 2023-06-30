@@ -1,6 +1,7 @@
 toc: true
 toc-title: Contents
 toc-depth: 5
+title-block-categories: true
 execute:
     echo: true
     enabled: false

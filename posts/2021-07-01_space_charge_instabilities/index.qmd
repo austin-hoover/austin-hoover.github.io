@@ -1,0 +1,13 @@
+---
+title: "Space charge resonances and instabilities"
+date: 2021-07-01
+author: Austin Hoover
+categories: [space charge, resonance, instability]
+image: instability_viridis.png
+
+---
+
+
+This post has not been converted to Quarto format yet. It is at my old blog:
+
+[https://austin-hoover.github.io/blog/physics/space%20charge/simulation/resonances/2021/07/01/space_charge_instabilities.html](https://austin-hoover.github.io/blog/physics/space%20charge/simulation/resonances/2021/07/01/space_charge_instabilities.html).

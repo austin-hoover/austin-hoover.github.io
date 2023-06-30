@@ -4,7 +4,8 @@ date: 2023-06-29
 author: Austin Hoover
 categories: [teleological arguments, fine-tuning, multiverse]
 bibliography: references.bib
-csl: american-physics-society.csl
+csl: ../american-physics-society.csl
+draft: true
 ---
 
 [In progress...]

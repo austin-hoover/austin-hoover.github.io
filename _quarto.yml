@@ -7,25 +7,25 @@ website:
         border: False
         right:
             - text: "Research"
-              href: research.qmd
+              href: ./research/index.qmd
             - text: "Publications"
-              href: publications.qmd
+              href: ./publications/index.qmd
             - text: "Blog"
-              href: blog.qmd
+              href: ./blog.qmd
+            - text: "Notes"
+              href: ./notes/index.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
         theme: 
-            light: [default, custom_light.scss]
-            dark: [default, custom_dark.scss]
+            light: [default, ./style/custom_light.scss]
+            dark: [default, ./style/custom_dark.scss]
         anchor-sections: true
         cap-location: bottom  # {bottom, margin}
         toc-location: right
         toc-depth: 5
         toc-expand: true
-        title-block-categories: false
         shift-heading-level-by: 0
         html-math-method: mathjax
         grid:
             body-width: 820px
-        # linestretch: 1.3
