@@ -7,13 +7,14 @@
 
 $primary: SteelBlue;
 $font-family-sans-serif: "Georgia";
+$font-family-sans-serif: "Georgia";
 $font-size-root: 15.25px;
 $h1-font-size: 1.9em;
 $h2-font-size: 1.520896em;
 $h3-font-size: 1.30em;
 $h4-font-size: 1.15em;
 $h5-font-size: 1.0em;
-$figure-caption-font-size: 15.0px !important;
+$figure-caption-font-size: 14.35px !important;
 
 $navbar-bg: #181818;
 $body-bg: #181818;
@@ -30,10 +31,6 @@ $code-block-bg: rgb(40, 40, 40);
     padding-top: 3px !important;
     border-bottom-width: 0px !important;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-table {
-    font-size: 13.0px !important;
 }
 
 p, li { 
