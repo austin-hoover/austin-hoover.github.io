@@ -1,0 +1,19 @@
+---
+title: Books
+image: books.jpg
+listing:
+    contents:
+        - "*.qmd"
+        - "books.yml"
+    fields: [title, author, date]
+    field-display-names:
+        title: "Title"
+        author: "Author"
+        date: "Date"
+    sort: 
+        - title
+        - author
+    type: table
+    categories: true
+    max-items: 99999999
+---

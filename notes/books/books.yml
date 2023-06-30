@@ -1,0 +1,345 @@
+- title: Algorithms
+  author: R. Sedgewick and K. Wayne
+  date: 2023-06-30
+  categories:
+    - computer science
+    - algorithms
+    
+- title: Elements of Programming Interviews
+  author: A. Aziz, T. Lee, and A. Prakash
+  date: 2023-06-30
+  categories:
+    - computer science
+    - algorithms
+    
+- title: Neural Networks and Deep Learning
+  author: M. Nielsen
+  date: 2023-06-30
+  categories:
+    - computer science
+    - machine learning
+    
+- title: Pattern Recognition and Machine Learning
+  author: C. Bishop
+  date: 2023-06-30
+  categories:
+    - computer science
+    - machine learning
+    
+- title: The Alchemist
+  author: Paulo Coelho
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: Crime and Punishment
+  author: Fyodor Dostoevsky
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: Fahrenheit 451
+  author: Ray Bradbury
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: Moby Dick
+  author: Herman Melville
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: No Country for Old Men
+  author: Cormac McCarthy
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: The Road
+  author: Cormac McCarthy
+  date: 2023-06-30
+  categories:
+    - fiction
+
+- title: Stories of Your Life and Others
+  author: Ted Chiang
+  date: 2023-06-30
+  categories:
+    - fiction
+    
+- title: Mathematical Methods for Physicists
+  author: G. Arfken, F. Weber, and F. Harris
+  date: 2023-06-30
+  categories:
+    - mathematics
+
+- title: Mathematics of Classical and Quantum Physics
+  author: F. Byron and R. Fuller
+  date: 2023-06-30
+  categories:
+    - mathematics
+
+- title: Envisioning Information
+  author: Edward Tufte
+  date: 2023-06-30
+  categories:
+    - visualization
+    
+- title: Change in View
+  author: Gilbert Harman
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - epistemology
+
+- title: Knowledge and Christian Belief
+  author: Alvin Plantinga
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - epistemology
+
+- title: Infinity, Causation, and Paradox
+  author: Alexander Pruss
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - infinity
+    
+- title: Necessary Existence
+  author: Alexander Pruss and Joshua Rasmussen
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - metaphysics
+    
+- title: Arguing About Gods
+  author: Graham Oppy
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - religion
+    
+- title: Is God the Best Explanation of Things? A Dialogue
+  author: Joshua Rasmussen and Felipe Leon
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - religion
+    
+- title: Five Proofs of the Existence of God
+  author: Edward Feser
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - religion
+    
+- title: "Taking Pascal's Wager"
+  author: Michael Rota
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - religion
+    
+- title: The Emergent Multiverse
+  author: David Wallace
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - science
+    
+- title: "Philosophy of Physics: Quantum Theory"
+  author: Tim Maudlin
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - science
+    
+- title: "Philosophy of Physics: Space and Time"
+  author: Tim Maudlin
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - science
+    
+- title: Time and Chance
+  author: David Albert
+  date: 2023-06-30
+  categories:
+    - philosophy
+    - science
+
+- title: Accelerator Physics
+  author: S. Y. Lee
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: Introduction to the Physics of High Energy Accelerators
+  author: D. Edwards and M. Syphers
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: Measurement and Control of Charged Particle Beams
+  author: M. Minty and F. Zimmerman
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: Particle Accelerator Physics
+  author: H. Wiedemann
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: RF Linear Accelerators
+  author: T. Wangler
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: Space Charge Physics for Particle Accelerators
+  author: I. Hofmann
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+    - space charge
+
+- title: Theory and Design of Charged Particle Beams
+  author: M. Reiser
+  date: 2023-06-30
+  categories:
+    - physics
+    - accelerator physics
+
+- title: Astrophysics in a Nutshell
+  author: D. Maoz
+  date: 2023-06-30
+  categories:
+    - physics
+    - astrophysics
+
+- title: Classical Electrodynamics
+  author: J. Jackson
+  date: 2023-06-30
+  categories:
+    - physics
+    - electromagnetism
+
+- title: Classical Electromagnetism
+  author: J. Franklin
+  date: 2023-06-30
+  categories:
+    - physics
+    - electromagnetism
+
+- title: Introduction to Electrodynamics
+  author: R. Griffiths
+  date: 2023-06-30
+  categories:
+    - physics
+    - electromagnetism
+
+- title: Classical Mechanics
+  author: S. Goldstein
+  date: 2023-06-30
+  categories:
+    - physics
+    - classical mechanics
+
+- title: Classical Mechanics
+  author: J. Taylor
+  date: 2023-06-30
+  categories:
+    - physics
+    - classical mechanics
+    
+- title: Introduction to Elementary Particle Physics
+  author: R. Griffiths
+  date: 2023-06-30
+  categories:
+    - physics
+    - particle physics
+
+- title: Introduction to High Energy Physics
+  author: D. Perkins
+  date: 2023-06-30
+  categories:
+    - physics
+    - particle physics
+
+- title: Modern Elementary Particle Physics
+  author: G. Kane
+  date: 2023-06-30
+  categories:
+    - physics
+    - particle physics
+
+- title: "What Is Real?: The Unfinished Quest for the Meaning of Quantum Physics"
+  author: Adam Becker
+  date: 2023-06-30
+  categories:
+    - physics
+    - history
+    
+- title: Modern Quantum Mechanics
+  author: J. Sakurai
+  date: 2023-06-30
+  categories:
+    - physics
+    - quantum mechanics
+
+- title: "Quantum Mechanics: Concepts and Applications"
+  author: N. Zettili
+  date: 2023-06-30
+  categories:
+    - physics
+    - quantum mechanics
+    
+- title: Optical Coherence and Quantum Optics
+  author: I. Mandel and E. Wolf
+  date: 2023-06-30
+  categories:
+    - physics
+    - quantum optics
+
+- title: Introduction to Thermal Physics
+  author: D. Schroeder
+  date: 2023-06-30
+  categories:
+    - physics
+    - thermodynamics
+
+- title: Statistical Physics of Particles
+  author: M. Kardar
+  date: 2023-06-30
+  categories:
+    - physics
+    - statistical mechanics
+
+- title: Mere Christianity
+  author: C. S. Lewis
+  date: 2023-06-30
+  categories:
+    - religion
+    - christianity
+
+- title: The Disappearance of Childhood
+  author: Niel Postman
+  date: 2023-06-30
+  categories:
+    - sociology
+
+- title: Wealth, Poverty, and Politics
+  author: Thomas Sowell
+  date: 2023-06-30
+  categories:
+    - sociology
