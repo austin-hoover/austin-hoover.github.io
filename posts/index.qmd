@@ -1,11 +1,12 @@
 ---
 title: "Blog"
 listing:
-    contents: ./posts/
+    contents: .
     sort: "date desc"
     date-format: YYYY-MM-DD
     table-hover: true
     type: table
     fields: [title, date]
-    categories: true    
+    categories: true   
+comments: false
 ---

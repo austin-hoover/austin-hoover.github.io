@@ -11,18 +11,28 @@ website:
             - text: "Publications"
               href: ./publications/index.qmd
             - text: "Blog"
-              href: ./blog.qmd
+              href: ./posts/index.qmd
             - text: "Notes"
               href: ./notes/index.qmd
+    sidebar:
+      - id: notes
+        title: Notes
+        contents: 
+            notes/
+      # - id: research
+      #   title: Research
+      #   contents: 
+      #       research/
     google-analytics: "G-NS0H6D6VKL"
+
 format:
     html:
         theme: 
             light: [default, ./style/custom_light.scss]
             dark: [default, ./style/custom_dark.scss]
         anchor-sections: true
-        cap-location: bottom  # {bottom, margin}
-        toc-location: right
+        cap-location: bottom  # figure caption {bottom, margin}
+        toc-location: right  # {body, left, right}
         toc-depth: 5
         toc-expand: true
         shift-heading-level-by: 0

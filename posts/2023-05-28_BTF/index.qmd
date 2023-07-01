@@ -5,10 +5,11 @@ author: Austin Hoover
 categories: [particle accelerators, high-dimensional data, visualization]
 bibliography: references.bib
 csl: american-physics-society.csl
+
+abstract-title: Summary
+
+abstract: This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with intense beam physics.
 ---
-
-
-This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with intense beam physics.
 
 
 ## 1. Predicting intense beam dynamics

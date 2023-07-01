@@ -1,13 +1,22 @@
-toc: true
-toc-title: Contents
-toc-depth: 5
-title-block-categories: true
+cap-location: bottom  # figure caption {bottom, margin}
+
+citation: false
+
+comments:
+    utterances:
+        repo: austin-hoover/austin-hoover.github.io
+        
 execute:
     echo: true
     enabled: false
     cache: true
     freeze: true
-citation: false
-comments:
-    utterances:
-        repo: austin-hoover/austin-hoover.github.io
+title-block-categories: true
+
+toc: true
+toc-depth: 5
+toc-location: right
+
+reference-location: block  # footnote location {block, section, margin}
+
+sidebar: false

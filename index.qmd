@@ -3,12 +3,14 @@ about:
     template: trestles  # {trestles, jolla, solana, marquee, broadside}
     image: ./files/me_ORNL.jpg
     #image-width: 250px
-    #image-shape: rectangle
+    image-shape: rectangle
     links:
         - icon: linkedin
           href: https://linkedin.com/in/austin-hoover-7b760511b    
         - icon: github
           href: https://github.com/austin-hoover  
+sidebar: false
+toc-location: right
 ---
 
 
