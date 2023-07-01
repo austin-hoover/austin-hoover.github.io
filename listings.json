@@ -1,5 +1,25 @@
 [
   {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/2023-05-28_BTF/index.html",
+      "/posts/2022-03-22_arguing_about_gods_3b/index.html",
+      "/posts/2022-02-11_some_figures/index.html",
+      "/posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html",
+      "/posts/2021-09-15_arguing_about_gods_3a/index.html",
+      "/posts/2021-07-05_arguing_about_gods_2/index.html",
+      "/posts/2021-07-01_space_charge_instabilities/index.html",
+      "/posts/2021-06-12_arguing_about_gods_1/index.html",
+      "/posts/2021-05-27_painting_a_particle_beam/index.html",
+      "/posts/2021-05-13_matched_envelope/index.html",
+      "/posts/2021-04-29_authorship_identification/index.html",
+      "/posts/2021-03-28_nonlinear_resonances/index.html",
+      "/posts/2021-02-22_PIC/index.html",
+      "/posts/2021-01-25_coupled_parametric_oscillators/index.html",
+      "/posts/2021-01-21_parametric_oscillators/index.html"
+    ]
+  },
+  {
     "listing": "/notes/papers/index.html",
     "items": [
       "/notes/papers/test1.html",
@@ -15,26 +35,6 @@
     "items": [
       "/notes/books/index.html",
       "/notes/papers/index.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/2023-05-28_BTF/index.html",
-      "/posts/2022-03-22_arguing_about_gods_3b/index.html",
-      "/posts/2022-02-11_some_figures/index.html",
-      "/posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html",
-      "/posts/2021-09-15_arguing_about_gods_3a/index.html",
-      "/posts/2021-07-05_arguing_about_gods_2/index.html",
-      "/posts/2021-07-01_space_charge_instabilities/index.html",
-      "/posts/2021-06-12_arguing_about_gods_1/index.html",
-      "/posts/2021-05-27_painting_a_particle_beam/index.html",
-      "/posts/2021-05-13_matched_envelope/index.html",
-      "/posts/2021-04-29_authorship_identification/2021-04-29_authorship_identification.html",
-      "/posts/2021-03-28_nonlinear_resonances/index.html",
-      "/posts/2021-02-22_PIC/index.html",
-      "/posts/2021-01-25_coupled_parametric_oscillators/index.html",
-      "/posts/2021-01-21_parametric_oscillators/index.html"
     ]
   }
 ]
