@@ -354,12 +354,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </figure>
 </div>
 <p>Another difficulty is specific to circular accelerators (rings). Rings are designed such that each particle performs stable transverse oscillations about some reference trajectory. The oscillations are not simple-harmonic, but they can be described by a small number of parameters.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> One of these parameters is the <em>tune</em>, which is something like a frequency. For certain values of the tune, nonlinear <em>magnetic</em> fields in the ring can drive single-particle resonances.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> To avoid resonance conditions up to order <span class="math inline">\(|M_x + M_y|\)</span>, the tunes <span class="math inline">\(\nu_{x, y}\)</span> must be far from the lines defined by <span class="math inline">\(M_x \nu_x + M_y \nu_y = N\)</span>, where <span class="math inline">\(M_x\)</span>, <span class="math inline">\(M_y\)</span>, and <span class="math inline">\(N\)</span> are integers.</p>
-<section id="footnotes" class="footnotes footnotes-end-of-block" role="doc-endnotes">
-<ol>
-<li id="fn1"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-01-21-parametric_oscillators/2021-01-21-parametric_oscillators.html">here</a> and <a href="https://austin-hoover.github.io/posts/2021-01-25_coupled_parametric_oscillators/2021-01-25-coupled_parametric_oscillators.html">here</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-03-28_nonlinear_resonances/2021-03-28-nonlinear_resonances.html">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 <p>Space charge decreases the tune of each particle. This wouldn’t be a problem if the shift was the same for each particle, but a nonlinear space charge force causes the tune shift to depend on the particle’s position, resulting in a <em>tune spread</em> that grows with the beam intensity. At high intensities, it becomes unavoidable that some particles cross dangerous low-order resonance lines. This is illustrated in Fig. 3.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -428,11 +422,6 @@ f(x, p_x, y, p_y) = \delta(x^2 + {p_y}^2 + y^2 + {p_y}^2 - 1),
 \tag{5}\]</span></span></p>
 <p>where <span class="math inline">\(c_x\)</span> and <span class="math inline">\(c_y\)</span> are the semi-axes of the ellipse. Notice that the field is both linear and uncoupled — <span class="math inline">\(x\)</span> component of the field is proportional to <span class="math inline">\(x\)</span>; the <span class="math inline">\(y\)</span> component of the field is proportional to <span class="math inline">\(y\)</span>.</p>
 <p>From here, one can derive a system of differential equations to evolve the distribution. This is an incredible simplification of the Vlasov-Poisson system. The equations track the beam <em>envelope</em>, the elliptical boundary containing the particles in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. These envelope equations, as they’re called, have been important for understanding space charge effects. In addition to providing a theoretical benchmark for computer simulations, they capture the approximate behavior of more realistic beams in some cases.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> More details are in <span class="citation" data-cites="Lund2004">&nbsp;[<a href="#ref-Lund2004" role="doc-biblioref">4</a>]</span>.</p>
-<section id="footnotes" class="footnotes footnotes-end-of-block" role="doc-endnotes">
-<ol start="3">
-<li id="fn3"><p>Notice that in Fig. 1., the Gaussian has an approximately uniform core.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 <p>Let’s try integrating these equations in a simple periodic focusing system.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fodo(s, quad_strength<span class="op">=</span><span class="fl">0.556</span>, cell_length<span class="op">=</span><span class="fl">5.0</span>):</span>
@@ -770,12 +759,6 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 \tag{8}\]</span></span></p>
 <p>(assuming all means are zero). So the matched beam has not only the same shape and orientation in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, but also the same spread in velocities and <em>correlations</em> between the positions and velocites. Finding the matched beam amounts to choosing the correct initial <span class="math inline">\(\mathbf{\Sigma}\)</span> such that <a href="#eq-4">Equation&nbsp;7</a> is true. This task is trivial without space charge but difficult with space charge.</p>
 <p>The matched envelope is useful for theoretical studies. First, it is a sort of minimum energy solution, minimizing the free energy available to drive emittance growth. Second, it is the most radially compact solution for a given beam intensity. Third, knowledge of the matched envelope is required to analyze the stability of the distribution.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> The matched envelope may also be useful in experimental studies. It appears possible to generate an approximate Danilov distribution in a real accelerator, but the method would not work without knowledge of the matched envelope.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
-<section id="footnotes" class="footnotes footnotes-end-of-block" role="doc-endnotes">
-<ol start="4">
-<li id="fn4"><p>This has only been done for the KV distribution.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>I will discuss this method in future posts.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 <p>Our strategy was to solve the problem in simple cases, studying the properties of the matched solution as a function of intensity. There were two challenges to overcome. First, space charge causes the final beam to depend on the initial beam in a potentially complicated way that is unknown before tracking the beam; this is especially true for long lattices and large beam intensities. This meant we would need to iterate to find the solution. Second, it was not immediately clear how to vary the distribution during the search; the full covariance matrix has ten unique elements, and they cannot be varied freely since the covariance matrix must remain positive-definite.</p>
 </section>
 <section id="the-solution" class="level3">
@@ -864,6 +847,7 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-Hoover2021" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Hoover, N. J. Evans, and J. A. Holmes, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.24.044201">Computation of the Matched Envelope of the Danilov Distribution</a></em>, Phys. Rev. Accel. Beams <strong>24</strong>, 044201 (2021).</div>
@@ -880,7 +864,16 @@ f(x, p_x, y, p_y) = \delta(p_x - e_{11} x - e_{12} y) \delta(p_y - e_{21} x - e_
 <div id="ref-Danilov2003" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[5] </div><div class="csl-right-inline">V. Danilov, S. Cousineau, S. Henderson, and J. Holmes, <em><a href="https://doi.org/10.1103/PhysRevSTAB.6.094202">Self-Consistent Time Dependent Two Dimensional and Three Dimensional Space Charge Distributions with Linear Force</a></em>, Phys. Rev. ST Accel. Beams <strong>6</strong>, 094202 (2003).</div>
 </div>
-</div></section></div></main> <!-- /main -->
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-01-21-parametric_oscillators/2021-01-21-parametric_oscillators.html">here</a> and <a href="https://austin-hoover.github.io/posts/2021-01-25_coupled_parametric_oscillators/2021-01-25-coupled_parametric_oscillators.html">here</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>I discuss this <a href="https://austin-hoover.github.io/posts/2021-03-28_nonlinear_resonances/2021-03-28-nonlinear_resonances.html">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Notice that in Fig. 1., the Gaussian has an approximately uniform core.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>This has only been done for the KV distribution.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>I will discuss this method in future posts.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
