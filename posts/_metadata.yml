@@ -17,6 +17,4 @@ toc: true
 toc-depth: 5
 toc-location: right
 
-reference-location: block  # footnote location {block, section, margin}
-
 sidebar: false

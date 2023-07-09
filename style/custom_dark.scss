@@ -1,20 +1,11 @@
+@import "./custom.scss";
+
+
 /*-- scss:functions --*/
 
 
 
-
 /*-- scss:defaults --*/
-
-$primary: SteelBlue;
-$font-family-sans-serif: "Georgia";
-$font-family-sans-serif: "Georgia";
-$font-size-root: 15.25px;
-$h1-font-size: 1.95em;
-$h2-font-size: 1.520896em;
-$h3-font-size: 1.30em;
-$h4-font-size: 1.15em;
-$h5-font-size: 1.0em;
-$figure-caption-font-size: 14.35px !important;
 
 $navbar-bg: #181818;
 $body-bg: #181818;
@@ -23,15 +14,7 @@ $figure-caption-color: rgb(100, 100, 100) !important;
 $code-block-bg: rgb(40, 40, 40);
 
 
-
-/*-- scss:rules --*/
-
-.navbar {
-    padding-bottom: 3px !important;
-    padding-top: 3px !important;
-    border-bottom-width: 0px !important;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+// /*-- scss:rules --*/
 
 p, li { 
     color: rgb(220, 220, 220) !important;
