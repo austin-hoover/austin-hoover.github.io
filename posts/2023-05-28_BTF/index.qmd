@@ -1,14 +1,12 @@
 ---
 title: "High-dimensional phase space measurements"
 date: 2023-05-28
-author: Austin Hoover
+author: "Austin Hoover"
 categories: [particle accelerators, high-dimensional data, visualization]
 bibliography: references.bib
 csl: american-physics-society.csl
-
-abstract-title: Summary
-
-abstract: This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with intense beam physics.
+abstract-title: "Abstract"
+abstract: "This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with the physics of intense beams."
 ---
 
 

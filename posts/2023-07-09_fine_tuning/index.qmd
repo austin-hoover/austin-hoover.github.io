@@ -4,27 +4,14 @@ date: 2023-06-29
 author: Austin Hoover
 categories: [teleological arguments, fine-tuning, multiverse]
 bibliography: references.bib
-csl: ../american-physics-society.csl
+csl: ./american-physics-society.csl
 draft: true
 ---
 
-The universe is fine-tuned for life if the set of possible life-permitting universes is small relative to the set of possible universes. Many think the evidence of fine-tuning supports either the *multiverse hypothesis*, which posits an ensemble of worlds, or the *design hypothesis*, which posits an intelligent designer.^[The multiverse and design hypotheses are not necessarily incompatible.] Alternatively, some think fine-tuning requires no explanation at all. I assess these responses in this post.
+The universe is fine-tuned for life if the set of possible life-permitting universes is much smaller than the set of possible universes. Many think the evidence of fine-tuning supports either the *multiverse hypothesis*, which posits an ensemble of worlds, or the *design hypothesis*, which posits an intelligent designer. Alternatively, some think fine-tuning requires no explanation at all. I assess these responses in this post.
 
 
-## 1. Paley’s watch
-
-Let’s first visit the classical biological design argument. Paley expressed the basic idea:
-
-> “In crossing a heath, suppose I pitched my foot against a stone, and were asked how the stone came to be there; I might possibly answer, that, for anything I knew to the contrary, it had lain there forever: nor would it perhaps be very easy to show the absurdity of this answer. But suppose I had found a watch upon the ground, and it should be inquired how the watch happened to be in that place; I should hardly think of the answer I had before given, that for anything I knew, the watch might have always been there. ... There must have existed, at some time, and at some place or other, an artificer or artificers, who formed [the watch] for the purpose which we find it actually to answer; who comprehended its construction, and designed its use. ... Every indication of contrivance, every manifestation of design, which existed in the watch, exists in the works of nature; with the difference, on the side of nature, of being greater or more, and that in a degree which exceeds all computation.” [@Paley_1829]
-
-Oppy [@Oppy_2006_arguing] has a compact critique of Paley’s argument: Paley’s inference to design stems from three observations: (i) the watch has a principal function, (ii) various parts of the watch have functions, and (iii) the materials from which the parts are constructed are well suited to the functions that those parts have. But it appears that Paley’s inference to design relies instead on the background knowledge that watches are not naturally produced. But it is not clear that this inference works for biological systems, for which we do not have the same background knowledge. The argument never gets off the ground.
-
-An extension of the biological design argument focuses on “irreducibly complex” systems that would cease functioning if any of their parts were removed [@Behe_2003]. Behe claims that it would be impossible for an irreducibly complex system to arise from gradual changes since the predecessor of any irreducibly complex system would have to be irreducibly complex. And if irreducible complexity is impossible on naturalism, then irreducible complexity supports the design hypothesis.^[It seems that the proponent of the argument from irreducible complexity will want to identify the first irreducibly complex system with the first biological system. A broader definition would include non-biological systems, but theories of physics and chemistry plausibly explain the complexity of such systems. A narrower definition would exclude some early life forms, but evolutionary theory provides a plausible natural link between simple and complex biological systems. On the other hand, it is unknown how biological systems developed from chemical systems. But it is difficult to see how such a link could not exist.]
-
-Modern scientific theories undercut biological design arguments. For example, the theory of biological evolution aims to provide a natural link between simple and complex biological systems. There are major gaps to fill in these theories, but it is plausible that the laws of physics, chemistry, and biology are all that are needed to connect the early universe to the present universe. This type of explanation is not complete, however. Note that we posit physical laws which link a prior state of the world to the present state. All prior states are explained by iteration: the state at time $t$ is explained by the laws and the state at time $t’$, where $t’ < t$; however, we will eventually arrive at either an initial state ($t = 0$) or an infinite regress of prior states ($t \rightarrow -\infty$). It is difficult to know what else to do if there is an initial state since our explanatory mechanism (laws + prior states) no longer works. It might be troubling if the initial state had no explanation, for then all subsequent states would lack an ultimate explanation. It is unclear whether an infinite explanatory regress solves this problem.^[These considerations demonstrate a relationship between cosmological and design arguments.] Furthermore, one might ask for an explanation of the physical laws. Deeper considerations such as these are central to the cosmic fine-tuning argument.
-
-
-## 2. Cosmic fine-tuning
+## 1. Cosmic fine-tuning
 
 The universe would be fine-tuned for life if the set of possible life-permitting universes was much smaller than the set of possible universes. An immediate difficulty here is how to define the set of possible universes. The universe is characterized by states, laws, and constants. We can consider a *state* to be a snapshot of the universe at a single time; for example, in classical physics, a state could be the position and momentum of every particle $\{\mathbf{x}_i, \mathbf{p}_i\}$, or in quantum physics, a state could be the wavefunction $\Psi (\mathbf{x})$. Laws describe relationships between states and are not measured directly; they emerge as part of a theory to explain the available data. Finally, fundamental *constants* are empirically determined scalars, i.e., not determined by the proposed theory. We need to determine whether the constants, laws, and prior states could have been different and, if so, whether they are fine-tuned for life.
 
@@ -51,7 +38,7 @@ In some cases, the relevant parameters could not change more than one part in $1
 Because of the lack of clear answers to these questions, it is unclear how confident we should be that the universe is fine-tuned for life. Nonetheless, I assign a moderate credence to the claim that the universe is fine-tuned for life, partly because fine-tuning is accepted by a significant fraction of physicists and philosophers. Thus, it makes sense to assume fine-tuning exists and work out its implications. 
 
 
-## 3. Responses to fine-tuning
+## 2. Responses to fine-tuning
 
 We can map the responses to fine-tuning to the following responses to an all-sixes configuration of many dice at a casino table:
 
@@ -93,24 +80,24 @@ $$
 In addition to the fit to the data (likelihood) $Pr(L | H)$, we also need to consider the prior probability $Pr(H)$. Assigning priors is challenging when $H$ is a large-scale hypothesis such as theism, which could be affected by other evidence. Assigning likelihoods is also challenging; we must do our best to be honest about what our hypothesis predicts. But this equation is at least a guide to comparing hypotheses. 
 
 
-### 3.1. No explanation needed
+### 2.1. No explanation needed
 
 It could be that our universe, and the fact that the constants are fine-tuned for life, is a brute fact without any deeper explanation. For example, it could be that the constants could have been different, but there is nothing we can do to explain *why* they are what they are. Although all explanations must stop somewhere, I’m not a big fan of brute contingency. In my studies of cosmological arguments, I’ve become attracted to the idea that there is at least one necessary being — an initial or eternal matter-energy configuration, God, or something like that. This brings us to the possibility that the fine-tuned constants are fixed by metaphysical necessity. This sits better with me. A great discussion about necessary entities is in [@Rasmussen_Leon]. More on this later.
  
 
 
-### 3.2. The multiverse hypothesis
+### 2.2. The multiverse hypothesis
 
 A popular response to the fine-tuning data is to posit an ensemble of universes, each with different parameters. Such a hypothesis — call it $M$ — could render the probability of life ($P(L | M)$) quite high if the number of universes is large. The support for $M$ would be strong if the probability of life, given a single universe, were small ($P(L | \neg M) \ll 1$) and if the unconditioned probability of a multiverse $P(M)$ were reasonably large.
 
-#### 3.2.1. The prior probability of a multiverse 
+#### 2.2.1. The prior probability of a multiverse 
 
 I am tempted to assign a *very* low prior probability to the multiverse hypothesis ($P(M) \ll 1$). It is not obvious that there is more than one universe; it is not even clear what that would mean. But surprisingly, multiverse hypotheses have crept into modern physics. In my understanding, part of the motivation for the multiverse hypothesis — in the context of cosmic fine-tuning — comes from String Theory + Inflation, which predicts a large number of vacuum states with different effective constants and laws.^[I think this is the $10^{500}$ number I always hear about.]  Each “universe” (in my understanding) is just an isolated space-time region; this is somewhat easier to stomach than a separate reality. String Theory is speculative at this point, so I’m not sure how much stock we should hold in this idea; nonetheless, it does not seem unreasonable to suppose that some future theory could predict a “multiverse” of effective constants and laws.^[There is also some motivation from outside of physics, from the modal realism of David Lewis, but I find that view to be crazy.]
 
-On another front, there are worries that the multiverse leads to absurd consequences. For example, consider the problem of Boltzmann Brains: a random fluctuation is much more likely to generate a universe that consists of just me, complete with false memories and sensory inputs, rather than a billion-year-old universe. But it is unreasonable to believe I am such a fluctuation since it would imply that the physics used to conclude I was a fluctuation was false (just part of the fluctuation). That is a problem! However, since this is not an issue unique to the multiverse, perhaps we should let it be.[@Wall]. Finally, there are problems about how to think about probability in a multiverses [@ref].
+On another front, there are worries that the multiverse leads to absurd consequences. For example, consider the problem of Boltzmann Brains: a random fluctuation is much more likely to generate a universe that consists of just me, complete with false memories and sensory inputs, rather than a billion-year-old universe. But it is unreasonable to believe I am such a fluctuation since it would imply that the physics used to conclude I was a fluctuation was false (just part of the fluctuation). That is a problem! However, since this is not an issue unique to the multiverse, perhaps we should let it be.[@Wall]. Finally, there are worries about how to think about probability in a multiverses [@ref].
 
 
-#### 3.2.2. The chances of life in a multiverse
+#### 2.2.2. The chances of life in a multiverse
 
 Even if we assign a reasonably high $P(M)$, there are potential problems estimating $P(L | M)$. We need to know something about the multiverse dynamics. It is not clear, a priori, whether all universes would be equally likely; it seems possible that some universes could be more likely than others, rendering life-permitting universes incredibly unlikely. Or the underlying multiverse theory could include yet more fundamental fine-tuned constants. 
 
@@ -123,26 +110,26 @@ The above analogy doesn’t seem right. It is not as if we are sitting in a univ
 In conclusion, the multiverse hypothesis could be a reasonable solution to the fine-tuning problem. I am not convinced by the Inverse Gambler’s Fallacy objection. However, there are serious problems that must be addressed — perhaps by a future, fleshed-out version of the hypothesis.
 
  
-### 3.3. The design hypothesis
+### 2.3. The design hypothesis
 
-#### 3.3.1. What would God create? The Goldilocks hypothesis
+#### 2.3.1. What would God create? The Goldilocks hypothesis
 
-#### 3.3.2. Why would God create a fine-tuned universe?
+#### 2.3.2. Why would God create a fine-tuned universe?
 
-#### 3.3.3. Stalking-horse naturalism
+#### 2.3.3. Stalking-horse naturalism
 
-#### 3.3.4. God and the multiverse
+#### 2.3.4. God and the multiverse
 
-#### 3.3.5. The prior probability of a designer
-
-
-
-## 4. Conclusion
+#### 2.3.5. The prior probability of a designer
 
 
 
+## 3. Conclusion
 
-## 5. Plans
+
+
+
+## 4. Plans
 
 Before moving on to arguments from evil, I plan to spend more time on teleological and cosmological arguments. In particular, I plan to spend some time on nomological arguments [@Hildebrand_2022; @Cutter_2023], arguments from psychophysical harmony [@Cutter_2022], and arguments from the 
 

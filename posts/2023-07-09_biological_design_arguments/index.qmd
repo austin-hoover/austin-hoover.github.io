@@ -1,0 +1,22 @@
+---
+title: Biological design arguments
+date: 2023-07-09
+author: Austin Hoover
+categories: [teleological arguments, biological design, Darwin]
+bibliography: references.bib
+csl: ./american-physics-society.csl
+draft: false
+---
+
+
+Paley famously expressed a version of the biological design argument:
+
+> “In crossing a heath, suppose I pitched my foot against a stone, and were asked how the stone came to be there; I might possibly answer, that, for anything I knew to the contrary, it had lain there forever: nor would it perhaps be very easy to show the absurdity of this answer. But suppose I had found a watch upon the ground, and it should be inquired how the watch happened to be in that place; I should hardly think of the answer I had before given, that for anything I knew, the watch might have always been there. ... There must have existed, at some time, and at some place or other, an artificer or artificers, who formed [the watch] for the purpose which we find it actually to answer; who comprehended its construction, and designed its use. ... Every indication of contrivance, every manifestation of design, which existed in the watch, exists in the works of nature; with the difference, on the side of nature, of being greater or more, and that in a degree which exceeds all computation.” [@Paley_1829]
+
+Oppy [@Oppy_2006_arguing] has a compact critique of Paley’s argument: Paley’s inference to design stems from three observations: (i) the watch has a principal function, (ii) various parts of the watch have functions, and (iii) the materials from which the parts are constructed are well suited to the functions that those parts have. But it appears that Paley’s inference to design relies instead on the background knowledge that there are no watch factories in nature, so his inference is unlikely to work for biological systems. The argument never gets off the ground.
+
+An extension of the biological design argument focuses on “irreducibly complex” systems that would cease functioning if any of their parts were removed [@Behe_2003]. Behe claims that it would be impossible for any irreducibly complex system to arise from gradual changes since the predecessor of any irreducibly complex system would have to be irreducibly complex. It seems that the proponent of this argument would want to identify the first irreducibly complex system with the first biological system. A broader definition would include non-biological systems whose complexity is explained by theories of physics and chemistry. A narrower definition would exclude some non-initial biological life forms, but evolutionary theory provides a plausible link between these relatively simple life forms and more complex life forms, such as humans. But I see no reason why there could be no natural link between chemical and biological systems.
+
+Another problem: if the designer creates a self-organizing world, why stop the self-organization at the origin of life? It would be like designing a computer program that stops halfway through and demands the user hit the space bar before continuing. 
+
+In conclusion, biological design arguments suffer from various problems; most obviously, they are undercut by modern scientific theories. There are major gaps to fill in these theories, but it is plausible that the laws of physics, chemistry, and biology are all that are needed to connect the early universe to the present universe. This type of explanation is not complete, however. Note that we posit physical laws which link prior states of the world to the present state. All prior states are explained by recursion: the state at time $t$ is explained by the laws and the state at time $t’$, where $t’ < t$; however, we will eventually arrive at either an initial state ($t = 0$) or an infinite regress of prior states ($t \rightarrow -\infty$). It is difficult to know what else to do if there is an initial state since our explanatory mechanism (laws + prior states) no longer works. It might be troubling if the initial state had no explanation, for then all subsequent states would lack an ultimate explanation. It is unclear whether an infinite explanatory regress solves this problem.^[These considerations demonstrate a relationship between cosmological and design arguments.] Furthermore, one might ask for an explanation of the physical laws. Deeper considerations such as these are central to cosmic fine-tuning arguments and nomological arguments.

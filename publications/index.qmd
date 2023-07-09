@@ -5,9 +5,6 @@ html:
         toc: true
 ---
 
-A PDF version of my CV is [here](./files/cv.pdf).
-
-
 ## Journal articles
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. "Analysis of a hadron beam in five-dimensional phase space". Physical Review Accelerators and Beams (2023). 
