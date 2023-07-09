@@ -13,4 +13,5 @@ listing:
     type: table
     categories: true
     max-items: 99999999
+    page-size: 99999999
 ---

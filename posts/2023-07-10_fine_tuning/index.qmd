@@ -1,0 +1,150 @@
+---
+title: Fine-tuning arguments
+date: 2023-07-10
+author: Austin Hoover
+categories: [teleological arguments, fine-tuning, multiverse]
+bibliography: references.bib
+csl: ./american-physics-society.csl
+draft: false
+---
+
+## 1. Evidence of fine-tuning
+
+The universe would be fine-tuned for life if the set of possible life-permitting universes were much smaller than the set of possible universes. An immediate difficulty here is how to define the set of possible universes. The universe is characterized by states, laws, and constants. We can consider a *state* to be a snapshot of the universe at a single time; for example, in classical physics, a state could be the position and momentum of every particle $\{\mathbf{x}_i, \mathbf{p}_i\}$, or in quantum physics, a state could be the wavefunction $\Psi (\mathbf{x})$. Laws describe relationships between states and are not measured directly; they emerge as part of a theory to explain the available data. Finally, fundamental *constants* are empirically determined scalars, i.e., not determined by the proposed theory. We need to determine whether the constants, laws, and prior states could have been different and, if so, whether they are fine-tuned for life.
+
+It is hard to say whether laws could have been different, but let’s suppose they could have been different and ask whether they are fine-tuned. Here we have an infinite-dimensional function space of possible laws. We could start by just removing the laws we know of, i.e., removing gravity or electromagnetism. It seems plausible from this thought experiment that both attracting and repelling forces are necessary for any complex structures to emerge. But it is hard to see how else to proceed. Nonetheless, it is clear that the laws are, in a certain sense, simple and elegant, leading to order and predictability rather than chaos. It is not hard to see how an argument for theism might flow from such considerations [@Wigner_1960; @Hildebrand_2022; @Cutter_2023].
+
+Let’s fix the laws and consider variations in the constants and prior states of the universe; this problem is more tractable. I will let the “fine-tuning data” refer to all calculations of the sensitivity of life-permitting conditions to changes to the constants or prior states, as well as all measurements that support the theories used to perform these calculations. A comprehensive discussion of the fine-tuning data is found in [@Barnes_2012]. The SEP article on fine-tuning [@sep-fine-tuning] has a shorter list of apparently fine-tuned parameters which I repeat here.
+
+* The strength of gravity relative to electromagnetism
+* The strength of the strong force relative to the electromagnetic force
+* The ratio of up quark mass to down quark mass
+* The strength of the weak force
+* The value of the cosmological constant
+* The energy density in the early universe
+* The fluctuation amplitudes in the early universe
+* The entropy of the early universe [@Albert_2001; [@sep-statphys-statmech; @sep-time-thermo; @Earman_2006; @Wallace_2016; @Wallace_2017; @Robinson_2023]
+ 
+In some cases, the relevant parameters could not change by more than one part in $10^{50}$ (or some other enormous value), rending the probability of life, given that the parameters were selected from a sufficiently wide uniform distribution, to be essentially zero. These calculations are striking but are also controversial. Consider the following issues [@Oppy_2006_arguing]. 
+
+1. Future physical theories may have no fine-tuned parameters.^[On the other hand, all future theories could contain a nonzero number of fine-tuned parameters. Or future theories could predict a probability distribution for each parameter, rending the actual parameter values either very likely or very unlikely.]
+2. Assuming a complete theory of physics is still fine-tuned, how should we assign probability distributions in the space of possible worlds?^[A uniform distribution seems appropriate given our ignorance, but who is to say the parameters were *actually* drawn from a uniform distribution?]
+3. Assuming a uniform distribution is appropriate for each parameter, what range can the various parameters take? A finite range seems arbitrary, and there are problems defining a uniform distribution over an infinite range.
+4. Are we exploring the multidimensional parameter space rather than varying one parameter at a time?
+
+Because of the lack of clear answers to these questions, it is unclear how confident we should be that the universe is fine-tuned for life. Nonetheless, I assign a moderate credence to the claim that the universe is fine-tuned for life, partly because fine-tuning is accepted by a significant fraction of physicists and philosophers. Thus, it makes sense to assume fine-tuning exists and work out its implications. 
+
+
+## 2. Responses to fine-tuning
+
+We can map the responses to fine-tuning to the following responses to an all-sixes configuration of many dice at a casino table:
+
+1. *Many Rolls*: There were probably many prior rolls.^[If we knew the roll was fair, then given our background knowledge, it would be reasonable to suppose that somebody rolled the dice many times until the all-sixes configuration occurred. Without our background knowledge, we get the Inverse Gambler’s Fallacy.]
+2. *Many Tables*: There were probably many simultaneous rolls.
+3. *Intentional Agent*: An intentional agent arranged the dice in the all-sixes configuration.
+4. *Lucky Roll*: The dice were rolled once. Unlikely events happen occasionally.
+5. *Brute Contingency*: The dice could have landed in a different configuration, but no explanation is needed for the observed configuration.
+6. *Brute Necessity*: The dice could not have landed in a different configuration.
+
+Here, the all-sixes configuration is analogous to a life-supporting universe. Response 2 corresponds to the *multiverse hypothesis*: that there are many universes, each with different laws and initial conditions. Response 3 corresponds to the *design hypothesis*: that an intentional agent selected the laws and initial conditions of the universe. Response 4 corresponds to the claim that the laws and initial conditions were unlikely, but that unlikely events do not necessarily require explanations; even if random, the selection process provides a sufficient explanation. Response 5 suggests that there is no deeper explanation *at all* for the way things are; it is a brute fact. Response 6 corresponds to the claim that the laws and initial conditions are fixed by metaphysical necessity.
+
+
+```{mermaid}
+%%| echo: false
+%%| fig-width: 585px
+%%| fig-align: center
+flowchart TB
+  A[Evidence of fine-tuning] 
+  A --> B[Accept]
+      B --> D[Explanation needed]
+          D --> F[Design]
+          D --> G[Multiverse]
+          D --> H[Chance]
+      B --> E[No explanation needed]
+          E --> I[Brute contingency]
+          E --> J[Necessity]
+  A --> C[Reject]
+```
+<br>
+
+I think we can rule out Response 1 (*Many Rolls*), which would correspond to a cyclic universe model in which the “initial conditions” were randomly selected on each cycle. I have no idea if such a model exists. I also think we can rule out Response 2 (*Lucky Roll*) if any better explanations are available (since the chances involved are incredibly small).
+
+There are different ways to tease out the degree to which the fact that our universe is life-supporting ($L$) supports a hypothesis $H$. On the Bayesian view, $E$ supports $H$ if
+$$ 
+\frac{Pr(H | L)}{Pr(\neg H | L)} = \frac{Pr(L | H)}{Pr(L | \neg H)}\frac{Pr(H)}{Pr(\neg H)} > 1.
+$$ 
+
+In addition to the likelihood $Pr(L | H)$, we must consider the prior probability $Pr(H)$. Assigning priors is challenging when $H$ is a large-scale hypothesis such as theism. Assigning likelihoods is also challenging; we must do our best to be honest about what our hypothesis predicts. But this equation is at least a guide to comparing hypotheses. 
+
+
+### 2.1. No explanation needed
+
+Consider first the denial that any explanation of fine-tuning is needed. It could be that our universe, and the fact that the constants are fine-tuned for life, is a brute fact. For example, it could be that the constants could have been different, but we cannot do anything to explain why they are what they are. Although all explanations must stop somewhere, I’m not a big fan of brute contingency. In my studies of cosmological arguments, I’ve become attracted to the idea that there is at least one necessary being — an initial or eternal matter-energy configuration, God, or something like that. This brings us to the possibility that the fine-tuned constants are fixed by metaphysical necessity. This sits better with me, but on the other hand, it is a strange idea that, say, the electron’s charge *had to be* -1. A great discussion about positing necessary entities is in [@Rasmussen_Leon_2019].
+ 
+
+
+### 2.2. The multiverse hypothesis
+
+A popular response to the fine-tuning data is to posit an ensemble of universes, each with different parameters. Such a hypothesis — call it $M$ — could render the probability of life $P(L | M)$ quite high if the number of universes is large. The support for $M$ would be strong if $P(L | \neg M) \ll 1$ and $\neg (P(M) \ll 1)$.
+
+#### 2.2.1. The prior probability of the multiverse
+I am tempted to assign a low prior probability to the multiverse hypothesis ($P(M) \ll 1$). It is not obvious that there is more than one universe; it is not even clear what that would mean. But surprisingly, multiverse hypotheses have crept into modern physics. In my understanding, part of the motivation for the multiverse hypothesis — in the context of cosmic fine-tuning — comes from String Theory + Inflation, which predicts a large number of vacuum states with different effective constants and laws.^[I think this is the $10^{500}$ number I always hear about.]  Each “universe” (in my understanding) is an isolated spacetime region rather than a separate reality. String Theory is speculative at this point, so I’m not sure how much stock we should hold in this idea; nonetheless, it does not seem unreasonable to suppose that some future, well-tested theory could predict a “multiverse” of effective constants and laws.^[There is also some motivation from outside of physics, from the modal realism of David Lewis, but I find that view to be crazy.]
+
+On another front, there are worries that the multiverse leads to absurd consequences. For example, consider the problem of Boltzmann Brains: a random fluctuation is much more likely to generate a ten-second-old universe that consists of just me, complete with false memories and sensory inputs, rather than a billion-year-old universe. But it is unreasonable for me to believe that I am such a fluctuation: my belief would entail that the physics I used to come to my belief is false. That is a problem! (Since this is not an issue unique to the multiverse, perhaps we should let it be [@Wall]). Another example is that there are worries about how to think about probability in an infinite multiverse.
+
+#### 2.2.2. The probability of life in a multiverse
+
+Let’s put those worries aside and treat the multiverse as a serious potential solution to the fine-tuning problem, assigning a non-negligible prior $P(M)$. We now turn to the probability of life in the multiverse, $P(L | M)$. The first issue — and this will reappear in the design hypothesis — is that we need to know more about the multiverse and its dynamics. It is not clear, a priori, whether all universes would be equally likely; it seems possible that some universes could be more likely than others, rendering life-permitting universes incredibly likely or incredibly unlikely. Or the underlying multiverse theory could include yet more fundamental fine-tuned constants. 
+
+Then we have problems arising from an *infinite* multiverse. Assuming all universes are equally likely, the probability that at least one universe is life-supporting grows with the number of universes. But if the number of universes is infinite, the probability is either 1 or undefined ($\infty / \infty$) [@Wall]. If the probability is 1, one might argue that $M$ is not predictive (everything happens somewhere). I am not bothered by $Pr(L | M) = 1$ if $M$ is well-motivated; otherwise, it appears to be an ad hoc, too-good-to-be-true solution to the fine-tuning problem.
+
+Let’s put those worries aside and assume there is a large (maybe infinite) ensemble of universes, a small fraction of which support life. Still, some argue that while a multiverse increases the probability that *some* universe is life-permitting, it does not increase the probability that *this* universe is life-permitting. In other words, the multiverse hypothesis makes the same mistake as the Inverse Gambler’s Fallacy. In our dice rolling example, if there are many tables, the probability that *at least one table* rolls all sixes will increase with the number of tables, but the probability that *the fourth table* rolls all sixes does not depend on the number of tables. 
+
+The above analogy doesn’t seem right. It is not as if we are sitting in a universe, waiting to see if it is life-permitting; rather, we can only find ourselves in a life-permitting universe. It is as if we were standing outside the casino and were only let in if at least one all-sixes configuration was rolled (and were then brought to an all-sixes table). In this new analogy, the probability that we find ourselves at an all-sixes table scales with the number of tables. This issue is somewhat complicated. Saad [@Saad_2023] takes great care to make the dice-rolling relevantly like our situation with respect to the fine-tuning data, concluding that “even once those complicating factors are taken into account, fine-tuning should boost our confidence in the existence of other universes.” 
+
+In conclusion, the multiverse hypothesis could be a reasonable solution to the fine-tuning problem. I am not convinced by the Inverse Gambler’s Fallacy objection. However, serious issues must be addressed — perhaps by a future, fleshed-out version of the hypothesis.
+
+ 
+### 2.3. The design hypothesis
+
+Another popular response to fine-tuning is to posit an intelligent designer. Such a hypothesis — call it $T$ — could render the probability of life $P(L | T)$ quite high, depending on the designer’s character. The support for $T$ would be strong if $P(L | \neg T) \ll 1$ and $\neg (P(T) \ll 1)$. One difficulty in assessing the design hypothesis is that it is non-specific. There could be one designer, two designers, or an infinity of designers; the designer could be good or evil, weak or powerful, etc. The prior probability of any of these alternative hypotheses should be quite low, and these designers may have very different dispositions toward life, rendering $P(L | T) = 0$ in some cases and $P(L | T) = 1$ in others. Therefore, I propose to replace the generic design hypothesis with some version of theism, where theism is the claim that “… the foundation of reality consists of a mind which possesses a few reasonably natural features (power, goodness, knowledge) to a reasonably natural degree (i.e., a maximal degree)” [@Cutter_2022]. While Oppy argues that any such move will lower the prior probability of the hypothesis, I am pulled somewhat in the opposite direction; perhaps traditional theism has a higher probability than the many other theisms listed above. 
+
+#### 2.3.1. The prior probability of design
+
+Cutter and Crummet [@Cutter_2022] note that “The prior probability of theism is the result of two factors: (i) its intrinsic probability, i.e., its probability conditional on no evidence, and (ii) its fit with our background knowledge.” I don’t think the intrinsic probability of theism is too small. The above definition of theism is simple. Furthermore, I find many alternate models of God to be arbitrary and, therefore, unlikely (examples include an evil god, an infinity of gods, a flying spaghetti monster, etc.). I recognize that some find theism inconceivable (how can something be outside spacetime, how can a mind exist without a body, etc.), but I don’t feel that strongly.
+
+The fit with our background knowledge is more complicated. As I mentioned, theism is a large-scale hypothesis — arguments for and against theism consider a wide range of phenomena. As such, arguments for theism can sometimes pull in multiple directions. For example, one might find arguments from evil to be evidence against the existence of God and cosmological arguments to be evidence for the existence of God. It is challenging to weigh these considerations against each other. But for the fine-tuning debate, all we need is a rough measure of the plausibility of theism. If the fine-tuning probabilities are correct, our credence in theism may need to be *very* small to warrant discarding the theistic hypothesis. I think there are enough interesting and thoughtful versions of theism, arguments for theism, and responses to arguments against theism to treat theism seriously as a potential solution to the fine-tuning problem. 
+
+#### 2.3.2. What would God create? 
+
+Other critiques of the design hypothesis concern the probability of life conditioned on the existence of a designer. If we don’t know anything about the designer, then it seems equally likely for the designer to prefer a universe with or without life. But as I mentioned above, I don’t find the prior probability of theism drastically lower than the prior probability of a generic designer, and on theism, God surely has preferences consistent with God’s own nature. The question is whether we could know these preferences.
+ 
+Although it might be impossible to know God’s reasons for performing a specific action, it doesn’t seem too difficult to imagine why God would have the disposition to create a predictable, elegant, life-friendly universe; these all seem like good things. On the other hand, considering the amount of evil and suffering in the world, one may think that God would have created a different world or no world at all, making the probability of life, given theism, small. These types of statements of God’s preferences don’t seem too problematic.
+
+But if God prefers a life-permitting universe, then surely God will bring about a life-permitting universe. Wouldn’t this make $Pr(L | T) = 1$? The theist will want to give an account of God’s free will that does not render the universe necessary. I think this problem is related to the problem of free will for omniscient beings. I don’t find this to be a terribly troubling problem.
+
+Here is another issue raised by Hans Halvorson: why would God prefer a *fine-tuned* universe? Halvorson argues that since fine-tuning decreases the probability of life, fine-tuning is evidence against a life-friendly designer. Suppose I want to give $10,000 in cash to my friend, but instead of simply handing them the money, I made them guess a number between 1 and $n$, only giving them the money if they selected the number I was thinking of. As my chosen $n$ grows, so does the probability that I didn’t want my friend to have the money. I found this argument quite convincing. I’m unsure what reason God would have for designing the universe this way. Of course, I’m cautious about concluding that there is no such reason.
+
+
+#### 2.3.3. Stalking-horse naturalism
+
+Alex Malpass has proposed the “stalking-horse naturalism” hypothesis, which is simply naturalism plus a “mysterious disposition” of the constants to obtain their actual values [@CC_2018]. There is an argument to be made that this hypothesis does just as well as theism. I thought Luke Barnes had a nice response: we might ask about the probability that the universe had the dispositions that it does; why life-permitting dispositions rather than non-life-permitting dispositions? The answer must be brute necessity, brute contingency, or chance. While the theist can tell a story about why God has life-permitting dispositions, no similar story is available for this “mysterious disposition”. 
+
+
+#### 2.3.5. God and the multiverse
+
+Lastly, it is important to note that theism is compatible with a multiverse. I’d like to explore this idea further [@Kraay_2014].
+
+
+
+## 3. Conclusion
+
+* There are questions about whether fine-tuning is a real feature of the world.
+* I think a response is needed if the life-permitting space of physically possible worlds is as small as claimed.
+* I don’t like brute contingency, and brute necessity seems wrong for things as arbitrary as the values of constants.
+* The multiverse hypothesis and the design hypothesis are roughly on par. 
+    * It is difficult to compare the two, given all the background knowledge that affects the prior probability of each theory. 
+    * It is difficult to evaluate the probability of life on either hypothesis.
+    * There are independent arguments for theism, but no such arguments for a multiverse. In other words, theism is a unified explanation of a wide range of phenomena. For this reason, I find the theistic hypothesis to be a slightly better response than the multiverse hypothesis.
+    
+It is increasingly clear that the various arguments for theism are intertwined. Before moving on to arguments from evil, I plan to spend more time on teleological and cosmological arguments such as the nomological arguments [@Hildebrand_2022; @Cutter_2023], arguments from psychophysical harmony [@Cutter_2022], arguments from the effectiveness of mathematics [@Wigner_1960], and the Thomistic cosmological argument recently defended by Edward Feser. Or I may skip to arguments from evil and come back to these at some point.

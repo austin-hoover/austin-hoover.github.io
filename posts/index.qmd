@@ -7,6 +7,8 @@ listing:
     table-hover: true
     type: table
     fields: [title, date]
-    categories: true   
+    categories: true  
+    max-items: 99999999
+    page-size: 99999999
 comments: false
 ---

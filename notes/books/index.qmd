@@ -14,6 +14,9 @@ listing:
         - title
         - author
     type: table
+    date-format: YYYY-MM-DD
+    table-hover: false
     categories: true
     max-items: 99999999
+    page-size: 99999999
 ---
