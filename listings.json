@@ -38,11 +38,5 @@
       "/notes/books/index.html",
       "/notes/papers/index.html"
     ]
-  },
-  {
-    "listing": "/notes/travel/index.html",
-    "items": [
-      "/notes/travel/charleston.html"
-    ]
   }
 ]
