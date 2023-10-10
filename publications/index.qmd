@@ -30,6 +30,8 @@ html:
 
 
 * A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo. "The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator". ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams (2023).
+[[paper](https://arxiv.org/abs/2310.04403)]
+[[slides](./files/2023_hb_slides)]
 
 * N. Evans, A. Hoover, T. Gorlov, V. Morozov. "Self-consistent injection painting for space charge mitigation"". ICFA Advanced Beam Dynamics Workshop on High-Intensity and High-Brightness Hadron Beams (2023).
 
