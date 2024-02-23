@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.154">
+<meta name="generator" content="quarto-1.4.543">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,11 +20,12 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -49,43 +50,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -113,7 +84,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -122,8 +99,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
@@ -136,7 +115,35 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -144,40 +151,40 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../posts/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html" rel="" target="">
- <span class="menu-text">Notes</span></a>
+    <a class="nav-link" href="../../notes/index.html"> 
+<span class="menu-text">Notes</span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -186,7 +193,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -246,7 +253,9 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <!-- <br> -->
 <p>Many beam physics simulation codes exist. A key component of these simulations is the inclusion of the electromagnetic interactions between particles in the beam, also known as <em>space charge</em> forces. One way to compute space charge forces is the particle-in-cell (PIC) method. This post implements a basic version of the PIC method in Python.</p>
@@ -256,14 +265,14 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="coordinate_system.png" class="img-fluid figure-img" style="width:55.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 1. Coordinate system defined in the beam rest frame.</figcaption><p></p>
+<figcaption>Fig. 1. Coordinate system defined in the beam rest frame.</figcaption>
 </figure>
 </div>
 <p>The <span class="math inline">\(s\)</span> coordinate specifies the position of the bunch in the accelerator, and the path can be curved. Now for a few assumptions and approximations. First, assume all particles in the bunch move at a constant velocity <span class="math inline">\(\beta c\)</span>, where <span class="math inline">\(c\)</span> is the speed of light. We then make the <em>paraxial approximation</em>. It’s conventional to use the slope <span class="math inline">\(x' = dx/ds\)</span> instead of the velocity, and the paraxial approximation assumes this slope is very small. Usually we report this slope in milliradians since <span class="math inline">\(tan\theta \approx \theta\)</span> for small angles. Next we assume that the transverse (<span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>) size of the bunch varies slowly along the <span class="math inline">\(s\)</span> axis. If this is true and we look at the electric field in a transverse slice of the bunch, there won’t be much difference between the true field and the field of an infinitely long, uniform density cylinder. Our focus will be on the transverse dynamics of such a slice, so we’ll treat each “particle” as an infinite line of charge. The figure below illustrates this approximation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="coasting_beam.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 2. Coasting beam approximation. (Source: G. Franchetti, <em>Space charge in circular machines</em>, CERN Accelerator School Proceedings (2017). <a href="https://e-publishing.cern.ch/index.php/CYRSP/article/view/413">https://e-publishing.cern.ch/index.php/CYRSP/article/view/413</a>)</figcaption><p></p>
+<figcaption>Fig. 2. Coasting beam approximation. (Source: G. Franchetti, <em>Space charge in circular machines</em>, CERN Accelerator School Proceedings (2017). <a href="https://e-publishing.cern.ch/index.php/CYRSP/article/view/413">https://e-publishing.cern.ch/index.php/CYRSP/article/view/413</a>)</figcaption>
 </figure>
 </div>
 <p>Another approximation is to neglect any magnetic fields generated by the beam, which is again valid if the transverse velocities are very small relative to <span class="math inline">\(\beta c\)</span>. All this being said, the equations of motion without any external forces, i.e., in free space, can be written as</p>
@@ -274,7 +283,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="parallel_currents.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 3. The magnetic force between parallel currents is attractive. (Source: OpenStax University Physics.)</figcaption><p></p>
+<figcaption>Fig. 3. The magnetic force between parallel currents is attractive. (Source: OpenStax University Physics.)</figcaption>
 </figure>
 </div>
 <p>One may ask: what about the rest frame in which there is no magnetic field? But special relativity says that electrogmagnetic fields change with reference frame. Using the transformations defined <a href="https://en.wikipedia.org/wiki/Classical_electromagnetism_and_special_relativity">here</a>, you can quickly prove that</p>
@@ -289,7 +298,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 \mathbf{x}'' \cdot \frac{\partial{f}}{\partial{\mathbf{x}'}}
 = 0.
 \tag{3}\]</span></span></p>
-<p>We know <span class="math inline">\(\mathbf{x''}\)</span> from <a href="#eq-EOM">Equation&nbsp;1</a>. The electric field is obtained from Poisson’s equation:</p>
+<p>We know <span class="math inline">\(\mathbf{x''}\)</span> from <a href="#eq-EOM" class="quarto-xref">Equation&nbsp;1</a>. The electric field is obtained from Poisson’s equation:</p>
 <p><span id="eq-Poisson"><span class="math display">\[
 \nabla \cdot \mathbf{E} = -\nabla^2 \phi = \frac{\rho}{\varepsilon_0}.
 \tag{4}\]</span></span></p>
@@ -301,18 +310,18 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </section>
 <section id="computational-method" class="level2">
 <h2 class="anchored" data-anchor-id="computational-method">Computational method</h2>
-<p>The Vlasov equation could be solved directly, but this is difficult, especially in 2D or 3D. On the other end of the spectrum, the notion of a fluid in phase space could be abandoned and each particle could be tracked individually, computing the forces using direct sums. But this is infeasible with current hardware; the time complexity would by <span class="math inline">\(O(n^2)\)</span>, where <span class="math inline">\(n\)</span> is the number of particles, and <span class="math inline">\(n\)</span> may be on the order of <span class="math inline">\(10^{14}\)</span>. The particle-in-cell (PIC) method is a sort of combination of these two approaches. The idea is to track a group of <em>macroparticles</em> according to <a href="#eq-EOM">Equation&nbsp;1</a>, each of which represents a large number of real particles. The fields, however, are solved from <a href="#eq-Poisson">Equation&nbsp;4</a>. The key step is transforming back and forth between a discrete and continuous representation of the bunch. The simulation loop for the PIC method is shown below.</p>
+<p>The Vlasov equation could be solved directly, but this is difficult, especially in 2D or 3D. On the other end of the spectrum, the notion of a fluid in phase space could be abandoned and each particle could be tracked individually, computing the forces using direct sums. But this is infeasible with current hardware; the time complexity would by <span class="math inline">\(O(n^2)\)</span>, where <span class="math inline">\(n\)</span> is the number of particles, and <span class="math inline">\(n\)</span> may be on the order of <span class="math inline">\(10^{14}\)</span>. The particle-in-cell (PIC) method is a sort of combination of these two approaches. The idea is to track a group of <em>macroparticles</em> according to <a href="#eq-EOM" class="quarto-xref">Equation&nbsp;1</a>, each of which represents a large number of real particles. The fields, however, are solved from <a href="#eq-Poisson" class="quarto-xref">Equation&nbsp;4</a>. The key step is transforming back and forth between a discrete and continuous representation of the bunch. The simulation loop for the PIC method is shown below.</p>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="pic_loop.png" class="img-fluid figure-img" style="width:77.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 4. The particle-in-cell (PIC) loop.</figcaption><p></p>
+<figcaption>Fig. 4. The particle-in-cell (PIC) loop.</figcaption>
 </figure>
 </div>
 <p><br></p>
 <p>In the next sections I will discuss each of these steps and implement them in Python. The hidden cell below shows all the imports needed to run the code.</p>
-<div class="cell" data-execution_count="1">
-<details>
+<div id="cell-17" class="cell" data-execution_count="1">
+<details class="code-fold">
 <summary>Imports</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Cython</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext cython</span>
@@ -333,7 +342,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </details>
 </div>
 <p>Let’s first create a <code>Bunch</code> class, which is a simple container for the bunch coordinates.</p>
-<div class="cell" data-execution_count="3">
+<div id="cell-20" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Bunch:</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Container for four-dimensional phase space distribution.</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -384,8 +393,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <section id="weighting" class="level3">
 <h3 class="anchored" data-anchor-id="weighting">Weighting</h3>
 <p>Starting from a group of macroparticles, we need to produce a charge density <span class="math inline">\(\rho_{i,j}\)</span> on a grid. The most simple approach is the <em>nearest grid point (NGP)</em> method, which, as the name suggests, assigns the full particle charge to the closest grid point. This is commonly called <em>zero-order weighting</em>; although it is very fast and easy to implement, it is not commonly used because it can lead to significant noise. A better method called <em>cloud-in-cell (CIC)</em> treats each particle as a rectangular, uniform density cloud of charge with dimensions equal to the grid spacing. A fractional part of the charge is assigned based on the fraction of the cloud overlapping with a given cell. This can be thought of as <em>first-order weighting</em>. To get a sense of what these methods are doing (in 1D), we can slide a particle across a cell and plot the resulting density of the cell at each position, thus giving an effective particle shape.</p>
-<div class="cell" data-execution_count="4">
-<details>
+<div id="cell-23" class="cell" data-execution_count="4">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> shape_func(u, v, cell_width, method<span class="op">=</span><span class="st">'NGP'</span>):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    S, diff <span class="op">=</span> <span class="fl">0.0</span>, np.<span class="bu">abs</span>(u <span class="op">-</span> v)</span>
@@ -408,12 +417,12 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_NGP_CIC.png" class="img-fluid figure-img" style="width:55.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 5. Effective particle shape for Nearest-grid-point (NGP) and cloud-in-cell (CIC) weighting.</figcaption><p></p>
+<figcaption>Fig. 5. Effective particle shape for Nearest-grid-point (NGP) and cloud-in-cell (CIC) weighting.</figcaption>
 </figure>
 </div>
 <p>The NGP method leads to a discontinuous boundary while the CIC method leads to a continous boundary (but discontinous derivative). There are also higher order methods which lead to a smooth boundary, but I don’t cover those here.</p>
 <p>We also need to perform the inverse operation: given the electric field at each grid point, interpolate the value at each particle position. The same method applies here. NGP just uses the electric field at the nearest grid point, while CIC weights the four nearest grid points. The following <code>Grid</code> class implements the CIC method. Notice that <a href="https://cython.readthedocs.io/en/latest/src/userguide/numpy_tutorial.html">Cython</a> is used in the for-loop in the <code>distribute</code> method. I couldn’t figure out a way to perform this operation with the loop, and in pure Python it took about 90% of the runtime for a single simulation step. Using Cython gave a significant performance boost.</p>
-<div class="cell" data-scrolled="true" data-tags="[]" data-execution_count="6">
+<div id="cell-27" class="cell" data-scrolled="true" data-tags="[]" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>cython</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.interpolate <span class="im">import</span> RegularGridInterpolator</span>
@@ -524,8 +533,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.gradient(grid_vals, <span class="va">self</span>.dx, <span class="va">self</span>.dy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>It should also be mentioned that the field interpolation method should be the same as the charge deposition method; if this is not true, it is possible for a particle to exert a force on itself! Let’s test the method with a <span class="math inline">\(64 \times 64\)</span> grid.</p>
-<div class="cell" data-execution_count="8">
-<details>
+<div id="cell-29" class="cell" data-execution_count="8">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a 2D bunch.</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">1</span>)</span>
@@ -572,7 +581,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Fig. 6. Test of cloud-in-cell (CIC) particle weighting on a regular 64 x 64 grid.</figcaption><p></p>
+<figcaption>Fig. 6. Test of cloud-in-cell (CIC) particle weighting on a regular 64 x 64 grid.</figcaption>
 </figure>
 </div>
 </div>
@@ -612,8 +621,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 \hat{\phi}_{n, m} = \hat{\rho}_{n, m} \hat{G}_{n, m},
 \tag{13}\]</span></span></p>
 <p>where the hat represents the discrete Fourier transform. The time complexity can be reduced to <span class="math inline">\(O\left(N \log N\right)\)</span> with the <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">FFT</a> algorithm at our disposal.</p>
-<p>There is a caveat to this method: <a href="#eq-Poisson_Green">Equation&nbsp;10</a> must be a circular convolution in order to use the FFT algorithm, which means <span class="math inline">\(G\)</span> must be periodic. But the beam is in free space (we’ve neglected any conducting boundary), so this is not true. We can make it true by doubling the grid size in each dimension. We then make <span class="math inline">\(G\)</span> a mirror reflection in the new quadrants so that it is periodic, and also set the charge density equal to zero in these regions. After running the method on this larger grid, the potential in the new quadrants will be unphysical; however, the potential in the original quadrant will be correct. There are also some tricks we can play to reduce the space complexity, and in the end doubling the grid size is not much of a price to pay for the gain in speed. The method is implemented in the <code>PoissonSolver</code> class.</p>
-<div class="cell" data-execution_count="9">
+<p>There is a caveat to this method: <a href="#eq-Poisson_Green" class="quarto-xref">Equation&nbsp;10</a> must be a circular convolution in order to use the FFT algorithm, which means <span class="math inline">\(G\)</span> must be periodic. But the beam is in free space (we’ve neglected any conducting boundary), so this is not true. We can make it true by doubling the grid size in each dimension. We then make <span class="math inline">\(G\)</span> a mirror reflection in the new quadrants so that it is periodic, and also set the charge density equal to zero in these regions. After running the method on this larger grid, the potential in the new quadrants will be unphysical; however, the potential in the original quadrant will be correct. There are also some tricks we can play to reduce the space complexity, and in the end doubling the grid size is not much of a price to pay for the gain in speed. The method is implemented in the <code>PoissonSolver</code> class.</p>
+<div id="cell-35" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PoissonSolver:</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Class to solve Poisson's equation on a 2D grid.</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
@@ -663,8 +672,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.phi[:Nx, :Ny]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Running the algorithm gives the following potential on the doubled grid:</p>
-<div class="cell" data-execution_count="10">
-<details>
+<div id="cell-37" class="cell" data-execution_count="10">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>solver <span class="op">=</span> PoissonSolver(grid)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>phi <span class="op">=</span> solver.get_potential(rho)</span>
@@ -684,7 +693,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Fig. 7. Electric potential on doubled grid.</figcaption><p></p>
+<figcaption>Fig. 7. Electric potential on doubled grid.</figcaption>
 </figure>
 </div>
 </div>
@@ -692,8 +701,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <p>We can then approximate the gradient of the potential using second-order centered differencing. This gives</p>
 <p><span class="math display">\[(\nabla\phi)_{i,j} = \frac{\phi_{i+1,j} - \phi_{i-1,j}}{2\Delta_x} \hat{x} + \frac{\phi_{i,j+1} - \phi_{i,j-1}}{2\Delta_y} \hat{y}. \tag{15}\]</span></p>
 <p>The following plot shows the electric field at each position.</p>
-<div class="cell" data-execution_count="11">
-<details>
+<div id="cell-40" class="cell" data-execution_count="11">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Ex, Ey <span class="op">=</span> grid.gradient(<span class="op">-</span>phi)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -712,13 +721,13 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Fig. 8. Electric field on original grid.</figcaption><p></p>
+<figcaption>Fig. 8. Electric field on original grid.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>Finally, the value of the electric field at each particle position can be interpolated from the grid.</p>
-<div class="cell" data-execution_count="12">
+<div id="cell-42" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Ex_int <span class="op">=</span> grid.interpolate(Ex, bunch.positions)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Ey_int <span class="op">=</span> grid.interpolate(Ey, bunch.positions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -736,7 +745,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="leapfrog.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 9. Leapfrog integration. (Source: S. Lund.)</figcaption><p></p>
+<figcaption>Fig. 9. Leapfrog integration. (Source: S. Lund.)</figcaption>
 </figure>
 </div>
 <p>A different scheme must be used when velocity-dependent forces are present. This is a symplectic integrator, which means it conserves energy. It is also second-order accurate, meaning that its error is proportional to the square of the <span class="math inline">\(\Delta_t\)</span>. Finally, it is time-reversible. The only complication is that, because the velocity and position are out of phase, we need to push the velocity back one half-step before starting the simulation, and push it one half-step forward when taking a measurement.</p>
@@ -754,7 +763,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <li>Update the particle positions.</li>
 </ol>
 <p>We’ll first create a <code>History</code> class which stores the beam moments or phase space coordinates.</p>
-<div class="cell">
+<div id="cell-51" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> History:</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Class to store bunch data over time.</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
@@ -790,7 +799,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.coords <span class="op">=</span> np.array(<span class="va">self</span>.coords)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we’ll create a <code>Simulation</code> class.</p>
-<div class="cell">
+<div id="cell-53" class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Simulation:</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Class to simulate the evolution of a charged particle bunch in free space.</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
@@ -894,7 +903,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <p>We need some way of checking our method’s accuracy. Luckily there is an analytic benchmark available: the Kapchinskij-Vladimirskij (KV) distribution. Without going into any detail, the beam projects to a uniform density ellipse in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane, and the space charge forces produced within this ellipse are <em>linear</em> (in general space charge forces are nonlinear). If we plug the KV distribution into the Vlasov equation, it can be seen that these forces will remain linear for all time if the external focusing forces are also linear. As a consequence, a set of self-consistent differential equations describing the evolution of the ellipse boundary can be written down. If we consider the beam to be an upright ellipse with semi-axis <span class="math inline">\(a\)</span> along the <span class="math inline">\(x\)</span> axis and <span class="math inline">\(b\)</span> along the <span class="math inline">\(y\)</span> axis, then without external fields the equations read:</p>
 <p><span class="math display">\[ a'' = \frac{2Q}{a + b} + \frac{\varepsilon_x}{a^3}, \]</span> <span class="math display">\[ b'' = \frac{2Q}{a + b} + \frac{\varepsilon_y}{b^3}. \tag{18}\]</span></p>
 <p>These are known as the <em>KV envelope equations</em> or simply <em>envelope equations</em>. <span class="math inline">\(Q\)</span>, called the <em>perveance</em>, is a dimensionless number which is proportional to the beam intensity but reduced by the beam energy. We can think of this constant as a measure of the space charge strength. The <span class="math inline">\(\varepsilon_x\)</span> and <span class="math inline">\(\varepsilon_y\)</span> terms are called the <em>emittances</em> and determine the area occupied by the beam in <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> phase space. For example, a beam with all particles sitting perfectly still in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane has no emittance, but a beam which is instead spreading out has a nonzero emittance. These emittances will also be conserved for the KV distribution. The following function integrates the envelope equations.</p>
-<div class="cell">
+<div id="cell-57" class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> track_env(X, positions, perveance<span class="op">=</span><span class="fl">0.0</span>):</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Track beam moments (assuming KV distribution) through free space.</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
@@ -930,7 +939,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> odeint(derivs, [a, ap, b, bp], positions, atol<span class="op">=</span><span class="fl">1e-14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Some care must be taken in the choice of simulation parameters; we need a fine enough grid to resolve the hard edge of the beam and enough macroparticles per grid cell to collect good statistics. I chose what I thought was reasonable: 128,000 macroparticles, a step size of 2.5 cm, and a <span class="math inline">\(128 \times 128\)</span> grid. Let’s create and track four identical KV distributions, each with a different intensity.</p>
-<div class="cell">
+<div id="cell-59" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bunch parameters</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>nparts <span class="op">=</span> <span class="dv">128000</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>bunch_length <span class="op">=</span> <span class="fl">250.0</span> <span class="co"># [m]</span></span>
@@ -972,8 +981,8 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>    sim.run()</span>
 <span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a>    sims.append(sim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
-<details>
+<div id="cell-60" class="cell">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>bunch_positions <span class="op">=</span> sims[<span class="dv">0</span>].history.moment_positions</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>env_positions <span class="op">=</span> np.linspace(<span class="dv">0</span>, distance, <span class="dv">400</span>)</span>
@@ -1002,8 +1011,8 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 </details>
 </div>
 <p>This plot shows the horizontal and vertical beam size over time for each of the four chosen beam intensities. The solid lines are the result of integrating the envelope equations, while the dots are the result of the PIC calculation. Notice that the beam expands on its own due to the nonzero emittance and that the effect of space charge is to increase the expansion rate. It seems to be quite accurate over this distance, and the runtime is acceptable for my purposes. Here is the evolution of 10,000 randomly sampled macroparicles compared with the KV envelope.</p>
-<div class="cell">
-<details>
+<div id="cell-62" class="cell">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get coordinates</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>coords_list <span class="op">=</span> [sim.history.coords <span class="cf">for</span> sim <span class="kw">in</span> sims]</span>
@@ -1045,7 +1054,7 @@ m \left(\frac{\mathbf{v}_{i+1/2} - \mathbf{v}_{i-1/2}}{\Delta_t}\right) = \mathb
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_anim.gif" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 11. Evolution of 10,000 macroparticles (black) and KV envelope (red) during free-expansion.</figcaption><p></p>
+<figcaption>Fig. 11. Evolution of 10,000 macroparticles (black) and KV envelope (red) during free-expansion.</figcaption>
 </figure>
 </div>
 </section>
@@ -1104,6 +1113,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1172,13 +1208,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1205,9 +1243,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1243,10 +1295,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1256,8 +1307,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1270,6 +1330,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1313,6 +1492,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1338,6 +1518,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1400,6 +1606,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
+
 
 
 
