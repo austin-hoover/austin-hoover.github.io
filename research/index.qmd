@@ -3,22 +3,16 @@ title: "Research"
 ---
  
  
-[Work in progress.]
- 
 
 ## High-dimensional phase space measurements
 
 The evolution of an intense charged particle beam is influenced by its electric field (space charge). Space charge can drive *halo formation* in the beam — the emergence of a sparsely populated region of position-momentum space (phase space) far from a dense core. Although the low-density halo has little influence on the core and is invisible in typical measurements, it places a limit on the beam intensity in high-power linear accelerators (linacs).
 
-This limit on the beam intensity is due to *beam loss*, which occurs when particles wander outside the machine aperture. To keep radiation levels under control, the average lost beam power must remain below one watt per meter along the accelerator. For a one-megawatt beam, this corresponds to a fractional loss of $10^{-6}$. Current machines operate near this limit, and losses will scale at least linearly with the beam intensity; to feasibly produce ten- or hundred-megawatt beams, halo formation must be controlled.
- 
-No simulation has reproduced a measured phase space distribution at the halo level (four to six orders of magnitude below the peak density). Although the physics is assumed to be modeled correctly, there remain significant uncertainties in the simulation inputs — the electromagnetic fields throughout the accelerator and the initial phase space coordinates $\{x, p_x, y, p_y, z, p_z\}$ of each particle.
+This limit on the beam intensity is due to *beam loss*, which occurs when particles wander outside the machine aperture. The lost beam power must remain below one watt per meter along the accelerator to avoid unacceptable radiation levels. This corresponds to a fractional loss of $10^{-6}$ of a one-megawatt (MW) beam. Current machines operate near this limit and losses will scale at least linearly with the beam intensity; thus, halo formation must be controlled to feasibly produce ten- or hundred-megawatt beams. But no simulation has reproduced a measured phase space distribution at the halo level (four to six orders of magnitude below the peak density). Although the physics is assumed to be modeled correctly, there remain significant uncertainties in the simulation inputs — the electromagnetic fields throughout the accelerator and the initial phase space coordinates $\{x, p_x, y, p_y, z, p_z\}$ of each particle.
 
+We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) (SNS) to address these uncertainties. The BTF is a one-to-one replica of the front end of the SNS linac. It is equipped to measure the initial distribution of particles in six-dimensional phase space. Additionally, two-dimensional phase space projections can be measured down to the halo level. Our goal is to measure the 6D distribution at the BTF entrance, sample particles from the measurement, track the particles through the BTF, and benchmark the result against high-dynamic-range measurements at the end of the beamline. 
  
-We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) (SNS) to address these uncertainties. The BTF is a one-to-one replica of the front end of the SNS linac. It is equipped to measure the initial distribution of particles in six-dimensional phase space. Additionally, two-dimensional phase space projections can be measured down to the halo level. Our goal is to measure the six-dimensional distribution at the start of the BTF, sample points from the measurement, track the points through the BTF in a simulation, and benchmark the result against high-dynamic-range measurements at the end of the BTF. If the simulation and measurement agree, it would be an important step toward halo-level control in hadron beams.
-
- 
-We are also using these measurements to study features in six-dimensional phase space — features that are invisible in low-dimensional measurements. For example, we have observed a hollow $p_z$ distribution at the center of the $x$-$p_x$-$y$-$p_y$ plane; we know this feature is driven by space charge but do not fully understand its origin or its impact on the long-term beam dynamics.
+We are also using these measurements to study the high-dimensional phase space structure in detail. For example, we have observed a hollow $p_z$ distribution at the center of the $x$-$p_x$-$y$-$p_y$ plane; we know this feature is driven by space charge but do not fully understand its origin or its impact on the long-term beam dynamics.
 
 
 :::{.column-body}
