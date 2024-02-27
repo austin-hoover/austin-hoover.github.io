@@ -2,7 +2,9 @@
 title: "Research"
 ---
  
- 
+
+My research focuses primarily on intense hadron beams. I'm also interested beam diagnostics techniques such phase space tomography. A few projects I've worked on are described below. <br>
+
 
 ## High-dimensional phase space measurements
 

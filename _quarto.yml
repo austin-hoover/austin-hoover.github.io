@@ -39,4 +39,3 @@ format:
         html-math-method: mathjax
         grid:
             body-width: 800px
-        # mainfont: times
