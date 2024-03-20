@@ -78,35 +78,6 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -180,31 +151,45 @@ window.Quarto = {
 </header>
 
 
-<p>My research focuses primarily on intense hadron beams. I’m also interested beam diagnostics techniques such phase space tomography. A few projects I’ve worked on are described below. <br></p>
-<section id="high-dimensional-phase-space-measurements" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="high-dimensional-phase-space-measurements">High-dimensional phase space measurements</h2>
-<p>The evolution of an intense charged particle beam is influenced by its electric field (space charge). Space charge can drive <em>halo formation</em> in the beam — the emergence of a sparsely populated region of position-momentum space (phase space) far from a dense core. Although the low-density halo has little influence on the core and is invisible in typical measurements, it places a limit on the beam intensity in high-power linear accelerators (linacs).</p>
-<p>This limit on the beam intensity is due to <em>beam loss</em>, which occurs when particles wander outside the machine aperture. The lost beam power must remain below one watt per meter along the accelerator to avoid unacceptable radiation levels. This corresponds to a fractional loss of <span class="math inline">\(10^{-6}\)</span> of a one-megawatt (MW) beam. Current machines operate near this limit and losses will scale at least linearly with the beam intensity; thus, halo formation must be controlled to feasibly produce ten- or hundred-megawatt beams. But no simulation has reproduced a measured phase space distribution at the halo level (four to six orders of magnitude below the peak density). Although the physics is assumed to be modeled correctly, there remain significant uncertainties in the simulation inputs — the electromagnetic fields throughout the accelerator and the initial phase space coordinates <span class="math inline">\(\{x, p_x, y, p_y, z, p_z\}\)</span> of each particle.</p>
-<p>We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address these uncertainties. The BTF is a one-to-one replica of the front end of the SNS linac. It is equipped to measure the initial distribution of particles in six-dimensional phase space. Additionally, two-dimensional phase space projections can be measured down to the halo level. Our goal is to measure the 6D distribution at the BTF entrance, sample particles from the measurement, track the particles through the BTF, and benchmark the result against high-dynamic-range measurements at the end of the beamline.</p>
-<p>We are also using these measurements to study the high-dimensional phase space structure in detail. For example, we have observed a hollow <span class="math inline">\(p_z\)</span> distribution at the center of the <span class="math inline">\(x\)</span>-<span class="math inline">\(p_x\)</span>-<span class="math inline">\(y\)</span>-<span class="math inline">\(p_y\)</span> plane; we know this feature is driven by space charge but do not fully understand its origin or its impact on the long-term beam dynamics.</p>
+<p>High-power hadron accelerators play pivotal roles in material science, nuclear energy, and particle physics. I study the dynamics of the intense beams produced by these machines. I’m also interested in diagnostic techniques such as phase space tomography. Below are short descriptions of some projections I’ve worked on. <br></p>
+<section id="high-dimensional-phase-space-measurements-and-beam-halo-formation" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="high-dimensional-phase-space-measurements-and-beam-halo-formation">High-dimensional phase space measurements and beam halo formation</h2>
+<p>Charged particle beams respond to external forces (like magnets) and internal forces (the beam’s self-generated electric field), also known as <em>space charge</em>. These combined effects drive some particles to large amplitudes, creating a low-density <em>halo</em> surrounding a dense core. Halo is so faint that it barely influences the core and is invisible in typical measurements; however, it places hard constraints on the beam power. Halo particles produce radiation during unintended collisions before reaching their target. To keep radiation levels, the lost beam power must remain below one watt per meter — one out of every million particles in a one-megawatt beamsafe. Current machines operate near the one-part-per-million limit, but losses scale with the intensity. Ten- or hundred-megawatt accelerators may not be possible without halo-level control.</p>
+<p>Halo formation is challenging to predict because of its sensitivity to model parameters. In particular, we typically do not know the initial particle distribution in six-dimensional (6D) position-momentum space (phase space). We’re using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a one-to-one replica of the front end of the SNS linac, equipped to measure the input 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark PIC simulation codes at a new level of detail and better understand halo formation processes. Fig. 1 shows typical measurement data.</p>
+<p><br></p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p class="page-columns page-full"><img src="./files/fig13.png" class="img-fluid figure-img column-body"></p>
-<figcaption>Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution.</figcaption>
+<figcaption>Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF.</figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="phase-space-tomography" class="level2">
+<section id="phase-space-tomography" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="phase-space-tomography">Phase space tomography</h2>
-<p>[…]</p>
+<p>Direct 6D phase space distributions take a long time (24 hours) and are only possible at low energies. In other cases, we can only measure projections of the distribution onto position space. For example, we can record the 1D density by scanning a wire across the beam. Performing such measurements at different locations limits the beam’s position-momentum distribution. However, it is often the case that more than one distribution is consistent with data. The same inverse problem is encountered in computed tomography (CT). Phase space tomography is more challenging for several reasons, primarily because the reconstruction can be 4D or 6D, while the measurements are only 1D or 2D. I’m studying ways to improve high-dimensional phase space tomography, particularly using maximum-entropy methods.</p>
+<p><br></p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="./files/fig_ment_swissroll.png" class="img-fluid figure-img column-body"></p>
+<figcaption>Fig. 2. Entropy maximization (MENT) is a grounded, conservative approach to inverse problems.</figcaption>
+</figure>
+</div>
+</div>
 </section>
-<section id="phase-space-painting" class="level2">
-<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
-<p>Particles in a circular accelerator (ring) oscillate with two degrees of freedom in the transverse plane. The frequencies <span class="math inline">\(\nu_{1, 2}\)</span> of these oscillations must be chosen to avoid resonances driven by nonlinear magnetic fields in the ring. Nonlinear space charge forces generate a frequency spread, causing some particles to cross resonance stop bands. This places a limit on the beam intensity.</p>
-<p>One way to address this problem is to modulate the frequency spread by shaping the beam density. In a ring, intense beams are generated by repeatedly injecting pulses from a linac. To reduce a pile-up of charge, the distance and angle between the injected and circulating beams can be varied during this process; this technique is called <em>phase space painting</em>. We have proposed a new painting method to generate a uniform-density distribution with a small frequency spread. Particles in the beam swirl in a vortex pattern within an elliptical boundary. I call this technique <em>eigenpainting</em>.</p>
-<p>Eigenpainting may increase the maximum beam intensity in low-energy hadron accelerators. Additionally, it may increase the maximum hadron collider luminosity if used in low-energy stages. Our current focus is to demonstrate the feasibility of eigenpainting in the SNS. There are also plenty of beam dynamics questions to answer in simulation.</p>
+<section id="phase-space-painting-and-beam-dynamics-in-rings" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="phase-space-painting-and-beam-dynamics-in-rings">Phase space painting and beam dynamics in rings</h2>
+<p>The primary method of generating intense beams is to repeatedly inject pulses from a linear accelerator (linac) into a circular accelerator (ring). Nonlinear space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. Understanding these effects is an active research area. One approach to mitigate space charge effects is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation. We call this <em>phase space painting</em>. We’re studying a new painting method to generate a vortex beam: particles swirl within a uniform-density ellipse. Such a beam would minimize the nonlinear component of space charge forces, potentially leading to higher intensities. At the same time, the beam would occupy a tiny volume of phase space, making it useful for high-energy colliders.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="./files/fig_scbd_ment_01.png" class="img-fluid figure-img column-body"></p>
+<figcaption>Fig. 3. A four-dimensional phase space reconstruction from an SNS painting experiment. Cross-plane correlations indicate the beam is partially spinning.</figcaption>
+</figure>
+</div>
+</div>
 
 
 </section>
