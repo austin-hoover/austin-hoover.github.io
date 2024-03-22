@@ -38,4 +38,4 @@ format:
         shift-heading-level-by: 0
         html-math-method: mathjax
         grid:
-            body-width: 700px
+            body-width: 750px

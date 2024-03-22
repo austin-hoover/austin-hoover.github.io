@@ -8,6 +8,7 @@ categories:
 draft: true
 ---
 
-Last week I attended the "68th Advanced Beam Dynamics Workshop on High-Brightness and High-Intensity Hadron Beams" (HB for short) at CERN in Geneva, Switzerland. Around 200 researches attended from a variety of countries, including the USA, Korea, China, UK, Germany, Italy, France, and Switzerland.  It was quite a packed schedule, with talks running from 9 AM to 7 PM. I'll share some of the highlights below, along with a short description of my contributed talk.
+A few months ago I attended the "68th Advanced Beam Dynamics Workshop on High-Brightness and High-Intensity Hadron Beams" (HB) at CERN. Around 200 researchers attended from the USA, Korea, China, UK, Germany, Italy, France, and Switzerland.  It was a packed schedule, with talks running from 9 AM to 7 PM. 
 
+Articles are 
 
