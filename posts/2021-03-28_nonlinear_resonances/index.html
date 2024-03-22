@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.140">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,11 +20,12 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -49,43 +50,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -113,7 +84,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -122,8 +99,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
@@ -136,7 +115,35 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -144,40 +151,40 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../posts/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html" rel="" target="">
- <span class="menu-text">Notes</span></a>
+    <a class="nav-link" href="../../notes/index.html"> 
+<span class="menu-text">Notes</span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -186,7 +193,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -249,13 +256,15 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <p>Most of us are familiar with the experience of pushing someone else on a playground swing. We intuitively know that we should sync our pushes with the swing oscillation frequency. This strategy employs the idea of a <em>resonance</em>, which is an increase of the oscillation amplitude of a system for certain driving frequencies. In this post we first review the mathematics of this simple example, then extend the machinery to the nonlinear dynamics in a particle accelerator. My goal here is to write down the main results which are relevant to accelerators in order to improve my own understanding of the topic.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="homer.gif" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 1. Homer pushes Lisa on a swing.</figcaption><p></p>
+<figcaption>Fig. 1. Homer pushes Lisa on a swing.</figcaption>
 </figure>
 </div>
 <section id="resonance-in-a-driven-harmonic-oscillator" class="level2">
@@ -264,7 +273,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="oscillator.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 2. A mass-spring simple harmonic oscillator.</figcaption><p></p>
+<figcaption>Fig. 2. A mass-spring simple harmonic oscillator.</figcaption>
 </figure>
 </div>
 <p>The equation of motion for <span class="math inline">\(x\)</span> is</p>
@@ -284,8 +293,8 @@ x(t) = A \cos(\omega t - \delta)
 A^2 = \frac{f_0^2}{(\omega - \omega_0)^2 + b\omega^2}.
 \tag{4}\]</span></span></p>
 <p>The figure below shows the squared amplitude as the driving frequency is varied. The maximum amplitude approaches infinity as the damping term goes to zero.</p>
-<div class="cell" data-execution_count="3">
-<details>
+<div id="cell-10" class="cell" data-execution_count="3">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_amplitudes(f0, omegas, omega0, b):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> f0<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> ((omegas <span class="op">-</span> omega0)<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">*</span>omegas<span class="op">**</span><span class="dv">2</span>)</span>
@@ -309,7 +318,7 @@ A^2 = \frac{f_0^2}{(\omega - \omega_0)^2 + b\omega^2}.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="_output_drive_oscillator.png" class="img-fluid figure-img" style="width:67.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 3. Driven, damped harmonic oscillator amplitude as a function of frequency. Three different values of the damping parameter <span class="math inline">\(b\)</span> are shown.</figcaption><p></p>
+<figcaption>Fig. 3. Driven, damped harmonic oscillator amplitude as a function of frequency. Three different values of the damping parameter <span class="math inline">\(b\)</span> are shown.</figcaption>
 </figure>
 </div>
 <p>The next step is to consider what happens when the driving force is not a pure sine wave. We’ll only consider periodic driving forces, and any periodic function can be written as a sum of sines and cosines of different frequencies. Assuming <span class="math inline">\(f(t)\)</span> is an even function so that we can drop the sine terms in the Fourier expansion, the equation of motion becomes</p>
@@ -338,15 +347,15 @@ B_y - iB_x = \sum_{n=1}^{\infty}\left({b_n - ia_n}\right)\left(\frac{x + iy}{r_0
 <p>where <span class="math inline">\(r_0\)</span> is a constant. The <span class="math inline">\(b_n\)</span> and <span class="math inline">\(a_n\)</span> terms are called the multipole coefficients and skew multipole coefficients, respectively. The <span class="math inline">\(n^{th}\)</span> term in the expansion is the field produced by <span class="math inline">\(2n\)</span> symmetrically arranged magnetic poles.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="multipoles.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 4. Multipole expansion of the magnetic field up to fourth order.</figcaption><p></p>
+<p><img src="multipoles.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<figcaption>Fig. 4. Multipole expansion of the magnetic field up to fourth order.</figcaption>
 </figure>
 </div>
 <p>We can see that terms with <span class="math inline">\(n &gt; 2\)</span> introduce nonlinear powers of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> on the right side of Eq. (6), while terms with <span class="math inline">\(n \le 2\)</span> introduce linear or constant terms. One may ask why we are considering a general magnetic field when in reality we use only dipoles and quadrupoles. The answer is two-fold. First, the best we can do in a real magnet is to make the <span class="math inline">\(n &gt; 2\)</span> terms as small as possible; they aren’t zero and we need to know how they affect the motion. Second, sextupoles (and sometimes even octopoles) can be introduced intentionally. Their primary use is to correct for the fact that not all beam particles have the same momentum.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="sextupole_magnet.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 5. An example of a sextupole electromagnet. (Source: CERN.)</figcaption><p></p>
+<p><img src="sextupole_magnet.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+<figcaption>Fig. 5. An example of a sextupole electromagnet. (Source: CERN.)</figcaption>
 </figure>
 </div>
 </section>
@@ -417,8 +426,8 @@ u_0^n \propto \cos^n(\nu\phi) = \frac{1}{2^n} \sum_{m=0}^{n} \binom{n}{m} e^{i(n
 M_x \nu_x + M_y \nu_y = N,
 \tag{21}\]</span></span></p>
 <p>where <span class="math inline">\(M_x\)</span>, <span class="math inline">\(M_y\)</span>, and <span class="math inline">\(N\)</span> are integers and <span class="math inline">\(|M_x| + |M_y|\)</span> is the order of the resonance. The reason for calling these resonance lines is because they define lines in <span class="math inline">\(\nu_x\)</span>-<span class="math inline">\(\nu_y\)</span> space (tune space).</p>
-<div class="cell" data-execution_count="5">
-<details>
+<div id="cell-31" class="cell" data-execution_count="5">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_resonance_lines(ax, max_order, c<span class="op">=</span><span class="st">'k'</span>):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> N <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span>max_order, max_order <span class="op">+</span> <span class="dv">1</span>):</span>
@@ -451,7 +460,7 @@ M_x \nu_x + M_y \nu_y = N,
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="_output_resonance_diagram.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Fig. 6. Resonance tune diagram up to fifth order (left) and tenth order (right).</figcaption><p></p>
+<figcaption>Fig. 6. Resonance tune diagram up to fifth order (left) and tenth order (right).</figcaption>
 </figure>
 </div>
 <p>Resonance strengths tend to decrease with order number, so people generally don’t consider anything beyond order 3 or 4. That being said, the machine tunes <span class="math inline">\(\nu_x\)</span> and <span class="math inline">\(\nu_y\)</span> need to be carefully chosen to avoid all low order resonance lines. Ideally, all beam particles would occupy this single point in tune space, but space charge complicates things by decreasing the tune by different amounts for each particle, possible placing them on one of the above resonance lines. This effect, called <em>tune spread</em>, places a fundamental limit on the number of particles in the beam.</p>
@@ -460,7 +469,7 @@ M_x \nu_x + M_y \nu_y = N,
 <section id="numerical-exploration-of-the-sextupole-resonance" class="level2">
 <h2 class="anchored" data-anchor-id="numerical-exploration-of-the-sextupole-resonance">4. Numerical exploration of the sextupole resonance</h2>
 <p>Let’s explore the behavior of a beam under the influence of a sextupole magnet. This section recreates some figures from the book <em>Accelerator Physics</em> by S. Y. Lee. The easiest way to do this is to approximate the multipole as an instantaneous change to the slope of the particle’s trajectory. This is valid if the magnet isn’t too long.</p>
-<div class="cell" data-execution_count="7">
+<div id="cell-37" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Multipole:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Class to apply multipole kick to particle. Adapted from PyORBIT tracking </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    routine in `py-orbit/src/teapotbase.cc`.</span></span>
@@ -495,7 +504,7 @@ M_x \nu_x + M_y \nu_y = N,
 <span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The situation we’ll consider is a periodic lattice which is made of linear uncoupled elements + one thin sextupole. We’ll observe the beam at the location of the sextupole after each turn. A key result of the linear theory is that the details of the rest of the lattice are unimportant for this task. All we need to do is choose the Twiss parameters and tune in each dimension to form the transfer matrix, then we can just track using matrix multiplication. Recall that the transfer matrix is written as <span class="math inline">\(\mathbf{M} = \mathbf{V P V^{-1}}\)</span>, where <span class="math inline">\(\mathbf{V} = \mathbf{V}(\alpha_x, \alpha_y, \beta_x, \beta_y)\)</span> performs the Floquet normalization and <span class="math inline">\(\mathbf{P} = \mathbf{P}(\nu_x, \nu_y)\)</span> is a rotation in the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> phase spaces by the angle <span class="math inline">\(2\pi\nu_x\)</span> and <span class="math inline">\(2\pi\nu_y\)</span>, respectively. The following class implements this representation of the lattice.</p>
-<div class="cell" data-execution_count="8">
+<div id="cell-39" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> V_2D(alpha, beta):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Floquet normalization matrix in 2D phase space."""</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([[beta, <span class="fl">0.0</span>], [<span class="op">-</span>alpha, <span class="fl">1.0</span>]]) <span class="op">/</span> np.sqrt(beta)</span>
@@ -583,8 +592,8 @@ M_x \nu_x + M_y \nu_y = N,
 <section id="third-integer-resonance" class="level3">
 <h3 class="anchored" data-anchor-id="third-integer-resonance">4.1. Third-integer resonance</h3>
 <p>We focus first on the 1/3 integer resonance. Below, a particle is tracked over 100 turns starting from few different initial amplitudes. We set <span class="math inline">\(y = y' = 0\)</span> in all cases. The <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> trajectories should be upright ellipses in the absence of nonlinear elements. Some helper functions are defined in the following collapsed cell.</p>
-<div class="cell" data-execution_count="30">
-<details>
+<div id="cell-42" class="cell" data-execution_count="30">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the Twiss parameters at the observation point.</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>alpha_x <span class="op">=</span> alpha_y <span class="op">=</span> <span class="fl">0.0</span></span>
@@ -670,8 +679,8 @@ M_x \nu_x + M_y \nu_y = N,
 <span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> animation.FuncAnimation(fig, update, frames<span class="op">=</span><span class="bu">len</span>(coords), interval<span class="op">=</span>(<span class="fl">1000.0</span> <span class="op">/</span> <span class="fl">6.0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="31">
-<details>
+<div id="cell-43" class="cell" data-execution_count="31">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tunes_x <span class="op">=</span> np.linspace(<span class="fl">0.61</span>, <span class="fl">0.66</span>, <span class="dv">6</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tune_y <span class="op">=</span> <span class="fl">0.518</span></span>
@@ -685,14 +694,14 @@ M_x \nu_x + M_y \nu_y = N,
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Fig. 7. Period-by-period phase space trajectory in a linear lattice as a function of the tune.</figcaption><p></p>
+<figcaption>Fig. 7. Period-by-period phase space trajectory in a linear lattice as a function of the tune.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>Now turn on the sextupole magnet.</p>
-<div class="cell" data-execution_count="32">
-<details>
+<div id="cell-45" class="cell" data-execution_count="32">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>order, strength <span class="op">=</span> <span class="dv">3</span>, <span class="fl">0.5</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>multipole <span class="op">=</span> Multipole(order, strength, skew<span class="op">=</span><span class="va">False</span>)</span>
@@ -702,14 +711,14 @@ M_x \nu_x + M_y \nu_y = N,
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">FIg. 8. Period-by-period phase space trajectory in a linear lattice + sextupole as a function of the tune.</figcaption><p></p>
+<figcaption>FIg. 8. Period-by-period phase space trajectory in a linear lattice + sextupole as a function of the tune.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>The initially elliptical orbits are morphed into a triangular shape as the tune approaches the resonance condition, and some of the larger orbits become unstable. It turns out that by looking at the Hamiltonian you can find a triangular region defining a <em>separatrix</em> between stable and unstable motion. Particles inside the triangle will oscillate forever, particles at the corner of the triangle are at unstable equilibrium points, and particles outside the triangle will eventually stream outward from the corners. This is easier to see by tracking a bunch of particles. The interesting stuff will be in the horizontal plane, but I’ll plot the vertical plane as well for comparison.</p>
-<div class="cell" data-execution_count="18">
-<details>
+<div id="cell-47" class="cell" data-execution_count="18">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>lattice <span class="op">=</span> create_lattice(tune_x<span class="op">=</span><span class="fl">0.66</span>, tune_y<span class="op">=</span>tune_y, multipole)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> lattice.get_matched_bunch()</span>
@@ -720,7 +729,7 @@ M_x \nu_x + M_y \nu_y = N,
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_third_order.gif" class="img-fluid figure-img" style="width:78.0%"></p>
-<p></p><figcaption class="figure-caption">FIg. 9. Phase space trajectories near the third-integer tune.</figcaption><p></p>
+<figcaption>FIg. 9. Phase space trajectories near the third-integer tune.</figcaption>
 </figure>
 </div>
 <p>The triangular region of stability is clearly visible at the end of 50 turns. Interestingly, the third order resonance can be used to extract a beam from an accelerator at a much slower rate than normal. To do this, the strength and spacing of sextupole magnets must be carefully chosen to control the shape and orientation of the stability triangle, then tune is slowly moved closer to the 1/3 integer resonance value. The result is that the triangle shrinks as the stable phase space area decreases, and that more and more particles will find themselves in the unstable area and eventually stream out along the vertices.</p>
@@ -728,19 +737,23 @@ M_x \nu_x + M_y \nu_y = N,
 <section id="integer-resonance" class="level3">
 <h3 class="anchored" data-anchor-id="integer-resonance">4.2. Integer resonance</h3>
 <p>The sextupole should also excite the integer resonance.</p>
-<div class="cell" data-execution_count="33">
-<details>
+<div id="cell-53" class="cell" data-execution_count="33">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tunes_x <span class="op">=</span> np.linspace(<span class="fl">0.96</span>, <span class="fl">0.976</span>, <span class="dv">6</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> compare_traj(tunes_x, tune_y, emittances, nturns, </span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                        multipole<span class="op">=</span>multipole, limits<span class="op">=</span>(<span class="dv">60</span>, <span class="fl">2.5</span>), <span class="op">**</span>kws)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="23">
-<details>
+</div>
+<div id="cell-54" class="cell" data-execution_count="23">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>lattice <span class="op">=</span> create_lattice(tune_x<span class="op">=</span><span class="fl">0.99</span>, tune_y<span class="op">=</span><span class="fl">0.18</span>, multipole)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>anim <span class="op">=</span> animate_phase_space(<span class="op">*</span>track_bunch(X, lattice, nturns<span class="op">=</span><span class="dv">50</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -749,7 +762,7 @@ M_x \nu_x + M_y \nu_y = N,
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_integer.gif" class="img-fluid figure-img" style="width:78.0%"></p>
-<p></p><figcaption class="figure-caption">FIg. 10. Phase space trajectories near the integer tune.</figcaption><p></p>
+<figcaption>FIg. 10. Phase space trajectories near the integer tune.</figcaption>
 </figure>
 </div>
 <p>Cool pattern! The separatrix is now shaped like a tear drop. It looks like it’s evolving more slowly because the tune is close to an integer, so the particles almost return to the same location in phase space after a turn.</p>
@@ -757,7 +770,7 @@ M_x \nu_x + M_y \nu_y = N,
 <section id="higher-order-resonances" class="level3">
 <h3 class="anchored" data-anchor-id="higher-order-resonances">4.3. Higher order resonances</h3>
 <p>There are also higher order resonances which a sextupole can drive. You can actually find fourth and fifth order resonances if you perform perturbation theory up to second order (at least that’s what I’m told in a textbook… I’d like to avoid carrying out such a procedure). Do these show up using our mapping equations? They are expected to be weaker, so we’ll double the sextupole strength.</p>
-<div class="cell" data-execution_count="36">
+<div id="cell-60" class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>emittances <span class="op">=</span> <span class="fl">1e-6</span> <span class="op">*</span> np.array([<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">250</span>, <span class="dv">350</span>])</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>tunes_x <span class="op">=</span> np.linspace(<span class="fl">0.7496</span>, <span class="fl">0.798</span>, <span class="dv">6</span>) </span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>tune_y <span class="op">=</span> <span class="fl">0.23</span></span>
@@ -769,7 +782,11 @@ M_x \nu_x + M_y \nu_y = N,
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">**</span>kws</span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="index_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>These are interesting plots. The tune near 0.75 (it’s actually 0.7496) is exciting a fourth order resonance, while the tune near 0.8 is exciting a fifth order resonance. In all the plots, the low amplitude orbits are stable ellipses. We then see the behavior change as the amplitude is increased, with the particle jumping between distinct “islands”. Eventually the trajectories once again form closed loops, but in deformed shapes. The motion is unstable at even larger amplitudes. Understanding exactly <em>why</em> the the plots look like they do would take more work.</p>
@@ -777,7 +794,7 @@ M_x \nu_x + M_y \nu_y = N,
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">5. Conclusion</h2>
-<p>This post outlined the theory of nonlinear resonances driven by magnetic multipoles. The effect of a sextupole-driven resonance on the phase space trajectory was then examined using mapping equations. Taking the time to write down the steps which lead to <a href="#eq-20">Equation&nbsp;20</a> — an equation often referenced in accelerator physics — was a rewarding experience and helped make the topic less mysterious to me (although I’m no expert). Here are a number of helpful references:</p>
+<p>This post outlined the theory of nonlinear resonances driven by magnetic multipoles. The effect of a sextupole-driven resonance on the phase space trajectory was then examined using mapping equations. Taking the time to write down the steps which lead to <a href="#eq-20" class="quarto-xref">Equation&nbsp;20</a> — an equation often referenced in accelerator physics — was a rewarding experience and helped make the topic less mysterious to me (although I’m no expert). Here are a number of helpful references:</p>
 <ul>
 <li>Lectures
 <ul>
@@ -840,6 +857,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -908,13 +952,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -941,9 +987,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -979,10 +1039,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -992,8 +1051,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1006,6 +1074,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1049,6 +1236,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1074,6 +1262,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1136,6 +1350,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
+
 
 
 

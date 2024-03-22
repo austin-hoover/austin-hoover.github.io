@@ -1,5 +1,19 @@
 [
   {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/books/index.html",
+      "/notes/papers/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/papers/index.html",
+    "items": [
+      "/notes/papers/test1.html",
+      "/notes/papers/test2.html"
+    ]
+  },
+  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/2023-07-10_fine_tuning/index.html",
@@ -22,27 +36,7 @@
     ]
   },
   {
-    "listing": "/notes/papers/index.html",
-    "items": [
-      "/notes/papers/test1.html",
-      "/notes/papers/test2.html"
-    ]
-  },
-  {
     "listing": "/notes/books/index.html",
     "items": []
-  },
-  {
-    "listing": "/notes/index.html",
-    "items": [
-      "/notes/books/index.html",
-      "/notes/papers/index.html"
-    ]
-  },
-  {
-    "listing": "/notes/travel/index.html",
-    "items": [
-      "/notes/travel/2023-07-04_charleston.html"
-    ]
   }
 ]
