@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.140">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Austin Hoover">
+<meta name="dcterms.date" content="2023-07-10">
+
+<title>Austin Hoover - Fine-tuning arguments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
+</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Austin Hoover</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#evidence-of-fine-tuning" id="toc-evidence-of-fine-tuning" class="nav-link active" data-scroll-target="#evidence-of-fine-tuning">1. Evidence of fine-tuning</a></li>
+  <li><a href="#responses-to-fine-tuning" id="toc-responses-to-fine-tuning" class="nav-link" data-scroll-target="#responses-to-fine-tuning">2. Responses to fine-tuning</a>
+  <ul>
+  <li><a href="#no-explanation-needed" id="toc-no-explanation-needed" class="nav-link" data-scroll-target="#no-explanation-needed">2.1. No explanation needed</a></li>
+  <li><a href="#the-multiverse-hypothesis" id="toc-the-multiverse-hypothesis" class="nav-link" data-scroll-target="#the-multiverse-hypothesis">2.2. The multiverse hypothesis</a>
+  <ul>
+  <li><a href="#the-prior-probability-of-the-multiverse" id="toc-the-prior-probability-of-the-multiverse" class="nav-link" data-scroll-target="#the-prior-probability-of-the-multiverse">2.2.1. The prior probability of the multiverse</a></li>
+  <li><a href="#the-probability-of-life-in-a-multiverse" id="toc-the-probability-of-life-in-a-multiverse" class="nav-link" data-scroll-target="#the-probability-of-life-in-a-multiverse">2.2.2. The probability of life in a multiverse</a></li>
+  </ul></li>
+  <li><a href="#the-design-hypothesis" id="toc-the-design-hypothesis" class="nav-link" data-scroll-target="#the-design-hypothesis">2.3. The design hypothesis</a>
+  <ul>
+  <li><a href="#the-prior-probability-of-design" id="toc-the-prior-probability-of-design" class="nav-link" data-scroll-target="#the-prior-probability-of-design">2.3.1. The prior probability of design</a></li>
+  <li><a href="#what-would-god-create" id="toc-what-would-god-create" class="nav-link" data-scroll-target="#what-would-god-create">2.3.2. What would God create?</a></li>
+  <li><a href="#stalking-horse-naturalism" id="toc-stalking-horse-naturalism" class="nav-link" data-scroll-target="#stalking-horse-naturalism">2.3.3. Stalking-horse naturalism</a></li>
+  <li><a href="#god-and-the-multiverse" id="toc-god-and-the-multiverse" class="nav-link" data-scroll-target="#god-and-the-multiverse">2.3.5. God and the multiverse</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">3. Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fine-tuning arguments</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">teleological arguments</div>
+    <div class="quarto-category">fine-tuning</div>
+    <div class="quarto-category">multiverse</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Austin Hoover </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 10, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="evidence-of-fine-tuning" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-of-fine-tuning">1. Evidence of fine-tuning</h2>
+<p>The universe would be fine-tuned for life if the set of possible life-permitting universes were much smaller than the set of possible universes. An immediate difficulty here is how to define the set of possible universes. The universe is characterized by states, laws, and constants. We can consider a <em>state</em> to be a snapshot of the universe at a single time; for example, in classical physics, a state could be the position and momentum of every particle <span class="math inline">\(\{\mathbf{x}_i, \mathbf{p}_i\}\)</span>, or in quantum physics, a state could be the wavefunction <span class="math inline">\(\Psi (\mathbf{x})\)</span>. Laws describe relationships between states and are not measured directly; they emerge as part of a theory to explain the available data. Finally, fundamental <em>constants</em> are empirically determined scalars, i.e., not determined by the proposed theory. We need to determine whether the constants, laws, and prior states could have been different and, if so, whether they are fine-tuned for life.</p>
+<p>It is hard to say whether laws could have been different, but let’s suppose they could have been different and ask whether they are fine-tuned. Here we have an infinite-dimensional function space of possible laws. We could start by just removing the laws we know of, i.e., removing gravity or electromagnetism. It seems plausible from this thought experiment that both attracting and repelling forces are necessary for any complex structures to emerge. But it is hard to see how else to proceed. Nonetheless, it is clear that the laws are, in a certain sense, simple and elegant, leading to order and predictability rather than chaos. It is not hard to see how an argument for theism might flow from such considerations <span class="citation" data-cites="Wigner_1960 Hildebrand_2022 Cutter_2023">&nbsp;[<a href="#ref-Wigner_1960" role="doc-biblioref">1</a>–<a href="#ref-Cutter_2023" role="doc-biblioref">3</a>]</span>.</p>
+<p>Let’s fix the laws and consider variations in the constants and prior states of the universe; this problem is more tractable. I will let the “fine-tuning data” refer to all calculations of the sensitivity of life-permitting conditions to changes to the constants or prior states, as well as all measurements that support the theories used to perform these calculations. A comprehensive discussion of the fine-tuning data is found in <span class="citation" data-cites="Barnes_2012">&nbsp;[<a href="#ref-Barnes_2012" role="doc-biblioref">4</a>]</span>. The SEP article on fine-tuning <span class="citation" data-cites="sep-fine-tuning">&nbsp;[<a href="#ref-sep-fine-tuning" role="doc-biblioref">5</a>]</span> has a shorter list of apparently fine-tuned parameters which I repeat here.</p>
+<ul>
+<li>The strength of gravity relative to electromagnetism</li>
+<li>The strength of the strong force relative to the electromagnetic force</li>
+<li>The ratio of up quark mass to down quark mass</li>
+<li>The strength of the weak force</li>
+<li>The value of the cosmological constant</li>
+<li>The energy density in the early universe</li>
+<li>The fluctuation amplitudes in the early universe</li>
+<li>The entropy of the early universe [<span class="citation" data-cites="Albert_2001">&nbsp;[<a href="#ref-Albert_2001" role="doc-biblioref">6</a>]</span>; <span class="citation" data-cites="sep-statphys-statmech sep-time-thermo Earman_2006 Wallace_2016 Wallace_2017 Robinson_2023">&nbsp;[<a href="#ref-sep-statphys-statmech" role="doc-biblioref">7</a>–<a href="#ref-Robinson_2023" role="doc-biblioref">12</a>]</span></li>
+</ul>
+<p>In some cases, the relevant parameters could not change by more than one part in <span class="math inline">\(10^{50}\)</span> (or some other enormous value), rending the probability of life, given that the parameters were selected from a sufficiently wide uniform distribution, to be essentially zero. These calculations are striking but are also controversial. Consider the following issues <span class="citation" data-cites="Oppy_2006_arguing">&nbsp;[<a href="#ref-Oppy_2006_arguing" role="doc-biblioref">13</a>]</span>.</p>
+<ol type="1">
+<li>Future physical theories may have no fine-tuned parameters.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Assuming a complete theory of physics is still fine-tuned, how should we assign probability distributions in the space of possible worlds?<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li>Assuming a uniform distribution is appropriate for each parameter, what range can the various parameters take? A finite range seems arbitrary, and there are problems defining a uniform distribution over an infinite range.</li>
+<li>Are we exploring the multidimensional parameter space rather than varying one parameter at a time?</li>
+</ol>
+<p>Because of the lack of clear answers to these questions, it is unclear how confident we should be that the universe is fine-tuned for life. Nonetheless, I assign a moderate credence to the claim that the universe is fine-tuned for life, partly because fine-tuning is accepted by a significant fraction of physicists and philosophers. Thus, it makes sense to assume fine-tuning exists and work out its implications.</p>
+</section>
+<section id="responses-to-fine-tuning" class="level2">
+<h2 class="anchored" data-anchor-id="responses-to-fine-tuning">2. Responses to fine-tuning</h2>
+<p>We can map the responses to fine-tuning to the following responses to an all-sixes configuration of many dice at a casino table:</p>
+<ol type="1">
+<li><em>Many Rolls</em>: There were probably many prior rolls.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li><em>Many Tables</em>: There were probably many simultaneous rolls.</li>
+<li><em>Intentional Agent</em>: An intentional agent arranged the dice in the all-sixes configuration.</li>
+<li><em>Lucky Roll</em>: The dice were rolled once. Unlikely events happen occasionally.</li>
+<li><em>Brute Contingency</em>: The dice could have landed in a different configuration, but no explanation is needed for the observed configuration.</li>
+<li><em>Brute Necessity</em>: The dice could not have landed in a different configuration.</li>
+</ol>
+<p>Here, the all-sixes configuration is analogous to a life-supporting universe. Response 2 corresponds to the <em>multiverse hypothesis</em>: that there are many universes, each with different laws and initial conditions. Response 3 corresponds to the <em>design hypothesis</em>: that an intentional agent selected the laws and initial conditions of the universe. Response 4 corresponds to the claim that the laws and initial conditions were unlikely, but that unlikely events do not necessarily require explanations; even if random, the selection process provides a sufficient explanation. Response 5 suggests that there is no deeper explanation <em>at all</em> for the way things are; it is a brute fact. Response 6 corresponds to the claim that the laws and initial conditions are fixed by metaphysical necessity.</p>
+<div class="cell" data-fig-width="585px" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  A[Evidence of fine-tuning] 
+  A --&gt; B[Accept]
+      B --&gt; D[Explanation needed]
+          D --&gt; F[Design]
+          D --&gt; G[Multiverse]
+          D --&gt; H[Chance]
+      B --&gt; E[No explanation needed]
+          E --&gt; I[Brute contingency]
+          E --&gt; J[Necessity]
+  A --&gt; C[Reject]
+</pre>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>I think we can rule out Response 1 (<em>Many Rolls</em>), which would correspond to a cyclic universe model in which the “initial conditions” were randomly selected on each cycle. I have no idea if such a model exists. I also think we can rule out Response 2 (<em>Lucky Roll</em>) if any better explanations are available (since the chances involved are incredibly small).</p>
+<p>There are different ways to tease out the degree to which the fact that our universe is life-supporting (<span class="math inline">\(L\)</span>) supports a hypothesis <span class="math inline">\(H\)</span>. On the Bayesian view, <span class="math inline">\(E\)</span> supports <span class="math inline">\(H\)</span> if <span class="math display">\[
+\frac{Pr(H | L)}{Pr(\neg H | L)} = \frac{Pr(L | H)}{Pr(L | \neg H)}\frac{Pr(H)}{Pr(\neg H)} &gt; 1.
+\]</span></p>
+<p>In addition to the likelihood <span class="math inline">\(Pr(L | H)\)</span>, we must consider the prior probability <span class="math inline">\(Pr(H)\)</span>. Assigning priors is challenging when <span class="math inline">\(H\)</span> is a large-scale hypothesis such as theism. Assigning likelihoods is also challenging; we must do our best to be honest about what our hypothesis predicts. But this equation is at least a guide to comparing hypotheses.</p>
+<section id="no-explanation-needed" class="level3">
+<h3 class="anchored" data-anchor-id="no-explanation-needed">2.1. No explanation needed</h3>
+<p>Consider first the denial that any explanation of fine-tuning is needed. It could be that our universe, and the fact that the constants are fine-tuned for life, is a brute fact. For example, it could be that the constants could have been different, but we cannot do anything to explain why they are what they are. Although all explanations must stop somewhere, I’m not a big fan of brute contingency. In my studies of cosmological arguments, I’ve become attracted to the idea that there is at least one necessary being — an initial or eternal matter-energy configuration, God, or something like that. This brings us to the possibility that the fine-tuned constants are fixed by metaphysical necessity. This sits better with me, but on the other hand, it is a strange idea that, say, the electron’s charge <em>had to be</em> -1. A great discussion about positing necessary entities is in <span class="citation" data-cites="Rasmussen_Leon_2019">&nbsp;[<a href="#ref-Rasmussen_Leon_2019" role="doc-biblioref">14</a>]</span>.</p>
+</section>
+<section id="the-multiverse-hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="the-multiverse-hypothesis">2.2. The multiverse hypothesis</h3>
+<p>A popular response to the fine-tuning data is to posit an ensemble of universes, each with different parameters. Such a hypothesis — call it <span class="math inline">\(M\)</span> — could render the probability of life <span class="math inline">\(P(L | M)\)</span> quite high if the number of universes is large. The support for <span class="math inline">\(M\)</span> would be strong if <span class="math inline">\(P(L | \neg M) \ll 1\)</span> and <span class="math inline">\(\neg (P(M) \ll 1)\)</span>.</p>
+<section id="the-prior-probability-of-the-multiverse" class="level4">
+<h4 class="anchored" data-anchor-id="the-prior-probability-of-the-multiverse">2.2.1. The prior probability of the multiverse</h4>
+<p>I am tempted to assign a low prior probability to the multiverse hypothesis (<span class="math inline">\(P(M) \ll 1\)</span>). It is not obvious that there is more than one universe; it is not even clear what that would mean. But surprisingly, multiverse hypotheses have crept into modern physics. In my understanding, part of the motivation for the multiverse hypothesis — in the context of cosmic fine-tuning — comes from String Theory + Inflation, which predicts a large number of vacuum states with different effective constants and laws.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Each “universe” (in my understanding) is an isolated spacetime region rather than a separate reality. String Theory is speculative at this point, so I’m not sure how much stock we should hold in this idea; nonetheless, it does not seem unreasonable to suppose that some future, well-tested theory could predict a “multiverse” of effective constants and laws.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>On another front, there are worries that the multiverse leads to absurd consequences. For example, consider the problem of Boltzmann Brains: a random fluctuation is much more likely to generate a ten-second-old universe that consists of just me, complete with false memories and sensory inputs, rather than a billion-year-old universe. But it is unreasonable for me to believe that I am such a fluctuation: my belief would entail that the physics I used to come to my belief is false. That is a problem! (Since this is not an issue unique to the multiverse, perhaps we should let it be <span class="citation" data-cites="Wall">&nbsp;[<a href="#ref-Wall" role="doc-biblioref">15</a>]</span>). Another example is that there are worries about how to think about probability in an infinite multiverse.</p>
+</section>
+<section id="the-probability-of-life-in-a-multiverse" class="level4">
+<h4 class="anchored" data-anchor-id="the-probability-of-life-in-a-multiverse">2.2.2. The probability of life in a multiverse</h4>
+<p>Let’s put those worries aside and treat the multiverse as a serious potential solution to the fine-tuning problem, assigning a non-negligible prior <span class="math inline">\(P(M)\)</span>. We now turn to the probability of life in the multiverse, <span class="math inline">\(P(L | M)\)</span>. The first issue — and this will reappear in the design hypothesis — is that we need to know more about the multiverse and its dynamics. It is not clear, a priori, whether all universes would be equally likely; it seems possible that some universes could be more likely than others, rendering life-permitting universes incredibly likely or incredibly unlikely. Or the underlying multiverse theory could include yet more fundamental fine-tuned constants.</p>
+<p>Then we have problems arising from an <em>infinite</em> multiverse. Assuming all universes are equally likely, the probability that at least one universe is life-supporting grows with the number of universes. But if the number of universes is infinite, the probability is either 1 or undefined (<span class="math inline">\(\infty / \infty\)</span>) <span class="citation" data-cites="Wall">&nbsp;[<a href="#ref-Wall" role="doc-biblioref">15</a>]</span>. If the probability is 1, one might argue that <span class="math inline">\(M\)</span> is not predictive (everything happens somewhere). I am not bothered by <span class="math inline">\(Pr(L | M) = 1\)</span> if <span class="math inline">\(M\)</span> is well-motivated; otherwise, it appears to be an ad hoc, too-good-to-be-true solution to the fine-tuning problem.</p>
+<p>Let’s put those worries aside and assume there is a large (maybe infinite) ensemble of universes, a small fraction of which support life. Still, some argue that while a multiverse increases the probability that <em>some</em> universe is life-permitting, it does not increase the probability that <em>this</em> universe is life-permitting. In other words, the multiverse hypothesis makes the same mistake as the Inverse Gambler’s Fallacy. In our dice rolling example, if there are many tables, the probability that <em>at least one table</em> rolls all sixes will increase with the number of tables, but the probability that <em>the fourth table</em> rolls all sixes does not depend on the number of tables.</p>
+<p>The above analogy doesn’t seem right. It is not as if we are sitting in a universe, waiting to see if it is life-permitting; rather, we can only find ourselves in a life-permitting universe. It is as if we were standing outside the casino and were only let in if at least one all-sixes configuration was rolled (and were then brought to an all-sixes table). In this new analogy, the probability that we find ourselves at an all-sixes table scales with the number of tables. This issue is somewhat complicated. Saad <span class="citation" data-cites="Saad_2023">&nbsp;[<a href="#ref-Saad_2023" role="doc-biblioref">16</a>]</span> takes great care to make the dice-rolling relevantly like our situation with respect to the fine-tuning data, concluding that “even once those complicating factors are taken into account, fine-tuning should boost our confidence in the existence of other universes.”</p>
+<p>In conclusion, the multiverse hypothesis could be a reasonable solution to the fine-tuning problem. I am not convinced by the Inverse Gambler’s Fallacy objection. However, serious issues must be addressed — perhaps by a future, fleshed-out version of the hypothesis.</p>
+</section>
+</section>
+<section id="the-design-hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="the-design-hypothesis">2.3. The design hypothesis</h3>
+<p>Another popular response to fine-tuning is to posit an intelligent designer. Such a hypothesis — call it <span class="math inline">\(T\)</span> — could render the probability of life <span class="math inline">\(P(L | T)\)</span> quite high, depending on the designer’s character. The support for <span class="math inline">\(T\)</span> would be strong if <span class="math inline">\(P(L | \neg T) \ll 1\)</span> and <span class="math inline">\(\neg (P(T) \ll 1)\)</span>. One difficulty in assessing the design hypothesis is that it is non-specific. There could be one designer, two designers, or an infinity of designers; the designer could be good or evil, weak or powerful, etc. The prior probability of any of these alternative hypotheses should be quite low, and these designers may have very different dispositions toward life, rendering <span class="math inline">\(P(L | T) = 0\)</span> in some cases and <span class="math inline">\(P(L | T) = 1\)</span> in others. Therefore, I propose to replace the generic design hypothesis with some version of theism, where theism is the claim that “… the foundation of reality consists of a mind which possesses a few reasonably natural features (power, goodness, knowledge) to a reasonably natural degree (i.e., a maximal degree)” <span class="citation" data-cites="Cutter_2022">&nbsp;[<a href="#ref-Cutter_2022" role="doc-biblioref">17</a>]</span>. While Oppy argues that any such move will lower the prior probability of the hypothesis, I am pulled somewhat in the opposite direction; perhaps traditional theism has a higher probability than the many other theisms listed above.</p>
+<section id="the-prior-probability-of-design" class="level4">
+<h4 class="anchored" data-anchor-id="the-prior-probability-of-design">2.3.1. The prior probability of design</h4>
+<p>Cutter and Crummet <span class="citation" data-cites="Cutter_2022">&nbsp;[<a href="#ref-Cutter_2022" role="doc-biblioref">17</a>]</span> note that “The prior probability of theism is the result of two factors: (i) its intrinsic probability, i.e., its probability conditional on no evidence, and (ii) its fit with our background knowledge.” I don’t think the intrinsic probability of theism is too small. The above definition of theism is simple. Furthermore, I find many alternate models of God to be arbitrary and, therefore, unlikely (examples include an evil god, an infinity of gods, a flying spaghetti monster, etc.). I recognize that some find theism inconceivable (how can something be outside spacetime, how can a mind exist without a body, etc.), but I don’t feel that strongly.</p>
+<p>The fit with our background knowledge is more complicated. As I mentioned, theism is a large-scale hypothesis — arguments for and against theism consider a wide range of phenomena. As such, arguments for theism can sometimes pull in multiple directions. For example, one might find arguments from evil to be evidence against the existence of God and cosmological arguments to be evidence for the existence of God. It is challenging to weigh these considerations against each other. But for the fine-tuning debate, all we need is a rough measure of the plausibility of theism. If the fine-tuning probabilities are correct, our credence in theism may need to be <em>very</em> small to warrant discarding the theistic hypothesis. I think there are enough interesting and thoughtful versions of theism, arguments for theism, and responses to arguments against theism to treat theism seriously as a potential solution to the fine-tuning problem.</p>
+</section>
+<section id="what-would-god-create" class="level4">
+<h4 class="anchored" data-anchor-id="what-would-god-create">2.3.2. What would God create?</h4>
+<p>Other critiques of the design hypothesis concern the probability of life conditioned on the existence of a designer. If we don’t know anything about the designer, then it seems equally likely for the designer to prefer a universe with or without life. But as I mentioned above, I don’t find the prior probability of theism drastically lower than the prior probability of a generic designer, and on theism, God surely has preferences consistent with God’s own nature. The question is whether we could know these preferences.</p>
+<p>Although it might be impossible to know God’s reasons for performing a specific action, it doesn’t seem too difficult to imagine why God would have the disposition to create a predictable, elegant, life-friendly universe; these all seem like good things. On the other hand, considering the amount of evil and suffering in the world, one may think that God would have created a different world or no world at all, making the probability of life, given theism, small. These types of statements of God’s preferences don’t seem too problematic.</p>
+<p>But if God prefers a life-permitting universe, then surely God will bring about a life-permitting universe. Wouldn’t this make <span class="math inline">\(Pr(L | T) = 1\)</span>? The theist will want to give an account of God’s free will that does not render the universe necessary. I think this problem is related to the problem of free will for omniscient beings. I don’t find this to be a terribly troubling problem.</p>
+<p>Here is another issue raised by Hans Halvorson: why would God prefer a <em>fine-tuned</em> universe? Halvorson argues that since fine-tuning decreases the probability of life, fine-tuning is evidence against a life-friendly designer. Suppose I want to give $10,000 in cash to my friend, but instead of simply handing them the money, I made them guess a number between 1 and <span class="math inline">\(n\)</span>, only giving them the money if they selected the number I was thinking of. As my chosen <span class="math inline">\(n\)</span> grows, so does the probability that I didn’t want my friend to have the money. I found this argument quite convincing. I’m unsure what reason God would have for designing the universe this way. Of course, I’m cautious about concluding that there is no such reason.</p>
+</section>
+<section id="stalking-horse-naturalism" class="level4">
+<h4 class="anchored" data-anchor-id="stalking-horse-naturalism">2.3.3. Stalking-horse naturalism</h4>
+<p>Alex Malpass has proposed the “stalking-horse naturalism” hypothesis, which is simply naturalism plus a “mysterious disposition” of the constants to obtain their actual values <span class="citation" data-cites="CC_2018">&nbsp;[<a href="#ref-CC_2018" role="doc-biblioref">18</a>]</span>. There is an argument to be made that this hypothesis does just as well as theism. I thought Luke Barnes had a nice response: we might ask about the probability that the universe had the dispositions that it does; why life-permitting dispositions rather than non-life-permitting dispositions? The answer must be brute necessity, brute contingency, or chance. While the theist can tell a story about why God has life-permitting dispositions, no similar story is available for this “mysterious disposition”.</p>
+</section>
+<section id="god-and-the-multiverse" class="level4">
+<h4 class="anchored" data-anchor-id="god-and-the-multiverse">2.3.5. God and the multiverse</h4>
+<p>Lastly, it is important to note that theism is compatible with a multiverse. I’d like to explore this idea further <span class="citation" data-cites="Kraay_2014">&nbsp;[<a href="#ref-Kraay_2014" role="doc-biblioref">19</a>]</span>.</p>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">3. Conclusion</h2>
+<ul>
+<li>There are questions about whether fine-tuning is a real feature of the world.</li>
+<li>I think a response is needed if the life-permitting space of physically possible worlds is as small as claimed.</li>
+<li>I don’t like brute contingency, and brute necessity seems wrong for things as arbitrary as the values of constants.</li>
+<li>The multiverse hypothesis and the design hypothesis are roughly on par.
+<ul>
+<li>It is difficult to compare the two, given all the background knowledge that affects the prior probability of each theory.</li>
+<li>It is difficult to evaluate the probability of life on either hypothesis.</li>
+<li>There are independent arguments for theism, but no such arguments for a multiverse. In other words, theism is a unified explanation of a wide range of phenomena. For this reason, I find the theistic hypothesis to be a slightly better response than the multiverse hypothesis.</li>
+</ul></li>
+</ul>
+<p>It is increasingly clear that the various arguments for theism are intertwined. Before moving on to arguments from evil, I plan to spend more time on teleological and cosmological arguments such as the nomological arguments <span class="citation" data-cites="Hildebrand_2022 Cutter_2023">&nbsp;[<a href="#ref-Hildebrand_2022" role="doc-biblioref">2</a>,<a href="#ref-Cutter_2023" role="doc-biblioref">3</a>]</span>, arguments from psychophysical harmony <span class="citation" data-cites="Cutter_2022">&nbsp;[<a href="#ref-Cutter_2022" role="doc-biblioref">17</a>]</span>, arguments from the effectiveness of mathematics <span class="citation" data-cites="Wigner_1960">&nbsp;[<a href="#ref-Wigner_1960" role="doc-biblioref">1</a>]</span>, and the Thomistic cosmological argument recently defended by Edward Feser. Or I may skip to arguments from evil and come back to these at some point.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Wigner_1960" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">E. P. Wigner, <em>The Unreasonable Effectiveness of Mathematics in the Natural Sciences</em>, in <em>Mathematics and Science</em> (World Scientific, 1990), pp. 291–306.</div>
+</div>
+<div id="ref-Hildebrand_2022" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">T. Hildebrand and T. Metcalf, <em>The Nomological Argument for the Existence of God</em>, No<span>û</span>s <strong>56</strong>, 443 (2022).</div>
+</div>
+<div id="ref-Cutter_2023" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">B. Cutter and B. Saad, <em>The Problem of Nomological Harmony</em>, No<span>û</span>s (2023).</div>
+</div>
+<div id="ref-Barnes_2012" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">L. A. Barnes, <em>The Fine-Tuning of the Universe for Intelligent Life</em>, Publications of the Astronomical Society of Australia <strong>29</strong>, 529 (2012).</div>
+</div>
+<div id="ref-sep-fine-tuning" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">S. Friederich, <em><span>Fine-Tuning</span></em>, in <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, edited by E. N. Zalta, <span>S</span>ummer 2022 (<a href="https://plato.stanford.edu/archives/sum2022/entries/fine-tuning/" class="uri">https://plato.stanford.edu/archives/sum2022/entries/fine-tuning/</a>; Metaphysics Research Lab, Stanford University, 2022).</div>
+</div>
+<div id="ref-Albert_2001" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">D. Z. Albert, <em>Time and Chance</em> (American Association of Physics Teachers, 2001).</div>
+</div>
+<div id="ref-sep-statphys-statmech" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">R. Frigg and C. Werndl, <em><span class="nocase">Philosophy of Statistical Mechanics</span></em>, in <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, edited by E. N. Zalta and U. Nodelman, <span>S</span>ummer 2023 (<a href="https://plato.stanford.edu/archives/sum2023/entries/statphys-statmech/" class="uri">https://plato.stanford.edu/archives/sum2023/entries/statphys-statmech/</a>; Metaphysics Research Lab, Stanford University, 2023).</div>
+</div>
+<div id="ref-sep-time-thermo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">C. Callender, <em><span class="nocase">Thermodynamic Asymmetry in Time</span></em>, in <em>The <span>Stanford</span> Encyclopedia of Philosophy</em>, edited by E. N. Zalta, <span>S</span>ummer 2021 (<a href="https://plato.stanford.edu/archives/sum2021/entries/time-thermo/" class="uri">https://plato.stanford.edu/archives/sum2021/entries/time-thermo/</a>; Metaphysics Research Lab, Stanford University, 2021).</div>
+</div>
+<div id="ref-Earman_2006" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">J. Earman, <em>The <span>“Past Hypothesis”</span>: Not Even False</em>, Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics <strong>37</strong>, 399 (2006).</div>
+</div>
+<div id="ref-Wallace_2016" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">D. Wallace, <em>Probability and Irreversibility in Modern Statistical Mechanics: Classical and Quantum</em>, arXiv Preprint arXiv:2104.11223 (2016).</div>
+</div>
+<div id="ref-Wallace_2017" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">D. Wallace, <em>The Nature of the Past Hypothesis</em>, The Philosophy of Cosmology 486 (2017).</div>
+</div>
+<div id="ref-Robinson_2023" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline"><a href="https://www.youtube.com/watch?v=U6ZtmGIhIhU">R. Echardt, (2023)</a>.</div>
+</div>
+<div id="ref-Oppy_2006_arguing" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">G. Oppy, <em>Arguing about Gods</em> (Cambridge University Press, 2006).</div>
+</div>
+<div id="ref-Rasmussen_Leon_2019" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">J. Rasmussen and F. Leon, <em>Is God the Best Explanation of Things?</em> (Springer, 2019).</div>
+</div>
+<div id="ref-Wall" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">A. Wall, <em><a href="http://www.wall.org/~aron/blog/wp-content/uploads/2016/09/fine2.pdf">Explanations for Fine Tuning</a></em>, (n.d.).</div>
+</div>
+<div id="ref-Saad_2023" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">B. Saad, <em><a href="https://philpapers.org/rec/SAAFSM-2">Fine-Tuning Should Make Us More Confident That Other Universes Exist</a></em>, (n.d.).</div>
+</div>
+<div id="ref-Cutter_2022" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">B. Cutter and D. Crummett, <em>Psychophysical Harmony: A New Argument for Theism</em>, (2022).</div>
+</div>
+<div id="ref-CC_2018" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline"><a href="https://www.youtube.com/watch?v=U6ZtmGIhIhU">R. Echardt, (2023)</a>.</div>
+</div>
+<div id="ref-Kraay_2014" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">K. Kraay, <em>God and the Multiverse: Scientific, Philosophical, and Theological Perspectives</em> (Routledge, 2014).</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>On the other hand, all future theories could contain a nonzero number of fine-tuned parameters. Or future theories could predict a probability distribution for each parameter, rending the actual parameter values either very likely or very unlikely.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A uniform distribution seems appropriate given our ignorance, but who is to say the parameters were <em>actually</em> drawn from a uniform distribution?<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>If we knew the roll was fair, then given our background knowledge, it would be reasonable to suppose that somebody rolled the dice many times until the all-sixes configuration occurred. Without our background knowledge, we get the Inverse Gambler’s Fallacy.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>I think this is the <span class="math inline">\(10^{500}\)</span> number I always hear about.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>There is also some motivation from outside of physics, from the modal realism of David Lewis, but I find that view to be crazy.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

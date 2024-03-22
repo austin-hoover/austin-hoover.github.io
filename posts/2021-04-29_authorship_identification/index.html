@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.3.140">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,12 +20,11 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -50,20 +49,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -77,10 +104,11 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -104,13 +132,7 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -119,10 +141,8 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
@@ -135,38 +155,10 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -174,40 +166,40 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html"> 
-<span class="menu-text">Notes</span></a>
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -216,7 +208,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -281,15 +273,13 @@ window.Quarto = {
   </div>
   
 
-
 </header>
-
 
 <p>In this post, I’ll summarize a paper by John Houvardas and Efstathios Stamatatos titled <em>N-Gram Feature Selection for Authorship Identification</em><span class="citation" data-cites="Houvardas2006">&nbsp;[<a href="#ref-Houvardas2006" role="doc-biblioref">1</a>]</span>. The topic of the paper is <em>authorship identification</em>, that is, to identify the author of an unlabeled document given a list of possible authors and some sample of each author’s writing. I’ll first motivate the problem of authorship identification, then briefly introduce the relevant statistical methods, and finally, summarize and implement the methods in the paper.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="task.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 1. The authorship identification task.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 1. The authorship identification task.</figcaption><p></p>
 </figure>
 </div>
 <section id="a-brief-history-of-stylometry" class="level2">
@@ -298,7 +288,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Hamilton_and_Madison.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>Fig. 2. Alexander Hamilton (left) and James Madison (right). (Source: Wikipedia.)</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 2. Alexander Hamilton (left) and James Madison (right). (Source: Wikipedia.)</figcaption><p></p>
 </figure>
 </div>
 <p>There are a few ways one might go about resolving this dispute. One approach is to analyze the actual <em>content</em> of the text. For example, perhaps an essay draws from a reference with which only Madison was intimately familiar, or maybe an essay is similar to Hamilton’s previous work. This approach was used many times over the next 150 years, but perhaps the final word on the subject was by Adair, who in 1944 concluded that Madison likely wrote all 12 essays.</p>
@@ -311,7 +301,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Mendenhall_Fig2.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>Fig. 3. Distribution of word lengths in “Oliver Twist”. Each curve is for a different sample of 1000 words. (Source:<span class="citation" data-cites="Mendenhall1887">&nbsp;[<a href="#ref-Mendenhall1887" role="doc-biblioref">4</a>]</span>.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 3. Distribution of word lengths in “Oliver Twist”. Each curve is for a different sample of 1000 words. (Source:<span class="citation" data-cites="Mendenhall1887">&nbsp;[<a href="#ref-Mendenhall1887" role="doc-biblioref">4</a>]</span>.</figcaption><p></p>
 </figure>
 </div>
 <p>Mendenhall showed that these curves reveal similarities between different works by the same author. The use of these statistics for authorship identification was left for future work.</p>
@@ -323,7 +313,7 @@ f(k) \propto k^{-1}.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Cristelli_Fig1_big.png" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption>Fig. 4. National GDPs appear to be moving toward the prediction by Zipf’s Law (red line). (Source:<span class="citation" data-cites="Cristelli2012">&nbsp;[<a href="#ref-Cristelli2012" role="doc-biblioref">6</a>]</span>.)</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 4. National GDPs appear to be moving toward the prediction by Zipf’s Law (red line). (Source:<span class="citation" data-cites="Cristelli2012">&nbsp;[<a href="#ref-Cristelli2012" role="doc-biblioref">6</a>]</span>.)</figcaption><p></p>
 </figure>
 </div>
 <p>The success of Zipf’s Law was very encouraging and led to a flurry of new mathematical models. Stylometry reached a landmark case in the 1960s when researchers used the frequency distributions of short function words — words we don’t think about too much like “upon” or “therefore” — to support Adair’s conclusion that Madison wrote the 12 disputed Federalist Papers. At the end of the day, however, models created in the spirit of Zipf’s Law are probably doomed to fail. The “true” underlying model must be very complex due to its dependence on human psychology. There are now many algorithms available which instead build predictive models directly from data, and these can be readily applied to the problem of authorship identification. Here we focus on the use of the Support Vector Machine (SVM).</p>
@@ -342,7 +332,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="svm.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption>Fig. 5. Maximum margin separating plane. (Source: Wikipedia.)</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 5. Maximum margin separating plane. (Source: Wikipedia.)</figcaption><p></p>
 </figure>
 </div>
 <p><br></p>
@@ -352,8 +342,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 \frac{1}{2}|\mathbf{w}|^2 +  C\sum_{i=1}^{N}{\max\left[0, 1 - {t_i y(\mathbf{x}_i)}\right]}.
 \tag{3}\]</span></span></p>
 <p>where <span class="math inline">\(t_i\)</span> is the true class of point <span class="math inline">\(i\)</span> (<span class="math inline">\(\pm 1\)</span>) and <span class="math inline">\(C\)</span> is a positive constant. Correctly classified points don’t contribute anything to the sum since <span class="math inline">\(t_i y(\mathbf{x}_i)\)</span> will be greater than or equal to one. Let’s try this on non-linearly separable data sampled from two Gaussian distributions in 2D space. The Python package <a href="https://scikit-learn.org/stable/modules/svm.html">scikit-learn</a> has a user-friendly interface for the SVM implementation in <a href="https://www.csie.ntu.edu.tw/~cjlin/liblinear/">LIBLINEAR</a> which we use here.</p>
-<div id="cell-21" class="cell" data-tags="[]" data-execution_count="3">
-<details class="code-fold">
+<div class="cell" data-tags="[]" data-execution_count="3">
+<details>
 <summary>Imports</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> collections</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
@@ -372,8 +362,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-23" class="cell" data-tags="[]" data-execution_count="6">
-<details class="code-fold">
+<div class="cell" data-tags="[]" data-execution_count="6">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> padded_ranges(X, pad<span class="op">=</span><span class="fl">0.5</span>):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    xmin, ymin <span class="op">=</span> np.<span class="bu">min</span>(X, axis<span class="op">=</span><span class="dv">0</span>) <span class="op">-</span> pad</span>
@@ -430,7 +420,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_dec_boundary.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption>Fig. 6. An SVM decision boundary for a two-class data set. Each point is colored by its class.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 6. An SVM decision boundary for a two-class data set. Each point is colored by its class.</figcaption><p></p>
 </figure>
 </div>
 <p>The points are colored by their true classes, and the background is shaded according to the SVM prediction at each point. It can be important to try at least a few different values of <span class="math inline">\(C\)</span>, which determines the trade-off between correctly classifying all samples and maximizing the margin, and to observe the effect on the accuracy as well as the algorithm convergence. Parameters such as this one which change the algorithm behavior but aren’t optimized by the algorithm itself are commonly known as <em>hyperparameters</em>.</p>
@@ -438,8 +428,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <section id="kernel-trick" class="level3">
 <h3 class="anchored" data-anchor-id="kernel-trick">2.2. Kernel trick</h3>
 <p>In some cases the linear model is going to be bad; a frequently used example is “target” dataset.</p>
-<div id="cell-29" class="cell" data-tags="[]" data-execution_count="7">
-<details class="code-fold">
+<div class="cell" data-tags="[]" data-execution_count="7">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">400</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>r1 <span class="op">=</span> np.sqrt(np.random.uniform(<span class="fl">0.0</span>, <span class="fl">0.2</span>, size<span class="op">=</span>(n,)))</span>
@@ -462,15 +452,15 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./output_circles.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption>Fig. 7. Two-dimensional data set which no linear model can classify.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 7. Two-dimensional data set which no linear model can classify.</figcaption><p></p>
 </figure>
 </div>
 <p>A line won’t work; ideally, we would draw a circle around the inner cluster to split the data. The <a href="https://en.wikipedia.org/wiki/Kernel_method">kernel trick</a> can be used to alleviate this problem by performing a transformation to a higher dimensional space in which the data is linearly separable. For example, consider the transformation</p>
 <p><span id="eq-4"><span class="math display">\[
 (x_1, x_2) \rightarrow (x_1^2, x_2^2, \sqrt{2} x_1 x_2)
 \tag{4}\]</span></span></p>
-<div id="cell-33" class="cell" data-tags="[]" data-execution_count="8">
-<details class="code-fold">
+<div class="cell" data-tags="[]" data-execution_count="8">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x1, x2 <span class="op">=</span> X.T</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> x1<span class="op">**</span><span class="dv">2</span></span>
@@ -487,12 +477,12 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </details>
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_8.html" frameborder="0" allowfullscreen=""></iframe>
-<p>Fig. 8. Data after applying the nonlinear transformation in <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a>. This is an interactive plot.</p>
+<p>Fig. 8. Data after applying the nonlinear transformation in <a href="#eq-4">Equation&nbsp;4</a>. This is an interactive plot.</p>
 </div>
 </div>
 <p>It’s clear from rotating this plot that the transformed data can be split with a 2D plane. This need not be the transformation used by the SVM — in fact, many transformations can be used — but it demonstrates the idea. The linear boundary in the transformed space can then be transformed into a nonlinear boundary in the original space. One way to plot this boundary is to predict a grid of points, then make a contour plot (the boundary is shown in grey).</p>
-<div id="cell-35" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> svm.SVC(kernel<span class="op">=</span><span class="st">'rbf'</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>clf.fit(X, y)</span>
@@ -507,7 +497,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_circles_dec_region.png" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption>Fig. 9. Result of SVM with RBF kernel</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 9. Result of SVM with RBF kernel</figcaption><p></p>
 </figure>
 </div>
 <p>There are still several advantages to the linear SVM. First, it is much faster to train, and second, the kernel trick may be unnecessary for high-dimensional data. As we’ll see, text data can involve a large number of very high-dimensional samples, so we’ll be sticking with linear kernels.</p>
@@ -515,8 +505,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <section id="multi-class-svm" class="level3">
 <h3 class="anchored" data-anchor-id="multi-class-svm">2.3. Multi-class SVM</h3>
 <p>A binary classifier can also be used for multi-class problems. Here we use the <em>one-versus-rest</em> (OVR) approach. Suppose we had <span class="math inline">\(N\)</span> classes denoted by <span class="math inline">\(c_1\)</span>, <span class="math inline">\(c_2\)</span> … <span class="math inline">\(c_N\)</span>. In the OVR approach, we train <span class="math inline">\(N\)</span> different classifiers; the ith classifier <span class="math inline">\(L_i\)</span> tries to split the data into two parts: <span class="math inline">\(c_i\)</span> and not <span class="math inline">\(c_i\)</span>. Then we observe a new point and ask each classifier <span class="math inline">\(L_i\)</span> how confident it is that the point belongs to <span class="math inline">\(c_i\)</span>. The point is assigned to the class with the highest score. We can extend our previous example to three Gaussian distributions to get a sense of how the decision boundaries are formed.</p>
-<div id="cell-41" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create three Gaussian distributions</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">0</span>)</span>
@@ -551,7 +541,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_svm_multiclass.png" class="img-fluid figure-img" style="width:55.0%"></p>
-<figcaption>Fig. 10. Linear SVM trained on three-class data.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 10. Linear SVM trained on three-class data.</figcaption><p></p>
 </figure>
 </div>
 <p>The same idea holds with more classes and dimensions. Notice that there are some regions which are claimed by multiple classifiers, so it’s not a perfect method.</p>
@@ -566,11 +556,11 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="files.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 11. Organization of RCV1 data set.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 11. Organization of RCV1 data set.</figcaption><p></p>
 </figure>
 </div>
 <p>There are plenty of functions available to load the data and to extract features from it, but I’ll do everything manually just for fun. To load the data, let’s first create two lists of strings, <code>texts_train</code> and <code>texts_test</code>, corresponding to the 2500 training and testing documents. The class id and author name for each document are also stored.</p>
-<div id="cell-51" class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_files(outer_path):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    texts, class_ids, class_names <span class="op">=</span> [], [], []</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> class_id, folder <span class="kw">in</span> <span class="bu">enumerate</span>(<span class="bu">sorted</span>(os.listdir(outer_path))):</span>
@@ -588,84 +578,83 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>texts_train, y_train, authors_train <span class="op">=</span> load_files(<span class="st">'reuters_data/train'</span>)</span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>texts_test, y_test, authors_test <span class="op">=</span> load_files(<span class="st">'reuters_data/test'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-52" class="cell" data-execution_count="5">
+<div class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
-<div>
 
 
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe table table-sm table-striped" data-border="1">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Author Name</th>
-<th data-quarto-table-cell-role="th">Author ID</th>
-<th data-quarto-table-cell-role="th">Training Text</th>
+<th></th>
+<th>Author Name</th>
+<th>Author ID</th>
+<th>Training Text</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
+<th>0</th>
 <td>AaronPressman</td>
 <td>0</td>
 <td>A_group_of_leading_trademark_specialists_plans...</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
+<th>1</th>
 <td>AaronPressman</td>
 <td>0</td>
 <td>Prospects_for_comprehensive_reform_of_U.S._ban...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
+<th>2</th>
 <td>AaronPressman</td>
 <td>0</td>
 <td>An_influential_economic_research_group_is_prep...</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
+<th>3</th>
 <td>AaronPressman</td>
 <td>0</td>
 <td>The_Federal_Communications_Commission_proposed...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
+<th>4</th>
 <td>AaronPressman</td>
 <td>0</td>
 <td>An_international_task_force_charged_with_resol...</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
+<th>...</th>
 <td>...</td>
 <td>...</td>
 <td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2495</td>
+<th>2495</th>
 <td>WilliamKazer</td>
 <td>49</td>
 <td>China_could_list_more_railway_companies_and_is...</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2496</td>
+<th>2496</th>
 <td>WilliamKazer</td>
 <td>49</td>
 <td>The_choice_of_Singapore_for_the_listing_of_Chi...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2497</td>
+<th>2497</th>
 <td>WilliamKazer</td>
 <td>49</td>
 <td>China_ushered_in_1997,_a_year_it_has_hailed_as...</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2498</td>
+<th>2498</th>
 <td>WilliamKazer</td>
 <td>49</td>
 <td>China_on_Tuesday_announced_a_ban_on_poultry_an...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2499</td>
+<th>2499</th>
 <td>WilliamKazer</td>
 <td>49</td>
 <td>China's_leaders_have_agreed_on_a_need_to_stimu...</td>
@@ -677,10 +666,9 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </div>
 </div>
 </div>
-</div>
 <p>The following histogram shows the distribution of document lengths in the training set; it’s expected that the short average document length will greatly increases the difficulty of the classification task relative to longer works such as books.</p>
-<div id="cell-55" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>word_counts <span class="op">=</span> [<span class="bu">len</span>(text) <span class="cf">for</span> text <span class="kw">in</span> texts_train]</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -693,14 +681,14 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_training_docs_lengths.png" class="img-fluid figure-img" style="width:67.0%"></p>
-<figcaption>Fig. 11. Distribution of document lengths in training set.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 11. Distribution of document lengths in training set.</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="n-grams" class="level3">
 <h3 class="anchored" data-anchor-id="n-grams">3.2. N-grams</h3>
 <p>An obvious feature candidate is word frequency; a less obvious one is <em>n-gram</em> frequency. A character n-gram is a string of length n.&nbsp;For example, the 3-grams contained in <em>red_bike!</em> are <em>red</em>, <em>ed_</em>, <em>d_b</em>, *_bi<em>, </em>bik<em>, </em>ike<em>, </em>ke!*. These shorter strings may be useful because they capture different aspects of style such as the use of punctuation or certain prefixes/suffixes. They also remove any ambiguities in word extraction and work for all languages. To use these features in the SVM classifier, we need to create a feature matrix <span class="math inline">\(X\)</span> where <span class="math inline">\(X_{ij}\)</span> is the frequency of the jth n-gram in the ith document. Thus, each document is represented as a vector in <span class="math inline">\(k\)</span> dimensional space, where <span class="math inline">\(k\)</span> is the number of unique n-grams selected from the training documents. We’ll also normalize each vector so that all points are mapped onto the surface of the <span class="math inline">\(k\)</span>-dimensional unit sphere while preserving the angles between the vectors; this should help the SVM performance a bit.</p>
-<div id="cell-60" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_ngrams(text, n):</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [text[i <span class="op">-</span> n : i] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n, <span class="bu">len</span>(text) <span class="op">+</span> <span class="dv">1</span>)]</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -754,7 +742,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> X</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we need to decide which value(s) of n to use as features. Let’s look at the distribution of n-grams in the training documents.</p>
-<div id="cell-62" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>extractor <span class="op">=</span> NgramExtractor(ngram_range<span class="op">=</span>(<span class="dv">1</span>, <span class="dv">15</span>))</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>extractor.build_vocab(texts_train)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>len_counts <span class="op">=</span> collections.Counter([<span class="bu">len</span>(ngram) <span class="cf">for</span> ngram <span class="kw">in</span> extractor.vocab])</span>
@@ -767,18 +755,18 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>ax.grid(axis<span class="op">=</span><span class="st">'x'</span>)</span>
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>plt.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-63" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>fig.save(<span class="st">'./_output_n_gram_count.png'</span>, dpi<span class="op">=</span><span class="dv">250</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_n_gram_count.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption>Fig. 12. Distribution of character n-grams in the training text.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 12. Distribution of character n-grams in the training text.</figcaption><p></p>
 </figure>
 </div>
 <p>The total number of n-grams with 1 <span class="math inline">\(\le\)</span>n <span class="math inline">\(\le\)</span> 15 is about 31 million; training a classifier on data with this number of dimensions is probably infeasible, and even more so on a larger data set. Previous studies have had success with fixing the value of n to be either 3, 4, or 5, so the authors chose to restrict their attention to these values. Their new idea was to use all n-grams in the range 3 <span class="math inline">\(\le\)</span>n <span class="math inline">\(\le\)</span> 5. This leaves a few hundred thousand features.</p>
 <p>The next section will discuss statistical methods to prune the features; for now, though, we’ll implement the simple method of keeping the <span class="math inline">\(k\)</span> most frequent across all the training documents. As long as this doesn’t affect the accuracy too much, we reap the benefits of a reduction in computational time and the ability to fix the feature space dimensionality for the comparison of different feature types. To see why many low-frequency terms may be unimportant, suppose one of the authors wrote a single article about sharks in the training set. The term “shark” would have a small global frequency and be very useful in the training set since no other writers write about sharks, but it’s probably a good idea to discard it since it is unlikely to appear in the testing set. We must be careful, however, because some low-frequency terms could be important. These are probably terms that an author uses rarely but consistently over time. Maybe they like to use “incredible” as an adjective; the global frequency of “incred” would be much less than, say, “that_”, but it’s valuable because its frequency distribution will likely be the same in future writing. A quick test on our data set shows that <span class="math inline">\(k\)</span> = 15,000 is a good number. Let’s try this out on the 15,000 most frequent 3-grams.</p>
-<div id="cell-66" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ngram_range <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">3</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>max_features <span class="op">=</span> <span class="dv">15000</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>norm_rows <span class="op">=</span> <span class="va">True</span></span>
@@ -790,8 +778,8 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 </div>
 <p>Here are some of the values in <code>X_train</code>. The columns have been sorted by descending frequency from left to right.</p>
 <p>We can now feed this array to the SVM and make predictions on the testing data. I’ll keep the <span class="math inline">\(C\)</span> parameter fixed at <span class="math inline">\(C = 1\)</span> in all cases since this is what is done in the paper (I tried a few different values of <span class="math inline">\(C\)</span> and there wasn’t a large effect on the accuracy). Here is the confusion matrix obtained after training and testing:</p>
-<div id="cell-70" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> svm.LinearSVC(C<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>clf.fit(X_train, y_train)</span>
@@ -808,7 +796,7 @@ y(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0 = 0
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_confusion_matrix.png" class="img-fluid figure-img" style="width:45.0%"></p>
-<figcaption>Fig. 13. Confusion matrix for linear SVM after training. The total accuracy is 70%.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 13. Confusion matrix for linear SVM after training. The total accuracy is 70%.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -824,7 +812,7 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 \sum_{i=1}^{m}p(c_i) \log p(c_i).
 \tag{5}\]</span></span></p>
 <p>The probability of choosing term <span class="math inline">\(t\)</span> out of all terms in the corpus is given by <span class="math inline">\(p(t)\)</span>, and <span class="math inline">\(p(t) + p(\bar{t}) = 1\)</span>. Similarly, <span class="math inline">\(p(c_i)\)</span> is the probability that a randomly chosen document belongs to class <span class="math inline">\(c_i\)</span>, and <span class="math inline">\(p(c_i) + p(\bar{c_i}) = 1\)</span>. The probability that a document belongs to <span class="math inline">\(c_i\)</span> given that it contains <span class="math inline">\(t\)</span> is <span class="math inline">\(p(c_i | t)\)</span>, or <span class="math inline">\(p(c_i | \bar{t})\)</span> if it doesn’t contain <span class="math inline">\(t\)</span>. The strategy is then to keep the terms with the highest information gain scores.</p>
-<div id="cell-77" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> InfoGainSelector:</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
@@ -856,8 +844,8 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 <span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> X[:, <span class="va">self</span>.idx[:k]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll now compare 4 sets of 15,000 features: 3-grams, 4-grams, 5-grams, and equal parts 3/4/5-grams, each time using IG to select the best <span class="math inline">\(k\)</span> features and plotting the accuracy vs.&nbsp;<span class="math inline">\(k\)</span>. I’ll start from <span class="math inline">\(k\)</span> = 1 to 200.</p>
-<div id="cell-79" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>extractor <span class="op">=</span> NgramExtractor()</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>selector <span class="op">=</span> InfoGainSelector()</span>
@@ -909,13 +897,13 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_compare_acc_ig1.png" class="img-fluid figure-img" style="width:42.0%"></p>
-<figcaption>Fig. 14. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(1 \le k \le 200\)</span></figcaption>
+<p></p><figcaption class="figure-caption">Fig. 14. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(1 \le k \le 200\)</span></figcaption><p></p>
 </figure>
 </div>
 <p>The accuracy at <span class="math inline">\(k\)</span> = 1 is 0.04, so using the feature with the highest IG score is actually twice as effective as random guessing! By the end of the plot 3-grams and variable length n-grams have taken a clear leaad, with 5-grams in last place. The performance gap between the different n-grams also appears to be growing with <span class="math inline">\(k\)</span>.</p>
 <p>The next region we’ll look at is <span class="math inline">\(200 \le k \le 2000\)</span>.</p>
-<div id="cell-84" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>kmin, kmax, kstep <span class="op">=</span> (<span class="dv">200</span>, <span class="dv">2000</span>, <span class="dv">200</span>)</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>accuracies <span class="op">=</span> compare_acc_ig(ngram_ranges, kmin, kmax, kstep)</span>
@@ -926,12 +914,12 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_compare_acc_ig2.png" class="img-fluid figure-img" style="width:42.0%"></p>
-<figcaption>Fig. 15. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(200 \le k \le 2000\)</span></figcaption>
+<p></p><figcaption class="figure-caption">Fig. 15. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(200 \le k \le 2000\)</span></figcaption><p></p>
 </figure>
 </div>
 <p>Now the gap is decreasing as we approach an upper performance limit at higher <span class="math inline">\(k\)</span>, especially for 3-grams. We’ll now look at the region which is plotted in the paper: <span class="math inline">\(2,000 \le k \le 10,000\)</span>.</p>
-<div id="cell-88" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>kmin, kmax, kstep <span class="op">=</span> (<span class="dv">2000</span>, <span class="dv">10000</span>, <span class="dv">1000</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>accuracies <span class="op">=</span> compare_acc_ig(ngram_ranges, kmin, kmax, kstep)</span>
@@ -942,14 +930,14 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_compare_acc_ig3.png" class="img-fluid figure-img" style="width:42.0%"></p>
-<figcaption>Fig. 16. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(2000 \le k \le 10000\)</span></figcaption>
+<p></p><figcaption class="figure-caption">Fig. 16. Information Gain (IG) accuracy vs.&nbsp;number of features (<span class="math inline">\(k\)</span>) for <span class="math inline">\(2000 \le k \le 10000\)</span></figcaption><p></p>
 </figure>
 </div>
 <p>I noticed that 5-grams make a big jump from last place to first place. I’m not sure if I have any deep insights into this behavior, but it’s interesting that the best n-gram to choose depends on the number of features selected. Now, I should compare with Fig. 1 from the paper:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="stamatatos_fig1.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption>Fig. 17. Authorship identification results using information gain for feature selection. (From<span class="citation" data-cites="Houvardas2006">&nbsp;[<a href="#ref-Houvardas2006" role="doc-biblioref">1</a>]</span>.)</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 17. Authorship identification results using information gain for feature selection. (From<span class="citation" data-cites="Houvardas2006">&nbsp;[<a href="#ref-Houvardas2006" role="doc-biblioref">1</a>]</span>.)</figcaption><p></p>
 </figure>
 </div>
 <p>The first difference is the maximum achieved accuracy which is a few percentage points higher. The second difference is that the authors found 3-grams to be worst at low <span class="math inline">\(k\)</span> and best at high <span class="math inline">\(k\)</span>.and the opposite for 5-grams. I’ll leave this as an open problem.</p>
@@ -957,8 +945,8 @@ p(\bar{t}) \sum_{i=1}^{m}p(c_i | \bar{t}) \log p(c_i | \bar{t}) -
 <section id="localmaxs-algorithm" class="level4">
 <h4 class="anchored" data-anchor-id="localmaxs-algorithm">3.3.2. LocalMaxs algorithm</h4>
 <p>Let’s look at the top IG scoring n-grams from from the variable-length feature set.</p>
-<div id="cell-96" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>extractor.set_ngram_range((<span class="dv">3</span>, <span class="dv">5</span>))</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>extractor.build_vocab(texts_train, max_features<span class="op">=</span><span class="dv">5000</span>)</span>
@@ -993,7 +981,7 @@ SCP((c_1 \dots c_{n-1})c_n) = \frac{p(c_1 \dots c_n)^2}{p(c_1 \dots c_{n-1})p(c_
 FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1} p(c_1 \dots c_i)p(c_{i+1} \dots c_n)}.
 \tag{9}\]</span></span></p>
 <p>In summary, LocalMaxs loops through every n-gram in the vocabulary, computes the glue as <span class="math inline">\(g(C) = FairSCP(C)\)</span>, and keeps the n-gram if Eq. (6) is satisfied. It differs from IG selection in that the features are not ranked, so the number of selected features is completely determined by the text. The method is implemented below.</p>
-<div id="cell-98" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> antecedents(ngram):</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [ngram[:<span class="op">-</span><span class="dv">1</span>], ngram[<span class="dv">1</span>:]]</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1064,7 +1052,7 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 <span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> P<span class="op">**</span><span class="dv">2</span> <span class="op">/</span> Avp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The first thing we should do is check the the glue of the derivative n-grams <em>the</em>, *_the*, etc.</p>
-<div id="cell-100" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>extractor <span class="op">=</span> LocalMaxsExtractor(ngram_range<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">5</span>))</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>extractor.build_vocab(texts_train)</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ngram <span class="kw">in</span> [<span class="st">'the'</span>, <span class="st">'_the'</span>, <span class="st">'the_'</span>, <span class="st">'_the_'</span>]:</span>
@@ -1074,8 +1062,8 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'</span><span class="sc">{:&lt;5}</span><span class="st">: glue = </span><span class="sc">{:.4f}</span><span class="st">, selected = </span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(ngram, glue, selected))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>It seems to be working correctly. Now we’d like to compare the performance to IG. There’s no way to directly compare since LocalMaxs doesn’t rank features; however, it’s possible to vary the size of the initial set of features from which LocalMaxs makes its selections. Below, this initial size is varied from 3,000 to 24,000 using equal parts 3/4/5 grams as features.</p>
-<div id="cell-102" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>lm_extractor <span class="op">=</span> LocalMaxsExtractor(ngram_range<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">5</span>))</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> svm.LinearSVC(C<span class="op">=</span><span class="dv">1</span>)</span>
@@ -1120,12 +1108,12 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./_output_localmaxs_vs_ig.png" class="img-fluid figure-img" style="width:55.0%"></p>
-<figcaption>Fig. 18. IG vs.&nbsp;LocalMaxs feature selection for 3/4/5-grams.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 18. IG vs.&nbsp;LocalMaxs feature selection for 3/4/5-grams.</figcaption><p></p>
 </figure>
 </div>
 <p>As you can see, LocalMaxs achieves a higher accuracy with the same number of features. The neat thing is that the vocabularies are totally different; for example, at the last data point, only about 15% of the n-grams are found in both sets! Let’s count the number of related n-grams in the two sets, where x is related to y if x is an antecedent or successor of y.</p>
-<div id="cell-106" class="cell">
-<details class="code-fold">
+<div class="cell">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_related(ngrams):</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
@@ -1152,7 +1140,7 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="stamatatos_fig2.png" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption>Results of the proposed method using only variable-length n-grams and variable-length n-grams plus words longer than 5 characters. (Source:<span class="citation" data-cites="Houvardas2006">&nbsp;[<a href="#ref-Houvardas2006" role="doc-biblioref">1</a>]</span>.)</figcaption>
+<p></p><figcaption class="figure-caption">Results of the proposed method using only variable-length n-grams and variable-length n-grams plus words longer than 5 characters. (Source:<span class="citation" data-cites="Houvardas2006">&nbsp;[<a href="#ref-Houvardas2006" role="doc-biblioref">1</a>]</span>.)</figcaption><p></p>
 </figure>
 </div>
 <p>For some reason, their implementation extracted way more features than mine did. I don’t have access to the author’s code, and I couldn’t find any implementation of LocalMaxs online, so it’s hard for me to say what’s happening. At least my implementation exhibits some expected behavior (less related terms, better performance at lower feature numbers).</p>
@@ -1167,32 +1155,32 @@ FairSCP(c_1 \dots c_n) = \frac{p(c_1 \dots c_n)^2}{\frac{1}{n-1}\sum_{i=1}^{n-1}
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-Houvardas2006" class="csl-entry" role="listitem">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Houvardas2006" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">J. Houvardas and E. Stamatatos, <em>N-Gram Feature Selection for Authorship Identification</em>, in <em>Artificial Intelligence: Methodology, Systems, and Applications</em>, edited by J. Euzenat and J. Domingue (Springer Berlin Heidelberg, Berlin, Heidelberg, 2006), pp. 77–86.</div>
 </div>
-<div id="ref-Adair1944" class="csl-entry" role="listitem">
+<div id="ref-Adair1944" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">A. Douglass, <em>The Authorship of the Disputed Federalist Papers</em>, The William and Mary Quarterly <strong>1</strong>, 97 (1944).</div>
 </div>
-<div id="ref-Holmes1998" class="csl-entry" role="listitem">
+<div id="ref-Holmes1998" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">D. Holmes, <em>The Evolution of Stylometry in Humanities Scholarship</em>, Literary and Linguistic Computing <strong>13</strong>, 111 (1998).</div>
 </div>
-<div id="ref-Mendenhall1887" class="csl-entry" role="listitem">
+<div id="ref-Mendenhall1887" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[4] </div><div class="csl-right-inline">T. C. Mendenhall, <em><a href="https://doi.org/10.1126/science.ns-9.214S.237">THE CHARACTERISTIC CURVES OF COMPOSITION</a></em>, Science <strong>ns-9</strong>, 237 (1887).</div>
 </div>
-<div id="ref-Piantadosi2014" class="csl-entry" role="listitem">
+<div id="ref-Piantadosi2014" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[5] </div><div class="csl-right-inline">S. T. Piantadosi, <em><a href="https://doi.org/10.3758/s13423-014-0585-6">Zipf’s Word Frequency Law in Natural Language: A Critical Review and Future Directions</a></em>, Psychon Bull Rev <strong>21</strong>, 1112 (2014).</div>
 </div>
-<div id="ref-Cristelli2012" class="csl-entry" role="listitem">
+<div id="ref-Cristelli2012" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[6] </div><div class="csl-right-inline">M. Cristelli, M. Batty, and L. Pietronero, <em><a href="https://doi.org/10.1038/srep00812">There Is More Than a Power Law in Zipf</a></em>, Sci Rep <strong>2</strong>, (2012).</div>
 </div>
-<div id="ref-Bishop2006" class="csl-entry" role="listitem">
+<div id="ref-Bishop2006" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[7] </div><div class="csl-right-inline">C. M. Bishop, <em>Pattern Recognition and Machine Learning</em> (Springer, 2006).</div>
 </div>
-<div id="ref-Yang1997" class="csl-entry" role="listitem">
+<div id="ref-Yang1997" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">Y. Yang and J. O. Pedersen, <em>A Comparative Study on Feature Selection in Text Categorization</em>, in <em>ICML</em> (1997).</div>
 </div>
-<div id="ref-Silva2009" class="csl-entry" role="listitem">
+<div id="ref-Silva2009" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[9] </div><div class="csl-right-inline">J. Silva, <em>A Local Maxima Method and a Fair Dispersion Normalization for Extracting Multi-Word Units from Corpora</em>, in (2009).</div>
 </div>
 </div></section></div></main> <!-- /main -->
@@ -1237,33 +1225,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1332,15 +1293,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1367,23 +1326,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -1419,9 +1364,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1431,17 +1377,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1454,125 +1391,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1616,7 +1434,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1642,32 +1459,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1730,7 +1521,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-
 
 
 

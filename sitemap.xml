@@ -1,107 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://austin-hoover.github.io/notes/index.html</loc>
-    <lastmod>2023-07-10T13:07:23.350Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/notes/papers/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/notes/papers/test2.html</loc>
-    <lastmod>2023-07-10T13:01:16.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/publications/index.html</loc>
-    <lastmod>2024-03-20T00:14:28.447Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-01-21_parametric_oscillators/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-04-29_authorship_identification/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-07-05_ontological_arguments/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.421Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2022-02-11_injection_figures/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.443Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2023-07-10_fine_tuning/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.499Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-02-22_PIC/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.423Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-05-27_painting_a_particle_beam/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.419Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/posts/2021-05-13_matched_envelope/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.418Z</lastmod>
-  </url>
-  <url>
     <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2024-03-20T15:49:54.741Z</lastmod>
+    <lastmod>2024-03-22T01:56:21.176Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2023-07-09_biological_design_arguments/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.499Z</lastmod>
+    <lastmod>2024-03-22T01:56:21.912Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-05-13_matched_envelope/index.html</loc>
+    <lastmod>2024-03-22T01:56:23.376Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2021-09-15_kalam_cosmological_arguments/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.423Z</lastmod>
+    <lastmod>2024-03-22T01:56:24.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-05-27_painting_a_particle_beam/index.html</loc>
+    <lastmod>2024-03-22T01:56:25.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html</loc>
+    <lastmod>2024-03-22T01:56:26.587Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.500Z</lastmod>
+    <lastmod>2024-03-22T01:56:27.307Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-02-22_PIC/index.html</loc>
+    <lastmod>2024-03-22T01:56:28.321Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2021-07-01_space_charge_instabilities/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.420Z</lastmod>
+    <lastmod>2024-03-22T01:56:28.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2023-07-10_fine_tuning/index.html</loc>
+    <lastmod>2024-03-22T01:56:29.688Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2022-03-22_leibnizian_cosmological_arguments/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.459Z</lastmod>
+    <lastmod>2024-03-22T01:56:30.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2022-02-11_injection_figures/index.html</loc>
+    <lastmod>2024-03-22T01:56:31.603Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2021-03-28_nonlinear_resonances/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.417Z</lastmod>
+    <lastmod>2024-03-22T01:56:32.537Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-07-05_ontological_arguments/index.html</loc>
+    <lastmod>2024-03-22T01:56:33.077Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2021-06-12_arguing_about_gods/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.420Z</lastmod>
+    <lastmod>2024-03-22T01:56:33.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-04-29_authorship_identification/index.html</loc>
+    <lastmod>2024-03-22T01:56:35.672Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2021-01-25_coupled_parametric_oscillators/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.406Z</lastmod>
+    <lastmod>2024-03-22T01:56:36.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/posts/2021-01-21_parametric_oscillators/index.html</loc>
+    <lastmod>2024-03-22T01:56:37.313Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/posts/2023-05-28_BTF/index.html</loc>
-    <lastmod>2023-07-10T13:01:16.498Z</lastmod>
+    <lastmod>2024-03-22T01:56:38.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/publications/index.html</loc>
+    <lastmod>2024-03-22T01:56:38.502Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2024-03-20T00:01:26.989Z</lastmod>
+    <lastmod>2024-03-22T01:56:38.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/notes/papers/test2.html</loc>
+    <lastmod>2024-03-22T01:56:39.209Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/notes/papers/test1.html</loc>
-    <lastmod>2023-07-10T13:01:16.405Z</lastmod>
+    <lastmod>2024-03-22T01:56:39.521Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/notes/papers/index.html</loc>
+    <lastmod>2024-03-22T01:56:39.868Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/notes/books/index.html</loc>
-    <lastmod>2023-07-10T13:07:26.825Z</lastmod>
+    <lastmod>2024-03-22T01:56:40.624Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/notes/index.html</loc>
+    <lastmod>2024-03-22T01:56:41.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/notes/travel/2023-07-04_charleston.html</loc>
+    <lastmod>2024-03-22T01:56:41.684Z</lastmod>
   </url>
 </urlset>
