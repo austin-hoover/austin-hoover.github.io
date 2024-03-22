@@ -1,5 +1,6 @@
 ---
 title: "Research"
+toc: true
 ---
  
 High-power hadron accelerators play pivotal roles in material science, nuclear energy, and particle physics. I study the dynamics of the intense beams produced by these machines. I'm also interested in diagnostic techniques such as phase space tomography. Below are short descriptions of some projections I've worked on. <br>
