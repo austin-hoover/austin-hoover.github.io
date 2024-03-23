@@ -1,0 +1,25 @@
+---
+title: High Brightness Workshop 2023
+date: '2024-03-23'
+author: Austin Hoover
+categories:
+  - accelerators
+  - conferences
+draft: true
+---
+
+I gave a talk at the Workshop on High-Brightness and High-Intensity Hadron Beams (HB) a few months ago at CERN. The workshop happens every two years and is now closer to a conference. There were around 200 attendees from the USA, Korea, China, UK, Germany, Italy, France, and Switzerland. It was a packed [schedule](https://indico.cern.ch/event/1138716/timetable/#20231009.detailed), with talks running from 9 AM to 7 PM. 
+
+
+## Hello there this is a section
+
+*Beam dynamics in rings* **Beam dynamics in rings** alksjflksjdfa
+
+1. Beam dyanmics in rings*: circular accelerators
+2. beam dynamics in linacs
+3. accelerator systems
+
+accelerator systems, operations and comissioning, and beam diagnostics. There are many interesting problems in ring dyanmics, so that was the biggest section.   
+
+
+

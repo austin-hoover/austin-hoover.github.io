@@ -11,7 +11,7 @@ website:
             - text: "Publications"
               href: ./publications/index.qmd
             - text: "Blog"
-              href: ./blog/index.qmd
+              href: ./posts/index.qmd
             - text: "Notes"
               href: ./notes/index.qmd
     sidebar:
