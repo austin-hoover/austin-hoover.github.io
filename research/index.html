@@ -81,7 +81,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,7 +107,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/index.html"> 
+    <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -126,17 +126,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#high-dimensional-phase-space-measurements-and-beam-halo-formation" id="toc-high-dimensional-phase-space-measurements-and-beam-halo-formation" class="nav-link active" data-scroll-target="#high-dimensional-phase-space-measurements-and-beam-halo-formation">High-dimensional phase space measurements and beam halo formation</a></li>
-  <li><a href="#phase-space-tomography" id="toc-phase-space-tomography" class="nav-link" data-scroll-target="#phase-space-tomography">Phase space tomography</a></li>
-  <li><a href="#phase-space-painting-and-beam-dynamics-in-rings" id="toc-phase-space-painting-and-beam-dynamics-in-rings" class="nav-link" data-scroll-target="#phase-space-painting-and-beam-dynamics-in-rings">Phase space painting and beam dynamics in rings</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
@@ -164,7 +154,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="high-dimensional-phase-space-measurements-and-beam-halo-formation">High-dimensional phase space measurements and beam halo formation</h2>
 <p>Charged particle beams respond to external forces (like magnets) and internal forces (from the beam’s self-generated electric field), also called <em>space charge</em> forces. These combined effects drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is so faint that it barely influences the core and is invisible in typical measurements; however, it places hard constraints on the beam power. Halo particles produce radiation during unintended collisions before reaching their target. The lost beam power must remain below one watt per meter to keep radiation levels safe; this fractional loss corresponds to one out of every million particles in a one-megawatt beam. Current machines operate near the one-part-per-million limit, but losses scale with the intensity. Ten- or hundred-megawatt accelerators may not be possible without halo-level control.</p>
 <p>Halo formation is challenging to predict because of its sensitivity to model parameters. In particular, we typically do not know the initial particle distribution in six-dimensional (6D) position-momentum space (phase space). We’re using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a one-to-one replica of the front end of the SNS linac, equipped to measure the input 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark PIC simulation codes at a new level of detail and better understand halo formation processes. Fig. 1 shows typical measurement data.</p>
-<p><br></p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -177,7 +166,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <section id="phase-space-tomography" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="phase-space-tomography">Phase space tomography</h2>
 <p>Direct 6D phase space distributions take a long time (24 hours) and are only possible at low energies. In other cases, we can only measure projections of the distribution onto position space. For example, we can record the 1D density by scanning a wire across the beam. Performing such measurements at different locations constrains the beam’s phase space distribution. However, it is often the case that more than one distribution is consistent with data. The same inverse problem is encountered in computed tomography (CT). Phase space tomography can be more challenging because the distribution has four or six dimensions while the measurements have one our two. I’m studying methods to improve high-dimensional phase space tomography, particularly maximum-entropy methods.</p>
-<p><br></p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
