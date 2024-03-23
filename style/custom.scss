@@ -18,6 +18,9 @@ $figure-caption-font-size: 15.25px !important;
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500 !important;
 }
+h2 {
+    padding-top: 0.5em;
+}
 
 // Code blocks
 pre, code {
