@@ -6,13 +6,14 @@
 
 
 /*-- scss:defaults --*/
-$navbar-bg: rgb(50, 50, 50);
+$navbar-bg: rgb(51, 50, 50);
 $figure-caption-color: rgb(170, 170, 170) !important;
 
 
 // /*-- scss:rules --*/
 p, li { 
-    color: rgb(10, 10, 10) !important;
+    // color: rgb(10, 10, 10) !important;
+    color: black !important;
 }
 h1, h2, h3, h4, h5, h6, h7 {
     color: black !important;    

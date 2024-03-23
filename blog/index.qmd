@@ -3,7 +3,7 @@ title: "Blog"
 listing:
     contents: .
     sort: "date desc"
-    date-format: YYYY-MM-DD
+    date-format: YYYY‑MM‑DD
     table-hover: true
     type: table
     fields: [title, date]

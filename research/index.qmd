@@ -11,7 +11,7 @@ Charged particle beams respond to external forces (like magnets) and internal fo
 
 Halo formation is challenging to predict because of its sensitivity to model parameters. In particular, we typically do not know the initial particle distribution in six-dimensional (6D) position-momentum space (phase space). We're using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) (SNS) to address this problem on a small scale. The BTF is a one-to-one replica of the front end of the SNS linac, equipped to measure the input 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark PIC simulation codes at a new level of detail and better understand halo formation processes. Fig. 1 shows typical measurement data.
 
-<br>
+
 
 :::{.column-body}
 ![Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF.](./files/fig13.png)
@@ -21,8 +21,6 @@ Halo formation is challenging to predict because of its sensitivity to model par
 ## Phase space tomography
 
 Direct 6D phase space distributions take a long time (24 hours) and are only possible at low energies. In other cases, we can only measure projections of the distribution onto position space. For example, we can record the 1D density by scanning a wire across the beam. Performing such measurements at different locations constrains the beam's phase space distribution. However, it is often the case that more than one distribution is consistent with data. The same inverse problem is encountered in computed tomography (CT). Phase space tomography can be more challenging because the distribution has four or six dimensions while the measurements have one our two. I'm studying methods to improve high-dimensional phase space tomography, particularly maximum-entropy methods.
-
-<br>
 
 :::{.column-body}
 ![Fig. 2. Entropy maximization (MENT) is a conservative approach to inverse problems.](./files/fig_ment_swissroll.png)

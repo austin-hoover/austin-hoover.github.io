@@ -11,10 +11,9 @@ execute:
     enabled: false
     cache: true
     freeze: true
-title-block-categories: false
 
+sidebar: false
+title-block-categories: false
 toc: true
 toc-depth: 5
 toc-location: right
-
-sidebar: false

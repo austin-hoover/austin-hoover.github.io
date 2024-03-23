@@ -15,19 +15,15 @@ $figure-caption-font-size: 15.25px !important;
 
 
 /*-- scss:rules --*/
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500 !important;
 }
-h2 {
-    padding-top: 0.5em;
-}
 
-// Code blocks
 pre, code {
     font-size: 13.5px !important;
 }
 
-// Top navigation bar
 .navbar {
     padding-bottom: 2.5px !important;
     padding-top: 2.5px !important;
@@ -44,7 +40,6 @@ pre, code {
   }
 }
 
-
 p {
     text-align: justify;
 }
@@ -55,8 +50,8 @@ p {
 .math.inline .MathJax  {
 }
 
-// Decrease the font size of displayed Pandas DataFrames. (This will also change the font
-// size of all listings.
-table {
-    // font-size: 13.0px !important;
-}
+// // Decrease the font size of displayed Pandas DataFrames. (This will also change the font
+// // size of all listings.
+// table {
+//     font-size: 13.0px !important;
+// }

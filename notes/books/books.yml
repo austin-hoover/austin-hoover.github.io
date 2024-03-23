@@ -9,8 +9,7 @@
   author: Alan Paton
   date: 2023-07-17
   categories:
-    - fiction
-    - Africa
+    - historical fiction
     - apartheid
     
 - title: Elements of Programming Interviews
@@ -24,14 +23,12 @@
   author: M. Nielsen
   date: 2023-06-30
   categories:
-    - computer science
     - machine learning
     
 - title: Pattern Recognition and Machine Learning
   author: C. Bishop
   date: 2023-06-30
   categories:
-    - computer science
     - machine learning
     
 - title: The Alchemist
@@ -44,13 +41,14 @@
   author: Fyodor Dostoevsky
   date: 2023-06-30
   categories:
-    - fiction
+    - historical fiction
+    - Russia
     
 - title: Fahrenheit 451
   author: Ray Bradbury
   date: 2023-06-30
   categories:
-    - fiction
+    - science fiction
     
 - title: Moby Dick
   author: Herman Melville
@@ -74,13 +72,14 @@
   author: Ted Chiang
   date: 2023-06-30
   categories:
-    - fiction
+    - science fiction
     
 - title: Mathematical Methods for Physicists
   author: G. Arfken, F. Weber, and F. Harris
   date: 2023-06-30
   categories:
     - mathematics
+    - physics
 
 - title: Mathematics of Classical and Quantum Physics
   author: F. Byron and R. Fuller
@@ -351,3 +350,9 @@
   date: 2023-06-30
   categories:
     - sociology
+
+- title: Exhalation
+  author: Ted Chiang
+  date: 2024-03-23
+  categories:
+    - science fiction

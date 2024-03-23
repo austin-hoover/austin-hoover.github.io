@@ -10,11 +10,13 @@ listing:
         title: "Title"
         author: "Author"
         date: "Date"
+        categories: "Categories"
     sort: 
         - title
         - author
+        - date
     type: table
-    date-format: YYYY-MM-DD
+    date-format: YYYY‑MM‑DD
     table-hover: false
     categories: true
     max-items: 99999999
