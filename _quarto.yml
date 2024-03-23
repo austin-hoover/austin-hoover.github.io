@@ -33,9 +33,11 @@ format:
         anchor-sections: true
         cap-location: bottom  # figure caption {bottom, margin}
         toc-location: right  # {body, left, right}
+        toc: true
         toc-depth: 5
-        toc-expand: true
         shift-heading-level-by: 0
         html-math-method: mathjax
         grid:
             body-width: 750px
+        mainfont: "georgia"
+        fontsize: 16px

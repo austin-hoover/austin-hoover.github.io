@@ -11,7 +11,7 @@ execute:
     enabled: false
     cache: true
     freeze: true
-title-block-categories: true
+title-block-categories: false
 
 toc: true
 toc-depth: 5
