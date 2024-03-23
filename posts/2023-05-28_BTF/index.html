@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.3.140">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,16 +19,14 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -42,7 +40,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,13 +68,7 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -84,10 +77,8 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
@@ -100,35 +91,7 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -136,40 +99,40 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html"> 
-<span class="menu-text">Notes</span></a>
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -178,7 +141,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -195,11 +158,6 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">High-dimensional phase space measurements</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">particle accelerators</div>
-    <div class="quarto-category">high-dimensional data</div>
-    <div class="quarto-category">visualization</div>
-  </div>
   </div>
 
 
@@ -225,14 +183,12 @@ window.Quarto = {
   
 <div>
   <div class="abstract">
-    <div class="block-title">Abstract</div>
+    <div class="abstract-title">Abstract</div>
     This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with the physics of intense beams.
   </div>
 </div>
 
-
 </header>
-
 
 <section id="predicting-intense-beam-dynamics" class="level2">
 <h2 class="anchored" data-anchor-id="predicting-intense-beam-dynamics">1. Predicting intense beam dynamics</h2>
@@ -247,14 +203,14 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/sns.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 1. The Spallation Neutron Source (SNS) accelerator.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 1. The Spallation Neutron Source (SNS) accelerator.</figcaption><p></p>
 </figure>
 </div>
 <p>The LEDA (Low Energy Test Accelerator) experiment at Los Alamos National Laboratory attempted to predict halo formation over a much shorter distance<span class="citation" data-cites="Qiang_2002">&nbsp;[<a href="#ref-Qiang_2002" role="doc-biblioref">3</a>]</span>. One-dimensional (1D) density profiles of a low-energy proton beam were measured after a series of focusing quadrupole magnets. Simulations failed to reproduce the low-density “halo” surrounding the beam core — see Fig. 2. The authors attributed the failure to an inaccurate phase space distribution used to seed the simulation. (Only low-order moments of the distribution were measured.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/qiang_2002_fig9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
-<figcaption>Fig. 2. Vertical beam profile measured in the LEDA experiment<span class="citation" data-cites="Qiang_2002">&nbsp;[<a href="#ref-Qiang_2002" role="doc-biblioref">3</a>]</span>.</figcaption>
+<p><img src="./figures/qiang_2002_fig9.png" class="img-fluid figure-img" width="450"></p>
+<p></p><figcaption class="figure-caption">Fig. 2. Vertical beam profile measured in the LEDA experiment<span class="citation" data-cites="Qiang_2002">&nbsp;[<a href="#ref-Qiang_2002" role="doc-biblioref">3</a>]</span>.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -263,8 +219,8 @@ window.Quarto = {
 <p>We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac<span class="citation" data-cites="Zhang_2020">&nbsp;[<a href="#ref-Zhang_2020" role="doc-biblioref">4</a>]</span>. A diagram of the BTF is below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/btf2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-<figcaption>Fig. 3. The SNS Beam Test Facility (BTF).</figcaption>
+<p><img src="./figures/btf2.png" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Fig. 3. The SNS Beam Test Facility (BTF).</figcaption><p></p>
 </figure>
 </div>
 <p>The beam starts as a slow-moving, continuous stream of H- ions extracted from the plasma source. The low-energy beam transport (LEBT) uses electrostatic focusing to guide the beam to the radiofrequency quadrupole RFQ. The RFQ bunches and accelerates the beam to 2.5 MeV. Each bunch drifts through the medium-energy beam transport (MEBT) and finally through a series of permanent quadrupole magnets arranged in a focusing-off-defocusing-off (FODO) pattern. (If halo formation occured, it would likely be here due to the rapid oscillation of the beam core.)</p>
@@ -272,8 +228,8 @@ window.Quarto = {
 <p>The region <span class="math inline">\(\mathbf{x} \pm \Delta\)</span> is selected using slits. First, a horizontal-vertical pair of slits selects a square in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. Next, a second pair of slits select <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span> (based on their positions relative to the first slits). The momentum <span class="math inline">\(p_z\)</span> is selected by a vertical slit after a dipole magnet, which bends on-energy particles 90 degrees (faster particles bend less). The last to go is <span class="math inline">\(z\)</span>: The beam passes through a wire, generating an electron beam with the same temporal structure. The electrons are streaked in the transverse plane using an oscillating electric field such that the image of the beam on a screen gives the <span class="math inline">\(z\)</span> distribution.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/measurement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
-<figcaption>Fig. 4 Cartoon representing the six-dimensional phase space measurement apparatus.</figcaption>
+<p><img src="./figures/measurement.png" class="img-fluid figure-img" width="500"></p>
+<p></p><figcaption class="figure-caption">Fig. 4 Cartoon representing the six-dimensional phase space measurement apparatus.</figcaption><p></p>
 </figure>
 </div>
 <p>We proceed by scanning the slits in a nested loop and recording the image of the beam on the screen at each setting. Each pixel in the image is the intensity at a point in phase space. This measurement is the first of its kind<span class="citation" data-cites="Cathey_2018">&nbsp;[<a href="#ref-Cathey_2018" role="doc-biblioref">5</a>]</span>.</p>
@@ -281,15 +237,15 @@ window.Quarto = {
 <p>When combined with a detailed model of the accelerator and a well-tested simulation code, we hope these measurements will allow us to predict the halo dynamics in the BTF. Such a prediction would be the first step toward model-based loss prediction in a linear accelerator.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="650"></p>
-<figcaption>Fig. 5. The SNS-BTF workflow. The phase space distribution <span class="math inline">\(f(\mathbf{x})\)</span> is interpolated from raw images from high-dimensional scans. Particles are sampled from the distribution and propagated through a computational model of the BTF lattice. The output particle distribution is binned and compared with high-dynamic-range measurements of <span class="math inline">\(\{f(x, p_x), f(y, p_y)\}\)</span> at the end of the beamline. The model is refined until the predictions are correct down to the halo level.</figcaption>
+<p><img src="./figures/workflow.png" class="img-fluid figure-img" width="650"></p>
+<p></p><figcaption class="figure-caption">Fig. 5. The SNS-BTF workflow. The phase space distribution <span class="math inline">\(f(\mathbf{x})\)</span> is interpolated from raw images from high-dimensional scans. Particles are sampled from the distribution and propagated through a computational model of the BTF lattice. The output particle distribution is binned and compared with high-dynamic-range measurements of <span class="math inline">\(\{f(x, p_x), f(y, p_y)\}\)</span> at the end of the beamline. The model is refined until the predictions are correct down to the halo level.</figcaption><p></p>
 </figure>
 </div>
 <p>Our 6D measurements are currently quite slow and fail to capture sharp features in the distribution. Dropping one dimension (<span class="math inline">\(z\)</span>) increases the resolution and dynamic range while capturing most of the significant correlations in the data. The resulting 5D measurement is useful for in-depth examinations of the phase space distribution. I’ve gotten a lot of mileage out of a high-resolution 5D measurement I took in June 2022, which is publically available<span class="citation" data-cites="Hoover_2023_Zenodo">&nbsp;[<a href="#ref-Hoover_2023_Zenodo" role="doc-biblioref">7</a>]</span>. The scan generating over 285,082 images over 18 hours. Fig. 6. shows the change in image brightness as the slits move in and out of the beam core.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/bcm.png" class="img-fluid figure-img" width="500"></p>
-<figcaption>Fig. 6. Measured image brightness and beam current out of the RFQ during a 5D measurement.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 6. Measured image brightness and beam current out of the RFQ during a 5D measurement.</figcaption><p></p>
 </figure>
 </div>
 <p>We cropped and downscaled the images to decrease the size of the data set from around 250 gigabytes to 20 gigabytes. Next, we interpolated the pixel intensities to obtain a <span class="math inline">\(69 \times 88 \times 69 \times 65 \times 55\)</span> image of the phase space distribution <span class="math inline">\(f(x, x', y, y', w)\)</span>. Here we use the energy <span class="math inline">\(w\)</span> instead of the momentum <span class="math inline">\(p_z\)</span>. (Also <span class="math inline">\(x'\)</span> and <span class="math inline">\(y'\)</span> are basically the same as <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span>.)</p>
@@ -303,7 +259,7 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/corner.png" class="img-fluid figure-img" width="550"></p>
-<figcaption>Fig. 7. Corner plot showing the one-dimensional and two-dimensional projections of a measured five-dimensional distribution.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 7. Corner plot showing the one-dimensional and two-dimensional projections of a measured five-dimensional distribution.</figcaption><p></p>
 </figure>
 </div>
 <p>Corner plots are valuable tools, but it is important to remember that they hide relationships between three or more dimensions. Higher dimensional correlations are only visible in <em>slices</em>. Most people are familiar with slices (i.e., cross sections) from three-dimensional medical CT scans. CT scans map the three-dimensional density of, say, a human brain. To examine the brain’s internal structure, medical professionals scroll through a set of two-dimensional images. Each image is the density on a two-dimensional plane intersecting the three-dimensional distribution. We call this a “planar slice”.</p>
@@ -313,29 +269,29 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./figures/slice_xp-yp_view_y-w.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 8. A four-dimensional slice of a measured five-dimensional distribution. Three- and two-dimensional projections are shown on the side panels.</figcaption>
+<p></p><figcaption class="figure-caption">Fig. 8. A four-dimensional slice of a measured five-dimensional distribution. Three- and two-dimensional projections are shown on the side panels.</figcaption><p></p>
 </figure>
 </div>
 <p>Such figures render slowly and are limited to four-dimensional data. Complete slicing flexibility is available in an interactive widget shown in Fig. 9. This function takes one or more images or point clouds of any dimensionality as inputs. I use it extensively in my data analysis. It is available in the <a href="https://github.com/austin-hoover/psdist">psdist</a> package.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><video src="./figures/slicing.mov" class="img-fluid quarto-figure quarto-figure-center" width="600" controls=""><a href="./figures/slicing.mov">Video</a></video></p>
-<figcaption>Fig. 9. Interactive slicing widget from <code>psdist</code>.</figcaption>
+<p><video src="./figures/slicing.mov" class="img-fluid" width="600" controls=""><a href="./figures/slicing.mov">Video</a></video></p>
+<p></p><figcaption class="figure-caption">Fig. 9. Interactive slicing widget from <code>psdist</code>.</figcaption><p></p>
 </figure>
 </div>
 <p>There are other ways to slice and project the data. For example, we could extend the concept of a radial histogram. A radial histogram takes a distribution <span class="math inline">\(f(x_1, \dots, x_n)\)</span> to a one-dimensional profile <span class="math inline">\(f(r_n)\)</span>, where <span class="math inline">\(r_n = \sqrt{x_1^2 + \dots + x_n^2}\)</span>, by integrating the density on spheres of radius <span class="math inline">\(r_n\)</span>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Instead of defining the spheres in the <span class="math inline">\(n\)</span>-dimensional space, suppose we defined them in a subspace like the <span class="math inline">\(x_2\)</span>-<span class="math inline">\(\dots\)</span>-<span class="math inline">\(x_n\)</span> plane and observed the <span class="math inline">\(x_1\)</span> distribution on each sphere. In other words, compute <span class="math inline">\(f(x_1, r(x_2, \dots, x_n))\)</span>. The resulting projection is more difficult to interpret but preserves high-dimensional correlations in the data.</p>
 <p>We could also define shells as the density contours of the distribution in the subpace — <span class="math inline">\(f(x_2, \dots, x_n)\)</span> in the above example. We could label these “contour shell slices”. Fig. 10 illustrates this concept.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/nonplanar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="580"></p>
-<figcaption>Fig. 10. Concept of non-planar or “shell” slices.</figcaption>
+<p><img src="./figures/nonplanar.png" class="img-fluid figure-img" width="580"></p>
+<p></p><figcaption class="figure-caption">Fig. 10. Concept of non-planar or “shell” slices.</figcaption><p></p>
 </figure>
 </div>
 <p>I applied this idea to our measured distribution to view a specific feature in a compact figure. In Fig. 11, I defined density contours in the four-dimensional transverse phase space by thresholding the projection <span class="math inline">\(f(x, x', y, y')\)</span> between two density levels. I then computed the energy distribution within each shell (possible thanks to <code>numpy</code>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/shell_slice.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
-<figcaption>Fig. 11. Energy (<span class="math inline">\(w\)</span>) distribution within four-dimensional contour shell slices in the transverse phase space. Each slice is defined by the projected density <span class="math inline">\(f(x, x', y, y')\)</span>.</figcaption>
+<p><img src="./figures/shell_slice.png" class="img-fluid figure-img" width="500"></p>
+<p></p><figcaption class="figure-caption">Fig. 11. Energy (<span class="math inline">\(w\)</span>) distribution within four-dimensional contour shell slices in the transverse phase space. Each slice is defined by the projected density <span class="math inline">\(f(x, x', y, y')\)</span>.</figcaption><p></p>
 </figure>
 </div>
 <p>Notice the drastic change in energy distribution — unimodal to bimodal — as we move from the outer to the inner core in the transverse phase space. This energy hollowing represents a five-dimensional correlation; it is also visible (although perhaps harder to see) in Fig. 8. I also plotted the transverse projections of the slice farthest from the core. Pretty bizarre-looking images result, but they make some sense; they select particles with large transverse amplitude. Some intuition is gained by considering the projections of hollow three-dimensional distribution.</p>
@@ -345,8 +301,8 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <p>We would like to explain the origin of all features we find in the distribution. From direct measurements at lower beam currents, we know the space charge drives the energy hollowing in Fig. 10.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/waterfall.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="475"></p>
-<figcaption>Fig. 11. Sliced energy distribution vs.&nbsp;beam current. Source: Kiersten Ruisard.</figcaption>
+<p><img src="./figures/waterfall.png" class="img-fluid figure-img" width="475"></p>
+<p></p><figcaption class="figure-caption">Fig. 11. Sliced energy distribution vs.&nbsp;beam current. Source: Kiersten Ruisard.</figcaption><p></p>
 </figure>
 </div>
 <p>Furthermore, we are confident that the energy hollowing develops in the RFQ rather than the MEBT. I am currently using simulations to study the dynamics that drive the hollowing in the RFQ.</p>
@@ -358,35 +314,35 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-Wangler_1998" class="csl-entry" role="listitem">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Wangler_1998" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">T. P. Wangler, K. R. Crandall, R. Ryne, and T. S. Wang, <em><a href="https://doi.org/10.1103/PhysRevSTAB.1.084201">Particle-Core Model for Transverse Dynamics of Beam Halo</a></em>, Phys. Rev. ST Accel. Beams <strong>1</strong>, 084201 (1998).</div>
 </div>
-<div id="ref-Batygin_2021" class="csl-entry" role="listitem">
+<div id="ref-Batygin_2021" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">K. Batygin and Y. K. Batygin, <em><a href="https://doi.org/10.1063/5.0056306">Chaotic Dynamics Driven by Particle-Core Interactions</a></em>, Physics of Plasmas <strong>28</strong>, 093104 (2021).</div>
 </div>
-<div id="ref-Qiang_2002" class="csl-entry" role="listitem">
+<div id="ref-Qiang_2002" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">J. Qiang, P. L. Colestock, D. Gilpatrick, H. V. Smith, T. P. Wangler, and M. E. Schulze, <em><a href="https://doi.org/10.1103/PhysRevSTAB.5.124201">Macroparticle Simulation Studies of a Proton Beam Halo Experiment</a></em>, Physical Review Special Topics - Accelerators and Beams <strong>5</strong>, 35 (2002).</div>
 </div>
-<div id="ref-Zhang_2020" class="csl-entry" role="listitem">
+<div id="ref-Zhang_2020" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[4] </div><div class="csl-right-inline">Z. Zhang, S. Cousineau, A. Aleksandrov, A. Menshov, and A. Zhukov, <em><a href="https://doi.org/10.1016/j.nima.2019.162826">Design and Commissioning of the Beam Test Facility at the Spallation Neutron Source</a></em>, Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment <strong>949</strong>, (2020).</div>
 </div>
-<div id="ref-Cathey_2018" class="csl-entry" role="listitem">
+<div id="ref-Cathey_2018" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[5] </div><div class="csl-right-inline">B. Cathey, S. Cousineau, A. Aleksandrov, and A. Zhukov, <em><a href="https://doi.org/10.1103/PhysRevLett.121.064804">First Six Dimensional Phase Space Measurement of an Accelerator Beam</a></em>, Physical Review Letters <strong>121</strong>, (2018).</div>
 </div>
-<div id="ref-Aleksandrov_2021" class="csl-entry" role="listitem">
+<div id="ref-Aleksandrov_2021" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[6] </div><div class="csl-right-inline">A. Aleksandrov, S. Cousineau, K. Ruisard, and A. Zhukov, <em><a href="https://doi.org/10.1016/j.nima.2020.164829">First Measurement of a 2.5 MeV RFQ Output Emittance with 1 Part-Per-Million Dynamic Range</a></em>, Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment <strong>987</strong>, (2021).</div>
 </div>
-<div id="ref-Hoover_2023_Zenodo" class="csl-entry" role="listitem">
+<div id="ref-Hoover_2023_Zenodo" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau, <em><a href="https://doi.org/10.5281/zenodo.7517479">High-Resolution Five-Dimensional Phase Space Measurement at the Spallation Neutron Source Beam Test Facility</a></em>, (2023).</div>
 </div>
-<div id="ref-Ruisard_2020" class="csl-entry" role="listitem">
+<div id="ref-Ruisard_2020" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">K. Ruisard, A. Aleksandrov, S. Cousineau, V. Tzoganis, and A. Zhukov, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.23.124201">High Dimensional Characterization of the Longitudinal Phase Space Formed in a Radio Frequency Quadrupole</a></em>, Physical Review Accelerators and Beams <strong>23</strong>, (2020).</div>
 </div>
-<div id="ref-Ruisard_2021" class="csl-entry" role="listitem">
+<div id="ref-Ruisard_2021" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[9] </div><div class="csl-right-inline">K. Ruisard and A. Aleksandrov, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.24.014201">Rapid Charge Redistribution Leading to Core Hollowing in a High-Intensity Ion Beam</a></em>, Physical Review Accelerators and Beams <strong>24</strong>, (2021).</div>
 </div>
-<div id="ref-Hoover_2023_PRAB" class="csl-entry" role="listitem">
+<div id="ref-Hoover_2023_PRAB" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.26.064202">Analysis of a Hadron Beam in Five-Dimensional Phase Space</a></em>, Phys. Rev. Accel. Beams <strong>26</strong>, 064202 (2023).</div>
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -438,33 +394,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -533,15 +462,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -568,23 +495,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -620,9 +533,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -632,17 +546,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -655,125 +560,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -817,7 +603,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -843,32 +628,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -931,7 +690,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-
 
 
 

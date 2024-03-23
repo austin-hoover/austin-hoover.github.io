@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.3.140">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,12 +19,11 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -49,13 +48,43 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -83,13 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -98,10 +121,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
@@ -114,35 +135,7 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -150,40 +143,40 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html"> 
-<span class="menu-text">Notes</span></a>
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -192,7 +185,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -224,10 +217,6 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Tomographic reconstruction in four dimensions</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">tomography</div>
-    <div class="quarto-category">particle accelerators</div>
-  </div>
   </div>
 
 
@@ -252,9 +241,7 @@ window.Quarto = {
   </div>
   
 
-
 </header>
-
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
@@ -269,7 +256,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </section>
 <section id="d-reconstruction" class="level2">
 <h2 class="anchored" data-anchor-id="d-reconstruction">2D reconstruction</h2>
-<div id="2516723f-a02b-46f5-a271-4d984dd368a1" class="cell" data-execution_count="2">
+<div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> proplot <span class="im">as</span> pplt</span>
@@ -277,7 +264,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> psdist.visualization <span class="im">as</span> psv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I’ll use the following distribution to test the reconstruction algorithms.</p>
-<div id="dcd32160-3f7f-4250-aa07-f64451225d8c" class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="fl">1.75</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">300000</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.vstack([</span>
@@ -303,11 +290,11 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_dist2d.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="_output_dist2d.png" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>We now simulate the measurements. Assume we have the ability to rotate the distribution without any shearing or scaling. We then rotate the distribution by different angles and project it onto the <span class="math inline">\(x\)</span> axis. It will turn out that measurement time limits the number of projections we can use; for now, we’ll limit ourselves to 15 projections.</p>
-<div id="0f110dd4-d299-4133-82fd-caaa17f8de99" class="cell" data-execution_count="6">
+<div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rotation_matrix(angle):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    cs, sn <span class="op">=</span> np.cos(angle), np.sin(angle)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.array([[cs, sn], [<span class="op">-</span>sn, cs]])</span>
@@ -329,11 +316,11 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_sinogram.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="_output_sinogram.png" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>We’ll also need some helper functions.</p>
-<div id="e6628ff4-6b44-41cd-b372-12b888c4f6d5" class="cell" data-execution_count="8">
+<div class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="bu">apply</span>(M, X):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.apply_along_axis(<span class="kw">lambda</span> row: np.matmul(M, row), <span class="dv">1</span>, X)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -388,7 +375,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <section id="filtered-back-projection-fpb" class="level3">
 <h3 class="anchored" data-anchor-id="filtered-back-projection-fpb">Filtered Back-Projection (FPB)</h3>
 <p>In filtered back-projection (FBP) each projection is Fourier transformed and then smeared back across the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> plane. The Fourier transform acts as a filter and creates a sharper image.</p>
-<div id="2d90b222-b8ec-40ba-9645-7692cbd6d232" class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> transform.iradon(projections, theta<span class="op">=-</span>angles).T</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> process(Z, keep_positive<span class="op">=</span><span class="va">True</span>, density<span class="op">=</span><span class="va">True</span>, limits<span class="op">=</span>limits)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plot_rec(Z, Z_true, <span class="st">'FBP'</span>)</span>
@@ -396,19 +383,19 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_FBP.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><img src="_output_FBP.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 <p>FBP generally requires a high number of projections to avoid these streaking artifacts. Let’s see what happens when the number of projections is varied. In each case, we distribute the angles evenly over 180 degrees.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_vary_n_angles.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="_output_vary_n_angles.gif" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>We were also careful to choose an angular range close to 180 degrees to maximize the information carried by the projections.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_vary_angular_range.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="_output_vary_angular_range.gif" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>The angular range in an accelerator is determined by the amount of control we have over the optics between the reconstruction location and the measurement location. It’s possible to run into problems here; for example, varying a magnet too far from its design value could make the beam unacceptably large at a downstream location. Magnets also have limited strengths, and sometimes they can’t be controlled independently. Additionally, achieving a specific projection angle is not always straightforward; usually an optimizer is used to find the correct settings, and this takes time. I’ll come back to these points later.</p>
@@ -421,7 +408,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <p>Stack these equations for all the projections to get</p>
 <p><span class="math display">\[ \rho = P \psi. \]</span></p>
 <p>All we need to do is invert these equations. The problem is that <span class="math inline">\(P\)</span> could be huge. If there are <span class="math inline">\(K\)</span> projections, <span class="math inline">\(P\)</span> will be have <span class="math inline">\(K N \times N^2\)</span> elements. Inverting such a matrix could be a pain, so people have developed iterative methods to find the answer. Scikit-image has one ready to go called simultaneous algebraic reconstruction (SART).</p>
-<div id="29546c4d-4a27-4a56-87d2-2373582d07f1" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> transform.iradon_sart(projections, theta<span class="op">=-</span>angles).T</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> process(Z, keep_positive<span class="op">=</span><span class="va">True</span>, density<span class="op">=</span><span class="va">True</span>, limits<span class="op">=</span>limits)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plot_rec(Z, Z_true, <span class="st">'SART (1 iteration)'</span>)</span>
@@ -429,11 +416,11 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_SART.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><img src="_output_SART.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 <p>The SART algorithm looks like it does better with fewer projections. SART is known to produce a good answer in only one iteration. Running it again with the original reconstruction as an initial estimate can sharpen image but may increase noise. In this case, it looks like running SART again leads to a better reconstruction without increasing noise.</p>
-<div id="5553c79a-27b6-40a5-923a-ae62ae31b78c" class="cell">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> transform.iradon_sart(projections, theta<span class="op">=-</span>angles).T</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> transform.iradon_sart(projections, theta<span class="op">=-</span>angles, image<span class="op">=</span>Z.T).T</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> process(Z, keep_positive<span class="op">=</span><span class="va">True</span>, density<span class="op">=</span><span class="va">True</span>, limits<span class="op">=</span>limits)</span>
@@ -442,7 +429,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_SART2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><img src="_output_SART2.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 <p>ART easily generalizes to 4D, but it could become expensive since <span class="math inline">\(P\)</span> would have <span class="math inline">\(K N^2 \times N^4\)</span> elements. This has been carried out by Wolski (2020) with <span class="math inline">\(N = 69\)</span>. I’ll leave investigation of 4D ART for a future post.</p>
@@ -464,7 +451,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <h2 class="anchored" data-anchor-id="d-reconstruction-1">4D reconstruction</h2>
 <p>I’ve mentioned that at least three methods (ART, MENT, grid-based) will generalize to 4D reconstruction from 2D projections. But what I’d like to look at now is a different, hopefully easier method described in Hock (2013). The method uses 2D projections but only uses 2D reconstruction methods like those described in this post. It’s sort of like a CT scan: 1D projections are used to reconstruct a 2D slice of a human body, and then the slice is moved along the body to reconstruct the 3D image. This would be nice because the conditions for a good 2D reconstruction are well-understood, but might not be clear for higher-dimensional versions of the algorithms.</p>
 <p>First, we need a 4D distribution.</p>
-<div id="38a29458-445b-4f6c-80b8-1869b24a41c2" class="cell" data-execution_count="16">
+<div class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a rigid rotating distribution.</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.random.normal(size<span class="op">=</span>(<span class="dv">400000</span>, <span class="dv">4</span>))</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.apply_along_axis(<span class="kw">lambda</span> row: row <span class="op">/</span> np.linalg.norm(row), <span class="dv">1</span>, X)</span>
@@ -492,11 +479,11 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_corner.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+<p><img src="_output_corner.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 <p>We can estimate the distribution by binning the particles on a 4D grid.</p>
-<div id="d950960a-741b-4c2c-9101-baf2ed0579ab" class="cell" data-execution_count="18">
+<div class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Z_true, edges <span class="op">=</span> np.histogramdd(X, n_bins, limits, density<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>centers <span class="op">=</span> []</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _edges <span class="kw">in</span> edges:</span>
@@ -506,7 +493,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <section id="description-of-hocks-method" class="level3">
 <h3 class="anchored" data-anchor-id="description-of-hocks-method">Description of Hock’s method</h3>
 <p>Now for the method. Suppose we can independently rotate the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> and <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> projections of the phase space distribution. Let the angles in <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> be <span class="math inline">\(\left\{\mu_{x_1}, \dots, \mu_{x_k}, \dots, \mu_{x_K}\right\}\)</span> and the angles in <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> be <span class="math inline">\(\left\{\mu_{y_1}, \dots, \mu_{y_l}, \dots, \mu_{y_L}\right\}\)</span>. For each combination of <span class="math inline">\(\mu_x\)</span> and <span class="math inline">\(\mu_y\)</span>, we measure the beam intensity on a screen. In other words, we create a matrix <span class="math inline">\(S\)</span> such that <span class="math inline">\(S_{ijkl}\)</span> gives the intensity at point <span class="math inline">\((x_i, y_j)\)</span> on the screen for phase advances (angles) <span class="math inline">\(\mu_{x_k}\)</span> and <span class="math inline">\(\mu_{y_l}\)</span>.</p>
-<div id="344a17c1-077b-4220-a475-d64d2739132b" class="cell" data-execution_count="19">
+<div class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>K <span class="op">=</span> <span class="dv">15</span> <span class="co"># number of angles in x dimension</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="dv">15</span> <span class="co"># number of angles in y dimension</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>muxx <span class="op">=</span> muyy <span class="op">=</span> np.linspace(<span class="fl">0.</span>, <span class="fl">180.</span>, K, endpoint<span class="op">=</span><span class="va">False</span>)</span>
@@ -528,12 +515,12 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_target_phase_scan.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="_output_target_phase_scan.gif" class="img-fluid figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>The above animation shows a few steps in the scan; since the transfer matrices are rotation matrices, only the cross-plane correlation changes.</p>
 <p>We can immediately reconstruct the 3D projection the 4D phase space distribution using this data. Consider one row of the beam image — the intensity along the row gives a 1D projection onto the <span class="math inline">\(x\)</span> axis for a vertical slice of the beam. We have a set of these 1D projections at different <span class="math inline">\(\mu_k\)</span> which we can use to reconstruct the <span class="math inline">\(x\)</span>-<span class="math inline">\(x'\)</span> distribution at this vertical slice using any 1D <span class="math inline">\(\rightarrow\)</span> 2D reconstruction method. I’ll use SART since this seemed to work well with 15 projections. We repeat this at each slice. We thus have an array <span class="math inline">\(D\)</span> such that <span class="math inline">\(D_{j,l,r,s}\)</span> gives the density at <span class="math inline">\(x = x_r\)</span>, <span class="math inline">\(x' = x'_s\)</span> for <span class="math inline">\(y = y_j\)</span> and <span class="math inline">\(\mu_y = \mu_{y_l}\)</span>.</p>
-<div id="961e753f-ce76-4f02-8bb2-f1b1dd409a45" class="cell" data-execution_count="21">
+<div class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> np.zeros((n_bins, L, n_bins, n_bins))</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(n_bins):</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">range</span>(L):</span>
@@ -542,7 +529,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        D[j, l, :, :] <span class="op">=</span>_Z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I should also mention that the reconstruction grid doesn’t need to be the same size as the measurement grid. We can now do a similar thing in the vertical plane. For each bin in the reconstructed x-x’ grid, <code>D[:, :, r, s]</code> gives the projections of <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> at each <span class="math inline">\(\mu_{y_l}\)</span>; thus, <span class="math inline">\(y\)</span>-<span class="math inline">\(y'\)</span> can be reconstructed at each <span class="math inline">\(x_r\)</span> and <span class="math inline">\(x'_s\)</span>, and we have an array <span class="math inline">\(Z\)</span> such that <span class="math inline">\(Z_{r,s,t,u}\)</span> gives the density at <span class="math inline">\(x = x_r\)</span>, <span class="math inline">\(x' = x'_s\)</span>, <span class="math inline">\(y = y_t\)</span>, <span class="math inline">\(y' = y'_u\)</span>.</p>
-<div id="13dd09c1-3939-4ff7-a633-6b53cf3ab175" class="cell" data-execution_count="22">
+<div class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> np.zeros((n_bins, n_bins, n_bins, n_bins))</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> <span class="bu">range</span>(n_bins):</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> s <span class="kw">in</span> <span class="bu">range</span>(n_bins):</span>
@@ -554,7 +541,7 @@ f(x) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f(x
 <section id="accuracy" class="level3">
 <h3 class="anchored" data-anchor-id="accuracy">Accuracy</h3>
 <p>SART could make some bins negative, so set those to zero. We then need to normalize <code>Z</code> for comparison with <code>Z_true</code>.</p>
-<div id="7d2db923-5017-4f14-89d9-a10958ba81f5" class="cell" data-execution_count="23">
+<div class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Z <span class="op">=</span> process(Z, keep_positive<span class="op">=</span><span class="va">True</span>, density<span class="op">=</span><span class="va">True</span>, limits<span class="op">=</span>limits)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'min(Z) = </span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(np.<span class="bu">min</span>(Z)))</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'max(Z) = </span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(np.<span class="bu">max</span>(Z)))</span>
@@ -574,7 +561,7 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 </div>
 <p>I’m not sure the best way to quantify the difference between the distributions. My initial thought is to subtract <code>Z_true</code> from <code>Z</code>, take the absolute value, and divide by the number of bins; this would give the average absolute error over the bins.</p>
-<div id="82664ac4-65c6-41ec-b78c-7f60f69d6ddd" class="cell" data-execution_count="24">
+<div class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>avg_abs_err_per_bin <span class="op">=</span> np.<span class="bu">sum</span>(np.<span class="bu">abs</span>(Z <span class="op">-</span> Z_true)) <span class="op">/</span> Z.size</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Average absolute error per bin = </span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(avg_abs_err_per_bin))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -582,8 +569,8 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 </div>
 <p>Lots of bins are empty so this might not be the most meaningful number. For now, it’s probably more helpful to view the differences between the projections.</p>
-<div id="5963d695-f562-485b-9f9c-134293504176" class="cell" data-execution_count="26">
-<details class="code-fold">
+<div class="cell" data-execution_count="26">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> pplt.subplots(ncols<span class="op">=</span><span class="dv">4</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">2</span>), spanx<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</span>
@@ -596,11 +583,11 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_compare_1d.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="_output_compare_1d.png" class="img-fluid figure-img" style="width:85.0%"></p>
 </figure>
 </div>
-<div id="a490aa65-1fb1-46b4-8b6a-28756da177f3" class="cell" data-execution_count="33">
-<details class="code-fold">
+<div class="cell" data-execution_count="33">
+<details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>indices <span class="op">=</span> [(<span class="dv">0</span>, <span class="dv">1</span>), (<span class="dv">2</span>, <span class="dv">3</span>), (<span class="dv">0</span>, <span class="dv">2</span>), (<span class="dv">0</span>, <span class="dv">3</span>), (<span class="dv">2</span>, <span class="dv">1</span>), (<span class="dv">1</span>, <span class="dv">3</span>)]</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> pplt.subplots(nrows<span class="op">=</span><span class="dv">6</span>, ncols<span class="op">=</span><span class="dv">3</span>, figwidth<span class="op">=</span><span class="fl">5.0</span>, sharex<span class="op">=</span><span class="va">False</span>, sharey<span class="op">=</span><span class="va">False</span>)</span>
@@ -630,7 +617,7 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_output_compare_2d.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
+<p><img src="_output_compare_2d.png" class="img-fluid figure-img" style="width:65.0%"></p>
 </figure>
 </div>
 <p>In the second plot, the error is given in number of particles. It looks like the method worked well to reconstruct this distribution. [Edit 2023-02-13: This is not a sufficient comparison in 4D: one needs to look at slices, and use more complex distribution.]</p>
@@ -643,13 +630,13 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 <p>The SNS target is a steel vessel containing liquid mercury. At the beginning of this post, I mentioned that the SNS has a target imaging system. Here is a diagram showing how the target imaging system works…</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="target_image_system.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<p><img src="target_image_system.png" class="img-fluid figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 <p>… and an example of an image.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="target_image.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="target_image.png" class="img-fluid figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 <p>To reduce noise, the image was averaged over five beam pulses and a Gaussian blur was applied with <span class="math inline">\(\sigma = 3\)</span>. There are four fiducial markers that are visible as dark spots on the corner of the beam. The black ellipse represents a measurement from wire-scanners upstream of the target. Collecting this image is easy.</p>
@@ -664,13 +651,13 @@ sum(Z_true) * bin_volume = 0.9999999999999879</code></pre>
 <p>I plugged all this into an optimizer and asked to vary the phase advances in a 180 degree range. After fideling with the starting and ending phases, I was able to more-or-less do this. I used 15 phase advances in <span class="math inline">\(x\)</span> and 15 phase advances in <span class="math inline">\(y\)</span>, just like in this post. Each optimization took around 16 seconds, so the script took around an hour to run. Below are the computed phase advances at each step as well as the strengths of the seven magnet power supplies.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="target_phase_scan1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+<p><img src="target_phase_scan1.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 <p>There are a few steps near the end of the scan in which the phase advances aren’t exactly correct, but they are close. I can always decrease the phase coverage slighly, or maybe these steps just need a slightly different initial guess. Here are the beta functions for all steps in one plot. The plot ends at the target.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="target_phase_scan2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+<p><img src="target_phase_scan2.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 <p>The bottom plot is just the integral of the inverse of the top plot. The beta functions remain within their limits.</p>
@@ -726,33 +713,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -821,15 +781,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -856,23 +814,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -908,9 +852,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -920,17 +865,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -943,125 +879,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1105,7 +922,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1131,32 +947,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1219,7 +1009,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="austin-hoover/austin-hoover.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-
 
 
 
