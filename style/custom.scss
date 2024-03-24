@@ -5,13 +5,13 @@
 /*-- scss:defaults --*/
 
 $primary: SteelBlue;
-$h1-font-size: 1.80em;
+$h1-font-size: 1.85em;
 $h2-font-size: 1.40em;
 $h3-font-size: 1.20em;
 $h4-font-size: 1.05em;
 $h5-font-size: 1.00em;
 $h6-font-size: 1.00em;
-$figure-caption-font-size: 15.25px !important;
+$figure-caption-font-size: 15.5px !important;
 
 
 /*-- scss:rules --*/
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 pre, code {
-    font-size: 13.5px !important;
+    font-size: 13.0px !important;
 }
 
 .navbar {
@@ -31,14 +31,6 @@ pre, code {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.quarto-title {
-  .quarto-categories {
-    .quarto-category {
-      // font-size: 0.6em !important;
-      // border-radius: 0.0em !important;
-    }
-  }
-}
 
 p {
     text-align: justify;
@@ -50,8 +42,49 @@ p {
 .math.inline .MathJax  {
 }
 
-// // Decrease the font size of displayed Pandas DataFrames. (This will also change the font
-// // size of all listings.
-// table {
-//     font-size: 13.0px !important;
-// }
+.quarto-listing-container-grid {
+    .quarto-listing-cols-1 {
+        .card-title {
+            font-size: 1.3em !important;
+        }
+        .card-text {
+            font-size: 0.95em !important;
+            text-align: justify !important;
+        }
+        .listing-categories {
+            font-size: 13px !important;
+        }
+        .card-text-small {
+            .listing-author {
+                text-transform: capitalize;
+                font-size: 0.95em !important;
+            }
+            .listing-date {
+                text-transform: capitalize;
+                font-size: 0.95em !important;
+            }
+        }
+    }
+}
+
+.quarto-title {
+    .quarto-categories {
+        .quarto-category {
+            font-size: 9px !important;
+            border-radius: 0.0px !important;
+        }
+    }
+}
+
+// categories in right column
+.quarto-listing-category-title {
+    font-size: 0px !important;
+}
+.quarto-listing-category{
+    font-size: 14px !important;
+}
+
+// post preview border
+.quarto-grid-item {
+    border-radius: 0.0px !important;
+}

@@ -1,29 +1,29 @@
 project:
   type: website
 website:
-    title: "Austin Hoover"
+    title: "Accelerated Inquiry"
     open-graph: False
     navbar:
         border: False
         right:
+            - text: "About"
+              href: ./about/index.qmd
             - text: "Research"
               href: ./research/index.qmd
             - text: "Publications"
               href: ./publications/index.qmd
-            - text: "Blog"
-              href: ./posts/index.qmd
             - text: "Notes"
               href: ./notes/index.qmd
-    sidebar:
-      - id: notes
-        title: Notes
-        contents: 
-            notes/
+    google-analytics: "G-NS0H6D6VKL"
+    # sidebar:
+    #   - id: notes
+    #     title: Notes
+    #     contents: 
+    #         notes/
       # - id: research
       #   title: Research
       #   contents: 
       #       research/
-    google-analytics: "G-NS0H6D6VKL"
 
 format:
     html:
@@ -33,6 +33,6 @@ format:
         toc-depth: 5
         html-math-method: mathjax
         grid:
-            body-width: 750px
+            body-width: 710px
         mainfont: "georgia"
-        fontsize: 16px
+        fontsize: 15.25px

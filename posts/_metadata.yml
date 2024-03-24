@@ -5,6 +5,7 @@ citation: false
 comments:
     utterances:
         repo: austin-hoover/austin-hoover.github.io
+    # hypothesis: true
         
 execute:
     echo: true

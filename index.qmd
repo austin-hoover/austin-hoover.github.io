@@ -1,20 +1,11 @@
 ---
-about:
-    template: trestles  # {trestles, jolla, solana, marquee, broadside}
-    image: ./files/me_ORNL.jpg
-    #image-width: 250px
-    image-shape: rectangle
-    links:
-        - icon: linkedin
-          href: https://linkedin.com/in/austin-hoover-7b760511b    
-        - icon: github
-          href: https://github.com/austin-hoover  
-sidebar: false
-toc-location: right
+listing:
+    contents: posts
+    sort: "date desc"
+    type: grid
+    grid-columns: 1
+    fields: [title, author, date, description]
+    max-description-length: 350
+    date-format: long
+    categories: true
 ---
-
-
-I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My reseach focuses on the dynamics of intense charged particle beams in high-power accelerators.
-
-Previously, I completed a Ph.D. in physics at the University of Tennessee (2022) and a B.S. in physics at Wheaton College (2018).
-
