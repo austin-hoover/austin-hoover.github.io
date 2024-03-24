@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Austin Hoover</title>
+<title>Accelerated Inquiry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -67,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
 
 <script type="text/javascript">
@@ -77,10 +109,39 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +149,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Austin Hoover</span>
+    <span class="navbar-title">Accelerated Inquiry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -98,16 +159,16 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications/index.html"> 
 <span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./posts/index.html"> 
-<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./notes/index.html"> 
@@ -125,31 +186,422 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(18)</span></div><div class="category" data-category="Anselm">Anselm <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Darwin">Darwin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Kalam">Kalam <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Leibniz">Leibniz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vlasov">Vlasov <span class="quarto-category-count">(1)</span></div><div class="category" data-category="arguments">arguments <span class="quarto-category-count">(1)</span></div><div class="category" data-category="biological design">biological design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="classical mechanics">classical mechanics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="conferences">conferences <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cosmological arguments">cosmological arguments <span class="quarto-category-count">(2)</span></div><div class="category" data-category="coupling">coupling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electrodynamics">electrodynamics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fine-tuning">fine-tuning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="high-dimensional data">high-dimensional data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="infinity">infinity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="instability">instability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="multiverse">multiverse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="natural language processing">natural language processing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nonlinear">nonlinear <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ontological arguments">ontological arguments <span class="quarto-category-count">(1)</span></div><div class="category" data-category="painting">painting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="particle accelerators">particle accelerators <span class="quarto-category-count">(9)</span></div><div class="category" data-category="resonance">resonance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="space charge">space charge <span class="quarto-category-count">(3)</span></div><div class="category" data-category="stylometry">stylometry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="support vector machine">support vector machine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="teleological arguments">teleological arguments <span class="quarto-category-count">(2)</span></div><div class="category" data-category="theism">theism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tomography">tomography <span class="quarto-category-count">(1)</span></div><div class="category" data-category="visualization">visualization <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="./files/me_ORNL.jpg" class="about-image
-  rectangle " style="width: 20em;">
-    <div class="about-links">
-  <a href="https://linkedin.com/in/austin-hoover-7b760511b" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/austin-hoover" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My reseach focuses on the dynamics of intense charged particle beams in high-power accelerators.</p>
-<p>Previously, I completed a Ph.D.&nbsp;in physics at the University of Tennessee (2022) and a B.S. in physics at Wheaton College (2018).</p>
+<main class="content" id="quarto-document-content">
 
 
-</main></div>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="particle accelerators,conferences" data-listing-date-sort="1711166400000" data-listing-file-modified-sort="1711270390258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="909">
+<a href="./posts/2024-03-23_hb/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+High Brightness Workshop 2023
+</h5>
+<div class="card-text listing-description">
+I spoke at the Workshop on High-Brightness and High-Intensity Hadron Beams (HB) at CERN a few months ago. The workshop drew around 200 attendees from the United States, United Kingdom, South Korea, China, Japan, Germany, Italy, France, and Switzerland. All slides are available online. Here are some notes and highlights:
 </div>
- <!-- /main -->
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+March 23, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="teleological arguments,fine-tuning,multiverse" data-listing-date-sort="1688961600000" data-listing-file-modified-sort="1688941322109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3428">
+<a href="./posts/2023-07-10_fine_tuning/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fine-tuning arguments
+</h5>
+<div class="card-text listing-description">
+The universe would be fine-tuned for life if the set of possible life-permitting universes were much smaller than the set of possible universes. An immediate difficulty here is how to define the set of possible universes. The universe is characterized by states, laws, and constants. We can consider a <em>state</em> to be a snapshot of the universe at a…<span class="math inline"></span><span class="math inline"></span><em></em>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+July 10, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="teleological arguments,biological design,Darwin" data-listing-date-sort="1688875200000" data-listing-file-modified-sort="1688916432691" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="683">
+<a href="./posts/2023-07-09_biological_design_arguments/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Biological design arguments
+</h5>
+<div class="card-text listing-description">
+Paley famously expressed a version of the biological design argument:
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+July 9, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="particle accelerators,high-dimensional data,visualization" data-listing-date-sort="1685246400000" data-listing-file-modified-sort="1688914158354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2184">
+<a href="./posts/2023-05-28_btf/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+High-dimensional phase space measurements
+</h5>
+<div class="card-text listing-description">
+This post covers some of my work on high-dimensional phase space measurements during my postdoc at ORNL. This has been a fun project combining high-dimensional visualization with the physics of intense beams.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+May 28, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cosmological arguments,Leibniz,infinity" data-listing-date-sort="1647921600000" data-listing-file-modified-sort="1688080321015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3471">
+<a href="./posts/2022-03-22_leibnizian_cosmological_arguments/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Leibnizian cosmological arguments
+</h5>
+<div class="card-text listing-description">
+Leibnizian cosmological arguments conclude that there is a necessary being (something that must exist) which explains the existence of contingent beings (things that do not have to exist). Such arguments address the question “Why does anything exist?” and generally utilize a principle of sufficient reason (PSR): <em>every contingent fact has an…</em><em></em><em></em>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+March 22, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="visualization" data-listing-date-sort="1644555600000" data-listing-file-modified-sort="1688003988978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1195">
+<a href="./posts/2022-02-11_injection_figures/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Some figures to illustrate beam injection and accumulation
+</h5>
+<div class="card-text listing-description">
+One method to create high-intensity hadron beams is charge-exchange injection: negatively charged particles are repeatedly accelerated in a linear accelerator (linac) and injected into a circular accelerator (ring), accumulating charge in the ring over time. I created a simple animation to visualize this process.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+February 11, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="tomography,particle accelerators" data-listing-date-sort="1634356800000" data-listing-file-modified-sort="1688003988741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2619">
+<a href="./posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tomographic reconstruction in four dimensions
+</h5>
+<div class="card-text listing-description">
+A beam of particles in an accelerator is characterized by its distribution in phase space — the space of positions <span class="math inline">\(\{x, y, z\}\)</span> and momenta <span class="math inline">\(\{x', y', z'\}\)</span>. I’m currently working on a project in which we’d like to measure the four-dimensional (4D) phase space distribution <span class="math inline">\(f(x, x', y, y')\)</span> of a fully-accumulated beam in the Spallation…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+October 16, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="cosmological arguments,Kalam,infinity" data-listing-date-sort="1631678400000" data-listing-file-modified-sort="1688155101820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3490">
+<a href="./posts/2021-09-15_kalam_cosmological_arguments/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Kalam cosmological arguments
+</h5>
+<div class="card-text listing-description">
+These are my notes on chapter 3 of Oppy’s <em>Arguing About Gods</em>. This chapter is about cosmological arguments. These arguments conclude that there is a cause or explanation of the existence of the universe.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+September 15, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="Anselm,ontological arguments" data-listing-date-sort="1625457600000" data-listing-file-modified-sort="1688049261664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1286">
+<a href="./posts/2021-07-05_ontological_arguments/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ontological arguments
+</h5>
+<div class="card-text listing-description">
+These are my notes on Chapter 2 of Oppy’s <em>Arguing About Gods</em>. This chapter is about ontological arguments — arguments that seek to demonstrate the existence of God by appealing to reason alone. The first and most famous ontological argument for the existence of God was presented by Anselm in 1078 in his work, <em>Proslogion</em> (translated: <em>Discourse on…</em>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+July 5, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="space charge,resonance,instability" data-listing-date-sort="1625112000000" data-listing-file-modified-sort="1688149241166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<a href="./posts/2021-07-01_space_charge_instabilities/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Space charge resonances and instabilities
+</h5>
+<div class="card-text listing-description">
+This post has not been converted to Quarto format yet. It is at my old blog:
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+July 1, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="arguments,theism" data-listing-date-sort="1623470400000" data-listing-file-modified-sort="1688048896441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2985">
+<a href="./posts/2021-06-12_arguing_about_gods/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Arguing about gods
+</h5>
+<div class="card-text listing-description">
+I’m reading the book <em>Arguing About Gods</em> by Graham Oppy, one of the most prominent philosophers of religion <span class="citation" data-cites="Oppy2006-gods">&nbsp;[1]</span>. Oppy’s main thesis is that there are no successful arguments for the existence of orthodoxly conceived monotheistic gods, where “orthodoxly conceived monotheistic god” refers to an omnipotent, omniscient, omnibenevolent creator of the…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+June 12, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="particle accelerators,painting" data-listing-date-sort="1622088000000" data-listing-file-modified-sort="1711268766581" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2546">
+<a href="./posts/2021-05-27_painting_a_particle_beam/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Painting a particle beam
+</h5>
+<div class="card-text listing-description">
+There is a great scene in the otherwise disappointing movie <em>Iron Man 2</em> in which Tony Stark builds a particle accelerator in his house.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+May 27, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="particle accelerators,space charge,Vlasov" data-listing-date-sort="1620878400000" data-listing-file-modified-sort="1711268744192" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2904">
+<a href="./posts/2021-05-13_matched_envelope/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Computing matched envelopes
+</h5>
+<div class="card-text listing-description">
+My first peer-reviewed paper was published in Physical Review Accelerators and Beams (PRAB) at the end of April<span class="citation" data-cites="Hoover2021">&nbsp;[1]</span>. I thought I would summarize the results of the paper here.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+May 13, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="stylometry,natural language processing,support vector machine" data-listing-date-sort="1619668800000" data-listing-file-modified-sort="1711268628911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3947">
+<a href="./posts/2021-04-29_authorship_identification/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Authorship identification
+</h5>
+<div class="card-text listing-description">
+In this post, I’ll summarize a paper by John Houvardas and Efstathios Stamatatos titled <em>N-Gram Feature Selection for Authorship Identification</em><span class="citation" data-cites="Houvardas2006">&nbsp;[1]</span>. The topic of the paper is <em>authorship identification</em>, that is, to identify the author of an unlabeled document given a list of possible authors and some sample of each author’s writing. I’ll first…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+April 29, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="14" data-categories="classical mechanics,nonlinear,resonance,particle accelerators" data-listing-date-sort="1616904000000" data-listing-file-modified-sort="1711268597644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2479">
+<a href="./posts/2021-03-28_nonlinear_resonances/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Nonlinear resonances
+</h5>
+<div class="card-text listing-description">
+Most of us are familiar with the experience of pushing someone else on a playground swing. We intuitively know that we should sync our pushes with the swing oscillation frequency. This strategy employs the idea of a <em>resonance</em>, which is an increase of the oscillation amplitude of a system for certain driving frequencies. In this post we first…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+March 28, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="15" data-categories="electrodynamics,space charge,particle accelerators" data-listing-date-sort="1613970000000" data-listing-file-modified-sort="1711268562683" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2493">
+<a href="./posts/2021-02-22_pic/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Particle-in-cell simulation
+</h5>
+<div class="card-text listing-description">
+Many beam physics simulation codes exist. A key component of these simulations is the inclusion of the electromagnetic interactions between particles in the beam, also known as <em>space charge</em> forces. One way to compute space charge forces is the particle-in-cell (PIC) method. This post implements a basic version of the PIC method in Python.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+February 22, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="16" data-categories="classical mechanics,particle accelerators,coupling" data-listing-date-sort="1611550800000" data-listing-file-modified-sort="1711268522932" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1615">
+<a href="./posts/2021-01-25_coupled_parametric_oscillators/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Coupled parametric oscillators
+</h5>
+<div class="card-text listing-description">
+A previous post examined the analytic solutions to the equation of motion describing a parametric oscillator — an oscillator whose physical properties are time-dependent. This problem was motivated by describing the transverse oscillations of a charged particle in an accelerator. In this post, the treatment will be extended to a <em>coupled</em> parametric…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+January 25, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="17" data-categories="classical mechanics,particle accelerators" data-listing-date-sort="1611205200000" data-listing-file-modified-sort="1711268475537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1872">
+<a href="./posts/2021-01-21_parametric_oscillators/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Parametric oscillators
+</h5>
+<div class="card-text listing-description">
+This post presents the solution to a general problem: the motion of a particle in one dimension in the presence of time-dependent, linear, periodic forces. This amounts to solving the following equation of motion:
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Austin Hoover
+</div>
+<div class="listing-date">
+January 21, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -314,6 +766,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

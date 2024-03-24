@@ -14,11 +14,12 @@
     ]
   },
   {
-    "listing": "/posts/index.html",
+    "listing": "/index.html",
     "items": [
+      "/posts/2024-03-23_hb/index.html",
       "/posts/2023-07-10_fine_tuning/index.html",
       "/posts/2023-07-09_biological_design_arguments/index.html",
-      "/posts/2023-05-28_BTF/index.html",
+      "/posts/2023-05-28_btf/index.html",
       "/posts/2022-03-22_leibnizian_cosmological_arguments/index.html",
       "/posts/2022-02-11_injection_figures/index.html",
       "/posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html",
@@ -30,7 +31,7 @@
       "/posts/2021-05-13_matched_envelope/index.html",
       "/posts/2021-04-29_authorship_identification/index.html",
       "/posts/2021-03-28_nonlinear_resonances/index.html",
-      "/posts/2021-02-22_PIC/index.html",
+      "/posts/2021-02-22_pic/index.html",
       "/posts/2021-01-25_coupled_parametric_oscillators/index.html",
       "/posts/2021-01-21_parametric_oscillators/index.html"
     ]
