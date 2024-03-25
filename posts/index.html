@@ -2,14 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Austin Hoover">
-<meta name="dcterms.date" content="2023-07-04">
 
-<title>Accelerated Inquiry - Charleston, South Carolina, USA</title>
+<title>Austin Hoover - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
 
 <script type="text/javascript">
@@ -80,18 +109,47 @@ gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Accelerated Inquiry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Austin Hoover</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -101,19 +159,19 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about/index.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
+    <a class="nav-link" href="../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html"> 
+    <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes/index.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -128,32 +186,22 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Anselm">Anselm <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Darwin">Darwin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Kalam">Kalam <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Leibniz">Leibniz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vlasov">Vlasov <span class="quarto-category-count">(1)</span></div><div class="category" data-category="arguments">arguments <span class="quarto-category-count">(1)</span></div><div class="category" data-category="biological design">biological design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="classical mechanics">classical mechanics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cosmological arguments">cosmological arguments <span class="quarto-category-count">(2)</span></div><div class="category" data-category="coupling">coupling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electrodynamics">electrodynamics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fine-tuning">fine-tuning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="high-dimensional data">high-dimensional data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="infinity">infinity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="instability">instability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="multiverse">multiverse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="natural language processing">natural language processing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nonlinear">nonlinear <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ontological arguments">ontological arguments <span class="quarto-category-count">(1)</span></div><div class="category" data-category="painting">painting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="particle accelerators">particle accelerators <span class="quarto-category-count">(8)</span></div><div class="category" data-category="resonance">resonance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="space charge">space charge <span class="quarto-category-count">(3)</span></div><div class="category" data-category="stylometry">stylometry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="support vector machine">support vector machine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="teleological arguments">teleological arguments <span class="quarto-category-count">(2)</span></div><div class="category" data-category="theism">theism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tomography">tomography <span class="quarto-category-count">(1)</span></div><div class="category" data-category="visualization">visualization <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Charleston, South Carolina, USA</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Austin Hoover </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 4, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -163,31 +211,204 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
-<ul>
-<li>2023-07-02
-<ul>
-<li>Drove from Knoxville to Kings Courtyard Inn.</li>
-<li>Ate dinner at Le Farfalle.</li>
-</ul></li>
-<li>2023-07-03
-<ul>
-<li>Rented bikes from The Bicycle Shoppe.</li>
-<li>Biked across Arthur Ravenel Jr.&nbsp;Bridge to Sullivan’s Island.</li>
-<li>Ate lunch at Mex 1 Coastal Cantina.</li>
-<li>Walked through Sandpiper Gallery.</li>
-<li>Ate dinner at AZUR.</li>
-<li>Walked our dog at Folly Beach County Park.</li>
-</ul></li>
-<li>2023-07-04
-<ul>
-<li>Walked through Buxton Books.</li>
-<li>Walked through Mary Martin Fine Art Gallery.</li>
-</ul></li>
-</ul>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="teleological arguments,fine-tuning,multiverse" data-listing-date-sort="1688961600000" data-listing-file-modified-sort="1688994076499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3428" data-listing-title-sort="Fine-tuning arguments" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2023-07-10_fine_tuning/index.html" class="title listing-title">Fine-tuning arguments</a>
+</td>
+<td>
+<span class="listing-date">2023-07-10</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="teleological arguments,biological design,Darwin" data-listing-date-sort="1688875200000" data-listing-file-modified-sort="1688994076499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="683" data-listing-title-sort="Biological design arguments" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2023-07-09_biological_design_arguments/index.html" class="title listing-title">Biological design arguments</a>
+</td>
+<td>
+<span class="listing-date">2023-07-09</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="particle accelerators,high-dimensional data,visualization" data-listing-date-sort="1685246400000" data-listing-file-modified-sort="1688994076498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2184" data-listing-title-sort="High-dimensional phase space measurements" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2023-05-28_BTF/index.html" class="title listing-title">High-dimensional phase space measurements</a>
+</td>
+<td>
+<span class="listing-date">2023-05-28</span>
+</td>
+</tr>
+<tr data-index="3" data-categories="cosmological arguments,Leibniz,infinity" data-listing-date-sort="1647921600000" data-listing-file-modified-sort="1688994076459" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3471" data-listing-title-sort="Leibnizian cosmological arguments" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2022-03-22_leibnizian_cosmological_arguments/index.html" class="title listing-title">Leibnizian cosmological arguments</a>
+</td>
+<td>
+<span class="listing-date">2022-03-22</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="visualization" data-listing-date-sort="1644555600000" data-listing-file-modified-sort="1688994076443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1195" data-listing-title-sort="Some figures to illustrate beam injection and accumulation" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2022-02-11_injection_figures/index.html" class="title listing-title">Some figures to illustrate beam injection and accumulation</a>
+</td>
+<td>
+<span class="listing-date">2022-02-11</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="tomography,particle accelerators" data-listing-date-sort="1634356800000" data-listing-file-modified-sort="1688994076423" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2619" data-listing-title-sort="Tomographic reconstruction in four dimensions" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-10-16_tomographic_reconstruction_in_four_dimensions/index.html" class="title listing-title">Tomographic reconstruction in four dimensions</a>
+</td>
+<td>
+<span class="listing-date">2021-10-16</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="cosmological arguments,Kalam,infinity" data-listing-date-sort="1631678400000" data-listing-file-modified-sort="1688994076423" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3490" data-listing-title-sort="Kalam cosmological arguments" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-09-15_kalam_cosmological_arguments/index.html" class="title listing-title">Kalam cosmological arguments</a>
+</td>
+<td>
+<span class="listing-date">2021-09-15</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="Anselm,ontological arguments" data-listing-date-sort="1625457600000" data-listing-file-modified-sort="1688994076421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1286" data-listing-title-sort="Ontological arguments" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-07-05_ontological_arguments/index.html" class="title listing-title">Ontological arguments</a>
+</td>
+<td>
+<span class="listing-date">2021-07-05</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="space charge,resonance,instability" data-listing-date-sort="1625112000000" data-listing-file-modified-sort="1688994076420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16" data-listing-title-sort="Space charge resonances and instabilities" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-07-01_space_charge_instabilities/index.html" class="title listing-title">Space charge resonances and instabilities</a>
+</td>
+<td>
+<span class="listing-date">2021-07-01</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="arguments,theism" data-listing-date-sort="1623470400000" data-listing-file-modified-sort="1688994076420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2985" data-listing-title-sort="Arguing about gods" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-06-12_arguing_about_gods/index.html" class="title listing-title">Arguing about gods</a>
+</td>
+<td>
+<span class="listing-date">2021-06-12</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="particle accelerators,painting" data-listing-date-sort="1622088000000" data-listing-file-modified-sort="1688994076419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2546" data-listing-title-sort="Painting a particle beam" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-05-27_painting_a_particle_beam/index.html" class="title listing-title">Painting a particle beam</a>
+</td>
+<td>
+<span class="listing-date">2021-05-27</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="particle accelerators,space charge,Vlasov" data-listing-date-sort="1620878400000" data-listing-file-modified-sort="1688994076418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2904" data-listing-title-sort="Computing matched envelopes" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-05-13_matched_envelope/index.html" class="title listing-title">Computing matched envelopes</a>
+</td>
+<td>
+<span class="listing-date">2021-05-13</span>
+</td>
+</tr>
+<tr data-index="12" data-categories="stylometry,natural language processing,support vector machine" data-listing-date-sort="1619668800000" data-listing-file-modified-sort="1688994076418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3947" data-listing-title-sort="Authorship identification" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-04-29_authorship_identification/index.html" class="title listing-title">Authorship identification</a>
+</td>
+<td>
+<span class="listing-date">2021-04-29</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="classical mechanics,nonlinear,resonance,particle accelerators" data-listing-date-sort="1616904000000" data-listing-file-modified-sort="1688994076417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2479" data-listing-title-sort="Nonlinear resonances" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-03-28_nonlinear_resonances/index.html" class="title listing-title">Nonlinear resonances</a>
+</td>
+<td>
+<span class="listing-date">2021-03-28</span>
+</td>
+</tr>
+<tr data-index="14" data-categories="electrodynamics,space charge,particle accelerators" data-listing-date-sort="1613970000000" data-listing-file-modified-sort="1688994076408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2493" data-listing-title-sort="Particle-in-cell simulation" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-02-22_PIC/index.html" class="title listing-title">Particle-in-cell simulation</a>
+</td>
+<td>
+<span class="listing-date">2021-02-22</span>
+</td>
+</tr>
+<tr data-index="15" data-categories="classical mechanics,particle accelerators,coupling" data-listing-date-sort="1611550800000" data-listing-file-modified-sort="1688994076406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1615" data-listing-title-sort="Coupled parametric oscillators" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-01-25_coupled_parametric_oscillators/index.html" class="title listing-title">Coupled parametric oscillators</a>
+</td>
+<td>
+<span class="listing-date">2021-01-25</span>
+</td>
+</tr>
+<tr data-index="16" data-categories="classical mechanics,particle accelerators" data-listing-date-sort="1611205200000" data-listing-file-modified-sort="1688994076405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1872" data-listing-title-sort="Parametric oscillators" data-listing-filename-sort="index.ipynb" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../posts/2021-01-21_parametric_oscillators/index.html" class="title listing-title">Parametric oscillators</a>
+</td>
+<td>
+<span class="listing-date">2021-01-21</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -411,24 +632,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -463,11 +666,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -248,7 +248,7 @@ window.Quarto = {
 <p>The LEDA (Low Energy Test Accelerator) experiment at Los Alamos National Laboratory attempted to predict halo formation over a much shorter distance<span class="citation" data-cites="Qiang_2002">&nbsp;[<a href="#ref-Qiang_2002" role="doc-biblioref">3</a>]</span>. One-dimensional (1D) density profiles of a low-energy proton beam were measured after a series of focusing quadrupole magnets. Simulations failed to reproduce the low-density “halo” surrounding the beam core — see Fig. 2. The authors attributed the failure to an inaccurate phase space distribution used to seed the simulation. (Only low-order moments of the distribution were measured.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/qiang_2002_fig9.png" class="img-fluid figure-img" width="450"></p>
+<p><img src="./figures/qiang_2002_fig9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
 <figcaption>Fig. 2. Vertical beam profile measured in the LEDA experiment<span class="citation" data-cites="Qiang_2002">&nbsp;[<a href="#ref-Qiang_2002" role="doc-biblioref">3</a>]</span>.</figcaption>
 </figure>
 </div>
@@ -258,7 +258,7 @@ window.Quarto = {
 <p>We are continuing experimental work on halo prediction at the SNS Beam Test Facility (BTF), a recently commissioned replica of the front end of the SNS linac<span class="citation" data-cites="Zhang_2020">&nbsp;[<a href="#ref-Zhang_2020" role="doc-biblioref">4</a>]</span>. A diagram of the BTF is below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/btf2.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="./figures/btf2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 <figcaption>Fig. 3. The SNS Beam Test Facility (BTF).</figcaption>
 </figure>
 </div>
@@ -267,7 +267,7 @@ window.Quarto = {
 <p>The region <span class="math inline">\(\mathbf{x} \pm \Delta\)</span> is selected using slits. First, a horizontal-vertical pair of slits selects a square in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane. Next, a second pair of slits select <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span> (based on their positions relative to the first slits). The momentum <span class="math inline">\(p_z\)</span> is selected by a vertical slit after a dipole magnet, which bends on-energy particles 90 degrees (faster particles bend less). The last to go is <span class="math inline">\(z\)</span>: The beam passes through a wire, generating an electron beam with the same temporal structure. The electrons are streaked in the transverse plane using an oscillating electric field such that the image of the beam on a screen gives the <span class="math inline">\(z\)</span> distribution.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/measurement.png" class="img-fluid figure-img" width="500"></p>
+<p><img src="./figures/measurement.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 <figcaption>Fig. 4 Cartoon representing the six-dimensional phase space measurement apparatus.</figcaption>
 </figure>
 </div>
@@ -276,7 +276,7 @@ window.Quarto = {
 <p>When combined with a detailed model of the accelerator and a well-tested simulation code, we hope these measurements will allow us to predict the halo dynamics in the BTF. Such a prediction would be the first step toward model-based loss prediction in a linear accelerator.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/workflow.png" class="img-fluid figure-img" width="650"></p>
+<p><img src="./figures/workflow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="650"></p>
 <figcaption>Fig. 5. The SNS-BTF workflow. The phase space distribution <span class="math inline">\(f(\mathbf{x})\)</span> is interpolated from raw images from high-dimensional scans. Particles are sampled from the distribution and propagated through a computational model of the BTF lattice. The output particle distribution is binned and compared with high-dynamic-range measurements of <span class="math inline">\(\{f(x, p_x), f(y, p_y)\}\)</span> at the end of the beamline. The model is refined until the predictions are correct down to the halo level.</figcaption>
 </figure>
 </div>
@@ -314,7 +314,7 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <p>Such figures render slowly and are limited to four-dimensional data. Complete slicing flexibility is available in an interactive widget shown in Fig. 9. This function takes one or more images or point clouds of any dimensionality as inputs. I use it extensively in my data analysis. It is available in the <a href="https://github.com/austin-hoover/psdist">psdist</a> package.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><video src="./figures/slicing.mov" class="img-fluid" width="600" controls=""><a href="./figures/slicing.mov">Video</a></video></p>
+<p><video src="./figures/slicing.mov" class="img-fluid quarto-figure quarto-figure-center" width="600" controls=""><a href="./figures/slicing.mov">Video</a></video></p>
 <figcaption>Fig. 9. Interactive slicing widget from <code>psdist</code>.</figcaption>
 </figure>
 </div>
@@ -322,14 +322,14 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <p>We could also define shells as the density contours of the distribution in the subpace — <span class="math inline">\(f(x_2, \dots, x_n)\)</span> in the above example. We could label these “contour shell slices”. Fig. 10 illustrates this concept.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/nonplanar.png" class="img-fluid figure-img" width="580"></p>
+<p><img src="./figures/nonplanar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="580"></p>
 <figcaption>Fig. 10. Concept of non-planar or “shell” slices.</figcaption>
 </figure>
 </div>
 <p>I applied this idea to our measured distribution to view a specific feature in a compact figure. In Fig. 11, I defined density contours in the four-dimensional transverse phase space by thresholding the projection <span class="math inline">\(f(x, x', y, y')\)</span> between two density levels. I then computed the energy distribution within each shell (possible thanks to <code>numpy</code>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/shell_slice.png" class="img-fluid figure-img" width="500"></p>
+<p><img src="./figures/shell_slice.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 <figcaption>Fig. 11. Energy (<span class="math inline">\(w\)</span>) distribution within four-dimensional contour shell slices in the transverse phase space. Each slice is defined by the projected density <span class="math inline">\(f(x, x', y, y')\)</span>.</figcaption>
 </figure>
 </div>
@@ -340,7 +340,7 @@ f(x, p_x) = \iiiint_{-\infty}^{+\infty} {f(x, p_x, y, p_y, z, p_z) dy dp_y dz dp
 <p>We would like to explain the origin of all features we find in the distribution. From direct measurements at lower beam currents, we know the space charge drives the energy hollowing in Fig. 10.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./figures/waterfall.png" class="img-fluid figure-img" width="475"></p>
+<p><img src="./figures/waterfall.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="475"></p>
 <figcaption>Fig. 11. Sliced energy distribution vs.&nbsp;beam current. Source: Kiersten Ruisard.</figcaption>
 </figure>
 </div>
@@ -615,24 +615,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -667,11 +649,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
