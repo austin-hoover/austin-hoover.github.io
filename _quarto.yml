@@ -33,6 +33,6 @@ format:
         toc-depth: 5
         html-math-method: mathjax
         grid:
-            body-width: 735px
+            body-width: 750px
         mainfont: "georgia"
         fontsize: 15.25px
