@@ -8,31 +8,27 @@ website:
         right:
             - text: "About"
               href: ./about/index.qmd
+            - text: "Posts"
+              href: ./archive.qmd
+            - text: "Notes"
+              href: ./notes/index.qmd
             - text: "Research"
               href: ./research/index.qmd
             - text: "Publications"
               href: ./publications/index.qmd
-            - text: "Notes"
-              href: ./notes/index.qmd
     google-analytics: "G-NS0H6D6VKL"
-    # sidebar:
-    #   - id: notes
-    #     title: Notes
-    #     contents: 
-    #         notes/
-      # - id: research
-      #   title: Research
-      #   contents: 
-      #       research/
-
 format:
     html:
         theme: 
             light: [default, ./style/custom_light.scss]
             dark: [default, ./style/custom_dark.scss]
         toc-depth: 5
+        toc-location: right
         html-math-method: mathjax
         grid:
-            body-width: 710px
-        mainfont: "georgia"
+            body-width: 725px
+        mainfont: Georgia
         fontsize: 15.25px
+
+
+        

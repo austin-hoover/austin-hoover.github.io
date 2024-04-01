@@ -1,0 +1,9 @@
+---
+listing:
+    contents: posts
+    sort: "date desc"
+    type: table
+    fields: [title, date]
+    date-format: YYYY‑MM‑DD
+    categories: true
+---

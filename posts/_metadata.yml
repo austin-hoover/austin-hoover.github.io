@@ -17,4 +17,4 @@ sidebar: false
 title-block-categories: false
 toc: true
 toc-depth: 5
-toc-location: right
+# toc-location: right
