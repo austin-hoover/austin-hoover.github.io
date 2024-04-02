@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -113,10 +113,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../archive.html"> 
-<span class="menu-text">Posts</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../notes/index.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
@@ -169,11 +165,8 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
-<p>Discoveries at high-energy particle colliders have established the standard model</p>
-<p>The Large Hadron Collider (LHC) is the primary high-energy physics (HEP) laboratory and will soon double its luminosity , but progress in HEP will eventually require a new machine. The LHC can’t increase its energy without stronger dipole magnets (currently operating at 8 T). Another difficulty is that protons are composite particles (three quarks held together by gluons) and it’s difficult to extract clean quark-quark interaction signals from the debris. Leptons, such as electrons and positrons, have no measurable structure and generate cleaner signals; however, synchrotron radiation limits their energy in circular accelerators.</p>
-<p>There are a few colliders designs that could reach beyond the 7 TeV LHC. First, the Future Circular Collider (FCC) would collide ~100 TeV protons in a 100 km ring, using the LHC as a booster. The FCC would take around 75 years to launch and many billions of Euros. The accelerator would be a straightforward extension of the LHC, but it may be 10-20 years of R&amp;D before 16 T dipole magnets are available.</p>
-<p>Second, the International Linear Collider (ILC) or Compact Linear Collider (CLIC) would collide electrons with positrons at ~1 TeV in a ~50 km linac. Such high energies are possible because the electrons travel in straight lines, avoiding energy loss to synchroton radition loss. Due to their clean signatures, lepton collisions could reveal new physics even at lower energies than the LHC. The ILC is essentially ready to launch after a comprehensive design study. Although there are no official plans, Japan has shown interest and seems to be the most likely destination.</p>
-<p>Third, a muon collider (MuC) would collide muons and antimuons at ~10 TeV in a ~10 km ring (around the size of the LHC). Muons are heavy electrons, and they could reveal new physics even</p>
+<p>Progress in particle physics will eventualy require a new laboratory. There are several options The Future Circular Collider (FCC) would collide ~100 TeV protons in a 100 km ring, using the LHC as a booster; the International Linear Collider (ILC) or Compact Linear Collider (CLIC) would collide electrons with positrons at ~1 TeV in a ~50 km linac; and the Muon Collider (MuC) would collide muons and antimuons at ~10 TeV in a ~10 km ring.</p>
+<p>Current estimates for the FCC are around 75 years to launch and billions of Euros. The accelerator would be a straightforward extension of the LHC, but it could take 10-20 years to develop the necessary 16 T dipole magnet technology.</p>
 <p>I had an interesting conversation with an experimental particle physicist. In his opinion, particle physicists undersell their work. He drew comparison to condensed matter physics, where experiments reveal exciting and unpredicted phenomena despite agreeing completely with the underlying theory of quantum mechanics. He argued that similar findings are commonplace at the LHC — new processes that do not contradict the Standard Model (SM) but are, nonetheless, unexpected and exciting — and that many of these findings belong in, e.g., the journal Nature.</p>
 
 
@@ -402,24 +395,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -454,11 +429,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
