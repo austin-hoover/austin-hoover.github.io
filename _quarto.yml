@@ -8,14 +8,14 @@ website:
         right:
             - text: "About"
               href: ./about/index.qmd
-            - text: "Posts"
-              href: ./archive.qmd
-            - text: "Notes"
-              href: ./notes/index.qmd
             - text: "Research"
               href: ./research/index.qmd
             - text: "Publications"
               href: ./publications/index.qmd
+            - text: "Posts"
+              href: ./archive.qmd
+            - text: "Notes"
+              href: ./notes/index.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:

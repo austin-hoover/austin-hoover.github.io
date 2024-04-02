@@ -5,7 +5,6 @@ author: Austin Hoover
 categories: [teleological arguments, fine-tuning, multiverse]
 bibliography: references.bib
 csl: ./american-physics-society.csl
-draft: false
 ---
 
 ## 1. Evidence of fine-tuning

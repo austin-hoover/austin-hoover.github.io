@@ -1,8 +1,5 @@
 ---
 title: Publications and presentations
-html: 
-    format:
-        toc: true
 ---
 
 ## Journal articles
