@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Austin Hoover">
-<meta name="dcterms.date" content="2024-03-23">
+<meta name="dcterms.date" content="2024-03-24">
 
-<title>Accelerated Inquiry - High Brightness Workshop 2023</title>
+<title>Accelerated Inquiry - Princeton Muon Collider Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -133,24 +153,14 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#operations-and-commissioning" id="toc-operations-and-commissioning" class="nav-link active" data-scroll-target="#operations-and-commissioning">Operations and commissioning</a></li>
-  <li><a href="#beam-dynamics-in-rings" id="toc-beam-dynamics-in-rings" class="nav-link" data-scroll-target="#beam-dynamics-in-rings">Beam dynamics in rings</a></li>
-  <li><a href="#beam-dynamics-in-linacs" id="toc-beam-dynamics-in-linacs" class="nav-link" data-scroll-target="#beam-dynamics-in-linacs">Beam dynamics in linacs</a></li>
-  <li><a href="#codes" id="toc-codes" class="nav-link" data-scroll-target="#codes">Codes</a></li>
-  <li><a href="#other-things" id="toc-other-things" class="nav-link" data-scroll-target="#other-things">Other things</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">High Brightness Workshop 2023</h1>
+<h1 class="title">Princeton Muon Collider Workshop</h1>
   </div>
 
 
@@ -167,7 +177,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 23, 2024</p>
+      <p class="date">March 24, 2024</p>
     </div>
   </div>
   
@@ -179,57 +189,29 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
-<p>I spoke at the Workshop on High-Brightness and High-Intensity Hadron Beams (HB) at CERN a few months ago. The workshop drew around 200 attendees from the United States, United Kingdom, South Korea, China, Japan, Germany, Italy, France, and Switzerland. All slides are available <a href="https://indico.cern.ch/event/1138716/timetable/#20231009.detailed">online</a>. Here are some notes and highlights:</p>
-<section id="operations-and-commissioning" class="level2">
-<h2 class="anchored" data-anchor-id="operations-and-commissioning">Operations and commissioning</h2>
-<ul>
-<li><p>The SNS has reached 1.7 MW beam power and should reach 2.8 MW this summer.</p></li>
-<li><p>FRIB has commissioned their accelerator and started generating <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.072501">data</a>. They have a fascinating research program studying rare isotopes near the nuclear drip line.</p></li>
-<li><p>The European Spallation Source (ESS) has started commissioning its linac. Mamad Eshraqi talked about the practical challenges of building a brand new complex in Lund, Sweden, including environmental and radiational licenses and the impact on the community. I hadn’t considered those issues before. It’s interesting to see this process unfolding since I wasn’t around for the SNS commissioning 20 years ago.</p></li>
-<li><p>China is rapidly developing several large-scale accelerator facilities. In addition to the recently commissioned China Spallation Source (CNS), they will soon introduce the Heavy Ion Accelerator Facility (HIAF), which will study nuclear physics phenomena like FRIB. HIAF will deal with all sorts of collective effects, and their GPU-accelerated end-to-end simulations are a powerful tool for modeling them. The China Initiative Accelerator Driven System (CiADS) is under construction on the same campus. CiADS will compete with <a href="https://myrrha.be/about-myrrha">MYRRHA</a> to demonstrate the first accelerator-driven system, using a high-power linear accelerator to drive a subcritical nuclear reactor. I don’t know if the US will ever engage in similar efforts.</p></li>
-<li><p>After operating for many years, the JPARC, Fermilab, ISIS, and LHC rings are being upgraded to higher energy/intensity. Most of these talks followed a similar pattern, reporting that small changes to the injection scheme, optics, etc., reduced losses.</p></li>
-</ul>
-</section>
-<section id="beam-dynamics-in-rings" class="level2">
-<h2 class="anchored" data-anchor-id="beam-dynamics-in-rings">Beam dynamics in rings</h2>
-<ul>
-<li><p>Adrian Oeftiger (GSI) gave a fantastic talk on the space charge limit in the FAIR synchrotron. He compared three space charge models: a <em>fixed frozen</em> model that assumes the same Gaussian distribution on each turn, an <em>adaptive frozen</em> model that scales a Gaussian to the second-order moments on each turn, and a self-consistent <em>particle-in-cell</em> model. Despite its lack of self-consistency, the fixed frozen model predicts the loss-free regions of tune space over hundreds of thousands of turns. The beams’ nonuniform charge distribution washes out low-order coherent instabilities through Landau damping, rendering the particle-in-cell approach unnecessary. Adrian’s simulations also showed that pulsed electron lenses—small electron beam currents that partially cancel the beam’s space charge force—could increase the beam intensity by almost 100%. What is the space charge limit in a machine like the SNS, which operates with many fewer turns and a noon-gaussian charge density.</p></li>
-<li><p>Cristhian Gonzalez-Ortiz (MSU) has done excellent work on resonance diagram measurements and correction schemes using sextupoles in the Fermilab booster ring.</p></li>
-<li><p>Nick Evans (ORNL) presented our work on self-consistent injection painting (eigenpainting) to generate bright, spinning hadron beams.</p></li>
-<li><p>Timeofey Gorlov (ORNL) discussed the laser-assisted charge exchange (LACE) research at ORNL. We currently strip electrons from injected H- particles using thin carbon foils. LACE aims to replace the foils with lasers, enabling much higher beam power. After years of reducing the laser power requirements, LACE is ready for operational tests.</p></li>
-<li><p>The beam dyanmics are very complex in RHIC and the planned EIC.</p></li>
-<li><p>I need to study Chao’s book on collective effects.</p></li>
-</ul>
-</section>
-<section id="beam-dynamics-in-linacs" class="level2">
-<h2 class="anchored" data-anchor-id="beam-dynamics-in-linacs">Beam dynamics in linacs</h2>
-<ul>
-<li><p>There was debate about 90-degree phase advance limits. Two different talks suggested that linacs could operate above this limit. For example, adding angular momentum to the beam appears to enhance stability.</p></li>
-<li><p>Dong-O Jeon et al.&nbsp;tried to clarify the relationship between “parametric instabilities” and “particle resonances.” The field seems so small that people will continue to invent their own language. Perhaps we should adopt the language in Ingo Hofmann’s book “Space Charge Physics for Particle Accelerators.”</p></li>
-<li><p>Chen Xiao and Lars Groening found a way to compute matched/periodic envelopes with space charge in linear coupled focusing systems. I studied this problem for a beam with zero four-dimensional emittance, but Chen handled a more general case. It was puzzling that he did not find unique solutions while I did. I’m excited to continue studying coupled beam dynamics with space charge.</p></li>
-<li><p>I presented our work on the impact of high-dimensional phase space correlations on linac beam dynamics.</p></li>
-</ul>
-</section>
-<section id="codes" class="level2">
-<h2 class="anchored" data-anchor-id="codes">Codes</h2>
-<ul>
-<li><p>CERN has developed Xsuite, an integrated beam dynamics simulation code based on a collection of CERN codes like MAD and SixTrackLib. The code can handle almost all effects in rings. It is open-source, well-documented, and GPU-accelerated.</p></li>
-<li><p>LBNL has developed ImpactX in addition to their WarpX code. ImpactX is similar to PyORBIT, an s-based code used primarily for linacs. The code is well-documented and GPU-accelerated. I liked their figure illustrating the ultimate goal of simulating the entire accelerator chain. Such simulations will require modeling vastly different spatial and temporal scales by connecting the results of different simulation codes.</p></li>
-<li><p>I’m currently focused on PyORBIT development because it contains many SNS-specific features and will eventually connect to the SNS control room as an online model. Still, I’m excited about these open-source beam dynamics codes.</p></li>
-</ul>
-</section>
-<section id="other-things" class="level2">
-<h2 class="anchored" data-anchor-id="other-things">Other things</h2>
-<ul>
-<li><p>I enjoyed the conference, but the packed schedule left little time to explore Geneva. I would rather have fewer talks and more poster sessions.</p></li>
-<li><p>Some speakers covered their slides in tiny text and figures. These speakers rarely addressed anything on the slides. This is a problem at all conferences, but it was especially bad here.</p></li>
-<li><p>I appreciated the chance to interact with the small but highly international accelerator community.</p></li>
-</ul>
+<p>The Large Hadron Collider (LHC) will soon double its luminosity, but progress in high-energy physics (HEP) will eventually require a new laboratory <span class="citation" data-cites="Shiltsev_2021">&nbsp;[<a href="#ref-Shiltsev_2021" role="doc-biblioref">1</a>]</span>. There are a few options. The <a href="https://fcc.web.cern.ch/overview">Future Circular Collider (FCC)</a> would collide ~100 TeV protons in a 100 km ring, using the LHC (7 TeV, 25 km) as a booster ring. The plan would be to start colliding leptons (FCC-ee) in the 2040s and switch to protons (FCC-hh) in the 2070s. The accelerator would be a relatively straightforward extension of the LHC, although there would be some new challenges, especially the required 16 T (!) bending magnets.</p>
+<p>An alternative approach is to collide leptons. Hadron collisions distribute energy among quarks and gluons, and it can be difficult to extract signals from the debris. Leptons don’t seem to have any internal structure; their collisions are clean and efficient, enabling precision measurements of certain reactions. Such collisions would be especially useful for studying the Higgs boson. Unfortunately, synchrotron radiation limits lepton energy in circular accelerators. Linear accelerators eliminate this problem but need to by very long to probe BSM physics. The proposed <a href="https://linearcollider.org">International Linear Collider (ILC)</a> would collide electrons with positrons at ~1 TeV in a ~50 km linac. The ILC has undergone a comprehensive design study and is ready to launch. Japan has shown interest, and although there are no official plans, the ILC could start running as soon as 2035.</p>
+<p>A muon collider (MuC) would be a hybrid approach. A MuC would collide muons and antimuons at ~10 TeV in a ~10 km ring (approximately the size of the LHC). Since muons are much heavier than electrons, they can be accelerated to 10 TeV in a compact ring. And since they are leptons, their collisions are more useful than hadrons at the same energy. A MuC is likely the only hope for a collider beyond LHC energy within my lifetime; if all goes well, it could start running in 2045. But there’s a problem: muons decay almost instantly. And another problem: muon beams are hot—they occupy a large volume in position-momentum space. And other problems too, such as neutrino radiation (!). These problems require novel solutions. Thus, the muon collider might be both the fastest and most challenging path to the energy frontier.</p>
+<p>The US Muon Accelerator Program (MAP) developed a preliminary MuC design some years ago, and the <a href="https://muoncollider.web.cern.ch">International Muon Collider Collaboration (IMCC)</a> has started where MAP left off. The preliminary design is shown below <span class="citation" data-cites="Accettura_2023">&nbsp;[<a href="#ref-Accettura_2023" role="doc-biblioref">2</a>]</span>:</p>
+<p><img src="./files/fig_muc.png" class="img-fluid"></p>
+<p>The front end generates the muon and antimuon beams by colliding a proton beam with a metal target, the middle section cools the beams, reducing their phase space volume by six orders of magnitude (!), and the final section accelerates and collides the beams at dedicated interaction points. There is a push to deliver a collider design in the next few years, reflecting growing support from the <a href="https://www.slac.stanford.edu/econf/C210711/">HEP community</a>.</p>
+<p>I recently gave a talk at a workshop on muon colliders at Princeton University. The workshop discussed how the US could address the key technological challenges in the next five years. All presentations are available <a href="https://agenda.hep.wisc.edu/event/2140/timetable/#20240222">online</a>. I discussed how the SNS could test the extreme proton bunch compression needed to generate the initial muon beam. It was a unique workshop because of the mix of accelerator and particle physicists. While most of the talks focused on accelerator physics, around a third focused on detectors or HEP theory. A major topic was the beam-induced background (BIB) due to muon decay. I didn’t understand these talks well, but they motivated me to resume my particle physics self-education. (I probably would have gone into HEP if I’d attended a different grad school.)</p>
+<p>It was interesting to hear the particle physicists’ perspectives. Some expressed a desire for more accelerator-particle physics collaboration, especially among graduate students. I’m not sure how a Ph.D.&nbsp;student could have time to learn both accelerator physics and the complicated data analysis required for experimental particle physics. But I like this idea, and I’m sure many projects would benefit from multiple perspectives and skill sets.</p>
+<p>I also liked hearing about the state of HEP. One experimentalist expressed his opinion that particle physicists undersell their work. He drew a comparison to condensed matter physics, where experiments reveal exciting and unpredicted phenomena despite agreeing with the underlying theory of quantum mechanics. He argued that similar findings are commonplace at the LHC — many new processes do not contradict the Standard Model (SM) but are, nonetheless, unexpected and exciting. I suppose material science discoveries will always get more attention because they can lead to new technologies, while particle physics is more out there. In other words, who cares if tetraquarks exist? But from a fundamental scientific viewpoint, these discoveries are equally exciting.</p>
+<p>I was happy to attend this workshop and look forward to exploring SNS contributions to MuC design. It’s exciting to think about projects twenty (or even fifty) years away.</p>
+<p>A few up-to-date talks on future colliders: <a href="https://indico.cern.ch/event/1260648/attachments/2610683/4510782/IMCC_Schulte_CERN_2023.pdf">IMCC</a>, <a href="https://indico.cern.ch/event/1260648/attachments/2610683/4510781/FrankZimmermann-230314_Future-Colliders-FCC.pdf">FCC</a>, <a href="https://indico.cern.ch/event/1260648/attachments/2610683/4511473/linear-colliders.pdf">ILC</a>.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Shiltsev_2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">V. Shiltsev and F. Zimmermann, <em>Modern and Future Colliders</em>, Reviews of Modern Physics <strong>93</strong>, 015006 (2021).</div>
+</div>
+<div id="ref-Accettura_2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">C. Accettura et al., <em>Towards a Muon Collider</em>, The European Physical Journal C <strong>83</strong>, 864 (2023).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
