@@ -1,5 +1,5 @@
 ---
-title: Publications and presentations
+title: Papers and talks
 ---
 
 ## Journal articles
@@ -15,12 +15,6 @@ title: Publications and presentations
 
 * A. Hoover, N. Evans, J. Holmes. *Computation of the matched envelope of the Danilov distribution*. Physical Review Accelerators and Beams 24.4 (2021): 044201.
 [[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
-
-
-## Newsletter articles
-
-* K. Ruisard, A. Aleksandrov, A. Hoover. *Six Dimensional Distributions at the SNS Beam Test Facility*. APS Division of Physics of Beams Annual Newsletter (2022). 
-[[published](./files/2022_APS_DPB.pdf)]
 
 
 ## Conference and workshop proceedings
@@ -69,21 +63,15 @@ title: Publications and presentations
 [[slides]()]
 
 
+## Newsletter articles
+
+* K. Ruisard, A. Aleksandrov, A. Hoover. *Six Dimensional Distributions at the SNS Beam Test Facility*. APS Division of Physics of Beams Annual Newsletter (2022). 
+[[published](./files/2022_APS_DPB.pdf)]
+
+
 ## Lectures
 
 * A. Hoover. *Accelerator research and development at the Spallation Neutron Source*. Lecture for graduate course (Particle Accelerators: Technology and Applications) at the University of Tennessee. (2022) ([slides]())
-
-
-## Internal reviews and technical notes
-
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. *High-dimensional phase space measurements at the SNS Beam Test Facility*. ORNL Triennial Review (2023).
-[[poster](./files/2023_ORNL_triennial.pdf)]
-
-* A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov. *Measuring the six-dimensional phase space distribution of an ion beam for improved accelerator performance*. ORNL Neutron Science Advisory Board (2022). 
-[[poster]()]
-
-* A. Hoover. *Painting a self-consistent beam*. Spallation Neutron Source Accelerator and Target Advisory Committee Review (2021). 
-[[slides]()]
 
 
 ## Dissertation
