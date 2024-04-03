@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -138,12 +138,12 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../papers/index.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../archive.html"> 
-<span class="menu-text">Posts</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../notes/index.html"> 
@@ -216,7 +216,7 @@ window.Quarto = {
 <p><a href="https://en.wikipedia.org/wiki/Particle_accelerator">Particle accelerators</a> are machines that produce groups of charged particles (<em>beams</em>), increase their kinetic energy, and guide them to a target. These machines are invaluable to modern scientific research. The most famous examples are <em>colliders</em>, such as the <a href="https://home.cern/science/accelerators/large-hadron-collider">LHC</a>, in which two beams are smashed together to generate fundamental particles.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="lhc.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<p><img src="lhc.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
 <figcaption>Fig. 1. A detector at an interaction point in the LHC.</figcaption>
 </figure>
 </div>
@@ -224,7 +224,7 @@ window.Quarto = {
 <p>There are generally a few beam properties that are very important to experimentalists; in colliders, it is the energy and luminosity, in spallation sources, it is the intensity, and in light sources, it is the brightness. There is thus a constant need to push these parameters to new regions. For example, below is the famous Livingston plot which shows the energy achieved by various machines over the past century.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="livingston.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="livingston.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 2. Accelerator energy over time. The vertical axis is not the center of mass energy (CME) — it is the beam energy needed to produce the CME by collision with a resting proton. (source: Rasmus Ischebeck).</figcaption>
 </figure>
 </div>
@@ -232,7 +232,7 @@ window.Quarto = {
 <p>There are three basic tasks an accelerator has to accomplish. First, it must increase the beam energy (acceleration). Second, it must guide the beam along a predetermined path (steering). Third, it must ensure the beam particles remain close together (focusing). It is helpful to use a coordinate system in which the s axis points along the design trajectory, and the x and y axes defined in the plane transverse to s. In this way, the motion is broken up into transverse and longitudinal dynamics.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="coordinate_system.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="coordinate_system.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 3. Curvilinear coordinate system used to describe particle motion along a reference trajectory.</figcaption>
 </figure>
 </div>
@@ -248,14 +248,14 @@ B_y - iB_x = \sum_{n=1}^{\infty}\left({b_n - ia_n}\right)\left(\frac{x + iy}{r_0
 <p>We then have the normal multiple coefficients <span class="math inline">\(\{b_n\}\)</span>, and the skew multipole coefficients <span class="math inline">\(\{a_n\}\)</span>. The field lines corresponding to the first few terms are shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="multipoles.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<p><img src="multipoles.png" class="img-fluid figure-img" style="width:90.0%"></p>
 <figcaption>Fig. 4. Multipole expansion of the magnetic field.</figcaption>
 </figure>
 </div>
 <p>The dipole field <span class="math inline">\(\mathbf{B} \propto \hat{y}\)</span> is perfect for steering, producing the force <span class="math inline">\(\mathbf{F} \propto -\hat{x}\)</span> for a particle moving into the page. The quadrupole field <span class="math inline">\(\mathbf{B} \propto y\hat{x} + x\hat{y}\)</span> produces the force <span class="math inline">\(\mathbf{F}_{quad} \propto -x\hat{x} + y\hat{y}\)</span>, which is focusing in the horizontal direction, but <em>defocusing</em> in the vertical direction; however, net focusing can still be achieved by alternating the direction of the quadrupoles. This is analogous to a beam of light passing through a series of converging and diverging lenses. If the spacing and curvature of the lenses are correctly chosen, net focusing can be achieved.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="thinlens.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+<p><img src="thinlens.png" class="img-fluid figure-img" style="width:90.0%"></p>
 <figcaption>Fig. 5. Single-particle motion in the thin-lense approximation.</figcaption>
 </figure>
 </div>
@@ -282,21 +282,21 @@ x(s) = \sqrt{2J}\,w(s) \cos\left({\mu(s) + \delta}\right).
 <p>This introduces an amplitude <span class="math inline">\(w(s) = w(s + L)\)</span> which we call the envelope function, as well as a phase <span class="math inline">\(\mu\)</span>, both of which depend on <span class="math inline">\(s\)</span>. The constants <span class="math inline">\(J\)</span> and <span class="math inline">\(\delta\)</span> are determined by the initial conditions. Let’s plot this trajectory in a FODO (focus-off-defocus-off) lattice, which consists of evenly spaced focusing and defocusing quadrupoles. Here is the focusing strength within the lattice (<em>QF</em> is the focusing quadrupole and <em>QD</em> is the defocusing quadrupole):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="fodo_lattice.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="fodo_lattice.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Fig. 6. FODO lattice.</figcaption>
 </figure>
 </div>
 <p>For now we can think of the lattice as repeating itself forever in the <span class="math inline">\(s\)</span> direction. Each black line below is represents the trajectory for a different initial position and slope; although the individual trajectories look rather complicated, the envelope function has a very simple form.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="envelope.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="envelope.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Fig. 7. Envelope function and particle trajectories.</figcaption>
 </figure>
 </div>
 <p>The particle motion becomes much easier to interpret if we observe it in position-momentum space, aka <em>phase space</em>. The following animation shows the evolution of the particle phase space coordinates at a single position in the lattice. The position shown is <span class="math inline">\(s = nL/4\)</span>, where <span class="math inline">\(n\)</span> is the period number, which corresponds to the midpoint between the focusing and defocusing quadrupoles.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="tbt.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="tbt.gif" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Fig. 8. Phase space coordinates after every focusing period.</figcaption>
 </figure>
 </div>
@@ -564,6 +564,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -598,7 +616,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

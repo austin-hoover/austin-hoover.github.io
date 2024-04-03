@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -172,12 +172,12 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../papers/index.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../archive.html"> 
-<span class="menu-text">Posts</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../notes/index.html"> 
@@ -339,14 +339,14 @@ B_y - iB_x = \sum_{n=1}^{\infty}\left({b_n - ia_n}\right)\left(\frac{x + iy}{r_0
 <p>where <span class="math inline">\(r_0\)</span> is a constant. The <span class="math inline">\(b_n\)</span> and <span class="math inline">\(a_n\)</span> terms are called the multipole coefficients and skew multipole coefficients, respectively. The <span class="math inline">\(n^{th}\)</span> term in the expansion is the field produced by <span class="math inline">\(2n\)</span> symmetrically arranged magnetic poles.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="multipoles.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="multipoles.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Fig. 4. Multipole expansion of the magnetic field up to fourth order.</figcaption>
 </figure>
 </div>
 <p>We can see that terms with <span class="math inline">\(n &gt; 2\)</span> introduce nonlinear powers of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> on the right side of Eq. (6), while terms with <span class="math inline">\(n \le 2\)</span> introduce linear or constant terms. One may ask why we are considering a general magnetic field when in reality we use only dipoles and quadrupoles. The answer is two-fold. First, the best we can do in a real magnet is to make the <span class="math inline">\(n &gt; 2\)</span> terms as small as possible; they aren’t zero and we need to know how they affect the motion. Second, sextupoles (and sometimes even octopoles) can be introduced intentionally. Their primary use is to correct for the fact that not all beam particles have the same momentum.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="sextupole_magnet.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+<p><img src="sextupole_magnet.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
 <figcaption>Fig. 5. An example of a sextupole electromagnet. (Source: CERN.)</figcaption>
 </figure>
 </div>
@@ -1031,6 +1031,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1065,7 +1083,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
