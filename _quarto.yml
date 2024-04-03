@@ -10,10 +10,10 @@ website:
               href: ./about/index.qmd
             - text: "Research"
               href: ./research/index.qmd
-            - text: "Publications"
-              href: ./publications/index.qmd
-            - text: "Posts"
-              href: ./archive.qmd
+            - text: "Papers"
+              href: ./papers/index.qmd
+            - text: "Blog"
+              href: ./index.qmd
             - text: "Notes"
               href: ./notes/index.qmd
     google-analytics: "G-NS0H6D6VKL"
