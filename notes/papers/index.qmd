@@ -3,6 +3,7 @@ title: Papers
 listing:
     contents:
         - "*.qmd"
+        - "papers.yml"
     fields: [title, author, date]
     field-display-names:
         title: "Title"

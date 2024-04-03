@@ -1,5 +1,5 @@
 ---
-title: Papers and talks
+title: "Papers and talks"
 ---
 
 ## Journal articles
@@ -18,6 +18,8 @@ title: Papers and talks
 
 
 ## Conference and workshop proceedings
+
+* A. Hoover. *MENT-Flow: maximum-entropy tomography using normalizing flows*. International Particle Accelerator Conference (2024). (Forthcoming)
 
 * A. Hoover, N. Evans, V. Morozov, S. Cousineau. *SNS accelerator synergies for muon collider R&D*. Princeton Muon Collider Organizational Workshop (2024). [[slides](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf)]
 

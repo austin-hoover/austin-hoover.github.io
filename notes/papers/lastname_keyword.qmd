@@ -1,10 +1,9 @@
 ---
-title: "Paper A"
+title: "Some paper title"
 author: "Firstname Lastname"
-date: 2023-06-30
 categories:
     - "cats"
     - "dogs"
 ---
 
-Notes on Paper A.
+A comment about this paper.
