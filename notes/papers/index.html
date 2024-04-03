@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -192,7 +192,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cats">cats <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dogs">dogs <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="algorithms">algorithms <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cats">cats <span class="quarto-category-count">(1)</span></div><div class="category" data-category="computer science">computer science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dogs">dogs <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -260,26 +260,26 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="cats,dogs" data-listing-date-sort="1688097600000" data-listing-file-modified-sort="1688161753719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Paper A" data-listing-filename-sort="test1.qmd">
+<tr data-index="0" data-categories="cats,dogs" data-listing-file-modified-sort="1712116239403" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Some paper title" data-listing-filename-sort="lastname_keyword.qmd">
 <td>
-<a href="../../notes/papers/test1.html" class="title listing-title">Paper A</a>
+<a href="../../notes/papers/lastname_keyword.html" class="title listing-title">Some paper title</a>
 </td>
 <td>
 <span class="listing-author">Firstname Lastname</span>
 </td>
 <td>
-<span class="listing-date">Jun 30, 2023</span>
+<span class="listing-date">&nbsp;</span>
 </td>
 </tr>
-<tr data-index="1" data-categories="cats" data-listing-date-sort="1688097600000" data-listing-file-modified-sort="1688161858429" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Paper B" data-listing-filename-sort="test2.qmd">
+<tr data-index="1" data-categories="computer science,algorithms" data-listing-title-sort="Another paper title">
 <td>
-<a href="../../notes/papers/test2.html" class="title listing-title">Paper B</a>
+<span class="listing-title">Another paper title</span>
 </td>
 <td>
-<span class="listing-author">Firstname Lastname</span>
+<span class="listing-author">Adam Smith</span>
 </td>
 <td>
-<span class="listing-date">Jun 30, 2023</span>
+<span class="listing-date">&nbsp;</span>
 </td>
 </tr>
 </tbody>

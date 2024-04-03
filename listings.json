@@ -7,13 +7,6 @@
     ]
   },
   {
-    "listing": "/notes/papers/index.html",
-    "items": [
-      "/notes/papers/test1.html",
-      "/notes/papers/test2.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/2024-04-01_muon/index.html",
@@ -35,6 +28,12 @@
       "/posts/2021-02-22_pic/index.html",
       "/posts/2021-01-25_coupled_parametric_oscillators/index.html",
       "/posts/2021-01-21_parametric_oscillators/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/papers/index.html",
+    "items": [
+      "/notes/papers/lastname_keyword.html"
     ]
   },
   {
