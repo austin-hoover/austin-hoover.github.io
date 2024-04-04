@@ -8,7 +8,7 @@ about:
 
 :::{#my-heading}
 
-I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). I primarily study intense charged particle beam dynamics and phase space reconstruction techniques (see [Research](../research/index.qmd) and [Papers](../papers/index.qmd). I sometimes write about my work on my [Blog](https://austin-hoover.github.io/blog/).
+I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). I primarily study intense charged particle beam dynamics and phase space reconstruction techniques (see [Research](../research/index.qmd) and [Papers](../papers/index.qmd)). I also write about my work on my [Blog](https://austin-hoover.github.io/blog/).
 
 :::
 
