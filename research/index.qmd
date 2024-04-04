@@ -1,12 +1,4 @@
----
-title: "Research"
-toc: true
----
-
-I primarily study the dynamics of intense charged particle beams, which are important tools for material science, nuclear energy, and high-energy physics research. I'm also interested in beam diagnostic techniques such as phase space tomography.
-
-
-## High-dimensional phase space measurements and beam halo formation
+## Beam halo formation in linear accelerators
 
 Charged particle beams respond to external forces (like magnets) and internal forces (from the beam's self-generated electric field), also called *space charge* forces. These combined effects drive some particles to large amplitudes, creating a low-density "halo" surrounding a dense core. Halo is so faint that it barely influences the core and is invisible in typical measurements; however, it places hard constraints on the beam power. Halo particles produce radiation during unintended collisions before reaching their target. The lost beam power must remain below one watt per meter to keep radiation levels safe; this fractional loss corresponds to one out of every million particles in a one-megawatt beam. Current machines operate near the one-part-per-million limit, but losses scale with the intensity. Ten- or hundred-megawatt accelerators may not be possible without halo-level control.
 
@@ -26,7 +18,7 @@ Direct 6D phase space distributions take a long time (24 hours) and are only pos
 :::
 
   
-## Phase space painting and beam dynamics in rings
+## Painting and beam dynamics in rings
 
 Our primary method to generate intense beams is to repeatedly inject pulses from a linear accelerator (linac) into a circular accelerator (ring). Nonlinear space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. Understanding these effects is an active research area. One approach to mitigate space charge effects is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation. We call this *phase space painting*. We're studying a new painting method to generate a vortex beam, where particles swirl inside an elliptical boundary. Such a beam would minimize the nonlinear component of space charge forces, potentially leading to higher intensities. At the same time, the beam would occupy a tiny volume of phase space, making it useful for high-energy colliders.
 

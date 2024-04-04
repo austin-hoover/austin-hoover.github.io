@@ -1,9 +1,0 @@
----
-title: "Some paper title"
-author: "Firstname Lastname"
-categories:
-    - "cats"
-    - "dogs"
----
-
-A comment about this paper.

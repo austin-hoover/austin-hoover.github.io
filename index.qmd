@@ -1,11 +1,17 @@
 ---
-listing:
-    contents: posts
-    sort: "date desc"
-    type: grid
-    grid-columns: 1
-    fields: [title, author, date, description]
-    max-description-length: 350
-    date-format: long
-    categories: true
+about:
+    id: my-heading
+    template: trestles
+    image: ./images/me_ornl.jpg
+    image-shape: rectangle
 ---
+
+:::{#my-heading}
+
+I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). I primarily study intense charged particle beam dynamics and phase space reconstruction techniques (see [Research](../research/index.qmd) and [Papers](../papers/index.qmd). I sometimes write about my work on my [Blog](https://austin-hoover.github.io/blog/).
+
+:::
+
+Email: hooveram@ornl.gov \
+GitHub: https://github.com/austin-hoover \
+LinkedIn: https://linkedin.com/in/austin-hoover-7b760511b \
