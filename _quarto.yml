@@ -20,10 +20,10 @@ format:
     html:
         theme: [cosmo, ./style/custom.scss]
         grid:
-            body-width: 725px
-        fontsize: 15.5px
+            body-width: 700px
+        fontsize: 15.0px
         fontcolor: black
         linkcolor: black
         toc: false
         html-math-method: mathjax
-        linestretch: 1.45
+#        linestretch: 1.45
