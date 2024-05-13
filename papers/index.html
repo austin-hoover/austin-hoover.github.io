@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -145,11 +145,24 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <em>Physical Review Accelerators and Beams</em> (2021)<br>
 [<a href="https://doi.org/10.1103/PhysRevAccelBeams.24.044201">published</a>]</p>
 </section>
-<section id="conference-and-workshop-proceedings" class="level2">
-<h2 class="anchored" data-anchor-id="conference-and-workshop-proceedings">Conference and workshop proceedings</h2>
+<section id="conference-proceedings-contributed" class="level2">
+<h2 class="anchored" data-anchor-id="conference-proceedings-contributed">Conference proceedings (contributed)</h2>
 <p><strong>MENT-Flow: maximum-entropy tomography using normalizing flows</strong><br>
-<u>A. Hoover</u><br>
+<u>A. Hoover</u>, J. Wong<br>
 <em>International Particle Accelerator Conference</em> (2024) (Forthcoming)</p>
+<p><strong>Proposed muon collider R&amp;D at the SNS</strong><br>
+V. S. Morozov, S. Cousineau, N. Evans, <u>A. Hoover</u>, F. Pilat, D. Stratakis<br>
+<em>International Particle Accelerator Conference</em> (2024) (Forthcoming)</p>
+<p><strong>Measurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility</strong><br>
+T. Thompson, K. Ruisard, <u>A. Hoover</u>, A. Aleksandrov, A. Zhukov<br>
+<em>International Particle Accelerator Conference</em> (2024) (Forthcoming)</p>
+<p><strong>Status of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies</strong><br>
+K. Ruisard, A. Aleksandrov, S. Cousineau, B. Han, <u>A. Hoover</u>, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, A. Zhukov<br>
+<em>International Particle Accelerator Conference</em> (2024) (Forthcoming)</p>
+<p><strong>SNS accelerator synergies for muon collider R&amp;D</strong><br>
+<u>A. Hoover</u>, N. Evans, V. Morozov, S. Cousineau<br>
+<em>Princeton Muon Collider Organizational Workshop</em> (2024)<br>
+[<a href="https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf">slides</a>]</p>
 <p><strong>SNS accelerator synergies for muon collider R&amp;D</strong><br>
 <u>A. Hoover</u>, N. Evans, V. Morozov, S. Cousineau<br>
 <em>Princeton Muon Collider Organizational Workshop</em> (2024)<br>
@@ -308,24 +321,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -360,11 +355,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
