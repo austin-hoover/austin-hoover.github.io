@@ -21,7 +21,7 @@ format:
         theme: [cosmo, ./style/custom.scss]
         grid:
             body-width: 700px
-        fontsize: 15.0px
+        fontsize: 16.0px
         fontcolor: black
         linkcolor: black
         toc: false
