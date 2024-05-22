@@ -20,7 +20,7 @@ format:
     html:
         theme: [cosmo, ./style/custom.scss]
         grid:
-            body-width: 700px
+            body-width: 800px
         fontsize: 16.0px
         fontcolor: black
         linkcolor: black
