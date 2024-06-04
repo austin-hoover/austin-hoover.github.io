@@ -20,8 +20,8 @@ format:
     html:
         theme: [cosmo, ./style/custom.scss]
         grid:
-            body-width: 800px
-        fontsize: 16.0px
+            body-width: 700px
+        fontsize: 15.25px
         fontcolor: black
         linkcolor: black
         toc: false
