@@ -1,5 +1,9 @@
 ## Journal articles
 
+**High-dimensional maximum-entropy phase space tomography using normalizing flows** \
+<u> A. Hoover</u>, J. Wong \
+[[preprint](https://arxiv.org/abs/2406.00236)]
+
 **Analysis of a hadron beam in five-dimensional phase space** \
 <u>A. Hoover</u>, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov \
 *Physical Review Accelerators and Beams* (2023) \
@@ -24,7 +28,7 @@
 
 **MENT-Flow: maximum-entropy tomography using normalizing flows** \
 <u>A. Hoover</u>, J. Wong \
-*International Particle Accelerator Conference* (2024) (Forthcoming)
+*International Particle Accelerator Conference* (2024)
 
 **Proposed muon collider R&D at the SNS** \
 V. S. Morozov, S. Cousineau, N. Evans, <u>A. Hoover</u>, F. Pilat, D. Stratakis \
