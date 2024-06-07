@@ -2,6 +2,7 @@
 
 **High-dimensional maximum-entropy phase space tomography using normalizing flows** \
 <u> A. Hoover</u>, J. Wong \
+*Under review* (2024) \
 [[preprint](https://arxiv.org/abs/2406.00236)]
 
 **Analysis of a hadron beam in five-dimensional phase space** \
@@ -26,21 +27,27 @@
 
 ## Conference proceedings (contributed)
 
+Note that IPAC proceedings are not peer reviewed (contributions are accepted/rejected from the abstract alone) and are typically closely linked to other published articles.
+
 **MENT-Flow: maximum-entropy tomography using normalizing flows** \
 <u>A. Hoover</u>, J. Wong \
-*International Particle Accelerator Conference* (2024)
+*International Particle Accelerator Conference* (2024) \
+[[poster](files/2024_ipac_poster.pdf)]
+[[paper](https://www.jacow.org/ipac2024/pdf/WEPG65.pdf)]
 
 **Proposed muon collider R&D at the SNS** \
 V. S. Morozov, S. Cousineau, N. Evans, <u>A. Hoover</u>, F. Pilat, D. Stratakis \
-*International Particle Accelerator Conference* (2024) (Forthcoming)
+*International Particle Accelerator Conference* (2024) (Forthcoming) \
+[[paper](https://www.jacow.org/ipac2024/pdf/WEPR39.pdf)]
 
 **Measurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility** \
 T. Thompson, K. Ruisard, <u>A. Hoover</u>, A. Aleksandrov, A. Zhukov \
-*International Particle Accelerator Conference* (2024) (Forthcoming)
+*International Particle Accelerator Conference* (2024) (Forthcoming) \
 
 **Status of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies** \
 K. Ruisard, A. Aleksandrov, S. Cousineau, B. Han, <u>A. Hoover</u>, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, A. Zhukov \
-*International Particle Accelerator Conference* (2024) (Forthcoming)
+*International Particle Accelerator Conference* (2024) (Forthcoming) \
+[[paper](https://www.jacow.org/ipac2024/pdf/THPC75.pdf)]
 
 **SNS accelerator synergies for muon collider R&D** \
 <u>A. Hoover</u>, N. Evans, V. Morozov, S. Cousineau \
