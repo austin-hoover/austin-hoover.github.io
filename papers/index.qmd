@@ -2,7 +2,7 @@
 
 **High-dimensional maximum-entropy phase space tomography using normalizing flows** \
 <u> A. Hoover</u>, J. Wong \
-*Under review* (2024) \
+*Physical Review Research* (forthcoming) (2024) \
 [[preprint](https://arxiv.org/abs/2406.00236)]
 
 **Analysis of a hadron beam in five-dimensional phase space** \
