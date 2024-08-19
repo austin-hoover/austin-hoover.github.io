@@ -28,7 +28,12 @@
 
 ## Conference proceedings (contributed)
 
-Note that IPAC proceedings are not peer reviewed (contributions are accepted/rejected from the abstract alone) and are typically closely linked to other published articles.
+Note that IPAC/NAPAC proceedings are not peer reviewed (contributions are accepted/rejected from the abstract alone) and are typically closely linked to other published articles.
+
+**Progress toward halo modeling at the SNS Beam Test Facility** \
+K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
+*32nd Linear Accelerator Conference* (2024) \
+*Forthcoming*
 
 **MENT-Flow: maximum-entropy tomography using normalizing flows** \
 <u>A. Hoover</u>, J. Wong \
