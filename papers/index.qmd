@@ -3,22 +3,22 @@
 **High-dimensional maximum-entropy phase space tomography using normalizing flows** \
 <u> A. Hoover</u>, J. Wong \
 *Physical Review Research* (2024) \
-[[preprint](https://arxiv.org/abs/2406.00236)]
 [[published](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163)]
+[[preprint](https://arxiv.org/abs/2406.00236)]
 
 **Analysis of a hadron beam in five-dimensional phase space** \
 <u>A. Hoover</u>, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov \
 *Physical Review Accelerators and Beams* (2023) \
-[[preprint](https://arxiv.org/abs/2301.04178)]
 [[published](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.26.064202)]
+[[preprint](https://arxiv.org/abs/2301.04178)]
 [[data](https://zenodo.org/record/7724034#.ZDsWlS-B1pQ)]
 [[blog](https://austin-hoover.github.io/blog/posts/2023-05-28_btf/)]
 
 **Four-dimensional emittance measurement at the Spallation Neutron Source** \
 <u>A. Hoover</u>, N. Evans \
 *Nuclear Instruments and Methods in Physics Research Section A* (2022) \
-[[preprint](https://arxiv.org/abs/2204.08303)] 
 [[published](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805)]
+[[preprint](https://arxiv.org/abs/2204.08303)] 
 
 **Computation of the matched envelope of the Danilov distribution** \
 <u>A. Hoover</u>, N. Evans, J. Holmes \
