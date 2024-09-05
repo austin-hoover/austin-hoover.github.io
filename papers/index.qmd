@@ -1,5 +1,9 @@
 ## Journal articles
 
+**Four-dimensional phase space tomography from one-dimensional measurements in a high-power hadron ring** \
+<u> A. Hoover </u> \
+[[preprint](https://arxiv.org/pdf/2409.02862)]
+
 **High-dimensional maximum-entropy phase space tomography using normalizing flows** \
 <u> A. Hoover</u>, J. Wong \
 *Physical Review Research* (2024) \
