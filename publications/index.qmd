@@ -1,14 +1,24 @@
-## Journal articles
+## Preprints
+
+**N-dimensional maximum-entropy tomography via particle sampling** \
+<u> A. Hoover </u> \
+[[preprint](https://arxiv.org/pdf/2409.17915)]
+[[code](https://github.com/austin-hoover/ment)]
 
 **Four-dimensional phase space tomography from one-dimensional measurements in a high-power hadron ring** \
 <u> A. Hoover </u> \
 [[preprint](https://arxiv.org/pdf/2409.02862)]
+
+
+## Journal articles
 
 **High-dimensional maximum-entropy phase space tomography using normalizing flows** \
 <u> A. Hoover</u>, J. Wong \
 *Physical Review Research* (2024) \
 [[published](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163)]
 [[preprint](https://arxiv.org/abs/2406.00236)]
+[[data](https://zenodo.org/records/12812545)]
+[[code](https://github.com/austin-hoover/ment-flow)]
 
 **Analysis of a hadron beam in five-dimensional phase space** \
 <u>A. Hoover</u>, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov \
@@ -32,12 +42,15 @@
 
 ## Conference proceedings (contributed)
 
-Note that IPAC/NAPAC proceedings are not peer reviewed (contributions are accepted/rejected from the abstract alone) and are typically closely linked to other published articles.
+**Benchmark of linac model and phase space measurements at the SNS Beam Test Facility** \
+K. Ruisard, A. Aleksandrov, <u>A. Hoover<\u>, T. Thompson, A. Zhukov \
+*14th International Computational Accelerator Physics Conference* (2024) \
+*Forthcoming*
 
 **Progress toward halo modeling at the SNS Beam Test Facility** \
 K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
 *32nd Linear Accelerator Conference* (2024) \
-*Forthcoming*
+[[paper](https://meow.elettra.eu/71/pdf/THAA005.pdf)]
 
 **MENT-Flow: maximum-entropy tomography using normalizing flows** \
 <u>A. Hoover</u>, J. Wong \

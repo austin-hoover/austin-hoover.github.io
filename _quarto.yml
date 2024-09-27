@@ -10,8 +10,8 @@ website:
               href: ./index.qmd
             - text: "Research"
               href: ./research/index.qmd
-            - text: "Papers"
-              href: ./papers/index.qmd
+            - text: "Publications"
+              href: ./publications/index.qmd
             - text: "Blog"
               href: https://austin-hoover.github.io/blog/
 
