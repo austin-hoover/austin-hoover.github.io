@@ -43,7 +43,7 @@
 ## Conference proceedings (contributed)
 
 **Benchmark of linac model and phase space measurements at the SNS Beam Test Facility** \
-K. Ruisard, A. Aleksandrov, <u>A. Hoover<\u>, T. Thompson, A. Zhukov \
+K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
 *14th International Computational Accelerator Physics Conference* (2024) \
 *Forthcoming*
 
