@@ -44,7 +44,9 @@ title: Publications
 [[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 
-## Conference proceedings (contributed)
+## Conference proceedings
+
+Note that conferences like IPAC are not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.
 
 **Benchmark of linac model and phase space measurements at the SNS Beam Test Facility** \
 K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
