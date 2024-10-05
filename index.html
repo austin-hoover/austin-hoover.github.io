@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -129,21 +130,16 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="./images/me_ornl.jpg" class="about-image
-  rectangle " style="width: 20em;">
-  </div>
-  <div class="about-contents"><div id="my-heading">
-<p>I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). I primarily study intense charged particle beam dynamics and phase space reconstruction techniques (see <a href="./research/index.html">research</a> and <a href="./publications/index.html">publications</a>). I sometimes write about my work on my <a href="https://austin-hoover.github.io/blog/">blog</a>.</p>
-</div></div>
+<div class="grid">
+<div class="g-col-4">
+<p><img src="images/me_ornl.jpg" class="img-fluid"></p>
 </div>
-
+<div class="g-col-8">
+<p>I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My research is focused on the dynamics of intense charged particle beams in accelerators. (See <a href="./research/index.html">Research</a> and <a href="./publications/index.html">Publications</a>.) I sometimes write about my work on my <a href="https://austin-hoover.github.io/blog/">blog</a>.</p>
+</div>
+</div>
 <p>Email: hooveram@ornl.gov<br>
-GitHub: https://github.com/austin-hoover<br>
-LinkedIn: https://linkedin.com/in/austinhoover0<br>
 </p>
-
 
 
 
@@ -168,6 +164,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
