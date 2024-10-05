@@ -1,3 +1,7 @@
+---
+title: Publications
+---
+
 ## Preprints
 
 **N-dimensional maximum-entropy tomography via particle sampling** \
@@ -45,7 +49,6 @@
 **Benchmark of linac model and phase space measurements at the SNS Beam Test Facility** \
 K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
 *14th International Computational Accelerator Physics Conference* (2024) \
-*Forthcoming*
 
 **Progress toward halo modeling at the SNS Beam Test Facility** \
 K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
@@ -60,16 +63,16 @@ K. Ruisard, A. Aleksandrov, <u>A. Hoover</u>, T. Thompson, A. Zhukov \
 
 **Proposed muon collider R&D at the SNS** \
 V. S. Morozov, S. Cousineau, N. Evans, <u>A. Hoover</u>, F. Pilat, D. Stratakis \
-*International Particle Accelerator Conference* (2024) (Forthcoming) \
+*International Particle Accelerator Conference* (2024) \
 [[paper](https://www.jacow.org/ipac2024/pdf/WEPR39.pdf)]
 
 **Measurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility** \
 T. Thompson, K. Ruisard, <u>A. Hoover</u>, A. Aleksandrov, A. Zhukov \
-*International Particle Accelerator Conference* (2024) (Forthcoming) \
+*International Particle Accelerator Conference* (2024) \
 
 **Status of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies** \
 K. Ruisard, A. Aleksandrov, S. Cousineau, B. Han, <u>A. Hoover</u>, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, A. Zhukov \
-*International Particle Accelerator Conference* (2024) (Forthcoming) \
+*International Particle Accelerator Conference* (2024) \
 [[paper](https://www.jacow.org/ipac2024/pdf/THPC75.pdf)]
 
 **SNS accelerator synergies for muon collider R&D** \
