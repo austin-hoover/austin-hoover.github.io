@@ -2,6 +2,7 @@
 title: Research
 bibliography: references.bib
 csl: ./american-physics-society.csl
+toc: true
 ---
 
 Accelerator and beam physics is "the science of the motion, generation, acceleration, manipulation, prediction, observation and use of charged particle beams" @Nagaitsev_2022. My research focuses on the intense beams produced in high-power hadron accelerators. High-power accelerators can generate secondary beams of [neutrons](https://neutrons.ornl.gov/sns), [neutrinos](https://www.dunescience.org), and [muons](https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/). In the future, hadron accelerators could produce [nuclear energy](https://myrrha.be). Several machines now operate above 1 MW beam power (similar to the 1 TeV milestone in high-energy colliders), with future machines moving toward 10 MW.
@@ -21,7 +22,7 @@ Linear accelerators generate tight bunches of particles in a single pass. The co
 We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark PIC simulations at a new level of detail and better understand halo formation processes. Fig. 1 shows typical measurement data.
 
 :::{.column-body}
-![Fig. 1. A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF.](./files/fig13.png){fig-align=center}
+![A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF.](./files/fig13.png){fig-align=center}
 :::
 
 
@@ -30,19 +31,22 @@ We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](htt
 Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigate space charge effects is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation. We call this *phase space painting*. We're studying a new painting method to generate a vortex beam, where particles swirl inside an elliptical boundary. Such a beam would minimize the nonlinear component of space charge forces, potentially leading to higher intensities. At the same time, the beam would occupy a tiny volume of phase space, making it potentially useful in the first stage of a high-energy collider.
 
 :::{.column-body}
-![Fig. 3. Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.](./files/fig_scbd_ment_01.png){fig-align=center}
+![Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.](./files/fig_scbd_ment_01.png){fig-align=center}
 :::
 
 
 ## Proton bunch compression
 
-A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. The bunch compression will significantly decrease particle oscillation frequencies. I'm examining whether a scaled version of this bunch compression is possible at the SNS.
+A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been tested for hadron beams; space charge effects, impedances, and electron cloud instabilities could be an issue. I'm examining whether a version of the proposed scheme could be tested at the SNS.
 
+:::{.column-body}
+![](./files/fig_rotation.png){fig-align=center width=100%}
+:::
 
 ## Phase space tomography
 
 Classical particles are entirely described by their position and momentum in three-dimensional space. Together, these form a six-dimensional *phase space*. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I'm particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty.
 
 :::{.column-body}
-![Fig. 2. Entropy maximization (MENT) is a conservative approach to inverse problems.](./files/fig_ment_swissroll.png){fig-align=center}
+![Entropy maximization (MENT) is a conservative approach to inverse problems.](./files/fig_ment_swissroll.png){fig-align=center}
 :::
