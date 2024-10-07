@@ -24,3 +24,5 @@ format:
         grid:
             body-width: 650px
         fontsize: 14.5px
+        # mainfont: Helvetica
+        
