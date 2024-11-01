@@ -9,7 +9,7 @@ title: Publications
 [[preprint](https://arxiv.org/pdf/2409.17915)]
 [[code](https://github.com/austin-hoover/ment)]
 
-**Four-dimensional phase space tomography from one-dimensional measurements in a high-power hadron ring** \
+**Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam** \
 <u> A. Hoover </u> \
 [[preprint](https://arxiv.org/pdf/2409.02862)]
 
