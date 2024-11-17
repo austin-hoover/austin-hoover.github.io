@@ -10,9 +10,4 @@ I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laborator
 
 :::
 
-
-<hr>
-
-Email: hooveram@ornl.gov \
-GitHub: https://github.com/austin-hoover \
-Linkedin: https://www.linkedin.com/in/austinhoover0/
+Email: hooveram@ornl.gov
