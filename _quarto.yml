@@ -12,9 +12,6 @@ website:
               href: ./research/index.qmd
             - text: "Publications"
               href: ./publications/index.qmd
-            - text: "Blog"
-              href: https://austin-hoover.github.io/blog/
-
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
