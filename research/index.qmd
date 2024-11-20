@@ -31,7 +31,7 @@ We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](htt
 Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigate space charge effects is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation. We call this *phase space painting*. We're studying a new painting method to generate a vortex beam, where particles swirl inside an elliptical boundary. Such a beam would minimize the nonlinear component of space charge forces, potentially leading to higher intensities. At the same time, the beam would occupy a tiny volume of phase space, making it potentially useful in the first stage of a high-energy collider.
 
 :::{.column-body}
-![Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.](./files/fig_scbd_ment_01.png){fig-align=center}
+![Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.](./files/fig_sns_4d.png){fig-align=center}
 :::
 
 
