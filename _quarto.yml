@@ -15,11 +15,10 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        theme: [lumin, style/custom.scss]
+        theme: [simplex, "style/custom.scss"]
         html-math-method: mathjax
         toc: false
         grid:
-            body-width: 650px
-        fontsize: 14.5px
-        # mainfont: Helvetica
-        
+            body-width: 700px
+        mainfont: Arial
+        fontsize: 15px
