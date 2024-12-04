@@ -9,12 +9,13 @@ toc: true
 A. Hoover \
 [[preprint](https://arxiv.org/abs/2409.17915)] [[code](https://github.com/austin-hoover/ment)]
 
-<u>Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</u> \
-A. Hoover \
-[[preprint](https://arxiv.org/abs/2409.02862)]
-
 
 ## Journal articles
+
+<u>Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</u> \
+A. Hoover \
+*Physical Review Accelerators and Beams* (2024) (Forthcoming)
+[[preprint](https://arxiv.org/abs/2409.02862)]
 
 <u>High-dimensional maximum-entropy phase space tomography using normalizing flows</u> \
 A. Hoover and C. Wong \
