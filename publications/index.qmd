@@ -15,6 +15,7 @@ A. Hoover \
 <u>Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</u> \
 A. Hoover \
 *Physical Review Accelerators and Beams* (2024) \
+[[published](https://doi.org/10.1103/PhysRevAccelBeams.27.122802)]
 [[preprint](https://arxiv.org/abs/2409.02862)]
 [[data](https://zenodo.org/records/14014532)]
 
