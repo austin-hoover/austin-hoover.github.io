@@ -6,6 +6,8 @@
 
 ::: {.g-col-8}
 I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My research is focused on the dynamics of intense charged particle beams in accelerators. (See [Research](./research/index.qmd) and [Publications](./publications/index.qmd).) I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+
+Previously, I completed a PhD in physics at the University of Tennessee and a BS in physics at Wheaton College.
 :::
 
 :::
