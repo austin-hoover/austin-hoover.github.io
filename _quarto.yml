@@ -19,6 +19,6 @@ format:
         html-math-method: mathjax
         toc: false
         grid:
-            body-width: 700px
+            body-width: 725px
         mainfont: Arial
         fontsize: 15px
