@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Austin Hoover</title>
+<title>Austin Hoover - Research</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -91,7 +111,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -110,7 +130,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -125,7 +145,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#halo-formation-in-linear-accelerators" id="toc-halo-formation-in-linear-accelerators" class="nav-link active" data-scroll-target="#halo-formation-in-linear-accelerators">Halo formation in linear accelerators</a></li>
-  <li><a href="#novel-beam-injection-techniques" id="toc-novel-beam-injection-techniques" class="nav-link" data-scroll-target="#novel-beam-injection-techniques">Novel beam injection techniques</a></li>
+  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
   <li><a href="#proton-bunch-compression" id="toc-proton-bunch-compression" class="nav-link" data-scroll-target="#proton-bunch-compression">Proton bunch compression</a></li>
   <li><a href="#phase-space-tomography" id="toc-phase-space-tomography" class="nav-link" data-scroll-target="#phase-space-tomography">Phase space tomography</a></li>
   </ul>
@@ -153,45 +173,54 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
-<p>I currently study the physics of intense beams generated in high-power hadron accelerators. Such beams are used to create secondary beams of <a href="https://neutrons.ornl.gov/sns">neutrons</a>, <a href="https://www.dunescience.org">neutrinos</a>, and <a href="https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/">muons</a> for experiments in condensed matter physics, material science, nuclear physics, and elementary particle physics. In the future, intense beams could be used to drive subcritical <a href="https://myrrha.be">nuclear reactors</a>.</p>
-<p>Several accelerators now generate more than 1 megawatt (MW) of beam power, with future machines moving toward 10 MW. As the beam power/intensity increases, particle-particle interactions become more significant. Particles interact directly via Coloumb forces—also called <em>space charge</em> forces—and indirectly via electromagnetic wakefields. When combined with the electromagnetic fields in the accelerator, these collective effects generate chaotic, difficult-to-predict particle trajectories. Unpredicted particle <em>losses</em>, which occur when particles wander outside the accelerator aperture, are especially important because lost particles generate radiation when they interact with the environment. The lost beam power must remain below one watt per meter (1 W/m)—around one out of every million particles—to keep radiation levels safe. Modern accelerators already operate near this limit, so it is not possible to simply scale the beam intensity by a factor of 10.</p>
-<p>A complete understanding of beam loss will require detailed theoretical and computational models of halo formation. Such models are difficult to validate due to uncertainties in the beam and accelerator state. Thus, it is important to measure the particle distribution in the accelerator, characterize the uncertainties in the model parameters, and validate models against direct measurements. A separate but related problem is to <em>control</em> the beam in the accelerator. For example, can we avoid instabilities by shaping the particle distribution in phase space? Can we minimize particle losses by tweaking the force fields applied to the beam?</p>
-<p>Below are short summaries of a few projects I’ve worked on in this area.</p>
+<p>Particle accelerators are <a href="https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/">essential tools</a> for scientific research. Hadron accelerators, in particular, generate <a href="https://neutrons.ornl.gov/sns">neutrons</a>, <a href="https://www.dunescience.org">neutrinos</a>, and <a href="https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/">muons</a> for experiments in condensed matter physics, material science, nuclear physics, and particle physics. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at higher and higher intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.</p>
+<p>The goal of my research is to improve accelerator performance by developing techniques to model, measure, and control intense beams. This page summarizes a few related projects I’ve worked on.</p>
 <p><br></p>
 <section id="halo-formation-in-linear-accelerators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="halo-formation-in-linear-accelerators">Halo formation in linear accelerators</h2>
-<p>Linear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to model parameters. In particular, we do not know the initial particle distribution in the full six-dimensional (6D) position-momentum space, also called <em>phase space</em>. It is also challenging to measure such a faint signal on top of the bright core.</p>
-<p>We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation.</p>
+<p>Linear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./files/fig_halo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:66.0%"></p>
+<figcaption>Measured and predicted phase space distributions of a 52 mA beam in the SNS BTF accelerator.</figcaption>
+</figure>
+</div>
+<p>We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.</p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig13.png" class="img-fluid figure-img column-body"></p>
-<figcaption>A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF.</figcaption>
+<p class="page-columns page-full"><img src="./files/fig_slice_matrix.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body"></p>
+<figcaption>A four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF <span class="citation" data-cites="Hoover_2023_5d">&nbsp;[<a href="#ref-Hoover_2023_5d" role="doc-biblioref">1</a>]</span>.</figcaption>
 </figure>
 </div>
 </div>
+<p>Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters. The figure below shows the complicated longtiudinal dyanmics during the initial low-energy acceleration stages.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./files/fig_linac_slice_redblue.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figcaption>Simulated bunch evolution in the SNS linac <span class="citation" data-cites="Hoover_2023_impact">&nbsp;[<a href="#ref-Hoover_2023_impact" role="doc-biblioref">2</a>]</span>.</figcaption>
+</figure>
+</div>
 </section>
-<section id="novel-beam-injection-techniques" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="novel-beam-injection-techniques">Novel beam injection techniques</h2>
-<p>Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigate space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation. We call this <em>phase space painting</em>. We’re studying a new painting method to generate a vortex beam, where particles swirl inside an elliptical boundary. Such a beam would minimize the nonlinear component of space charge forces, potentially leading to higher intensities. At the same time, the beam would occupy a tiny volume of phase space, making it potentially useful in the first stage of a high-energy collider.</p>
+<section id="phase-space-painting" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
+<p>Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as <em>phase space painting</em>. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as <em>eigenpainting</em>, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider.</p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_sns_4d.png" class="img-fluid figure-img column-body"></p>
+<p class="page-columns page-full"><img src="./files/fig_sns_4d.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body"></p>
 <figcaption>Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.</figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="proton-bunch-compression" class="level2 page-columns page-full">
+<section id="proton-bunch-compression" class="level2">
 <h2 class="anchored" data-anchor-id="proton-bunch-compression">Proton bunch compression</h2>
-<p>A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been tested for hadron beams; space charge effects, impedances, and electron cloud instabilities could be an issue. We are examining whether a similar bunch compression scheme could be tested at the SNS.</p>
-<div class="page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body" style="width:100.0%"></p>
+<p>A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
-</div>
 </div>
 </section>
 <section id="phase-space-tomography" class="level2 page-columns page-full">
@@ -200,16 +229,27 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_ment_swissroll.png" class="img-fluid figure-img column-body"></p>
-<figcaption>Entropy maximization (MENT) is a conservative approach to inverse problems.</figcaption>
+<p class="page-columns page-full"><img src="./files/fig_ment_swissroll.png" class="img-fluid quarto-figure quarto-figure-center figure-img column-body"></p>
+<figcaption>Entropy maximization (MENT) is a conservative approach to inverse problems <span class="citation" data-cites="Hoover_2024_mentflow">&nbsp;[<a href="#ref-Hoover_2024_mentflow" role="doc-biblioref">3</a>]</span>.</figcaption>
 </figure>
 </div>
 </div>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Hoover_2023_5d" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau, <em><a href="https://doi.org/10.1103/PhysRevAccelBeams.26.064202">Analysis of a Hadron Beam in Five-Dimensional Phase Space</a></em>, Phys. Rev. Accel. Beams <strong>26</strong>, 064202 (2023).</div>
+</div>
+<div id="ref-Hoover_2023_impact" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">A. Hoover, A. Aleksandrov, S. Cousineau, K. Ruisard, A. Shishlo, and A. Zhukov, <em><a href="https://doi.org/10.18429/JACoW-HB2023-TUC1C2"><span class="nocase">The Impact of High-Dimensional Phase Space Correlations on the Beam Dynamics in a Linear Accelerator</span></a></em>, in <em>Proc. 68th Adv. Beam Dyn. Workshop High-Intensity High-Brightness Hadron Beams (HB’23)</em> (JACoW Publishing, Geneva, Switzerland, 2024), pp. 68–72.</div>
+</div>
+<div id="ref-Hoover_2024_mentflow" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">A. Hoover and J. C. Wong, <em><a href="https://doi.org/10.1103/PhysRevResearch.6.033163">High-Dimensional Maximum-Entropy Phase Space Tomography Using Normalizing Flows</a></em>, Phys. Rev. Res. <strong>6</strong>, 033163 (2024).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -245,7 +285,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -277,47 +328,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -352,11 +363,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
