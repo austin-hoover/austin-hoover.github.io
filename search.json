@@ -4,49 +4,21 @@
     "href": "index.html",
     "title": "Austin Hoover",
     "section": "",
-    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My research focuses on collective effects in high-power hadron accelerators. (See Research and Publications.) I sometimes write about my work on my blog.\nPreviously, I completed a PhD in physics at the University of Tennessee and a BS in physics at Wheaton College (IL).\n\n\nEmail: hooveram@ornl.gov"
+    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College (IL).\nI’m interested in developing theoretical, computational, and experimental techniques to model, measure, and control intense beams in particle accelerators. Currently, I focus on halo formation in high-power linear accelerators (linacs) and beam shaping in circular accelerators (rings). I’m also interested in applying tools from probability theory and machine learning to inverse problems such as phase space tomography.\nI sometimes write about my work on my blog."
   },
   {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "Particle accelerators are essential tools for scientific research. Hadron accelerators, in particular, generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at higher and higher intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.\nThe goal of my research is to improve accelerator performance by developing techniques to model, measure, and control intense beams. This page summarizes a few related projects I’ve worked on."
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Austin Hoover",
+    "section": "News",
+    "text": "News\n[Coming soon]"
   },
   {
-    "objectID": "research/index.html#halo-formation-in-linear-accelerators",
-    "href": "research/index.html#halo-formation-in-linear-accelerators",
-    "title": "Research",
-    "section": "Halo formation in linear accelerators",
-    "text": "Halo formation in linear accelerators\nLinear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.\n\n\n\nMeasured and predicted phase space distributions of a 52 mA beam in the SNS BTF accelerator.\n\n\nWe are using the Beam Test Facility (BTF) at the Spallation Neutron Source (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.\n\n\n\n\nA four-dimensional slice of a measured five-dimensional phase space distribution in the SNS-BTF  [1].\n\n\n\nUltimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters. The figure below shows the complicated longtiudinal dyanmics during the initial low-energy acceleration stages.\n\n\n\nSimulated bunch evolution in the SNS linac  [2]."
-  },
-  {
-    "objectID": "research/index.html#phase-space-painting",
-    "href": "research/index.html#phase-space-painting",
-    "title": "Research",
-    "section": "Phase space painting",
-    "text": "Phase space painting\nOur primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as phase space painting. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as eigenpainting, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider.\n\n\n\n\nPhase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning."
-  },
-  {
-    "objectID": "research/index.html#proton-bunch-compression",
-    "href": "research/index.html#proton-bunch-compression",
-    "title": "Research",
-    "section": "Proton bunch compression",
-    "text": "Proton bunch compression\nA future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities."
-  },
-  {
-    "objectID": "research/index.html#phase-space-tomography",
-    "href": "research/index.html#phase-space-tomography",
-    "title": "Research",
-    "section": "Phase space tomography",
-    "text": "Phase space tomography\nClassical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional phase space. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction.\n\n\n\n\nEntropy maximization (MENT) is a conservative approach to inverse problems  [3]."
-  },
-  {
-    "objectID": "research/papers.html",
-    "href": "research/papers.html",
-    "title": "Papers",
-    "section": "",
-    "text": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.94.025006"
+    "objectID": "index.html#selected-publications",
+    "href": "index.html#selected-publications",
+    "title": "Austin Hoover",
+    "section": "Selected Publications",
+    "text": "Selected Publications\n[Coming soon]"
   },
   {
     "objectID": "publications/index.html",
@@ -73,8 +45,8 @@
     "objectID": "publications/index.html#conference-proceedings",
     "href": "publications/index.html#conference-proceedings",
     "title": "Publications",
-    "section": "Conference proceedings",
-    "text": "Conference proceedings\nNote that conferences like IPAC are not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.\nBenchmark of linac model and phase space measurements at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov\n14th International Computational Accelerator Physics Conference (2024)\n\nProgress toward halo modeling at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov\n32nd Linear Accelerator Conference (2024)\n[paper]\nMENT-Flow: maximum-entropy tomography using normalizing flows\nA. Hoover and C. Wong\nInternational Particle Accelerator Conference (2024)\n[poster] [paper]\nProposed muon collider R&D at the SNS\nV. Morozov, A. Hoover, D. Stratakis, F. Pilat, N. Evans, and S. Cousineau\nInternational Particle Accelerator Conference (2024)\n[paper]\nMeasurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility\nT. Thompson, K. Ruisard, A. Hoover, A. Aleksandrov, and A. Zhukov\nInternational Particle Accelerator Conference (2024)\n\nStatus of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies\nK. Ruisard, A. Aleksandrov, S. Cousineau, R. Dickson, B. Han, A. Hoover, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, and A. Zhukov International Particle Accelerator Conference (2024)\n[paper]\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\n[paper] [slides]\nSelf-consistent injection painting for space charge mitigation\nN. Evans, A. Hoover, T. Gorlov, V. Morozov\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\nDetailed characterization of a five-dimensional phase space distribution\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov\nInternational Particle Accelerator Conference (2023)\n[poster] [paper]\nMeasurements at peak operational beam current in the SNS beam test facility\nK. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau\nInternational Particle Accelerator Conference (2023)\n[paper]\nPhase space painting of a self-consistent Danilov distribution in the SNS Ring\nN. Evans, A. Hoover, T. Gorlov, V. Morozov\nInternational Particle Accelerator Conference (2023)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation\nA. Hoover\nICFA Mini-Workshop on Space Charge (2022)\n[slides]\nObservation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov\nInternational Linear Accelerator Conference (2022)\n[paper] [poster]\nMeasurements of the five-dimensional phase space distribution of an intense ion beam\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov\nNorth American Particle Accelerator Conference (2022)\n[paper] slides]\nModel/measurement comparison of the transverse phase space distribution of an RFQ-generated bunch at the SNS BTF\nK. Ruisard, A. Aleksandrov, S. Cousineau, A. Hoover, A. Zhukov\nNorth American Particle Accelerator Conference (2022)\n[paper] [slides]\nOpen XAL Status Report 2022\nA. Zhukov, A. Hoover, A. Shishlo, J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas\nInternational Particle Accelerator Conference (2022)\n[paper]\nDevelopment of an injection-painted self-consistent beam at the Spallation Neutron Source\nA. Hoover, N. Evans, T. Gorlov, J. Holmes\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2021)\n[paper] [slides]\nSimulation of 4D emittance measurement at the Spallation Neutron Source\nA. Hoover, N. Evans\nInternational Particle Accelerator Conference (2021)\n[paper]\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, J. Holmes\nAPS April Meeting (2021)\n[slides]"
+    "section": "Conference proceedings1",
+    "text": "Conference proceedings1\nBenchmark of linac model and phase space measurements at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov\n14th International Computational Accelerator Physics Conference (2024)\n\nProgress toward halo modeling at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov\n32nd Linear Accelerator Conference (2024)\n[paper]\nMENT-Flow: maximum-entropy tomography using normalizing flows\nA. Hoover and C. Wong\nInternational Particle Accelerator Conference (2024)\n[poster] [paper]\nProposed muon collider R&D at the SNS\nV. Morozov, A. Hoover, D. Stratakis, F. Pilat, N. Evans, and S. Cousineau\nInternational Particle Accelerator Conference (2024)\n[paper]\nMeasurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility\nT. Thompson, K. Ruisard, A. Hoover, A. Aleksandrov, and A. Zhukov\nInternational Particle Accelerator Conference (2024)\n\nStatus of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies\nK. Ruisard, A. Aleksandrov, S. Cousineau, R. Dickson, B. Han, A. Hoover, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, and A. Zhukov International Particle Accelerator Conference (2024)\n[paper]\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\n[paper] [slides]\nSelf-consistent injection painting for space charge mitigation\nN. Evans, A. Hoover, T. Gorlov, V. Morozov\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\nDetailed characterization of a five-dimensional phase space distribution\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov\nInternational Particle Accelerator Conference (2023)\n[poster] [paper]\nMeasurements at peak operational beam current in the SNS beam test facility\nK. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau\nInternational Particle Accelerator Conference (2023)\n[paper]\nPhase space painting of a self-consistent Danilov distribution in the SNS Ring\nN. Evans, A. Hoover, T. Gorlov, V. Morozov\nInternational Particle Accelerator Conference (2023)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation\nA. Hoover\nICFA Mini-Workshop on Space Charge (2022)\n[slides]\nObservation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov\nInternational Linear Accelerator Conference (2022)\n[paper] [poster]\nMeasurements of the five-dimensional phase space distribution of an intense ion beam\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov\nNorth American Particle Accelerator Conference (2022)\n[paper] slides]\nModel/measurement comparison of the transverse phase space distribution of an RFQ-generated bunch at the SNS BTF\nK. Ruisard, A. Aleksandrov, S. Cousineau, A. Hoover, A. Zhukov\nNorth American Particle Accelerator Conference (2022)\n[paper] [slides]\nOpen XAL Status Report 2022\nA. Zhukov, A. Hoover, A. Shishlo, J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas\nInternational Particle Accelerator Conference (2022)\n[paper]\nDevelopment of an injection-painted self-consistent beam at the Spallation Neutron Source\nA. Hoover, N. Evans, T. Gorlov, J. Holmes\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2021)\n[paper] [slides]\nSimulation of 4D emittance measurement at the Spallation Neutron Source\nA. Hoover, N. Evans\nInternational Particle Accelerator Conference (2021)\n[paper]\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, J. Holmes\nAPS April Meeting (2021)\n[slides]"
   },
   {
     "objectID": "publications/index.html#newsletter-articles",
@@ -84,17 +56,66 @@
     "text": "Newsletter articles\nSix-dimensional distributions at the SNS Beam Test Facility\nK. Ruisard, A. Aleksandrov, A. Hoover\nAPS Division of Physics of Beams Annual Newsletter (2022)\n[online]"
   },
   {
-    "objectID": "publications/index.html#talks",
-    "href": "publications/index.html#talks",
+    "objectID": "publications/index.html#dissertations",
+    "href": "publications/index.html#dissertations",
     "title": "Publications",
-    "section": "Talks",
-    "text": "Talks\nPossible bunch compression experiments at the SNS\nMuon Collider WP3 Proton Complex Monthly Meeting (2025)\n[slides]\nSNS accelerator synergies for muon collider R&D\nPrinceton Muon Collider Organizational Workshop (2024)\n[slides]\nAccelerator research and development at the Spallation Neutron Source\nParticle Accelerators: Technology and Applications (course at UT Knoxville) (2022)\n[slides]"
+    "section": "Dissertations",
+    "text": "Dissertations\nTowards the production of a self-consistent phase space distribution\nA. Hoover\nPhD Diss., University of Tennessee (2022)\n[published] [slides]"
   },
   {
-    "objectID": "publications/index.html#dissertation",
-    "href": "publications/index.html#dissertation",
+    "objectID": "publications/index.html#footnotes",
+    "href": "publications/index.html#footnotes",
     "title": "Publications",
-    "section": "Dissertation",
-    "text": "Dissertation\nTowards the production of a self-consistent phase space distribution\nA. Hoover\nPhD Diss., University of Tennessee (2022)\n[published] [slides]"
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that conferences like IPAC are not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.↩︎"
+  },
+  {
+    "objectID": "research/papers.html",
+    "href": "research/papers.html",
+    "title": "Papers",
+    "section": "",
+    "text": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.94.025006"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "In my research, I study the physics of intense charged particle beams in particle accelerators. Particle accelerators are essential tools for scientific research. For example, hadron accelerators generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive nuclear fission reactors. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.\nI’m interested in developing theoretical, computational, and experimental techniques to model, measure, and control intense beams. Currently, I focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying tools from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography."
+  },
+  {
+    "objectID": "research/index.html#halo-formation-in-linear-accelerators",
+    "href": "research/index.html#halo-formation-in-linear-accelerators",
+    "title": "Research",
+    "section": "Halo formation in linear accelerators",
+    "text": "Halo formation in linear accelerators\nLinear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.\nWe are using the Beam Test Facility (BTF) at the Spallation Neutron Source (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators. Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters. The figure below shows the complicated longtiudinal dyanmics during the initial low-energy acceleration stages.\n\n\n\nMeasured and predicted phase space distributions of a 52 mA beam in the SNS BTF accelerator. (Logarithmic density scale)"
+  },
+  {
+    "objectID": "research/index.html#phase-space-painting",
+    "href": "research/index.html#phase-space-painting",
+    "title": "Research",
+    "section": "Phase space painting",
+    "text": "Phase space painting\nOur primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as phase space painting. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as eigenpainting, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider.\n\n\n\n\nPhase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning."
+  },
+  {
+    "objectID": "research/index.html#proton-bunch-compression",
+    "href": "research/index.html#proton-bunch-compression",
+    "title": "Research",
+    "section": "Proton bunch compression",
+    "text": "Proton bunch compression\nA future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities."
+  },
+  {
+    "objectID": "research/index.html#phase-space-tomography",
+    "href": "research/index.html#phase-space-tomography",
+    "title": "Research",
+    "section": "Phase space tomography",
+    "text": "Phase space tomography\nClassical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional phase space. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction.\n\n\n\n\nEntropy maximization (MENT) is a conservative approach to inverse problems  [1]."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Possible bunch compression experiments at the SNS\nMuon Collider WP3 Proton Complex Monthly Meeting (2025)\n[slides]\nSNS accelerator synergies for muon collider R&D\nPrinceton Muon Collider Organizational Workshop (2024)\n[slides]\nAccelerator research and development at the Spallation Neutron Source\nParticle Accelerators: Technology and Applications (course at UT Knoxville) (2022)\n[slides]"
   }
 ]

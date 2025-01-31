@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2025-01-24T23:47:31.472Z</lastmod>
+    <lastmod>2025-01-31T22:38:35.793Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2025-01-24T23:45:26.913Z</lastmod>
+    <loc>https://austin-hoover.github.io/publications/index.html</loc>
+    <lastmod>2025-01-31T21:32:09.990Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/papers.html</loc>
     <lastmod>2025-01-24T23:00:50.036Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/publications/index.html</loc>
-    <lastmod>2025-01-31T20:06:53.100Z</lastmod>
+    <loc>https://austin-hoover.github.io/research/index.html</loc>
+    <lastmod>2025-01-31T21:29:54.782Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/talks/index.html</loc>
+    <lastmod>2025-01-31T20:27:15.147Z</lastmod>
   </url>
 </urlset>
