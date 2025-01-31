@@ -1,15 +1,34 @@
 ::: {.grid}
 
-::: {.g-col-4}
-![](images/me_ornl.jpg)
-:::
 
 ::: {.g-col-8}
-I'm a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory (ORNL). My research focuses on collective effects in high-power hadron accelerators. (See [Research](./research/index.qmd) and [Publications](./publications/index.qmd).) I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College (IL).
 
-Previously, I completed a PhD in physics at the University of Tennessee and a BS in physics at Wheaton College (IL).
+I'm interested in developing theoretical, computational, and experimental techniques to model, measure, and control intense beams in particle accelerators. Currently, I focus on halo formation in high-power linear accelerators (linacs) and beam shaping in circular accelerators (rings). I'm also interested in applying tools from probability theory and machine learning to inverse problems such as phase space tomography.
+
+
+I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+:::
+
+::: {.g-col-4}
+![](images/me_ornl.jpg)
+
 :::
 
 :::
 
-Email: hooveram@ornl.gov
+
+
+
+
+<br>
+
+
+## News
+
+[Coming soon]
+
+
+## Selected Publications
+
+[Coming soon]

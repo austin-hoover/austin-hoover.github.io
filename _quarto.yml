@@ -12,13 +12,16 @@ website:
               href: ./research/index.qmd
             - text: "Publications"
               href: ./publications/index.qmd
+            - text: "Talks"
+              href: ./talks/index.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        theme: [simplex, "style/custom.scss"]
+        theme: [cosmo, "style/custom.scss"]
         html-math-method: mathjax
         toc: false
         grid:
-            body-width: 725px
-        mainfont: Arial
+            body-width: 800px
+        mainfont: "Helvetica Neue"
+        linkcolor: "darkred"
         fontsize: 15px

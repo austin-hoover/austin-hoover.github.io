@@ -47,9 +47,8 @@ A. Hoover, N. Evans, and J. Holmes \
 [[published](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 
-## Conference proceedings
+## Conference proceedings^[Note that conferences like IPAC are not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.]
 
-Note that conferences like IPAC are not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.
 
 <u>Benchmark of linac model and phase space measurements at the SNS Beam Test Facility</u> \
 K. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov \
@@ -158,22 +157,7 @@ K. Ruisard, A. Aleksandrov, A. Hoover \
 [[online](https://higherlogicdownload.s3.amazonaws.com/APS/9cf62627-7088-4bd3-bf97-6adfc913f623/UploadedImages/APS_DPB_Newsletter_2022-2-2.pdf)]
 
 
-## Talks
-
-<u>Possible bunch compression experiments at the SNS</u> \
-*Muon Collider WP3 Proton Complex Monthly Meeting* (2025) \
-[[slides](./files/2025-01-31_sns-bunch-compression.pdf)]
-
-<u>SNS accelerator synergies for muon collider R&D</u> \
-*Princeton Muon Collider Organizational Workshop* (2024) \
-[[slides](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf)]
-
-<u>Accelerator research and development at the Spallation Neutron Source</u> \
-*Particle Accelerators: Technology and Applications (course at UT Knoxville)* (2022) \
-[[slides]()]
-
-
-## Dissertation
+## Dissertations
 
 <u>Towards the production of a self-consistent phase space distribution</u> \
 A. Hoover \
