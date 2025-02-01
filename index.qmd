@@ -1,34 +1,48 @@
+---
+title: "Austin Hoover"
+---
+
+
 ::: {.grid}
 
-
 ::: {.g-col-8}
-I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College (IL).
+I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). I'm interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on halo formation in high-power linear accelerators and beam shaping in circular accelerators. I'm also interested in applying ideas from probability theory and machine learning to inverse problems such as phase space tomography. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
-I'm interested in developing theoretical, computational, and experimental techniques to model, measure, and control intense beams in particle accelerators. Currently, I focus on halo formation in high-power linear accelerators (linacs) and beam shaping in circular accelerators (rings). I'm also interested in applying tools from probability theory and machine learning to inverse problems such as phase space tomography.
-
-
-I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+Previously, I completed a Ph.D. in physics at the [University of Tennessee](https://physics.utk.edu) and a B.S. in physics at [Wheaton College]().
 :::
 
 ::: {.g-col-4}
 ![](images/me_ornl.jpg)
-
 :::
 
 :::
 
-
+The best way to reach me is by email at **hooveram@ornl.gov**.
 
 
 
 <br>
 
 
-## News
+## Selected publications
 
-[Coming soon]
+[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \
+A. Hoover \
+*Physical Review Accelerators and Beams* (2024)
 
 
-## Selected Publications
+[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163)) \
+A. Hoover and C. Wong \
+*Physical Review Research* (2024)
 
-[Coming soon]
+[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/papers/tuc1c2.pdf) \
+A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo \
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* (2023) \
+
+[Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202) \
+A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
+*Physical Review Accelerators and Beams* (2023)
+
+[Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201) \
+A. Hoover, N. Evans, and J. Holmes \
+*Physical Review Accelerators and Beams* (2021)

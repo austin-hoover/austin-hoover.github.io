@@ -21,7 +21,8 @@ format:
         html-math-method: mathjax
         toc: false
         grid:
-            body-width: 800px
+            body-width: 750px
+            
+        fontsize: 15.0px
         mainfont: "Helvetica Neue"
-        linkcolor: "darkred"
-        fontsize: 15px
+        
