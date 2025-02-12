@@ -23,6 +23,6 @@ format:
         grid:
             body-width: 750px
             
-        fontsize: 15.0px
+        fontsize: 14.0px
         mainfont: "Helvetica Neue"
         
