@@ -3,7 +3,7 @@ title: Publications
 toc: true
 ---
 
-## Preprints
+## Submitted
 
 [N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915)) \
 A. Hoover \
