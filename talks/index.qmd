@@ -1,16 +1,14 @@
 ---
 title: Talks
-toc: true
+toc: false
 ---
 
-<u>Possible bunch compression experiments at the SNS</u> \
-*Muon Collider WP3 Proton Complex Monthly Meeting* (2025) \
-[[slides](./files/2025-01-31_sns-bunch-compression.pdf)]
+[Possible bunch compression experiments at the SNS](./files/2025-01-31_sns-bunch-compression.pdf) \
+*Muon Collider WP3 Proton Complex Monthly Meeting* (2025)
 
-<u>SNS accelerator synergies for muon collider R&D</u> \
-*Princeton Muon Collider Organizational Workshop* (2024) \
-[[slides](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf)]
 
-<u>Accelerator research and development at the Spallation Neutron Source</u> \
-*Particle Accelerators: Technology and Applications (course at UT Knoxville)* (2022) \
-[[slides]()]
+[SNS accelerator synergies for muon collider R&D](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf) \
+*Princeton Muon Collider Organizational Workshop* (2024)
+
+[Accelerator research and development at the Spallation Neutron Source]()
+*Particle Accelerators: Technology and Applications (course at UT Knoxville)* (2022)
