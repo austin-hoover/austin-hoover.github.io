@@ -24,7 +24,7 @@ The best way to reach me is by email at **hooveram@ornl.gov**.
 <br>
 
 
-## Selected publications
+## Selected papers 
 
 [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \
 A. Hoover \
