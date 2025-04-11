@@ -11,21 +11,21 @@
     "href": "index.html#selected-papers",
     "title": "Austin Hoover",
     "section": "Selected papers",
-    "text": "Selected papers\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam\nA. Hoover\nPhysical Review Accelerators and Beams (2024)\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows)\nA. Hoover and C. Wong\nPhysical Review Research (2024)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\n\nAnalysis of a hadron beam in five-dimensional phase space\nA. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau\nPhysical Review Accelerators and Beams (2023)\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, and J. Holmes\nPhysical Review Accelerators and Beams (2021)"
+    "text": "Selected papers\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam\nA. Hoover\nPhysical Review Accelerators and Beams (2024)\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows\nA. Hoover and C. Wong\nPhysical Review Research (2024)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nA. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams (2023)\n\nAnalysis of a hadron beam in five-dimensional phase space\nA. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau\nPhysical Review Accelerators and Beams (2023)\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, and J. Holmes\nPhysical Review Accelerators and Beams (2021)"
   },
   {
     "objectID": "publications/index.html",
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov\n[[preprint]]\nN-dimensional maximum-entropy tomography via particle sampling)\nA. Hoover\n[preprint] [code]"
+    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov\n[[preprint]]\nN-dimensional maximum-entropy tomography via particle sampling\nA. Hoover\n[preprint] [code]"
   },
   {
     "objectID": "publications/index.html#submitted",
     "href": "publications/index.html#submitted",
     "title": "Publications",
     "section": "",
-    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov\n[[preprint]]\nN-dimensional maximum-entropy tomography via particle sampling)\nA. Hoover\n[preprint] [code]"
+    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov\n[[preprint]]\nN-dimensional maximum-entropy tomography via particle sampling\nA. Hoover\n[preprint] [code]"
   },
   {
     "objectID": "publications/index.html#journal-articles",
@@ -109,6 +109,6 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Possible bunch compression experiments at the SNS\nMuon Collider WP3 Proton Complex Monthly Meeting (2025)\nSNS accelerator synergies for muon collider R&D\nPrinceton Muon Collider Organizational Workshop (2024)\nAccelerator research and development at the Spallation Neutron Source Particle Accelerators: Technology and Applications (course at UT Knoxville) (2022)"
+    "text": "Feasibility of bunch compression in the SNS accelerator\nInternational Muon Collider Collaboration Meeting (2025)\n\nPossible bunch compression experiments at the SNS\nMuon Collider WP3 Proton Complex Monthly Meeting (2025)\nSNS accelerator synergies for muon collider R&D\nPrinceton Muon Collider Organizational Workshop (2024)\nAccelerator research and development at the Spallation Neutron Source Particle Accelerators: Technology and Applications (course at UT Knoxville) (2022)"
   }
 ]
