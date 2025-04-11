@@ -13,5 +13,8 @@ toc: false
 [SNS accelerator synergies for muon collider R&D](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf) \
 *Princeton Muon Collider Organizational Workshop* (2024)
 
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
+*ICFA Mini-Workshop on Space Charge* (2022)
+
 [Accelerator research and development at the Spallation Neutron Source]()
 *Particle Accelerators: Technology and Applications (course at UT Knoxville)* (2022)

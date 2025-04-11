@@ -110,11 +110,6 @@ K. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau \
 N. Evans, A. Hoover, T. Gorlov, V. Morozov \
 *International Particle Accelerator Conference* (2023)
 
-[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
-A. Hoover \
-*ICFA Mini-Workshop on Space Charge* (2022) \
-[[slides](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf)]
-
 [Observation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility](https://accelconf.web.cern.ch/linac2022/papers/tupoge20.pdf) \
 K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov \
 *International Linear Accelerator Conference* (2022) \
