@@ -31,7 +31,7 @@ A. Hoover \
 *Physical Review Accelerators and Beams* (2024)
 
 
-[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163)) \
+[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163) \
 A. Hoover and C. Wong \
 *Physical Review Research* (2024)
 

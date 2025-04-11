@@ -3,9 +3,12 @@ title: Talks
 toc: false
 ---
 
+
+[Feasibility of bunch compression in the SNS accelerator]() \
+*International Muon Collider Collaboration Meeting* (2025) \
+
 [Possible bunch compression experiments at the SNS](./files/2025-01-31_sns-bunch-compression.pdf) \
 *Muon Collider WP3 Proton Complex Monthly Meeting* (2025)
-
 
 [SNS accelerator synergies for muon collider R&D](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf) \
 *Princeton Muon Collider Organizational Workshop* (2024)
