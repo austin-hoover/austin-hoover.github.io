@@ -144,11 +144,6 @@ A. Hoover, N. Evans \
 *International Particle Accelerator Conference* (2021) \
 [[paper](https://accelconf.web.cern.ch/ipac2021/papers/thpab180.pdf)]
 
-[Computation of the matched envelope of the Danilov distribution]() \
-A. Hoover, N. Evans, J. Holmes \
-*APS April Meeting* (2021) \
-[[slides]()]
-
 
 ## Newsletter articles
 
