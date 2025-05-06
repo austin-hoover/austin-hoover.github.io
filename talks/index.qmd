@@ -4,7 +4,7 @@ toc: false
 ---
 
 
-[Feasibility of bunch compression in the SNS accelerator]() \
+[Bunch rotation experiments and benchmarking]() \
 *International Muon Collider Collaboration Meeting* (2025) \
 
 [Possible bunch compression experiments at the SNS](./files/2025-01-31_sns-bunch-compression.pdf) \
