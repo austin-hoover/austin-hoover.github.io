@@ -5,9 +5,9 @@ toc: true
 
 ## Submitted
 
-[Demonstration of a method to construct self-consistent beam distributions through phase space painting]() \
+[Demonstration of a method to construct self-consistent beam distributions through phase space painting](files/2025_scbd_draft.pdf) \
 N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
-[[preprint]]
+[[preprint](files/2025_scbd_draft.pdf)]
 
 [N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915) \
 A. Hoover \
