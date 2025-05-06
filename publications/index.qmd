@@ -11,7 +11,7 @@ N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
 
 [N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915) \
 A. Hoover \
-[[preprint](https://arxiv.org/abs/2409.17915)] [[code](https://github.com/austin-hoover/ndim-ment-sampling)]
+[[preprint](https://arxiv.org/abs/2409.17915)] [[code](https://zenodo.org/records/15352529)]
 
 
 ## Journal articles
