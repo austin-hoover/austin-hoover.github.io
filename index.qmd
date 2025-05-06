@@ -46,3 +46,16 @@ A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
 [Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201) \
 A. Hoover, N. Evans, and J. Holmes \
 *Physical Review Accelerators and Beams* (2021)
+
+
+
+## Links
+
+[ORNL page](https://www.ornl.gov/staff-profile/austin-hoover) \
+[ORCID](https://orcid.org/0000-0001-5313-6962) \
+[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao) \
+[GitHub](https://github.com/austin-hoover) \
+[LinkedIn](https://www.linkedin.com/in/austinhoover0/) \
+
+
+
