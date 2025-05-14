@@ -15,8 +15,10 @@ N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
 
 [N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915) \
 A. Hoover \
-*Physical Review Accelerators and Beam (Accepted)s* (2025) [Editor's Suggestion]
-[[preprint](https://arxiv.org/abs/2409.17915)] [[code](https://zenodo.org/records/15352529)]
+*Physical Review Accelerators and Beams* (2025) \
+[[published](https://doi.org/10.1103/zl2h-3v32)] 
+[[preprint](https://arxiv.org/abs/2409.17915)] 
+[[code](https://zenodo.org/records/15352529)]
 
 
 [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \

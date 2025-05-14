@@ -26,10 +26,14 @@ The best way to reach me is by email at **hooveram@ornl.gov**.
 
 ## Selected papers 
 
+
+[N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915) \
+A. Hoover \
+*Physical Review Accelerators and Beams* (2025) 
+
 [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \
 A. Hoover \
 *Physical Review Accelerators and Beams* (2024)
-
 
 [High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163) \
 A. Hoover and C. Wong \
@@ -42,11 +46,6 @@ A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo \
 [Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202) \
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
 *Physical Review Accelerators and Beams* (2023)
-
-[Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201) \
-A. Hoover, N. Evans, and J. Holmes \
-*Physical Review Accelerators and Beams* (2021)
-
 
 
 ## Links
