@@ -5,16 +5,21 @@ toc: false
 
 
 [Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/) \
-*International Muon Collider Collaboration Meeting* (2025) \
+*International Muon Collider Collaboration Meeting* \
+May 2025
 
 [SNS accelerator synergies for muon collider R&D](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf) \
-*Princeton Muon Collider Organizational Workshop* (2024)
+*Princeton Muon Collider Organizational Workshop* \
+February 2024
 
 [Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
-*ICFA Mini-Workshop on Space Charge* (2022)
+*ICFA Mini-Workshop on Space Charge* \
+October 2022
 
-[Accelerator research and development at the Spallation Neutron Source]()
-*Particle Accelerators: Technology and Applications (course at UT Knoxville)* (2022)
+[Accelerator research and development at the Spallation Neutron Source]() \
+*Particle Accelerators: Technology and Applications (UTK Nuclear Engineering course* \
+April 2022
 
 [Computation of the matched envelope of the Danilov distribution]() \
-*APS April Meeting* (2021)
+*APS April Meeting* \
+April 2021
