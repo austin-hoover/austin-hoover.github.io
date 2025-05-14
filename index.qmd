@@ -1,5 +1,6 @@
 ---
 title: "Austin Hoover"
+toc: false
 ---
 
 
@@ -19,9 +20,22 @@ Previously, I completed a Ph.D. in physics at the [University of Tennessee](http
 
 The best way to reach me is by email at **hooveram@ornl.gov**.
 
-
-
 <br>
+
+
+
+## News
+
+:::: {.columns}
+
+::: {.column width="12%"}
+**MAY 2025**
+:::
+::: {.column width="88%"}
+My paper *N-dimensional maximum-entropy tomography via particle sampling* was accepted to PRAB Lettters as an Editor's Suggestion.
+:::
+
+::::
 
 
 ## Selected papers 
