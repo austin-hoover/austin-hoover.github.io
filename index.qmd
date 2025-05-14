@@ -32,7 +32,7 @@ The best way to reach me is by email at **hooveram@ornl.gov**.
 **MAY 2025**
 :::
 ::: {.column width="88%"}
-My paper *N-dimensional maximum-entropy tomography via particle sampling* was accepted to PRAB Lettters as an Editor's Suggestion.
+My paper *N-dimensional maximum-entropy tomography via particle sampling* was accepted to PRAB as an Editor's Suggestion.
 :::
 
 ::::
