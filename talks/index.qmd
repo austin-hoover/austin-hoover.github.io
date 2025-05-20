@@ -12,6 +12,10 @@ May 2025
 *Princeton Muon Collider Organizational Workshop* \
 February 2024
 
+[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf) \
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
+October 2023 
+
 [Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
 *ICFA Mini-Workshop on Space Charge* \
 October 2022
