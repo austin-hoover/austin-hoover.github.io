@@ -17,7 +17,9 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        theme: [cosmo, style/custom.scss]
+        theme: 
+            light: [cosmo, style/custom.scss]
+            dark: [cosmo, style/custom-dark.scss]
         html-math-method: mathjax
         toc: false
         grid:
