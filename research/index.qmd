@@ -5,11 +5,13 @@ csl: ./american-physics-society.csl
 toc: true
 ---
 
+[Also see [here](./current_topics.md).]
+
+
 Particle accelerators are [essential tools](https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/) for scientific research. For example, hadron accelerators generate [neutrons](https://neutrons.ornl.gov/sns), [neutrinos](https://www.dunescience.org), and [muons](https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/) for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive [nuclear fission reactors](https://www.sckcen.be/en/infrastructure/myrrha). Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.
 
 I'm interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I'm also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography.
 
-</br>
 
 ## Halo formation
 
