@@ -77,18 +77,11 @@
     "text": "Footnotes\n\n\nIPAC is not peer reviewed. Papers often report work in progress before journal submission or summarize already-published work.↩︎"
   },
   {
-    "objectID": "research/papers.html",
-    "href": "research/papers.html",
-    "title": "Papers",
-    "section": "",
-    "text": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.94.025006"
-  },
-  {
     "objectID": "research/index.html",
     "href": "research/index.html",
     "title": "Research",
     "section": "",
-    "text": "Particle accelerators are essential tools for scientific research. For example, hadron accelerators generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive nuclear fission reactors. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.\nI’m interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography."
+    "text": "[Also see here.]\nParticle accelerators are essential tools for scientific research. For example, hadron accelerators generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive nuclear fission reactors. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.\nI’m interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography."
   },
   {
     "objectID": "research/index.html#halo-formation",
@@ -117,6 +110,20 @@
     "title": "Research",
     "section": "Phase space tomography",
     "text": "Phase space tomography\nClassical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional phase space. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction.\n\n\n\n\nEntropy maximization (MENT) is a conservative approach to inverse problems  [1]."
+  },
+  {
+    "objectID": "research/papers.html",
+    "href": "research/papers.html",
+    "title": "Papers",
+    "section": "",
+    "text": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.94.025006"
+  },
+  {
+    "objectID": "research/current_topics.html",
+    "href": "research/current_topics.html",
+    "title": "Topics",
+    "section": "",
+    "text": "Things I’m working on, thinking about, or hoping to think about at some point:\n\nGeneral\n\nIntense beam dynamics in circular accelerators (rings)\nIntense beam dynamics in linear accelerators (linacs)\nInverse problems\n\nAccelerator physics\n\nHalo formation and beam loss prediction in high-power linacs\nPhase space painting of equilibrium distributions\nPhase space painting in strongly coupled lattices\nPhase space painting in nonlinear rings\nProton bunch compression\nSimulation benchmarking\n\nTheory/modeling\n\nSingle-particle dynamics in strongly coupled systems\nMulti-particle dynamics in strongly coupled systems\nVlasov-Poisson equilibrium distributions\nSpace-charge-driven resonances and instabilities\nNumerical space charge solvers\n\nPhase space measurements and inference\n\nHigh-dimensional phase space measurements (direct)\nHigh-dimensional phase space tomography\nHigh-dynamic-range phase space tomography\nUncertainty quantification in phase space tomography\nPhase space tomography with self-consistent space charge forces\nMaximum-entropy techniques for inverse problems\nBayesian inference for phase space measurements\n\nOptimization, machine learning, etc.\n\nGenerative models for accelerator applications\nSurrogate modeling of intense beam dynamics\nOnline optimization of beam injection\nDifferentiable simulations\nAdjoint methods for optimization of beam parameters"
   },
   {
     "objectID": "talks/index.html",
