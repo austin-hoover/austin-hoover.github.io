@@ -21,6 +21,7 @@ Things I'm working on, thinking about, or hoping to think about at some point:
     * Vlasov-Poisson equilibrium distributions 
     * Space-charge-driven resonances and instabilities
     * Numerical space charge solvers
+    * Lie algebra tracking methods
 * Phase space measurements and inference
     * High-dimensional phase space measurements (direct)
     * High-dimensional phase space tomography
