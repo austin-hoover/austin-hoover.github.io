@@ -70,7 +70,7 @@ A. Hoover \
 ### Contributed (first author)
 
 1. [Feasibility of proton bunch compression in an operational high-power accelerator]() \
-A. Hoover \
+A. Hoover, V. Morozov, C. Piller, A. Narayan \
 *North American Particle Accelerator Conference* (2025) \
 [paper]
 [poster]
