@@ -41,7 +41,7 @@ My paper *N-dimensional maximum-entropy tomography via particle sampling* was ac
 ## Selected papers 
 
 
-[N-dimensional maximum-entropy tomography via particle sampling](https://arxiv.org/abs/2409.17915) \
+[N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32) \
 A. Hoover \
 *Physical Review Accelerators and Beams* (2025) 
 
