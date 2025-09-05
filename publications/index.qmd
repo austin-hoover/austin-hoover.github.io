@@ -60,16 +60,14 @@ A. Hoover, N. Evans, and J. Holmes \
 
 ### Invited (first author)
 
-1. [High-dimensional maximum-entropy phase space tomography]() \
+1. [High-dimensional maximum-entropy phase space tomography](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf) \
 A. Hoover \
 *North American Particle Accelerator Conference* (2025) \
-[paper]
-[slides]
 
 
 ### Contributed (first author)
 
-1. [Feasibility of proton bunch compression in an operational high-power accelerator]() \
+1. [Feasibility of proton bunch compression in an operational high-power accelerator](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf) \
 A. Hoover, V. Morozov, C. Piller, A. Narayan \
 *North American Particle Accelerator Conference* (2025) \
 [paper]
@@ -119,8 +117,12 @@ A. Hoover, N. Evans \
 
 ### Contributed (coauthor)
 
-1. [Beam loss modeling and mitigation due to intra-beam stripping]() \
+1. [Beam loss modeling and mitigation due to intra-beam stripping](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP014.pdf) \
 S. Kakkar, V. Morozov, L. Lee, N. Evans, A. Zhukov, A. Hoover \
+*North American Particle Accelerator Conference* (2025) \
+
+1. [Exploring space charge mitigation with eigenpainting at the SNS](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUP041.pdf) \
+N.J. Evans, A. Hoover, T. Gorlov, V. Morozov \
 *North American Particle Accelerator Conference* (2025) \
 
 1. [Benchmark of linac model and phase space measurements at the SNS Beam Test Facility]() \
