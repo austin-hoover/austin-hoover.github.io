@@ -1,5 +1,5 @@
 project:
-  type: website
+    type: website
 website:
     title: "Austin Hoover"
     open-graph: False

@@ -1,15 +1,10 @@
----
-title: "Austin Hoover"
-toc: false
----
-
-
 ::: {.grid}
 
 ::: {.g-col-8}
-I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). I'm interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). Previously, I completed a Ph.D. in physics at the [University of Tennessee](https://physics.utk.edu) and a B.S. in physics at [Wheaton College]().
 
-Previously, I completed a Ph.D. in physics at the [University of Tennessee](https://physics.utk.edu) and a B.S. in physics at [Wheaton College]().
+I'm interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+
 :::
 
 ::: {.g-col-4}
