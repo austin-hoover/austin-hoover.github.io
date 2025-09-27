@@ -18,57 +18,5 @@ Previously, I completed a Ph.D. in physics at the [University of Tennessee](http
 
 :::
 
+
 The best way to reach me is by email at **hooveram@ornl.gov**.
-
-<br>
-
-
-
-## News
-
-:::: {.columns}
-
-::: {.column width="12%"}
-**MAY 2025**
-:::
-::: {.column width="88%"}
-My paper *N-dimensional maximum-entropy tomography via particle sampling* was accepted to PRAB as an Editor's Suggestion.
-:::
-
-::::
-
-
-## Selected papers 
-
-
-[N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32) \
-A. Hoover \
-*Physical Review Accelerators and Beams* (2025) 
-
-[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \
-A. Hoover \
-*Physical Review Accelerators and Beams* (2024)
-
-[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163) \
-A. Hoover and C. Wong \
-*Physical Review Research* (2024)
-
-[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/papers/tuc1c2.pdf) \
-A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* (2023) \
-
-[Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202) \
-A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
-*Physical Review Accelerators and Beams* (2023)
-
-
-## Links
-
-[ORNL page](https://www.ornl.gov/staff-profile/austin-hoover) \
-[ORCID](https://orcid.org/0000-0001-5313-6962) \
-[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao) \
-[GitHub](https://github.com/austin-hoover) \
-[LinkedIn](https://www.linkedin.com/in/austinhoover0/) \
-
-
-

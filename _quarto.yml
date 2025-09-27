@@ -10,21 +10,16 @@ website:
               href: ./index.qmd
             - text: "Research"
               href: ./research/index.qmd
-            - text: "Publications"
-              href: ./publications/index.qmd
+            - text: "Papers"
+              href: ./papers/index.qmd
             - text: "Talks"
               href: ./talks/index.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
         theme: 
-            light: [cosmo, style/custom.scss]
-            dark: [cosmo, style/custom-dark.scss]
+            light: [default, style/custom.scss]
         html-math-method: mathjax
         toc: false
-        grid:
-            body-width: 750px
-            
-        fontsize: 14.0px
-        mainfont: "Helvetica Neue"
-        
+        mainfont: Helvetica Neue 
+        fontsize: 16px
