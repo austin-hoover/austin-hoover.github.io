@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Austin Hoover</title>
+<title>Papers – Austin Hoover</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -122,11 +102,11 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
+    <a class="nav-link" href="../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html"> 
+    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
@@ -149,19 +129,20 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#halo-formation" id="toc-halo-formation" class="nav-link active" data-scroll-target="#halo-formation">Halo formation</a></li>
-  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
-  <li><a href="#hadron-bunch-compression" id="toc-hadron-bunch-compression" class="nav-link" data-scroll-target="#hadron-bunch-compression">Hadron bunch compression</a></li>
-  <li><a href="#phase-space-tomography" id="toc-phase-space-tomography" class="nav-link" data-scroll-target="#phase-space-tomography">Phase space tomography</a></li>
+  <li><a href="#submitted" id="toc-submitted" class="nav-link active" data-scroll-target="#submitted">Submitted</a></li>
+  <li><a href="#published" id="toc-published" class="nav-link" data-scroll-target="#published">Published</a></li>
+  <li><a href="#conference" id="toc-conference" class="nav-link" data-scroll-target="#conference">Conference</a></li>
+  <li><a href="#newsletter" id="toc-newsletter" class="nav-link" data-scroll-target="#newsletter">Newsletter</a></li>
+  <li><a href="#dissertation" id="toc-dissertation" class="nav-link" data-scroll-target="#dissertation">Dissertation</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Papers</h1>
 </div>
 
 
@@ -178,62 +159,145 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
-<p>[Also see <a href="../research/current_topics.html">here</a>.]</p>
-<p>Particle accelerators are <a href="https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/">essential tools</a> for scientific research. For example, hadron accelerators generate <a href="https://neutrons.ornl.gov/sns">neutrons</a>, <a href="https://www.dunescience.org">neutrinos</a>, and <a href="https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/">muons</a> for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive <a href="https://www.sckcen.be/en/infrastructure/myrrha">nuclear fission reactors</a>. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.</p>
-<p>I’m interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography.</p>
-<section id="halo-formation" class="level2">
-<h2 class="anchored" data-anchor-id="halo-formation">Halo formation</h2>
-<p>Linear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.</p>
-<p>We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators. Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./files/fig_halo.png" class="img-fluid figure-img" width="450"></p>
-<figcaption>Measured and predicted phase space distributions of a 52 mA beam in the SNS BTF accelerator. (Logarithmic density scale)</figcaption>
-</figure>
-</div>
+<section id="submitted" class="level2">
+<h2 class="anchored" data-anchor-id="submitted">Submitted</h2>
+<ol type="1">
+<li><a href="">Demonstration of a method to construct self-consistent beam distributions through phase space painting</a><br>
+N. Evans, A. Hoover. T. Gorlov, and V. Morozov<br>
+</li>
+</ol>
 </section>
-<section id="phase-space-painting" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
-<p>Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as <em>phase space painting</em>. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as <em>eigenpainting</em>, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider.</p>
-<div class="page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_sns_4d.png" class="img-fluid figure-img column-body"></p>
-<figcaption>Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.</figcaption>
-</figure>
-</div>
-</div>
+<section id="published" class="level2">
+<h2 class="anchored" data-anchor-id="published">Published</h2>
+<ol type="1">
+<li><p><a href="https://doi.org/10.1103/zl2h-3v32">N-dimensional maximum-entropy tomography via particle sampling</a><br>
+A. Hoover<br>
+<em>Physical Review Accelerators and Beams</em> 28.8 (2025): L084601<br>
+[<a href="https://arxiv.org/abs/2409.17915">arxiv</a>] [<a href="https://doi.org/10.5281/zenodo.15271632">zenodo</a>]</p></li>
+<li><p><a href="https://doi.org/10.1103/PhysRevAccelBeams.27.122802">Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</a><br>
+A. Hoover.<br>
+<em>Physical Review Accelerators and Beams</em> 27.12 (2024): 122802<br>
+[<a href="https://arxiv.org/abs/2409.02862">arxiv</a>] [<a href="https://zenodo.org/records/14014532">zenodo</a>]</p></li>
+<li><p><a href="https://doi.org/10.1103/PhysRevResearch.6.033163">High-dimensional maximum-entropy phase space tomography using normalizing flows</a><br>
+A. Hoover, and J.C. Wong<br>
+<em>Physical Review Research</em> 6.3 (2024): 033163<br>
+[<a href="https://arxiv.org/abs/2406.00236">arxiv</a>] [<a href="https://zenodo.org/records/12812545">zenodo</a>]</p></li>
+<li><p><a href="https://doi.org/10.1103/PhysRevAccelBeams.26.064202">Analysis of a hadron beam in five-dimensional phase space</a><br>
+A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau<br>
+<em>Physical Review Accelerators and Beams</em> 26.6 (2023): 064202<br>
+[<a href="https://arxiv.org/abs/2301.04178">arxiv</a>] [<a href="https://zenodo.org/record/7724034#.ZDsWlS-B1pQ">zenodo</a>]</p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805">Four-dimensional emittance measurement at the Spallation Neutron Source</a><br>
+A. Hoover and N. Evans<br>
+<em>Nuclear Instruments and Methods in Physics Research Section A</em> 1041 (2022): 167376<br>
+[<a href="https://arxiv.org/abs/2204.08303">arxiv</a>]</p></li>
+<li><p><a href="https://doi.org/10.1103/PhysRevAccelBeams.24.044201">Computation of the matched envelope of the Danilov distribution</a><br>
+A. Hoover, N. Evans, and J. Holmes<br>
+<em>Physical Review Accelerators and Beams</em> 24.4 (2021): 044201<br>
+</p></li>
+</ol>
 </section>
-<section id="hadron-bunch-compression" class="level2">
-<h2 class="anchored" data-anchor-id="hadron-bunch-compression">Hadron bunch compression</h2>
-<p>A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
+<section id="conference" class="level2">
+<h2 class="anchored" data-anchor-id="conference">Conference</h2>
+<ol type="1">
+<li><p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf">High-dimensional maximum-entropy phase space tomography</a><br>
+A. Hoover<br>
+<em>North American Particle Accelerator Conference</em> (2025)<br>
+</p></li>
+<li><p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf">Feasibility of proton bunch compression in an operational high-power accelerator</a><br>
+A. Hoover, V. Morozov, C. Piller, A. Narayan<br>
+<em>North American Particle Accelerator Conference</em> (2025)<br>
+</p></li>
+<li><p><a href="https://www.jacow.org/ipac2024/pdf/WEPG65.pdf">MENT-Flow: maximum-entropy tomography using normalizing flows</a><br>
+A. Hoover and C. Wong<br>
+<em>International Particle Accelerator Conference</em> (2024)<br>
+</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/hb2023/papers/tuc1c2.pdf">The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator</a><br>
+A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo<br>
+<em>ICFA Workshop on High-Intensity and High-Brightness Hadron Beams</em> (2023)<br>
+</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/ipac2023/pdf/WEPA028.pdf">Detailed characterization of a five-dimensional phase space distribution</a><br>
+A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov<br>
+<em>International Particle Accelerator Conference</em> (2023)<br>
+</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/napac2022/papers/frxd3.pdf">Measurements of the five-dimensional phase space distribution of an intense ion beam</a><br>
+A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov<br>
+<em>North American Particle Accelerator Conference</em> (2022)<br>
+</p></li>
+<li><p><a href="">Development of an injection-painted self-consistent beam at the Spallation Neutron Source</a><br>
+A. Hoover, N. Evans, T. Gorlov, J. Holmes<br>
+<em>ICFA Workshop on High-Intensity and High-Brightness Hadron Beams</em> (2021)<br>
+</p></li>
+<li><p><a href="">Simulation of 4D emittance measurement at the Spallation Neutron Source</a><br>
+A. Hoover, N. Evans<br>
+<em>International Particle Accelerator Conference</em> (2021)<br>
+</p></li>
+</ol>
+<p><strong>Coauthor:</strong></p>
+<ol type="1">
+<li><p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP014.pdf">Beam loss modeling and mitigation due to intra-beam stripping</a><br>
+S. Kakkar, V. Morozov, L. Lee, N. Evans, A. Zhukov, A. Hoover<br>
+<em>North American Particle Accelerator Conference</em> (2025)<br>
+</p></li>
+<li><p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUP041.pdf">Exploring space charge mitigation with eigenpainting at the SNS</a><br>
+N.J. Evans, A. Hoover, T. Gorlov, V. Morozov<br>
+<em>North American Particle Accelerator Conference</em> (2025)<br>
+</p></li>
+<li><p><a href="">Benchmark of linac model and phase space measurements at the SNS Beam Test Facility</a><br>
+K. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov<br>
+<em>International Computational Accelerator Physics Conference</em> (2024)</p></li>
+<li><p><a href="https://meow.elettra.eu/71/pdf/THAA005.pdf">Progress toward halo modeling at the SNS Beam Test Facility</a><br>
+K. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov<br>
+<em>Linear Accelerator Conference</em> (2024)</p></li>
+<li><p><a href="https://www.jacow.org/ipac2024/pdf/WEPR39.pdf">Proposed muon collider R&amp;D at the SNS</a><br>
+V. Morozov, A. Hoover, D. Stratakis, F. Pilat, N. Evans, and S. Cousineau<br>
+<em>International Particle Accelerator Conference</em> (2024)</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/ipac2024/pdf/TUAN2.pdf">Measurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility</a><br>
+T. Thompson, K. Ruisard, A. Hoover, A. Aleksandrov, and A. Zhukov<br>
+<em>International Particle Accelerator Conference</em> (2024)</p></li>
+<li><p><a href="https://www.jacow.org/ipac2024/pdf/THPC75.pdf">Status of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies</a><br>
+K. Ruisard, A. Aleksandrov, S. Cousineau, R. Dickson, B. Han, A. Hoover, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, and A. Zhukov<br>
+<em>International Particle Accelerator Conference</em> (2024)</p></li>
+<li><p><a href="https://inspirehep.net/files/d31c7f076dcde3b2bade3c13963bd187">Self-consistent injection painting for space charge mitigation</a><br>
+N. Evans, A. Hoover, T. Gorlov, V. Morozov<br>
+<em>ICFA Workshop on High-Intensity and High-Brightness Hadron Beams</em> (2023)</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/ipac2023/pdf/WEPA027.pdf">Measurements at peak operational beam current in the SNS beam test facility</a><br>
+K. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau<br>
+<em>International Particle Accelerator Conference</em> (2023)</p></li>
+<li><p><a href="">Phase space painting of a self-consistent Danilov distribution in the SNS Ring</a><br>
+N. Evans, A. Hoover, T. Gorlov, V. Morozov<br>
+<em>International Particle Accelerator Conference</em> (2023)</p></li>
+<li><p><a href="">Model/measurement comparison of the transverse phase space distribution of an RFQ-generated bunch at the SNS BTF</a><br>
+K. Ruisard, A. Aleksandrov, S. Cousineau, A. Hoover, A. Zhukov<br>
+<em>North American Particle Accelerator Conference</em> (2022)<br>
+</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/linac2022/papers/tupoge20.pdf">Observation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility</a><br>
+K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov<br>
+<em>International Linear Accelerator Conference</em> (2022)</p></li>
+<li><p><a href="https://accelconf.web.cern.ch/ipac2022/papers/tupotk029.pdf">Open XAL Status Report 2022</a><br>
+A. Zhukov, A. Hoover, A. Shishlo, J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas<br>
+<em>International Particle Accelerator Conference</em> (2022)</p></li>
+</ol>
 </section>
-<section id="phase-space-tomography" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phase-space-tomography">Phase space tomography</h2>
-<p>Classical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional <em>phase space</em>. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction.</p>
-<div class="page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_ment_swissroll.png" class="img-fluid figure-img column-body"></p>
-<figcaption>Entropy maximization (MENT) is a conservative approach to inverse problems <span class="citation" data-cites="Hoover_2024_mentflow">&nbsp;[<a href="#ref-Hoover_2024_mentflow" role="doc-biblioref">1</a>]</span>.</figcaption>
-</figure>
-</div>
-</div>
+<section id="newsletter" class="level2">
+<h2 class="anchored" data-anchor-id="newsletter">Newsletter</h2>
+<ol type="1">
+<li><a href="https://higherlogicdownload.s3.amazonaws.com/APS/9cf62627-7088-4bd3-bf97-6adfc913f623/UploadedImages/APS_DPB_Newsletter_2022-2-2.pdf">Six-dimensional distributions at the SNS Beam Test Facility</a><br>
+K. Ruisard, A. Aleksandrov, A. Hoover<br>
+<em>APS Division of Physics of Beams Annual Newsletter</em> (2022)</li>
+</ol>
+</section>
+<section id="dissertation" class="level2">
+<h2 class="anchored" data-anchor-id="dissertation">Dissertation</h2>
+<ol type="1">
+<li><a href="https://trace.tennessee.edu/utk_graddiss/7228">Towards the production of a self-consistent phase space distribution</a><br>
+A. Hoover. <em>PhD Diss., University of Tennessee</em> (2022)<br>
+</li>
+</ol>
 
 
-
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-Hoover_2024_mentflow" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Hoover and J. C. Wong, <em><a href="https://doi.org/10.1103/PhysRevResearch.6.033163">High-Dimensional Maximum-Entropy Phase Space Tomography Using Normalizing Flows</a></em>, Phys. Rev. Res. <strong>6</strong>, 033163 (2024).</div>
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
