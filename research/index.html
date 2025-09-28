@@ -9,6 +9,164 @@
 
 <title>Research – Austin Hoover</title>
 <style>
+html {
+  font-size: 17px;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+body {
+  margin: 0 auto;
+  max-width: 36em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
+@media print {
+  html {
+    background-color: white;
+  }
+  body {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+}
+p {
+  margin: 1em 0;
+}
+a {
+  color: #1a1a1a;
+}
+a:visited {
+  color: #1a1a1a;
+}
+img {
+  max-width: 100%;
+}
+svg {
+  height; auto;
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.4em;
+}
+h5, h6 {
+  font-size: 1em;
+  font-style: italic;
+}
+h6 {
+  font-weight: normal;
+}
+ol, ul {
+  padding-left: 1.7em;
+  margin-top: 1em;
+}
+li > ol, li > ul {
+  margin-top: 0;
+}
+ul > li:not(:has(> p)) > ul,
+ol > li:not(:has(> p)) > ul,
+ul > li:not(:has(> p)) > ol,
+ol > li:not(:has(> p)) > ol {
+  margin-bottom: 0;
+}
+ul > li:not(:has(> p)) > ul > li:has(> p),
+ol > li:not(:has(> p)) > ul > li:has(> p),
+ul > li:not(:has(> p)) > ol > li:has(> p),
+ol > li:not(:has(> p)) > ol > li:has(> p) {
+  margin-top: 1rem;
+}
+blockquote {
+  margin: 1em 0 1em 1.7em;
+  padding-left: 1em;
+  border-left: 2px solid #e6e6e6;
+  color: #606060;
+}
+code {
+  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 85%;
+  margin: 0;
+  hyphens: manual;
+}
+pre {
+  margin: 1em 0;
+  overflow: auto;
+}
+pre code {
+  padding: 0;
+  overflow: visible;
+  overflow-wrap: normal;
+}
+.sourceCode {
+ background-color: transparent;
+ overflow: visible;
+}
+hr {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  height: 1px;
+  margin: 1em 0;
+}
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+  margin-bottom: 0.75em;
+}
+tbody {
+  margin-top: 0.5em;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+th {
+  border-top: 1px solid #1a1a1a;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+  padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+  margin-bottom: 4em;
+  text-align: center;
+}
+#TOC li {
+  list-style: none;
+}
+#TOC ul {
+  padding-left: 1.3em;
+}
+#TOC > ul {
+  padding-left: 0;
+}
+#TOC a:not(:hover) {
+  text-decoration: none;
+}
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -43,51 +201,15 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2241f7809e01550de6d79914aa4d5b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
 
 <script type="text/javascript">
@@ -97,148 +219,72 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
+<style type="text/css">body { max-width: 700px;}</style>
 
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Austin Hoover</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html"> 
-<span class="menu-text">Papers</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#halo-formation" id="toc-halo-formation" class="nav-link active" data-scroll-target="#halo-formation">Halo formation</a></li>
-  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
-  <li><a href="#hadron-bunch-compression" id="toc-hadron-bunch-compression" class="nav-link" data-scroll-target="#hadron-bunch-compression">Hadron bunch compression</a></li>
-  <li><a href="#phase-space-tomography" id="toc-phase-space-tomography" class="nav-link" data-scroll-target="#phase-space-tomography">Phase space tomography</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<header id="title-block-header">
 <h1 class="title">Research</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
 
 </header>
 
 
-<p>[Also see <a href="../research/current_topics.html">here</a>.]</p>
+<p>(Also see <a href="./current_topics.md">here</a>.)</p>
 <p>Particle accelerators are <a href="https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/">essential tools</a> for scientific research. For example, hadron accelerators generate <a href="https://neutrons.ornl.gov/sns">neutrons</a>, <a href="https://www.dunescience.org">neutrinos</a>, and <a href="https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/">muons</a> for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive <a href="https://www.sckcen.be/en/infrastructure/myrrha">nuclear fission reactors</a>. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.</p>
 <p>I’m interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography.</p>
-<section id="halo-formation" class="level2">
-<h2 class="anchored" data-anchor-id="halo-formation">Halo formation</h2>
+<h2 id="halo-formation" class="anchored">Halo formation</h2>
 <p>Linear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.</p>
 <p>We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators. Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./files/fig_halo.png" class="img-fluid figure-img" width="450"></p>
+<figure>
+<p><img src="./files/fig_halo.png" class="img-fluid" width="450"></p>
 <figcaption>Measured and predicted phase space distributions of a 52 mA beam in the SNS BTF accelerator. (Logarithmic density scale)</figcaption>
 </figure>
 </div>
-</section>
-<section id="phase-space-painting" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
+<h2 id="phase-space-painting" class="anchored">Phase space painting</h2>
 <p>Our primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as <em>phase space painting</em>. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as <em>eigenpainting</em>, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider.</p>
-<div class="page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_sns_4d.png" class="img-fluid figure-img column-body"></p>
+<div class="column-body">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img src="./files/fig_sns_4d.png" class="img-fluid"></p>
 <figcaption>Phase space measurement from a beam injection experiment in the SNS. Cross-plane correlations indicate the beam is partially spinning.</figcaption>
 </figure>
 </div>
 </div>
-</section>
-<section id="hadron-bunch-compression" class="level2">
-<h2 class="anchored" data-anchor-id="hadron-bunch-compression">Hadron bunch compression</h2>
+<h2 id="hadron-bunch-compression" class="anchored">Hadron bunch compression</h2>
 <p>A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure>
+<p><img src="./files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
-</section>
-<section id="phase-space-tomography" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phase-space-tomography">Phase space tomography</h2>
+<h2 id="phase-space-tomography" class="anchored">Phase space tomography</h2>
 <p>Classical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional <em>phase space</em>. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction.</p>
-<div class="page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="./files/fig_ment_swissroll.png" class="img-fluid figure-img column-body"></p>
-<figcaption>Entropy maximization (MENT) is a conservative approach to inverse problems <span class="citation" data-cites="Hoover_2024_mentflow">&nbsp;[<a href="#ref-Hoover_2024_mentflow" role="doc-biblioref">1</a>]</span>.</figcaption>
+<div class="column-body">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img src="./files/fig_ment_swissroll.png" class="img-fluid"></p>
+<figcaption>Entropy maximization (MENT) is a conservative approach to inverse problems <span class="citation" data-cites="Hoover_2024_mentflow">&nbsp;[1]</span>.</figcaption>
 </figure>
 </div>
 </div>
 
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Hoover_2024_mentflow" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. Hoover and J. C. Wong, <em><a href="https://doi.org/10.1103/PhysRevResearch.6.033163">High-Dimensional Maximum-Entropy Phase Space Tomography Using Normalizing Flows</a></em>, Phys. Rev. Res. <strong>6</strong>, 033163 (2024).</div>
 </div>
-</div></section></div></main> <!-- /main -->
+</div>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -337,7 +383,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'quarto',
+        theme: 'light-border',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -637,7 +683,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     }
   });
   </script>
-</div> <!-- /content -->
 
 
 

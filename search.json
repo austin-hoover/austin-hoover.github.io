@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Austin Hoover",
     "section": "",
-    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College.\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my blog.\n\n\n\n\n\nThe best way to reach me is by email at hooveram@ornl.gov."
+    "text": "Accelerator Physicist\nOak Ridge National Laboratory\nhooveram@ornl.gov\nI’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College.\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my blog.\nLink to papers"
   },
   {
     "objectID": "papers/index.html",
     "href": "papers/index.html",
     "title": "Papers",
     "section": "",
-    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov"
+    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting. N. Evans, A. Hoover. T. Gorlov, and V. Morozov"
   },
   {
     "objectID": "papers/index.html#submitted",
     "href": "papers/index.html#submitted",
     "title": "Papers",
     "section": "",
-    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting\nN. Evans, A. Hoover. T. Gorlov, and V. Morozov"
+    "text": "Demonstration of a method to construct self-consistent beam distributions through phase space painting. N. Evans, A. Hoover. T. Gorlov, and V. Morozov"
   },
   {
     "objectID": "papers/index.html#published",
     "href": "papers/index.html#published",
     "title": "Papers",
     "section": "Published",
-    "text": "Published\nN-dimensional maximum-entropy tomography via particle sampling\nA. Hoover\nPhysical Review Accelerators and Beams 28.8 (2025): L084601\n[arxiv] [zenodo]\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam\nA. Hoover.\nPhysical Review Accelerators and Beams 27.(2024): 122802\n[arxiv] [zenodo]\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows\nA. Hoover, and J.C. Wong\nPhysical Review Research 6.3 (2024): 033163\n[arxiv] [zenodo]\nAnalysis of a hadron beam in five-dimensional phase space\nA. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau\nPhysical Review Accelerators and Beams 26.6 (2023): 064202\n[arxiv] [zenodo]\nFour-dimensional emittance measurement at the Spallation Neutron Source\nA. Hoover and N. Evans\nNuclear Instruments and Methods in Physics Research Section A 1041 (2022): 167376\n[arxiv]\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, and J. Holmes\nPhysical Review Accelerators and Beams 24.4 (2021): 044201"
+    "text": "Published\nN-dimensional maximum-entropy tomography via particle sampling\nA. Hoover. Physical Review Accelerators and Beams 28.8 (2025): L084601. [arxiv] [zenodo]\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam\nA. Hoover.\nPhysical Review Accelerators and Beams 27.(2024): 122802\n[arxiv] [zenodo]\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows\nA. Hoover, and J.C. Wong\nPhysical Review Research 6.3 (2024): 033163\n[arxiv] [zenodo]\nAnalysis of a hadron beam in five-dimensional phase space\nA. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau\nPhysical Review Accelerators and Beams 26.6 (2023): 064202\n[arxiv] [zenodo]\nFour-dimensional emittance measurement at the Spallation Neutron Source\nA. Hoover and N. Evans\nNuclear Instruments and Methods in Physics Research Section A 1041 (2022): 167376\n[arxiv]\nComputation of the matched envelope of the Danilov distribution\nA. Hoover, N. Evans, and J. Holmes\nPhysical Review Accelerators and Beams 24.4 (2021): 044201\n\nBack to Austin Hoover’s homepage"
   },
   {
     "objectID": "papers/index.html#conference",
@@ -103,5 +103,19 @@
     "title": "Talks",
     "section": "",
     "text": "High-dimensional maximum-entropy phase space tomography\nNorth American Particle Accelerator Conference, Sacramento, USA\n2025-08-12\nProton Driver for the Demonstrator and Muon Collider\nUS Muon Collider Annual Meeting, Chicago, USA\n2025-08-07\nBunch rotation experiments and benchmarking at SNS\nInternational Muon Collider Collaboration Meeting, Hamburg, Germany\n2025-05-13\nSNS accelerator synergies for muon collider R&D\nPrinceton Muon Collider Organizational Workshop, Princeton, USA\n2024-02-23\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams, Geneva, Switzerland\n2023-10-10\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation\nICFA Mini-Workshop on Space Charge, Knoxville, USA\n2022-10-06\nAccelerator research and development at the Spallation Neutron Source\nParticle Accelerators: Technology and Applications (UTK), Knoxville, USA\n2022-04-21\nComputation of the matched envelope of the Danilov distribution\nAPS April Meeting, Virtual\n2021-04-21"
+  },
+  {
+    "objectID": "index2.html",
+    "href": "index2.html",
+    "title": "Austin Hoover",
+    "section": "",
+    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. Previously, I completed a Ph.D. in physics at the University of Tennessee and a B.S. in physics at Wheaton College.\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my blog.\n\n\n\nThe best way to reach me is by email at hooveram@ornl.gov."
+  },
+  {
+    "objectID": "index.html#austin-hoover",
+    "href": "index.html#austin-hoover",
+    "title": "Austin Hoover",
+    "section": "",
+    "text": "Accelerator Physicist\nOak Ridge National Laboratory\nhooveram@ornl.gov"
   }
 ]

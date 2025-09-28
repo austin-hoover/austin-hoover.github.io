@@ -7,8 +7,166 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Papers – Austin Hoover</title>
+<title>Conference papers – Austin Hoover</title>
 <style>
+html {
+  font-size: 17px;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+body {
+  margin: 0 auto;
+  max-width: 36em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
+@media print {
+  html {
+    background-color: white;
+  }
+  body {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+}
+p {
+  margin: 1em 0;
+}
+a {
+  color: #1a1a1a;
+}
+a:visited {
+  color: #1a1a1a;
+}
+img {
+  max-width: 100%;
+}
+svg {
+  height; auto;
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.4em;
+}
+h5, h6 {
+  font-size: 1em;
+  font-style: italic;
+}
+h6 {
+  font-weight: normal;
+}
+ol, ul {
+  padding-left: 1.7em;
+  margin-top: 1em;
+}
+li > ol, li > ul {
+  margin-top: 0;
+}
+ul > li:not(:has(> p)) > ul,
+ol > li:not(:has(> p)) > ul,
+ul > li:not(:has(> p)) > ol,
+ol > li:not(:has(> p)) > ol {
+  margin-bottom: 0;
+}
+ul > li:not(:has(> p)) > ul > li:has(> p),
+ol > li:not(:has(> p)) > ul > li:has(> p),
+ul > li:not(:has(> p)) > ol > li:has(> p),
+ol > li:not(:has(> p)) > ol > li:has(> p) {
+  margin-top: 1rem;
+}
+blockquote {
+  margin: 1em 0 1em 1.7em;
+  padding-left: 1em;
+  border-left: 2px solid #e6e6e6;
+  color: #606060;
+}
+code {
+  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 85%;
+  margin: 0;
+  hyphens: manual;
+}
+pre {
+  margin: 1em 0;
+  overflow: auto;
+}
+pre code {
+  padding: 0;
+  overflow: visible;
+  overflow-wrap: normal;
+}
+.sourceCode {
+ background-color: transparent;
+ overflow: visible;
+}
+hr {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  height: 1px;
+  margin: 1em 0;
+}
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+  margin-bottom: 0.75em;
+}
+tbody {
+  margin-top: 0.5em;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+th {
+  border-top: 1px solid #1a1a1a;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+  padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+  margin-bottom: 4em;
+  text-align: center;
+}
+#TOC li {
+  list-style: none;
+}
+#TOC ul {
+  padding-left: 1.3em;
+}
+#TOC > ul {
+  padding-left: 0;
+}
+#TOC a:not(:hover) {
+  text-decoration: none;
+}
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,51 +181,15 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2241f7809e01550de6d79914aa4d5b3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NS0H6D6VKL"></script>
 
 <script type="text/javascript">
@@ -77,130 +199,55 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
+<style type="text/css">body { max-width: 700px;}</style>
 
 
 </head>
 
-<body class="nav-fixed quarto-light">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Austin Hoover</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../research/index.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
-<span class="menu-text">Papers</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#submitted" id="toc-submitted" class="nav-link active" data-scroll-target="#submitted">Submitted</a></li>
-  <li><a href="#published" id="toc-published" class="nav-link" data-scroll-target="#published">Published</a></li>
-  <li><a href="#conference" id="toc-conference" class="nav-link" data-scroll-target="#conference">Conference</a></li>
-  <li><a href="#newsletter" id="toc-newsletter" class="nav-link" data-scroll-target="#newsletter">Newsletter</a></li>
-  <li><a href="#dissertation" id="toc-dissertation" class="nav-link" data-scroll-target="#dissertation">Dissertation</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Papers</h1>
-</div>
+<body>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
+<header id="title-block-header">
+<h1 class="title">Conference papers</h1>
 
 </header>
 
 
-<section id="submitted" class="level2">
-<h2 class="anchored" data-anchor-id="submitted">Submitted</h2>
+<h2 id="submitted" class="anchored">Submitted</h2>
 <p><a href="">Demonstration of a method to construct self-consistent beam distributions through phase space painting</a><br>
 N. Evans, A. Hoover. T. Gorlov, and V. Morozov<br>
 </p>
-</section>
-<section id="published" class="level2">
-<h2 class="anchored" data-anchor-id="published">Published</h2>
+<h2 id="published" class="anchored">Published</h2>
 <p><a href="https://doi.org/10.1103/zl2h-3v32">N-dimensional maximum-entropy tomography via particle sampling</a><br>
 A. Hoover<br>
 <em>Physical Review Accelerators and Beams</em> 28.8 (2025): L084601<br>
-[<a href="https://arxiv.org/abs/2409.17915">arxiv</a>] [<a href="https://doi.org/10.5281/zenodo.15271632">zenodo</a>]</p>
+</p>
 <p><a href="https://doi.org/10.1103/PhysRevAccelBeams.27.122802">Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</a><br>
 A. Hoover.<br>
 <em>Physical Review Accelerators and Beams</em> 27.(2024): 122802<br>
-[<a href="https://arxiv.org/abs/2409.02862">arxiv</a>] [<a href="https://zenodo.org/records/14014532">zenodo</a>]</p>
+</p>
 <p><a href="https://doi.org/10.1103/PhysRevResearch.6.033163">High-dimensional maximum-entropy phase space tomography using normalizing flows</a><br>
 A. Hoover, and J.C. Wong<br>
 <em>Physical Review Research</em> 6.3 (2024): 033163<br>
-[<a href="https://arxiv.org/abs/2406.00236">arxiv</a>] [<a href="https://zenodo.org/records/12812545">zenodo</a>]</p>
+</p>
 <p><a href="https://doi.org/10.1103/PhysRevAccelBeams.26.064202">Analysis of a hadron beam in five-dimensional phase space</a><br>
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau<br>
 <em>Physical Review Accelerators and Beams</em> 26.6 (2023): 064202<br>
-[<a href="https://arxiv.org/abs/2301.04178">arxiv</a>] [<a href="https://zenodo.org/record/7724034#.ZDsWlS-B1pQ">zenodo</a>]</p>
+</p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805">Four-dimensional emittance measurement at the Spallation Neutron Source</a><br>
 A. Hoover and N. Evans<br>
 <em>Nuclear Instruments and Methods in Physics Research Section A</em> 1041 (2022): 167376<br>
-[<a href="https://arxiv.org/abs/2204.08303">arxiv</a>]</p>
+</p>
 <p><a href="https://doi.org/10.1103/PhysRevAccelBeams.24.044201">Computation of the matched envelope of the Danilov distribution</a><br>
 A. Hoover, N. Evans, and J. Holmes<br>
 <em>Physical Review Accelerators and Beams</em> 24.4 (2021): 044201<br>
 </p>
-</section>
-<section id="conference" class="level2">
-<h2 class="anchored" data-anchor-id="conference">Conference</h2>
+<h2 id="conference-invited" class="anchored">Conference (invited)</h2>
 <p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf">High-dimensional maximum-entropy phase space tomography</a><br>
 A. Hoover<br>
 <em>North American Particle Accelerator Conference</em> (2025)<br>
 </p>
+<h2 id="conference-contributed-first-author" class="anchored">Conference (contributed, first author)</h2>
 <p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf">Feasibility of proton bunch compression in an operational high-power accelerator</a><br>
 A. Hoover, V. Morozov, C. Piller, A. Narayan<br>
 <em>North American Particle Accelerator Conference</em> (2025)<br>
@@ -229,7 +276,7 @@ A. Hoover, N. Evans, T. Gorlov, J. Holmes<br>
 A. Hoover, N. Evans<br>
 <em>International Particle Accelerator Conference</em> (202<br>
 </p>
-<p><strong>Coauthor:</strong></p>
+<h2 id="conference-contributed-coauthor" class="anchored">Conference (contributed, coauthor)</h2>
 <p><a href="https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP014.pdf">Beam loss modeling and mitigation due to intra-beam stripping</a><br>
 S. Kakkar, V. Morozov, L. Lee, N. Evans, A. Zhukov, A. Hoover<br>
 <em>North American Particle Accelerator Conference</em> (2025)<br>
@@ -272,25 +319,22 @@ K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov<br>
 <p><a href="https://accelconf.web.cern.ch/ipac2022/papers/tupotk029.pdf">Open XAL Status Report 2022</a><br>
 A. Zhukov, A. Hoover, A. Shishlo, J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas<br>
 <em>International Particle Accelerator Conference</em> (2022)</p>
-</section>
-<section id="newsletter" class="level2">
-<h2 class="anchored" data-anchor-id="newsletter">Newsletter</h2>
+<h2 id="newsletter" class="anchored">Newsletter</h2>
 <p><a href="https://higherlogicdownload.s3.amazonaws.com/APS/9cf62627-7088-4bd3-bf97-6adfc913f623/UploadedImages/APS_DPB_Newsletter_2022-2-2.pdf">Six-dimensional distributions at the SNS Beam Test Facility</a><br>
 K. Ruisard, A. Aleksandrov, A. Hoover<br>
 <em>APS Division of Physics of Beams Annual Newsletter</em> (2022)</p>
-</section>
-<section id="dissertation" class="level2">
-<h2 class="anchored" data-anchor-id="dissertation">Dissertation</h2>
+<h2 id="dissertation" class="anchored">Dissertation</h2>
 <p><a href="https://trace.tennessee.edu/utk_graddiss/7228">Towards the production of a self-consistent phase space distribution</a><br>
 A. Hoover. <em>PhD Diss., University of Tennessee</em> (2022)<br>
 </p>
 
 
-</section>
-
-</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -389,7 +433,7 @@ A. Hoover. <em>PhD Diss., University of Tennessee</em> (2022)<br>
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'quarto',
+        theme: 'light-border',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -689,7 +733,6 @@ A. Hoover. <em>PhD Diss., University of Tennessee</em> (2022)<br>
     }
   });
   </script>
-</div> <!-- /content -->
 
 
 
