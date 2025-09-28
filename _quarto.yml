@@ -18,15 +18,10 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-#        theme: [default, style/custom.scss]  
         theme: pandoc
         html-math-method: mathjax
         toc: false
-        
-        grid:
-          body-width: 720px
-        mainfont: "Latin Modern"
+        max-width: 700px
         fontsize: 17px
-        linestretch: 1.25
 
 
