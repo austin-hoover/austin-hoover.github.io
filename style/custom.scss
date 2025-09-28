@@ -1,0 +1,34 @@
+
+/*-- scss:defaults --*/
+
+// $h2-font-size: 1.50em;
+// $h3-font-size: 1.25em;
+// $h4-font-size: 1.00em;
+// $h5-font-size: 1.00em;
+// $h6-font-size: 1.00em;
+$navbar-bg: rgb(50, 50, 50);
+
+
+// /*-- scss:rules --*/
+
+
+h1 {
+  font-size: 140%;
+}
+
+h2, .h2 {
+  border-bottom: none !important;
+  padding-bottom: 0.0em !important;
+}
+
+.navbar {
+  font-family: "Helvetica Neue";
+}
+
+a, u {
+  text-decoration: none !important;
+}
+
+pre, code {
+    font-size: 13.0px !important;
+}

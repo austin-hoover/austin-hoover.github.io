@@ -3,24 +3,30 @@ project:
 website:
     title: "Austin Hoover"
     open-graph: False
-    navbar:
-        border: False
-        right:
-            - text: "Home"
-              href: ./index.qmd
-            - text: "Research"
-              href: ./research/index.qmd
-            - text: "Papers"
-              href: ./papers/index.qmd
-            - text: "Talks"
-              href: ./talks/index.qmd
+    navbar: False
+#    navbar:
+#        border: False
+#        right:
+#            - text: "Home"
+#              href: ./index.qmd
+#            - text: "Research"
+#              href: ./research/index.qmd
+#            - text: "Papers"
+#              href: ./papers/index.qmd
+#            - text: "Talks"
+#              href: ./talks/index.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
+#        theme: [default, style/custom.scss]  
         theme: pandoc
         html-math-method: mathjax
         toc: false
-        max-width: 700px
+        
+        grid:
+          body-width: 720px
+        mainfont: "Latin Modern"
         fontsize: 17px
+        linestretch: 1.25
 
 
