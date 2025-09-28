@@ -1,6 +1,5 @@
 ---
-title: Papers
-toc: true
+title: Conference papers
 ---
 
 
@@ -15,44 +14,38 @@ N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
 [N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32) \
 A. Hoover \
  *Physical Review Accelerators and Beams* 28.8 (2025): L084601 \
-[[arxiv](https://arxiv.org/abs/2409.17915)] 
-[[zenodo](https://doi.org/10.5281/zenodo.15271632)]
 
 [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802) \
 A. Hoover. \
 *Physical Review Accelerators and Beams* 27.(2024): 122802 \
-[[arxiv](https://arxiv.org/abs/2409.02862)]
-[[zenodo](https://zenodo.org/records/14014532)]
 
 [High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163) \
 A. Hoover, and J.C. Wong \
 *Physical Review Research* 6.3 (2024): 033163 \
-[[arxiv](https://arxiv.org/abs/2406.00236)]
-[[zenodo](https://zenodo.org/records/12812545)]
 
 [Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202) \
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
 *Physical Review Accelerators and Beams* 26.6 (2023): 064202 \
-[[arxiv](https://arxiv.org/abs/2301.04178)]
-[[zenodo](https://zenodo.org/record/7724034#.ZDsWlS-B1pQ)]
 
 [Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805) \
 A. Hoover and N. Evans \
 *Nuclear Instruments and Methods in Physics Research Section A* 1041 (2022): 167376 \
-[[arxiv](https://arxiv.org/abs/2204.08303)] 
 
 [Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201) \
 A. Hoover, N. Evans, and J. Holmes \
 *Physical Review Accelerators and Beams* 24.4 (2021): 044201 \
 
 
-## Conference 
 
+
+## Conference (invited)
 
 [High-dimensional maximum-entropy phase space tomography](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf) \
 A. Hoover \
 *North American Particle Accelerator Conference* (2025) \
 
+
+## Conference (contributed, first author)
 
 [Feasibility of proton bunch compression in an operational high-power accelerator](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf) \
 A. Hoover, V. Morozov, C. Piller, A. Narayan \
@@ -83,7 +76,7 @@ A. Hoover, N. Evans \
 *International Particle Accelerator Conference* (202\
 
 
-**Coauthor:**
+## Conference (contributed, coauthor)
 
 [Beam loss modeling and mitigation due to intra-beam stripping](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP014.pdf) \
 S. Kakkar, V. Morozov, L. Lee, N. Evans, A. Zhukov, A. Hoover \

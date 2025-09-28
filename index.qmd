@@ -1,17 +1,100 @@
-::: {.grid}
+---
+title: ""
+---
 
-::: {.g-col-8}
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![](images/me_ornl.jpg){width=85%}
+
+:::
+
+::: {.column width="55%"}
+
+## Austin Hoover
+
+Accelerator Physicist \
+Oak Ridge National Laboratory \
+hooveram@ornl.gov \
+:::
+
+::::
+
+
 I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). Previously, I completed a Ph.D. in physics at the [University of Tennessee](https://physics.utk.edu) and a B.S. in physics at [Wheaton College]().
 
-I'm interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, (iii) inverse problems such as phase space tomography. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
-:::
+## Research
 
-::: {.g-col-4}
-![](images/me_ornl.jpg)
-:::
+I'm interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
-:::
+Particle accelerators are [essential tools](https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/) for scientific research. For example, hadron accelerators generate [neutrons](https://neutrons.ornl.gov/sns), [neutrinos](https://www.dunescience.org), and [muons](https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/) for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive [nuclear fission reactors](https://www.sckcen.be/en/infrastructure/myrrha). Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.
+
+[Here](./research/index.qmd) is a more detailed overview of my research.
 
 
-The best way to reach me is by email at **hooveram@ornl.gov**.
+## Papers
+
+[Here](./talks/index.qmd) is a full list of papers, including preprints and conference papers.
+
+**N-dimensional maximum-entropy tomography via particle sampling**.
+A. Hoover.
+*Physical Review Accelerators and Beams* 28.8 (2025): L084601. 
+[[pdf](https://doi.org/10.1103/zl2h-3v32)]
+
+**Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam**.
+A. Hoover.
+*Physical Review Accelerators and Beams* 27.(2024): 122802. 
+[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.27.122802)]
+
+**High-dimensional maximum-entropy phase space tomography using normalizing flows**.
+A. Hoover, and J.C. Wong. 
+*Physical Review Research* 6.3 (2024): 033163.
+[[pdf](https://doi.org/10.1103/PhysRevResearch.6.033163)]
+
+**Analysis of a hadron beam in five-dimensional phase space**.
+A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
+*Physical Review Accelerators and Beams* 26.6 (2023): 064202.
+[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.26.064202)]
+
+**Four-dimensional emittance measurement at the Spallation Neutron Source**.
+A. Hoover and N. Evans.
+*Nuclear Instruments and Methods in Physics Research Section A* 1041 (2022): 167376.
+[[pdf](https://arxiv.org/abs/2204.08303)] 
+
+**Computation of the matched envelope of the Danilov distribution**.
+A. Hoover, N. Evans, and J. Holmes.
+*Physical Review Accelerators and Beams* 24.4 (2021): 044201.
+[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
+
+
+## Talks
+
+[Here](./talks/index.qmd) is a full list of talks.
+
+[High-dimensional maximum-entropy phase space tomography]() \
+*North American Particle Accelerator Conference*, Sacramento, USA \
+2025-08-12
+
+[Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/) \
+*International Muon Collider Collaboration Meeting*, Hamburg, Germany \
+2025-05-13
+
+[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf) \
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*, Geneva, Switzerland \
+2023-10-10
+
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
+*ICFA Mini-Workshop on Space Charge*, Knoxville, USA \
+2022-10-06
+
+
+## Links
+
+[Blog](https://austin-hoover.github.io/blog/) \
+[ORNL staff profile](https://www.ornl.gov/staff-profile/austin-hoover) \
+[ORCID](https://orcid.org/0000-0001-5313-6962) \
+[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao) \
+[GitHub](https://github.com/austin-hoover) \
+[LinkedIn](https://www.linkedin.com/in/austinhoover0/) \

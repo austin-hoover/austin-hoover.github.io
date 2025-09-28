@@ -1,5 +1,5 @@
 ---
-title: "Topics"
+title: "Current topics"
 ---
 
 Things I'm working on, thinking about, or hoping to think about at some point:
