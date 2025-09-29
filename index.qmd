@@ -36,7 +36,7 @@ Particle accelerators are [essential tools](https://www.nobelprize.org/prizes/th
 
 ## Papers
 
-[Here](./talks/index.qmd) is a full list of papers, including preprints and conference papers.
+[Here](./papers/index.qmd) is a full list of papers, including preprints and conference papers.
 
 **N-dimensional maximum-entropy tomography via particle sampling**.
 A. Hoover.
