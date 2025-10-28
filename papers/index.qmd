@@ -47,6 +47,8 @@ A. Hoover \
 
 ## Conference (contributed, first author)
 
+Note that conferences like IPAC are not peer-reviewed.
+
 [Feasibility of proton bunch compression in an operational high-power accelerator](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf) \
 A. Hoover, V. Morozov, C. Piller, A. Narayan \
 *North American Particle Accelerator Conference* (2025) \
