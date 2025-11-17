@@ -34,8 +34,6 @@ I'm interested in techniques to model, measure, and control intense charged part
 
 ## Papers
 
-[Here](./papers/index.qmd) is a full list of papers, including preprints and non-peer-reviewed work.
-
 **N-dimensional maximum-entropy tomography via particle sampling**.
 A. Hoover.
 *Physical Review Accelerators and Beams* 28.8 (2025): L084601. 
@@ -66,11 +64,10 @@ A. Hoover, N. Evans, and J. Holmes.
 *Physical Review Accelerators and Beams* 24.4 (2021): 044201.
 [[pdf](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
+[Here](./papers/index.qmd) is a full list of papers, including preprints and non-peer-reviewed work.
 
 
 ## Talks
-
-[Here](./talks/index.qmd) is a full list of talks.
 
 [High-dimensional maximum-entropy phase space tomography]() \
 *North American Particle Accelerator Conference*, Sacramento, USA \
@@ -87,6 +84,9 @@ A. Hoover, N. Evans, and J. Holmes.
 [Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
 *ICFA Mini-Workshop on Space Charge*, Knoxville, USA \
 2022-10-06
+
+[Here](./talks/index.qmd) is a full list of talks.
+
 
 
 ## Links
