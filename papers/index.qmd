@@ -5,7 +5,7 @@ title: Papers
 
 ## Submitted
 
-[Demonstration of a method to construct self-consistent beam distributions through phase space painting]() \
+[Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams]()
 N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
 
 
