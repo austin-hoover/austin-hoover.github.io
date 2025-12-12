@@ -12,6 +12,7 @@ title: ""
 
 ::: {.column width="55%"}
 
+
 ## Austin Hoover
 
 Accelerator Physicist \
@@ -34,35 +35,29 @@ I'm interested in techniques to model, measure, and control intense charged part
 
 ## Papers
 
-**N-dimensional maximum-entropy tomography via particle sampling**.
+[N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32).
 A. Hoover.
 *Physical Review Accelerators and Beams* 28.8 (2025): L084601. 
-[[pdf](https://doi.org/10.1103/zl2h-3v32)]
 
-**Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam**.
+[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802).
 A. Hoover.
 *Physical Review Accelerators and Beams* 27.(2024): 122802. 
-[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.27.122802)]
 
-**High-dimensional maximum-entropy phase space tomography using normalizing flows**.
+[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163).
 A. Hoover, and J.C. Wong. 
 *Physical Review Research* 6.3 (2024): 033163.
-[[pdf](https://doi.org/10.1103/PhysRevResearch.6.033163)]
 
-**Analysis of a hadron beam in five-dimensional phase space**.
+[Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202).
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
 *Physical Review Accelerators and Beams* 26.6 (2023): 064202.
-[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.26.064202)]
 
-**Four-dimensional emittance measurement at the Spallation Neutron Source**.
+[Four-dimensional emittance measurement at the Spallation Neutron Source](https://arxiv.org/abs/2204.08303).
 A. Hoover and N. Evans.
 *Nuclear Instruments and Methods in Physics Research Section A* 1041 (2022): 167376.
-[[pdf](https://arxiv.org/abs/2204.08303)] 
 
-**Computation of the matched envelope of the Danilov distribution**.
+[Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201).
 A. Hoover, N. Evans, and J. Holmes.
 *Physical Review Accelerators and Beams* 24.4 (2021): 044201.
-[[pdf](https://doi.org/10.1103/PhysRevAccelBeams.24.044201)]
 
 [Here](./papers/index.qmd) is a full list of papers, including preprints and non-peer-reviewed work.
 
