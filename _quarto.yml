@@ -3,20 +3,31 @@ project:
 website:
     title: "Austin Hoover"
     open-graph: true
-    # navbar:
-    #    right:
-    #     - text: "Home"
-    #       href: ./index.qmd
-    #     - text: "Research"
-    #       href: ./research/index.qmd
-    #     - text: "Papers"
-    #       href: ./papers/index.qmd
-    #     - text: "Talks"
-    #       href: ./talks/index.qmd
+    navbar:
+       right:
+        - text: "Home"
+          href: ./index.qmd
+        - text: "Research"
+          href: ./research/index.qmd
+        - text: "Papers"
+          href: ./papers/index.qmd
+        - text: "Talks"
+          href: ./talks/index.qmd
+        - text: "Links"
+          href: ./links.qmd
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        theme: pandoc
+        # theme: default
+        theme:
+            light: [default, style/custom.scss]
+        grid:
+            body-width: 700px   
+        fontsize: 15px
+        
+        # theme: pandoc
+        # max-width: 700px
+
         html-math-method: mathjax
+        highlight-style: github    
         toc: false
-        max-width: 700px

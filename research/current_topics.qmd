@@ -20,8 +20,6 @@ Things I'm working on, thinking about, or hoping to think about at some point:
     * Multi-particle dynamics in strongly coupled systems
     * Vlasov-Poisson equilibrium distributions 
     * Space-charge-driven resonances and instabilities
-    * Numerical space charge solvers
-    * Lie algebra tracking methods
 * Phase space measurements and inference
     * High-dimensional phase space measurements (direct)
     * High-dimensional phase space tomography
@@ -33,7 +31,7 @@ Things I'm working on, thinking about, or hoping to think about at some point:
 * Optimization, machine learning, etc.
     * Generative models for accelerator applications
     * Surrogate modeling of intense beam dynamics
-    * Online optimization of beam injection
+    * Online optimization of phase space painting waveforms
     * Differentiable simulations
     * Adjoint methods for optimization of beam parameters 
 
