@@ -1,25 +1,11 @@
 ---
+title: "Austin Hoover"
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-![](images/me_ornl.jpg){width=85%}
-:::
-
-::: {.column width="60%"}
-## Austin Hoover
-Accelerator Physicist \
-Oak Ridge National Laboratory \
-hooveram@ornl.gov \
-:::
-
-::::
 
 I'm a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). I'm interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview of my research. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
 
-## Papers
+## Selected Papers
 
 [N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32).
 A. Hoover.
@@ -37,15 +23,9 @@ A. Hoover, and J.C. Wong.
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
 *Physical Review Accelerators and Beams* 26.6 (2023): 064202.
 
-[Four-dimensional emittance measurement at the Spallation Neutron Source](https://arxiv.org/abs/2204.08303).
-A. Hoover and N. Evans.
-*Nuclear Instruments and Methods in Physics Research Section A* 1041 (2022): 167376.
-
 [Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201).
 A. Hoover, N. Evans, and J. Holmes.
 *Physical Review Accelerators and Beams* 24.4 (2021): 044201.
-
-[Here](./papers/index.qmd) is a full list of papers, including preprints and non-peer-reviewed work.
 
 
 ## Links

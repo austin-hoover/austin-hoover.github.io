@@ -18,11 +18,9 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        # theme: default
-        theme:
-            light: [default, style/custom.scss]
+        theme: cosmo
         grid:
-            body-width: 700px   
+            body-width: 670px   
         fontsize: 15px
         
         # theme: pandoc
