@@ -11,21 +11,14 @@
     "href": "index.html",
     "title": "Austin Hoover",
     "section": "",
-    "text": "Accelerator Physicist\nOak Ridge National Laboratory\nhooveram@ornl.gov\nI’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. I’m interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
+    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. I’m interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
   },
   {
-    "objectID": "index.html#austin-hoover",
-    "href": "index.html#austin-hoover",
+    "objectID": "index.html#selected-papers",
+    "href": "index.html#selected-papers",
     "title": "Austin Hoover",
-    "section": "",
-    "text": "Accelerator Physicist\nOak Ridge National Laboratory\nhooveram@ornl.gov"
-  },
-  {
-    "objectID": "index.html#papers",
-    "href": "index.html#papers",
-    "title": "Austin Hoover",
-    "section": "Papers",
-    "text": "Papers\nN-dimensional maximum-entropy tomography via particle sampling. A. Hoover. Physical Review Accelerators and Beams 28.8 (2025): L084601.\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam. A. Hoover. Physical Review Accelerators and Beams 27.(2024): 122802.\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows. A. Hoover, and J.C. Wong. Physical Review Research 6.3 (2024): 033163.\nAnalysis of a hadron beam in five-dimensional phase space. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. Physical Review Accelerators and Beams 26.6 (2023): 064202.\nFour-dimensional emittance measurement at the Spallation Neutron Source. A. Hoover and N. Evans. Nuclear Instruments and Methods in Physics Research Section A 1041 (2022): 167376.\nComputation of the matched envelope of the Danilov distribution. A. Hoover, N. Evans, and J. Holmes. Physical Review Accelerators and Beams 24.4 (2021): 044201.\nHere is a full list of papers, including preprints and non-peer-reviewed work."
+    "section": "Selected Papers",
+    "text": "Selected Papers\nN-dimensional maximum-entropy tomography via particle sampling. A. Hoover. Physical Review Accelerators and Beams 28.8 (2025): L084601.\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam. A. Hoover. Physical Review Accelerators and Beams 27.(2024): 122802.\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows. A. Hoover, and J.C. Wong. Physical Review Research 6.3 (2024): 033163.\nAnalysis of a hadron beam in five-dimensional phase space. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. Physical Review Accelerators and Beams 26.6 (2023): 064202.\nComputation of the matched envelope of the Danilov distribution. A. Hoover, N. Evans, and J. Holmes. Physical Review Accelerators and Beams 24.4 (2021): 044201."
   },
   {
     "objectID": "index.html#links",
