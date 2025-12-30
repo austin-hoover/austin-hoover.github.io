@@ -24,9 +24,6 @@ format:
         grid:
             body-width: 700px   
         fontsize: 15px
-        
-        # theme: pandoc
-        # max-width: 700px
 
         html-math-method: mathjax
         highlight-style: github    
