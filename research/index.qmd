@@ -18,7 +18,7 @@ Linear accelerators (linacs) generate tight bunches of particles. The combined e
 
 We are using the Beam Test Facility (BTF) at the [Spallation Neutron Source](https://neutrons.ornl.gov/sns) (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators. Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters. 
 
-![](files/fig_halo.png){width=60% fig-align=center}
+![](files/fig_halo.png){width=250px fig-align=center}
 
 
 
