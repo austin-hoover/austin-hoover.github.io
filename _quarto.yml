@@ -20,7 +20,7 @@ format:
     html:
         theme: cosmo
         grid:
-            body-width: 670px   
+            body-width: 700px   
         fontsize: 15px
         
         # theme: pandoc
