@@ -30,21 +30,17 @@ A. Hoover, N. Evans, and J. Holmes.
 
 ## Selected Talks
 
-[High-dimensional maximum-entropy phase space tomography]() \
-*North American Particle Accelerator Conference*, Sacramento, USA \
-2025-08-12
+[High-dimensional maximum-entropy phase space tomography](talks/files/2025-08-12_napac_ment.pdf).
+*North American Particle Accelerator Conference*. Sacramento, USA (2025).
 
-[Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/) \
-*International Muon Collider Collaboration Meeting*, Hamburg, Germany \
-2025-05-13
+[Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/).
+*International Muon Collider Collaboration Meeting*. Hamburg, Germany (2025).
 
-[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf) \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*, Geneva, Switzerland \
-2023-10-10
+[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf). 
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*. Geneva, Switzerland (2023).
 
-[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf) \
-*ICFA Mini-Workshop on Space Charge*, Knoxville, USA \
-2022-10-06
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf). 
+*ICFA Mini-Workshop on Space Charge*. Knoxville, USA (2022).
 
 
 ## Links
