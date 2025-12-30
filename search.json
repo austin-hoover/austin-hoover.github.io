@@ -4,14 +4,14 @@
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "[Under construction]"
+    "text": "[Under construction.]\nI will be part of the teaching team for the summer 2026 USPAS course: “Beam Physics With Intense Space Charge”."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Austin Hoover",
     "section": "",
-    "text": "I’m a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. I’m interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
+    "text": "I am a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. I’m interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
   },
   {
     "objectID": "index.html#selected-papers",
@@ -21,11 +21,67 @@
     "text": "Selected Papers\nN-dimensional maximum-entropy tomography via particle sampling. A. Hoover. Physical Review Accelerators and Beams 28.8 (2025): L084601.\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam. A. Hoover. Physical Review Accelerators and Beams 27.(2024): 122802.\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows. A. Hoover, and J.C. Wong. Physical Review Research 6.3 (2024): 033163.\nAnalysis of a hadron beam in five-dimensional phase space. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. Physical Review Accelerators and Beams 26.6 (2023): 064202.\nComputation of the matched envelope of the Danilov distribution. A. Hoover, N. Evans, and J. Holmes. Physical Review Accelerators and Beams 24.4 (2021): 044201."
   },
   {
+    "objectID": "index.html#selected-talks",
+    "href": "index.html#selected-talks",
+    "title": "Austin Hoover",
+    "section": "Selected Talks",
+    "text": "Selected Talks\nHigh-dimensional maximum-entropy phase space tomography\nNorth American Particle Accelerator Conference, Sacramento, USA\n2025-08-12\nBunch rotation experiments and benchmarking at SNS\nInternational Muon Collider Collaboration Meeting, Hamburg, Germany\n2025-05-13\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator\nICFA Workshop on High-Intensity and High-Brightness Hadron Beams, Geneva, Switzerland\n2023-10-10\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation\nICFA Mini-Workshop on Space Charge, Knoxville, USA\n2022-10-06"
+  },
+  {
     "objectID": "index.html#links",
     "href": "index.html#links",
     "title": "Austin Hoover",
     "section": "Links",
     "text": "Links\nBlog\nORNL staff profile\nORCID\nGoogle Scholar\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "research/current_topics.html",
+    "href": "research/current_topics.html",
+    "title": "Current topics",
+    "section": "",
+    "text": "Things I’m working on, thinking about, or hoping to think about at some point:\n\nGeneral\n\nIntense beam dynamics in circular accelerators (rings)\nIntense beam dynamics in linear accelerators (linacs)\nInverse problems\n\nAccelerator physics\n\nHalo formation and beam loss prediction in high-power linacs\nPhase space painting of equilibrium distributions\nPhase space painting in strongly coupled lattices\nPhase space painting in nonlinear rings\nProton bunch compression\nSimulation benchmarking\n\nTheory/modeling\n\nSingle-particle dynamics in strongly coupled systems\nMulti-particle dynamics in strongly coupled systems\nVlasov-Poisson equilibrium distributions\nSpace-charge-driven resonances and instabilities\n\nPhase space measurements and inference\n\nHigh-dimensional phase space measurements (direct)\nHigh-dimensional phase space tomography\nHigh-dynamic-range phase space tomography\nUncertainty quantification in phase space tomography\nPhase space tomography with self-consistent space charge forces\nMaximum-entropy techniques for inverse problems\nBayesian inference for phase space measurements\n\nOptimization, machine learning, etc.\n\nGenerative models for accelerator applications\nSurrogate modeling of intense beam dynamics\nOnline optimization of phase space painting waveforms\nDifferentiable simulations\nAdjoint methods for optimization of beam parameters"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "[Work in progress.] (Also see here.)\nHadron accelerators are essential tools for scientific research. For example, hadron accelerators generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics. In the future, hadron accelerators may drive nuclear fission reactors and transmutation of nuclear waste. These and other applications require hadron beams of extreme intensity while satisfying tight constraints on the particle distribution in phase space.\nSatisfying these constraints is challenging because of collective effects which drive multiparticle resonances and instabilities in the beam as it evolves. The result is that some fraction of particles do not make it through the accelerator. The radiation generated by these lost particles places hard limits on the beam power. Today, a small number of facilities operate at or above 1 megawatt (MW), requiring fractional beam loss to be near \\(10^{-6}\\), or one out of every million particles. A future 10 MW accelerator would need to reduce losses below \\(10^{-7}\\), and so on as the power increases. This is currently impossible—we can measure low-level beam loss, but we cannot predict or control it to the necessary degree.\nThe goal of my research is to predict, measure, and control beam dynamics at the individual particle level in the presence of strong collective effects. This page provides an overview of several projects and topics related to this goal."
+  },
+  {
+    "objectID": "research/index.html#halo-formation",
+    "href": "research/index.html#halo-formation",
+    "title": "Research",
+    "section": "Halo formation",
+    "text": "Halo formation\nThe combined effects of external and self-generated fields can drive small numbers of particles to very large amplitudes, forming a large, low-density “halo” surrounding a dense core. The fraction of particles in the halo is so small that the halo has almost no effect on the core dynamics and is nearly impossible to measure with conventional diagnostics. However, as described above, it is these particles that ultimately limit the accelerator power.\nHalo formation is challenging to predict due to its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core. We are using the Beam Test Facility (BTF) at the Spallation Neutron Source (SNS) to address these problems. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the complete initial 6D distribution and the output 2D distributions with six orders of dynamic range—enough to image halo particles. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.\n\n\n\nMeasured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."
+  },
+  {
+    "objectID": "research/index.html#phase-space-painting",
+    "href": "research/index.html#phase-space-painting",
+    "title": "Research",
+    "section": "Phase space painting",
+    "text": "Phase space painting\nThe primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). During the beam accumulation, dipole magnets are used to vary the position and momentum of the injected beam relative to the circulating beam. In the frame of the circulating beam, the injection point is moved through the four-dimensional phase space as a function of time. This process is known as phase space painting. Painting is now a vital component of the two operating high-power accumulator rings: SNS and J-PARC.\nAt a basic level, phase space painting is used to avoid high-density regions of charge in the accumulated beam. More detailed control is complicated by self-consistent electrostatic (space charge) forces which act on the beam as it evolves in the ring. The inclusion of space charge means we cannot easily predict what will happen when we propose a new painting scheme—i.e., a path through the four-dimensional phase space—without long simulations.\nMy current work on this topic focuses on a new painting method that we call eigenpainting, which leverages the theory of coupled linear optics to generate a “vortex” beam in the ring. Other work includes the application of ML methods to develop new 4D or 6D painting schemes in linear or nonlinear lattices.\n\n\n\nOverview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."
+  },
+  {
+    "objectID": "research/index.html#hadron-bunch-compression",
+    "href": "research/index.html#hadron-bunch-compression",
+    "title": "Research",
+    "section": "Hadron bunch compression",
+    "text": "Hadron bunch compression\nA future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities in the transverse plane.\n\n\n\nSimulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space."
+  },
+  {
+    "objectID": "research/index.html#high-dimensional-phase-space-measurement-and-reconstruction",
+    "href": "research/index.html#high-dimensional-phase-space-measurement-and-reconstruction",
+    "title": "Research",
+    "section": "High-dimensional phase space measurement and reconstruction",
+    "text": "High-dimensional phase space measurement and reconstruction\nI have worked on direct high-dimensional phase space measurements as part of the SNS-BTF project, described above. In direct measurements, the phase space density is measured using a set of slit apertures. Each slit isolates a small window along one dimension of the phase space, and the collection of all \\(N\\) slits identifies a small cube in the \\(N\\)-dimensional phase space. My work focused on developing efficient scan patterns to explore the high-dimensional space, reducing the scanning time by an order of magnitude. Additionally, I focused on the analysis and visualization of the resulting high-dimensional phase space image.\nDirect phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction. A particular focus has been on the use of generative models and sampling algorithms to extend maximum-entropy techniques to six-dimensional phase space reconstruction.\n\n\n\nEntropy maximization leads to the simplest possible distribution allowed by a given data set."
+  },
+  {
+    "objectID": "research/index.html#machine-learning-applications",
+    "href": "research/index.html#machine-learning-applications",
+    "title": "Research",
+    "section": "Machine learning applications",
+    "text": "Machine learning applications\nThere are many opportunities to apply ML techniques to optimization and inverse problems arising in accelerator physics. I’m particularly interested in methods that combine ML techniques with physics principles or models. For example: the calculation of intra-beam stripping rates using normalizing flows, which can be used to solve the high-dimensional integrals needed for the calculation; the use of differentiable simulations and automatic differentiation to propagate gradients through beam dynamics models; the development of surrogate models which respect physics cosntraints such as symplecticity; the application of Bayesian optimization and reinforcement learning to accelerator tuning problems; etc."
   },
   {
     "objectID": "papers/index.html",
@@ -82,48 +138,6 @@
     "title": "Papers",
     "section": "Dissertation",
     "text": "Dissertation\nTowards the production of a self-consistent phase space distribution\nA. Hoover. PhD Diss., University of Tennessee (2022)"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "(Also see here.)\nParticle accelerators are essential tools for scientific research. For example, hadron accelerators generate neutrons, neutrinos, and muons for experiments in condensed matter physics, material science, nuclear physics, and particle physics; and in the future, hadron accelerators may drive nuclear fission reactors. Many of these applications require hadron beams of enormous density at high repetition rates and with tailored distributions in phase space. Satisfying these constraints at high intensities is a major challenge because of collective effects such as space charge, wake fields, and electron cloud formation, all of which drive multiparticle resonances and instabilities in the beam.\nI’m interested in techniques to model, measure, and control intense beams. I currently focus on halo formation in high-power linear accelerators (linacs) and beam shaping techniques in hadron circular accelerators (rings). I’m also interested in applying ideas from probability theory and machine learning to inverse problems in accelerator physics, such as phase space tomography."
-  },
-  {
-    "objectID": "research/index.html#halo-formation",
-    "href": "research/index.html#halo-formation",
-    "title": "Research",
-    "section": "Halo formation",
-    "text": "Halo formation\nLinear accelerators (linacs) generate tight bunches of particles. The combined effects of applied and self-generated fields within the bunch drive some particles to large amplitudes, creating a low-density “halo” surrounding a dense core. Halo is nearly invisible and barely influences the core, but it places hard constraints on the beam power since it leads to beam loss. Halo formation is challenging to predict because of its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core.\nWe are using the Beam Test Facility (BTF) at the Spallation Neutron Source (SNS) to address this problem on a small scale. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the initial 6D distribution and the output 2D halo distribution. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators. Ultimately, we hope our findings will make an operational impact on the SNS linac, which accelerates bunches from 2.5 MeV to 1.3 GeV over 400 meters."
-  },
-  {
-    "objectID": "research/index.html#phase-space-shaping",
-    "href": "research/index.html#phase-space-shaping",
-    "title": "Research",
-    "section": "Phase space shaping",
-    "text": "Phase space shaping\nOur primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). Space charge forces drive resonances and collective instabilities in the circulating beam, leading to particle loss. One approach to mitigating space charge is to vary the position and momentum of the injected beam relative to the circulating beam during accumulation; this is known as phase space painting. We’re developing new painting methods to apply to coupled or nonlinear accelerator lattices. One such method, known as eigenpainting, would generate a vortex beam in the ring, where particles swirl inside an elliptical boundary. This phase space distribution would minimize the nonlinear component of the space charge force and potentially increase the beam intensity limit in the accelerator. The beam would also occupy a small volume of the phase space, rendering it useful in the first stage of a high-energy collider."
-  },
-  {
-    "objectID": "research/index.html#hadron-bunch-compression",
-    "href": "research/index.html#hadron-bunch-compression",
-    "title": "Research",
-    "section": "Hadron bunch compression",
-    "text": "Hadron bunch compression\nA future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities."
-  },
-  {
-    "objectID": "research/index.html#high-dimensional-phase-space-measurements",
-    "href": "research/index.html#high-dimensional-phase-space-measurements",
-    "title": "Research",
-    "section": "High-dimensional phase space measurements",
-    "text": "High-dimensional phase space measurements\nClassical particles are described by their position and momentum in three-dimensional space. Together, these form a six-dimensional phase space. Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am particularly interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction."
-  },
-  {
-    "objectID": "research/current_topics.html",
-    "href": "research/current_topics.html",
-    "title": "Current topics",
-    "section": "",
-    "text": "Things I’m working on, thinking about, or hoping to think about at some point:\n\nGeneral\n\nIntense beam dynamics in circular accelerators (rings)\nIntense beam dynamics in linear accelerators (linacs)\nInverse problems\n\nAccelerator physics\n\nHalo formation and beam loss prediction in high-power linacs\nPhase space painting of equilibrium distributions\nPhase space painting in strongly coupled lattices\nPhase space painting in nonlinear rings\nProton bunch compression\nSimulation benchmarking\n\nTheory/modeling\n\nSingle-particle dynamics in strongly coupled systems\nMulti-particle dynamics in strongly coupled systems\nVlasov-Poisson equilibrium distributions\nSpace-charge-driven resonances and instabilities\n\nPhase space measurements and inference\n\nHigh-dimensional phase space measurements (direct)\nHigh-dimensional phase space tomography\nHigh-dynamic-range phase space tomography\nUncertainty quantification in phase space tomography\nPhase space tomography with self-consistent space charge forces\nMaximum-entropy techniques for inverse problems\nBayesian inference for phase space measurements\n\nOptimization, machine learning, etc.\n\nGenerative models for accelerator applications\nSurrogate modeling of intense beam dynamics\nOnline optimization of phase space painting waveforms\nDifferentiable simulations\nAdjoint methods for optimization of beam parameters"
   },
   {
     "objectID": "talks/index.html",
