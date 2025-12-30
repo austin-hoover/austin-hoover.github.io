@@ -7,40 +7,40 @@ title: "Austin Hoover"
 
 ## Selected Papers
 
-[N-dimensional maximum-entropy tomography via particle sampling](https://doi.org/10.1103/zl2h-3v32).
+[N-dimensional maximum-entropy tomography via particle sampling](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32). 
+A. Hoover. 
+*Phys. Rev. Accel. Beams 28, L084601* (2025).
+
+[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802). 
 A. Hoover.
-*Physical Review Accelerators and Beams* 28.8 (2025): L084601. 
+*Phys. Rev. Accel. Beams 27, 122802* (2024).
 
-[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://doi.org/10.1103/PhysRevAccelBeams.27.122802).
-A. Hoover.
-*Physical Review Accelerators and Beams* 27.(2024): 122802. 
+[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163).
+A. Hoover, and J.C. Wong.
+*Phys. Rev. Research 6.3, 033163* (2024).
 
-[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://doi.org/10.1103/PhysRevResearch.6.033163).
-A. Hoover, and J.C. Wong. 
-*Physical Review Research* 6.3 (2024): 033163.
-
-[Analysis of a hadron beam in five-dimensional phase space](https://doi.org/10.1103/PhysRevAccelBeams.26.064202).
+[Analysis of a hadron beam in five-dimensional phase space](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202).
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
-*Physical Review Accelerators and Beams* 26.6 (2023): 064202.
+*Phys. Rev. Accel. Beams 26.6, 064202* (2023).
 
-[Computation of the matched envelope of the Danilov distribution](https://doi.org/10.1103/PhysRevAccelBeams.24.044201).
+[Computation of the matched envelope of the Danilov distribution](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201).
 A. Hoover, N. Evans, and J. Holmes.
-*Physical Review Accelerators and Beams* 24.4 (2021): 044201.
+*Phys. Rev. Accel. Beams 24.4, 044201 (2021).
 
 
 ## Selected Talks
 
-[High-dimensional maximum-entropy phase space tomography](talks/files/2025-08-12_napac_ment.pdf).
-*North American Particle Accelerator Conference*. Sacramento, USA (2025).
+
+[High-dimensional maximum-entropy phase space tomography](./talks/files/2025-08-12_napac_ment.pdf).
+*North American Particle Accelerator Conference*. Sacramento, USA. (2025-08-12)
 
 [Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/).
-*International Muon Collider Collaboration Meeting*. Hamburg, Germany (2025).
+*International Muon Collider Collaboration Meeting*. Hamburg, Germany. (2025-05-13)
 
-[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf). 
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*. Geneva, Switzerland (2023).
+[The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf).
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*. Geneva, Switzerland. (2023-10-10)
 
-[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf). 
-*ICFA Mini-Workshop on Space Charge*. Knoxville, USA (2022).
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf). *ICFA Mini-Workshop on Space Charge*. Knoxville, USA. (2022-10-06)
 
 
 ## Links
