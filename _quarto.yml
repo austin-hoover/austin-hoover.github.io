@@ -13,6 +13,8 @@ website:
           href: ./papers/index.qmd
         - text: "Talks"
           href: ./talks/index.qmd
+        - text: "Teaching"
+          href: ./teaching/index.qmd
         - text: "Links"
           href: ./links.qmd
     google-analytics: "G-NS0H6D6VKL"
