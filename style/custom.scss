@@ -1,36 +1,14 @@
 
 /*-- scss:defaults --*/
 
-// $h2-font-size: 1.45em;
-// $h3-font-size: 1.25em;
-// $h4-font-size: 1.05em;
-// $h5-font-size: 1.00em;
-// $h6-font-size: 1.00em;
-// $navbar-bg: rgb(50, 50, 50);
-$primary: rgb(0, 100, 200);
+// $primary: rgb(0, 100, 200);
+// $primary: black;
+$primary: #2780e3;
 
 // /*-- scss:rules --*/
 
-// Remove line and padding after h2 headers
-h2, .h2 {
-  // border-bottom: none !important;
-  // padding-bottom: 0.0em !important;
-}
-
-// Use sans-serif font for website header
-.navbar {
-    // padding-bottom: 2.9px !important;
-    // padding-top: 2.9px !important;
-    // border-bottom-width: 0px !important;
-    // font-family: "Helvetica Neue";
-}
-
-// Smaller code font
-pre, code {
-    font-size: 13.0px !important;
-}
-
 // Remove underline from links.
 a, u {
-  // text-decoration: none !important;
+    // color: black !important;
+    // text-decoration: none !important;
 }

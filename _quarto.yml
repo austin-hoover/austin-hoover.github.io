@@ -20,11 +20,17 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
-        theme: cosmo
+        # theme: 
+        #     light: [cosmo, style/custom.scss]
+        # fontsize: 15px
+        
+        theme: 
+            light: [default, style/custom.scss]
+        fontsize: 14px
+        
         grid:
             body-width: 700px   
-        fontsize: 15px
-
+        
         html-math-method: mathjax
         highlight-style: github    
         toc: false
