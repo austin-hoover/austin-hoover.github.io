@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-a260991090365c52506bb33b67c31b7b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -112,6 +115,7 @@ window.Quarto = {
 <meta property="og:description" content="">
 <meta property="og:image" content="https://austin-hoover.github.io/research/files/fig_sns_power.png">
 <meta property="og:site_name" content="Austin Hoover">
+<meta property="og:image:alt" content="Proton beam power on the SNS target from 2006 to 2023.">
 <meta property="og:image:height" content="1502">
 <meta property="og:image:width" content="2166">
 </head>
@@ -197,7 +201,11 @@ window.Quarto = {
 <p>The goal of my research is to predict, measure, and control beam dynamics at the individual particle level in the presence of strong collective effects. This page provides an overview of several projects and topics related to this goal.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./files/fig_sns_power.png" class="img-fluid figure-img" width="400"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./files/fig_sns_power.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Proton beam power on the SNS target from 2006 to 2023."><img src="./files/fig_sns_power.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400" alt="Proton beam power on the SNS target from 2006 to 2023."></a></p>
+</figure>
+</div>
 <figcaption>Proton beam power on the SNS target from 2006 to 2023.</figcaption>
 </figure>
 </div>
@@ -207,7 +215,11 @@ window.Quarto = {
 <p>Halo formation is challenging to predict due to its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core. We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address these problems. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the complete initial 6D distribution and the output 2D distributions with six orders of dynamic range—enough to image halo particles. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="files/fig_halo.png" class="img-fluid figure-img" width="400"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="files/fig_halo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."><img src="files/fig_halo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400" alt="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."></a></p>
+</figure>
+</div>
 <figcaption>Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak.</figcaption>
 </figure>
 </div>
@@ -219,7 +231,7 @@ window.Quarto = {
 <p>My current work on this topic focuses on a new painting method that we call <em>eigenpainting</em>, which leverages the theory of coupled linear optics to generate a “vortex” beam in the ring. Other work includes the application of ML methods to develop new 4D or 6D painting schemes in linear or nonlinear lattices.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="files/fig_sns_paint.png" class="img-fluid figure-img"></p>
+<p><a href="files/fig_sns_paint.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."><img src="files/fig_sns_paint.png" class="img-fluid figure-img" alt="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."></a></p>
 <figcaption>Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring.</figcaption>
 </figure>
 </div>
@@ -229,7 +241,7 @@ window.Quarto = {
 <p>A future muon collider (MC) would require extremely short, intense proton pulses to generate the initial muon beam. The proposed scheme uses an SNS-style linac and accumulator ring followed by a separate ring to compress the bunch to a few nanoseconds in length. This extreme bunch compression has not been demonstrated in a hadron accelerator. We’re examining whether a similar bunch compression scheme could be tested at the SNS accumulator ring. In addition to benefiting muon collider designs, bunch compression would provide an opportunity to study the beam dynamics in the SNS at a much higher particle density, which will amplify space charge effects, impedances, and electron cloud instabilities in the transverse plane.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="files/fig_rotation.png" class="img-fluid figure-img"></p>
+<p><a href="files/fig_rotation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space."><img src="files/fig_rotation.png" class="img-fluid figure-img" alt="Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space."></a></p>
 <figcaption>Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space.</figcaption>
 </figure>
 </div>
@@ -240,7 +252,7 @@ window.Quarto = {
 <p>Direct phase space measurements are not always possible; sometimes we have only partial information, such as the particle density along a single dimension. Still, partial information constrains the unknown phase space distribution, and one may attempt to find a distribution consistent with these constraints. I am interested in applying maximum-entropy and Bayesian methods to this problem to incorporate prior knowledge and quantify uncertainty in the reconstruction. A particular focus has been on the use of generative models and sampling algorithms to extend maximum-entropy techniques to six-dimensional phase space reconstruction.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="files/fig_ment_swissroll.png" class="img-fluid figure-img"></p>
+<p><a href="files/fig_ment_swissroll.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Entropy maximization leads to the simplest possible distribution allowed by a given data set."><img src="files/fig_ment_swissroll.png" class="img-fluid figure-img" alt="Entropy maximization leads to the simplest possible distribution allowed by a given data set."></a></p>
 <figcaption>Entropy maximization leads to the simplest possible distribution allowed by a given data set.</figcaption>
 </figure>
 </div>
@@ -654,6 +666,38 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
