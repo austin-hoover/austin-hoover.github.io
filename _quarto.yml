@@ -31,6 +31,7 @@ format:
         grid:
             body-width: 700px   
         
+        lightbox: true
         html-math-method: mathjax
         highlight-style: github    
         toc: false
