@@ -20,16 +20,21 @@ website:
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
+
         # theme: 
-        #     light: [cosmo, style/custom.scss]
+        #     light: [default, style/custom.scss] 
+        # mainfont: "Latin Modern"
         # fontsize: 15px
-        
+        # linestretch: 1.3
+        # grid:
+        #     body-width: 700px   
+
         theme: 
-            light: [default, style/custom.scss]
-        fontsize: 14px
-        
+            light: [default, style/custom.scss] 
+        fontsize: 13px
         grid:
             body-width: 700px   
+
         
         lightbox: true
         html-math-method: mathjax

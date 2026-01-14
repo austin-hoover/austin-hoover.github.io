@@ -25,7 +25,7 @@ A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
 
 [Computation of the matched envelope of the Danilov distribution](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201).
 A. Hoover, N. Evans, and J. Holmes.
-*Phys. Rev. Accel. Beams 24.4, 044201 (2021).
+*Phys. Rev. Accel. Beams 24.4, 044201* (2021).
 
 
 ## Selected Talks
