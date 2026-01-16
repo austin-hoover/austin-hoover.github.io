@@ -4,14 +4,14 @@
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "[Under construction.]\nI will be part of the teaching team for the summer 2026 USPAS course: “Beam Physics With Intense Space Charge”."
+    "text": "[Under construction.]\nIn July 2026, I’ll be giving a few lectures at the US Particle Accelerator School (USPAS) course “Beam Physics With Intense Space Charge” in St. Paul, Minnesota."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Austin Hoover",
     "section": "",
-    "text": "I am a physicist in the Accelerator Physics Group at Oak Ridge National Laboratory. I’m interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
+    "text": "I’m a staff scientist at Oak Ridge National Laboratory, working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
   },
   {
     "objectID": "index.html#selected-papers",
@@ -33,6 +33,13 @@
     "title": "Austin Hoover",
     "section": "Links",
     "text": "Links\nBlog\nORNL staff profile\nORCID\nGoogle Scholar\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "[2025-01-16] Our paper Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams was accepted for publication in PRL.\n[AUG 2022] Presented poster ”\n[APR 2022] Started postdoc at Oak Ridge National Laboratory, working on the Beam Test Facility (BTF) project at the SNS, mentored by Kiersten Ruisard.\n[APR 2022] Completed PhD at the University of Tennessee, Knoxville."
   },
   {
     "objectID": "research/current_topics.html",
@@ -151,6 +158,6 @@
     "href": "links.html",
     "title": "Links",
     "section": "",
-    "text": "[Under construction]"
+    "text": "US Muon Collider Collaboration"
   }
 ]
