@@ -7,39 +7,18 @@
     "text": "[Under construction.]\nIn July 2026, I’ll be giving a few lectures at the US Particle Accelerator School (USPAS) course “Beam Physics With Intense Space Charge” in St. Paul, Minnesota."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Austin Hoover",
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "Links",
     "section": "",
-    "text": "I’m a staff scientist at Oak Ridge National Laboratory, working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
+    "text": "US Muon Collider Collaboration\nJournals\n\nPRAB\nPRL\nPRE\nPRX\nPRX Intelligence\nChaos\nNature Physics\nScience\nNIM:A\n\nPreprint servers\n\narXiv\narXiv (accelerator physics)\narXiv (computational physics)\nArXiv (chaotic dynamics)\n[arXiv (plasma physics)] https://arxiv.org/list/physics.plasm-ph/recent\narXiv (stats ml)\narXiv (astrophysics of galaxies)\narXiv (history and philosophy of physics)\nPhilSci\n\nAccelerator physics codes\n\nPyORBIT\nImpactX\nXsuite\nMADX\nBmad\nCheetah\nJuTrack"
   },
   {
-    "objectID": "index.html#selected-papers",
-    "href": "index.html#selected-papers",
-    "title": "Austin Hoover",
-    "section": "Selected Papers",
-    "text": "Selected Papers\nN-dimensional maximum-entropy tomography via particle sampling. A. Hoover. Phys. Rev. Accel. Beams 28, L084601 (2025).\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam. A. Hoover. Phys. Rev. Accel. Beams 27, 122802 (2024).\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows. A. Hoover, and J.C. Wong. Phys. Rev. Research 6.3, 033163 (2024).\nAnalysis of a hadron beam in five-dimensional phase space. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. Phys. Rev. Accel. Beams 26.6, 064202 (2023).\nComputation of the matched envelope of the Danilov distribution. A. Hoover, N. Evans, and J. Holmes. Phys. Rev. Accel. Beams 24.4, 044201 (2021)."
-  },
-  {
-    "objectID": "index.html#selected-talks",
-    "href": "index.html#selected-talks",
-    "title": "Austin Hoover",
-    "section": "Selected Talks",
-    "text": "Selected Talks\nHigh-dimensional maximum-entropy phase space tomography. North American Particle Accelerator Conference. Sacramento, USA. (2025-08-12)\nBunch rotation experiments and benchmarking at SNS. International Muon Collider Collaboration Meeting. Hamburg, Germany. (2025-05-13)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator. ICFA Workshop on High-Intensity and High-Brightness Hadron Beams. Geneva, Switzerland. (2023-10-10)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation. ICFA Mini-Workshop on Space Charge. Knoxville, USA. (2022-10-06)"
-  },
-  {
-    "objectID": "index.html#links",
-    "href": "index.html#links",
-    "title": "Austin Hoover",
-    "section": "Links",
-    "text": "Links\nBlog\nORNL staff profile\nORCID\nGoogle Scholar\nGitHub\nLinkedIn"
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
     "section": "",
-    "text": "[2025-01-16] Our paper Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams was accepted for publication in PRL.\n[AUG 2022] Presented poster ”\n[APR 2022] Started postdoc at Oak Ridge National Laboratory, working on the Beam Test Facility (BTF) project at the SNS, mentored by Kiersten Ruisard.\n[APR 2022] Completed PhD at the University of Tennessee, Knoxville."
+    "text": "High-dimensional maximum-entropy phase space tomography. North American Particle Accelerator Conference. Sacramento, USA. (2025-08-12)\nProton Driver for the Demonstrator and Muon Collider. US Muon Collider Annual Meeting. Chicago, USA. (2025-08-07)\nBunch rotation experiments and benchmarking at SNS. International Muon Collider Collaboration Meeting. Hamburg, Germany. (2025-05-13)\nSNS accelerator synergies for muon collider R&D. Princeton Muon Collider Organizational Workshop. Princeton, USA. (2024-02-23)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator. ICFA Workshop on High-Intensity and High-Brightness Hadron Beams. Geneva, Switzerland. (2023-10-10)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation. ICFA Mini-Workshop on Space Charge. Knoxville, USA. (2022-10-06)\nAccelerator research and development at the Spallation Neutron Source. Particle Accelerators: Technology and Applications (UTK). Knoxville, USA. (2022-04-21)\nComputation of the matched envelope of the Danilov distribution. APS April Meeting. Virtual. (2021-04-21)"
   },
   {
     "objectID": "research/current_topics.html",
@@ -147,17 +126,38 @@
     "text": "Dissertation\n\nTowards the production of a self-consistent phase space distribution. A. Hoover. PhD Diss., University of Tennessee (2022)."
   },
   {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Austin Hoover",
     "section": "",
-    "text": "High-dimensional maximum-entropy phase space tomography. North American Particle Accelerator Conference. Sacramento, USA. (2025-08-12)\nProton Driver for the Demonstrator and Muon Collider. US Muon Collider Annual Meeting. Chicago, USA. (2025-08-07)\nBunch rotation experiments and benchmarking at SNS. International Muon Collider Collaboration Meeting. Hamburg, Germany. (2025-05-13)\nSNS accelerator synergies for muon collider R&D. Princeton Muon Collider Organizational Workshop. Princeton, USA. (2024-02-23)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator. ICFA Workshop on High-Intensity and High-Brightness Hadron Beams. Geneva, Switzerland. (2023-10-10)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation. ICFA Mini-Workshop on Space Charge. Knoxville, USA. (2022-10-06)\nAccelerator research and development at the Spallation Neutron Source. Particle Accelerators: Technology and Applications (UTK). Knoxville, USA. (2022-04-21)\nComputation of the matched envelope of the Danilov distribution. APS April Meeting. Virtual. (2021-04-21)"
+    "text": "I’m a staff scientist at Oak Ridge National Laboratory, working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).\nI’m interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. Here is a more detailed overview of my research. I sometimes write about my work on my blog."
   },
   {
-    "objectID": "links.html",
-    "href": "links.html",
-    "title": "Links",
+    "objectID": "index.html#selected-papers",
+    "href": "index.html#selected-papers",
+    "title": "Austin Hoover",
+    "section": "Selected Papers",
+    "text": "Selected Papers\nN-dimensional maximum-entropy tomography via particle sampling. A. Hoover. Phys. Rev. Accel. Beams 28, L084601 (2025).\nFour-dimensional phase space tomography from one-dimensional measurements of a hadron beam. A. Hoover. Phys. Rev. Accel. Beams 27, 122802 (2024).\nHigh-dimensional maximum-entropy phase space tomography using normalizing flows. A. Hoover, and J.C. Wong. Phys. Rev. Research 6.3, 033163 (2024).\nAnalysis of a hadron beam in five-dimensional phase space. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. Phys. Rev. Accel. Beams 26.6, 064202 (2023).\nComputation of the matched envelope of the Danilov distribution. A. Hoover, N. Evans, and J. Holmes. Phys. Rev. Accel. Beams 24.4, 044201 (2021)."
+  },
+  {
+    "objectID": "index.html#selected-talks",
+    "href": "index.html#selected-talks",
+    "title": "Austin Hoover",
+    "section": "Selected Talks",
+    "text": "Selected Talks\nHigh-dimensional maximum-entropy phase space tomography. North American Particle Accelerator Conference. Sacramento, USA. (2025-08-12)\nBunch rotation experiments and benchmarking at SNS. International Muon Collider Collaboration Meeting. Hamburg, Germany. (2025-05-13)\nThe impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator. ICFA Workshop on High-Intensity and High-Brightness Hadron Beams. Geneva, Switzerland. (2023-10-10)\nSelf-consistent, angular-momentum-dominated hadron beams for space charge mitigation. ICFA Mini-Workshop on Space Charge. Knoxville, USA. (2022-10-06)"
+  },
+  {
+    "objectID": "index.html#links",
+    "href": "index.html#links",
+    "title": "Austin Hoover",
+    "section": "Links",
+    "text": "Links\nBlog\nORNL staff profile\nORCID\nGoogle Scholar\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "News",
     "section": "",
-    "text": "US Muon Collider Collaboration"
+    "text": "JAN 2026\n\n\nPaper: Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams was accepted for publication in PRL. Coauthors: Nick Evans, Vasiliy Morozov, Timofey Gorlov.\n\n\nDEC 2025\n\n\nJoined USMCC.\n\nAUG 2025\n\n\nTalk: High-dimensional maximum-entropy phase space tomography at NAPAC25 in Sacramento.\n\n\nAUG 2025\n\n\nTalk: Proton Driver for the Demonstrator and Muon Collider at USMCC Annual Meeting at the University of Chicago.\n\n\nMAY 2025\n\n\nPaper: N-dimensional maximum-entropy tomography via particle sampling accepted for publication in PRAB (Letter, Editors’ Suggestion).\n\n\nMAY 2025\n\n\nTalk: Bunch rotation experiments and benchmarking at SNS at the IMCC Annual Meeting in Hamburg. (Presented remotely.)\n\n\nMAY 2025\n\n\nPoster: MENT-Flow: maximum-entropy tomography using normalizing flows at IPAC25 in Nashville.\n\n\nJUL 2024\n\n\nPaper: High-dimensional maximum-entropy phase space tomography using normalizing flows accepted for publication in PRResearch. Coauthor: Jonathan Chun Wong.\n\n\nOCT 2023\n\n\nTalk: The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator at HB23 in Geneva.\n\n\nMAY 2023\n\n\nPoster: Detailed characterization of a five-dimensional phase space distribution at IPAC23 in Venice.\n\n\nMAY 2023\n\n\nPaper: Analysis of a hadron beam in five-dimensional phase space was accepted for publication in PRAB. Coauthors: Kiersten Ruisard, Sasha Aleksandrov, Sasha Zhukov, and Sarah Cousineau.\n\n\nFEB 2023\n\n\nTalk: SNS accelerator synergies for muon collider R&D at the Princeton Muon Collider Organizational Workshop at Princeton University.\n\n\nDEC 2022\n\n\nContributed to article Six-dimensional distributions at the SNS Beam Test Facility in the annual APS DBP newsletter. Coauthors: Kiersten Ruisard, Sasha Aleksandrov.\n\n\nOCT 2022\n\n\nTalk: Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation at 5th ICFA Mini-Workshop on Space Charge in Knoxville.\n\n\nAUG 2022\n\n\nTalk: Measurements of the five-dimensional phase space distribution of an intense ion beam at NAPAC22 in Albuquerque.\n\n\nJUL 2022\n\n\nPaper: Four-dimensional emittance measurement at the Spallation Neutron Source accepted for publication in NIM:A.\n\n\nAPR 2022\n\n\nStarted postdoc at Oak Ridge National Laboratory, working on the Beam Test Facility (BTF) project at the SNS.\n\n\nAPR 2022\n\n\nLecture: Accelerator research and development at the Spallation Neutron Source for the course “Particle Accelerators: Technology and Applications” in the Nuclear Engineering department at UTK.\n\n\nAPR 2022\n\n\nCompleted Ph.D. at the University of Tennessee, Knoxville.\n\n\nOCT 2021\n\n\nTalk: Development of an injection-painted self-consistent beam at the Spallation Neutron Source at HB21 (presented remotely).\n\n\nMAR 2021\n\n\nPaper: Computation of the matched envelope of the Danilov distribution accepted for publication in PRAB.\n\n\nAPR 2021\n\n\nTalk: Computation of the matched envelope of the Danilov distribution at APS April Meeting (presented remotely).\n\n\nAUG 2018\n\n\nStarted Ph.D. at the University of Tennessee, Knoxville.\n\n\nJUL 2018\n\n\nMarried!\n\n\nAUG 2018\n\n\nGraduated from Wheaton College (IL).\n\n\nAUG 2014\n\n\nStarted B.S. degree Wheaton College (IL).\n\n\nDEC 1997\n\n\nMoved to Ypsilanti, Michigan, just outside Ann Arbor.\n\n\nDEC 1995\n\n\nBorn in Honk Kong."
   }
 ]

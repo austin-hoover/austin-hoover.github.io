@@ -80,10 +80,11 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 
 <meta property="og:title" content="News – Austin Hoover">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Austin Hoover">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,6 +122,10 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="././news/index.qmd"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./links.html"> 
 <span class="menu-text">Links</span></a>
   </li>  
@@ -132,12 +137,12 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -146,7 +151,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -158,14 +163,75 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </header>
 
 
+<div class="news-list">
+<div class="news-item">
+<div class="news-date">
+JAN 2026
+</div>
+<div class="news-content">
+<pre><code>Paper accepted to *Physical Review E*.</code></pre>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+NOV 2025
+</div>
+<div class="news-content">
+<pre><code>Invited talk at APS DPP.</code></pre>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+AUG 2025
+</div>
+<div class="news-content">
+<pre><code>Joined XYZ University as Assistant Professor.</code></pre>
+</div>
+</div>
+</div>
+<section id="how-it-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-it-works">How it works:</h3>
 <ul>
-<li>[2025-01-16] Our paper <em>Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams</em> was accepted for publication in PRL.</li>
-<li>[AUG 2022] Presented poster ”</li>
+<li><strong><code>flex-box</code></strong>: By using <code>display: flex</code>, the date and the text sit side-by-side.</li>
+<li><strong><code>min-width</code></strong>: The <code>90px</code> width ensures that “JAN 2026” and “SEPT 2025” (which have different character counts) don’t push the text column out of alignment.</li>
+<li><strong><code>text-transform: uppercase</code></strong>: This automatically handles your requirement for “JAN 2026” formatting even if you type it in lowercase.</li>
+</ul>
+</section>
+<section id="alternative-using-a-table" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-using-a-table">Alternative: Using a Table</h3>
+<p>If you prefer a simpler approach without custom CSS, you can use a Markdown table, though it is less flexible for long descriptions:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>JAN 2026</strong></td>
+<td style="text-align: left;">Paper accepted at CVPR 2026.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DEC 2025</strong></td>
+<td style="text-align: left;">Invited talk at University of Tokyo.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Would you like me to help you set up an “Automated News” section using Quarto Listings so you don’t have to manually format each entry?</strong></p>
+<ul>
+<li>[JAN 2026] Our paper <em>Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams</em> was accepted for publication in PRL.</li>
+<li>[OCT 2023] Contributed talk <em>Detailed characterization of a five-dimensional phase space distribution</em> at IPAC23 in Venice.</li>
+<li>[MAY 2023] Our paper “Analysis of a hadron beam in five-dimensional phase space” was accepted for publication in PRAB.</li>
+<li>[AUG 2022] Presented talk <em>Measurements of the five-dimensional phase space distribution of an intense ion beam</em> at NAPAC22 in Albuquerque.</li>
 <li>[APR 2022] Started postdoc at Oak Ridge National Laboratory, working on the Beam Test Facility (BTF) project at the SNS, mentored by Kiersten Ruisard.</li>
 <li>[APR 2022] Completed PhD at the University of Tennessee, Knoxville.</li>
 </ul>
+<div class="columns">
 
-
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -241,7 +307,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
