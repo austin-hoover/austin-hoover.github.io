@@ -3,3 +3,31 @@ title: "Links"
 ---
 
 * [US Muon Collider Collaboration](https://www.muoncollider.us)
+* Journals
+    * [PRAB](https://journals.aps.org/prab/recent)
+    * [PRL](https://journals.aps.org/prl/recent)
+    * [PRE](https://journals.aps.org/pre/recent)
+    * [PRX](https://journals.aps.org/prx/recent)
+    * [PRX Intelligence](https://journals.aps.org/prxintelligence/)
+    * [Chaos](https://pubs.aip.org/aip/cha/issue)
+    * [Nature Physics](https://www.nature.com/nphys/)
+    * [Science](https://www.science.org/toc/science/current)
+    * [NIM:A](https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment/vol/1085/suppl/C)
+* Preprint servers
+    * [arXiv](https://arxiv.org)
+    * [arXiv (accelerator physics)](https://arxiv.org/list/physics.acc-ph/recent)
+    * [arXiv (computational physics)](https://arxiv.org/list/physics.comp-ph/recent)
+    * [ArXiv (chaotic dynamics)](https://arxiv.org/list/nlin.CD/recent)
+    * [arXiv (plasma physics)] https://arxiv.org/list/physics.plasm-ph/recent
+    * [arXiv (stats ml)](https://arxiv.org/list/cs.LG/recent)
+    * [arXiv (astrophysics of galaxies)](https://arxiv.org/list/astro-ph.GA/recent)
+    * [arXiv (history and philosophy of physics)](https://arxiv.org/list/physics.hist-ph/recent)
+    * [PhilSci](https://philsci-archive.pitt.edu/cgi/latest_days2?n=30)
+* Accelerator physics codes
+    * [PyORBIT](https://github.com/PyORBIT-Collaboration/PyORBIT3)
+    * [ImpactX](https://github.com/BLAST-ImpactX/impactx)
+    * [Xsuite](https://github.com/xsuite/xsuite)
+    * [MADX](https://abpcomputing.web.cern.ch/codes/codes_pages/MadX/)
+    * [Bmad](https://github.com/bmad-sim/bmad-ecosystem)
+    * [Cheetah](https://github.com/desy-ml/cheetah)
+    * [JuTrack](https://github.com/MSU-Beam-Dynamics/JuTrack.jl)

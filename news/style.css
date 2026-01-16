@@ -1,0 +1,15 @@
+.news-dl {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  row-gap: 0.75rem;
+}
+
+.news-dl dt {
+  /* font-weight: 600; */
+  font-weight: 400;
+  color: #555;
+}
+
+.news-dl dd {
+  margin: 0;
+}

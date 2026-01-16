@@ -1,5 +1,6 @@
 project:
     type: website
+    
 website:
     title: "Austin Hoover"
     open-graph: true
@@ -15,8 +16,12 @@ website:
           href: ./talks/index.qmd
         - text: "Teaching"
           href: ./teaching/index.qmd
+        - text: "News"
+          href: ./news/index.qmd
         - text: "Links"
           href: ./links.qmd
+        - text: "Blog"
+          href: "https://austin-hoover.github.io/blog/"
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
