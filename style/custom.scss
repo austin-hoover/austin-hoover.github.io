@@ -10,6 +10,16 @@ $font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI
 
 // /*-- scss:rules --*/
 
+.quarto-about-entity {
+    .div {
+        max-width: 10px !important;
+    }
+}
+
+.navbar {
+    background-color: rgb(50, 50, 50) !important;
+}
+
 
 // Remove underline from links.
 a, u {

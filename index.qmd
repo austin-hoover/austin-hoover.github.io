@@ -1,8 +1,29 @@
 ---
 title: "Austin Hoover"
+format:
+  html:
+    lightbox: false
 ---
 
-[I](me.qmd) am a physicist in the Accelerator Physics Group at [Oak Ridge National Laboratory](https://www.ornl.gov). I'm interested in techniques to model, measure, and control intense charged particle beams in particle accelerators. I currently focus on (i) theory and modeling of collective effects, such as halo formation and instabilities, (ii) phase space shaping and manipulation, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview of my research. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+
+:::: {.columns}
+
+::: {.column width=78%}
+I'm a staff scientist at [Oak Ridge National Laboratory](https://www.ornl.gov), working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
+
+I'm interested in techniques to model, measure, and control intense beams in particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview of my research. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+:::
+
+::: {.column width=3%}
+:::
+
+::: {.column width=19%}
+![](images/headshot.png){width=100%}
+:::
+
+::::
+
+<div style="margin-top: 15px;"></div>
 
 
 ## Selected Papers
