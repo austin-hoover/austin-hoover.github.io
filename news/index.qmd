@@ -89,6 +89,6 @@ format:
 <dd>Moved to Ypsilanti, Michigan, just outside Ann Arbor.</dd>
 
 <dt>DEC 1995</dt>
-<dd>Born in [Honk Kong](https://en.wikipedia.org/wiki/Hong_Kong).</dd>
+<dd>Born in [Hong Kong](https://en.wikipedia.org/wiki/Hong_Kong).</dd>
 
 </dl>
