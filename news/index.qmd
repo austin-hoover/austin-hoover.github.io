@@ -25,11 +25,11 @@ format:
 <dt>MAY 2025</dt>
 <dd>Talk: *Bunch rotation experiments and benchmarking at SNS* at the IMCC Annual Meeting in Hamburg. (Presented remotely.)</dd>
 
-<dt>MAY 2025</dt>
-<dd>Poster: *MENT-Flow: maximum-entropy tomography using normalizing flows* at IPAC25 in Nashville.</dd>
-
 <dt>JUL 2024</dt>
 <dd>Paper: *High-dimensional maximum-entropy phase space tomography using normalizing flows* accepted for publication in PRResearch. Coauthor: Jonathan Chun Wong.</dd>
+
+<dt>MAY 2024</dt>
+<dd>Poster: *MENT-Flow: maximum-entropy tomography using normalizing flows* at IPAC24 in Nashville.</dd>
 
 <dt>OCT 2023</dt>
 <dd>Talk: *The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator* at HB23 in Geneva.</dd>
