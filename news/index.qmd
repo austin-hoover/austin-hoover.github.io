@@ -76,9 +76,6 @@ format:
 <dt>AUG 2018</dt>
 <dd>Started Ph.D. at the University of Tennessee, Knoxville.</dd>
 
-<dt>JUL 2018</dt>
-<dd>Married!</dd>
-
 <dt>AUG 2018</dt>
 <dd>Graduated from Wheaton College (IL).</dd>
 
