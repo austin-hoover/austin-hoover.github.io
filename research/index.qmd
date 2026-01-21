@@ -2,10 +2,10 @@
 title: "Research"
 bibliography: references.bib
 csl: ./american-physics-society.csl
-toc: false
+toc: true
 ---
 
-[Work in progress.] (Also see [here](./current_topics.qmd).)
+*This is a work in progress. Also see [current topics](./current_topics.qmd).*
 
 Hadron accelerators are [essential tools](https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/) for scientific research. For example, hadron accelerators generate [neutrons](https://neutrons.ornl.gov/sns), [neutrinos](https://www.dunescience.org), and [muons](https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/) for experiments in condensed matter physics, material science, nuclear physics, and particle physics. In the future, hadron accelerators may drive [nuclear fission reactors](https://www.sckcen.be/en/infrastructure/myrrha) and transmutation of nuclear waste. These and other applications require hadron beams of extreme intensity while satisfying tight constraints on the particle distribution in phase space.
 

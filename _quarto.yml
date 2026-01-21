@@ -18,15 +18,16 @@ website:
           href: ./teaching/index.qmd
         - text: "News"
           href: ./news/index.qmd
-        - text: "Links"
-          href: ./links.qmd
+        - text: "Resources"
+          href: ./resources.qmd
         - text: "Blog"
           href: "https://austin-hoover.github.io/blog/"
     google-analytics: "G-NS0H6D6VKL"
 format:
     html:
         theme: 
-            light: [default, style/custom.scss] 
+            dark: [default, style/custom_dark.scss]
+            light: [default, style/custom_light.scss] 
         fontsize: 13px
         grid:
             body-width: 710px   

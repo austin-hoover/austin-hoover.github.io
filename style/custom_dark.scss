@@ -1,0 +1,42 @@
+@import "./custom.scss";
+
+
+/*-- scss:defaults --*/
+
+$primary: white;
+$body-color: rgb(200, 200, 200);
+$body-bg: rgb(20, 20, 20);
+
+$code-block-bg: rgb(40, 40, 40);
+$code-color: $body-color;  // inline code text
+$code-bg: $code-block-bg;  // inline code background
+
+
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6, h7 {
+  color: white !important;
+}
+
+h2, .h2 {
+    border-bottom-color: rgb(50, 50, 50) !important;
+}
+
+.cell-output {
+    pre, code {
+        color: $body-color !important;
+    }
+}
+
+.quarto-listing-table {
+    border-color: rgb(150, 150, 150) !important;
+}
+
+blockquote {
+    border-left: .25rem solid rgb(40, 40, 40);
+}
+
+.navbar {
+    background-color: rgb(20, 20, 20) !important;
+}

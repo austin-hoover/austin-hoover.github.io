@@ -1,0 +1,15 @@
+@import "./custom.scss";
+
+
+/*-- scss:defaults --*/
+
+// $primary: rgb(30, 58, 138);  // dark navy
+// $primary: rgb(0, 49, 83);  // prussian blue
+$primary: black;
+
+
+/*-- scss:rules --*/
+
+.navbar {
+    background-color: rgb(50, 50, 50) !important;
+}

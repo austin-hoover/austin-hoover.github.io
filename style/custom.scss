@@ -1,28 +1,11 @@
-
 /*-- scss:defaults --*/
-
-// $primary: rgb(30, 58, 138);  // dark navy
-// $primary: rgb(0, 49, 83);  // prussian blue
-$primary: black;
 
 $font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 
-// /*-- scss:rules --*/
-
-.quarto-about-entity {
-    .div {
-        max-width: 10px !important;
-    }
-}
-
-.navbar {
-    background-color: rgb(50, 50, 50) !important;
-}
-
+/*-- scss:rules --*/
 
 // Remove underline from links.
 a, u {
-    // color: black !important;
     // text-decoration: none !important;
 }
