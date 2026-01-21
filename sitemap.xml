@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://austin-hoover.github.io/teaching/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.441Z</lastmod>
+    <loc>https://austin-hoover.github.io/resources.html</loc>
+    <lastmod>2026-01-21T16:56:55.439Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/links.html</loc>
-    <lastmod>2026-01-21T16:56:55.439Z</lastmod>
+    <loc>https://austin-hoover.github.io/news/index.html</loc>
+    <lastmod>2026-01-21T16:56:55.440Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/talks/index.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2025-12-30T16:21:04.000Z</lastmod>
+    <lastmod>2026-01-21T20:27:30.294Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/papers/index.html</loc>
@@ -26,10 +26,10 @@
   </url>
   <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.439Z</lastmod>
+    <lastmod>2026-01-21T20:25:58.605Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/news/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.440Z</lastmod>
+    <loc>https://austin-hoover.github.io/teaching/index.html</loc>
+    <lastmod>2026-01-21T16:56:55.441Z</lastmod>
   </url>
 </urlset>
