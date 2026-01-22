@@ -8,6 +8,9 @@ title: "Links"
     * [[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao)]
     * [[GitHub](https://github.com/austin-hoover)]
     * [[LinkedIn](https://www.linkedin.com/in/austinhoover0/)]
+    * [[arXiv](https://arxiv.org/search/physics?query=Hoover%2C+Austin&searchtype=author&abstracts=show&order=-announced_date_first&size=50)]
+    * [[Blog](https://austin-hoover.github.io/blog/)]
+
 * Journals
     * [PRAB](https://journals.aps.org/prab/recent)
     * [PRL](https://journals.aps.org/prl/recent)
