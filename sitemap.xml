@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://austin-hoover.github.io/resources.html</loc>
-    <lastmod>2026-01-21T16:56:55.439Z</lastmod>
+    <loc>https://austin-hoover.github.io/teaching/index.html</loc>
+    <lastmod>2026-01-17T01:02:02.017Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/news/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.440Z</lastmod>
+    <loc>https://austin-hoover.github.io/links.html</loc>
+    <lastmod>2026-01-22T03:16:31.637Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/talks/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.440Z</lastmod>
+    <lastmod>2026-01-22T03:31:23.081Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/publications/papers.html</loc>
+    <lastmod>2026-01-22T03:26:04.305Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/current_topics.html</loc>
-    <lastmod>2025-12-29T20:09:24.000Z</lastmod>
+    <lastmod>2026-01-22T02:46:42.613Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2026-01-21T20:27:30.294Z</lastmod>
+    <lastmod>2026-01-22T00:54:44.650Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/papers/index.html</loc>
-    <lastmod>2026-01-21T16:58:58.530Z</lastmod>
+    <loc>https://austin-hoover.github.io/publications/conference.html</loc>
+    <lastmod>2026-01-22T02:39:23.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/publications/misc.html</loc>
+    <lastmod>2026-01-22T02:48:30.479Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2026-01-21T20:25:58.605Z</lastmod>
+    <lastmod>2026-01-22T03:34:58.456Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/teaching/index.html</loc>
-    <lastmod>2026-01-21T16:56:55.441Z</lastmod>
+    <loc>https://austin-hoover.github.io/news/index.html</loc>
+    <lastmod>2026-01-18T00:33:57.487Z</lastmod>
   </url>
 </urlset>
