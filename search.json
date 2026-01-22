@@ -105,6 +105,13 @@
     "text": "Things I’m working on, thinking about, or hoping to think about at some point:\n\nGeneral\n\nIntense beam dynamics in circular accelerators (rings)\nIntense beam dynamics in linear accelerators (linacs)\nInverse problems\n\nAccelerator physics\n\nHalo formation and beam loss prediction in high-power linacs\nPhase space painting of equilibrium distributions\nPhase space painting in strongly coupled lattices\nPhase space painting in nonlinear rings\nProton bunch compression\nSimulation benchmarking\n\nTheory/modeling\n\nSingle-particle dynamics in strongly coupled systems\nMulti-particle dynamics in strongly coupled systems\nVlasov-Poisson equilibrium distributions\nSpace-charge-driven resonances and instabilities\n\nPhase space measurements and inference\n\nHigh-dimensional phase space measurements (direct)\nHigh-dimensional phase space tomography\nHigh-dynamic-range phase space tomography\nUncertainty quantification in phase space tomography\nPhase space tomography with self-consistent space charge forces\nMaximum-entropy techniques for inverse problems\nBayesian inference for phase space measurements\n\nOptimization, machine learning, etc.\n\nGenerative models for accelerator applications\nSurrogate modeling of intense beam dynamics\nOnline optimization of phase space painting waveforms\nDifferentiable simulations\nAdjoint methods for optimization of beam parameters"
   },
   {
+    "objectID": "publications/preprints.html",
+    "href": "publications/preprints.html",
+    "title": "Preprints",
+    "section": "",
+    "text": "Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams. N. Evans, A. Hoover. T. Gorlov, and V. Morozov."
+  },
+  {
     "objectID": "publications/journal.html",
     "href": "publications/journal.html",
     "title": "Journal Articles",

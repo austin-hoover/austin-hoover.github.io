@@ -270,25 +270,10 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     <a class="nav-link" href="./research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Publications</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
-        <li>
-    <a class="dropdown-item" href="./publications/papers.html">
- <span class="dropdown-text">Journal</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./papers/index.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./publications/conference.html">
- <span class="dropdown-text">Conference</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./publications/misc.html">
- <span class="dropdown-text">Miscellaneous</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./talks/index.html"> 
 <span class="menu-text">Talks</span></a>
@@ -304,6 +289,10 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
   <li class="nav-item">
     <a class="nav-link active" href="./resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://austin-hoover.github.io/blog/"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -468,7 +457,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
