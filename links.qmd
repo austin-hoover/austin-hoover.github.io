@@ -1,0 +1,64 @@
+---
+title: "Links"
+---
+
+* Me
+    * [[ORNL staff profile](https://www.ornl.gov/staff-profile/austin-hoover)]
+    * [[ORCID](https://orcid.org/0000-0001-5313-6962)]
+    * [[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao)]
+    * [[GitHub](https://github.com/austin-hoover)]
+    * [[LinkedIn](https://www.linkedin.com/in/austinhoover0/)]
+* Journals
+    * [PRAB](https://journals.aps.org/prab/recent)
+    * [PRL](https://journals.aps.org/prl/recent)
+    * [PRE](https://journals.aps.org/pre/recent)
+    * [PRX](https://journals.aps.org/prx/recent)
+    * [PRX Intelligence](https://journals.aps.org/prxintelligence/)
+    * [Chaos](https://pubs.aip.org/aip/cha/issue)
+    * [Nature Physics](https://www.nature.com/nphys/)
+    * [Science](https://www.science.org/toc/science/current)
+    * [NIM:A](https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment/vol/1085/suppl/C)
+* Preprint servers
+    * [arXiv](https://arxiv.org)
+    * [arXiv - accelerator physics](https://arxiv.org/list/physics.acc-ph/recent)
+    * [arXiv - computational physics](https://arxiv.org/list/physics.comp-ph/recent)
+    * [ArXiv - chaotic dynamics](https://arxiv.org/list/nlin.CD/recent)
+    * [arXiv - plasma physics](https://arxiv.org/list/physics.plasm-ph/recent)
+    * [arXiv - stats ml](https://arxiv.org/list/cs.LG/recent)
+    * [arXiv - astrophysics of galaxies](https://arxiv.org/list/astro-ph.GA/recent)
+    * [arXiv - history and philosophy of physics](https://arxiv.org/list/physics.hist-ph/recent)
+    * [PhilSci](https://philsci-archive.pitt.edu/cgi/latest_days2?n=30)
+* Accelerator physics codes
+    * [PyORBIT](https://github.com/PyORBIT-Collaboration/PyORBIT3)
+    * [ImpactX](https://github.com/BLAST-ImpactX/impactx)
+    * [Xsuite](https://github.com/xsuite/xsuite)
+    * [MADX](https://abpcomputing.web.cern.ch/codes/codes_pages/MadX/)
+    * [Bmad](https://github.com/bmad-sim/bmad-ecosystem)
+    * [Cheetah](https://github.com/desy-ml/cheetah)
+    * [JuTrack](https://github.com/MSU-Beam-Dynamics/JuTrack.jl)
+* People
+    * [...]
+* Conference proceedings
+    * [IPAC 2025](https://meow.elettra.eu/81/)
+    * [IPAC 2024](https://proceedings.jacow.org/ipac2024/)
+    * [IPAC 2023](https://proceedings.jacow.org/ipac2023/)
+    * [IPAC 2022](https://proceedings.jacow.org/ipac2022/)
+    * [IPAC 2021](https://proceedings.jacow.org/ipac2021/)
+* [Oak Ridge National Laboratory (ORNL)](https://www.ornl.gov)
+* [Lawrence Berkeley National Laboratoy (LBNL)](https://www.lbl.gov)
+* [Fermi National Accelerator Laboratory (FNAL)](https://www.fnal.gov)
+* [SLAC National Accelerator Laboratory (SLAC)](https://www6.slac.stanford.edu)
+* [Los Alamos National Laboratory (LANL)](https://www.lanl.gov)
+* [Spallation Neutron Source (SNS)](https://neutrons.ornl.gov)
+* [European Council for Nuclear Research (CERN)](https://home.cern)
+* [Paul Scherrer Institute (PSI)](https://www.psi.ch/en)
+* [European Spallation Source (ESS)](https://ess.eu)
+* [ISIS Neutron Source](https://www.isis.stfc.ac.uk/Pages/home.aspx)
+* [Electron Ion Collider (EIC)](https://www.bnl.gov/eic/)
+* [Relativistic Heavy Ion Collider (RHIC)](https://www.bnl.gov/rhic/)
+* [Future Circular Collider (FCC)](https://home.cern/science/accelerators/future-circular-collider)
+* [International Muon Collider Collaboration (IMCC)](https://muoncollider.web.cern.ch)
+* [US Muon Collider Collaboration (USMCC)](https://www.muoncollider.us)
+* [J-PARC](https://j-parc.jp/c/en/)
+* [MYRRHA](https://www.myrrha.be)
+

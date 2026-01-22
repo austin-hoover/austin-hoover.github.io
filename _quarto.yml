@@ -2,37 +2,40 @@ project:
     type: website
     
 website:
-    title: "Austin Hoover"
-    open-graph: true
-    navbar:
-       right:
-        - text: "Home"
-          href: ./index.qmd
-        - text: "Research"
-          href: ./research/index.qmd
-        - text: "Papers"
-          href: ./papers/index.qmd
-        - text: "Talks"
-          href: ./talks/index.qmd
-        - text: "Teaching"
-          href: ./teaching/index.qmd
-        - text: "News"
-          href: ./news/index.qmd
-        - text: "Resources"
-          href: ./resources.qmd
-        - text: "Blog"
-          href: "https://austin-hoover.github.io/blog/"
-    google-analytics: "G-NS0H6D6VKL"
+  title: "Austin Hoover"
+  open-graph: true
+  navbar:
+    right:
+      - text: "Home"
+        href: ./index.qmd
+      - text: "Research"
+        href: ./research/index.qmd
+      - text: "Publications"
+        menu:
+          - text: "Journal"
+            href: ./publications/papers.qmd
+          - text: "Conference"
+            href: ./publications/conference.qmd
+          - text: "Miscellaneous"
+            href: ./publications/misc.qmd
+      - text: "Talks"
+        href: ./talks/index.qmd
+      - text: "Teaching"
+        href: ./teaching/index.qmd
+      - text: "News"
+        href: ./news/index.qmd
+      - text: "Links"
+        href: ./links.qmd
+  google-analytics: "G-NS0H6D6VKL"
 format:
-    html:
-        theme: 
-            dark: [default, style/custom_dark.scss]
-            light: [default, style/custom_light.scss] 
-        fontsize: 13px
-        grid:
-            body-width: 710px   
-
-        lightbox: true
-        html-math-method: mathjax
-        highlight-style: github    
-        toc: false
+  html:
+    theme: 
+      dark: [default, style/custom_dark.scss]
+      light: [default, style/custom_light.scss] 
+    fontsize: 13px
+    grid:
+      body-width: 710px   
+    lightbox: true
+    html-math-method: mathjax
+    highlight-style: github    
+    toc: false

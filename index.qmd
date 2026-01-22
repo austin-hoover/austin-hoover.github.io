@@ -3,6 +3,7 @@ title: "Austin Hoover"
 format:
   html:
     lightbox: false
+    css: ./publications/style.css
 ---
 
 
@@ -28,47 +29,71 @@ I'm interested in techniques to model, measure, and control intense beams in par
 
 ## Selected Papers
 
+<dl class="papers-dl">
+
+<dt>2026</dt>
+<dd>
+[Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams](https://doi.org/10.1103/bvwq-34jf). 
+N. Evans, A. Hoover. T. Gorlov, and V. Morozov. 
+*Phys. Rev. Letters (Forthcoming)*.
+</dd>
+
+<dt>2025</dt>
+<dd>
 [N-dimensional maximum-entropy tomography via particle sampling](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32). 
 A. Hoover. 
-*Phys. Rev. Accel. Beams 28, L084601* (2025).
+*Phys. Rev. Accel. Beams 28, L084601*.
+</dd>
 
+<dt>2024</dt>
+<dd>
 [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802). 
 A. Hoover.
-*Phys. Rev. Accel. Beams 27, 122802* (2024).
+*Phys. Rev. Accel. Beams 27, 122802*.
+</dd>
 
+<dt>2024</dt>
+<dd>
 [High-dimensional maximum-entropy phase space tomography using normalizing flows](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163).
 A. Hoover, and J.C. Wong.
-*Phys. Rev. Research 6.3, 033163* (2024).
+*Phys. Rev. Research 6.3, 033163*.
+</dd>
 
+<dt>2023</dt>
+<dd>
 [Analysis of a hadron beam in five-dimensional phase space](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202).
 A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
-*Phys. Rev. Accel. Beams 26.6, 064202* (2023).
+*Phys. Rev. Accel. Beams 26.6, 064202*.
+</dd>
 
-[Computation of the matched envelope of the Danilov distribution](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201).
-A. Hoover, N. Evans, and J. Holmes.
-*Phys. Rev. Accel. Beams 24.4, 044201* (2021).
+</dl>
 
 
 ## Selected Talks
 
+<dl class="papers-dl">
 
-[High-dimensional maximum-entropy phase space tomography](./talks/files/2025-08-12_napac_ment.pdf).
-*North American Particle Accelerator Conference*. Sacramento, USA. (2025-08-12)
+<dt>2025</dt>
+<dd>
+[High-dimensional maximum-entropy phase space tomography](https://drive.google.com/drive/folders/1-WCn442FOVpL5O_dDWlj385M-9Q-F-pJ).
+*North American Particle Accelerator Conference*. Sacramento, USA.
+</dd>
 
+<dt>2025</dt>
+<dd>
 [Bunch rotation experiments and benchmarking at SNS](https://indico.desy.de/event/45968/contributions/186224/).
-*International Muon Collider Collaboration Meeting*. Hamburg, Germany. (2025-05-13)
+*International Muon Collider Collaboration Meeting*. Hamburg, Germany.
+</dd>
 
+<dt>2023</dt>
+<dd>
 [The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf).
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*. Geneva, Switzerland. (2023-10-10)
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*. Geneva, Switzerland.
+</dd>
 
-[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf). *ICFA Mini-Workshop on Space Charge*. Knoxville, USA. (2022-10-06)
+<dt>2022</dt>
+<dd>
+[Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf). *ICFA Mini-Workshop on Space Charge*. Knoxville, USA.
+</dd>
 
-
-## Links
-
-[Blog](https://austin-hoover.github.io/blog/) \
-[ORNL staff profile](https://www.ornl.gov/staff-profile/austin-hoover) \
-[ORCID](https://orcid.org/0000-0001-5313-6962) \
-[Google Scholar](https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao) \
-[GitHub](https://github.com/austin-hoover) \
-[LinkedIn](https://www.linkedin.com/in/austinhoover0/) \
+</dl>
