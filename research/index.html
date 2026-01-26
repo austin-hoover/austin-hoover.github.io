@@ -115,11 +115,11 @@ window.Quarto = {
 
 <meta property="og:title" content="Research – Austin Hoover">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://austin-hoover.github.io/research/files/fig_sns_power.png">
+<meta property="og:image" content="https://austin-hoover.github.io/research/files/fig_sns_paint.png">
 <meta property="og:site_name" content="Austin Hoover">
-<meta property="og:image:alt" content="Proton beam power on the SNS target from 2006 to 2023.">
-<meta property="og:image:height" content="1502">
-<meta property="og:image:width" content="2166">
+<meta property="og:image:alt" content="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring.">
+<meta property="og:image:height" content="1120">
+<meta property="og:image:width" content="2800">
 </head>
 
 <body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -303,10 +303,21 @@ window.Quarto = {
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
-<span class="menu-text">Research</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../research/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../research/current_topics.html">
+ <span class="dropdown-text">Current Topics</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Publications</span>
@@ -363,8 +374,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#halo-formation" id="toc-halo-formation" class="nav-link active" data-scroll-target="#halo-formation">Halo formation</a></li>
-  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
+  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link active" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
+  <li><a href="#beam-halo-formation-and-instabilities" id="toc-beam-halo-formation-and-instabilities" class="nav-link" data-scroll-target="#beam-halo-formation-and-instabilities">Beam halo formation and instabilities</a></li>
+  <li><a href="#halo-level-benchmarking-at-sns-beam-test-facility-btf" id="toc-halo-level-benchmarking-at-sns-beam-test-facility-btf" class="nav-link" data-scroll-target="#halo-level-benchmarking-at-sns-beam-test-facility-btf">Halo-level benchmarking at SNS Beam Test Facility (BTF)</a></li>
   <li><a href="#hadron-bunch-compression" id="toc-hadron-bunch-compression" class="nav-link" data-scroll-target="#hadron-bunch-compression">Hadron bunch compression</a></li>
   <li><a href="#high-dimensional-phase-space-measurement-and-reconstruction" id="toc-high-dimensional-phase-space-measurement-and-reconstruction" class="nav-link" data-scroll-target="#high-dimensional-phase-space-measurement-and-reconstruction">High-dimensional phase space measurement and reconstruction</a></li>
   <li><a href="#machine-learning-applications" id="toc-machine-learning-applications" class="nav-link" data-scroll-target="#machine-learning-applications">Machine learning applications</a></li>
@@ -394,35 +406,9 @@ window.Quarto = {
 </header>
 
 
-<p><em>This is a work in progress. Also see <a href="../research/current_topics.html">current topics</a>.</em></p>
+<p>My research is focused on the prediction, measurement, and control of hadron beams in the presence of collective effects.</p>
 <p>Hadron accelerators are <a href="https://www.nobelprize.org/prizes/themes/accelerators-and-nobel-laureates/">essential tools</a> for scientific research. For example, hadron accelerators generate <a href="https://neutrons.ornl.gov/sns">neutrons</a>, <a href="https://www.dunescience.org">neutrinos</a>, and <a href="https://www.scientificamerican.com/article/particle-physicists-dream-of-a-muon-collider/">muons</a> for experiments in condensed matter physics, material science, nuclear physics, and particle physics. In the future, hadron accelerators may drive <a href="https://www.sckcen.be/en/infrastructure/myrrha">nuclear fission reactors</a> and transmutation of nuclear waste. These and other applications require hadron beams of extreme intensity while satisfying tight constraints on the particle distribution in phase space.</p>
-<p>Satisfying these constraints is challenging because of <em>collective effects</em> which drive multiparticle resonances and instabilities in the beam as it evolves. The result is that some fraction of particles do not make it through the accelerator. The radiation generated by these lost particles places hard limits on the beam power. Today, a small number of facilities operate at or above 1 megawatt (MW) beam power, requiring fractional beam loss to be near <span class="math inline">\(10^{-6}\)</span>, or one out of every million particles. A future 10 MW accelerator would need to reduce losses below <span class="math inline">\(10^{-7}\)</span>, and so on as the power increases. This is currently impossible—we can measure low-level beam loss, but we cannot predict or control it to the necessary degree.</p>
-<p>The goal of my research is to predict, measure, and control beam dynamics at the individual particle level in the presence of strong collective effects. This page provides an overview of several projects and topics related to this goal.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="./files/fig_sns_power.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Proton beam power on the SNS target from 2006 to 2023."><img src="./files/fig_sns_power.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400" alt="Proton beam power on the SNS target from 2006 to 2023."></a></p>
-</figure>
-</div>
-<figcaption>Proton beam power on the SNS target from 2006 to 2023.</figcaption>
-</figure>
-</div>
-<section id="halo-formation" class="level2">
-<h2 class="anchored" data-anchor-id="halo-formation">Halo formation</h2>
-<p>The combined effects of external and self-generated fields can drive small numbers of particles to very large amplitudes, forming a large, low-density “halo” surrounding a dense core. The fraction of particles in the halo is so small that the halo has almost no effect on the core dynamics and is nearly impossible to measure with conventional diagnostics. However, as described above, it is these particles that ultimately limit the accelerator power.</p>
-<p>Halo formation is challenging to predict due to its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core. We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address these problems. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the complete initial 6D distribution and the output 2D distributions with six orders of dynamic range—enough to image halo particles. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="files/fig_halo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."><img src="files/fig_halo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400" alt="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."></a></p>
-</figure>
-</div>
-<figcaption>Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak.</figcaption>
-</figure>
-</div>
-</section>
+<p>Satisfying these constraints is challenging because of <em>collective effects</em> which drive multiparticle resonances and instabilities in the beam as it evolves. The result is that some fraction of particles do not make it through the accelerator. The radiation generated by these lost particles places hard limits on the beam power. Today, a small number of facilities operate at or above <a href="./files/fig_sns_power.png">1 megawatt (MW) beam power</a>, requiring fractional beam loss to be near <span class="math inline">\(10^{-6}\)</span>, or one out of every million particles. A future 10 MW accelerator would need to reduce losses below <span class="math inline">\(10^{-7}\)</span>, and so on as the power increases. This is currently impossible—we can measure low-level beam loss, but we cannot predict or control it to the necessary degree.</p>
 <section id="phase-space-painting" class="level2">
 <h2 class="anchored" data-anchor-id="phase-space-painting">Phase space painting</h2>
 <p>The primary method to generate intense beams is to repeatedly inject small pulses from a linear accelerator (linac) into a circular accelerator (ring). During the beam accumulation, dipole magnets are used to vary the position and momentum of the injected beam relative to the circulating beam. In the frame of the circulating beam, the injection point is moved through the four-dimensional phase space as a function of time. This process is known as phase space painting. Painting is now a vital component of the two operating high-power accumulator rings: SNS and J-PARC.</p>
@@ -432,10 +418,38 @@ window.Quarto = {
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="files/fig_sns_paint.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."><img src="files/fig_sns_paint.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."></a></p>
+<p><a href="files/fig_sns_paint.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."><img src="files/fig_sns_paint.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring."></a></p>
 </figure>
 </div>
 <figcaption>Overview of the SNS (Spallation Neutron Source) accelerator complex. Time-dependent magnets shape the four-dimensional phase space at the injection point in the ring.</figcaption>
+</figure>
+</div>
+</section>
+<section id="beam-halo-formation-and-instabilities" class="level2">
+<h2 class="anchored" data-anchor-id="beam-halo-formation-and-instabilities">Beam halo formation and instabilities</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./files/fig_sc_coherent.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Coherent instability driven by space charge in a FODO channel."><img src="./files/fig_sc_coherent.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Coherent instability driven by space charge in a FODO channel."></a></p>
+</figure>
+</div>
+<figcaption>Coherent instability driven by space charge in a FODO channel.</figcaption>
+</figure>
+</div>
+</section>
+<section id="halo-level-benchmarking-at-sns-beam-test-facility-btf" class="level2">
+<h2 class="anchored" data-anchor-id="halo-level-benchmarking-at-sns-beam-test-facility-btf">Halo-level benchmarking at SNS Beam Test Facility (BTF)</h2>
+<p>The combined effects of external and self-generated fields can drive small numbers of particles to very large amplitudes, forming a large, low-density “halo” surrounding a dense core. The fraction of particles in the halo is so small that the halo has almost no effect on the core dynamics and is nearly impossible to measure with conventional diagnostics. However, as described above, it is these particles that ultimately limit the accelerator power.</p>
+<p>Halo formation is challenging to predict due to its sensitivity to poorly known model parameters; for example, we typically do not know the initial particle distribution in the full six-dimensional phase space. It is also challenging to measure such a faint signal on top of the bright core. We are using the Beam Test Facility (BTF) at the <a href="https://neutrons.ornl.gov/sns">Spallation Neutron Source</a> (SNS) to address these problems. The BTF is a replica of the first few meters of the 400-meter SNS linac. It is equipped to measure the complete initial 6D distribution and the output 2D distributions with six orders of dynamic range—enough to image halo particles. We are leveraging these unique diagnostics to benchmark particle-in-cell (PIC) simulations at a new level of detail and better understand halo formation in linear accelerators.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="files/fig_halo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."><img src="files/fig_halo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400" alt="Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak."></a></p>
+</figure>
+</div>
+<figcaption>Measured two-dimensional phase space distributions in the BTF (right) compared to simulated distributions (left). The density is shown in a logarithmic color scale, extending five orders of magnitude below the peak.</figcaption>
 </figure>
 </div>
 </section>
@@ -446,10 +460,10 @@ window.Quarto = {
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="files/fig_rotation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space."><img src="files/fig_rotation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space."></a></p>
+<p><a href="./files/fig_compression.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Simulated compression of an intense beam via “snap rotation”."><img src="./files/fig_compression.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" width="260" alt="Simulated compression of an intense beam via “snap rotation”."></a></p>
 </figure>
 </div>
-<figcaption>Simulated compression of a hadron bunch via “snap rotation”—a quarter rotation in longitudinal phase space.</figcaption>
+<figcaption>Simulated compression of an intense beam via “snap rotation”.</figcaption>
 </figure>
 </div>
 </section>
