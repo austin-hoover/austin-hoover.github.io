@@ -17,7 +17,7 @@ website:
       - text: "Publications"
         menu:
           - text: "Journal"
-            href: ./publications/journal.qmd
+            href: ./publications/index.qmd
           - text: "Preprints"
             href: ./publications/preprints.qmd
           - text: "Conference"
