@@ -9,7 +9,11 @@ website:
       - text: "Home"
         href: ./index.qmd
       - text: "Research"
-        href: ./research/index.qmd
+        menu:
+          - text: "Overview"
+            href: ./research/index.qmd
+          - text: "Current Topics"
+            href: ./research/current_topics.qmd
       - text: "Publications"
         menu:
           - text: "Journal"
