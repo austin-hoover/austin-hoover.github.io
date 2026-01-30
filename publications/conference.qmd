@@ -63,7 +63,7 @@ A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov.
 
 <dt>2021</dt>
 <dd>
-[Development of an injection-painted self-consistent beam at the Spallation Neutron Source]().
+[Development of an injection-painted self-consistent beam at the Spallation Neutron Source](https://proceedings.jacow.org/hb2021/papers/moac3.pdf).
 A. Hoover, N. Evans, T. Gorlov, J. Holmes.
 *ICFA Workshop on High-Intensity and High-Brightness Hadron Beams*.
 </dd>
