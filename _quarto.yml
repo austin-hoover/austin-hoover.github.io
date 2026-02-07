@@ -9,25 +9,11 @@ website:
       - text: "Home"
         href: ./index.qmd
       - text: "Research"
-        menu:
-          - text: "Overview"
-            href: ./research/index.qmd
-          - text: "Current Topics"
-            href: ./research/current_topics.qmd
+        href: ./research/index.qmd
       - text: "Publications"
-        menu:
-          - text: "Journal"
-            href: ./publications/index.qmd
-          - text: "Preprints"
-            href: ./publications/preprints.qmd
-          - text: "Conference"
-            href: ./publications/conference.qmd
-          - text: "Miscellaneous"
-            href: ./publications/misc.qmd
-      - text: "Talks"
-        href: ./talks/index.qmd
-      - text: "Teaching"
-        href: ./teaching/index.qmd
+        href: ./publications/index.qmd
+      - text: "Presentations"
+        href: ./presentations/index.qmd
       - text: "News"
         href: ./news/index.qmd
       - text: "Links"

@@ -1,7 +1,0 @@
----
-title: "Teaching"
----
-
-[Under construction.]
-
-In July 2026, I'll be giving a few lectures at the US Particle Accelerator School (USPAS) course "Beam Physics With Intense Space Charge" in St. Paul, Minnesota.

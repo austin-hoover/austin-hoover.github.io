@@ -9,6 +9,7 @@ title: "Links"
     * [[GitHub](https://github.com/austin-hoover)]
     * [[LinkedIn](https://www.linkedin.com/in/austinhoover0/)]
     * [[arXiv](https://arxiv.org/search/physics?query=Hoover%2C+Austin&searchtype=author&abstracts=show&order=-announced_date_first&size=50)]
+    * [[Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Hoover%2C%20Austin%22&l=list&p=1&s=10&sort=bestmatch)
     * [[Blog](https://austin-hoover.github.io/blog/)]
 * Journals
     * [PRAB](https://journals.aps.org/prab/recent)

@@ -1,5 +1,0 @@
----
-title: "Preprints"
----
-
-* [Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams](https://arxiv.org/pdf/2601.13517). N. Evans, A. Hoover. T. Gorlov, and V. Morozov.

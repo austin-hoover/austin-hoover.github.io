@@ -40,3 +40,40 @@ blockquote {
 .navbar {
     background-color: rgb(20, 20, 20) !important;
 }
+
+div.quarto-about-trestles {
+    h1 {
+        font-size: 1.25em;
+    }
+    p {
+        padding-top: 0 !important;
+    }
+    .about-image {
+        max-width: 175px !important;
+        max-height: 175px !important;
+    }
+    .lead {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+    }
+    .about-entity {
+        @include media-breakpoint-up(lg) {
+            max-width: 188px;
+            // flex: 0 0 20%;
+        }
+        padding-left: 0.0 !important;
+        padding-right: 0.0 !important;
+        margin-left: 0 !important;
+        margin-right: 2.0em !important;
+        text-align: left !important;
+        align-items: left !important;
+    }
+    .about-contents {
+        border-left: solid 1px rgb(40, 40, 40);
+        margin-left: 0.0em;
+        padding-left: 2.0em;
+        h3 {
+            margin-top: 0;
+        }
+    }
+}

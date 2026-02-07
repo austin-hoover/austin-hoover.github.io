@@ -2,7 +2,7 @@
 title: "Research"
 bibliography: references.bib
 csl: ./american-physics-society.csl
-toc: true
+toc: false
 format:
   html:
     grid:
