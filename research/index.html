@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9f14f4416fc54cc8076370e5e580a189.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8c6f12d7a049007810b3c5691300d08e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-364e257b4f25b49c29557f7f98134f72.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7074da14dbff456f22d1809b8996820a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -122,7 +122,7 @@ window.Quarto = {
 <meta property="og:image:width" content="2800">
 </head>
 
-<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -303,51 +303,17 @@ window.Quarto = {
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="../research/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../research/current_topics.html">
- <span class="dropdown-text">Current Topics</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Publications</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
-        <li>
-    <a class="dropdown-item" href="../publications/index.html">
- <span class="dropdown-text">Journal</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/preprints.html">
- <span class="dropdown-text">Preprints</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/conference.html">
- <span class="dropdown-text">Conference</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/misc.html">
- <span class="dropdown-text">Miscellaneous</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../teaching/index.html"> 
-<span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../presentations/index.html"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../news/index.html"> 
@@ -369,20 +335,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#phase-space-painting" id="toc-phase-space-painting" class="nav-link active" data-scroll-target="#phase-space-painting">Phase space painting</a></li>
-  <li><a href="#beam-halo-formation-and-instabilities" id="toc-beam-halo-formation-and-instabilities" class="nav-link" data-scroll-target="#beam-halo-formation-and-instabilities">Beam halo formation and instabilities</a></li>
-  <li><a href="#halo-level-benchmarking-at-sns-beam-test-facility-btf" id="toc-halo-level-benchmarking-at-sns-beam-test-facility-btf" class="nav-link" data-scroll-target="#halo-level-benchmarking-at-sns-beam-test-facility-btf">Halo-level benchmarking at SNS Beam Test Facility (BTF)</a></li>
-  <li><a href="#hadron-bunch-compression" id="toc-hadron-bunch-compression" class="nav-link" data-scroll-target="#hadron-bunch-compression">Hadron bunch compression</a></li>
-  <li><a href="#high-dimensional-phase-space-measurement-and-reconstruction" id="toc-high-dimensional-phase-space-measurement-and-reconstruction" class="nav-link" data-scroll-target="#high-dimensional-phase-space-measurement-and-reconstruction">High-dimensional phase space measurement and reconstruction</a></li>
-  <li><a href="#machine-learning-applications" id="toc-machine-learning-applications" class="nav-link" data-scroll-target="#machine-learning-applications">Machine learning applications</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 

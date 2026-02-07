@@ -1,51 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://austin-hoover.github.io/teaching/index.html</loc>
-    <lastmod>2026-01-16T21:15:30.137Z</lastmod>
+    <loc>https://austin-hoover.github.io/news/index.html</loc>
+    <lastmod>2026-01-26T18:12:46.297Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/links.html</loc>
-    <lastmod>2026-01-26T19:51:36.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/talks/index.html</loc>
-    <lastmod>2026-01-26T18:12:46.300Z</lastmod>
+    <loc>https://austin-hoover.github.io/presentations/index.html</loc>
+    <lastmod>2026-02-07T20:02:14.527Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/publications/index.html</loc>
-    <lastmod>2026-01-26T18:12:46.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/publications/conference.html</loc>
-    <lastmod>2026-01-30T19:51:15.423Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/research/current_topics.html</loc>
-    <lastmod>2026-01-26T18:12:46.298Z</lastmod>
+    <lastmod>2026-02-07T23:13:17.969Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2026-01-26T19:10:05.528Z</lastmod>
+    <lastmod>2026-02-07T23:12:38.248Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/references/ornl-accelerator-physics.html</loc>
     <lastmod>2026-01-26T18:12:46.298Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/publications/preprints.html</loc>
-    <lastmod>2026-01-26T18:12:46.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/publications/misc.html</loc>
-    <lastmod>2026-01-26T18:12:46.298Z</lastmod>
-  </url>
-  <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2026-01-26T19:04:26.344Z</lastmod>
+    <lastmod>2026-02-07T23:45:44.759Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/news/index.html</loc>
-    <lastmod>2026-01-26T18:12:46.297Z</lastmod>
+    <loc>https://austin-hoover.github.io/links.html</loc>
+    <lastmod>2026-02-07T19:47:52.406Z</lastmod>
   </url>
 </urlset>
