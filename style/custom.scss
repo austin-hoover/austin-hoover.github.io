@@ -60,21 +60,3 @@ a, u {
   background-color: rgba(0, 0, 0, 0.03);
   text-decoration: none;
 }
-
-
-
-.row {
-  display: flex; /* Makes the container a flexbox */
-  flex-direction: row; /* Default value; aligns children horizontally */
-}
-
-.column {
-  flex: 1;
-  @media (max-width: 600px) {
-    .row {
-      flex-direction: column; /* Stacks the columns vertically on small screens */
-      min-width: 400px;
-    }
-  }
-}
-

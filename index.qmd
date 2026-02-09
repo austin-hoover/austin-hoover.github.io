@@ -2,6 +2,9 @@
 format:
   html:
     toc: false
+    grid:
+      sidebar-width: 0px;
+      margin-width: 0px;
     lightbox: false
     include-in-header:
       - text: |
@@ -11,22 +14,21 @@ format:
     css: papers/style.css
 ---
 
-:::: {.columns}
 
+::: {style="display: flex; flex-wrap: wrap"}
 
-::: {.column width=50%}
-
-<span style="font-size: 2.0em; font-weight: 600">Austin Hoover</span> \
+::: {style="flex: 1 1 250px;"}
+<span style="font-size: 2.0em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
 Staff Scientist \
 Oak Ridge National Laboratory \
 hooveram@ornl.gov
 :::
 
-::: {.column width=50%}
-![](images/headshot.png){.rounded width=150px fig-align=right}
+::: {style="flex"}
+![](images/headshot.png){.rounded fig-align=right width=150px}
 :::
 
-::::
+:::
 
 
 I'm a Staff Scientist at Oak Ridge National Laboratory (ORNL), working in the Accelerator Physics Group at the Spallation Neutron Source (SNS). Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
