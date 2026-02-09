@@ -2,19 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://austin-hoover.github.io/news/index.html</loc>
-    <lastmod>2026-01-26T18:12:46.297Z</lastmod>
+    <lastmod>2026-02-08T23:10:02.271Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/presentations/index.html</loc>
-    <lastmod>2026-02-07T20:02:14.527Z</lastmod>
+    <loc>https://austin-hoover.github.io/talks/index.html</loc>
+    <lastmod>2026-02-09T00:20:05.628Z</lastmod>
   </url>
   <url>
-    <loc>https://austin-hoover.github.io/publications/index.html</loc>
-    <lastmod>2026-02-07T23:13:17.969Z</lastmod>
+    <loc>https://austin-hoover.github.io/papers/misc.html</loc>
+    <lastmod>2026-02-09T00:42:22.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/papers/conference.html</loc>
+    <lastmod>2026-02-09T00:42:17.220Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/research/index.html</loc>
-    <lastmod>2026-02-08T01:00:56.859Z</lastmod>
+    <lastmod>2026-02-09T01:09:38.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://austin-hoover.github.io/papers/index.html</loc>
+    <lastmod>2026-02-09T01:08:19.132Z</lastmod>
   </url>
   <url>
     <loc>https://austin-hoover.github.io/references/ornl-accelerator-physics.html</loc>
@@ -22,10 +30,6 @@
   </url>
   <url>
     <loc>https://austin-hoover.github.io/index.html</loc>
-    <lastmod>2026-02-08T00:58:38.978Z</lastmod>
-  </url>
-  <url>
-    <loc>https://austin-hoover.github.io/links.html</loc>
-    <lastmod>2026-02-07T19:47:52.406Z</lastmod>
+    <lastmod>2026-02-09T01:44:14.979Z</lastmod>
   </url>
 </urlset>

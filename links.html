@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Links – Austin Hoover</title>
+<title>links – Austin Hoover</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,12 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5d50f1de0be9e780fbdd439ecd66643a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-158e3969fb1338af0114eaba45414f32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-efa2135515aeb8a1152b1f8620b805fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,171 +79,11 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="Links – Austin Hoover">
+<meta property="og:title" content="Austin Hoover">
 <meta property="og:site_name" content="Austin Hoover">
 </head>
 
-<body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = true;
-    const darkModeDefault = authorPrefersDark;
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -289,7 +127,6 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -300,128 +137,17 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Links</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<ul>
-<li>Me
-<ul>
-<li>[<a href="https://www.ornl.gov/staff-profile/austin-hoover">ORNL staff profile</a>]</li>
-<li>[<a href="https://orcid.org/0000-0001-5313-6962">ORCID</a>]</li>
-<li>[<a href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>]</li>
-<li>[<a href="https://github.com/austin-hoover">GitHub</a>]</li>
-<li>[<a href="https://www.linkedin.com/in/austinhoover0/">LinkedIn</a>]</li>
-<li>[<a href="https://arxiv.org/search/physics?query=Hoover%2C+Austin&amp;searchtype=author&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50">arXiv</a>]</li>
-<li>[<a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Hoover%2C%20Austin%22&amp;l=list&amp;p=1&amp;s=10&amp;sort=bestmatch">Zenodo</a></li>
-<li>[<a href="https://austin-hoover.github.io/blog/">Blog</a>]</li>
-</ul></li>
-<li>Journals
-<ul>
-<li><a href="https://journals.aps.org/prab/recent">PRAB</a></li>
-<li><a href="https://journals.aps.org/prl/recent">PRL</a></li>
-<li><a href="https://journals.aps.org/pre/recent">PRE</a></li>
-<li><a href="https://journals.aps.org/prx/recent">PRX</a></li>
-<li><a href="https://journals.aps.org/prxintelligence/">PRX Intelligence</a></li>
-<li><a href="https://pubs.aip.org/aip/cha/issue">Chaos</a></li>
-<li><a href="https://www.nature.com/nphys/">Nature Physics</a></li>
-<li><a href="https://www.science.org/toc/science/current">Science</a></li>
-<li><a href="https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment/vol/1085/suppl/C">NIM:A</a></li>
-</ul></li>
-<li>Preprint servers
-<ul>
-<li><a href="https://arxiv.org">arXiv</a></li>
-<li><a href="https://arxiv.org/list/physics.acc-ph/recent">arXiv - accelerator physics</a></li>
-<li><a href="https://arxiv.org/list/physics.comp-ph/recent">arXiv - computational physics</a></li>
-<li><a href="https://arxiv.org/list/nlin.CD/recent">ArXiv - chaotic dynamics</a></li>
-<li><a href="https://arxiv.org/list/physics.plasm-ph/recent">arXiv - plasma physics</a></li>
-<li><a href="https://arxiv.org/list/cs.LG/recent">arXiv - stats ml</a></li>
-<li><a href="https://arxiv.org/list/astro-ph.GA/recent">arXiv - astrophysics of galaxies</a></li>
-<li><a href="https://arxiv.org/list/physics.hist-ph/recent">arXiv - history and philosophy of physics</a></li>
-<li><a href="https://philsci-archive.pitt.edu/cgi/latest_days2?n=30">PhilSci</a></li>
-</ul></li>
-<li>Accelerator physics codes
-<ul>
-<li><a href="https://github.com/PyORBIT-Collaboration/PyORBIT3">PyORBIT</a></li>
-<li><a href="https://github.com/BLAST-ImpactX/impactx">ImpactX</a></li>
-<li><a href="https://github.com/xsuite/xsuite">Xsuite</a></li>
-<li><a href="https://abpcomputing.web.cern.ch/codes/codes_pages/MadX/">MADX</a></li>
-<li><a href="https://github.com/bmad-sim/bmad-ecosystem">Bmad</a></li>
-<li><a href="https://github.com/desy-ml/cheetah">Cheetah</a></li>
-<li><a href="https://github.com/MSU-Beam-Dynamics/JuTrack.jl">JuTrack</a></li>
-</ul></li>
-<li>People
-<ul>
-<li>[…]</li>
-</ul></li>
-<li><a href="./references/ornl-accelerator-physics.html">Papers from ORNL Accelerator Physics Group</a></li>
-<li>Conference proceedings
-<ul>
-<li><a href="https://meow.elettra.eu/81/">IPAC 2025</a></li>
-<li><a href="https://proceedings.jacow.org/ipac2024/">IPAC 2024</a></li>
-<li><a href="https://proceedings.jacow.org/ipac2023/">IPAC 2023</a></li>
-<li><a href="https://proceedings.jacow.org/ipac2022/">IPAC 2022</a></li>
-<li><a href="https://proceedings.jacow.org/ipac2021/">IPAC 2021</a></li>
-</ul></li>
-<li>Accelerators
-<ul>
-<li><a href="https://www.ornl.gov">Oak Ridge National Laboratory (ORNL)</a></li>
-<li><a href="https://www.lbl.gov">Lawrence Berkeley National Laboratoy (LBNL)</a></li>
-<li><a href="https://www.fnal.gov">Fermi National Accelerator Laboratory (FNAL)</a></li>
-<li><a href="https://www6.slac.stanford.edu">SLAC National Accelerator Laboratory (SLAC)</a></li>
-<li><a href="https://www.lanl.gov">Los Alamos National Laboratory (LANL)</a></li>
-<li><a href="https://neutrons.ornl.gov">Spallation Neutron Source (SNS)</a></li>
-<li><a href="https://home.cern">European Council for Nuclear Research (CERN)</a></li>
-<li><a href="https://www.psi.ch/en">Paul Scherrer Institute (PSI)</a></li>
-<li><a href="https://ess.eu">European Spallation Source (ESS)</a></li>
-<li><a href="https://www.isis.stfc.ac.uk/Pages/home.aspx">ISIS Neutron Source</a></li>
-<li><a href="https://www.bnl.gov/eic/">Electron Ion Collider (EIC)</a></li>
-<li><a href="https://www.bnl.gov/rhic/">Relativistic Heavy Ion Collider (RHIC)</a></li>
-<li><a href="https://home.cern/science/accelerators/future-circular-collider">Future Circular Collider (FCC)</a></li>
-<li><a href="https://muoncollider.web.cern.ch">International Muon Collider Collaboration (IMCC)</a></li>
-<li><a href="https://www.muoncollider.us">US Muon Collider Collaboration (USMCC)</a></li>
-<li><a href="https://j-parc.jp/c/en/">J-PARC</a></li>
-<li><a href="https://www.myrrha.be">MYRRHA</a></li>
-</ul></li>
-<li><a href="https://notebook.link/public-link">Notebook.link</a></li>
-</ul>
 
 
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -493,7 +219,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/austin-hoover\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
