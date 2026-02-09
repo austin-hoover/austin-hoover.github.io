@@ -2,26 +2,21 @@
 format:
   html:
     toc: false
-    grid:
-      body-width: 601px
-      sidebar-width: 0px
-      margin-width: 0px
     lightbox: false
     include-in-header:
       - text: |
           <link
             rel="stylesheet"
             href="_extensions/quarto-ext/fontawesome/assets/css/all.min.css">
+    css: papers/style.css
 ---
-
-
 
 :::: {.columns}
 
 
 ::: {.column width=50%}
 
-<span style="font-size: 1.5em; font-weight: 600">Austin Hoover</span> \
+<span style="font-size: 2.0em; font-weight: 600">Austin Hoover</span> \
 Staff Scientist \
 Oak Ridge National Laboratory \
 hooveram@ornl.gov
@@ -34,14 +29,72 @@ hooveram@ornl.gov
 ::::
 
 
-I'm a Staff Scientist at [Oak Ridge National Laboratory](https://www.ornl.gov), working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
+I'm a Staff Scientist at Oak Ridge National Laboratory (ORNL), working in the Accelerator Physics Group at the Spallation Neutron Source (SNS). Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
 
-I'm interested in techniques to model, measure, and control intense beams in high-power particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+My research focuses on the measurement, prediction, and control of intense beams in high-power accelerators. I'm specifically interested in (i) collective effects and instabilities, (ii) beam shaping, and (iii) phase space reconstruction. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
 
-<div style="height: 10px;"></div>
+## Papers
+
+<dl class="papers-dl">
+
+<dt>2026</dt>
+<dd>
+[Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams](https://doi.org/10.1103/bvwq-34jf). 
+N. Evans, A. Hoover. T. Gorlov, and V. Morozov. 
+*Phys. Rev. Letters*.
+</dd>
+
+<dt>2025</dt>
+<dd>
+[N-dimensional maximum-entropy tomography via particle sampling](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32). 
+A. Hoover. 
+*Phys. Rev. Accel. Beams 28, L084601*.
+</dd>
+
+<dt>2024</dt>
+<dd>
+[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802). 
+A. Hoover.
+*Phys. Rev. Accel. Beams 27, 122802*.
+</dd>
+
+
+<dt>2024</dt>
+<dd>
+[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163).
+A. Hoover, and J.C. Wong.
+*Phys. Rev. Research 6.3, 033163*.
+</dd>
+
+<dt>2023</dt>
+<dd>
+[Analysis of a hadron beam in five-dimensional phase space](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202).
+A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
+*Phys. Rev. Accel. Beams 26.6, 064202*.
+</dd>
+
+<dt>2022</dt>
+<dd>
+[Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805).
+A. Hoover and N. Evans.
+*Nucl. Instrum. Methods Phys. Res., Sect. A 1041, 167376*
+</dd>
+
+<dt>2021</dt>
+<dd>
+[Computation of the matched envelope of the Danilov distribution](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201).
+A. Hoover, N. Evans, and J. Holmes.
+*Phys. Rev. Accel. Beams 24.4, 044201*.
+</dd>
+
+</dl>
+
+<div style="height: 5px;"></div>
 
 ---
+
+<div style="height: 5px;"></div>
 
 <div class="link-grid">
 

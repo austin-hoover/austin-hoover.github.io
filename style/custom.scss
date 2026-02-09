@@ -1,16 +1,6 @@
 /*-- scss:defaults --*/
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #373a3c !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $h1-font-size: 2.00em;
 $h2-font-size: 1.50em;
@@ -18,13 +8,12 @@ $h3-font-size: 1.20em;
 $h4-font-size: 1.0em;
 $h5-font-size: 1.0em;
 
-$font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $body-color: black !default;
 $navbar-bg: rgba(black, 0.0);
 $navbar-fg: rgba(black, 1.0);
-// $primary: #2780e3;  // cosmo theme default
+// $primary: #2a5db0;  // muted blue
+$primary: #2780e3;  // cosmo theme default
 // $primary: #1a73e8;  // standard blue
-$primary: #2a5db0;  // muted blue
 // $primary: #444444;  // grey
 
 
@@ -32,7 +21,7 @@ $primary: #2a5db0;  // muted blue
 
 // Links
 a, u {
-    text-decoration: none !important;
+    // text-decoration: none !important;
 }
 
 .link-grid {
@@ -71,3 +60,21 @@ a, u {
   background-color: rgba(0, 0, 0, 0.03);
   text-decoration: none;
 }
+
+
+
+.row {
+  display: flex; /* Makes the container a flexbox */
+  flex-direction: row; /* Default value; aligns children horizontally */
+}
+
+.column {
+  flex: 1;
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column; /* Stacks the columns vertically on small screens */
+      min-width: 400px;
+    }
+  }
+}
+

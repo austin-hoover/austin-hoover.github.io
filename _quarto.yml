@@ -11,7 +11,13 @@ website:
       - text: "Research"
         href: ./research/index.qmd
       - text: "Papers"
-        href: ./papers/index.qmd
+        menu: 
+          - text: "Journal"
+            href: ./papers/index.qmd
+          - text: "Conference"
+            href: ./papers/conference.qmd
+          - text: "Miscellaneous"
+            href: ./papers/misc.qmd     
       - text: "Talks"
         href: ./talks/index.qmd
       - text: "News"
@@ -22,6 +28,8 @@ format:
     theme: 
       light: [default, style/custom.scss] 
     fontsize: 14px  
+    grid:
+      body-width: 650px
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    

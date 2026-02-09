@@ -3,10 +3,6 @@ title: "Research"
 bibliography: references.bib
 csl: ./american-physics-society.csl
 toc: false
-format:
-  html:
-    grid:
-      body-width: 650px
 ---
 
 My research focuses on the measurement, prediction, and control of intense beams in high-power hadron accelerators.
