@@ -1,40 +1,70 @@
 ---
-title: "Austin Hoover"
-subtitle: |
-    Staff Scientist \
-    Oak Ridge National Laboratory \
-    hooveram@ornl.gov
-about:
-    template: trestles
-    image: images/headshot.png
-    image-shape: rounded
 format:
-    html:
-        grid:
-            body-width: 800px
-        lightbox: false
+  html:
+    toc: false
+    grid:
+      body-width: 601px
+      sidebar-width: 0px
+      margin-width: 0px
+    lightbox: false
+    include-in-header:
+      - text: |
+          <link
+            rel="stylesheet"
+            href="_extensions/quarto-ext/fontawesome/assets/css/all.min.css">
 ---
 
-### About Me
+
+
+:::: {.columns}
+
+::: {.column width=50%}
+<span style="font-size: 1.25em; font-weight: 600">Austin Hoover</span> \
+Staff Scientist \
+Oak Ridge National Laboratory \
+hooveram@ornl.gov
+:::
+
+::: {.column width=50%}
+![](images/headshot.png){.rounded width=150px fig-align=right}
+:::
+
+::::
+
 
 I'm a Staff Scientist at [Oak Ridge National Laboratory](https://www.ornl.gov), working in the Accelerator Physics Group. Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
-
-
-### Research Interests
 
 I'm interested in techniques to model, measure, and control intense beams in high-power particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
 
-### Selected Papers
+<div class="link-grid">
 
-* [Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams](https://doi.org/10.1103/bvwq-34jf). N. Evans, A. Hoover. T. Gorlov, and V. Morozov. *Phys. Rev. Letters* (Forthcoming).
+<a class="link-card" href="mailto:hooveram@ornl.gov">
+<i class="fa fa-envelope"></i>
+</a>
 
-* [N-dimensional maximum-entropy tomography via particle sampling](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32). A. Hoover. *Phys. Rev. Accel. Beams 28, L084601* (2025).
+<a class="link-card" href="https://orcid.org/0000-0001-5313-6962">
+<i class="fa-brands fa-orcid"></i>
+</a>
 
-* [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802). A. Hoover. *Phys. Rev. Accel. Beams 27, 122802*. (2024)
+<a class="link-card" href="https://www.ornl.gov/staff-profile/austin-hoover">
+<i class="fa fa-id-badge"></i>
+</a>
 
-* [High-dimensional maximum-entropy phase space tomography using normalizing flows](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163).
-A. Hoover, and J.C. Wong. *Phys. Rev. Research 6.3, 033163 (2024).
+<a class="link-card" href="https://www.linkedin.com/in/austinhoover0">
+<i class="fa-brands fa-linkedin"></i>
+</a>
 
-* [Analysis of a hadron beam in five-dimensional phase space](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202). A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. *Phys. Rev. Accel. Beams 26.6, 064202* (2023).
+<a class="link-card" href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao">
+<i class="fa-brands fa-google-scholar"></i>
+</a>
 
+<a class="link-card" href="https://github.com/austin-hoover">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a class="link-card" href="https://austin-hoover.github.io/blog">
+<i class="fa fa-pen"></i>
+</a>
+
+</div>

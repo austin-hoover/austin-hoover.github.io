@@ -33,7 +33,7 @@ My current work on this topic focuses on a new painting method that we call *eig
 
 
 
-## Halo-level benchmarking at SNS Beam Test Facility (BTF)
+## Halo-level simulation benchmarking
 
 The combined effects of external and self-generated fields can drive small numbers of particles to very large amplitudes, forming a large, low-density "halo" surrounding a dense core. The fraction of particles in the halo is so small that the halo has almost no effect on the core dynamics and is nearly impossible to measure with conventional diagnostics. However, as described above, it is these particles that ultimately limit the accelerator power.
 
@@ -51,7 +51,7 @@ A future muon collider (MC) would require extremely short, intense proton pulses
 
 
 
-## High-dimensional phase space measurement and reconstruction
+## Phase space measurement and reconstruction
 
 I have worked on direct high-dimensional phase space measurements as part of the SNS-BTF project described above. In direct measurements, the phase space density is measured using a set of scanning slit apertures. My work focused on developing efficient high-dimensional scan patterns, reducing the scanning time by an order of magnitude. Additionally, I focused on the analysis and visualization of the resulting high-dimensional phase space image.
 

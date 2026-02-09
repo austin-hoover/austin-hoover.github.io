@@ -11,7 +11,7 @@ format:
 <dd>Paper: *Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams* was accepted for publication in PRL. Coauthors: Nick Evans, Vasiliy Morozov, Timofey Gorlov. </dd>
 
 <dt>DEC 2025</dt>
-<dd>Joined [USMCC](https://www.muoncollider.us/contact/).</dd>
+<dd>Joined USMCC.</dd>
 
 <dt>AUG 2025</dt>
 <dd>Talk: *High-dimensional maximum-entropy phase space tomography* at NAPAC25 in Sacramento.</dd>
@@ -89,6 +89,6 @@ format:
 <dd>Moved to Ypsilanti, Michigan, just outside Ann Arbor.</dd>
 
 <dt>DEC 1995</dt>
-<dd>Born in [Hong Kong](https://en.wikipedia.org/wiki/Hong_Kong).</dd>
+<dd>Born in Hong Kong.</dd>
 
 </dl>

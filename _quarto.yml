@@ -10,23 +10,18 @@ website:
         href: ./index.qmd
       - text: "Research"
         href: ./research/index.qmd
-      - text: "Publications"
-        href: ./publications/index.qmd
-      - text: "Presentations"
-        href: ./presentations/index.qmd
+      - text: "Papers"
+        href: ./papers/index.qmd
+      - text: "Talks"
+        href: ./talks/index.qmd
       - text: "News"
         href: ./news/index.qmd
-      - text: "Links"
-        href: ./links.qmd
   google-analytics: "G-NS0H6D6VKL"
 format:
   html:
     theme: 
-      dark: [default, style/custom_dark.scss]
-      light: [default, style/custom_light.scss] 
-    fontsize: 13px
-    grid:
-      body-width: 710px   
+      light: [default, style/custom.scss] 
+    fontsize: 14px  
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    

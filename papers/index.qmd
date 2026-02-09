@@ -1,12 +1,12 @@
 ---
-title: "Publications"
+title: "Papers"
 format:
   html:
     css: style.css
 ---
 
 
-## Journal Articles
+## Peer-Reviewed
 
 <dl class="papers-dl">
 
@@ -65,7 +65,7 @@ A. Hoover, N. Evans, and J. Holmes.
 
 
 
-## Conference Papers^[Note that most of the following papers are not peer-reviewed. At most accelerator conferences (such as IPAC) contributions are limited to three pages in length and are meant to complement posters or talks. (There is an option for [light peer review](https://www.ipac26.org/light-peer-review/) but I've never tried it.) Papers often report work in progress, before submission to a journal, or summarize previously published work.]
+## Conference Papers^[The following papers are not peer-reviewed. At most accelerator conferences (such as IPAC) contributions are limited to three pages in length and are meant to complement posters or talks. (There is an option for [light peer review](https://www.ipac26.org/light-peer-review/) but I've never tried it.) Papers often report work in progress, before submission to a journal, or summarize previously published work.]
 
 
 ### Invited

@@ -1,5 +1,5 @@
 ---
-title: Presentations
+title: Talks
 format:
   html:
     css: style.css    
