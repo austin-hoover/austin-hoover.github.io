@@ -12,3 +12,9 @@
 .papers-dl dd {
   margin: 0;
 }
+
+
+/* Set hard limit on page width. */
+body {
+  /* min-width: 400px; */ 
+}
