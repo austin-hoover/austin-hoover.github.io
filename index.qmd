@@ -39,6 +39,8 @@ I'm a Staff Scientist at [Oak Ridge National Laboratory](https://www.ornl.gov), 
 I'm interested in techniques to model, measure, and control intense beams in high-power particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
 
+<div style="height: 10px;"></div>
+
 ---
 
 <div class="link-grid">
