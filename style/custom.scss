@@ -22,13 +22,15 @@ $primary: rgb(18, 84, 127);
 
 // Links
 a, {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 .navbar {
-  text-decoration: none;
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .link-grid {
