@@ -11,7 +11,8 @@ $h5-font-size: 1.0em;
 $body-color: black !default;
 $navbar-bg: rgba(black, 0.0);
 $navbar-fg: rgba(black, 1.0);
-$primary: #2a5db0;  // muted blue
+$primary: rgb(18, 84, 127);
+// $primary: #2a5db0;  // muted blue
 // $primary: #2780e3;  // cosmo theme default
 // $primary: #1a73e8;  // standard blue
 // $primary: #444444;  // grey
@@ -20,8 +21,14 @@ $primary: #2a5db0;  // muted blue
 /*-- scss:rules --*/
 
 // Links
-a, u {
-    text-decoration: none !important;
+a, {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  text-decoration: none;
 }
 
 .link-grid {

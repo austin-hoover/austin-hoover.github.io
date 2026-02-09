@@ -27,9 +27,9 @@ format:
   html:
     theme: 
       light: [default, style/custom.scss] 
-    fontsize: 14px  
+    fontsize: 13px  
     grid:
-      body-width: 650px
+      body-width: 625px
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    

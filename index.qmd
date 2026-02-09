@@ -18,14 +18,14 @@ format:
 ::: {style="display: flex; flex-wrap: wrap"}
 
 ::: {style="flex: 1 1 250px;"}
-<span style="font-size: 2.0em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
+<span style="font-size: 1.94em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
 Staff Scientist \
 Oak Ridge National Laboratory \
 hooveram@ornl.gov
 :::
 
 ::: {style="flex"}
-![](images/headshot.png){.rounded fig-align=right width=150px}
+![](images/headshot.png){.rounded fig-align=right width=125px}
 :::
 
 :::
