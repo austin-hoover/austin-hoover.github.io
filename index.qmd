@@ -18,8 +18,10 @@ format:
 
 :::: {.columns}
 
+
 ::: {.column width=50%}
-<span style="font-size: 1.25em; font-weight: 600">Austin Hoover</span> \
+
+<span style="font-size: 1.5em; font-weight: 600">Austin Hoover</span> \
 Staff Scientist \
 Oak Ridge National Laboratory \
 hooveram@ornl.gov
@@ -36,6 +38,8 @@ I'm a Staff Scientist at [Oak Ridge National Laboratory](https://www.ornl.gov), 
 
 I'm interested in techniques to model, measure, and control intense beams in high-power particle accelerators. I currently focus on (i) collective effects such as halo formation, (ii) phase space shaping, and (iii) inverse problems such as phase space tomography. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
+
+---
 
 <div class="link-grid">
 
