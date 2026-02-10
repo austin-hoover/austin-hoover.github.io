@@ -11,16 +11,14 @@ $h5-font-size: 1.0em;
 $body-color: black !default;
 $navbar-bg: rgba(black, 0.0);
 $navbar-fg: rgba(black, 1.0);
-$primary: rgb(18, 84, 127);
-// $primary: #2a5db0;  // muted blue
-// $primary: #2780e3;  // cosmo theme default
-// $primary: #1a73e8;  // standard blue
-// $primary: #444444;  // grey
+
+// $primary: rgb(18, 84, 127);  // muted
+$primary: rgb(26, 94, 173);  // slightly brighter
 
 
 /*-- scss:rules --*/
 
-// Links
+// Hyperlink underlining
 a, {
   text-decoration: none;
 }
@@ -33,6 +31,7 @@ a:hover {
   }
 }
 
+// Link icons on home page
 .link-grid {
   justify-content: center;
   align-items: center;
@@ -57,7 +56,6 @@ a:hover {
   font-size: 0.95rem;
   line-height: 1.2;
 
-  /* critical: prevents full-width expansion on small screens */
   flex: 0 0 auto;
 }
 
