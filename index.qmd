@@ -1,5 +1,5 @@
 ---
-toc: true
+title: "Austin Hoover"
 format:
   html:
     grid:
@@ -10,83 +10,12 @@ format:
           <link
             rel="stylesheet"
             href="_extensions/quarto-ext/fontawesome/assets/css/all.min.css">
-    css: papers/style.css
+    css: style/style.css
 ---
 
 
 ::: {style="display: flex; flex-wrap: wrap;"}
 
-
-
-::: {style="flex; margin-right: 50px"}
-
-
-![](/images/headshot.png){.rounded-circle fig-align=left width=170px}
-<div style="height: 0px;"></div>
-<span style="font-size: 1.25em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
-<div style="height: 3px;"></div>
-Staff Scientist \
-Oak Ridge National Laboratory 
-
-<div style="height: 4px;"></div>
-
-
-<div class="sidebar-links" style="width: 0;">
-
-<ul class="icon-list">
-  <li>
-    <a href="mailto:hooveram.ornl.gov" class="icon-link">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-      <span>hooveram@ornl.gov</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://orcid.org/0000-0001-5313-6962" class="icon-link">
-      <i class="fa-brands fa-orcid" aria-hidden="true"></i>
-      <span>ORCID</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://www.ornl.gov/staff-profile/austin-hoover" class="icon-link">
-      <i class="fa fa-id-badge" aria-hidden="true"></i>
-      <span>ORNL</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://www.linkedin.com/in/austinhoover0" class="icon-link">
-      <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-      <span>LinkedIn</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao" class="icon-link">
-      <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-      <span>Google Scholar</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://github.com/austin-hoover" class="icon-link">
-      <i class="fa-brands fa-github" aria-hidden="true"></i>
-      <span>GitHub</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://austin-hoover.github.io/blog" class="icon-link">
-      <i class="fa fa-pen" aria-hidden="true"></i>
-      <span>Blog</span>
-    </a>
-  </li>
-
-</ul>
-
-</div>
-
-:::
 
 
 ::: {style="flex: 1 1 600px;"}
@@ -438,6 +367,83 @@ A. Hoover. *PhD Diss., University of Tennessee* \
 </dl>
 
 :::
+
+
+
+
+::: {style="flex; margin-left: 50px"}
+
+
+![](/images/headshot.png){.rounded fig-align=left width=200px}
+<div style="height: 0px;"></div>
+<span style="font-size: 1.25em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
+<div style="height: 3px;"></div>
+Staff Scientist \
+Oak Ridge National Laboratory 
+
+<div style="height: 4px;"></div>
+
+
+<div class="sidebar-links" style="width: 0;">
+
+<ul class="icon-list">
+  <li>
+    <a href="mailto:hooveram.ornl.gov" class="icon-link">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <span>hooveram@ornl.gov</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://orcid.org/0000-0001-5313-6962" class="icon-link">
+      <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+      <span>ORCID</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.ornl.gov/staff-profile/austin-hoover" class="icon-link">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>ORNL</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.linkedin.com/in/austinhoover0" class="icon-link">
+      <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao" class="icon-link">
+      <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
+      <span>Google Scholar</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://github.com/austin-hoover" class="icon-link">
+      <i class="fa-brands fa-github" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://austin-hoover.github.io/blog" class="icon-link">
+      <i class="fa fa-pen" aria-hidden="true"></i>
+      <span>Blog</span>
+    </a>
+  </li>
+
+</ul>
+
+</div>
+
+:::
+
+
+
+
 
 
 :::

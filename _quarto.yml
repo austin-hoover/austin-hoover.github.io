@@ -20,6 +20,10 @@ format:
     fontsize: 13px  
     grid:
       body-width: 700px
+      gutter-width: 0px
+      margin-width: 0px
+      sidebar-width: 0px
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    
+    css: style/style.css
