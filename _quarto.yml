@@ -10,16 +10,6 @@ website:
         href: ./index.qmd
       - text: "Research"
         href: ./research/index.qmd
-      - text: "Papers"
-        menu: 
-          - text: "Journal"
-            href: ./papers/index.qmd
-          - text: "Conference"
-            href: ./papers/conference.qmd
-          - text: "Miscellaneous"
-            href: ./papers/misc.qmd     
-      - text: "Talks"
-        href: ./talks/index.qmd
       - text: "News"
         href: ./news/index.qmd
   google-analytics: "G-NS0H6D6VKL"
@@ -29,8 +19,7 @@ format:
       light: [default, style/custom.scss] 
     fontsize: 13px  
     grid:
-      body-width: 625px
+      body-width: 700px
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    
-    toc: false

@@ -10,52 +10,69 @@ format:
 
 <dt>2026</dt>
 <dd>
-[Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams](https://doi.org/10.1103/bvwq-34jf). 
-N. Evans, A. Hoover. T. Gorlov, and V. Morozov. 
-*Phys. Rev. Letters*.
+**Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams** \
+N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
+*Phys. Rev. Letters (Forthcoming)* \
+[[link](https://doi.org/10.1103/bvwq-34jf)]
+[[arxiv](https://arxiv.org/pdf/2601.13517)]
+[[data]](https://doi.org/10.5281/zenodo.15349989)
 </dd>
 
 <dt>2025</dt>
 <dd>
-[N-dimensional maximum-entropy tomography via particle sampling](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32). 
-A. Hoover. 
-*Phys. Rev. Accel. Beams 28, L084601*.
+**N-dimensional maximum-entropy tomography via particle sampling** \
+A. Hoover \
+*Phys. Rev. Accel. Beams 28, L084601* \
+[[link](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32)]
+[[arxiv](https://arxiv.org/pdf/2409.17915)]
 </dd>
 
 <dt>2024</dt>
 <dd>
-[Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802). 
-A. Hoover.
-*Phys. Rev. Accel. Beams 27, 122802*.
+**Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam** \
+A. Hoover \
+*Phys. Rev. Accel. Beams 27, 122802* \
+[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802)]
+[[arxiv](https://arxiv.org/pdf/2409.02862)]
+[[data](https://doi.org/10.5281/zenodo.14009840)]
 </dd>
 
 
 <dt>2024</dt>
 <dd>
-[High-dimensional maximum-entropy phase space tomography using normalizing flows](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163).
-A. Hoover, and J.C. Wong.
-*Phys. Rev. Research 6.3, 033163*.
+**High-dimensional maximum-entropy phase space tomography using normalizing flows** \
+A. Hoover and J.C. Wong \
+*Phys. Rev. Research 6.3, 033163* \
+[[link](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163)]
+[[arxiv](https://arxiv.org/pdf/2406.00236)]
+[[code](https://github.com/austin-hoover/ment-flow)]
 </dd>
 
 <dt>2023</dt>
 <dd>
-[Analysis of a hadron beam in five-dimensional phase space](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202).
-A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau.
-*Phys. Rev. Accel. Beams 26.6, 064202*.
+**Analysis of a hadron beam in five-dimensional phase space** \
+A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
+*Phys. Rev. Accel. Beams 26.6, 064202*  \
+[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202)]
+[[arxiv](https://arxiv.org/pdf/2301.04178)]
+[[data](https://doi.org/10.5281/zenodo.7517346)]
 </dd>
 
 <dt>2022</dt>
 <dd>
-[Four-dimensional emittance measurement at the Spallation Neutron Source](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805).
-A. Hoover and N. Evans.
-*Nucl. Instrum. Methods Phys. Res., Sect. A 1041, 167376*
+**Four-dimensional emittance measurement at the Spallation Neutron Source** \
+A. Hoover and N. Evans \
+*Nucl. Instrum. Methods Phys. Res., Sect. A 1041, 167376* \
+[[link](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805)]
+[[arxiv](https://arxiv.org/pdf/2204.08303)]
 </dd>
 
 <dt>2021</dt>
 <dd>
-[Computation of the matched envelope of the Danilov distribution](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201).
-A. Hoover, N. Evans, and J. Holmes.
-*Phys. Rev. Accel. Beams 24.4, 044201*.
+**Computation of the matched envelope of the Danilov distribution** \
+A. Hoover, N. Evans, and J. Holmes \
+*Phys. Rev. Accel. Beams 24.4, 044201*  \
+[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201)]
 </dd>
 
 </dl>
