@@ -74,3 +74,41 @@ a:hover {
     display: none;
   }
 }
+
+
+// Link icons on home page
+.link-grid {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: 0.375rem;
+
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--bs-body-bg, #fff);
+
+  font-size: 0.95rem;
+  line-height: 1.2;
+
+  flex: 0 0 auto;
+}
+
+.link-card i {
+  font-size: 1.0rem;
+}
+
+.link-card:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+}

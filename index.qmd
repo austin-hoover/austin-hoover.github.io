@@ -373,14 +373,14 @@ A. Zhukov, A. Hoover, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen
 <dd>
 **Proton Driver for the Demonstrator and Muon Collider** \
 *US Muon Collider Annual Meeting* \
-[[slides](https://indico.uchicago.edu/event/479/contributions/1999)]
+[[slides](https://indico.uchicago.edu/event/479/contributions/1999/attachments/782/1296/main.pdf)]
 </dd>
 
 <dt>2025</dt>
 <dd>
 **Bunch rotation experiments and benchmarking at SNS** \
 *International Muon Collider Collaboration Meeting* \
-[[slides](https://indico.desy.de/event/45968/contributions/186224/)]
+[[slides](https://indico.desy.de/event/45968/contributions/186224/attachments/97097/133487/main.pptx)]
 </dd>
 
 <dt>2024</dt>
