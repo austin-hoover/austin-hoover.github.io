@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bc3a9b3051ff7be39b6b1d66678e3bac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d158de0ac62b55d816f0b84e391588a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-authors','listing-journal','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-journal','listing-date',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-authors","listing-journal","listing-date"],
+      searchColumns: ["listing-title","listing-author","listing-journal","listing-year"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -139,6 +139,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="style/style.css">
 <meta property="og:title" content="Test – Austin Hoover">
 <meta property="og:site_name" content="Austin Hoover">
 </head>
@@ -168,36 +169,13 @@ window.Quarto = {
     <a class="nav-link" href="./research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-papers" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Papers</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-papers">    
-        <li>
-    <a class="dropdown-item" href="./papers/index.html">
- <span class="dropdown-text">Journal</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./papers/conference.html">
- <span class="dropdown-text">Conference</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./papers/misc.html">
- <span class="dropdown-text">Miscellaneous</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./talks/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./news/index.html"> 
-<span class="menu-text">News</span></a>
+    <a class="nav-link" href="./publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./test.html" aria-current="page"> 
-<span class="menu-text">Test</span></a>
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -235,51 +213,19 @@ window.Quarto = {
 
 
 
+
+
 <div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th style="text-align: left;">
-Title
-</th>
-<th style="text-align: right;">
-Year
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1715745600000">
-<td style="padding: 15px 0; border-bottom: 1px solid #eee;">
-<div class="title" style="font-weight: bold; font-size: 1.1em; margin-bottom: 3px;">
-<pre><code>      &lt;a href="Scaling Laws for Neural Language Models" style="color: #1a0dab; text-decoration: none;"&gt;Scaling Laws for Neural Language Models&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/td&gt;
-  
-  &lt;td style="text-align: right; vertical-align: top; padding-top: 15px; color: #777;"&gt;
-    May 15, 2024
-  &lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr data-index='1' data-listing-date-sort='1672549200000'&gt;
-  &lt;td style="padding: 15px 0; border-bottom: 1px solid #eee;"&gt;
-    &lt;div class="title" style="font-weight: bold; font-size: 1.1em; margin-bottom: 3px;"&gt;
-      &lt;a href="A Paper Title" style="color: #1a0dab; text-decoration: none;"&gt;A Paper Title&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/td&gt;
-  
-  &lt;td style="text-align: right; vertical-align: top; padding-top: 15px; color: #777;"&gt;
-    Jan 1, 2023
-  &lt;/td&gt;
-&lt;/tr&gt;</code></pre>
-</div></td></tr></tbody>
-</table>
+<ul>
+<li>
+<a href="">Dummy title</a>
+</li>
+<li>
+2021
+</li>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
-<p>:::</p>
-<p>:::</p>
-
-</div></main></div>
-
- <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -680,7 +626,7 @@ Year
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 
 
 

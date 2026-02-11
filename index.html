@@ -37,10 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f1aadacce99040138bbb613f9330654f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-656ef8ab463ea9a143c18468d96623bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aaa377dbec73b16239ab98ba2de47f18.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d478e771651f89f6ec91d8672e2cfcb4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-aaa377dbec73b16239ab98ba2de47f18.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,6 +84,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.min.css">
 
 
+<link rel="stylesheet" href="style/style.css">
 <link rel="stylesheet" href="papers/style.css">
 <meta property="og:title" content="Austin Hoover">
 <meta property="og:description" content="">
@@ -89,7 +94,169 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 <meta property="og:image:width" content="1011">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,28 +281,9 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
     <a class="nav-link" href="./research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-papers" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Papers</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-papers">    
-        <li>
-    <a class="dropdown-item" href="./papers/index.html">
- <span class="dropdown-text">Journal</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./papers/conference.html">
- <span class="dropdown-text">Conference</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./papers/misc.html">
- <span class="dropdown-text">Miscellaneous</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./talks/index.html"> 
-<span class="menu-text">Talks</span></a>
+    <a class="nav-link" href="./publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./news/index.html"> 
@@ -144,6 +292,7 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -159,9 +308,10 @@ gtag('config', 'G-NS0H6D6VKL', { 'anonymize_ip': true});
 
 
 
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex: 1 1 250px;">
-<p><span style="font-size: 1.94em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span><br>
+<p><span style="font-size: 1.94em; opacity: 1.0; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span><br>
 Staff Scientist<br>
 Oak Ridge National Laboratory<br>
 hooveram@ornl.gov</p>
@@ -175,53 +325,7 @@ hooveram@ornl.gov</p>
 </div>
 </div>
 <p>I’m a Staff Scientist at Oak Ridge National Laboratory (ORNL), working in the Accelerator Physics Group at the Spallation Neutron Source (SNS). Previously, I completed a Ph.D.&nbsp;in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).</p>
-<p>My research focuses on the measurement, prediction, and control of intense beams in high-power accelerators. I’m specifically interested in (i) collective effects and instabilities, (ii) beam shaping, and (iii) phase space reconstruction. <a href="./research/index.html">Here</a> is a more detailed overview. I sometimes write about my work on my <a href="https://austin-hoover.github.io/blog/">blog</a>.</p>
-<section id="papers" class="level2">
-<h2 class="anchored" data-anchor-id="papers">Papers</h2>
-<dl class="papers-dl">
-<dt>
-2026
-</dt>
-<dd>
-<a href="https://doi.org/10.1103/bvwq-34jf">Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams</a>. N. Evans, A. Hoover. T. Gorlov, and V. Morozov. <em>Phys. Rev.&nbsp;Letters</em>.
-</dd>
-<dt>
-2025
-</dt>
-<dd>
-<a href="https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32">N-dimensional maximum-entropy tomography via particle sampling</a>. A. Hoover. <em>Phys. Rev.&nbsp;Accel. Beams 28, L084601</em>.
-</dd>
-<dt>
-2024
-</dt>
-<dd>
-<a href="https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802">Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam</a>. A. Hoover. <em>Phys. Rev.&nbsp;Accel. Beams 27, 122802</em>.
-</dd>
-<dt>
-2024
-</dt>
-<dd>
-<a href="https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163">High-dimensional maximum-entropy phase space tomography using normalizing flows</a>. A. Hoover, and J.C. Wong. <em>Phys. Rev.&nbsp;Research 6.3, 033163</em>.
-</dd>
-<dt>
-2023
-</dt>
-<dd>
-<a href="https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202">Analysis of a hadron beam in five-dimensional phase space</a>. A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau. <em>Phys. Rev.&nbsp;Accel. Beams 26.6, 064202</em>.
-</dd>
-<dt>
-2022
-</dt>
-<dd>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805">Four-dimensional emittance measurement at the Spallation Neutron Source</a>. A. Hoover and N. Evans. <em>Nucl. Instrum. Methods Phys. Res., Sect. A 1041, 167376</em>
-</dd>
-<dt>
-2021
-</dt>
-<dd>
-<a href="https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201">Computation of the matched envelope of the Danilov distribution</a>. A. Hoover, N. Evans, and J. Holmes. <em>Phys. Rev.&nbsp;Accel. Beams 24.4, 044201</em>.
-</dd>
-</dl>
+<p>My research focuses on measurement, prediction, and control of intense beams in high-power accelerators. I’m currently interested in collective effects and instabilities, phase space painting, and phase space reconstruction. See <a href="./research/index.html">here</a> for a bit more info and <a href="./publications/index.html">here</a> for a list of papers and talks. I also sometimes write about my work on my <a href="https://austin-hoover.github.io/blog/">blog</a>.</p>
 <div style="height: 5px;">
 
 </div>
@@ -240,11 +344,23 @@ hooveram@ornl.gov</p>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

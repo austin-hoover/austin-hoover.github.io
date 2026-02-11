@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/test/index.html",
+    "items": []
+  },
+  {
     "listing": "/test.html",
     "items": []
   }
