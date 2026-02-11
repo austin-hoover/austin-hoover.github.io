@@ -8,12 +8,17 @@ $h3-font-size: 1.20em;
 $h4-font-size: 1.0em;
 $h5-font-size: 1.0em;
 
-$body-color: black !default;
-$navbar-bg: rgba(black, 0.0);
-$navbar-fg: rgba(black, 1.0);
+$body-color: black;
+$navbar-bg: white;
+$navbar-fg: black;
 
-// $primary: rgb(18, 84, 127);  // muted
-$primary: rgb(26, 94, 173);  // slightly brighter
+h1, h2, h3, h4, h5, h6 {
+  color: black !important;
+  opacity: 1.0 !important;
+}
+
+// $primary: rgb(18, 84, 127);  // blue (muted)
+$primary: rgb(26, 94, 173);  // blue (slightly brighter)
 
 
 /*-- scss:rules --*/
@@ -32,51 +37,6 @@ a:hover {
 }
 
 // Link icons
-.icon-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.icon-list li {
-  display: grid;
-  grid-template-columns: 1.25rem auto;
-  gap: 0.5rem;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.icon-list i {
-  font-size: 1rem;
-  width: 1.25rem;   /* prevents icons from stretching */
-  text-align: center;
-}
-
-.icon-link {
-  display: grid;
-  grid-template-columns: 1.25rem auto;
-  gap: 0.5rem;
-  align-items: center;
-  text-decoration: none;
-  color: rgba(black, 0.7);          /* normal text color */
-}
-
-.icon-link:hover {
-  text-decoration: none;
-}
-
-.icon-link span {
-  white-space: nowrap;
-}
-
-@media (max-width: 900px) {
-  .sidebar-links {
-    display: none;
-  }
-}
-
-
-// Link icons on home page
 .link-grid {
   justify-content: center;
   align-items: center;
@@ -112,3 +72,49 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.03);
   text-decoration: none;
 }
+
+
+
+// // Link icons list
+// .icon-list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .icon-list li {
+//   display: grid;
+//   grid-template-columns: 1.25rem auto;
+//   gap: 0.5rem;
+//   align-items: center;
+//   margin-bottom: 0.5rem;
+// }
+
+// .icon-list i {
+//   font-size: 1rem;
+//   width: 1.25rem;
+//   text-align: center;
+// }
+
+// .icon-link {
+//   display: grid;
+//   grid-template-columns: 1.25rem auto;
+//   gap: 0.5rem;
+//   align-items: center;
+//   text-decoration: none;
+//   color: var(--bs-body-color);
+// }
+
+// .icon-link:hover {
+//   text-decoration: none;
+// }
+
+// .icon-link span {
+//   white-space: nowrap;
+// }
+
+// @media (max-width: 900px) {
+//   .sidebar-links {
+//     display: none;
+//   }
+// }

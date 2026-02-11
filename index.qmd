@@ -1,449 +1,72 @@
 ---
-title: "Austin Hoover"
 format:
   html:
-    grid:
-      body-width: 900px
     lightbox: false
     include-in-header:
       - text: |
           <link
             rel="stylesheet"
             href="_extensions/quarto-ext/fontawesome/assets/css/all.min.css">
-    css: style/style.css
+    css: papers/style.css
 ---
 
 
-::: {style="display: flex; flex-wrap: wrap;"}
+::: {style="display: flex; flex-wrap: wrap"}
 
+::: {style="flex: 1 1 250px;"}
+<span style="font-size: 1.94em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
+Staff Scientist \
+Oak Ridge National Laboratory \
+hooveram@ornl.gov
+:::
 
+::: {style="flex"}
+![](images/headshot.png){.rounded fig-align=right width=125px}
+:::
 
-::: {style="flex: 1 1 600px;"}
+:::
+
 
 I'm a Staff Scientist at Oak Ridge National Laboratory (ORNL), working in the Accelerator Physics Group at the Spallation Neutron Source (SNS). Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
 
-My research focuses on the measurement, prediction, and control of intense beams in high-power accelerators. I'm specifically interested in (i) collective effects and instabilities, (ii) beam shaping, and (iii) phase space reconstruction. [Here](./research/index.qmd) is a more detailed overview. I sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
+My research focuses on measurement, prediction, and control of intense beams in high-power accelerators. I'm currently interested in collective effects and instabilities, phase space painting, and phase space reconstruction. See [here](./research/index.qmd) for a bit more info and [here](./publications/index.qmd) for a list of papers and talks. I also sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/).
 
 
-## Papers
 
+<div style="height: 5px;"></div>
 
-<dl class="papers-dl">
+---
 
-<dt>2026</dt>
-<dd>
-**Demonstration of a novel phase space painting method in a coupled lattice to mitigate space charge in high-intensity hadron beams** \
-N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
-*Phys. Rev. Letters (Forthcoming)* \
-[[link](https://doi.org/10.1103/bvwq-34jf)]
-[[arxiv](https://arxiv.org/pdf/2601.13517)]
-[[data]](https://doi.org/10.5281/zenodo.15349989)
-</dd>
+<div style="height: 5px;"></div>
 
-<dt>2025</dt>
-<dd>
-**N-dimensional maximum-entropy tomography via particle sampling** \
-A. Hoover \
-*Phys. Rev. Accel. Beams 28, L084601* \
-[[link](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32)]
-[[arxiv](https://arxiv.org/pdf/2409.17915)]
-[[code](https://doi.org/10.5281/zenodo.15271632)]
-</dd>
+<div class="link-grid">
 
-<dt>2024</dt>
-<dd>
-**Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam** \
-A. Hoover \
-*Phys. Rev. Accel. Beams 27, 122802* \
-[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.27.122802)]
-[[arxiv](https://arxiv.org/pdf/2409.02862)]
-[[data](https://doi.org/10.5281/zenodo.14009840)]
-</dd>
+<a class="link-card" href="mailto:hooveram@ornl.gov">
+<i class="fa fa-envelope"></i>
+</a>
 
+<a class="link-card" href="https://orcid.org/0000-0001-5313-6962">
+<i class="fa-brands fa-orcid"></i>
+</a>
 
-<dt>2024</dt>
-<dd>
-**High-dimensional maximum-entropy phase space tomography using normalizing flows** \
-A. Hoover and J.C. Wong \
-*Phys. Rev. Research 6.3, 033163* \
-[[link](https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.6.033163)]
-[[arxiv](https://arxiv.org/pdf/2406.00236)]
-[[code](https://github.com/austin-hoover/ment-flow)]
-</dd>
+<a class="link-card" href="https://www.ornl.gov/staff-profile/austin-hoover">
+<i class="fa fa-id-badge"></i>
+</a>
 
-<dt>2023</dt>
-<dd>
-**Analysis of a hadron beam in five-dimensional phase space** \
-A. Hoover, K. Ruisard, A. Aleksandrov, A. Zhukov, and S. Cousineau \
-*Phys. Rev. Accel. Beams 26.6, 064202*  \
-[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.064202)]
-[[arxiv](https://arxiv.org/pdf/2301.04178)]
-[[data](https://doi.org/10.5281/zenodo.7517346)]
-</dd>
+<a class="link-card" href="https://www.linkedin.com/in/austinhoover0">
+<i class="fa-brands fa-linkedin"></i>
+</a>
 
-<dt>2022</dt>
-<dd>
-**Four-dimensional emittance measurement at the Spallation Neutron Source** \
-A. Hoover and N. Evans \
-*Nucl. Instrum. Methods Phys. Res., Sect. A 1041, 167376* \
-[[link](https://www.sciencedirect.com/science/article/abs/pii/S0168900222006805)]
-[[arxiv](https://arxiv.org/pdf/2204.08303)]
-</dd>
+<a class="link-card" href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao">
+<i class="fa-brands fa-google-scholar"></i>
+</a>
 
-<dt>2021</dt>
-<dd>
-**Computation of the matched envelope of the Danilov distribution** \
-A. Hoover, N. Evans, and J. Holmes \
-*Phys. Rev. Accel. Beams 24.4, 044201*  \
-[[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201)]
-</dd>
+<a class="link-card" href="https://github.com/austin-hoover">
+<i class="fa-brands fa-github"></i>
+</a>
 
-</dl>
-
-
-
-## Conference Proceedings
-
-
-<dl class="papers-dl">
-
-<dt>2025</dt>
-<dd>
-**High-dimensional maximum-entropy phase space tomography** \
-A. Hoover \
-*North American Particle Accelerator Conference* \
-[[paper](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf)]
-[[slides](https://drive.google.com/file/d/1D6URvUgqFryMU3Eq70PdiAzkym7n7SkZ/view?usp=share_link)]
-</dd>
-
-<dt>2025</dt>
-<dd>
-**Feasibility of proton bunch compression in an operational high-power accelerator** \
-A. Hoover, V. Morozov, C. Piller, A. Narayan \
-*North American Particle Accelerator Conference* \
-[[paper](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP033.pdf)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**MENT-Flow: maximum-entropy tomography using normalizing flows** \
-A. Hoover and C. Wong \
-*International Particle Accelerator Conference* \
-[[paper](https://www.jacow.org/ipac2024/pdf/WEPG65.pdf)]
-</dd>
-
-<dt>2023</dt>
-<dd>
-**The impact of high-dimensional phase space correlations on the beam dynamics in a linear accelerator** \
-A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov, A. Shishlo \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
-[[paper](https://accelconf.web.cern.ch/hb2023/papers/tuc1c2.pdf)]
-[[slides](https://accelconf.web.cern.ch/hb2023/talks/tuc1c2_talk.pdf)]
-</dd>
-
-<dt>2023</dt>
-<dd>
-**Detailed characterization of a five-dimensional phase space distribution** \
-A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov \
-*International Particle Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/ipac2023/pdf/WEPA028.pdf)]
-</dd>
-
-<dt>2022</dt>
-<dd>
-**Measurements of the five-dimensional phase space distribution of an intense ion beam** \
-A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, and A. Zhukov \
-*North American Particle Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/napac2022/papers/frxd3.pdf)]
-[[slides](https://proceedings.jacow.org/napac2022/talks/frxd3_talk.pdf)]
-</dd>
-
-<dt>2021</dt>
-<dd>
-**Development of an injection-painted self-consistent beam at the Spallation Neutron Source** \
-A. Hoover, N. Evans, T. Gorlov, J. Holmes \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
-[[paper](https://proceedings.jacow.org/hb2021/papers/moac3.pdf)]
-</dd>
-
-<dt>2021</dt>
-<dd>
-**Simulation of 4D emittance measurement at the Spallation Neutron Source** \
-A. Hoover, N. Evans \
-*International Particle Accelerator Conference* \
-[[paper](https://proceedings.jacow.org/ipac2021/papers/thpab180.pdf)]
-</dd>
-
-<dt>2021</dt>
-<dd>
-**Computation of the matched envelope of the Danilov distribution** \
-A. Hoover \
-*APS April Meeting* \
-[[slides](https://www.dropbox.com/scl/fi/9829dxlatyj53vjqt6ryn/2021-04-20_aps_match.key?rlkey=9w8ib7brvxfbzpagt0u22tvp8&st=nf6ity2l&dl=0)]
-</dd>
-
-</dl>
-
-
-
-### Coauthor
-
-
-<dl class="papers-dl">
-
-<dt>2025</dt>
-<dd>
-**Beam loss modeling and mitigation due to intra-beam stripping** \
-S. Kakkar, V. Morozov, L. Lee, N. Evans, A. Zhukov, A. Hoover \
-*North American Particle Accelerator Conference* \
-[[paper](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/THP014.pdf)]
-</dd>
-
-
-<dt>2025</dt>
-<dd>
-**Exploring space charge mitigation with eigenpainting at the SNS** \
-N.J. Evans, A. Hoover, T. Gorlov, V. Morozov \
-*North American Particle Accelerator Conference* \
-[[paper](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUP041.pdf)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**Progress toward halo modeling at the SNS Beam Test Facility** \
-K. Ruisard, A. Aleksandrov, A. Hoover, T. Thompson, and A. Zhukov \
-*Linear Accelerator Conference* \
-[[paper](https://proceedings.jacow.org/linac2024/pdf/THAA005.pdf)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**Proposed muon collider R&D at the SNS** \
-V. Morozov, A. Hoover, D. Stratakis, F. Pilat, N. Evans, and S. Cousineau \
-*International Particle Accelerator Conference* \
-[[paper](https://www.jacow.org/ipac2024/pdf/WEPR39.pdf)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**Measurement and modeling of beam transport in the FODO line of the Spallation Neutron Source Beam Test Facility** \
-T. Thompson, K. Ruisard, A. Hoover, A. Aleksandrov, and A. Zhukov \
-*International Particle Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/ipac2024/pdf/TUAN2.pdf)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**Status of Spallation Neutron Source Beam Test Facility and progress of beam dynamics studies** \
-K. Ruisard, A. Aleksandrov, S. Cousineau, R. Dickson, B. Han, A. Hoover, A. Shishlo, T. Thompson, V. Tzoganis, R. Welton, and A. Zhukov \
-*International Particle Accelerator Conference* \
-[[paper](https://www.jacow.org/ipac2024/pdf/THPC75.pdf)]
-</dd>
-
-<dt>2023</dt>
-<dd>
-**Self-consistent injection painting for space charge mitigation** \
-N. Evans, A. Hoover, T. Gorlov, V. Morozov \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
-[[paper](https://inspirehep.net/files/d31c7f076dcde3b2bade3c13963bd187)]
-</dd>
-
-<dt>2023</dt>
-<dd>
-**Measurements at peak operational beam current in the SNS beam test facility** \
-K. Ruisard, A. Hoover, A. Aleksandrov, A. Zhukov, S. Cousineau \
-*International Particle Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/ipac2023/pdf/WEPA027.pdf)]
-</dd>
-
-<dt>2023</dt>
-<dd>
-**Phase space painting of a self-consistent Danilov distribution in the SNS Ring** \
-N. Evans, A. Hoover, T. Gorlov, V. Morozov \
-*International Particle Accelerator Conference* \
-[[paper](https://proceedings.jacow.org/ipac2023/pdf/TUPM115.pdf)]
-</dd>
-
-<dt>2022</dt>
-<dd>
-**Model/measurement comparison of the transverse phase space distribution of an RFQ-generated bunch at the SNS BTF** \
-K. Ruisard, A. Aleksandrov, S. Cousineau, A. Hoover, A. Zhukov \
-*North American Particle Accelerator Conference* \
-[[paper](https://www.osti.gov/servlets/purl/1973325)]
-</dd>
-
-<dt>2022</dt>
-<dd>
-**Observation of current- driven features of 2.5 MeV ion bunch with complete and efficient 5D measurements at the SNS Beam Test Facility** \
-K. Ruisard, A. Aleksandrov, S. Cousineau. A. Hoover, A. Zhukov \
-*International Linear Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/linac2022/papers/tupoge20.pdf)]
-</dd>
-
-<dt>2021</dt>
-<dd>
-**Open XAL Status Report 2022** \
-A. Zhukov, A. Hoover, A. Shishlo,  J. F. Esteban Müller, E. Laface, Y. Levinsen, N. Milas \
-*International Particle Accelerator Conference* \
-[[paper](https://accelconf.web.cern.ch/ipac2022/papers/tupotk029.pdf)]
-</dd>
-
-
-</dl>
-
-
-
-
-## Workshop and Meeting Presentations
-
-<dl class="papers-dl">
-
-<dt>2025</dt>
-<dd>
-**Proton Driver for the Demonstrator and Muon Collider** \
-*US Muon Collider Annual Meeting* \
-[[slides](https://indico.uchicago.edu/event/479/contributions/1999/attachments/782/1296/main.pdf)]
-</dd>
-
-<dt>2025</dt>
-<dd>
-**Bunch rotation experiments and benchmarking at SNS** \
-*International Muon Collider Collaboration Meeting* \
-[[slides](https://indico.desy.de/event/45968/contributions/186224/attachments/97097/133487/main.pptx)]
-</dd>
-
-<dt>2024</dt>
-<dd>
-**SNS accelerator synergies for muon collider R&D** \
-*Princeton Muon Collider Organizational Workshop* \
-[[slides](https://agenda.hep.wisc.edu/event/2140/contributions/30224/attachments/9569/11827/2024-02-23_sns_synergies.pdf)]
-</dd>
-
-<dt>2022</dt>
-<dd>
-**Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation** \
-*ICFA Mini-Workshop on Space Charge* \
-[[slides](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf)]
-</dd>
-
-
-</dl>
-
-
-
-## Lectures
-
-<dl class="papers-dl">
-
-<dt>2022</dt>
-<dd>
-**Accelerator research and development at the Spallation Neutron Source** \
-*Particle Accelerators: Technology and Applications (UTK graduate course)* \
-[[slides](https://www.dropbox.com/scl/fi/vnbsr8hp69mqsu9hwgjcy/2022-04-07_utk_sns_research.pdf?rlkey=gild5nf32ml15kc0qwjx0xsu2&st=zzpno4tf&dl=0)]
-</dd>
-
-</dl>
-
-## Miscellaneous
-
-
-<dl class="papers-dl">
-
-<dt>2022</dt>
-<dd>
-**Six-dimensional distributions at the SNS Beam Test Facility** \
-K. Ruisard, A. Aleksandrov, A. Hoover \
-*APS Division of Physics of Beams Annual Newsletter* (page 38) \
-[[link](https://higherlogicdownload.s3.amazonaws.com/APS/9cf62627-7088-4bd3-bf97-6adfc913f623/UploadedImages/APS_DPB_Newsletter_2022-2-2.pdf)]
-</dd>
-
-<dt>2022</dt>
-<dd>
-**Towards the production of a self-consistent phase space distribution** \
-A. Hoover. *PhD Diss., University of Tennessee* \
-[[link](https://trace.tennessee.edu/utk_graddiss/7228)]
-</dd>
-
-</dl>
-
-:::
-
-
-
-
-::: {style="flex; margin-left: 50px"}
-
-
-![](/images/headshot.png){.rounded fig-align=left width=200px}
-<div style="height: 0px;"></div>
-<span style="font-size: 1.25em; font-weight: 600; margin-top: 0; padding-top: 0">Austin Hoover</span> \
-<div style="height: 3px;"></div>
-Staff Scientist \
-Oak Ridge National Laboratory 
-
-<div style="height: 4px;"></div>
-
-
-<div class="sidebar-links" style="width: 0;">
-
-<ul class="icon-list">
-  <li>
-    <a href="mailto:hooveram.ornl.gov" class="icon-link">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-      <span>hooveram@ornl.gov</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://orcid.org/0000-0001-5313-6962" class="icon-link">
-      <i class="fa-brands fa-orcid" aria-hidden="true"></i>
-      <span>ORCID</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://www.ornl.gov/staff-profile/austin-hoover" class="icon-link">
-      <i class="fa fa-id-badge" aria-hidden="true"></i>
-      <span>ORNL</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://www.linkedin.com/in/austinhoover0" class="icon-link">
-      <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-      <span>LinkedIn</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://scholar.google.com/citations?user=ReHwHZcAAAAJ&hl=en&oi=ao" class="icon-link">
-      <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-      <span>Google Scholar</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://github.com/austin-hoover" class="icon-link">
-      <i class="fa-brands fa-github" aria-hidden="true"></i>
-      <span>GitHub</span>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://austin-hoover.github.io/blog" class="icon-link">
-      <i class="fa fa-pen" aria-hidden="true"></i>
-      <span>Blog</span>
-    </a>
-  </li>
-
-</ul>
+<a class="link-card" href="https://austin-hoover.github.io/blog">
+<i class="fa fa-pen"></i>
+</a>
 
 </div>
-
-:::
-
-
-
-
-
-
-:::
