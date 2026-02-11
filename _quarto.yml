@@ -19,7 +19,8 @@ format:
   html:
     theme: 
       light: [default, style/custom.scss] 
-    fontsize: 14px  
+      dark : [default, style/custom_dark.scss] 
+    fontsize: 14px
     grid:
       body-width: 673px
     lightbox: true

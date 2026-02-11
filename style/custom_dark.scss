@@ -1,0 +1,60 @@
+@import "./custom.scss";
+
+
+/*-- scss:functions --*/
+
+
+
+/*-- scss:defaults --*/
+
+$primary: rgb(38, 152, 186);  // blue (from al-folio)
+$navbar-fg: white;
+$navbar-bg: rgb(20, 20, 20);
+$body-color: rgba(white, 0.9);
+$body-bg: rgb(20, 20, 20);
+$code-block-bg: rgb(40, 40, 40);
+$code-color: $body-color;  // inline code text
+$code-bg: $code-block-bg;  // inline code background
+$table-hover-bg: rgb(35, 35, 35);
+
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+  opacity: 1.0 !important;
+}
+
+.header-section-number {
+    // color: white; 
+}
+
+h2, .h2 {
+    border-bottom-color: rgb(50, 50, 50) !important;
+}
+
+.cell-output {
+    pre, code {
+        color: $body-color !important;
+    }
+}
+
+.quarto-listing-table {
+    border-color: rgb(20, 20, 20, 0);
+}
+
+.quarto-listing-table th {
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-top-color: white;
+    border-top-width: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+}
+
+blockquote {
+    border-left: .25rem solid rgb(40, 40, 40);
+}

@@ -2,13 +2,13 @@
 
 $font-family-sans-serif: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-$h1-font-size: 2.00em;
-$h2-font-size: 1.55em;
+$h1-font-size: 2.0em;
+$h2-font-size: 1.5em;
 $h3-font-size: 1.20em;
 $h4-font-size: 1.0em;
 $h5-font-size: 1.0em;
 
-$body-color: black;
+$body-color: rgba(black, 0.9);
 $navbar-bg: white;
 $navbar-fg: black;
 
@@ -17,22 +17,22 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1.0 !important;
 }
 
-// $primary: rgb(18, 84, 127);  // blue (muted)
-$primary: rgb(26, 94, 173);  // blue (slightly brighter)
-
+// $primary: rgb(18, 84, 127);  // blue (muted, from john urschel)
+$primary: rgb(26, 94, 173);  // blue (slightly brighter, from andrew gelman)
+// $primary: rgb(38, 152, 186);  // blue (from al-folio)
 
 /*-- scss:rules --*/
 
 // Hyperlink underlining
 a, {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .navbar {
   a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 

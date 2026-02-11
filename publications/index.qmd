@@ -17,7 +17,7 @@ N. Evans, A. Hoover. T. Gorlov, and V. Morozov.
 *Phys. Rev. Letters (Forthcoming)*.
 [[link](https://doi.org/10.1103/bvwq-34jf)]
 [[arxiv](https://arxiv.org/pdf/2601.13517)]
-[[data]](https://doi.org/10.5281/zenodo.15349989)
+[[data](https://doi.org/10.5281/zenodo.15349989)]
 </dd>
 
 <dt>2025</dt>
