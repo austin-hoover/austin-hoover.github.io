@@ -1,0 +1,20 @@
+.papers-dl {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  row-gap: 0.75rem;
+}
+
+.papers-dl dt {
+  font-weight: 400;
+  font-color: rgba(black, 0.85);
+}
+
+.papers-dl dd {
+  margin: 0;
+}
+
+
+/* Set hard limit on page width. */
+body {
+  /* min-width: 400px; */ 
+}
