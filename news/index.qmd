@@ -25,6 +25,9 @@ format:
 <dt>MAY 2025</dt>
 <dd>Talk: *Bunch rotation experiments and benchmarking at SNS* at the IMCC Annual Meeting in Hamburg. (Presented remotely.)</dd>
 
+<dt>DEC 2024</dt>
+<dd>Paper: [Four-dimensional phase space tomography from one-dimensional measurements of a hadron beam](https://arxiv.org/pdf/2409.02862) accepted for publication in PRAB.</dd>
+
 <dt>JUL 2024</dt>
 <dd>Paper: *High-dimensional maximum-entropy phase space tomography using normalizing flows* accepted for publication in PRResearch. Coauthor: Jonathan Chun Wong.</dd>
 
