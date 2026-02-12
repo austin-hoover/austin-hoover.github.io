@@ -1,0 +1,13 @@
+.papers-dl {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  row-gap: 0.75rem;
+}
+
+.papers-dl dt {
+  font-weight: 400;
+}
+
+.papers-dl dd {
+  margin: 0;
+}
