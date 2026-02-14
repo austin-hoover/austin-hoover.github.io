@@ -11,15 +11,21 @@ website:
       - text: "Research"
         href: ./research/index.qmd
       - text: "Publications"
-        href: ./publications/index.qmd
+        menu:
+          - href: ./publications/index.qmd
+            text: "Papers"
+          - href: ./publications/presentations.qmd
+            text: "Presentations"
+          - href: ./publications/misc.qmd
+            text: "Miscellaneous"
       - text: "News"
         href: ./news/index.qmd
   google-analytics: "G-NS0H6D6VKL"
 format:
   html:
     theme: 
-      light: [default, style/custom.scss] 
-      dark : [default, style/custom_dark.scss] 
+      - default
+      - style/custom.scss
     fontsize: 13px
     grid:
       body-width: 625px
