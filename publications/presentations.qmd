@@ -18,7 +18,7 @@ format:
 **High-dimensional maximum-entropy phase space tomography** \
 *North American Particle Accelerator Conference* \
 [[paper](https://prebys.physics.ucdavis.edu/NAPAC-25/proceedings/pdf/TUZN01.pdf)]
-[[slides](https://drive.google.com/file/d/1D6URvUgqFryMU3Eq70PdiAzkym7n7SkZ/view?usp=share_link)]
+[[slides](https://proceedings.jacow.org/napac2025/pdf/TUZN01_talk.pdf)]
 </dd>
 
 <dt>2025</dt>
