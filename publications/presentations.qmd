@@ -13,6 +13,12 @@ format:
 
 <dl class="papers-dl">
 
+<dt>2026</dt>
+<dd>
+**Repurposing Existing Accelerator Facilities for Muon Collider R&D** \
+*APS Global Physics Summit* \
+</dd>
+
 <dt>2025</dt>
 <dd>
 **High-dimensional maximum-entropy phase space tomography** \
