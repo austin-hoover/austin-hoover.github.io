@@ -17,6 +17,7 @@ format:
 <dd>
 **Repurposing Existing Accelerator Facilities for Muon Collider R&D** \
 *APS Global Physics Summit* \
+[[slides](../files/2026-03-17_aps.pdf)]
 </dd>
 
 <dt>2025</dt>
