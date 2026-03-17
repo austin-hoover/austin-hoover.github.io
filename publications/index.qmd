@@ -21,7 +21,7 @@ N. Evans, A. Hoover. T. Gorlov, and V. Morozov \
 <dd>
 **N-dimensional maximum-entropy tomography via particle sampling** \
 A. Hoover \
-*Phys. Rev. Accel. Beams 28, L084601* \
+*Phys. Rev. Accel. Beams 28, L084601* (Letter, Editor's Choice) \
 [[link](https://journals.aps.org/prab/pdf/10.1103/zl2h-3v32)]
 [[arxiv](https://arxiv.org/pdf/2409.17915)]
 [[code](https://doi.org/10.5281/zenodo.15271632)]
