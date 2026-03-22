@@ -9,7 +9,7 @@ format:
 
 <dt>MAR 2026</dt>
 <dd>
-Talk: *Repurposing Existing Accelerator Facilities for Muon Collider R&D* at APS Global Physics Summit in Denver.
+Talk: [Repurposing Existing Accelerator Facilities for Muon Collider R&D](../files/2026-03-17_aps.pdf) at the APS Global Physics Summit in Denver.
 </dd>
 
 <dt>JAN 2026</dt>
