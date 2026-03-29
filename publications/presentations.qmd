@@ -121,7 +121,7 @@ A. Hoover, C. Wong \
 <dd>
 **Detailed characterization of a five-dimensional phase space distribution** \
 A. Hoover, K. Ruisard, A. Aleksandrov, S. Cousineau, A. Zhukov \
-*International Particle Accelerator Conference*.
+*International Particle Accelerator Conference* \
 [[paper](https://accelconf.web.cern.ch/ipac2023/pdf/WEPA028.pdf)]
 </dd>
 

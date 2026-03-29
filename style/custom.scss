@@ -11,6 +11,14 @@ $h5-font-size: 1.0em;
 $body-color: black;
 $navbar-bg: white;
 $navbar-fg: black;
+$link-decoration: none;
+
+// $primary: rgb(18, 84, 127);  // blue (muted, from john urschel)
+$primary: rgb(26, 94, 173);  // blue (slightly brighter, from andrew gelman)
+// $primary: rgb(38, 152, 186);  // blue (from al-folio)
+
+
+/*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
   color: black !important;
@@ -20,25 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 
 strong, b {
   font-weight: 600 !important;
-}
-
-// $primary: rgb(18, 84, 127);  // blue (muted, from john urschel)
-$primary: rgb(26, 94, 173);  // blue (slightly brighter, from andrew gelman)
-// $primary: rgb(38, 152, 186);  // blue (from al-folio)
-
-/*-- scss:rules --*/
-
-// Hyperlink underlining
-a, {
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: underline !important;
-}
-.navbar {
-  a:hover {
-    text-decoration: none !important;
-  }
 }
 
 // Link icons
