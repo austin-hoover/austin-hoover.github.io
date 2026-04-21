@@ -11,13 +11,9 @@ website:
       - text: "Research"
         href: ./research/index.qmd
       - text: "Publications"
-        menu:
-          - href: ./publications/index.qmd
-            text: "Papers"
-          - href: ./publications/presentations.qmd
-            text: "Presentations"
-          - href: ./publications/misc.qmd
-            text: "Miscellaneous"
+        href: ./publications/index.qmd
+      - text: "Presentations"
+        href: ./presentations/index.qmd
       - text: "News"
         href: ./news/index.qmd
   google-analytics: "G-NS0H6D6VKL"

@@ -1,9 +1,12 @@
 ---
-title: "Papers and Preprints"
+title: "Publications"
 format:
   html:
     css: ../style/style.css
 ---
+
+
+## Journal Articles
 
 <dl class="papers-dl">
 
@@ -73,6 +76,29 @@ A. Hoover and N. Evans \
 A. Hoover, N. Evans, and J. Holmes \
 *Phys. Rev. Accel. Beams 24.4, 044201* \
 [[link](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.24.044201)]
+</dd>
+
+</dl>
+
+
+## Miscellaneous
+
+<dl class="papers-dl">
+
+<dt>2022</dt>
+<dd>
+**Six-dimensional distributions at the SNS Beam Test Facility** \
+K. Ruisard, A. Aleksandrov, A. Hoover \
+*APS Division of Physics of Beams Annual Newsletter* (page 38) \
+[[link](https://higherlogicdownload.s3.amazonaws.com/APS/9cf62627-7088-4bd3-bf97-6adfc913f623/UploadedImages/APS_DPB_Newsletter_2022-2-2.pdf)]
+</dd>
+
+<dt>2022</dt>
+<dd>
+**Towards the production of a self-consistent phase space distribution** \
+A. Hoover \
+*PhD Diss., University of Tennessee* \
+[[link](https://trace.tennessee.edu/utk_graddiss/7228)]
 </dd>
 
 </dl>
