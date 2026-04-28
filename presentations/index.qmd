@@ -65,13 +65,6 @@ format:
 [[slides](https://proceedings.jacow.org/napac2022/talks/frxd3_talk.pdf)]
 </dd>
 
-<dt>2021</dt>
-<dd>
-**Development of an injection-painted self-consistent beam at the Spallation Neutron Source** \
-*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
-[[paper](https://proceedings.jacow.org/hb2021/papers/moac3.pdf)]
-</dd>
-
 <dt>2022</dt>
 <dd>
 **Accelerator research and development at the Spallation Neutron Source** \
@@ -79,18 +72,26 @@ format:
 [[slides](https://www.dropbox.com/scl/fi/vnbsr8hp69mqsu9hwgjcy/2022-04-07_utk_sns_research.pdf?rlkey=gild5nf32ml15kc0qwjx0xsu2&st=zzpno4tf&dl=0)]
 </dd>
 
-<dt>2021</dt>
-<dd>
-**Computation of the matched envelope of the Danilov distribution** \
-*APS April Meeting* \
-[[slides](https://www.dropbox.com/scl/fi/9829dxlatyj53vjqt6ryn/2021-04-20_aps_match.key?rlkey=9w8ib7brvxfbzpagt0u22tvp8&st=nf6ity2l&dl=0)]
-</dd>
-
 <dt>2022</dt>
 <dd>
 **Self-consistent, angular-momentum-dominated hadron beams for space charge mitigation** \
 *ICFA Mini-Workshop on Space Charge* \
 [[slides](https://conference.sns.gov/event/335/contributions/528/attachments/892/8194/2022-10-26_Hoover_space_charge_workshop.pdf)]
+</dd>
+
+
+<dt>2021</dt>
+<dd>
+**Development of an injection-painted self-consistent beam at the Spallation Neutron Source** \
+*ICFA Workshop on High-Intensity and High-Brightness Hadron Beams* \
+[[paper](https://proceedings.jacow.org/hb2021/papers/moac3.pdf)]
+</dd>
+
+<dt>2021</dt>
+<dd>
+**Computation of the matched envelope of the Danilov distribution** \
+*APS April Meeting* \
+[[slides](https://www.dropbox.com/scl/fi/9829dxlatyj53vjqt6ryn/2021-04-20_aps_match.key?rlkey=9w8ib7brvxfbzpagt0u22tvp8&st=nf6ity2l&dl=0)]
 </dd>
 
 </dl>
