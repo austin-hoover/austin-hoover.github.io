@@ -1,0 +1,14 @@
+.page-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.left-column {
+  flex: 0 0 220px;   /* fixed width */
+}
+
+.main-column {
+  flex: 1 1 auto;   /* fill remaining space */
+  min-width: 0;     /* important for long content */
+}
