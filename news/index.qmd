@@ -7,6 +7,11 @@ format:
 
 <dl class="news-dl">
 
+<dt>MAY 2026</dt>
+<dd>
+Poster: *Search for Vlasov-Poisson equilibrium distributions using generative models* at IPAC26 in Normandy, France.
+</dd>
+
 <dt>MAR 2026</dt>
 <dd>
 Talk: [Repurposing Existing Accelerator Facilities for Muon Collider R&D](../files/2026-03-17_aps.pdf) at the APS Global Physics Summit in Denver.
