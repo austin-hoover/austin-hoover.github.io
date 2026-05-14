@@ -2,6 +2,7 @@
 title: "Presentations"
 format:
   html:
+    toc: true
     lightbox: false
     css: ../style/style.css
 ---
