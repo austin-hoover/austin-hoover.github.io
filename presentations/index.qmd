@@ -102,6 +102,14 @@ format:
 
 <dl class="papers-dl">
 
+<dt>2026</dt>
+<dd>
+**Search for Vlasov-Poisson equilibrium distributions using generative models** \
+A. Hoover \
+*International Particle Accelerator Conference* \
+[[paper](../files/2026_ipac.pdf)]
+</dd>
+
 <dt>2025</dt>
 <dd>
 **Feasibility of proton bunch compression in an operational high-power accelerator** \
