@@ -16,6 +16,13 @@ format:
 
 <dt>2026</dt>
 <dd>
+**Bunch compression experiments at SNS** \
+*International Muon Collider Collaboration Annual Meeting* \
+[[slides](https://indico.cern.ch/event/1615465/contributions/7137183/)]
+</dd>
+
+<dt>2026</dt>
+<dd>
 **Repurposing Existing Accelerator Facilities for Muon Collider R&D** \
 *APS Global Physics Summit* \
 [[slides](../files/2026-03-17_aps.pdf)]
@@ -108,7 +115,7 @@ format:
 **Search for Vlasov-Poisson equilibrium distributions using generative models** \
 A. Hoover \
 *International Particle Accelerator Conference* \
-[[paper](../files/2026_ipac.pdf)]
+[[paper](https://ipac26.org/prepress/pdf/THP5350.pdf)]
 </dd>
 
 <dt>2025</dt>
