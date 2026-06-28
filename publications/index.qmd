@@ -2,7 +2,7 @@
 title: "Publications"
 format:
   html:
-    css: ../style/style.css
+    css: custom.css
 ---
 
 

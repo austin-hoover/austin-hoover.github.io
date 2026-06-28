@@ -4,7 +4,7 @@ format:
   html:
     toc: true
     lightbox: false
-    css: ../style/style.css
+    css: custom.css
 ---
 
 *Note: papers at conferences such as IPAC and NAPAC are limited to three pages in length and are meant to complement posters or talks. They are not peer reviewed and often report work in progress or summarize published work. (There is an option for [light peer review](https://www.ipac26.org/light-peer-review/) but I've never tried it.)*

@@ -17,3 +17,7 @@
 body {
   /* min-width: 400px;  */
 }
+
+a {
+  text-decoration: none;
+}
