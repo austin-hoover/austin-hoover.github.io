@@ -7,6 +7,11 @@ format:
 
 <dl class="news-dl">
 
+<dt>JUL 2026</dt>
+<dd>
+Co-instructor for the course [*Beam Physics with Intense Space Charge*](https://people.frib.msu.edu/~lund/uspas/bpisc_2026/) at USPAS in St. Paul.
+</dd>
+
 <dt>JUN 2026</dt>
 <dd>
 Talk: [Bunch compression experiments at SNS](https://indico.cern.ch/event/1615465/contributions/7137183/) at the IMCC Annual Meeting at CERN (presented remotely).
