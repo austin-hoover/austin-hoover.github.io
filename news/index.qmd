@@ -7,6 +7,11 @@ format:
 
 <dl class="news-dl">
 
+<dt>AUG 2026</dt>
+<dd>
+Talk: [4D phase space tomography from 1D measurements](https://indico.jacow.org/event/117/contributions/15382/attachments/2514/8986/MO1P001-Austin_Hoover.pdf) at LINAC 2026 in Daejeon, South Korea.
+</dd>
+
 <dt>JUL 2026</dt>
 <dd>
 Co-instructor for the course [*Beam Physics with Intense Space Charge*](https://people.frib.msu.edu/~lund/uspas/bpisc_2026/) at USPAS in St. Paul.
