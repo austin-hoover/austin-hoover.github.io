@@ -7,6 +7,17 @@ format:
 
 <dl class="news-dl">
 
+<dt>SEPT 2026</dt>
+<dd>
+Talk: [Designing experiments to study beam dynamics at high space charge intensities in the SNS accumulator ring](https://indico.global/event/15713/contributions/162546/) at Space Charge Workshop 2026 in Oxford, UK.
+</dd>
+
+<dt>SEPT 2026</dt>
+<dd>
+Talk: [Phase space painting into non-planar modes for space charge mitigation](https://indico.global/event/15713/contributions/162570/) at Space Charge Workshop 2026 in Oxford, UK.
+</dd>
+
+
 <dt>AUG 2026</dt>
 <dd>
 Talk: [4D phase space tomography from 1D measurements](https://indico.jacow.org/event/117/contributions/15382/attachments/2514/8986/MO1P001-Austin_Hoover.pdf) at LINAC 2026 in Daejeon, South Korea.
