@@ -7,7 +7,6 @@ format:
           <link
             rel="stylesheet"
             href="_extensions/quarto-ext/fontawesome/assets/css/all.min.css">
-    css: papers/style.css
 ---
 
 
@@ -26,7 +25,7 @@ format:
 
 I'm a Staff Scientist at Oak Ridge National Laboratory (ORNL), working in the Accelerator Physics Group at the Spallation Neutron Source (SNS). Previously, I completed a Ph.D. in physics at the University of Tennessee, Knoxville and a B.S. in physics at Wheaton College (IL).
 
-My research focuses on measurement, prediction, and control of intense beams in high-power accelerators. I'm currently interested in collective effects and instabilities, phase space painting, and phase space reconstruction. See [here](./research/index.qmd) for a bit more info and [here](./publications/index.qmd) for a list of papers/talks. I also sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/). 
+My research focuses on measurement, prediction, and control of intense beams in high-power accelerators. I'm currently interested in collective effects and instabilities, phase space painting, and phase space reconstruction. See [here](./research/index.qmd) for a bit more info. I also sometimes write about my work on my [blog](https://austin-hoover.github.io/blog/). Here is my [CV](./cv/index.qmd).
 
 
 <div style="height: 5px;"></div>
