@@ -5,7 +5,7 @@ csl: ./american-physics-society.csl
 format:
   html:
     grid:
-      body-width: 600px
+      body-width: 660px
 ---
 
 My research focuses on the measurement, prediction, and control of intense beams in high-power hadron accelerators.

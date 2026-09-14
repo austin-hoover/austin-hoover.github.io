@@ -12,19 +12,17 @@ website:
         href: ./news/index.qmd
       - text: "Research"
         href: ./research/index.qmd
-      - text: "Publications"
-        href: ./publications/index.qmd
-      - text: "Presentations"
-        href: ./presentations/index.qmd
+      - text: "CV"
+        href: ./cv/index.qmd
   google-analytics: "G-NS0H6D6VKL"
 format:
   html:
     theme: 
       light: [default, style/custom.scss]
       dark: [default, style/custom_dark.scss]
-    fontsize: 13px
+    fontsize: 14px
     grid:
-      body-width: 625px
+      body-width: 690px
     lightbox: true
     html-math-method: mathjax
     highlight-style: github    

@@ -1,0 +1,96 @@
+.cv-header {
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+#title-block-header {
+  margin-bottom: 0.65rem;
+  text-align: center;
+}
+
+.cv-contact {
+  font-size: 0.95rem;
+}
+
+.cv-contact p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.1rem;
+  margin-bottom: 0;
+}
+
+.cv-contact a {
+  text-decoration: none;
+}
+
+.cv-contact a:hover {
+  text-decoration: underline;
+}
+
+.contact-separator {
+  display: none;
+}
+
+main h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.cv-page h3 {
+  margin-top: 1.35rem;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 0.75rem 1.25rem;
+  align-items: start;
+}
+
+.cv-year {
+  min-width: 4.8rem;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-entry a {
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .cv-year {
+    min-width: 0;
+    text-align: left;
+    color: var(--bs-secondary-color);
+  }
+}
+
+@media print {
+  .navbar,
+  .quarto-secondary-nav,
+  #quarto-margin-sidebar,
+  #quarto-header {
+    display: none !important;
+  }
+
+  main {
+    font-size: 10pt;
+  }
+
+  .cv-entry {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}

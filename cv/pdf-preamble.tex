@@ -1,0 +1,30 @@
+\usepackage{titlesec}
+\usepackage{ragged2e}
+
+\titleformat{\section}
+  {\Large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{0.15em}\titlerule]
+\titleformat{\subsection}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\section}{0pt}{1.4em}{0.6em}
+\titlespacing*{\subsection}{0pt}{1em}{0.35em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\LARGE\bfseries \@title\par}
+  \end{center}
+  \vspace{0.25em}%
+}
+\makeatother
