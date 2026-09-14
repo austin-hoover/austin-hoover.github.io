@@ -18,8 +18,8 @@ website:
 format:
   html:
     theme: 
-      light: [default, style/custom.scss]
-      dark: [default, style/custom_dark.scss]
+      light: [default, style/theme.scss]
+      dark: [default, style/theme_dark.scss]
     fontsize: 14px
     grid:
       body-width: 690px
