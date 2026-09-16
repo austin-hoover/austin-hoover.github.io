@@ -1,0 +1,35 @@
+---
+title: "Research questions and topics"
+author: Austin Hoover
+date-modified: 2026-09-16
+---
+
+This is a random list of questions/topics that I'm working on, have worked on, or would like to work on at some point.
+
+* Equilibrium distributions
+    * Are there smooth equilibrium or near-equilibrium phase space distributions in non-continuous focusing channels? 
+        * I've started working on applying generative models to this problem. Some initial progress [here](https://ipac26.org/prepress/pdf/THP5350.pdf). 
+        * I plan to work with Kiran Sonnad to apply his [Lie transform method](https://doi.org/10.1063/1.4919033) to realistic lattices. Maybe this method could be combined with generative model approach?
+        * Are there any solutions in non-continuous *nonlinear* lattices?
+    * Can we extend Gluckstern's [stability analysis](https://cds.cern.ch/record/140869/files/p145.pdf) of KV distributions to include cross-plane coupling? 
+    * Are there linear-force equilibrium distributions [beyond](https://doi.org/10.1103/PhysRevSTAB.6.094202) the standard KV distribution in 4D?
+* Phase space painting
+    * What is the optimal phase space painting path for space charge mitigation? 
+    * How would one approach phase space painting in nonlinear rings?
+    * *Eigenpainting*: a method to generate vortex beams in rings. See a recent paper [here](https://doi.org/10.1103/bvwq-34jf).
+        * Can eigenpainting mitigate space charge effects, such as halo formation? If so, how? 
+        * What is the lower limit on the four-dimensional emittance? 
+        * Can a small emittance be preserved over long time scales, even with intrabeam scattering?
+        * Could this method be used to increase hadron collider luminosity using round-to-flat transformations?
+* What is the intensity limit in an accumulator ring? Can we get anywhere near the space charge limit? Current machines operate at only a few percent tune shift.
+* Phase space tomography
+    * Application of maximum-entropy methods
+    * How should we quantify uncertainty in phase space tomography? I'm working on applying Bayesian methods to this problem.
+    * What are the limits on the reconstructed dynamic range? Can we infer beam halo distributions in 2D/4D/6D? MENT seems like a promising algorithm here.
+* Muon colliders
+* Longitudinal compression of intense proton bunches
+* Beam loss prediction and optimization of high-power hadron accelerators
+* Modeling of intense beams in accelerators using PIC codes
+* Experimental validation of beam physics theory, especially space-charge-driven resonance and instability
+* Modeling of intrabeam stripping using generative models (normalizing flows)
+* Can we use cross-plane coupling to our advantage when designing accelerators?

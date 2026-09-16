@@ -1,0 +1,7 @@
+---
+title: "Teaching"
+---
+
+My role at ORNL does not include any teaching duties, but I have volunteered to help teach at the [US Particle Accelerator School (USPAS)](https://uspas.fnal.gov). 
+
+* July 2026: [Beam Physics with Intense Space Charge](https://people.frib.msu.edu/~lund/uspas/bpisc_2026/) in St. Paul, Minnesota.

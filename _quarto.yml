@@ -11,9 +11,15 @@ website:
       - text: "News"
         href: ./news/index.qmd
       - text: "Research"
-        href: ./research/index.qmd
+        menu:
+          - text: "Overview"
+            href: ./research/index.qmd
+          - text: "Questions"
+            href: ./research/questions.qmd
       - text: "CV"
         href: ./cv/index.qmd
+      - text: "Teaching"
+        href: ./teaching/index.qmd
   google-analytics: "G-NS0H6D6VKL"
 format:
   html:
