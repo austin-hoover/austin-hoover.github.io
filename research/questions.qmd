@@ -1,5 +1,5 @@
 ---
-title: "Research questions and topics"
+title: "Research questions"
 author: Austin Hoover
 date-modified: 2026-09-16
 ---
