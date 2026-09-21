@@ -23,5 +23,6 @@ Some questions that I'm working on, have worked on, or would like to work on at 
 * How should we quantify uncertainty in phase space tomography?
 * How do we incorporate maximum-entropy principles in Bayesian inverse problems?
 * What are the dynamic range limits in phase space tomography? Can we infer beam halo distributions in 2D/4D/6D? MENT seems like a promising algorithm here.
+* In phase space tomography, does the inclusion of space charge increase or decrease the size of the feasible set? For example, could space chage provide cross-plane information without coupled optics or cross-plane diagnostics?
 * Will we build a Muon Collider?
 * Can we use generative models to simulate intrabeam scattering?
