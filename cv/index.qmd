@@ -251,7 +251,7 @@ B.S. in Physics, Wheaton College (IL)
 ### Posters
 
 ::: {.cv-entry}
-*Search for Vlasov-Poisson equilibrium distributions using generative models*. A. Hoover. International Particle Accelerator Conference. [[paper](https://ipac26.org/prepress/pdf/THP5350.pdf)]
+*Search for Vlasov-Poisson equilibrium distributions using generative models*. A. Hoover. International Particle Accelerator Conference. [[paper](https://www.ipac26.org/prepress/pdf/THP5350.pdf)]
 
 ::: {.cv-year}
 2026
