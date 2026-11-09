@@ -410,6 +410,15 @@ B.S. in Physics, Wheaton College (IL)
 
 ## Seminars
 
+
+::: {.cv-entry}
+*Eigenmode painting in high-intensity accelerators*. Accelerator Science and Engineering Traineeship (ASET) Seminar Series, Michigan State University. [[link](https://frib.msu.edu/sites/default/files/2026-11/2026-11-06_msu_apes.pdf)]
+
+::: {.cv-year}
+2026
+:::
+:::
+
 ::: {.cv-entry}
 *Accelerator and beam physics research at ORNL*. Adlai E. Stevenson High School Physics Club.
 
